@@ -12,7 +12,7 @@
         <link rel="prev" href="../03_odwracanie_macierzy/">
       
       
-        <link rel="next" href="../../Calculus/01_granice/">
+        <link rel="next" href="../../Calculus/01_granice_ci%C4%85g%C3%B3w/">
       
       
         
@@ -62,6 +62,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#ukady-rownan-liniowych" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -358,6 +363,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 uklady rownan
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -374,6 +397,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ukady-rownan-liniowych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Układy równań liniowych
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -441,14 +492,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Calculus/01_granice/" class="md-nav__link">
+      <a href="../../Calculus/01_granice_ci%C4%85g%C3%B3w/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    01 granice
+    01 granice ciągów
   
 
     
@@ -469,14 +520,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Calculus/02_pochodne_i_badanie_funkcji/" class="md-nav__link">
+      <a href="../../Calculus/02_granice_funkcji/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    02 pochodne i badanie funkcji
+    02 granice funkcji
   
 
     
@@ -497,14 +548,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Calculus/03_calki/" class="md-nav__link">
+      <a href="../../Calculus/03_pochodne_funkcji/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    03 calki
+    03 pochodne funkcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculus/04_badanie_funkcji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 badanie funkcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculus/05_ca%C5%82ki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 całki
   
 
     
@@ -709,6 +816,25 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ukady-rownan-liniowych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Układy równań liniowych
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -726,7 +852,133 @@
 
   <h1>04 uklady rownan</h1>
 
-
+<h2 id="ukady-rownan-liniowych">Układy równań liniowych</h2>
+<ol>
+<li>Rozwiąż układ równań:</li>
+</ol>
+<p>$$
+   \begin{aligned} 2x+3y&amp;=5,\ x-4y&amp;=-2. \end{aligned}
+   $$</p>
+<p>używając metod: Cramera, eliminacji Gaussa i macierzy odwrotnej.</p>
+<ol>
+<li>Rozwiąż układ trzech równań z trzema niewiadomymi:</li>
+</ol>
+<p>$$
+   \begin{aligned} x+y+z&amp;=6,\ 2x-y+3z&amp;=14,\ -x+2y-z&amp;=-2. \end{aligned}
+   $$</p>
+<p>używając metod: Cramera, eliminacji Gaussa i macierzy odwrotnej.</p>
+<ol>
+<li><span class="arithmatex">\(\star\)</span> Rozważ układ parametryczny zależny od <span class="arithmatex">\(\lambda\)</span>:</li>
+</ol>
+<p>$$
+   \begin{aligned} x+\lambda y&amp;=1,\ 2x+(1+\lambda)y&amp;=3. \end{aligned}
+   $$</p>
+<p>Określ wartości <span class="arithmatex">\(\lambda\)</span>, dla których układ ma jedno rozwiązanie, nieskończenie wiele rozwiązań lub brak rozwiązań.</p>
+<ol>
+<li>Dla macierzy współczynników</li>
+</ol>
+<p>$$
+   A=\begin{pmatrix}1 &amp; 1 &amp; 1\ 0 &amp; 2 &amp; -1\ 2 &amp; -1 &amp; 3\end{pmatrix}
+   $$</p>
+<p>i wektora prawych stron <span class="arithmatex">\(b=(4,1,3)^{\top}\)</span> rozwiąż <span class="arithmatex">\(Ax=b\)</span> i sprawdź wynik przez podstawienie.</p>
+<ol>
+<li>Rozwiąż układy równań:</li>
+</ol>
+<p>a)</p>
+<p>$$
+   \begin{cases}
+   x_1 + 4x_2 + 3x_3 = 1, \
+   2x_1 + 5x_2 + 4x_3 = 4, \
+   x_1 - 3x_2 - 2x_3 = 5;
+   \end{cases}
+   $$</p>
+<p>b)
+   $$
+   \begin{cases}
+   x_1 - 2x_2 - 3x_3 = 2, \
+   x_1 - 4x_2 - 13x_3 = 14, \
+   -3x_1 + 5x_2 + 4x_3 = 0;
+   \end{cases}
+   $$</p>
+<p>c)
+   $$
+   \begin{cases}
+   x_1 - 2x_2 - 3x_3 = 2, \
+   x_1 - 4x_2 - 13x_3 = 14, \
+   -3x_1 + 5x_2 + 4x_3 = 2;
+   \end{cases}
+   $$</p>
+<p>d)
+   $$
+   \begin{cases}
+   -4x_1 + 3x_2 + 2x_3 = -2, \
+   5x_1 - 4x_2 + x_3 = 3;
+   \end{cases}
+   $$</p>
+<p>e)
+   $$
+   \begin{cases}
+   -4x_1 + 3x_2 = 2, \
+   5x_1 - 4x_2 = 0, \
+   2x_1 - x_2 = a;
+   \end{cases}
+   $$</p>
+<p>f)
+   $$
+   \begin{cases}
+   4x_1 + 5x_3 = 6, \
+   x_2 - 6x_3 = -2, \
+   3x_1 + 4x_3 = 3;
+   \end{cases}
+   $$</p>
+<p>g)
+   $$
+   \begin{cases}
+   3x_1 - x_2 - 2x_3 = 2, \
+   2x_2 - x_3 = -1, \
+   3x_1 - 5x_2 = 3;
+   \end{cases}
+   $$</p>
+<p>h)
+   $$
+   \begin{cases}
+   -x_1 + 2x_2 + 3x_3 = 0, \
+   x_1 - 4x_2 - 13x_3 = 0, \
+   -3x_1 + 5x_2 + 4x_3 = 0;
+   \end{cases}
+   $$</p>
+<p>i)
+   $$
+   \begin{cases}
+   x_1 + x_2 + x_3 = 0, \
+   2x_1 + 4x_2 + 3x_3 = 0, \
+   4x_2 + 4x_3 = 0;
+   \end{cases}
+   $$</p>
+<p>j)
+   $$
+   \begin{cases}
+   x_1 + x_2 + x_3 = -2, \
+   2x_1 + 4x_2 - 3x_3 = 3, \
+   4x_2 + 2x_3 = 2;
+   \end{cases}
+   $$</p>
+<p>k)
+   $$
+   \begin{cases}
+   4x_1 + 4x_3 = 8, \
+   x_2 - 6x_3 = -3, \
+   3x_1 + x_2 - 3x_3 = 3;
+   \end{cases}
+   $$</p>
+<p>l)
+   $$
+   \begin{cases}
+   5x_1 - 3x_2 = -7, \
+   -2x_1 + 9x_2 = 4, \
+   2x_1 + 4x_2 = -2;
+   \end{cases}
+   $$</p>
 
 
 

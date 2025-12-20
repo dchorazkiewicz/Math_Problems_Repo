@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#odwracanie-macierzy" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -330,6 +335,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 odwracanie macierzy
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -346,6 +369,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#odwracanie-macierzy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Odwracanie macierzy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -441,14 +492,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Calculus/01_granice/" class="md-nav__link">
+      <a href="../../Calculus/01_granice_ci%C4%85g%C3%B3w/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    01 granice
+    01 granice ciągów
   
 
     
@@ -469,14 +520,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Calculus/02_pochodne_i_badanie_funkcji/" class="md-nav__link">
+      <a href="../../Calculus/02_granice_funkcji/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    02 pochodne i badanie funkcji
+    02 granice funkcji
   
 
     
@@ -497,14 +548,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Calculus/03_calki/" class="md-nav__link">
+      <a href="../../Calculus/03_pochodne_funkcji/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    03 calki
+    03 pochodne funkcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculus/04_badanie_funkcji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 badanie funkcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculus/05_ca%C5%82ki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 całki
   
 
     
@@ -709,6 +816,25 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#odwracanie-macierzy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Odwracanie macierzy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -726,7 +852,59 @@
 
   <h1>03 odwracanie macierzy</h1>
 
-
+<h2 id="odwracanie-macierzy">Odwracanie macierzy</h2>
+<ol>
+<li>
+<p>Znajdź macierz odwrotną używając wzoru dla macierzy <span class="arithmatex">\(2\times2\)</span>
+   $$
+   A=\begin{pmatrix}2 &amp; 1\ 5 &amp; 3\end{pmatrix}
+   \qquad
+   B=\begin{pmatrix}0 &amp; 1\ 1 &amp; 0\end{pmatrix}
+   \qquad
+   C=\begin{pmatrix}4 &amp; 7\ 2 &amp; 6\end{pmatrix}
+   $$</p>
+</li>
+<li>
+<p>Dla macierzy</p>
+</li>
+</ol>
+<p>$$
+   A=\begin{pmatrix}1 &amp; 2\ 2 &amp; 5\end{pmatrix}
+   \quad
+   B=\begin{pmatrix}12&amp; 5\ 7 &amp; 3\end{pmatrix}
+   \quad
+   C=\begin{pmatrix}1 &amp; 2 &amp; 3\ 0 &amp; 1 &amp; 4\ 5 &amp; 6 &amp; 0\end{pmatrix}
+   \quad
+   D=\begin{pmatrix}2 &amp; 0 &amp; 1\ 1 &amp; 3 &amp; 0\ 0 &amp; 4 &amp; 5\end{pmatrix}
+   $$</p>
+<p>oblicz macierze odwrotne za pomocą metod:</p>
+<ul>
+<li>dołączania macierzy jednostkowej i wykonywania eliminacji Gaussa-Jordana,</li>
+<li>użycia wzoru z macierzami dopełnień algebraicznych</li>
+</ul>
+<p>Czyli dla każdej macierzy podaj dwie metody obliczenia macierzy odwrotnej (jeśli istnieje).</p>
+<ol>
+<li>Sprawdź, czy macierz</li>
+</ol>
+<p>$$
+   H=\begin{pmatrix}1 &amp; 2 &amp; 3\ 2 &amp; 4 &amp; 6\ 0 &amp; 1 &amp; 1\end{pmatrix}
+   $$</p>
+<p>jest odwracalna. Uzasadnij odpowiedź (użyj wyznacznika). Czy można było zauważyć to bez obliczania wyznacznika? Co musiałoby się stać, aby macierz była odwracalna?</p>
+<ol>
+<li>
+<p>Dla macierzy <span class="arithmatex">\(A\)</span> spełniającej <span class="arithmatex">\(A^{2}=I\)</span> (tzw. involucja) pokaż, że <span class="arithmatex">\(A^{-1}=A\)</span>. Podaj przykład niebanalnej macierzy <span class="arithmatex">\(2\times2\)</span> spełniającej ten warunek (innej niż <span class="arithmatex">\(I\)</span> i <span class="arithmatex">\(-I\)</span>). Ile jest takich macierzy?</p>
+</li>
+<li>
+<p>Oblicz macierz odwrotną macierzy diagonalnej <span class="arithmatex">\(D=\operatorname{diag}(2,5,-3,1)\)</span>, jeżeli istnieje. Omów warunek istnienia odwrotności dla macierzy diagonalnej.</p>
+</li>
+<li>
+<p>Rozwiąż równania macierzowe:</p>
+</li>
+</ol>
+<p>a) $<span class="arithmatex">\(\begin{bmatrix} 2 &amp; 5 \\\ 1 &amp; 3 \end{bmatrix} \cdot X = \begin{bmatrix} 4 &amp; -6 \\\ 2 &amp; 1 \end{bmatrix}\)</span>$</p>
+<p>b) $<span class="arithmatex">\(\begin{bmatrix} 2 &amp; 1 \\\ 5 &amp; 3 \end{bmatrix} \cdot X = \begin{bmatrix} 1 &amp; 2 \\\ 3 &amp; 4 \end{bmatrix}\)</span>$</p>
+<p>c) $<span class="arithmatex">\(X \cdot \begin{bmatrix} 1 &amp; 1 &amp; -1 \\\ 2 &amp; 1 &amp; 0 \\\ 1 &amp; -1 &amp; 1 \end{bmatrix} = \begin{bmatrix} 1 &amp; -3 &amp; 3 \\\ 4 &amp; 3 &amp; 2 \\\ 1 &amp; -2 &amp; 5 \end{bmatrix}\)</span>$</p>
+<p>d) $<span class="arithmatex">\(\begin{bmatrix} 3 &amp; 2 &amp; 3 \\\ 1 &amp; 1 &amp; 2 \\\ 3 &amp; 2 &amp; 4 \end{bmatrix} \cdot X = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\\ 1 &amp; -1 &amp; 2 \\\ 2 &amp; 2 &amp; 4 \end{bmatrix}\)</span>$</p>
 
 
 

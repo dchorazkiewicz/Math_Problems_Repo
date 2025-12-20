@@ -1,0 +1,956 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../02_pochodne_i_badanie_funkcji/">
+      
+      
+        <link rel="next" href="../../Geometry/01_wektory/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Całki - Math Problems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#caki" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Math Problems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Całki
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Math Problems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to MkDocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algebra/01_macierze_i_operacje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Macierze i podstawowe operacje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algebra/02_wyznaczniki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wyznaczniki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algebra/03_odwracanie_macierzy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Odwracanie macierzy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algebra/04_uklady_rownan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Układy równań liniowych
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calculus
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Calculus
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_granice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Granice ciągów i funkcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_pochodne_i_badanie_funkcji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pochodne i badanie przebiegu funkcji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Całki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometry
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Geometry/01_wektory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wektory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Geometry/02_proste/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proste
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Geometry/03_plaszczyzny/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Płaszczyzny
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Geometry/04_prosta_i_plaszczyzna/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prosta i płaszczyzna w przestrzeni
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="caki">Całki</h1>
+<ol>
+<li>Oblicz całki
+    1) <span class="arithmatex">\(\int \frac{x\sqrt{x} - x\sqrt[4]{x}}{\sqrt[3]{x}} dx\)</span>
+    2) <span class="arithmatex">\(\int (3+2\sqrt[4]{x})^3 dx\)</span>
+    3) <span class="arithmatex">\(\int \frac{\sqrt{x}-2\sqrt[3]{x^2}+4\sqrt[6]{x^3}}{6\sqrt[3]{x}} dx\)</span>
+    4) <span class="arithmatex">\(\int \frac{3+5\sqrt[3]{x^2}}{\sqrt[3]{x^2}} dx\)</span>
+    5) <span class="arithmatex">\(\int \frac{dx}{\sqrt{3x+1}}\)</span>
+    6) <span class="arithmatex">\(\int \sqrt{a+bx} dx\)</span>
+    7) <span class="arithmatex">\(\int \frac{x dx}{\sqrt[3]{2x^2-1}}\)</span>
+    8) <span class="arithmatex">\(\int x \sqrt{1+x^2} dx\)</span>
+    9) <span class="arithmatex">\(\int \frac{x}{\sqrt{3-5x^2}} dx\)</span>
+    10) <span class="arithmatex">\(\int \frac{x-1}{\sqrt[3]{x+1}} dx\)</span>
+    11) <span class="arithmatex">\(\int \frac{x}{\sqrt{x^2-6}} dx\)</span>
+    12) <span class="arithmatex">\(\int \frac{x^2 dx}{\sqrt[3]{x^3+1}}\)</span>
+    13) <span class="arithmatex">\(\int e^{1/x} \frac{dx}{x^2}\)</span>
+    14) <span class="arithmatex">\(\int x e^{-x^2} dx\)</span>
+    15) <span class="arithmatex">\(\int \frac{dx}{2\cos^2 3x}\)</span>
+    16) <span class="arithmatex">\(\int x \sin(2x^2+1) dx\)</span>
+    17) <span class="arithmatex">\(\int \sin^3 x \cos x dx\)</span>
+    18) <span class="arithmatex">\(\int \frac{\cos x}{\sqrt{1+\sin x}} dx\)</span>
+    19) <span class="arithmatex">\(\int \frac{\sin x}{a+b\cos x} dx, b \neq 0\)</span>
+    20) <span class="arithmatex">\(\int \cos x \cdot e^{\sin x} dx\)</span>
+    21) <span class="arithmatex">\(\int \frac{x^3 dx}{\cos^2 x^4}\)</span>
+    22) <span class="arithmatex">\(\int \frac{\operatorname{tg} x}{\cos^2 x} dx\)</span>
+    23) <span class="arithmatex">\(\int \frac{x^2 dx}{\cos^2(x^3+1)}\)</span>
+    24) <span class="arithmatex">\(\int \frac{(\ln x)^2}{x} dx\)</span>
+    25) <span class="arithmatex">\(\int \frac{dx}{e^x+e^{-x}}\)</span>
+    26) <span class="arithmatex">\(\int \frac{e^x dx}{2e^x+1}\)</span>
+    27) <span class="arithmatex">\(\int x \ln(1+x^2) dx\)</span>
+    28) <span class="arithmatex">\(\int \sqrt{2+\ln|x|} \frac{dx}{x}\)</span>
+    29) <span class="arithmatex">\(\int 6^{1-x} dx\)</span>
+    30) <span class="arithmatex">\(\int \frac{dx}{x\sqrt{1-\ln^2|x|}}\)</span>
+    31) <span class="arithmatex">\(\int \frac{\ln|\operatorname{arctg} x|}{1+x^2} dx\)</span>
+    32) <span class="arithmatex">\(\int x e^{x^2}(x^2+1) dx\)</span>
+    33) <span class="arithmatex">\(\int \frac{x^2 dx}{\sqrt{1-x^6}}\)</span>
+    34) <span class="arithmatex">\(\int \frac{dx}{(1+x^2)\operatorname{arctg} x}\)</span>
+    35) <span class="arithmatex">\(\int \frac{(\pi - \arcsin x) dx}{\sqrt{1-x^2}}\)</span>
+    36) <span class="arithmatex">\(\int \frac{x dx}{x^4+1}\)</span>
+    37) <span class="arithmatex">\(\int x^4(1+x^5)^3 dx\)</span>
+    38) <span class="arithmatex">\(\int x^2 e^x dx\)</span>
+    39) <span class="arithmatex">\(\int x^3 e^x dx\)</span>
+    40) <span class="arithmatex">\(\int x^4 e^{2x} dx\)</span>
+    41) <span class="arithmatex">\(\int x \cos x dx\)</span>
+    42) <span class="arithmatex">\(\int x^2 \cos x dx\)</span>
+    43) <span class="arithmatex">\(\int x^2 \sin 5x dx\)</span>
+    44) <span class="arithmatex">\(\int e^x \cos x dx\)</span>
+    45) <span class="arithmatex">\(\int e^{-2x} \sin 3x dx\)</span>
+    46) <span class="arithmatex">\(\int e^x \cos^2 x dx\)</span>
+    47) <span class="arithmatex">\(\int \sqrt{x} \ln x dx\)</span>
+    48) <span class="arithmatex">\(\int (\ln |x|)^3 dx\)</span>
+    49) <span class="arithmatex">\(\int \frac{(\ln |x|)^2}{x^5} dx\)</span>
+    50) <span class="arithmatex">\(\int \sqrt{x}(\ln|x|)^3 dx\)</span>
+    51) <span class="arithmatex">\(\int \frac{\ln|x|}{x^4} dx\)</span>
+    52) <span class="arithmatex">\(\int \frac{(\ln x)^2}{\sqrt{x}} dx\)</span>
+    53) <span class="arithmatex">\(\int x^3 (\ln x)^2 dx\)</span>
+    54) <span class="arithmatex">\(\int x^n \ln x dx, n \neq -1\)</span>
+    55) <span class="arithmatex">\(\int \frac{2x-13}{(x-5)^2} dx\)</span>
+    56) <span class="arithmatex">\(\int \frac{3x+1}{(x+2)^2} dx\)</span>
+    57) <span class="arithmatex">\(\int \frac{dx}{2x^2-2x+5}\)</span>
+    58) <span class="arithmatex">\(\int \frac{dx}{3x^2+2x+1}\)</span>
+    59) <span class="arithmatex">\(\int \frac{dx}{13-6x+x^2}\)</span>
+    60) <span class="arithmatex">\(\int \frac{3dx}{9x^2-6x+2}\)</span>
+    61) <span class="arithmatex">\(\int \frac{x+1}{x^2-x+1} dx\)</span>
+    62) <span class="arithmatex">\(\int \frac{4x-1}{2x^2-2x+1} dx\)</span>
+    63) <span class="arithmatex">\(\int \frac{2x-1}{x^2-2x+5} dx\)</span>
+    64) <span class="arithmatex">\(\int \frac{2x-10}{x^2-2x+10} dx\)</span>
+    65) <span class="arithmatex">\(\int \frac{2x-20}{x^2-8x+25} dx\)</span>
+    66) <span class="arithmatex">\(\int \frac{3x+4}{x^2+4x+8} dx\)</span>
+    67) <span class="arithmatex">\(\int \frac{x+6}{x^2-3} dx\)</span>
+    68) <span class="arithmatex">\(\int \frac{x+6}{x^2+3} dx\)</span>
+    69) <span class="arithmatex">\(\int \frac{6x}{x^2+4x+13} dx\)</span>
+    70) <span class="arithmatex">\(\int \frac{10x-44}{x^2-4x+20} dx\)</span>
+    71) <span class="arithmatex">\(\int \frac{4x-5}{x^2-6x+10} dx\)</span>
+    72) <span class="arithmatex">\(\int \frac{5x}{2+3x} dx\)</span>
+    73) <span class="arithmatex">\(\int \frac{x^2}{5x^2+12} dx\)</span>
+    74) <span class="arithmatex">\(\int \frac{2x^2+7x+20}{x^2+6x+25} dx\)</span>
+    75) <span class="arithmatex">\(\int \frac{7x^2+7x-176}{x^3-9x^2+6x+56} dx\)</span>
+    76) <span class="arithmatex">\(\int \frac{x^3-4x^2+1}{(x-2)^4} dx\)</span>
+    77) <span class="arithmatex">\(\int \frac{3x^2-5x+2}{x^3-2x^2+3x-6} dx\)</span>
+    78) <span class="arithmatex">\(\int \frac{2x+1}{(x^2+1)^2} dx\)</span>
+    79) <span class="arithmatex">\(\int \frac{x^3+2x-6}{x^2-x-2} dx\)</span>
+    80) <span class="arithmatex">\(\int \frac{2x^3-19x^2+58x-42}{x^2-8x+16} dx\)</span>
+    81) <span class="arithmatex">\(\int \frac{x^4}{x^2+1} dx\)</span>
+    82) <span class="arithmatex">\(\int \frac{72x^6}{3x^2+2} dx\)</span>
+    83) <span class="arithmatex">\(\int \frac{2x^4-10x^3+21x^2-20x+5}{x^2-3x+2} dx\)</span>
+    84) <span class="arithmatex">\(\int \sqrt{2x+1} dx\)</span>
+    85) <span class="arithmatex">\(\int \frac{dx}{\sqrt{3+4x}}\)</span>
+    86) <span class="arithmatex">\(\int \frac{dx}{\sqrt[3]{3x-4}}\)</span>
+    87) <span class="arithmatex">\(\int \frac{dx}{\sqrt[5]{(2x+1)^3}}\)</span>
+    88) <span class="arithmatex">\(\int x \sqrt[3]{x-4} dx\)</span>
+    89) <span class="arithmatex">\(\int x \sqrt[3]{3x-1} dx\)</span>
+    90) <span class="arithmatex">\(\int x \sqrt{2+3x} dx\)</span>
+    91) <span class="arithmatex">\(\int x \sqrt{1-5x} dx\)</span>
+    92) <span class="arithmatex">\(\int x \sqrt[3]{x-4} dx\)</span>
+    93) <span class="arithmatex">\(\int \frac{x dx}{\sqrt[4]{2x+3}}\)</span>
+    94) <span class="arithmatex">\(\int \frac{x^2 dx}{\sqrt[3]{x+2}}\)</span>
+    95) <span class="arithmatex">\(\int \frac{x^2+1}{\sqrt{3x+1}} dx\)</span>
+    96) <span class="arithmatex">\(\int x^2 \sqrt[4]{2x+3} dx\)</span>
+    97) <span class="arithmatex">\(\int \frac{dx}{x\sqrt{x+a}}\)</span>
+    98) <span class="arithmatex">\(\int \frac{dx}{x\sqrt{x-a}}\)</span>
+    99) <span class="arithmatex">\(\int \frac{\sqrt{x}}{x-1} dx\)</span>
+    100) <span class="arithmatex">\(\int \frac{\sqrt{x+1}}{x} dx\)</span>
+    101) <span class="arithmatex">\(\int \frac{1+\sqrt{x}}{1-\sqrt{x}} dx\)</span>
+    102) <span class="arithmatex">\(\int \frac{dx}{(x+1)\sqrt{1-x}}\)</span>
+    103) <span class="arithmatex">\(\int \sqrt{1+\sqrt{x}} dx\)</span>
+    104) <span class="arithmatex">\(\int \frac{\sqrt[3]{x} dx}{x+\sqrt[6]{x^5}}\)</span>
+    105) <span class="arithmatex">\(\int \frac{dx}{x\sqrt{x+2}}\)</span>
+    106) <span class="arithmatex">\(\int \cos 5x \cos 7x dx\)</span>
+    107) <span class="arithmatex">\(\int \sin 3x \cos 2x dx\)</span>
+    108) <span class="arithmatex">\(\int \cos 2x \cos 3x dx\)</span>
+    109) <span class="arithmatex">\(\int \sin x \cos 3x dx\)</span>
+    110) <span class="arithmatex">\(\int \cos 2x \sin 4x dx\)</span>
+    111) <span class="arithmatex">\(\int \sin 2x \sin 5x dx\)</span>
+    112) <span class="arithmatex">\(\int \cos x \cos 3x dx\)</span>
+    113) <span class="arithmatex">\(\int \sin 3x \sin x dx\)</span>
+    114) <span class="arithmatex">\(\int \sin 5x \sin 2x dx\)</span>
+    115) <span class="arithmatex">\(\int \sin^3 x dx\)</span>
+    116) <span class="arithmatex">\(\int \sin^4 x dx\)</span>
+    117) <span class="arithmatex">\(\int \cos^4 x dx\)</span>
+    118) <span class="arithmatex">\(\int \cos^5 x dx\)</span>
+    119) <span class="arithmatex">\(\int \sin^5 x dx\)</span>
+    120) <span class="arithmatex">\(\int \operatorname{tg}^5 x dx\)</span>
+    121) <span class="arithmatex">\(\int \operatorname{ctg}^4 x dx\)</span>
+    122) <span class="arithmatex">\(\int \operatorname{ctg}^6 x dx\)</span>
+    123) <span class="arithmatex">\(\int \sin^3 x \cos^4 x dx\)</span>
+    124) <span class="arithmatex">\(\int \sin^7 x \cos^6 x dx\)</span>
+    125) <span class="arithmatex">\(\int \sin^4 x \cos^2 x dx\)</span>
+    126) <span class="arithmatex">\(\int \sin^2 x \cos^2 x dx\)</span>
+    127) <span class="arithmatex">\(\int \sin^3 x \cos^3 x dx\)</span>
+    128) <span class="arithmatex">\(\int \sin^4 x \cos^5 x dx\)</span>
+    129) <span class="arithmatex">\(\int \frac{\cos x dx}{\sin^8 x}\)</span>
+    130) <span class="arithmatex">\(\int \sin x \operatorname{tg} x dx\)</span>
+    131) <span class="arithmatex">\(\int \frac{\cos x}{\sqrt[3]{\sin^2 x}} dx\)</span>
+    132) <span class="arithmatex">\(\int \frac{\sin x dx}{\sqrt[3]{1+2\cos x}}\)</span>
+    133) <span class="arithmatex">\(\int \frac{\sin 2x dx}{\sqrt{1+\cos^2 x}}\)</span>
+    134) <span class="arithmatex">\(\int \frac{\sin 2x}{1+\sin^2 x} dx\)</span>
+    135) <span class="arithmatex">\(\int \frac{\sin 2x dx}{\sqrt{1-\sin^4 x}}\)</span>
+    136) <span class="arithmatex">\(\int \frac{dx}{e^{2x}-1}\)</span>
+    137) <span class="arithmatex">\(\int \frac{dx}{e^x+e^{-x}}\)</span>
+    138) <span class="arithmatex">\(\int \sqrt{e^x+1} dx\)</span>
+    139) <span class="arithmatex">\(\int \frac{e^x-1}{e^x+1} dx\)</span>
+    140) <span class="arithmatex">\(\int \frac{dx}{\sqrt{3+2e^x}}\)</span>
+    141) <span class="arithmatex">\(\int e^x \sqrt{1+e^x} dx\)</span>
+    142) <span class="arithmatex">\(\int \frac{e^x}{(e^x-1)^2} dx\)</span>
+    143) <span class="arithmatex">\(\int (e^x+e^{-x})^2 dx\)</span>
+    144) <span class="arithmatex">\(\int \frac{e^x}{e^{2x}+5} dx\)</span>
+    145) <span class="arithmatex">\(\int \frac{4e^x+6e^{-x}}{9e^x-4e^{-x}} dx\)</span>
+    146) <span class="arithmatex">\(\int \frac{dx}{e^x+e^{2x}}\)</span>
+    147) <span class="arithmatex">\(\int \frac{e^x}{(e^x+a)^2} dx\)</span>
+    148) <span class="arithmatex">\(\int \frac{e^x dx}{\sqrt{3-5e^{2x}}}\)</span>
+    149) <span class="arithmatex">\(\int \frac{dx}{\sqrt{e^{2x}+4e^x+1}}\)</span>
+    150) <span class="arithmatex">\(\int x^3 e^{-x} dx\)</span>
+    151) <span class="arithmatex">\(\int \frac{dx}{x \ln x}\)</span>
+    152) <span class="arithmatex">\(\int \ln(x^2+1) dx\)</span>
+    153) <span class="arithmatex">\(\int (\ln|x|)^2 dx\)</span>
+    154) <span class="arithmatex">\(\int \ln(x+\sqrt{x^2+1}) dx\)</span>
+    155) <span class="arithmatex">\(\int \ln|2-5x| dx\)</span>
+    156) <span class="arithmatex">\(\int \frac{dx}{x(1+\ln^2|x|)}\)</span>
+    157) <span class="arithmatex">\(\int x^2 \ln|x| dx\)</span>
+    158) <span class="arithmatex">\(\int (4+3x^2)\ln|x| dx\)</span>
+    159) <span class="arithmatex">\(\int x^3 \ln(x^2+3) dx\)</span>
+    160) <span class="arithmatex">\(\int x a^x dx, a&gt;1\)</span></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

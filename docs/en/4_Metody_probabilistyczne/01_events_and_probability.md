@@ -1,97 +1,83 @@
-# Events and Probability
+# TASK LIST NO. 1: Random Events and Probability
 
-The following set of exercises covers basic issues in probability theory, including: the classical definition of probability, conditional probability, total probability, Bayes' theorem, and independence of events.
+## Task 1
+Let the sample space $\Omega$ of elementary events of an experiment consist of five elementary events $\omega_i$: $\Omega=\{\omega_1, \omega_2, \omega_3, \omega_4, \omega_5\}$. We define the events: $A=\{\omega_1, \omega_3, \omega_5\}$, $B=\{\omega_2, \omega_3, \omega_4\}$.
 
-## Task 1. Properties of probability
+Find the events:
 
-Let $A$ and $B$ be random events contained in the space $\Omega$. It is known that $P(A) = 0.5$, $P(B) = 0.4$, and $P(A \cup B) = 0.7$.
+a) $A \cup B$ (union of events)
+b) $A \cap B$ (intersection of events)
+c) $B \backslash A$ (difference of events)
+d) $A \backslash B$
 
-Calculate:
+## Task 2
+Consider an electrical circuit in which element $a_1$ is connected in series with a block consisting of two elements $a_2$ and $a_3$ connected in parallel. Let $A_i, i=1, 2, 3$, denote the event "element $a_i$ is functional at time $t$".
 
-* $P(A \cap B)$
-* $P(A \setminus B)$
-* $P(A' \cap B)$, where $A'$ denotes the event complementary to $A$.
+Using operations on events $A_i$ and the symbols for union ($\cup$) and intersection ($\cap$), describe the event $A$: "in the time interval $t$, the current flow through the circuit will not be interrupted".
 
-## Task 2. Rolling dice (Classical probability)
+## Task 3
+Person $X$ performs a certain job in 4, 5, or 6 hours and may commit 0, 1, or 2 errors. Assuming equal probability for each of the 9 possible elementary events (pairs: time, number of errors), find the probability of the following events:
 
-We throw two symmetrical, six-sided dice. Calculate the probability of the events:
+a) The job will be completed in 4 hours.
+b) The job will be completed flawlessly in 6 hours.
+c) The job will be completed in at most 5 hours.
+d) The job will be completed in at most 5 hours and with at most one error.
 
-* $A$ – the sum of the rolled dots is equal to 8.
-* $B$ – the product of the rolled dots is an odd number.
-* $C$ – the same number of dots appeared on both dice.
+## Task 4
+The figure (block diagram) shows a part of an electrical network consisting of two elements connected in parallel: $a_1$ and $a_2$. Let $A_i, i=1, 2$, denote the event that element $a_i$ remains functional for at least time $t$.
 
-## Task 3. Drawing from an urn
+Calculate the probability of continuous current flow through this system for at least time $t$, given that $P(A_1)=P(A_2)=p$ and the probability of simultaneous functionality of both elements is $P(A_1 \cap A_2)=p^2$.
 
-There are 10 balls in an urn: 6 white and 4 black. We draw two balls from the urn without replacement. Calculate the probability that:
+## Task 5
+We consider the volume (in $dm^3$) of water that a concrete culvert can conduct per second. Past observations allow us to assume that:
 
-* Two white balls were drawn.
-* At least one black ball was drawn.
+* The probability that the volume of water takes a value from the interval $\langle 125, 250 \rangle$ is $P(A) = 0.6$.
+* The probability that the volume of water takes a value from the interval $(200, 300\rangle$ is $P(B) = 0.7$.
+* The probability of the union of these events is $P(A \cup B)=0.8$.
 
-## Task 4. The Meeting (Geometric probability)
+Calculate the probability:
 
-Two people, $X$ and $Y$, agreed to meet at a specific place between 12:00 and 13:00. Each of them arrives at a random moment within this time interval and waits for the other person for exactly 15 minutes (or until the end of the hour 13:00), after which they leave.
+a) $P(A')$ (complementary event to A)
+b) $P(A \cap B)$ (intersection of intervals)
+c) $P(A' \cap B')$ (water volume does not fall into either of these intervals)
 
-What is the chance that the meeting will take place? Assume a geometric probability model on a unit square.
+## Task 6
+Identical products manufactured by 2 automated machines are placed on a conveyor belt. The quantitative ratio of production of the first machine to the production of the second is $3:2$. The first machine produces on average $65\%$ of first-grade products, while the second produces $85\%$.
 
-## Task 5. Conditional probability
+a) One product is randomly selected from the products on the conveyor belt. Calculate the probability that it will be a first-grade product (use the total probability formula).
+b) A randomly selected product turned out to be of first quality. Calculate the probability that it was produced by the first machine (use Bayes' theorem).
 
-There are 30 people in a student group. 20 people study English, 12 people study German, and 8 people study both of these languages. We draw one person from this group.
+## Task 7
+On a communication line, two types of signals are transmitted in the form of code combinations 111 or 000 with a priori probabilities of $0.65$ and $0.35$ respectively. The signals are subject to random interference, as a result of which the symbol 1 can be received as 0 with a probability of $0.2$, and with the same probability, the symbol 0 can be received as 1. We assume that symbols 1 and 0 are subject to interference independently of each other.
 
-Calculate the probability that the drawn person studies German, provided that they study English.
+Calculate the probability of receiving the signal:
 
-## Task 6. Independence of events
+a) 111
+b) 000
+c) 010
 
-We toss a symmetrical coin twice. Consider the following events:
+## Task 8
+Coded information consists of seven pulses of types $A, B, C$ in quantities: four pulses of $A$, two pulses of $B$, and one pulse of $C$. Assuming a random arrangement of pulses, find the probability that:
 
-* $A$ – heads appeared in the first toss.
-* $B$ – heads appeared in the second toss.
-* $C$ – the same result appeared in both tosses.
+a) the first received pulse will be $A$,
+b) the first received pulse will be $A$ or $C$,
+c) the first two pulses will be $A$ and $C$ in that order.
 
-Check if events $A$, $B$, and $C$ are pairwise independent. Are these events mutually independent (all three at once)?
+## Task 9
+A certain good is produced by 3 plants. The probability of producing first-quality goods by these plants is $0.97$, $0.90$, and $0.86$, respectively.
 
-## Task 7. Total probability
+Find the probability that a randomly taken item — from among three items originating (one each) from different plants — is of first quality.
 
-In a warehouse, there are light bulbs coming from three factories: $F_1$, $F_2$, and $F_3$.
-Production from factory $F_1$ constitutes 50% of the stock, from $F_2$ – 30%, and from $F_3$ – 20%.
-The defect rate of light bulbs from the individual factories is respectively: 1%, 2%, and 5%.
+## Task 10
+Only 3 types of letter sequences are transmitted via a communication channel: $AAAA$, $BBBB$, $CCCC$ with probabilities $0.4$, $0.3$, and $0.3$, respectively. These letters (signals) are subject to independent random interference (errors), as a result of which, e.g., letter $A$ can be received as $B$ or $C$. The probabilities of correct transmission or error for a single letter are given in the table:
 
-Calculate the probability that a randomly selected light bulb from the warehouse turns out to be defective.
+| Transmitted \ Received | A | B | C |
+| :--- | :--- | :--- | :--- |
+| **A** | 0.8 | 0.1 | 0.1 |
+| **B** | 0.1 | 0.8 | 0.1 |
+| **C** | 0.1 | 0.1 | 0.8 |
 
-Formula for total probability:
+Find the probability of receiving the signal at the output:
 
-$$
-P(D) = \sum_{i=1}^{n} P(D|H_i) P(H_i)
-$$
-
-## Task 8. Bayes' Theorem
-
-Using the data from Task 7:
-A randomly selected light bulb turned out to be defective. Calculate the probability that it comes from factory $F_3$.
-
-Bayes' formula:
-
-$$
-P(H_k|D) = \frac{P(D|H_k) P(H_k)}{\sum_{i=1}^{n} P(D|H_i) P(H_i)}
-$$
-
-## Task 9. System reliability
-
-A system consists of three independently operating elements connected in a mixed way: elements $E_1$ and $E_2$ are connected in parallel, and then this subsystem is connected in series with element $E_3$.
-The probability of failure of each element in time $T$ is $q = 0.1$.
-
-Calculate the probability that the entire system will operate correctly in time $T$.
-
-## Task 10. Bernoulli Scheme
-
-A shooter hits the target with a probability of $p = 0.8$ in each shot. The shooter fires 5 independent shots.
-
-Calculate the probability that:
-
-* They hit the target exactly 4 times.
-* They hit the target at least 4 times.
-
-Formula for the probability of $k$ successes in $n$ trials:
-
-$$
-P_n(k) = \binom{n}{k} p^k (1-p)^{n-k}
-$$
+a) $AAAA$
+b) $ACAA$

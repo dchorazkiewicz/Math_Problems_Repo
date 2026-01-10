@@ -1,97 +1,83 @@
-# Zdarzenia i prawdopodobieństwo
+# LISTA ZADAŃ NR 1: Zdarzenia losowe i prawdopodobieństwo
 
-Poniższy zestaw zadań obejmuje podstawowe zagadnienia z rachunku prawdopodobieństwa, w tym: klasyczną definicję prawdopodobieństwa, prawdopodobieństwo warunkowe, całkowite, wzór Bayesa oraz niezależność zdarzeń.
+## Zadanie 1
+Niech przestrzeń $\Omega$ zdarzeń elementarnych doświadczenia składa się z pięciu zdarzeń elementarnych $\omega_i$: $\Omega=\{\omega_1, \omega_2, \omega_3, \omega_4, \omega_5\}$. Określamy zdarzenia: $A=\{\omega_1, \omega_3, \omega_5\}$, $B=\{\omega_2, \omega_3, \omega_4\}$.
 
-## Zadanie 1. Własności prawdopodobieństwa
+Znaleźć zdarzenia:
 
-Niech $A$ i $B$ będą zdarzeniami losowymi zawartymi w przestrzeni $\Omega$. Wiadomo, że $P(A) = 0.5$, $P(B) = 0.4$ oraz $P(A \cup B) = 0.7$.
+a) $A \cup B$ (suma zdarzeń)
+b) $A \cap B$ (iloczyn zdarzeń)
+c) $B \backslash A$ (różnica zdarzeń)
+d) $A \backslash B$
 
-Oblicz:
+## Zadanie 2
+Rozważamy układ elektryczny, w którym element $a_1$ połączony jest szeregowo z blokiem składającym się z dwóch elementów $a_2$ i $a_3$ połączonych równolegle. Niech $A_i, i=1, 2, 3$, oznacza zdarzenie „element $a_i$ będzie sprawny w czasie $t$”.
 
-* $P(A \cap B)$
-* $P(A \setminus B)$
-* $P(A' \cap B)$, gdzie $A'$ oznacza zdarzenie przeciwne do $A$.
+Za pomocą działań na zdarzeniach $A_i$ oraz symboli sumy ($\cup$) i iloczynu ($\cap$) opisać zdarzenie $A$: „w odcinku czasu $t$ przepływ prądu przez układ nie ulegnie przerwaniu”.
 
-## Zadanie 2. Rzut kostkami (Prawdopodobieństwo klasyczne)
+## Zadanie 3
+Osoba $X$ wykonuje pewną pracę w ciągu 4, 5 albo 6 godzin i może popełnić przy tym 0, 1 albo 2 błędy. Zakładając jednakowe prawdopodobieństwo dla każdego z 9 możliwych zdarzeń elementarnych (par: czas, liczba błędów), znaleźć prawdopodobieństwo następujących zdarzeń:
 
-Rzucamy dwiema symetrycznymi, sześciennymi kostkami do gry. Oblicz prawdopodobieństwo zdarzeń:
+a) Praca zostanie wykonana w ciągu 4 godzin.
+b) Praca zostanie wykonana bezbłędnie w czasie 6 godzin.
+c) Praca zostanie wykonana w czasie co najwyżej 5 godzin.
+d) Praca zostanie wykonana w czasie co najwyżej 5 godzin i najwyżej z jednym błędem.
 
-* $A$ – suma wyrzuconych oczek jest równa 8.
-* $B$ – iloczyn wyrzuconych oczek jest liczbą nieparzystą.
-* $C$ – na obu kostkach wypadła ta sama liczba oczek.
+## Zadanie 4
+Rysunek (schemat blokowy) przedstawia fragment sieci elektrycznej składający się z dwóch elementów połączonych równolegle: $a_1$ i $a_2$. Niech $A_i, i=1, 2$, oznacza zdarzenie, że element $a_i$ będzie sprawny co najmniej przez czas $t$.
 
-## Zadanie 3. Losowanie z urny
+Obliczyć prawdopodobieństwo ciągłego przepływu prądu przez ten układ co najmniej przez czas $t$, jeżeli wiadomo, że $P(A_1)=P(A_2)=p$ oraz prawdopodobieństwo jednoczesnej sprawności obu elementów wynosi $P(A_1 \cap A_2)=p^2$.
 
-W urnie znajduje się 10 kul: 6 białych i 4 czarne. Losujemy z urny dwie kule bez zwracania. Oblicz prawdopodobieństwo, że:
+## Zadanie 5
+Rozpatrujemy ilość (w $dm^3$) wody, jaką może mieć do przeprowadzenia w ciągu sekundy betonowy przepust. Dotychczasowe obserwacje pozwalają przyjąć, że:
 
-* Wylosowano dwie kule białe.
-* Wylosowano co najmniej jedną kulę czarną.
+* Prawdopodobieństwo, że ilość wody przyjmie wartość z przedziału $\langle 125, 250 \rangle$ wynosi $P(A) = 0,6$.
+* Prawdopodobieństwo, że ilość wody przyjmie wartość z przedziału $(200, 300\rangle$ wynosi $P(B) = 0,7$.
+* Prawdopodobieństwo sumy tych zdarzeń wynosi $P(A \cup B)=0,8$.
 
-## Zadanie 4. Spotkanie (Prawdopodobieństwo geometryczne)
+Obliczyć prawdopodobieństwo:
 
-Dwie osoby, $X$ i $Y$, umówiły się na spotkanie w określonym miejscu między godziną 12:00 a 13:00. Każda z nich przychodzi w losowym momencie tego przedziału czasowego i czeka na drugą osobę dokładnie 15 minut (lub do końca godziny 13:00), po czym odchodzi.
+a) $P(A')$ (zdarzenie przeciwne do A)
+b) $P(A \cap B)$ (wspólna część przedziałów)
+c) $P(A' \cap B')$ (ilość wody nie mieści się w żadnym z tych przedziałów)
 
-Jaka jest szansa, że dojdzie do spotkania? Przyjmij model prawdopodobieństwa geometrycznego na kwadracie jednostkowym.
+## Zadanie 6
+Na przenośnik taśmowy trafiają jednakowe produkty wytwarzane przez 2 automaty. Stosunek ilościowy produkcji pierwszego automatu do produkcji drugiego wynosi $3:2$. Pierwszy automat wytwarza średnio $65\%$ produktów w pierwszym gatunku, drugi zaś – $85\%$.
 
-## Zadanie 5. Prawdopodobieństwo warunkowe
+a) Spośród produktów na przenośniku pobieramy losowo jeden produkt. Obliczyć prawdopodobieństwo, że będzie to produkt pierwszego gatunku (zastosować wzór na prawdopodobieństwo całkowite).
+b) Losowo pobrany produkt okazał się pierwszej jakości. Obliczyć prawdopodobieństwo, że został wyprodukowany przez pierwszy automat (zastosować wzór Bayesa).
 
-W grupie studenckiej jest 30 osób. 20 osób uczy się angielskiego, 12 osób uczy się niemieckiego, a 8 osób uczy się obu tych języków. Losujemy jedną osobę z tej grupy.
+## Zadanie 7
+Na linii łączności nadaje się dwa rodzaje sygnałów w postaci kodowych kombinacji 111 albo 000 z prawdopodobieństwami a priori odpowiednio $0,65$ i $0,35$. Sygnały podlegają losowym zakłóceniom, w rezultacie czego symbol 1 może być odebrany jako 0 z prawdopodobieństwem $0,2$ i z takim samym prawdopodobieństwem symbol 0 może być odebrany jako 1. Zakładamy, że symbole 1 i 0 ulegają zakłóceniom niezależnie jeden od drugiego.
 
-Oblicz prawdopodobieństwo, że wylosowana osoba uczy się niemieckiego, pod warunkiem że uczy się angielskiego.
+Obliczyć prawdopodobieństwo odebrania sygnału:
 
-## Zadanie 6. Niezależność zdarzeń
+a) 111
+b) 000
+c) 010
 
-Rzucamy dwa razy symetryczną monetą. Rozważmy następujące zdarzenia:
+## Zadanie 8
+Kodowa informacja składa się z siedmiu impulsów postaci $A, B, C$ w ilościach: cztery impulsy $A$, dwa impulsy $B$ i jeden impuls $C$. Zakładając losowy układ impulsów, znaleźć prawdopodobieństwo tego, że:
 
-* $A$ – w pierwszym rzucie wypadł orzeł.
-* $B$ – w drugim rzucie wypadł orzeł.
-* $C$ – w obu rzutach wypadł ten sam wynik.
+a) pierwszym odebranym impulsem będzie $A$,
+b) pierwszym odebranym impulsem będzie $A$ albo $C$,
+c) dwoma pierwszymi impulsami będą kolejno $A$ i $C$.
 
-Sprawdź, czy zdarzenia $A$, $B$ i $C$ są parami niezależne. Czy zdarzenia te są niezależne zespołowo (wszystkie trzy naraz)?
+## Zadanie 9
+Pewien towar produkują 3 zakłady. Prawdopodobieństwo wyprodukowania przez te zakłady towaru pierwszej jakości wynosi odpowiednio $0,97$; $0,90$; $0,86$.
 
-## Zadanie 7. Prawdopodobieństwo całkowite
+Znaleźć prawdopodobieństwo tego, że losowo wzięta sztuka towaru — spośród trzech sztuk pochodzących (po jednej) z różnych zakładów — jest pierwszej jakości.
 
-W magazynie znajdują się żarówki pochodzące z trzech fabryk: $F_1$, $F_2$ i $F_3$.
-Produkcja z fabryki $F_1$ stanowi 50% zapasów, z $F_2$ – 30%, a z $F_3$ – 20%.
-Wadliwość żarówek z poszczególnych fabryk wynosi odpowiednio: 1%, 2% i 5%.
+## Zadanie 10
+Kanałem łączności nadaje się tylko 3 rodzaje ciągów liter: $AAAA$, $BBBB$, $CCCC$ odpowiednio z prawdopodobieństwami $0,4$; $0,3$; $0,3$. Litery te (sygnały) podlegają niezależnie losowym zakłóceniom (przekłamaniom), w rezultacie czego np. litera $A$ może być odebrana jako $B$ albo $C$. Prawdopodobieństwa poprawnego przesłania albo przekłamania pojedynczej litery podaje tablica:
 
-Oblicz prawdopodobieństwo, że losowo wybrana z magazynu żarówka okaże się wadliwa.
+| Nadany \ Odebrany | A | B | C |
+| :--- | :--- | :--- | :--- |
+| **A** | 0,8 | 0,1 | 0,1 |
+| **B** | 0,1 | 0,8 | 0,1 |
+| **C** | 0,1 | 0,1 | 0,8 |
 
-Wzór na prawdopodobieństwo całkowite:
+Znaleźć prawdopodobieństwo odebrania na wyjściu sygnału:
 
-$$
-P(D) = \sum_{i=1}^{n} P(D|H_i) P(H_i)
-$$
-
-## Zadanie 8. Wzór Bayesa
-
-Korzystając z danych z Zadania 7:
-Losowo wybrana żarówka okazała się wadliwa. Oblicz prawdopodobieństwo, że pochodzi ona z fabryki $F_3$.
-
-Wzór Bayesa:
-
-$$
-P(H_k|D) = \frac{P(D|H_k) P(H_k)}{\sum_{i=1}^{n} P(D|H_i) P(H_i)}
-$$
-
-## Zadanie 9. Niezawodność systemu
-
-Układ składa się z trzech niezależnie działających elementów połączonych w sposób mieszany: elementy $E_1$ i $E_2$ są połączone równolegle, a następnie ten podukład jest połączony szeregowo z elementem $E_3$.
-Prawdopodobieństwo awarii każdego z elementów w czasie $T$ wynosi $q = 0.1$.
-
-Oblicz prawdopodobieństwo, że cały układ będzie działał poprawnie w czasie $T$.
-
-## Zadanie 10. Schemat Bernoulliego
-
-Strzelec trafia do tarczy z prawdopodobieństwem $p = 0.8$ w każdym strzale. Strzelec oddaje 5 niezależnych strzałów.
-
-Oblicz prawdopodobieństwo, że:
-
-* Trafi do tarczy dokładnie 4 razy.
-* Trafi do tarczy co najmniej 4 razy.
-
-Wzór na prawdopodobieństwo $k$ sukcesów w $n$ próbach:
-
-$$
-P_n(k) = \binom{n}{k} p^k (1-p)^{n-k}
-$$
+a) $AAAA$
+b) $ACAA$

@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="pl" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -16,9 +16,9 @@
       
       
         
-          <link rel="alternate" href="./" hreflang="pl">
+          <link rel="alternate" href="../../pl/4_Metody_probabilistyczne/11_decision_theory/" hreflang="pl">
         
-          <link rel="alternate" href="../../en/4_Metody_probabilistyczne/11_decision_theory/" hreflang="en">
+          <link rel="alternate" href="./" hreflang="en">
         
       
       
@@ -27,7 +27,7 @@
     
     
       
-        <title>11. Teoria decyzji - Math Problems</title>
+        <title>11. Decision Theory - Math Problems</title>
       
     
     
@@ -80,8 +80,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#wstep-do-teorii-decyzji-statystycznych" class="md-skip">
-          Przejdź do treści
+        <a href="#introduction-to-statistical-decision-theory" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -95,7 +95,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              11. Teoria decyzji
+              11. Decision Theory
             
           </span>
         </div>
@@ -156,20 +156,20 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Wybierz język">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="pl" class="md-select__link">
+            <a href="../../pl/4_Metody_probabilistyczne/11_decision_theory/" hreflang="pl" class="md-select__link">
               Polski
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../en/4_Metody_probabilistyczne/11_decision_theory/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -190,16 +190,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Szukaj">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -210,7 +210,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicjowanie wyszukiwania
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -244,7 +244,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Nawigacja" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
@@ -345,7 +345,7 @@
   <span class="md-ellipsis">
     
   
-    1. Macierze i operacje
+    1. Matrices & Operations
   
 
     
@@ -373,7 +373,7 @@
   <span class="md-ellipsis">
     
   
-    2. Wyznaczniki
+    2. Determinants
   
 
     
@@ -401,7 +401,7 @@
   <span class="md-ellipsis">
     
   
-    3. Odwracanie macierzy
+    3. Matrix Inversion
   
 
     
@@ -429,7 +429,7 @@
   <span class="md-ellipsis">
     
   
-    4. Układy równań
+    4. Systems of Equations
   
 
     
@@ -475,7 +475,7 @@
   <span class="md-ellipsis">
     
   
-    Geometria
+    Geometry
   
 
     
@@ -491,7 +491,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Geometria
+    Geometry
   
 
           </label>
@@ -511,7 +511,7 @@
   <span class="md-ellipsis">
     
   
-    1. Wektory
+    1. Vectors
   
 
     
@@ -539,7 +539,7 @@
   <span class="md-ellipsis">
     
   
-    2. Proste
+    2. Lines
   
 
     
@@ -567,7 +567,7 @@
   <span class="md-ellipsis">
     
   
-    3. Płaszczyzny
+    3. Planes
   
 
     
@@ -595,7 +595,7 @@
   <span class="md-ellipsis">
     
   
-    4. Prosta i płaszczyzna
+    4. Line and Plane
   
 
     
@@ -641,7 +641,7 @@
   <span class="md-ellipsis">
     
   
-    Analiza
+    Analysis
   
 
     
@@ -657,7 +657,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Analiza
+    Analysis
   
 
           </label>
@@ -677,7 +677,7 @@
   <span class="md-ellipsis">
     
   
-    1. Granice ciągów
+    1. Sequence Limits
   
 
     
@@ -705,7 +705,7 @@
   <span class="md-ellipsis">
     
   
-    2. Granice funkcji
+    2. Function Limits
   
 
     
@@ -733,7 +733,7 @@
   <span class="md-ellipsis">
     
   
-    3. Pochodne funkcji
+    3. Derivatives
   
 
     
@@ -761,7 +761,7 @@
   <span class="md-ellipsis">
     
   
-    4. Badanie funkcji
+    4. Function Analysis
   
 
     
@@ -789,7 +789,7 @@
   <span class="md-ellipsis">
     
   
-    5. Całki
+    5. Integrals
   
 
     
@@ -837,7 +837,7 @@
   <span class="md-ellipsis">
     
   
-    Metody probabilistyczne
+    Probabilistic Methods
   
 
     
@@ -853,7 +853,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Metody probabilistyczne
+    Probabilistic Methods
   
 
           </label>
@@ -873,7 +873,7 @@
   <span class="md-ellipsis">
     
   
-    1. Zdarzenia i prawdopodobieństwo
+    1. Events & Probability
   
 
     
@@ -901,7 +901,7 @@
   <span class="md-ellipsis">
     
   
-    2. Zmienne losowe
+    2. Random Variables
   
 
     
@@ -929,7 +929,7 @@
   <span class="md-ellipsis">
     
   
-    3. Parametry rozkładu
+    3. Distribution Parameters
   
 
     
@@ -957,7 +957,7 @@
   <span class="md-ellipsis">
     
   
-    4. Wybrane rozkłady
+    4. Selected Distributions
   
 
     
@@ -985,7 +985,7 @@
   <span class="md-ellipsis">
     
   
-    5. Twierdzenia graniczne
+    5. Limit Theorems
   
 
     
@@ -1013,7 +1013,7 @@
   <span class="md-ellipsis">
     
   
-    6. Podstawowe statystyki
+    6. Basic Statistics
   
 
     
@@ -1041,7 +1041,7 @@
   <span class="md-ellipsis">
     
   
-    7. Estymacja
+    7. Estimation
   
 
     
@@ -1069,7 +1069,7 @@
   <span class="md-ellipsis">
     
   
-    8. Weryfikacja hipotez
+    8. Hypothesis Testing
   
 
     
@@ -1097,7 +1097,7 @@
   <span class="md-ellipsis">
     
   
-    9. Korelacja i regresja
+    9. Correlation & Regression
   
 
     
@@ -1125,7 +1125,7 @@
   <span class="md-ellipsis">
     
   
-    10. Zaawansowane metody
+    10. Advanced Methods
   
 
     
@@ -1162,7 +1162,7 @@
   <span class="md-ellipsis">
     
   
-    11. Teoria decyzji
+    11. Decision Theory
   
 
     
@@ -1180,7 +1180,7 @@
   <span class="md-ellipsis">
     
   
-    11. Teoria decyzji
+    11. Decision Theory
   
 
     
@@ -1192,7 +1192,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1201,15 +1201,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Spis treści
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zadanie-1-macierz-wypat-i-stany-natury" class="md-nav__link">
+  <a href="#task-1-payoff-matrix-and-states-of-nature" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 1. Macierz wypłat i stany natury
+        Task 1. Payoff Matrix and States of Nature
       
     </span>
   </a>
@@ -1217,10 +1217,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-2-podejmowanie-decyzji-w-warunkach-niepewnosci-kryterium-walda" class="md-nav__link">
+  <a href="#task-2-decision-making-under-uncertainty-walds-criterion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 2. Podejmowanie decyzji w warunkach niepewności (Kryterium Walda)
+        Task 2. Decision Making Under Uncertainty (Wald's Criterion)
       
     </span>
   </a>
@@ -1228,10 +1228,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-3-kryterium-hurwicza" class="md-nav__link">
+  <a href="#task-3-hurwicz-criterion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 3. Kryterium Hurwicza
+        Task 3. Hurwicz Criterion
       
     </span>
   </a>
@@ -1239,10 +1239,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-4-kryterium-savagea-minimalizacja-zalu" class="md-nav__link">
+  <a href="#task-4-savage-criterion-regret-minimization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 4. Kryterium Savage'a (Minimalizacja żalu)
+        Task 4. Savage Criterion (Regret Minimization)
       
     </span>
   </a>
@@ -1250,10 +1250,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-5-kryterium-laplacea" class="md-nav__link">
+  <a href="#task-5-laplace-criterion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 5. Kryterium Laplace'a
+        Task 5. Laplace Criterion
       
     </span>
   </a>
@@ -1261,10 +1261,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-6-podejmowanie-decyzji-w-warunkach-ryzyka-emv" class="md-nav__link">
+  <a href="#task-6-decision-making-under-risk-emv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 6. Podejmowanie decyzji w warunkach ryzyka (EMV)
+        Task 6. Decision Making Under Risk (EMV)
       
     </span>
   </a>
@@ -1272,10 +1272,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-7-wartosc-idealnej-informacji-evpi" class="md-nav__link">
+  <a href="#task-7-value-of-perfect-information-evpi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 7. Wartość idealnej informacji (EVPI)
+        Task 7. Value of Perfect Information (EVPI)
       
     </span>
   </a>
@@ -1283,10 +1283,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-8-drzewa-decyzyjne" class="md-nav__link">
+  <a href="#task-8-decision-trees" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 8. Drzewa decyzyjne
+        Task 8. Decision Trees
       
     </span>
   </a>
@@ -1294,10 +1294,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-9-teoria-gier-gra-o-sumie-zerowej" class="md-nav__link">
+  <a href="#task-9-game-theory-zero-sum-game" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 9. Teoria gier - Gra o sumie zerowej
+        Task 9. Game Theory - Zero-Sum Game
       
     </span>
   </a>
@@ -1305,10 +1305,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-10-strategie-mieszane" class="md-nav__link">
+  <a href="#task-10-mixed-strategies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 10. Strategie mieszane
+        Task 10. Mixed Strategies
       
     </span>
   </a>
@@ -1344,7 +1344,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1353,15 +1353,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Spis treści
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zadanie-1-macierz-wypat-i-stany-natury" class="md-nav__link">
+  <a href="#task-1-payoff-matrix-and-states-of-nature" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 1. Macierz wypłat i stany natury
+        Task 1. Payoff Matrix and States of Nature
       
     </span>
   </a>
@@ -1369,10 +1369,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-2-podejmowanie-decyzji-w-warunkach-niepewnosci-kryterium-walda" class="md-nav__link">
+  <a href="#task-2-decision-making-under-uncertainty-walds-criterion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 2. Podejmowanie decyzji w warunkach niepewności (Kryterium Walda)
+        Task 2. Decision Making Under Uncertainty (Wald's Criterion)
       
     </span>
   </a>
@@ -1380,10 +1380,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-3-kryterium-hurwicza" class="md-nav__link">
+  <a href="#task-3-hurwicz-criterion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 3. Kryterium Hurwicza
+        Task 3. Hurwicz Criterion
       
     </span>
   </a>
@@ -1391,10 +1391,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-4-kryterium-savagea-minimalizacja-zalu" class="md-nav__link">
+  <a href="#task-4-savage-criterion-regret-minimization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 4. Kryterium Savage'a (Minimalizacja żalu)
+        Task 4. Savage Criterion (Regret Minimization)
       
     </span>
   </a>
@@ -1402,10 +1402,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-5-kryterium-laplacea" class="md-nav__link">
+  <a href="#task-5-laplace-criterion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 5. Kryterium Laplace'a
+        Task 5. Laplace Criterion
       
     </span>
   </a>
@@ -1413,10 +1413,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-6-podejmowanie-decyzji-w-warunkach-ryzyka-emv" class="md-nav__link">
+  <a href="#task-6-decision-making-under-risk-emv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 6. Podejmowanie decyzji w warunkach ryzyka (EMV)
+        Task 6. Decision Making Under Risk (EMV)
       
     </span>
   </a>
@@ -1424,10 +1424,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-7-wartosc-idealnej-informacji-evpi" class="md-nav__link">
+  <a href="#task-7-value-of-perfect-information-evpi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 7. Wartość idealnej informacji (EVPI)
+        Task 7. Value of Perfect Information (EVPI)
       
     </span>
   </a>
@@ -1435,10 +1435,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-8-drzewa-decyzyjne" class="md-nav__link">
+  <a href="#task-8-decision-trees" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 8. Drzewa decyzyjne
+        Task 8. Decision Trees
       
     </span>
   </a>
@@ -1446,10 +1446,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-9-teoria-gier-gra-o-sumie-zerowej" class="md-nav__link">
+  <a href="#task-9-game-theory-zero-sum-game" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 9. Teoria gier - Gra o sumie zerowej
+        Task 9. Game Theory - Zero-Sum Game
       
     </span>
   </a>
@@ -1457,10 +1457,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-10-strategie-mieszane" class="md-nav__link">
+  <a href="#task-10-mixed-strategies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 10. Strategie mieszane
+        Task 10. Mixed Strategies
       
     </span>
   </a>
@@ -1484,109 +1484,109 @@
 
 
 
-<h1 id="wstep-do-teorii-decyzji-statystycznych">Wstęp do teorii decyzji statystycznych</h1>
-<p>Ten dział wprowadza sformalizowane metody podejmowania optymalnych decyzji w sytuacjach, gdy wynik zależy nie tylko od nas, ale także od czynników losowych ("stanów natury") lub działań przeciwnika.</p>
-<h2 id="zadanie-1-macierz-wypat-i-stany-natury">Zadanie 1. Macierz wypłat i stany natury</h2>
-<p>Firma musi zdecydować o wielkości produkcji nowego produktu. Ma do wyboru trzy strategie (decyzje):
-<span class="arithmatex">\(D_1\)</span>: Produkcja mała.
-<span class="arithmatex">\(D_2\)</span>: Produkcja średnia.
-<span class="arithmatex">\(D_3\)</span>: Produkcja duża.</p>
-<p>Wynik finansowy zależy od popytu na rynku (stany natury), który może być:
-<span class="arithmatex">\(S_1\)</span>: Niski.
-<span class="arithmatex">\(S_2\)</span>: Średni.
-<span class="arithmatex">\(S_3\)</span>: Wysoki.</p>
-<p>Macierz wypłat (zysków w tys. zł) wygląda następująco:</p>
+<h1 id="introduction-to-statistical-decision-theory">Introduction to Statistical Decision Theory</h1>
+<p>This section introduces formalized methods of making optimal decisions in situations where the result depends not only on us, but also on random factors ("states of nature") or the actions of an opponent.</p>
+<h2 id="task-1-payoff-matrix-and-states-of-nature">Task 1. Payoff Matrix and States of Nature</h2>
+<p>A company must decide on the production volume of a new product. It has three strategies (decisions) to choose from:
+<span class="arithmatex">\(D_1\)</span>: Small production.
+<span class="arithmatex">\(D_2\)</span>: Medium production.
+<span class="arithmatex">\(D_3\)</span>: Large production.</p>
+<p>The financial result depends on market demand (states of nature), which can be:
+<span class="arithmatex">\(S_1\)</span>: Low.
+<span class="arithmatex">\(S_2\)</span>: Medium.
+<span class="arithmatex">\(S_3\)</span>: High.</p>
+<p>The payoff matrix (profits in thousands of PLN) looks as follows:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Decyzja \ Stan</th>
-<th style="text-align: center;"><span class="arithmatex">\(S_1\)</span> (Niski)</th>
-<th style="text-align: center;"><span class="arithmatex">\(S_2\)</span> (Średni)</th>
-<th style="text-align: center;"><span class="arithmatex">\(S_3\)</span> (Wysoki)</th>
+<th style="text-align: left;">Decision \ State</th>
+<th style="text-align: center;"><span class="arithmatex">\(S_1\)</span> (Low)</th>
+<th style="text-align: center;"><span class="arithmatex">\(S_2\)</span> (Medium)</th>
+<th style="text-align: center;"><span class="arithmatex">\(S_3\)</span> (High)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(D_1\)</span> (Mała)</strong></td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(D_1\)</span> (Small)</strong></td>
 <td style="text-align: center;">20</td>
 <td style="text-align: center;">20</td>
 <td style="text-align: center;">20</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(D_2\)</span> (Średnia)</strong></td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(D_2\)</span> (Medium)</strong></td>
 <td style="text-align: center;">10</td>
 <td style="text-align: center;">40</td>
 <td style="text-align: center;">40</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong><span class="arithmatex">\(D_3\)</span> (Duża)</strong></td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(D_3\)</span> (Large)</strong></td>
 <td style="text-align: center;">-10</td>
 <td style="text-align: center;">30</td>
 <td style="text-align: center;">80</td>
 </tr>
 </tbody>
 </table>
-<p>Zinterpretuj ryzyko związane z decyzją <span class="arithmatex">\(D_3\)</span>. W jakiej sytuacji ta strategia przynosi straty?</p>
-<h2 id="zadanie-2-podejmowanie-decyzji-w-warunkach-niepewnosci-kryterium-walda">Zadanie 2. Podejmowanie decyzji w warunkach niepewności (Kryterium Walda)</h2>
-<p>Nie znamy prawdopodobieństw wystąpienia poszczególnych stanów popytu (<span class="arithmatex">\(S_1, S_2, S_3\)</span>).
-Zastosuj <strong>kryterium Walda (maksyminowe)</strong> do macierzy z Zadania 1.</p>
+<p>Interpret the risk associated with decision <span class="arithmatex">\(D_3\)</span>. In what situation does this strategy bring losses?</p>
+<h2 id="task-2-decision-making-under-uncertainty-walds-criterion">Task 2. Decision Making Under Uncertainty (Wald's Criterion)</h2>
+<p>We do not know the probabilities of occurrence of individual demand states (<span class="arithmatex">\(S_1, S_2, S_3\)</span>).
+Apply <strong>Wald's criterion (maximin)</strong> to the matrix from Task 1.</p>
 <ul>
-<li>Dla każdej decyzji wyznacz najgorszy możliwy wynik (bezpieczeństwo).</li>
-<li>Wybierz decyzję, która maksymalizuje ten najgorszy wynik (najlepsza z najgorszych).</li>
-<li>Jakie podejście reprezentuje to kryterium: optymistyczne czy ostrożne (pesymistyczne)?</li>
+<li>For each decision, determine the worst possible result (security).</li>
+<li>Choose the decision that maximizes this worst result (the best of the worst).</li>
+<li>What approach does this criterion represent: optimistic or cautious (pessimistic)?</li>
 </ul>
-<h2 id="zadanie-3-kryterium-hurwicza">Zadanie 3. Kryterium Hurwicza</h2>
-<p>Kryterium Hurwicza pozwala uwzględnić nastawienie decydenta za pomocą współczynnika optymizmu <span class="arithmatex">\(\alpha \in [0, 1]\)</span>.
-Wzór na wskaźnik dla decyzji <span class="arithmatex">\(D_i\)</span>:</p>
+<h2 id="task-3-hurwicz-criterion">Task 3. Hurwicz Criterion</h2>
+<p>The Hurwicz criterion allows taking into account the decision maker's attitude using the coefficient of optimism <span class="arithmatex">\(\alpha \in [0, 1]\)</span>.
+The formula for the index for decision <span class="arithmatex">\(D_i\)</span>:</p>
 <div class="arithmatex">\[
 H(D_i) = \alpha \cdot \max_{j} \{w_{ij}\} + (1 - \alpha) \cdot \min_{j} \{w_{ij}\}
 \]</div>
-<p>Dla danych z Zadania 1:</p>
+<p>For the data from Task 1:</p>
 <ul>
-<li>Wyznacz najlepszą decyzję dla optymisty (<span class="arithmatex">\(\alpha = 1\)</span>, kryterium Maximax).</li>
-<li>Wyznacz najlepszą decyzję dla decydenta umiarkowanego (<span class="arithmatex">\(\alpha = 0.5\)</span>).</li>
+<li>Determine the best decision for an optimist (<span class="arithmatex">\(\alpha = 1\)</span>, Maximax criterion).</li>
+<li>Determine the best decision for a moderate decision maker (<span class="arithmatex">\(\alpha = 0.5\)</span>).</li>
 </ul>
-<h2 id="zadanie-4-kryterium-savagea-minimalizacja-zalu">Zadanie 4. Kryterium Savage'a (Minimalizacja żalu)</h2>
-<p>Decydent chce uniknąć sytuacji, w której będzie żałował, że nie podjął innej decyzji, znając już stan natury.
-Dla danych z Zadania 1:</p>
+<h2 id="task-4-savage-criterion-regret-minimization">Task 4. Savage Criterion (Regret Minimization)</h2>
+<p>The decision maker wants to avoid a situation where they will regret not having made a different decision, having already known the state of nature.
+For the data from Task 1:</p>
 <ul>
-<li>Skonstruuj <strong>macierz żalu (strat relatywnych)</strong>. Żal to różnica między najlepszym wynikiem możliwym do osiągnięcia w danym stanie natury a wynikiem faktycznie osiągniętym.</li>
-<li>Zastosuj kryterium minimax (minimalizacji maksymalnego żalu).</li>
+<li>Construct the <strong>regret matrix (relative loss)</strong>. Regret is the difference between the best result possible to achieve in a given state of nature and the result actually achieved.</li>
+<li>Apply the minimax criterion (minimizing maximum regret).</li>
 </ul>
-<h2 id="zadanie-5-kryterium-laplacea">Zadanie 5. Kryterium Laplace'a</h2>
-<p>W sytuacji całkowitej niewiedzy o prawdopodobieństwach stanów natury, kryterium Laplace'a zakłada, że każdy stan jest jednakowo prawdopodobny (zasada racji niedostatecznej).</p>
+<h2 id="task-5-laplace-criterion">Task 5. Laplace Criterion</h2>
+<p>In a situation of total ignorance about the probabilities of states of nature, the Laplace criterion assumes that each state is equally probable (principle of insufficient reason).</p>
 <ul>
-<li>Przyjmij, że <span class="arithmatex">\(P(S_1) = P(S_2) = P(S_3) = \frac{1}{3}\)</span>.</li>
-<li>Oblicz oczekiwaną wypłatę dla każdej decyzji <span class="arithmatex">\(D_1, D_2, D_3\)</span>.</li>
-<li>Którą decyzję należy wybrać?</li>
+<li>Assume that <span class="arithmatex">\(P(S_1) = P(S_2) = P(S_3) = \frac{1}{3}\)</span>.</li>
+<li>Calculate the expected payoff for each decision <span class="arithmatex">\(D_1, D_2, D_3\)</span>.</li>
+<li>Which decision should be chosen?</li>
 </ul>
-<h2 id="zadanie-6-podejmowanie-decyzji-w-warunkach-ryzyka-emv">Zadanie 6. Podejmowanie decyzji w warunkach ryzyka (EMV)</h2>
-<p>Załóżmy teraz, że na podstawie badań rynku oszacowano prawdopodobieństwa stanów natury:
-<span class="arithmatex">\(P(S_1) = 0.3\)</span> (Niski popyt)
-<span class="arithmatex">\(P(S_2) = 0.5\)</span> (Średni popyt)
-<span class="arithmatex">\(P(S_3) = 0.2\)</span> (Wysoki popyt)</p>
-<p>Oblicz <strong>Oczekiwaną Wartość Monetarną (EMV - Expected Monetary Value)</strong> dla każdej decyzji <span class="arithmatex">\(D_1, D_2, D_3\)</span>.
-Która decyzja maksymalizuje oczekiwany zysk?</p>
+<h2 id="task-6-decision-making-under-risk-emv">Task 6. Decision Making Under Risk (EMV)</h2>
+<p>Let us assume now that based on market research, the probabilities of states of nature have been estimated:
+<span class="arithmatex">\(P(S_1) = 0.3\)</span> (Low demand)
+<span class="arithmatex">\(P(S_2) = 0.5\)</span> (Medium demand)
+<span class="arithmatex">\(P(S_3) = 0.2\)</span> (High demand)</p>
+<p>Calculate the <strong>Expected Monetary Value (EMV)</strong> for each decision <span class="arithmatex">\(D_1, D_2, D_3\)</span>.
+Which decision maximizes the expected profit?</p>
 <div class="arithmatex">\[
 EMV(D_i) = \sum_{j} w_{ij} \cdot P(S_j)
 \]</div>
-<h2 id="zadanie-7-wartosc-idealnej-informacji-evpi">Zadanie 7. Wartość idealnej informacji (EVPI)</h2>
-<p>Firma konsultingowa oferuje badanie, które ze 100% pewnością określi, jaki będzie stan popytu, zanim podejmiemy decyzję.</p>
+<h2 id="task-7-value-of-perfect-information-evpi">Task 7. Value of Perfect Information (EVPI)</h2>
+<p>A consulting company offers a study that will determine with 100% certainty what the state of demand will be before we make a decision.</p>
 <ul>
-<li>Oblicz Oczekiwaną Wartość z Idealną Informacją (EVwPI). (To średnia z najlepszych wyników w każdym stanie).</li>
-<li>Oblicz <strong>Wartość Idealnej Informacji (EVPI)</strong> jako różnicę: <span class="arithmatex">\(EVPI = EVwPI - \max(EMV)\)</span>.</li>
-<li>Ile maksymalnie firma powinna zapłacić za takie badanie?</li>
+<li>Calculate the Expected Value with Perfect Information (EVwPI). (This is the average of the best results in each state).</li>
+<li>Calculate the <strong>Value of Perfect Information (EVPI)</strong> as the difference: <span class="arithmatex">\(EVPI = EVwPI - \max(EMV)\)</span>.</li>
+<li>How much maximum should the company pay for such a study?</li>
 </ul>
-<h2 id="zadanie-8-drzewa-decyzyjne">Zadanie 8. Drzewa decyzyjne</h2>
-<p>Inwestor ma do wyboru dwie opcje:
-A. Włożyć pieniądze na lokatę (zysk pewny 5 tys. zł).
-B. Zainwestować w akcje.
-   * Z prawdopodobieństwem 0.6 rynek wzrośnie (zysk 20 tys. zł).
-   * Z prawdopodobieństwem 0.4 rynek spadnie (strata 10 tys. zł).</p>
-<p>Narysuj (szkicowo) drzewo decyzyjne dla tego problemu. Oblicz wartość oczekiwaną w węzłach losowych i wskaż decyzję optymalną.</p>
-<h2 id="zadanie-9-teoria-gier-gra-o-sumie-zerowej">Zadanie 9. Teoria gier - Gra o sumie zerowej</h2>
-<p>Dwaj konkurenci (Gracz A i Gracz B) wybierają strategie cenowe. Zysk Gracza A jest jednocześnie stratą Gracza B (gra o sumie zerowej).
-Macierz wypłat dla Gracza A:</p>
+<h2 id="task-8-decision-trees">Task 8. Decision Trees</h2>
+<p>An investor has two options to choose from:
+A. Put money in a deposit (certain profit 5 thousand PLN).
+B. Invest in stocks.
+   * With a probability of 0.6 the market will rise (profit 20 thousand PLN).
+   * With a probability of 0.4 the market will fall (loss 10 thousand PLN).</p>
+<p>Draw (sketch) a decision tree for this problem. Calculate the expected value at random nodes and indicate the optimal decision.</p>
+<h2 id="task-9-game-theory-zero-sum-game">Task 9. Game Theory - Zero-Sum Game</h2>
+<p>Two competitors (Player A and Player B) choose pricing strategies. Player A's profit is simultaneously Player B's loss (zero-sum game).
+Payoff matrix for Player A:</p>
 <table>
 <thead>
 <tr>
@@ -1609,40 +1609,40 @@ Macierz wypłat dla Gracza A:</p>
 </tbody>
 </table>
 <ul>
-<li>Wyznacz strategię maximinową dla Gracza A (zabezpieczenie swojego zysku).</li>
-<li>Wyznacz strategię minimaxową dla Gracza B (minimalizacja straty).</li>
-<li>Sprawdź, czy gra posiada <strong>punkt siodłowy</strong> (czy maximin A równa się minimax B). Jeśli tak, jaka jest wartość gry?</li>
+<li>Determine the maximin strategy for Player A (securing their profit).</li>
+<li>Determine the minimax strategy for Player B (minimizing loss).</li>
+<li>Check if the game has a <strong>saddle point</strong> (does maximin A equal minimax B). If so, what is the value of the game?</li>
 </ul>
-<h2 id="zadanie-10-strategie-mieszane">Zadanie 10. Strategie mieszane</h2>
-<p>Rozważmy grę (rzut monetą):
-* Gracz A wybiera Orła lub Reszkę.
-* Gracz B wybiera Orła lub Reszkę.
-* Jeśli wybiorą to samo, A płaci B 1 zł (-1, 1).
-* Jeśli wybiorą co innego, B płaci A 1 zł (1, -1).</p>
-<p>Macierz dla Gracza A:</p>
+<h2 id="task-10-mixed-strategies">Task 10. Mixed Strategies</h2>
+<p>Consider a game (coin toss):
+* Player A chooses Heads or Tails.
+* Player B chooses Heads or Tails.
+* If they choose the same, A pays B 1 PLN (-1, 1).
+* If they choose differently, B pays A 1 PLN (1, -1).</p>
+<p>Matrix for Player A:</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">A \ B</th>
-<th style="text-align: center;">O</th>
-<th style="text-align: center;">R</th>
+<th style="text-align: center;">H</th>
+<th style="text-align: center;">T</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>O</strong></td>
+<td style="text-align: left;"><strong>H</strong></td>
 <td style="text-align: center;">-1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;"><strong>T</strong></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-1</td>
 </tr>
 </tbody>
 </table>
-<p>Czy w tej grze istnieje punkt siodłowy w strategiach czystych?
-Jaka powinna być optymalna strategia mieszana (z jakimi częstościami wybierać Orła i Reszkę), aby nie dać się "ograć" przeciwnikowi?</p>
+<p>Does a saddle point exist in pure strategies in this game?
+What should be the optimal mixed strategy (with what frequencies to choose Heads and Tails) so as not to get "outplayed" by the opponent?</p>
 
 
 
@@ -1692,7 +1692,7 @@ Jaka powinna być optymalna strategia mieszana (z jakimi częstościami wybiera�
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

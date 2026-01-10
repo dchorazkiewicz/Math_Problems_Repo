@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="pl" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -18,9 +18,9 @@
       
       
         
-          <link rel="alternate" href="./" hreflang="pl">
+          <link rel="alternate" href="../../pl/4_Metody_probabilistyczne/03_distribution_parameters/" hreflang="pl">
         
-          <link rel="alternate" href="../../en/4_Metody_probabilistyczne/03_distribution_parameters/" hreflang="en">
+          <link rel="alternate" href="./" hreflang="en">
         
       
       
@@ -29,7 +29,7 @@
     
     
       
-        <title>3. Parametry rozkładu - Math Problems</title>
+        <title>3. Distribution Parameters - Math Problems</title>
       
     
     
@@ -82,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#parametry-rozkadu-zmiennych-losowych" class="md-skip">
-          Przejdź do treści
+        <a href="#parameters-of-random-variable-distributions" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -97,7 +97,7 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+  <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3. Parametry rozkładu
+              3. Distribution Parameters
             
           </span>
         </div>
@@ -158,20 +158,20 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Wybierz język">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="pl" class="md-select__link">
+            <a href="../../pl/4_Metody_probabilistyczne/03_distribution_parameters/" hreflang="pl" class="md-select__link">
               Polski
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../../en/4_Metody_probabilistyczne/03_distribution_parameters/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -192,16 +192,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Szukaj">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -212,7 +212,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicjowanie wyszukiwania
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -246,7 +246,7 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Nawigacja" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
@@ -347,7 +347,7 @@
   <span class="md-ellipsis">
     
   
-    1. Macierze i operacje
+    1. Matrices & Operations
   
 
     
@@ -375,7 +375,7 @@
   <span class="md-ellipsis">
     
   
-    2. Wyznaczniki
+    2. Determinants
   
 
     
@@ -403,7 +403,7 @@
   <span class="md-ellipsis">
     
   
-    3. Odwracanie macierzy
+    3. Matrix Inversion
   
 
     
@@ -431,7 +431,7 @@
   <span class="md-ellipsis">
     
   
-    4. Układy równań
+    4. Systems of Equations
   
 
     
@@ -477,7 +477,7 @@
   <span class="md-ellipsis">
     
   
-    Geometria
+    Geometry
   
 
     
@@ -493,7 +493,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Geometria
+    Geometry
   
 
           </label>
@@ -513,7 +513,7 @@
   <span class="md-ellipsis">
     
   
-    1. Wektory
+    1. Vectors
   
 
     
@@ -541,7 +541,7 @@
   <span class="md-ellipsis">
     
   
-    2. Proste
+    2. Lines
   
 
     
@@ -569,7 +569,7 @@
   <span class="md-ellipsis">
     
   
-    3. Płaszczyzny
+    3. Planes
   
 
     
@@ -597,7 +597,7 @@
   <span class="md-ellipsis">
     
   
-    4. Prosta i płaszczyzna
+    4. Line and Plane
   
 
     
@@ -643,7 +643,7 @@
   <span class="md-ellipsis">
     
   
-    Analiza
+    Analysis
   
 
     
@@ -659,7 +659,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Analiza
+    Analysis
   
 
           </label>
@@ -679,7 +679,7 @@
   <span class="md-ellipsis">
     
   
-    1. Granice ciągów
+    1. Sequence Limits
   
 
     
@@ -707,7 +707,7 @@
   <span class="md-ellipsis">
     
   
-    2. Granice funkcji
+    2. Function Limits
   
 
     
@@ -735,7 +735,7 @@
   <span class="md-ellipsis">
     
   
-    3. Pochodne funkcji
+    3. Derivatives
   
 
     
@@ -763,7 +763,7 @@
   <span class="md-ellipsis">
     
   
-    4. Badanie funkcji
+    4. Function Analysis
   
 
     
@@ -791,7 +791,7 @@
   <span class="md-ellipsis">
     
   
-    5. Całki
+    5. Integrals
   
 
     
@@ -839,7 +839,7 @@
   <span class="md-ellipsis">
     
   
-    Metody probabilistyczne
+    Probabilistic Methods
   
 
     
@@ -855,7 +855,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Metody probabilistyczne
+    Probabilistic Methods
   
 
           </label>
@@ -875,7 +875,7 @@
   <span class="md-ellipsis">
     
   
-    1. Zdarzenia i prawdopodobieństwo
+    1. Events & Probability
   
 
     
@@ -903,7 +903,7 @@
   <span class="md-ellipsis">
     
   
-    2. Zmienne losowe
+    2. Random Variables
   
 
     
@@ -940,7 +940,7 @@
   <span class="md-ellipsis">
     
   
-    3. Parametry rozkładu
+    3. Distribution Parameters
   
 
     
@@ -958,7 +958,7 @@
   <span class="md-ellipsis">
     
   
-    3. Parametry rozkładu
+    3. Distribution Parameters
   
 
     
@@ -970,7 +970,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -979,15 +979,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Spis treści
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zadanie-1-wartosc-oczekiwana-i-wariancja-rozkad-skokowy" class="md-nav__link">
+  <a href="#task-1-expected-value-and-variance-discrete-distribution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 1. Wartość oczekiwana i wariancja (rozkład skokowy)
+        Task 1. Expected value and variance (discrete distribution)
       
     </span>
   </a>
@@ -995,10 +995,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-2-wasnosci-wartosci-oczekiwanej-i-wariancji" class="md-nav__link">
+  <a href="#task-2-properties-of-expected-value-and-variance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 2. Własności wartości oczekiwanej i wariancji
+        Task 2. Properties of expected value and variance
       
     </span>
   </a>
@@ -1006,10 +1006,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-3-gra-losowa-interpretacja-wartosci-oczekiwanej" class="md-nav__link">
+  <a href="#task-3-gambling-game-interpretation-of-expected-value" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 3. Gra losowa (interpretacja wartości oczekiwanej)
+        Task 3. Gambling game (interpretation of expected value)
       
     </span>
   </a>
@@ -1017,10 +1017,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-4-wartosc-oczekiwana-zmiennej-ciagej" class="md-nav__link">
+  <a href="#task-4-expected-value-of-a-continuous-variable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 4. Wartość oczekiwana zmiennej ciągłej
+        Task 4. Expected value of a continuous variable
       
     </span>
   </a>
@@ -1028,10 +1028,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-5-wariancja-zmiennej-ciagej" class="md-nav__link">
+  <a href="#task-5-variance-of-a-continuous-variable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 5. Wariancja zmiennej ciągłej
+        Task 5. Variance of a continuous variable
       
     </span>
   </a>
@@ -1039,10 +1039,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-6-mediana-i-dominanta-moda" class="md-nav__link">
+  <a href="#task-6-median-and-mode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 6. Mediana i dominanta (moda)
+        Task 6. Median and mode
       
     </span>
   </a>
@@ -1050,10 +1050,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-7-kowariancja-zmiennych-losowych" class="md-nav__link">
+  <a href="#task-7-covariance-of-random-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 7. Kowariancja zmiennych losowych
+        Task 7. Covariance of random variables
       
     </span>
   </a>
@@ -1061,10 +1061,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-8-wspoczynnik-korelacji-liniowej" class="md-nav__link">
+  <a href="#task-8-linear-correlation-coefficient" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 8. Współczynnik korelacji liniowej
+        Task 8. Linear correlation coefficient
       
     </span>
   </a>
@@ -1072,10 +1072,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-9-wariancja-sumy-i-roznicy" class="md-nav__link">
+  <a href="#task-9-variance-of-sum-and-difference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 9. Wariancja sumy i różnicy
+        Task 9. Variance of sum and difference
       
     </span>
   </a>
@@ -1083,10 +1083,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-10-moment-centralny-vs-zwyky" class="md-nav__link">
+  <a href="#task-10-central-vs-ordinary-moment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 10. Moment centralny vs zwykły
+        Task 10. Central vs ordinary moment
       
     </span>
   </a>
@@ -1116,7 +1116,7 @@
   <span class="md-ellipsis">
     
   
-    4. Wybrane rozkłady
+    4. Selected Distributions
   
 
     
@@ -1144,7 +1144,7 @@
   <span class="md-ellipsis">
     
   
-    5. Twierdzenia graniczne
+    5. Limit Theorems
   
 
     
@@ -1172,7 +1172,7 @@
   <span class="md-ellipsis">
     
   
-    6. Podstawowe statystyki
+    6. Basic Statistics
   
 
     
@@ -1200,7 +1200,7 @@
   <span class="md-ellipsis">
     
   
-    7. Estymacja
+    7. Estimation
   
 
     
@@ -1228,7 +1228,7 @@
   <span class="md-ellipsis">
     
   
-    8. Weryfikacja hipotez
+    8. Hypothesis Testing
   
 
     
@@ -1256,7 +1256,7 @@
   <span class="md-ellipsis">
     
   
-    9. Korelacja i regresja
+    9. Correlation & Regression
   
 
     
@@ -1284,7 +1284,7 @@
   <span class="md-ellipsis">
     
   
-    10. Zaawansowane metody
+    10. Advanced Methods
   
 
     
@@ -1312,7 +1312,7 @@
   <span class="md-ellipsis">
     
   
-    11. Teoria decyzji
+    11. Decision Theory
   
 
     
@@ -1346,7 +1346,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1355,15 +1355,15 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Spis treści
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zadanie-1-wartosc-oczekiwana-i-wariancja-rozkad-skokowy" class="md-nav__link">
+  <a href="#task-1-expected-value-and-variance-discrete-distribution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 1. Wartość oczekiwana i wariancja (rozkład skokowy)
+        Task 1. Expected value and variance (discrete distribution)
       
     </span>
   </a>
@@ -1371,10 +1371,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-2-wasnosci-wartosci-oczekiwanej-i-wariancji" class="md-nav__link">
+  <a href="#task-2-properties-of-expected-value-and-variance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 2. Własności wartości oczekiwanej i wariancji
+        Task 2. Properties of expected value and variance
       
     </span>
   </a>
@@ -1382,10 +1382,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-3-gra-losowa-interpretacja-wartosci-oczekiwanej" class="md-nav__link">
+  <a href="#task-3-gambling-game-interpretation-of-expected-value" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 3. Gra losowa (interpretacja wartości oczekiwanej)
+        Task 3. Gambling game (interpretation of expected value)
       
     </span>
   </a>
@@ -1393,10 +1393,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-4-wartosc-oczekiwana-zmiennej-ciagej" class="md-nav__link">
+  <a href="#task-4-expected-value-of-a-continuous-variable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 4. Wartość oczekiwana zmiennej ciągłej
+        Task 4. Expected value of a continuous variable
       
     </span>
   </a>
@@ -1404,10 +1404,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-5-wariancja-zmiennej-ciagej" class="md-nav__link">
+  <a href="#task-5-variance-of-a-continuous-variable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 5. Wariancja zmiennej ciągłej
+        Task 5. Variance of a continuous variable
       
     </span>
   </a>
@@ -1415,10 +1415,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-6-mediana-i-dominanta-moda" class="md-nav__link">
+  <a href="#task-6-median-and-mode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 6. Mediana i dominanta (moda)
+        Task 6. Median and mode
       
     </span>
   </a>
@@ -1426,10 +1426,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-7-kowariancja-zmiennych-losowych" class="md-nav__link">
+  <a href="#task-7-covariance-of-random-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 7. Kowariancja zmiennych losowych
+        Task 7. Covariance of random variables
       
     </span>
   </a>
@@ -1437,10 +1437,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-8-wspoczynnik-korelacji-liniowej" class="md-nav__link">
+  <a href="#task-8-linear-correlation-coefficient" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 8. Współczynnik korelacji liniowej
+        Task 8. Linear correlation coefficient
       
     </span>
   </a>
@@ -1448,10 +1448,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-9-wariancja-sumy-i-roznicy" class="md-nav__link">
+  <a href="#task-9-variance-of-sum-and-difference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 9. Wariancja sumy i różnicy
+        Task 9. Variance of sum and difference
       
     </span>
   </a>
@@ -1459,10 +1459,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#zadanie-10-moment-centralny-vs-zwyky" class="md-nav__link">
+  <a href="#task-10-central-vs-ordinary-moment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 10. Moment centralny vs zwykły
+        Task 10. Central vs ordinary moment
       
     </span>
   </a>
@@ -1486,10 +1486,10 @@
 
 
 
-<h1 id="parametry-rozkadu-zmiennych-losowych">Parametry rozkładu zmiennych losowych</h1>
-<p>W tym dziale zajmujemy się wyznaczaniem podstawowych charakterystyk liczbowych zmiennych losowych, takich jak wartość oczekiwana (średnia), wariancja, odchylenie standardowe oraz parametry dla zmiennych dwuwymiarowych (kowariancja, korelacja).</p>
-<h2 id="zadanie-1-wartosc-oczekiwana-i-wariancja-rozkad-skokowy">Zadanie 1. Wartość oczekiwana i wariancja (rozkład skokowy)</h2>
-<p>Dana jest zmienna losowa <span class="arithmatex">\(X\)</span> o rozkładzie dyskretnym:</p>
+<h1 id="parameters-of-random-variable-distributions">Parameters of Random Variable Distributions</h1>
+<p>In this section, we deal with determining basic numerical characteristics of random variables, such as expected value (mean), variance, standard deviation, and parameters for two-dimensional variables (covariance, correlation).</p>
+<h2 id="task-1-expected-value-and-variance-discrete-distribution">Task 1. Expected value and variance (discrete distribution)</h2>
+<p>Given is a random variable <span class="arithmatex">\(X\)</span> with a discrete distribution:</p>
 <table>
 <thead>
 <tr>
@@ -1510,51 +1510,51 @@
 </tr>
 </tbody>
 </table>
-<p>Oblicz:</p>
+<p>Calculate:</p>
 <ul>
-<li>Wartość oczekiwaną <span class="arithmatex">\(E(X)\)</span>.</li>
-<li>Drugi moment zwykły <span class="arithmatex">\(E(X^2)\)</span>.</li>
-<li>Wariancję <span class="arithmatex">\(D^2(X)\)</span> (korzystając ze wzoru <span class="arithmatex">\(D^2(X) = E(X^2) - (E(X))^2\)</span>).</li>
-<li>Odchylenie standardowe <span class="arithmatex">\(\sigma(X)\)</span>.</li>
+<li>Expected value <span class="arithmatex">\(E(X)\)</span>.</li>
+<li>Second ordinary moment <span class="arithmatex">\(E(X^2)\)</span>.</li>
+<li>Variance <span class="arithmatex">\(D^2(X)\)</span> (using the formula <span class="arithmatex">\(D^2(X) = E(X^2) - (E(X))^2\)</span>).</li>
+<li>Standard deviation <span class="arithmatex">\(\sigma(X)\)</span>.</li>
 </ul>
-<h2 id="zadanie-2-wasnosci-wartosci-oczekiwanej-i-wariancji">Zadanie 2. Własności wartości oczekiwanej i wariancji</h2>
-<p>Zmienna losowa <span class="arithmatex">\(X\)</span> ma parametry: <span class="arithmatex">\(E(X) = 5\)</span> oraz <span class="arithmatex">\(D^2(X) = 4\)</span>.
-Zdefiniujmy nową zmienną losową <span class="arithmatex">\(Y = 3X - 2\)</span>.</p>
-<p>Korzystając z własności liniowości wartości oczekiwanej i kwadratowej skalowalności wariancji, oblicz:</p>
+<h2 id="task-2-properties-of-expected-value-and-variance">Task 2. Properties of expected value and variance</h2>
+<p>The random variable <span class="arithmatex">\(X\)</span> has parameters: <span class="arithmatex">\(E(X) = 5\)</span> and <span class="arithmatex">\(D^2(X) = 4\)</span>.
+Let us define a new random variable <span class="arithmatex">\(Y = 3X - 2\)</span>.</p>
+<p>Using the properties of linearity of the expected value and quadratic scalability of variance, calculate:</p>
 <ul>
 <li><span class="arithmatex">\(E(Y)\)</span></li>
 <li><span class="arithmatex">\(D^2(Y)\)</span></li>
 <li><span class="arithmatex">\(\sigma(Y)\)</span></li>
 </ul>
-<p>Przypomnienie: <span class="arithmatex">\(D^2(aX + b) = a^2 D^2(X)\)</span>.</p>
-<h2 id="zadanie-3-gra-losowa-interpretacja-wartosci-oczekiwanej">Zadanie 3. Gra losowa (interpretacja wartości oczekiwanej)</h2>
-<p>Gra polega na rzucie sześcienną kostką.
-* Jeśli wypadnie 6 oczek, wygrywasz 10 zł.
-* Jeśli wypadnie 4 lub 5 oczek, wygrywasz 2 zł.
-* W pozostałych przypadkach przegrywasz stawkę wejściową (nic nie wygrywasz).</p>
-<p>Opłata za udział w grze wynosi 2 zł.
-Czy gra jest sprawiedliwa? Oblicz wartość oczekiwaną zysku netto gracza.</p>
-<h2 id="zadanie-4-wartosc-oczekiwana-zmiennej-ciagej">Zadanie 4. Wartość oczekiwana zmiennej ciągłej</h2>
-<p>Zmienna losowa <span class="arithmatex">\(X\)</span> ma funkcję gęstości:</p>
+<p>Reminder: <span class="arithmatex">\(D^2(aX + b) = a^2 D^2(X)\)</span>.</p>
+<h2 id="task-3-gambling-game-interpretation-of-expected-value">Task 3. Gambling game (interpretation of expected value)</h2>
+<p>The game consists of rolling a six-sided die.
+* If you roll a 6, you win 10 PLN.
+* If you roll a 4 or 5, you win 2 PLN.
+* In other cases, you lose the entry stake (you win nothing).</p>
+<p>The fee for participating in the game is 2 PLN.
+Is the game fair? Calculate the expected value of the player's net profit.</p>
+<h2 id="task-4-expected-value-of-a-continuous-variable">Task 4. Expected value of a continuous variable</h2>
+<p>The random variable <span class="arithmatex">\(X\)</span> has a density function:</p>
 <div class="arithmatex">\[
 f(x) = \begin{cases} 
-0.5 x &amp; \text{dla } x \in [0, 2] \\
-0 &amp; \text{dla } x \notin [0, 2]
+0.5 x &amp; \text{for } x \in [0, 2] \\
+0 &amp; \text{for } x \notin [0, 2]
 \end{cases}
 \]</div>
-<p>Oblicz wartość oczekiwaną <span class="arithmatex">\(E(X)\)</span>.</p>
-<p>Wzór: <span class="arithmatex">\(E(X) = \int_{-\infty}^{\infty} x f(x) dx\)</span>.</p>
-<h2 id="zadanie-5-wariancja-zmiennej-ciagej">Zadanie 5. Wariancja zmiennej ciągłej</h2>
-<p>Dla zmiennej losowej z Zadania 4 oblicz wariancję <span class="arithmatex">\(D^2(X)\)</span>.</p>
-<p>Wskazówka: Najpierw oblicz <span class="arithmatex">\(E(X^2) = \int_{-\infty}^{\infty} x^2 f(x) dx\)</span>.</p>
-<h2 id="zadanie-6-mediana-i-dominanta-moda">Zadanie 6. Mediana i dominanta (moda)</h2>
-<p>Dla funkcji gęstości z Zadania 4 (<span class="arithmatex">\(f(x) = 0.5x\)</span> na przedziale <span class="arithmatex">\([0, 2]\)</span>):</p>
+<p>Calculate the expected value <span class="arithmatex">\(E(X)\)</span>.</p>
+<p>Formula: <span class="arithmatex">\(E(X) = \int_{-\infty}^{\infty} x f(x) dx\)</span>.</p>
+<h2 id="task-5-variance-of-a-continuous-variable">Task 5. Variance of a continuous variable</h2>
+<p>For the random variable from Task 4, calculate the variance <span class="arithmatex">\(D^2(X)\)</span>.</p>
+<p>Hint: First calculate <span class="arithmatex">\(E(X^2) = \int_{-\infty}^{\infty} x^2 f(x) dx\)</span>.</p>
+<h2 id="task-6-median-and-mode">Task 6. Median and mode</h2>
+<p>For the density function from Task 4 (<span class="arithmatex">\(f(x) = 0.5x\)</span> on the interval <span class="arithmatex">\([0, 2]\)</span>):</p>
 <ul>
-<li>Wyznacz <strong>medianę</strong> (<span class="arithmatex">\(Me\)</span>), czyli taką wartość <span class="arithmatex">\(x\)</span>, która dzieli pole pod wykresem gęstości na dwie równe części (<span class="arithmatex">\(\int_{-\infty}^{Me} f(x) dx = 0.5\)</span>).</li>
-<li>Wyznacz <strong>dominantę</strong> (<span class="arithmatex">\(Mo\)</span>), czyli wartość <span class="arithmatex">\(x\)</span>, dla której funkcja gęstości osiąga maksimum lokalne.</li>
+<li>Determine the <strong>median</strong> (<span class="arithmatex">\(Me\)</span>), i.e., the value <span class="arithmatex">\(x\)</span> that divides the area under the density graph into two equal parts (<span class="arithmatex">\(\int_{-\infty}^{Me} f(x) dx = 0.5\)</span>).</li>
+<li>Determine the <strong>mode</strong> (<span class="arithmatex">\(Mo\)</span>), i.e., the value <span class="arithmatex">\(x\)</span> for which the density function reaches a local maximum.</li>
 </ul>
-<h2 id="zadanie-7-kowariancja-zmiennych-losowych">Zadanie 7. Kowariancja zmiennych losowych</h2>
-<p>Dany jest rozkład łączny zmiennych <span class="arithmatex">\((X, Y)\)</span>:</p>
+<h2 id="task-7-covariance-of-random-variables">Task 7. Covariance of random variables</h2>
+<p>Given is the joint distribution of variables <span class="arithmatex">\((X, Y)\)</span>:</p>
 <table>
 <thead>
 <tr>
@@ -1576,31 +1576,31 @@ f(x) = \begin{cases}
 </tr>
 </tbody>
 </table>
-<p>Wykonaj polecenia:</p>
+<p>Perform the commands:</p>
 <ul>
-<li>Oblicz wartości oczekiwane brzegowe: <span class="arithmatex">\(E(X)\)</span> oraz <span class="arithmatex">\(E(Y)\)</span>.</li>
-<li>Oblicz wartość oczekiwaną iloczynu: <span class="arithmatex">\(E(XY) = \sum \sum x_i y_j p_{ij}\)</span>.</li>
-<li>Oblicz kowariancję <span class="arithmatex">\(Cov(X, Y) = E(XY) - E(X)E(Y)\)</span>.</li>
+<li>Calculate the marginal expected values: <span class="arithmatex">\(E(X)\)</span> and <span class="arithmatex">\(E(Y)\)</span>.</li>
+<li>Calculate the expected value of the product: <span class="arithmatex">\(E(XY) = \sum \sum x_i y_j p_{ij}\)</span>.</li>
+<li>Calculate the covariance <span class="arithmatex">\(Cov(X, Y) = E(XY) - E(X)E(Y)\)</span>.</li>
 </ul>
-<h2 id="zadanie-8-wspoczynnik-korelacji-liniowej">Zadanie 8. Współczynnik korelacji liniowej</h2>
-<p>Na podstawie wyników z Zadania 7:</p>
+<h2 id="task-8-linear-correlation-coefficient">Task 8. Linear correlation coefficient</h2>
+<p>Based on the results from Task 7:</p>
 <ul>
-<li>Oblicz wariancje brzegowe <span class="arithmatex">\(D^2(X)\)</span> i <span class="arithmatex">\(D^2(Y)\)</span>.</li>
-<li>Oblicz odchylenia standardowe <span class="arithmatex">\(\sigma_X\)</span> i <span class="arithmatex">\(\sigma_Y\)</span>.</li>
-<li>Oblicz współczynnik korelacji Pearsona <span class="arithmatex">\(\rho(X, Y) = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}\)</span>.</li>
-<li>Zinterpretuj wynik (czy korelacja jest silna/słaba, dodatnia/ujemna).</li>
+<li>Calculate the marginal variances <span class="arithmatex">\(D^2(X)\)</span> and <span class="arithmatex">\(D^2(Y)\)</span>.</li>
+<li>Calculate the standard deviations <span class="arithmatex">\(\sigma_X\)</span> and <span class="arithmatex">\(\sigma_Y\)</span>.</li>
+<li>Calculate the Pearson correlation coefficient <span class="arithmatex">\(\rho(X, Y) = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}\)</span>.</li>
+<li>Interpret the result (is the correlation strong/weak, positive/negative).</li>
 </ul>
-<h2 id="zadanie-9-wariancja-sumy-i-roznicy">Zadanie 9. Wariancja sumy i różnicy</h2>
-<p>Wiadomo, że <span class="arithmatex">\(D^2(X) = 9\)</span>, <span class="arithmatex">\(D^2(Y) = 16\)</span>, a kowariancja <span class="arithmatex">\(Cov(X, Y) = 2\)</span>.</p>
-<p>Oblicz wariancję sumy i różnicy tych zmiennych:</p>
+<h2 id="task-9-variance-of-sum-and-difference">Task 9. Variance of sum and difference</h2>
+<p>It is known that <span class="arithmatex">\(D^2(X) = 9\)</span>, <span class="arithmatex">\(D^2(Y) = 16\)</span>, and the covariance <span class="arithmatex">\(Cov(X, Y) = 2\)</span>.</p>
+<p>Calculate the variance of the sum and difference of these variables:</p>
 <ul>
 <li><span class="arithmatex">\(D^2(X + Y)\)</span></li>
 <li><span class="arithmatex">\(D^2(X - Y)\)</span></li>
 </ul>
-<p>Wzór: <span class="arithmatex">\(D^2(X \pm Y) = D^2(X) + D^2(Y) \pm 2Cov(X, Y)\)</span>.</p>
-<h2 id="zadanie-10-moment-centralny-vs-zwyky">Zadanie 10. Moment centralny vs zwykły</h2>
-<p>Wyjaśnij różnicę między momentem zwykłym rzędu <span class="arithmatex">\(k\)</span> (<span class="arithmatex">\(m_k = E(X^k)\)</span>) a momentem centralnym rzędu <span class="arithmatex">\(k\)</span> (<span class="arithmatex">\(\mu_k = E[(X - E(X))^k]\)</span>).</p>
-<p>Oblicz trzeci moment centralny <span class="arithmatex">\(\mu_3\)</span> (skośność nieunormowaną) dla zmiennej losowej o rozkładzie: <span class="arithmatex">\(P(X=-1)=0.5, P(X=1)=0.5\)</span>.</p>
+<p>Formula: <span class="arithmatex">\(D^2(X \pm Y) = D^2(X) + D^2(Y) \pm 2Cov(X, Y)\)</span>.</p>
+<h2 id="task-10-central-vs-ordinary-moment">Task 10. Central vs ordinary moment</h2>
+<p>Explain the difference between the ordinary moment of order <span class="arithmatex">\(k\)</span> (<span class="arithmatex">\(m_k = E(X^k)\)</span>) and the central moment of order <span class="arithmatex">\(k\)</span> (<span class="arithmatex">\(\mu_k = E[(X - E(X))^k]\)</span>).</p>
+<p>Calculate the third central moment <span class="arithmatex">\(\mu_3\)</span> (unstandardized skewness) for a random variable with the distribution: <span class="arithmatex">\(P(X=-1)=0.5, P(X=1)=0.5\)</span>.</p>
 
 
 
@@ -1650,7 +1650,7 @@ f(x) = \begin{cases}
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

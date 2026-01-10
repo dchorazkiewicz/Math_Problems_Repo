@@ -1,107 +1,58 @@
-# Estymacja punktowa i przedziałowa
+# LISTA ZADAŃ NR 7: Estymacja punktowa i przedziałowa
 
-W tym dziale zajmujemy się wnioskowaniem o parametrach populacji na podstawie próby. Zadania podzielone są na estymację punktową (szukanie jednej liczby) oraz przedziałową (szukanie przedziału, który z zadanym prawdopodobieństwem pokrywa nieznany parametr).
+## Zadanie 1
+[cite_start]Znaleźć przedział ufności dla nieznanej wartości przeciętnej $\mu$ populacji, w przypadku gdy $\sigma$ jest znane, na podstawie $n$-elementowej próby prostej $X_1, ..., X_n$[cite: 231].
 
-## Zadanie 1. Estymator nieobciążony
+[cite_start]Dane: Z populacji o odchyleniu standardowym $\sigma=0,14$ pobrano próbkę $n=100$ elementową (np. pomiarów napięcia na procesorze)[cite: 232]. Średnia z próby wyniosła $\bar{x}=2,5$. [cite_start]Wyznaczyć 95%-owy przedział ufności dla średniej (przyjąć $1-\alpha = 0,95$, co daje $u_{\alpha} = 1,96$)[cite: 233].
 
-Mamy próbę losową $X_1, X_2, \dots, X_n$ z populacji o wartości oczekiwanej $\mu$ i wariancji $\sigma^2$.
-Rozważamy dwa estymatory średniej:
+## Zadanie 2
+[cite_start]Zmierzono wytrzymałość 10 losowo wybranych elementów konstrukcji (lub np. czas pracy na baterii 10 laptopów)[cite: 235]. [cite_start]Otrzymano wyniki: $383, 284, 339, 340, 305, 386, 378, 335, 344, 346$[cite: 236].
 
-1.  $\hat{\mu}_1 = \frac{1}{n} \sum_{i=1}^n X_i$ (średnia arytmetyczna)
-2.  $\hat{\mu}_2 = \frac{X_1 + X_n}{2}$ (średnia z pierwszego i ostatniego elementu)
+[cite_start]Zakładając, że rozkład cechy jest normalny, wyznaczyć 95%-owy przedział ufności dla średniej wytrzymałości[cite: 236].
 
-Sprawdź, czy oba estymatory są nieobciążone (tzn. czy $E(\hat{\Theta}) = \Theta$).
-Który z nich jest lepszy (bardziej efektywny)? Porównaj ich wariancje.
+[cite_start]*Wskazówka: Ponieważ $n=10$ jest małe ($n<30$) i nie znamy $\sigma$, należy obliczyć $s$ z próby i skorzystać z rozkładu t-Studenta*[cite: 237].
 
-## Zadanie 2. Metoda Momentów
+## Zadanie 3
+[cite_start]W celu wyznaczenia ładunku elektronu wykonano 26 pomiarów metodą Millikana[cite: 239]. [cite_start]Otrzymano średnią $\bar{x} = 1,574 \cdot 10^{-19}$ oraz odchylenie standardowe $s = 0,043 \cdot 10^{-19}$[cite: 240].
 
-Zmienna losowa $X$ ma rozkład jednostajny na przedziale $[0, a]$, gdzie $a > 0$ jest nieznanym parametrem. Gęstość wyraża się wzorem $f(x) = \frac{1}{a}$ dla $x \in [0, a]$.
+[cite_start]Wyznaczyć przedział ufności dla średniego ładunku na poziomie ufności $0,99$[cite: 240].
 
-Wyznacz estymator parametru $a$ metodą momentów.
+## Zadanie 4
+[cite_start]Z populacji włókien bawełny pobrano 300-elementową próbkę i zmierzono ich długości[cite: 242]. [cite_start]Obliczono średnią $\bar{x}=27,43$ mm oraz wariancję $s^2=51,598$[cite: 243].
 
-Wskazówka: Porównaj moment teoretyczny $E(X) = \frac{a}{2}$ z momentem empirycznym (średnią z próby $\bar{X}$).
+[cite_start]Znaleźć 95%-ową realizację przedziału ufności dla nieznanej wartości przeciętnej długości włókna[cite: 243].
 
-## Zadanie 3. Metoda Największej Wiarogodności (MNW)
+[cite_start]*Wskazówka: Przy tak dużym $n$ ($n=300$), rozkład t-Studenta jest praktycznie tożsamy z rozkładem normalnym, więc można użyć statystyki $u_{\alpha}$*[cite: 244].
 
-Zmienna losowa $X$ ma rozkład Poissona z nieznanym parametrem $\lambda$:
+## Zadanie 5
+[cite_start]Wykonuje się pomiary głębokości morza (lub np. opóźnienia w sieci) w pewnym określonym miejscu[cite: 246].
 
-$$
-P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}
-$$
+[cite_start]Ilu niezależnych pomiarów należy dokonać, aby przyjąć z poziomem ufności $0,95$, że błąd bezwzględny szacowania średniej nie przekroczy $10$ m, jeśli rozkład błędów jest normalny o wariancji $\sigma^2 = 180$ $m^2$? [cite: 247]
 
-Na podstawie próby $x_1, x_2, \dots, x_n$ wyznacz estymator parametru $\lambda$ metodą największej wiarogodności.
+## Zadanie 6
+[cite_start]Spośród 120 wylosowanych pracowników pewnego zakładu, 17 nie wykonywało normy wydajności pracy (w IT: 17 na 120 serwerów nie spełniło wymogów SLA)[cite: 249].
 
-Kroki:
-1. Zapisz funkcję wiarogodności $L(\lambda)$.
-2. Zapisz logarytm funkcji wiarogodności $\ln L(\lambda)$.
-3. Oblicz pochodną po $\lambda$ i przyrównaj do zera.
+[cite_start]Wyznaczyć 95%-ową realizację przedziału ufności dla frakcji $p$ pracowników niewykonujących normy w całym zakładzie[cite: 249].
 
-## Zadanie 4. Przedział ufności dla średniej (znane odchylenie)
+## Zadanie 7
+[cite_start]Wykonano 15 pomiarów czasu likwidowania zrywów przędzy na krosnach[cite: 251]. Obliczono wariancję z próby $s^2 = 134,2$. [cite_start]Zakładając, że czas ten ma rozkład normalny, wyznaczyć 90%-owy przedział ufności dla wariancji $\sigma^2$ oraz odchylenia standardowego $\sigma$[cite: 252].
 
-Zmierzono czas reakcji 50 kierowców. Średnia z próby wyniosła $\bar{x} = 0.8$ s. Z wcześniejszych badań wiadomo, że odchylenie standardowe czasu reakcji w populacji wynosi $\sigma = 0.15$ s.
+[cite_start]*Wskazówka: Należy skorzystać z tablic rozkładu chi-kwadrat ($\chi^2$)*[cite: 253].
 
-Skonstruuj 95% przedział ufności dla średniego czasu reakcji wszystkich kierowców.
+## Zadanie 8
+[cite_start]Dla pewnej cechy o rozkładzie normalnym wylosowano dwie próbki[cite: 255]:
 
-Model:
+* Próbka 1: $n=25$, średnia $\bar{x}=15$, odchylenie $s=5$.
+* Próbka 2: $n=100$, średnia $\bar{x}=15$, odchylenie $s=5$.
 
-$$
-\mu \in \left( \bar{X} - u_{1-\alpha/2} \frac{\sigma}{\sqrt{n}}; \ \bar{X} + u_{1-\alpha/2} \frac{\sigma}{\sqrt{n}} \right)
-$$
+[cite_start]Obliczyć długości 95%-owych przedziałów ufności dla obu prób[cite: 255]. [cite_start]Jak czterokrotne zwiększenie liczebności próby wpływa na precyzję (szerokość przedziału)? [cite: 256]
 
-## Zadanie 5. Przedział ufności dla średniej (nieznane odchylenie)
+## Zadanie 9
+Dana jest próbka prosta o liczebności $n=5$: $\{2, 4, 6, 8, 10\}$. [cite_start]Obliczyć wartość estymatora nieobciążonego wartości oczekiwanej ($\bar{x}$) oraz estymatora nieobciążonego wariancji ($s^2$)[cite: 257].
 
-Wylosowano małą próbę 10 batoników i zważono je. Otrzymano wyniki:
-Średnia waga $\bar{x} = 52$ g, odchylenie standardowe z próby $s = 3$ g.
-Zakładamy, że waga batoników ma rozkład normalny.
+[cite_start]Wyjaśnić, dlaczego przy wariancji dzielimy przez $n-1$, a nie przez $n$[cite: 258].
 
-Wyznacz 98% przedział ufności dla przeciętnej wagi batonika.
-Skorzystaj z rozkładu t-Studenta.
+## Zadanie 10
+Tabela przedstawia wyniki procentowej zawartości skrobi w 80 ziemniakach (dane pogrupowane w szereg rozdzielczy). [cite_start]Średnia z próby $\bar{x}=17,525\%$, odchylenie standardowe $s=1,84\%$[cite: 260].
 
-## Zadanie 6. Przedział ufności dla wskaźnika struktury (proporcji)
-
-W badaniu opinii publicznej zapytano 1000 losowych osób, czy popierają budowę nowej drogi. 600 osób odpowiedziało "TAK".
-
-Wyznacz 90% przedział ufności dla frakcji osób popierających budowę w całej populacji.
-
-Model:
-
-$$
-p \in \left( \frac{m}{n} - u_{1-\alpha/2} \sqrt{\frac{\frac{m}{n}(1-\frac{m}{n})}{n}}; \ \dots \right)
-$$
-
-## Zadanie 7. Minimalna liczebność próby
-
-Planujemy oszacować średni wzrost studentów. Chcemy, aby błąd oszacowania (połowa długości przedziału ufności) nie przekraczał $d = 1$ cm, przy poziomie ufności $0.95$. Wstępne badania sugerują, że odchylenie standardowe wynosi $\sigma = 10$ cm.
-
-Jak dużą próbę należy pobrać?
-
-$$
-n \ge \left( \frac{u_{1-\alpha/2} \cdot \sigma}{d} \right)^2
-$$
-
-## Zadanie 8. Przedział ufności dla wariancji
-
-Zbadano dokładność maszyny dozującej lek. Pobrano próbę 20 ampułek. Wariancja z próby wyniosła $s^2 = 0.04 \text{ ml}^2$. Zakładamy normalność rozkładu.
-
-Skonstruuj 95% przedział ufności dla wariancji $\sigma^2$ błędu dozowania maszyny.
-
-Skorzystaj z rozkładu $\chi^2$ (chi-kwadrat).
-
-## Zadanie 9. Interpretacja przedziału ufności
-
-Obliczyliśmy 95% przedział ufności dla średniej pensji: $[4500, 5500]$.
-Które stwierdzenie jest poprawne?
-
-A. "Istnieje 95% szansy, że średnia pensja wpadnie w ten konkretny przedział".
-B. "Ten przedział jest jednym z wielu możliwych przedziałów; w 95% przypadków tak konstruowane przedziały pokrywają prawdziwą, nieznaną stałą wartość parametru $\mu$".
-
-Uzasadnij odpowiedź.
-
-## Zadanie 10. Dokładność a poziom ufności
-
-Co stanie się z szerokością przedziału ufności (precyzją oszacowania), jeśli:
-
-* Zwiększymy liczebność próby $n$ (przy niezmienionym poziomie ufności)?
-* Zwiększymy poziom ufności $1-\alpha$ (np. z 0.95 na 0.99) przy niezmienionym $n$?
-
-Wyjaśnij mechanizm działania.
+[cite_start]Przyjmując poziom ufności 0,95, oszacować średnią zawartość skrobi w całej partii[cite: 260].

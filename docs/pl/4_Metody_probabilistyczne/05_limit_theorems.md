@@ -1,87 +1,86 @@
-# Twierdzenia graniczne
+# LISTA ZADAŃ NR 5: Twierdzenia graniczne i aproksymacje
 
-Dział ten dotyczy zachowania się ciągów zmiennych losowych przy dużej liczbie prób. Znajdziesz tu zadania z szacowania prawdopodobieństwa za pomocą nierówności oraz przybliżania rozkładów sum zmiennych losowych rozkładem normalnym.
+## Zadanie 1
+**Twierdzenie Poissona – rzadkie błędy**
 
-## Zadanie 1. Nierówność Markowa
+Prawdopodobieństwo, że produkt poddawany próbie nie wytrzyma tej próby wynosi $p=0,01$. [cite_start]Obliczyć prawdopodobieństwo, że wśród 200 takich produktów (niezależnie poddanych próbie) co najwyżej 2 nie wytrzymają próby[cite: 153, 154].
 
-Dzienne zużycie wody w pewnym zakładzie jest nieujemną zmienną losową $X$ o wartości oczekiwanej $E(X) = 1000$ litrów.
+*Cel zadania: Pokazanie, jak rozkład dwumianowy (dla dużego $n$ i małego $p$) zbiega do rozkładu Poissona. [cite_start]Jest to klasyczne zastosowanie twierdzenia granicznego dla rzadkich zdarzeń (np. błędy w kodzie, awarie serwerów)*[cite: 155, 156].
 
-Korzystając z nierówności Markowa, oszacuj prawdopodobieństwo, że w losowo wybranym dniu zużycie wody przekroczy 5000 litrów.
+## Zadanie 2
+**Aproksymacja Poissona – kontrola jakości**
 
-$$
-P(X \ge a) \le \frac{E(X)}{a}
-$$
+Prawdopodobieństwo wyprodukowania sztuki wadliwej wynosi $p=0,02$. [cite_start]Obliczyć prawdopodobieństwo, że w partii towaru liczącej 300 sztuk znajdzie się[cite: 157, 158]:
 
-## Zadanie 2. Nierówność Czebyszewa
+a) zero sztuk wadliwych,
+b) jedna sztuka wadliwa,
+c) dwie sztuki wadliwe,
+d) co najmniej trzy sztuki wadliwe.
 
-Zmienna losowa $X$ ma wartość oczekiwaną $E(X) = 20$ i wariancję $D^2(X) = 4$. Rozkład zmiennej nie jest znany.
+[cite_start]*Wskazówka: Zastosować przybliżenie rozkładem Poissona z parametrem $\lambda = np$*[cite: 159].
 
-Korzystając z nierówności Czebyszewa, oszacuj prawdopodobieństwo, że zmienna $X$ przybierze wartość różniącą się od średniej o więcej niż 6 (co do modułu).
+## Zadanie 3
+**Aproksymacja Poissona – niezawodność systemów**
 
-$$
-P(|X - E(X)| \ge \varepsilon) \le \frac{D^2(X)}{\varepsilon^2}
-$$
+Urządzenie składa się między innymi z 750 lamp. Prawdopodobieństwo awarii każdej lampy w ciągu jednej doby pracy urządzenia jest jednakowe i wynosi $p=0,004$. [cite_start]Obliczyć prawdopodobieństwo, że w ciągu jednej doby pracy urządzenia ulegnie awarii[cite: 160, 161, 162]:
 
-## Zadanie 3. Prawo Wielkich Liczb (Bernoulliego)
+a) 0 lamp,
+b) 1 lampa,
+c) 2 lampy,
+d) co najmniej 3 lampy.
 
-Wyjaśnij intuicyjny sens Prawa Wielkich Liczb na przykładzie rzutu monetą.
-Co dzieje się z częstością występowania orła ($\frac{k}{n}$) gdy liczba rzutów $n$ dąży do nieskończoności, zakładając, że moneta jest symetryczna ($p=0.5$)?
+[cite_start]*Komentarz: Zadanie to obrazuje stabilność dużych systemów składających się z wielu zawodnych elementów*[cite: 163].
 
-## Zadanie 4. Twierdzenie Moivre’a-Laplace’a (Rzuty monetą)
+## Zadanie 4
+**Centralne Twierdzenie Graniczne – sumowanie błędów**
 
-Rzucamy symetryczną monetą 100 razy. Oszacuj prawdopodobieństwo, że liczba orłów będzie się mieścić w przedziale $[45, 55]$.
+[cite_start]Pewien przyrząd pomiarowy robi błąd systematyczny $1$ m w stronę zawyżenia pomiaru i błąd losowy o rozkładzie $N(0; 0,5)$[cite: 164].
 
-Zastosuj Integralne Twierdzenie Moivre’a-Laplace’a, przybliżając rozkład dwumianowy rozkładem normalnym. Pamiętaj o parametrach: $\mu = np$, $\sigma = \sqrt{npq}$.
+a) Obliczyć wartość przeciętną błędu pomiaru.
+b) Wyznaczyć prawdopodobieństwo tego, że błąd, z jakim mierzone są badane przedmioty, nie przekracza $2$ m.
 
-## Zadanie 5. Centralne Twierdzenie Graniczne - Lindeberga-Lévy’ego (Winda)
+[cite_start]*Cel zadania: Ilustracja, jak błędy (zmienne losowe) sumują się, dając wynikowy rozkład normalny, co jest fundamentem CTG*[cite: 165].
 
-Winda towarowa ma ładowność 600 kg. Do windy pakujemy 80 paczek. Waga pojedynczej paczki jest zmienną losową o wartości oczekiwanej $m = 7$ kg i odchyleniu standardowym $\sigma = 2$ kg. Wagi paczek są niezależne.
+## Zadanie 5
+**Rozkład Normalny jako granica – produkcja masowa**
 
-Oblicz prawdopodobieństwo, że łączna waga paczek przekroczy dopuszczalną ładowność windy.
+Wytrzymałość stalowych lin pochodzących z produkcji masowej jest zmienną losową o rozkładzie $N(1000 \text{ kg/cm}^2, 50 \text{ kg/cm}^2)$. [cite_start]Obliczyć jaki procent lin ma wytrzymałość mniejszą od $900 \text{ kg/cm}^2$[cite: 166, 167].
 
-Wskazówka: Zmienna $S_{80} = \sum X_i$ ma w przybliżeniu rozkład normalny $N(n \cdot m, \sqrt{n} \cdot \sigma)$.
+[cite_start]*Komentarz: W produkcji masowej (duże $n$) cechy fizyczne produktów naturalnie układają się w rozkład normalny (krzywą Gaussa) dzięki działaniu Centralnego Twierdzenia Granicznego*[cite: 168].
 
-## Zadanie 6. Rozkład średniej z próby (Żarówki)
+## Zadanie 6
+**Zasada $3\sigma$ – odchylenia graniczne**
 
-Czas życia pewnego typu żarówki jest zmienną losową o średniej $\mu = 1000$ godzin i odchyleniu standardowym $\sigma = 200$ godzin. Pobrano losową próbę 100 żarówek.
+Automat produkuje nity. Średnice główek nitów są wartościami zmiennej losowej o rozkładzie $N(2; 0,1)$ (w mm). [cite_start]Jakie rozmiary średnicy z przedziału $(2-\epsilon, 2+\epsilon)$ można gwarantować z prawdopodobieństwem $0,95$? [cite: 169, 170, 171]
 
-Oblicz prawdopodobieństwo, że średni czas życia żarówek w tej próbie ($\bar{X}$) będzie się mieścił w przedziale $[980, 1020]$ godzin.
+[cite_start]*Cel zadania: Zrozumienie przedziałów ufności, które wynikają bezpośrednio z własności granicznych rozkładu normalnego*[cite: 172].
 
-$$
-Z = \frac{\bar{X} - \mu}{\sigma} \sqrt{n}
-$$
+## Zadanie 7
+**Stabilność częstości – Prawo Wielkich Liczb**
 
-## Zadanie 7. Suma błędów zaokrągleń (Rozkład jednostajny)
+Zmienna losowa $K$ ma rozkład dwumianowy z parametrami $n=5$ i $p=0,8$ (interpretacja: 5 dni pracy, szansa na brak awarii 0,8). [cite_start]Obliczyć prawdopodobieństwo $P(K=k)$ dla $k=0, 1, ..., 5$[cite: 173, 174].
 
-Księgowy sumuje 300 liczb. Każda liczba jest zaokrąglana do najbliższej liczby całkowitej. Błąd zaokrąglenia pojedynczej liczby ma rozkład jednostajny na przedziale $[-0.5, 0.5]$. Zakładamy, że błędy są niezależne.
+*Cel zadania: Choć $n$ jest małe, zadanie to służy jako punkt wyjścia do dyskusji: co by się stało, gdybyśmy obserwowali system przez 1000 dni? (Wtedy rozkład dążyłby do normalnego – Twierdzenie Moivre’a-Laplace’a)[cite_start]*[cite: 174, 175].
 
-Oblicz prawdopodobieństwo, że całkowity błąd sumy (suma błędów) co do modułu będzie mniejszy niż 5.
+## Zadanie 8
+**Sumowanie zmiennych niezależnych**
 
-Wskazówka: Dla rozkładu jednostajnego na $[a, b]$, wariancja wynosi $\frac{(b-a)^2}{12}$.
+Mamy dwie niezależne zmienne losowe o rozkładzie wykładniczym (np. czasy obsługi dwóch procesów). Zmienna $X_1$ ma parametr $\lambda$, zmienna $X_2$ też ma parametr $\lambda$. [cite_start]Pokazać (lub obliczyć dla konkretnych danych), że ich suma ma rozkład Erlanga[cite: 176, 177, 178].
 
-## Zadanie 8. Szacowanie wielkości próby
+*Komentarz: Jest to wstęp do twierdzenia, że suma wielu takich zmiennych dążyłaby do rozkładu normalnego. [cite_start]Dla informatyków ważne w modelowaniu kolejek*[cite: 179, 180].
 
-Chcemy oszacować procent mieszkańców miasta popierających budowę nowego parku.
+## Zadanie 9
+**Zastosowanie rozkładu normalnego w IT**
 
-Ile osób należy przepytać, aby z prawdopodobieństwem co najmniej 0.95 błąd oszacowania (różnica między frakcją z próby a prawdziwą frakcją $p$) nie przekraczał 3 punktów procentowych ($0.03$)?
-Ponieważ nie znamy $p$, przyjmij "najgorszy" wariant $p=0.5$.
+Czas (w minutach) między kolejnymi zgłoszeniami abonentów w centrali telefonicznej jest zmienną losową. [cite_start]Przy dużej liczbie abonentów, łączny czas oczekiwania na $n$ zgłoszeń można aproksymować[cite: 181, 182].
 
-## Zadanie 9. Suma czasów obsługi
+Zadanie (uproszczone): Czas między zgłoszeniami ma rozkład wykładniczy ($\lambda=2$). [cite_start]Obliczyć prawdopodobieństwo, że przed upływem 3 minut nastąpi zgłoszenie[cite: 183, 184].
 
-W urzędzie czeka 50 klientów. Czas obsługi jednego klienta jest zmienną losową o wartości oczekiwanej 8 minut i odchyleniu standardowym 4 minuty.
+[cite_start]*Cel: Zrozumienie procesu, który w granicy (dla wielu zgłoszeń) jest modelowany procesami Poissona/wykładniczymi*[cite: 184].
 
-Jaka jest szansa, że obsługa wszystkich klientów zajmie mniej niż 6.5 godziny (390 minut)?
+## Zadanie 10
+**Interpretacja histogramu - wizualizacja zbieżności**
 
-## Zadanie 10. Porównanie Czebyszewa i CTG
+[cite_start]Dla danych z zadania o czasie pracy sporządzić histogram prawdopodobieństwa[cite: 185].
 
-Zmienna losowa $X$ ma wartość oczekiwaną $\mu=50$ i odchylenie $\sigma=10$. Pobieramy próbę $n=100$.
-Chcemy oszacować prawdopodobieństwo:
-
-$$
-P(|\bar{X} - 50| < 2)
-$$
-
-1.  Oszacuj to prawdopodobieństwo korzystając z Nierówności Czebyszewa dla średniej.
-2.  Oblicz to prawdopodobieństwo przybliżając rozkład średniej rozkładem normalnym (CTG).
-
-Porównaj wyniki. Które oszacowanie jest dokładniejsze przy założeniu dużej liczby prób?
+*Cel: Zadanie graficzne. [cite_start]Pozwala zobaczyć, jak rozkład prawdopodobieństwa "wygląda" i intuicyjnie zrozumieć, że przy zwiększaniu liczby prób kształt ten będzie przypominał dzwon (rozkład normalny)*[cite: 186, 187].

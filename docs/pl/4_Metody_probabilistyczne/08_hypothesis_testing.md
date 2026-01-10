@@ -1,108 +1,57 @@
-# Weryfikacja parametrycznych i nieparametrycznych hipotez statystycznych
+# LISTA ZADAŃ NR 8: Weryfikacja hipotez statystycznych
 
-W tym dziale uczymy się podejmować decyzje dotyczące populacji na podstawie wyników próby. Zadania obejmują formułowanie hipotezy zerowej ($H_0$) i alternatywnej ($H_1$), dobór statystyki testowej oraz wyznaczanie obszaru krytycznego.
+## Zadanie 1
+W celu ustalenia, czy dotychczasowa norma okresu użytkowania pewnych podzespołów elektronicznych wynosząca 150 dni nie jest zbyt wysoka, zbadano losowo 65 podzespołów pracujących w normalnych warunkach. Otrzymano średnią długość okresu użytkowania $\bar{x} = 139$ dni oraz odchylenie standardowe $s = 9,8$ dni.
 
-## Zadanie 1. Błędy I i II rodzaju
+Na poziomie istotności $\alpha=0,01$ zweryfikować hipotezę, że norma jest zawyżona (Hipoteza $H_0: m = 150$ przeciw $H_1: m < 150$).
 
-W procesie weryfikacji hipotez możemy popełnić dwa rodzaje błędów.
+## Zadanie 2
+Porównujemy dwa algorytmy lub dwa urządzenia (np. wagi). Dla pierwszej serii $n_1=10$ pomiarów otrzymano średnią $\bar{x}_1 = 5,25$ i wariancję $s_1^2 = 0,06$. Dla drugiej serii $n_2=5$ pomiarów otrzymano $\bar{x}_2 = 5,58$ i wariancję $s_2^2 = 0,07$.
 
-* Zdefiniuj błąd I rodzaju ($\alpha$) oraz błąd II rodzaju ($\beta$).
-* Który z tych błędów jest zazwyczaj "groźniejszy" i dlaczego to właśnie prawdopodobieństwo popełnienia tego błędu (poziom istotności) ustalamy na samym początku badania (np. $\alpha = 0.05$)?
+Zakładając, że wariancje są równe (choć nieznane), zweryfikować na poziomie $\alpha=0,05$ hipotezę, że obie serie pochodzą z populacji o tej samej średniej ($H_0: m_1 = m_2$).
 
-## Zadanie 2. Test dla wartości średniej (znane odchylenie)
+## Zadanie 3
+Zbadano rozrzut opóźnień (jitter) w sieci. Oddano 50 strzałów (pomiarów) do tarczy. Okazało się, że wariancja tych odległości jest równa $s^2 = 107,3$.
 
-Producent twierdzi, że średnia zawartość białka w batonach wynosi 20g. Inspekcja podejrzewa, że jest ona niższa. Pobrano próbę 25 batonów, średnia wyniosła $\bar{x} = 19.5$g. Wiadomo, że odchylenie standardowe w populacji wynosi $\sigma = 1.0$g.
+Zakładając, że rozkład odległości jest normalny, zweryfikować na poziomie $\alpha=0,05$ hipotezę, że wariancja $\sigma^2 = 100$, wobec hipotezy alternatywnej $\sigma^2 > 100$.
 
-Zweryfikuj hipotezę producenta na poziomie istotności $\alpha = 0.05$.
+## Zadanie 4
+W pewnym przedsiębiorstwie (np. serwerowni) opracowano dwie metody obsługi zleceń. Aby sprawdzić, czy obie metody dają tak samo stabilne wyniki (jednakowe wariancje), wykonano pomiary.
 
-* $H_0: \mu = 20$
-* $H_1: \mu < 20$
+* Metoda 1: $n_1=5$, wariancja $s_1^2 = 0,248$.
+* Metoda 2: $n_2=5$, wariancja $s_2^2 = 2,172$.
 
-Skorzystaj ze statystyki $Z$ (rozkład normalny).
+Na poziomie $\alpha=0,05$ zweryfikować hipotezę $H_0: \sigma_1^2 = \sigma_2^2$.
 
-## Zadanie 3. Test dla wartości średniej (nieznane odchylenie)
+## Zadanie 5
+Wadliwość produkcji pewnych wyrobów (np. błędnych pakietów danych) wynosiła 10%. Wprowadzono nową technologię. Wylosowano próbkę $n=900$ sztuk i znaleziono w niej 50 sztuk wadliwych.
 
-Samochód ma spalać średnio 6.0 l/100km. Kierowca podejrzewa, że spalanie jest wyższe. Zmierzył spalanie w 16 trasach. Średnia wyniosła $\bar{x} = 6.4$ l/100km, a odchylenie z próby $s = 0.8$ l/100km.
+Czy na poziomie istotności $\alpha=0,05$ można twierdzić, że nowa technologia zmniejszyła wadliwość?
 
-Zweryfikuj hipotezę na poziomie istotności $\alpha = 0.01$.
+## Zadanie 6
+Obserwowano pod mikroskopem liczbę komórek drożdży w 400 kwadratach (w informatyce: liczba zapytań do serwera w jednostce czasu). Wyniki pogrupowano:
+0 komórek: 20 razy, 1 komórka: 43 razy, 2 komórki: 53 razy, itd.
 
-* Ponieważ $n < 30$ i nie znamy $\sigma$, skorzystaj z testu t-Studenta.
-* Ile stopni swobody ma ten rozkład?
+Na poziomie $\alpha=0,05$ zweryfikować hipotezę, że rozkład liczby komórek jest rozkładem Poissona.
 
-## Zadanie 4. Porównanie dwóch średnich
+## Zadanie 7
+Wynikami 5-elementowej próby są: $0,18; 0,56; 0,87; 1,37; 2,46$.
 
-Chcemy sprawdzić, czy nowa metoda nauczania (Grupa A) daje lepsze wyniki niż tradycyjna (Grupa B).
-Wyniki testu końcowego (punkty):
-* Grupa A: $n_1 = 50$, $\bar{x}_1 = 78$, $s_1 = 10$.
-* Grupa B: $n_2 = 60$, $\bar{x}_2 = 74$, $s_2 = 12$.
+Na poziomie istotności $\alpha=0,05$ zweryfikować hipotezę, że próba ta pochodzi z populacji o rozkładzie wykładniczym $f(x) = e^{-x}$ dla $x>0$.
 
-Na poziomie $\alpha = 0.05$ zweryfikuj hipotezę, że średnie wyniki w obu grupach są równe, przeciwko hipotezie, że w Grupie A są wyższe ($H_1: \mu_1 > \mu_2$).
+## Zadanie 8
+Pobrano próbkę $n=20$ pewnej cechy (np. czas reakcji aplikacji). Wartości uporządkowano rosnąco.
 
-## Zadanie 5. Test dla wskaźnika struktury (proporcji)
+Zweryfikować hipotezę o normalności rozkładu na poziomie $\alpha=0,10$, stosując test Shapiro-Wilka.
 
-Polityk twierdzi, że ma poparcie powyżej 40%. W sondażu na 1000 osób, 420 zadeklarowało poparcie dla niego.
+## Zadanie 9
+Zmierzono czasy wykonania pewnego zadania. Uporządkowano wyniki w kolejności otrzymywania (w czasie). Otrzymano ciąg reszt (odchyleń od średniej):
+$+, +, -, -, +, +, +, -, -, -, -, +, +, -, ...$
 
-Czy wynik ten pozwala (na poziomie istotności $\alpha = 0.05$) przyjąć twierdzenie polityka za prawdziwe?
-Sformułuj $H_0: p = 0.4$ oraz $H_1: p > 0.4$.
+Liczba serii (zmian znaku) w tym ciągu wynosi $k=9$. Łączna liczba "plusów" $n_1$ i "minusów" $n_2$ jest znana. Zweryfikować hipotezę, że dobór próby był losowy (tzn. nie występował trend czasowy ani cykliczność).
 
-## Zadanie 6. Test dla wariancji
+## Zadanie 10
+Dla 7 par pomiarów (np. wydajność przed i po aktualizacji sterownika) odnotowano, czy wynik się poprawił (+), czy pogorszył (-). Otrzymano sekwencję:
+$+, -, +, +, +, +, -$.
 
-Automat ma napełniać butelki tak, aby wariancja objętości nie przekraczała $4 \text{ ml}^2$.
-Pobrano próbę 20 butelek i obliczono wariancję z próby $s^2 = 6.5 \text{ ml}^2$.
-
-Czy na poziomie istotności $\alpha = 0.05$ można stwierdzić, że automat jest rozregulowany (wariancja jest istotnie większa niż 4)?
-
-Statystyka testowa:
-
-$$
-\chi^2 = \frac{(n-1)s^2}{\sigma_0^2}
-$$
-
-## Zadanie 7. Test zgodności $\chi^2$ (Kostka)
-
-Rzucono kostką do gry 60 razy. Otrzymano następujące liczności oczek:
-
-| Oczka | 1 | 2 | 3 | 4 | 5 | 6 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Liczność** | 8 | 12 | 9 | 15 | 10 | 6 |
-
-Sprawdź hipotezę, że kostka jest symetryczna (każda ścianka wypada z prawdopodobieństwem $1/6$). Przyjmij $\alpha = 0.05$.
-
-Wzór na statystykę:
-
-$$
-\chi^2 = \sum_{i=1}^k \frac{(n_i - n p_i)^2}{n p_i}
-$$
-
-## Zadanie 8. Test niezależności $\chi^2$
-
-W badaniu sprawdzano, czy istnieje zależność między płcią a preferencjami dotyczącymi gatunku filmowego. Wyniki ankiety:
-
-| Płeć \ Film | Akcja | Komedia | Dramat | Razem |
-| :--- | :---: | :---: | :---: | :---: |
-| **Kobiety** | 20 | 50 | 30 | 100 |
-| **Mężczyźni** | 60 | 30 | 10 | 100 |
-
-* Sformułuj hipotezę zerową o niezależności cech.
-* Oblicz liczności teoretyczne (oczekiwane) dla każdej komórki.
-* Wykonaj test $\chi^2$ na poziomie $\alpha = 0.01$.
-
-## Zadanie 9. Wartość p (p-value)
-
-W teście statystycznym otrzymano wartość statystyki, dla której tzw. wartość $p$ (p-value) wynosi $0.03$.
-
-Jaką decyzję należy podjąć, jeśli przyjęty poziom istotności wynosi:
-
-* $\alpha = 0.05$?
-* $\alpha = 0.01$?
-
-Wyjaśnij interpretację $p$-value jako "najmniejszego poziomu istotności, przy którym możemy odrzucić $H_0$".
-
-## Zadanie 10. Moc testu
-
-Badacz chce zwiększyć moc testu ($1 - \beta$), czyli prawdopodobieństwo odrzucenia hipotezy zerowej, gdy jest ona rzeczywiście fałszywa.
-
-Jakie działania może podjąć? Przeanalizuj wpływ:
-
-* Zwiększenia liczebności próby $n$.
-* Zmiany poziomu istotności $\alpha$.
+Zweryfikować hipotezę, że aktualizacja nie ma wpływu na wydajność (prawdopodobieństwo poprawy $p=0,5$).

@@ -1,111 +1,94 @@
-# Parameters of Random Variable Distributions
+# TASK LIST NO. 3: Parameters of Random Variable Distribution
+(Expected value, variance, moments, correlation)
 
-In this section, we deal with determining basic numerical characteristics of random variables, such as expected value (mean), variance, standard deviation, and parameters for two-dimensional variables (covariance, correlation).
+## Task 1
+For a random variable $X$ with the probability function given by the table:
 
-## Task 1. Expected value and variance (discrete distribution)
+| $x_i$ | -2 | 2 | 4 |
+| :--- | :--- | :--- | :--- |
+| $p_i$ | 0.5 | 0.3 | 0.2 |
 
-Given is a random variable $X$ with a discrete distribution:
+Determine:
 
-| $x_i$ | -2 | 0 | 2 | 4 |
-| :--- | :---: | :---: | :---: | :---: |
-| $p_i$ | 0.1 | 0.4 | 0.3 | 0.2 |
+a) The expected value $E(X)$ (mean).
+b) The variance $D^2(X)$ (using the formula $D^2(X) = E(X^2) - (EX)^2$).
+c) The standard deviation $\sigma$.
+d) The median $x_{0.5}$ (middle value).
 
-Calculate:
-
-* Expected value $E(X)$.
-* Second ordinary moment $E(X^2)$.
-* Variance $D^2(X)$ (using the formula $D^2(X) = E(X^2) - (E(X))^2$).
-* Standard deviation $\sigma(X)$.
-
-## Task 2. Properties of expected value and variance
-
-The random variable $X$ has parameters: $E(X) = 5$ and $D^2(X) = 4$.
-Let us define a new random variable $Y = 3X - 2$.
-
-Using the properties of linearity of the expected value and quadratic scalability of variance, calculate:
-
-* $E(Y)$
-* $D^2(Y)$
-* $\sigma(Y)$
-
-Reminder: $D^2(aX + b) = a^2 D^2(X)$.
-
-## Task 3. Gambling game (interpretation of expected value)
-
-The game consists of rolling a six-sided die.
-
-* If you roll a 6, you win 10 PLN.
-* If you roll a 4 or 5, you win 2 PLN.
-* In other cases, you lose the entry stake (you win nothing).
-
-The fee for participating in the game is 2 PLN.
-Is the game fair? Calculate the expected value of the player's net profit.
-
-## Task 4. Expected value of a continuous variable
-
-The random variable $X$ has a density function:
+## Task 2
+The monthly cost $U$ of running a certain system depends on the number $X$ of active users (employees) according to the formula:
 
 $$
-f(x) = \begin{cases} 
-0.5 x & \text{for } x \in [0, 2] \\
-0 & \text{for } x \notin [0, 2]
-\end{cases}
+U = 15000X + 10000\sqrt{X}
 $$
 
-Calculate the expected value $E(X)$.
+The number of employees $X$ is a random variable with the distribution:
 
-Formula: $E(X) = \int_{-\infty}^{\infty} x f(x) dx$.
+| $x_i$ | 2 | 3 | 4 | 5 |
+| :--- | :--- | :--- | :--- | :--- |
+| $p_i$ | 0.10 | 0.25 | 0.40 | 0.25 |
 
-## Task 5. Variance of a continuous variable
+Calculate the predicted average monthly cost, i.e., the expected value of the variable $U$.
 
-For the random variable from Task 4, calculate the variance $D^2(X)$.
+*Hint: Calculate $u_i$ for each $x_i$, and then apply the formula for the expected value.*
 
-Hint: First calculate $E(X^2) = \int_{-\infty}^{\infty} x^2 f(x) dx$.
+## Task 3
+A random variable $X$ (e.g., measurement error) has a distribution with the density:
 
-## Task 6. Median and mode
+$$
+f(x) = \begin{cases}6x(1-x) & \text{for } 0 < x < 1 \\0 & \text{for other } x\end{cases}
+$$
 
-For the density function from Task 4 ($f(x) = 0.5x$ on the interval $[0, 2]$):
+Calculate the average (expected) value and the variance of this variable. Then calculate the variance of the linearly dependent variable $Y = 2X - 1$ (use the property of variance: $D^2(aX+b) = a^2 D^2(X)$).
 
-* Determine the **median** ($Me$), i.e., the value $x$ that divides the area under the density graph into two equal parts ($\int_{-\infty}^{Me} f(x) dx = 0.5$).
-* Determine the **mode** ($Mo$), i.e., the value $x$ for which the density function reaches a local maximum.
+## Task 4
+A random variable $X$ has a distribution with the density:
 
-## Task 7. Covariance of random variables
+$$
+f(x) = \begin{cases}\frac{1}{2}x & \text{for } 0 \leqslant x \leqslant 2 \\0 & \text{otherwise}\end{cases}
+$$
 
-Given is the joint distribution of variables $(X, Y)$:
+Determine the mode (the value for which the density is greatest) and the median (the value that divides the area under the density graph into two equal halves).
 
-| X \ Y | 2 | 5 |
-| :--- | :---: | :---: |
-| **1** | 0.2 | 0.3 |
-| **3** | 0.4 | 0.1 |
+## Task 5
+The height of people in a certain group is a random variable $X$ with a mean $EX = 170$ cm and a standard deviation $\sigma_X = 5$ cm. The mass of these people is a variable $Y$ with a mean $EY = 65$ kg and a standard deviation $\sigma_Y = 5$ kg.
 
-Perform the commands:
+Which feature (height or weight) is more "stable" (has a smaller relative dispersion)?
 
-* Calculate the marginal expected values: $E(X)$ and $E(Y)$.
-* Calculate the expected value of the product: $E(XY) = \sum \sum x_i y_j p_{ij}$.
-* Calculate the covariance $Cov(X, Y) = E(XY) - E(X)E(Y)$.
+*Hint: Calculate the coefficient of variation $v = \frac{\sigma}{EX}$ for both variables.*
 
-## Task 8. Linear correlation coefficient
+## Task 6
+The probability of not exceeding the daily electricity consumption limit by a certain plant is $p=0.8$. We observe this plant for $n=5$ days. Let $X$ denote the number of days in which the limit was not exceeded.
 
-Based on the results from Task 7:
+a) What type of distribution is this? Provide the formula for the probability $P(X=k)$.
+b) Calculate the expected value and variance of the variable $X$, using the ready-made formulas for this distribution ($EX=np$, $D^2X=npq$).
 
-* Calculate the marginal variances $D^2(X)$ and $D^2(Y)$.
-* Calculate the standard deviations $\sigma_X$ and $\sigma_Y$.
-* Calculate the Pearson correlation coefficient $\rho(X, Y) = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}$.
-* Interpret the result (is the correlation strong/weak, positive/negative).
+## Task 7
+The time (in minutes) between consecutive subscriber calls at a telephone exchange is a random variable with an exponential distribution with the parameter $\lambda = 2$.
 
-## Task 9. Variance of sum and difference
+a) Calculate the average waiting time for a call ($EX$).
+b) Calculate the probability that the time between calls will be shorter than 3 minutes ($P(X<3)$).
 
-It is known that $D^2(X) = 9$, $D^2(Y) = 16$, and the covariance $Cov(X, Y) = 2$.
+## Task 8
+A machine produces weights. Mass measurement errors have a normal distribution with an expected value $\mu=0$ g and a standard deviation $\sigma=0.01$ g. Calculate the probability that the measurement error (in terms of modulus) does not exceed $0.02$ g.
 
-Calculate the variance of the sum and difference of these variables:
+*Hint: Use the cumulative distribution function of the standardized normal distribution $\Phi(u)$. Note that $P(|X|<a) = P(-a < X < a)$.*
 
-* $D^2(X + Y)$
-* $D^2(X - Y)$
+## Task 9
+Given is a two-dimensional random variable $(X, Y)$ with the distribution given in the table (representing, for example, test results at two different moments in time):
 
-Formula: $D^2(X \pm Y) = D^2(X) + D^2(Y) \pm 2Cov(X, Y)$.
+| $y_k \backslash x_i$ | 8 | 9 | 10 | 11 |
+| :--- | :--- | :--- | :--- | :--- |
+| **1.2** | 0.10 | 0.04 | 0 | 0 |
+| **1.3** | 0.05 | 0.11 | 0.20 | 0 |
+| **1.4** | 0 | 0.10 | 0.15 | 0.10 |
+| **1.5** | 0 | 0 | 0.05 | 0.10 |
 
-## Task 10. Central vs ordinary moment
+Calculate the linear correlation coefficient $\rho$ between variables $X$ and $Y$.
 
-Explain the difference between the ordinary moment of order $k$ ($m_k = E(X^k)$) and the central moment of order $k$ ($\mu_k = E[(X - E(X))^k]$).
+*Hint: Calculate sequentially: means $EX, EY$, variances $D^2X, D^2Y$, and the mixed moment $E(XY) = \sum x_i y_k p_{ik}$. Covariance is $cov(X,Y) = E(XY) - EX \cdot EY$.*
 
-Calculate the third central moment $\mu_3$ (unstandardized skewness) for a random variable with the distribution: $P(X=-1)=0.5, P(X=1)=0.5$.
+## Task 10
+Let $X$ and $Y$ be independent random variables with zero average values ($EX=0, EY=0$). Show that for any $n \in N$, the variables $X$ and $X^n$ as well as $Y$ and $E(X^3)EY$ satisfy the equality: $E(X^3 Y) = E(X^3)E(Y)$.
+
+Does the variable $Z = X^3 Y$ have an expected value equal to 0? What does this mean in the context of random signals (noise)?

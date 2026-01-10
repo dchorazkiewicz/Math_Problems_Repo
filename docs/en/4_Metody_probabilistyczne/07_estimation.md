@@ -1,107 +1,58 @@
-# Point and Interval Estimation
+# TASK LIST NO. 7: Point and Interval Estimation
 
-In this section, we deal with inferring population parameters based on a sample. The tasks are divided into point estimation (finding a single number) and interval estimation (finding an interval that covers the unknown parameter with a given probability).
+## Task 1
+[cite_start]Find the confidence interval for the unknown mean value $\mu$ of a population, in the case where $\sigma$ is known, based on an $n$-element simple sample $X_1, ..., X_n$[cite: 231].
 
-## Task 1. Unbiased estimator
+[cite_start]Data: From a population with a standard deviation $\sigma=0.14$, a sample of $n=100$ elements was taken (e.g., voltage measurements on a processor)[cite: 232]. The sample mean was $\bar{x}=2.5$. [cite_start]Determine the 95% confidence interval for the mean (assume $1-\alpha = 0.95$, which gives $u_{\alpha} = 1.96$)[cite: 233].
 
-We have a random sample $X_1, X_2, \dots, X_n$ from a population with expected value $\mu$ and variance $\sigma^2$.
-We consider two estimators of the mean:
+## Task 2
+[cite_start]The durability of 10 randomly selected structural elements was measured (or e.g., battery life of 10 laptops)[cite: 235]. [cite_start]The following results were obtained: $383, 284, 339, 340, 305, 386, 378, 335, 344, 346$[cite: 236].
 
-1.  $\hat{\mu}_1 = \frac{1}{n} \sum_{i=1}^n X_i$ (arithmetic mean)
-2.  $\hat{\mu}_2 = \frac{X_1 + X_n}{2}$ (mean of the first and last element)
+[cite_start]Assuming that the distribution of the feature is normal, determine the 95% confidence interval for the mean durability[cite: 236].
 
-Check if both estimators are unbiased (i.e., if $E(\hat{\Theta}) = \Theta$).
-Which of them is better (more efficient)? Compare their variances.
+[cite_start]*Hint: Since $n=10$ is small ($n<30$) and we do not know $\sigma$, calculate $s$ from the sample and use the Student's t-distribution*[cite: 237].
 
-## Task 2. Method of Moments
+## Task 3
+[cite_start]To determine the electron charge, 26 measurements were made using the Millikan method[cite: 239]. [cite_start]A mean of $\bar{x} = 1.574 \cdot 10^{-19}$ and a standard deviation of $s = 0.043 \cdot 10^{-19}$ were obtained[cite: 240].
 
-The random variable $X$ has a uniform distribution on the interval $[0, a]$, where $a > 0$ is an unknown parameter. The density is expressed by the formula $f(x) = \frac{1}{a}$ for $x \in [0, a]$.
+[cite_start]Determine the confidence interval for the mean charge at a confidence level of $0.99$[cite: 240].
 
-Determine the estimator of parameter $a$ using the method of moments.
+## Task 4
+[cite_start]A 300-element sample was taken from a population of cotton fibers and their lengths were measured[cite: 242]. [cite_start]The mean $\bar{x}=27.43$ mm and variance $s^2=51.598$ were calculated[cite: 243].
 
-Hint: Compare the theoretical moment $E(X) = \frac{a}{2}$ with the empirical moment (sample mean $\bar{X}$).
+[cite_start]Find the 95% realization of the confidence interval for the unknown average fiber length[cite: 243].
 
-## Task 3. Maximum Likelihood Estimation (MLE)
+[cite_start]*Hint: With such a large $n$ ($n=300$), the Student's t-distribution is practically identical to the normal distribution, so the statistic $u_{\alpha}$ can be used*[cite: 244].
 
-The random variable $X$ has a Poisson distribution with an unknown parameter $\lambda$:
+## Task 5
+[cite_start]Measurements of sea depth (or e.g., network latency) are made in a certain specific location[cite: 246].
 
-$$
-P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}
-$$
+[cite_start]How many independent measurements must be made to assume with a confidence level of $0.95$ that the absolute error of estimating the mean will not exceed $10$ m, if the error distribution is normal with a variance of $\sigma^2 = 180$ $m^2$? [cite: 247]
 
-Based on the sample $x_1, x_2, \dots, x_n$, determine the estimator of parameter $\lambda$ using the maximum likelihood method.
+## Task 6
+[cite_start]Among 120 randomly selected employees of a certain plant, 17 did not meet the work performance standard (in IT: 17 out of 120 servers did not meet SLA requirements)[cite: 249].
 
-Steps:
-1. Write the likelihood function $L(\lambda)$.
-2. Write the logarithm of the likelihood function $\ln L(\lambda)$.
-3. Calculate the derivative with respect to $\lambda$ and equate to zero.
+[cite_start]Determine the 95% realization of the confidence interval for the fraction $p$ of employees not meeting the standard in the entire plant[cite: 249].
 
-## Task 4. Confidence interval for the mean (known deviation)
+## Task 7
+[cite_start]15 measurements were made of the time to repair yarn breaks on looms[cite: 251]. The sample variance was calculated as $s^2 = 134.2$. [cite_start]Assuming that this time has a normal distribution, determine the 90% confidence interval for the variance $\sigma^2$ and the standard deviation $\sigma$[cite: 252].
 
-The reaction time of 50 drivers was measured. The sample mean was $\bar{x} = 0.8$ s. From previous studies, it is known that the standard deviation of reaction time in the population is $\sigma = 0.15$ s.
+[cite_start]*Hint: Use the chi-square ($\chi^2$) distribution tables*[cite: 253].
 
-Construct a 95% confidence interval for the mean reaction time of all drivers.
+## Task 8
+[cite_start]Two samples were drawn for a certain feature with a normal distribution[cite: 255]:
 
-Model:
+* Sample 1: $n=25$, mean $\bar{x}=15$, deviation $s=5$.
+* Sample 2: $n=100$, mean $\bar{x}=15$, deviation $s=5$.
 
-$$
-\mu \in \left( \bar{X} - u_{1-\alpha/2} \frac{\sigma}{\sqrt{n}}; \ \bar{X} + u_{1-\alpha/2} \frac{\sigma}{\sqrt{n}} \right)
-$$
+[cite_start]Calculate the lengths of the 95% confidence intervals for both samples[cite: 255]. [cite_start]How does a fourfold increase in sample size affect precision (interval width)? [cite: 256]
 
-## Task 5. Confidence interval for the mean (unknown deviation)
+## Task 9
+A simple sample of size $n=5$ is given: $\{2, 4, 6, 8, 10\}$. [cite_start]Calculate the value of the unbiased estimator of the expected value ($\bar{x}$) and the unbiased estimator of the variance ($s^2$)[cite: 257].
 
-A small sample of 10 candy bars was drawn and weighed. The results obtained were:
-Mean weight $\bar{x} = 52$ g, sample standard deviation $s = 3$ g.
-We assume that the weight of the candy bars has a normal distribution.
+[cite_start]Explain why we divide by $n-1$ instead of $n$ for variance[cite: 258].
 
-Determine a 98% confidence interval for the average weight of a candy bar.
-Use the Student's t-distribution.
+## Task 10
+The table presents the results of the percentage starch content in 80 potatoes (data grouped into a frequency distribution). [cite_start]The sample mean is $\bar{x}=17.525\%$, and the standard deviation is $s=1.84\%$[cite: 260].
 
-## Task 6. Confidence interval for the structure index (proportion)
-
-In a public opinion poll, 1000 random people were asked if they support the construction of a new road. 600 people answered "YES".
-
-Determine a 90% confidence interval for the fraction of people supporting the construction in the entire population.
-
-Model:
-
-$$
-p \in \left( \frac{m}{n} - u_{1-\alpha/2} \sqrt{\frac{\frac{m}{n}(1-\frac{m}{n})}{n}}; \ \dots \right)
-$$
-
-## Task 7. Minimum sample size
-
-We plan to estimate the average height of students. We want the estimation error (half the length of the confidence interval) not to exceed $d = 1$ cm, with a confidence level of $0.95$. Preliminary studies suggest that the standard deviation is $\sigma = 10$ cm.
-
-How large a sample needs to be taken?
-
-$$
-n \ge \left( \frac{u_{1-\alpha/2} \cdot \sigma}{d} \right)^2
-$$
-
-## Task 8. Confidence interval for variance
-
-The accuracy of a drug dispensing machine was tested. A sample of 20 ampoules was taken. The sample variance was $s^2 = 0.04 \text{ ml}^2$. We assume normality of distribution.
-
-Construct a 95% confidence interval for the variance $\sigma^2$ of the machine's dispensing error.
-
-Use the $\chi^2$ (chi-squared) distribution.
-
-## Task 9. Interpretation of the confidence interval
-
-We calculated a 95% confidence interval for the average salary: $[4500, 5500]$.
-Which statement is correct?
-
-A. "There is a 95% chance that the average salary falls into this specific interval".
-B. "This interval is one of many possible intervals; in 95% of cases, intervals constructed this way cover the true, unknown constant value of parameter $\mu$".
-
-Justify the answer.
-
-## Task 10. Accuracy vs confidence level
-
-What will happen to the width of the confidence interval (estimation precision) if:
-
-* We increase the sample size $n$ (with unchanged confidence level)?
-* We increase the confidence level $1-\alpha$ (e.g., from 0.95 to 0.99) with unchanged $n$?
-
-Explain the mechanism of operation.
+[cite_start]Assuming a confidence level of 0.95, estimate the average starch content in the entire batch[cite: 260].

@@ -1,122 +1,91 @@
-# One-dimensional and Two-dimensional Random Variables
+# TASK LIST NO. 2: Random Variables (One-dimensional and Two-dimensional)
 
-The following tasks concern the concept of a random variable, determining the probability function (for discrete variables), probability density (for continuous variables), and determining marginal distributions for two-dimensional variables.
+## Task 1
+A test was conducted in a student group. Let $X$ denote the grade (on a four-point scale) of a randomly selected student. Is $X$ a random variable?
 
-## Task 1. Discrete random variable
+If we assume that the group consists of 10 people, and their grades form the set $\{5, 4, 3, 3, 4, 5, 3, 3, 4, 2\}$, how should this random variable be defined, and what is the probability of obtaining individual grades?
 
-The random variable $X$ has a probability distribution defined by the table:
+## Task 2
+Assuming that the ratio of very good, good, satisfactory, and failing grades is $1:3:4:2$, determine for the random variable $X$ defined there:
 
-| $x_i$ | -2 | -1 | 0 | 1 | 3 |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| $p_i$ | 0.1 | $C$ | 0.2 | 0.3 | 0.1 |
+a) the probability mass function and its graph,
+b) the cumulative distribution function (CDF) and its graph,
+c) the probability $P(X < 3.5)$.
 
-Perform the commands:
-
-* Determine the constant $C$.
-* Calculate the probability $P(X > 0)$.
-* Calculate the probability $P(-1 \le X < 3)$.
-
-## Task 2. CDF of a discrete variable
-
-Based on the table from Task 1 (after determining the constant $C$):
-
-* Determine the formula for the cumulative distribution function $F(x) = P(X \le x)$.
-* Draw the graph of the CDF.
-* Using the CDF, calculate $P(X \le 0.5)$.
-
-## Task 3. Continuous random variable – determining the constant
-
-The density function of the random variable $X$ is given by the formula:
+## Task 3
+The monthly cost $u$ of running an example laboratory depends on the number $x$ of employees hired. Let us assume that this dependence is of the form:
 
 $$
-f(x) = \begin{cases} 
-a \cdot x^2 & \text{for } x \in [0, 3] \\
-0 & \text{for } x \notin [0, 3]
-\end{cases}
+u = 15000x + 10000\sqrt{x}
 $$
 
-Perform the commands:
+The number of employees is treated as a random variable $X$ with the distribution:
 
-* Determine the value of parameter $a$ so that $f(x)$ is a density function.
-* Calculate the probability $P(1 < X < 2)$.
+| $x_i$ | 2 | 3 | 4 | 5 |
+| :--- | :--- | :--- | :--- | :--- |
+| $p_i$ | 0.10 | 0.25 | 0.40 | 0.25 |
 
-## Task 4. CDF of a continuous variable
+Determine the probability function of costs (random variable $U$).
 
-Given is the density function:
-
-$$
-f(x) = \begin{cases} 
-0.5 & \text{for } x \in [0, 2] \\
-0 & \text{for } x \notin [0, 2]
-\end{cases}
-$$
-
-* Determine the cumulative distribution function $F(x)$ of this random variable.
-* Check if the function $F(x)$ is continuous.
-
-## Task 5. Function of a random variable
-
-Let $X$ be a discrete random variable with the distribution:
-
-| $x_i$ | -1 | 0 | 1 | 2 |
-| :--- | :---: | :---: | :---: | :---: |
-| $p_i$ | 0.2 | 0.3 | 0.4 | 0.1 |
-
-Let us define a new random variable $Y = X^2$.
-
-* Determine the probability distribution of the random variable $Y$ (create a table).
-* Calculate $P(Y = 1)$.
-
-## Task 6. Two-dimensional discrete random variable
-
-The joint distribution of the two-dimensional random variable $(X, Y)$ is presented in the table:
-
-| X \ Y | 1 | 2 | 3 |
-| :--- | :---: | :---: | :---: |
-| **0** | 0.10 | 0.15 | 0.05 |
-| **1** | 0.20 | 0.30 | 0.20 |
-
-Perform the commands:
-
-* Check if the sum of probabilities equals 1.
-* Determine the marginal distributions of variable $X$ and variable $Y$.
-* Write the marginal distributions in the form of tables.
-
-## Task 7. Independence of random variables (discrete)
-
-Using the data from Task 6, check if the random variables $X$ and $Y$ are independent.
-
-Reminder: Variables are independent if for every pair $(x_i, y_j)$ the following holds:
+## Task 4
+In many situations (e.g., in computer science and electronics), it can be assumed that the time $X$ of failure-free operation of a tested device is a continuous random variable with the density:
 
 $$
-P(X=x_i, Y=y_j) = P(X=x_i) \cdot P(Y=y_j)
+f(x) = \begin{cases}\frac{1}{\lambda} \exp\left(-\frac{x}{\lambda}\right) & \text{for } x > 0 \\0 & \text{for other } x\end{cases}
 $$
 
-## Task 8. Conditional distribution
+(this is the so-called exponential distribution). Let the parameter $\lambda = 10$ (e.g., hours).
 
-Using the table from Task 6:
+a) Calculate the probability that the device will operate without failure from 5 to 10 hours: $P(5 \leqslant X \leqslant 10)$.
+b) Determine the cumulative distribution function of this random variable.
 
-* Determine the conditional distribution of variable $Y$ given that $X = 0$.
-* Calculate $P(Y > 1 | X = 1)$.
-
-## Task 9. Two-dimensional continuous random variable
-
-The density function of the two-dimensional random variable $(X, Y)$ is given by the formula:
+## Task 5
+Select constants $A$ and $B$ such that the function defined by the formula:
 
 $$
-f(x, y) = \begin{cases} 
-C \cdot (x + y) & \text{for } 0 \le x \le 1, \ 0 \le y \le 1 \\
-0 & \text{otherwise}
-\end{cases}
+F(x) = A + B \arctan x \quad \text{for } -\infty < x < \infty
 $$
 
-* Determine the constant $C$.
-* Calculate the probability of hitting the square $0 \le x \le 0.5, \ 0 \le y \le 0.5$.
+is the cumulative distribution function of a certain continuous random variable $X$. Then determine the density of this variable.
 
-## Task 10. Marginal distributions of a continuous variable
+## Task 6
+A certain mechanism consists of two gears: a large one and a small one. Technical conditions during the assembly of the device are violated if both gears have positive thickness deviations ("plus") or if both have negative deviations ("minus"). Consider zero-one random variables $X$ and $Y$:
 
-For the density function from Task 9 (assuming the calculated $C$):
+* $X=1$, if the large gear is "plus", $X=0$ if "minus".
+* $Y=1$, if the small gear is "plus", $Y=0$ if "minus".
 
-* Determine the marginal density $f_X(x)$ of the random variable $X$.
-* Determine the marginal density $f_Y(y)$ of the random variable $Y$.
-* Are variables $X$ and $Y$ independent?
+The probabilities of these events occurring are as follows:
+$P(X=0, Y=0) = P(X=1, Y=1) = \frac{1}{4}$ (failure/bad assembly)
+$P(X=0, Y=1) = P(X=1, Y=0) = \frac{1}{4}$ (good assembly)
+
+Determine the joint distribution table of this two-dimensional variable and calculate the probability that the assembly is correct.
+
+## Task 7
+The two-dimensional random variable $(X, Y)$ has a distribution defined in the table:
+
+| $Y \backslash X$ | 1 | 2 | 3 |
+| :--- | :--- | :--- | :--- |
+| **2** | 0.1 | 0.2 | 0.3 |
+| **4** | 0.1 | 0.1 | 0.2 |
+
+Determine the cumulative distribution function of the marginal distribution of the random variable $Y$.
+
+## Task 8
+Two people from city A are trying to establish a telephone connection with city B. Let $X$ denote the number of attempts by the first person, and $Y$ – the number of attempts by the second person. We assume that each person connects independently. It is known that the probability distributions of the number of attempts for both persons are as follows:
+
+* For person 1 ($X$): $P(X=1)=0.6$, $P(X=2)=0.4$
+* For person 2 ($Y$): $P(Y=1)=0.5$, $P(Y=2)=0.5$
+
+Determine the joint distribution of the two-dimensional variable $(X, Y)$ (table), assuming the independence of attempts by both persons.
+
+## Task 9
+Select the constant $c$ such that the function:
+
+$$
+f(x, y) = \begin{cases}cxy & \text{for } 0 \leqslant x \leqslant 2 \land 0 \leqslant y \leqslant 1 \\0 & \text{for other } (x, y)\end{cases}
+$$
+
+is the density of the two-dimensional random variable $(X, Y)$.
+
+## Task 10
+For the density function from Task 9 (after determining $c$), determine the marginal densities $f_1(x)$ and $f_2(y)$. Check whether the variables $X$ and $Y$ are independent (i.e., whether $f(x,y) = f_1(x) \cdot f_2(y)$).

@@ -1,105 +1,70 @@
-# Basic Statistics and Their Distributions
+# TASK LIST NO. 6: Basic Statistics and Their Distributions
 
-This chapter serves as a bridge between probability theory and statistical inference. Here you will find tasks concerning calculating parameters from a sample (mean, variance) and definitions of key statistical distributions (chi-squared, Student's t).
+## Task 1
+A sample of $n=50$ elements was taken from a general population (e.g., server response times in ms). Raw results were obtained: $3.6, 5.0, 4.0, 4.7...$ (full data in the set).
 
-## Task 1. Parameters of a simple sample
+Prepare a **frequency distribution** (frequency table) for the given sample, assuming the number of classes $k=7$.
 
-A simple random sample of size $n=5$ was taken. The measurement results are: $2, 5, 8, 3, 7$.
-
-Calculate the basic numerical characteristics of this sample:
-
-* Arithmetic mean $\bar{X}$.
-* Sample variance $S^2$ (unbiased, with divisor $n-1$).
-* Sample standard deviation $S$.
-* Range $R$ (difference between the largest and smallest value).
-
-$$
-\bar{X} = \frac{1}{n}\sum_{i=1}^n X_i, \quad S^2 = \frac{1}{n-1}\sum_{i=1}^n (X_i - \bar{X})^2
-$$
-
-## Task 2. Biased vs unbiased variance
-
-Explain the difference between the formula for variance with the divisor $n$ and the formula with the divisor $n-1$.
-Why do we prefer the divisor $n-1$ in statistics (when estimating the unknown population variance)?
-
-Calculate the "biased variance" for the data from Task 1 and compare it with the unbiased variance.
-
-## Task 3. Empirical CDF
-
-For the data from Task 1 ($2, 5, 8, 3, 7$):
-
-* Order the sample non-decreasingly (create a so-called order statistic).
-* Determine the values of the empirical cumulative distribution function $F_n(x)$.
-* Draw the graph of the empirical CDF (step function).
-
-$$
-F_n(x) = \frac{\text{number of sample elements} \le x}{n}
-$$
-
-## Task 4. Order statistics (Quartiles)
-
-For a larger sample consisting of 12 elements:
-$10, 12, 15, 16, 18, 20, 22, 25, 28, 30, 35, 40$.
+## Task 2
+For an ordered sample (e.g., number of code errors in subsequent modules):
+$3.0, 3.1, 3.3, 3.4, ..., 6.4$ (a total of 50 results).
 
 Determine:
 
-* Median ($Me$ or $Q_2$).
-* Lower quartile ($Q_1$).
-* Upper quartile ($Q_3$).
-* Interquartile range ($IQR = Q_3 - Q_1$).
+a) **Median** ($m_e$) – the middle value (resistant to extreme values, so-called *outliers*).
+b) **Mode** ($m_o$) – the most frequent value.
 
-## Task 5. Distribution of the sample mean
+## Task 3
+In a certain chemical experiment (or processor production process), the amount of pure substance was investigated. For 5 measurements, the following results were obtained: $3.5, 3.4, 2.1, 5.4, 1.1$.
 
-A random variable in the population has a normal distribution $N(\mu=50, \sigma=10)$. We take a sample of size $n=25$.
+Calculate:
 
-What distribution does the statistic $\bar{X}$ (sample mean) have?
-Provide the parameters of this distribution (expected value and standard deviation of the mean, so-called standard error).
+a) The arithmetic mean of the sample $\bar{x}$.
+b) The sample variance $s^2$ (using the formula for a small sample).
+c) The standard deviation $s$.
 
-## Task 6. Chi-squared distribution ($\chi^2$)
+## Task 4
+A vehicle (or a data packet in a network) traveled a path consisting of three sections of the same length but with different speeds: $v_1=50, v_2=60, v_3=70$ km/h. Calculate the average speed over the entire route.
 
-Define the $\chi^2$ (chi-squared) distribution.
-If variables $Z_1, Z_2, \dots, Z_n$ are independent and have a standard normal distribution $N(0, 1)$, what distribution does the sum of their squares have:
+*Hint: Use the harmonic mean, not the arithmetic mean.*
+
+## Task 5
+Two six-element samples are given (e.g., access times to two different disks):
+
+* Sample I: $80, 40, 40, 80, 40, 80$
+* Sample II: $40, 80, 120, 80, 120, 40$
+
+Calculate the coefficients of variation $v = \frac{s}{\bar{x}}$ for both samples. Which disk operates more stably (has a smaller relative dispersion)?
+
+## Task 6
+Find the confidence interval (or probability), knowing that the investigated feature $X$ of the population has a normal distribution $N(\mu, \sigma)$. The statistic $U$:
 
 $$
-Y = \sum_{i=1}^n Z_i^2
+U = \frac{\bar{X} - \mu}{\sigma} \sqrt{n}
 $$
 
-How many degrees of freedom does this distribution possess?
+has a distribution $N(0,1)$.
 
-## Task 7. Student's t-distribution
-
-Define the Student's t-distribution. It is the quotient of two independent random variables: a variable $Z$ with distribution $N(0,1)$ and the square root of a variable $U$ with distribution $\chi^2_k$ divided by $k$.
+## Task 7
+A small sample ($n=10$) was drawn from a population with a normal distribution. Since we do not know the population standard deviation $\sigma$, we must use the sample deviation $s$. The statistic:
 
 $$
-T = \frac{Z}{\sqrt{U/k}}
+t = \frac{\bar{X} - \mu}{s} \sqrt{n-1}
 $$
 
-When (at what sample size $n$) is the Student's t-distribution very close to the normal distribution $N(0,1)$?
+follows the **Student's t-distribution**. Read from the tables the critical value for $n-1$ degrees of freedom and a confidence level of $0.95$.
 
-## Task 8. Standardization of the mean
+## Task 8
+To investigate the sample variance (dispersion), the following statistic is used:
 
-We have a sample $X_1, \dots, X_n$ from a normal distribution $N(\mu, \sigma)$.
-Consider two statistics used for standardizing the mean:
+$$
+\chi^2 = \frac{nS^2}{\sigma^2}
+$$
 
-1. $U = \frac{\bar{X} - \mu}{\sigma} \sqrt{n}$
-2. $T = \frac{\bar{X} - \mu}{S} \sqrt{n}$
+which has a chi-square distribution. 15 measurements were taken ($n=15$). Read from the tables the values between which this statistic will fall with a probability of $0.90$.
 
-where $\sigma$ is the known population deviation, and $S$ is the sample deviation.
-What distribution does statistic $U$ have, and what distribution does statistic $T$ have? This is a key distinction for interval estimation.
+## Task 9
+Show on a simple numerical example that the sample mean $\bar{X}$ is an **unbiased estimator** of the population mean (i.e., $E(\bar{X}) = \mu$), whereas the sample variance (divided by $n$) is biased (which is why we divide by $n-1$).
 
-## Task 9. Histogram and frequency distribution series
-
-Having a large sample of raw data (e.g., 100 measurements), describe the procedure for creating a grouped frequency distribution series:
-
-1. How to determine the number of classes (intervals)? (e.g., Square-root choice or Sturges' formula).
-2. How to determine the class width?
-3. What is the difference between a frequency histogram and a relative frequency histogram?
-
-## Task 10. Sample moments
-
-For a sample $x_1, x_2, \dots, x_n$ define:
-
-* Ordinary moment of order $k$ from the sample ($m_k$).
-* Central moment of order $k$ from the sample ($M_k$).
-
-Calculate the third central moment for the data from Task 1. It is the basis for calculating the coefficient of asymmetry (skewness).
+## Task 10
+For a small sample: $0.18, 0.56, 0.87, 1.37, 2.46$, determine the values of the empirical distribution function $S_n(x)$.

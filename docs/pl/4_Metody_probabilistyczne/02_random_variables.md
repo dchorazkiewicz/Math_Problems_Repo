@@ -1,122 +1,91 @@
-# Zmienne losowe jednowymiarowe i dwuwymiarowe
+# LISTA ZADAŃ NR 2: Zmienne losowe (jednowymiarowe i dwuwymiarowe)
 
-Poniższe zadania dotyczą pojęcia zmiennej losowej, wyznaczania funkcji prawdopodobieństwa (dla zmiennych skokowych), gęstości prawdopodobieństwa (dla zmiennych ciągłych) oraz wyznaczania rozkładów brzegowych dla zmiennych dwuwymiarowych.
+## Zadanie 1
+W grupie studenckiej przeprowadzono sprawdzian. Niech $X$ oznacza ocenę (przy czterostopniowej skali ocen) losowo wybranego studenta. Czy $X$ jest zmienną losową?
 
-## Zadanie 1. Zmienna losowa skokowa (dyskretna)
+Jeżeli przyjmiemy, że grupę stanowi 10 osób, a ich oceny to zbiór $\{5, 4, 3, 3, 4, 5, 3, 3, 4, 2\}$, to jak zdefiniować tę zmienną losową i jakie jest prawdopodobieństwo uzyskania poszczególnych ocen?
 
-Zmienna losowa $X$ ma rozkład prawdopodobieństwa określony tabelą:
+## Zadanie 2
+Zakładając, że stosunek ocen bardzo dobrych, dobrych, dostatecznych i niedostatecznych ma się tak, jak $1:3:4:2$, wyznaczyć dla określonej tam zmiennej losowej $X$:
 
-| $x_i$ | -2 | -1 | 0 | 1 | 3 |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| $p_i$ | 0.1 | $C$ | 0.2 | 0.3 | 0.1 |
+a) funkcję prawdopodobieństwa i jej wykres,
+b) dystrybuantę i jej wykres,
+c) prawdopodobieństwo $P(X < 3,5)$.
 
-Wykonaj polecenia:
-
-* Wyznacz stałą $C$.
-* Oblicz prawdopodobieństwo $P(X > 0)$.
-* Oblicz prawdopodobieństwo $P(-1 \le X < 3)$.
-
-## Zadanie 2. Dystrybuanta zmiennej skokowej
-
-Na podstawie tabeli z Zadania 1 (po wyznaczeniu stałej $C$):
-
-* Wyznacz wzór dystrybuanty $F(x) = P(X \le x)$.
-* Narysuj wykres dystrybuanty.
-* Korzystając z dystrybuanty, oblicz $P(X \le 0.5)$.
-
-## Zadanie 3. Zmienna losowa ciągła – wyznaczanie stałej
-
-Funkcja gęstości zmiennej losowej $X$ dana jest wzorem:
+## Zadanie 3
+Miesięczny koszt $u$ prowadzenia przykładowego laboratorium jest zależny od liczby $x$ zatrudnionych w nim pracowników. Załóżmy, że zależność ta jest postaci:
 
 $$
-f(x) = \begin{cases} 
-a \cdot x^2 & \text{dla } x \in [0, 3] \\
-0 & \text{dla } x \notin [0, 3]
-\end{cases}
+u = 15000x + 10000\sqrt{x}
 $$
 
-Wykonaj polecenia:
+Liczbę pracowników traktujemy jako zmienną losową $X$ o rozkładzie:
 
-* Wyznacz wartość parametru $a$, tak aby $f(x)$ była funkcją gęstości.
-* Oblicz prawdopodobieństwo $P(1 < X < 2)$.
+| $x_i$ | 2 | 3 | 4 | 5 |
+| :--- | :--- | :--- | :--- | :--- |
+| $p_i$ | 0,10 | 0,25 | 0,40 | 0,25 |
 
-## Zadanie 4. Dystrybuanta zmiennej ciągłej
+Wyznaczyć funkcję prawdopodobieństwa kosztów (zmienna losowa $U$).
 
-Dana jest funkcja gęstości:
-
-$$
-f(x) = \begin{cases} 
-0.5 & \text{dla } x \in [0, 2] \\
-0 & \text{dla } x \notin [0, 2]
-\end{cases}
-$$
-
-* Wyznacz dystrybuantę $F(x)$ tej zmiennej losowej.
-* Sprawdź, czy funkcja $F(x)$ jest ciągła.
-
-## Zadanie 5. Funkcja zmiennej losowej
-
-Niech $X$ będzie zmienną losową skokową o rozkładzie:
-
-| $x_i$ | -1 | 0 | 1 | 2 |
-| :--- | :---: | :---: | :---: | :---: |
-| $p_i$ | 0.2 | 0.3 | 0.4 | 0.1 |
-
-Zdefiniujmy nową zmienną losową $Y = X^2$.
-
-* Wyznacz rozkład prawdopodobieństwa zmiennej losowej $Y$ (utwórz tabelę).
-* Oblicz $P(Y = 1)$.
-
-## Zadanie 6. Zmienna losowa dwuwymiarowa skokowa
-
-Rozkład łączny dwuwymiarowej zmiennej losowej $(X, Y)$ przedstawia tabela:
-
-| X \ Y | 1 | 2 | 3 |
-| :--- | :---: | :---: | :---: |
-| **0** | 0.10 | 0.15 | 0.05 |
-| **1** | 0.20 | 0.30 | 0.20 |
-
-Wykonaj polecenia:
-
-* Sprawdź, czy suma prawdopodobieństw wynosi 1.
-* Wyznacz rozkłady brzegowe zmiennej $X$ oraz zmiennej $Y$.
-* Zapisz rozkłady brzegowe w formie tabel.
-
-## Zadanie 7. Niezależność zmiennych losowych (skokowych)
-
-Korzystając z danych z Zadania 6, sprawdź, czy zmienne losowe $X$ i $Y$ są niezależne.
-
-Przypomnienie: Zmienne są niezależne, jeśli dla każdej pary $(x_i, y_j)$ zachodzi:
+## Zadanie 4
+W wielu sytuacjach (np. w informatyce i elektronice) można przyjąć, że czas $X$ bezawaryjnej pracy badanego urządzenia jest zmienną losową ciągłą o gęstości:
 
 $$
-P(X=x_i, Y=y_j) = P(X=x_i) \cdot P(Y=y_j)
+f(x) = \begin{cases}\frac{1}{\lambda} \exp\left(-\frac{x}{\lambda}\right) & \text{dla } x > 0 \\0 & \text{dla pozostałych } x\end{cases}
 $$
 
-## Zadanie 8. Rozkład warunkowy
+(jest to tzw. rozkład wykładniczy). Niech parametr $\lambda = 10$ (np. godzin).
 
-Korzystając z tabeli z Zadania 6:
+a) Obliczyć prawdopodobieństwo, że urządzenie będzie działać bezawaryjnie od 5 do 10 godzin: $P(5 \leqslant X \leqslant 10)$.
+b) Wyznaczyć dystrybuantę tej zmiennej losowej.
 
-* Wyznacz rozkład warunkowy zmiennej $Y$ pod warunkiem, że $X = 0$.
-* Oblicz $P(Y > 1 | X = 1)$.
-
-## Zadanie 9. Zmienna losowa dwuwymiarowa ciągła
-
-Funkcja gęstości dwuwymiarowej zmiennej losowej $(X, Y)$ dana jest wzorem:
+## Zadanie 5
+Dobrać tak stałe $A$ i $B$, by funkcja określona wzorem:
 
 $$
-f(x, y) = \begin{cases} 
-C \cdot (x + y) & \text{dla } 0 \le x \le 1, \ 0 \le y \le 1 \\
-0 & \text{w p.p.}
-\end{cases}
+F(x) = A + B \arctan x \quad \text{dla } -\infty < x < \infty
 $$
 
-* Wyznacz stałą $C$.
-* Oblicz prawdopodobieństwo trafienia w kwadrat $0 \le x \le 0.5, \ 0 \le y \le 0.5$.
+była dystrybuantą pewnej zmiennej losowej ciągłej $X$. Następnie wyznaczyć gęstość tej zmiennej.
 
-## Zadanie 10. Rozkłady brzegowe zmiennej ciągłej
+## Zadanie 6
+Pewien mechanizm składa się z dwóch kół zębatych: dużego i małego. Warunki techniczne przy montażu urządzenia zostają naruszone, jeśli w obu kołach występują dodatnie odchylenia grubości zębów („plusowe”) lub w obu kołach ujemne („minusowe”). Rozważmy zero-jedynkowe zmienne losowe $X$ i $Y$:
 
-Dla funkcji gęstości z Zadania 9 (przyjmując obliczone $C$):
+* $X=1$, jeśli duże koło jest „plusowe”, $X=0$ jeśli „minusowe”.
+* $Y=1$, jeśli małe koło jest „plusowe”, $Y=0$ jeśli „minusowe”.
 
-* Wyznacz gęstość brzegową $f_X(x)$ zmiennej losowej $X$.
-* Wyznacz gęstość brzegową $f_Y(y)$ zmiennej losowej $Y$.
-* Czy zmienne $X$ i $Y$ są niezależne?
+Prawdopodobieństwa wystąpienia tych zdarzeń są następujące:
+$P(X=0, Y=0) = P(X=1, Y=1) = \frac{1}{4}$ (awaria/zły montaż)
+$P(X=0, Y=1) = P(X=1, Y=0) = \frac{1}{4}$ (dobry montaż)
+
+Wyznaczyć tabelę rozkładu łącznego tej zmiennej dwuwymiarowej oraz obliczyć prawdopodobieństwo, że montaż jest prawidłowy.
+
+## Zadanie 7
+Dwuwymiarowa zmienna losowa $(X, Y)$ ma rozkład określony w tabelce:
+
+| $Y \backslash X$ | 1 | 2 | 3 |
+| :--- | :--- | :--- | :--- |
+| **2** | 0,1 | 0,2 | 0,3 |
+| **4** | 0,1 | 0,1 | 0,2 |
+
+Wyznaczyć dystrybuantę rozkładu brzegowego zmiennej losowej $Y$.
+
+## Zadanie 8
+Dwie osoby z miasta A usiłują nawiązać połączenie telefoniczne z miastem B. Niech $X$ oznacza liczbę prób pierwszej osoby, a $Y$ – liczbę prób drugiej osoby. Zakładamy, że każda z osób łączy się niezależnie. Wiadomo, że rozkłady prawdopodobieństwa liczby prób dla obu osób są następujące:
+
+* Dla osoby 1 ($X$): $P(X=1)=0,6$, $P(X=2)=0,4$
+* Dla osoby 2 ($Y$): $P(Y=1)=0,5$, $P(Y=2)=0,5$
+
+Wyznaczyć rozkład łączny zmiennej dwuwymiarowej $(X, Y)$ (tabelkę), zakładając niezależność prób obu osób.
+
+## Zadanie 9
+Dobrać tak stałą $c$, by funkcja:
+
+$$
+f(x, y) = \begin{cases}cxy & \text{dla } 0 \leqslant x \leqslant 2 \land 0 \leqslant y \leqslant 1 \\0 & \text{dla pozostałych } (x, y)\end{cases}
+$$
+
+była gęstością dwuwymiarowej zmiennej losowej $(X, Y)$.
+
+## Zadanie 10
+Dla funkcji gęstości z Zadania 9 (po wyznaczeniu $c$), wyznaczyć gęstości brzegowe $f_1(x)$ oraz $f_2(y)$. Sprawdzić, czy zmienne $X$ i $Y$ są niezależne (czy $f(x,y) = f_1(x) \cdot f_2(y)$).

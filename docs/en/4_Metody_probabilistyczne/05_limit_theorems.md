@@ -1,87 +1,88 @@
-# Limit Theorems
+# TASK LIST NO. 5: Limit Theorems and Approximations
 
-This section concerns the behavior of sequences of random variables with a large number of trials. Here you will find tasks involving estimating probability using inequalities and approximating distributions of sums of random variables with a normal distribution.
+## Task 1
+**Poisson Theorem – rare errors**
 
-## Task 1. Markov's Inequality
+The probability that a product subjected to a test fails the test is $p=0.01$. Calculate the probability that among 200 such products (independently tested), at most 2 will fail the test.
 
-The daily water consumption in a certain plant is a non-negative random variable $X$ with an expected value $E(X) = 1000$ liters.
+*Task Goal: To show how the binomial distribution (for large $n$ and small $p$) converges to the Poisson distribution. This is a classic application of the limit theorem for rare events (e.g., code errors, server failures).*
 
-Using Markov's inequality, estimate the probability that on a randomly selected day water consumption will exceed 5000 liters.
+## Task 2
+**Poisson Approximation – quality control**
 
-$$
-P(X \ge a) \le \frac{E(X)}{a}
-$$
+The probability of producing a defective item is $p=0.02$. Calculate the probability that in a batch of goods consisting of 300 items there will be:
 
-## Task 2. Chebyshev's Inequality
+a) zero defective items,
+b) one defective item,
+c) two defective items,
+d) at least three defective items.
 
-The random variable $X$ has an expected value $E(X) = 20$ and a variance $D^2(X) = 4$. The distribution of the variable is unknown.
+*Hint: Use the Poisson approximation with parameter $\lambda = np$.*
 
-Using Chebyshev's inequality, estimate the probability that the variable $X$ will take a value differing from the mean by more than 6 (in absolute value).
+## Task 3
+**Poisson Approximation – system reliability**
 
-$$
-P(|X - E(X)| \ge \varepsilon) \le \frac{D^2(X)}{\varepsilon^2}
-$$
+A device consists of, among other things, 750 lamps. The probability of failure of each lamp during one day of device operation is identical and equals $p=0.004$. Calculate the probability that during one day of device operation:
 
-## Task 3. Law of Large Numbers (Bernoulli)
+a) 0 lamps,
+b) 1 lamp,
+c) 2 lamps,
+d) at least 3 lamps
 
-Explain the intuitive meaning of the Law of Large Numbers using the example of a coin toss.
-What happens to the frequency of heads appearing ($\frac{k}{n}$) when the number of tosses $n$ tends to infinity, assuming the coin is symmetrical ($p=0.5$)?
+will fail.
 
-## Task 4. Moivre-Laplace Theorem (Coin tosses)
+*Comment: This task illustrates the stability of large systems consisting of many unreliable elements.*
 
-We toss a symmetrical coin 100 times. Estimate the probability that the number of heads will fall in the range $[45, 55]$.
+## Task 4
+**Central Limit Theorem – error summation**
 
-Apply the Integral Moivre-Laplace Theorem, approximating the binomial distribution with a normal distribution. Remember the parameters: $\mu = np$, $\sigma = \sqrt{npq}$.
+A certain measuring instrument makes a systematic error of $1$ m in the direction of overestimating the measurement and a random error with a distribution $N(0; 0.5)$.
 
-## Task 5. Central Limit Theorem - Lindeberg-Lévy (Elevator)
+a) Calculate the average value of the measurement error.
+b) Determine the probability that the error with which the examined objects are measured does not exceed $2$ m.
 
-A freight elevator has a load capacity of 600 kg. We load 80 packages into the elevator. The weight of a single package is a random variable with an expected value $m = 7$ kg and a standard deviation $\sigma = 2$ kg. The weights of the packages are independent.
+*Task Goal: Illustration of how errors (random variables) sum up, resulting in a normal distribution, which is the foundation of the CLT.*
 
-Calculate the probability that the total weight of the packages exceeds the elevator's capacity.
+## Task 5
+**Normal Distribution as a limit – mass production**
 
-Hint: The variable $S_{80} = \sum X_i$ has approximately a normal distribution $N(n \cdot m, \sqrt{n} \cdot \sigma)$.
+The strength of steel ropes from mass production is a random variable with a distribution $N(1000 \text{ kg/cm}^2, 50 \text{ kg/cm}^2)$. Calculate what percentage of ropes has a strength less than $900 \text{ kg/cm}^2$.
 
-## Task 6. Sample Mean Distribution (Light Bulbs)
+*Comment: In mass production (large $n$), physical characteristics of products naturally arrange themselves into a normal distribution (Gaussian curve) thanks to the Central Limit Theorem.*
 
-The lifetime of a certain type of light bulb is a random variable with a mean $\mu = 1000$ hours and a standard deviation $\sigma = 200$ hours. A random sample of 100 light bulbs was taken.
+## Task 6
+**$3\sigma$ Principle – limit deviations**
 
-Calculate the probability that the average lifetime of the light bulbs in this sample ($\bar{X}$) will fall in the range $[980, 1020]$ hours.
+An automated machine produces rivets. The diameters of the rivet heads are values of a random variable with a distribution $N(2; 0.1)$ (in mm). What diameter sizes from the interval $(2-\epsilon, 2+\epsilon)$ can be guaranteed with a probability of $0.95$?
 
-$$
-Z = \frac{\bar{X} - \mu}{\sigma} \sqrt{n}
-$$
+*Task Goal: Understanding confidence intervals, which result directly from the limiting properties of the normal distribution.*
 
-## Task 7. Sum of Rounding Errors (Uniform Distribution)
+## Task 7
+**Stability of frequency – Law of Large Numbers**
 
-An accountant sums 300 numbers. Each number is rounded to the nearest integer. The rounding error of a single number has a uniform distribution on the interval $[-0.5, 0.5]$. Assume that the errors are independent.
+A random variable $K$ has a binomial distribution with parameters $n=5$ and $p=0.8$ (interpretation: 5 days of work, chance of no failure 0.8). Calculate the probability $P(K=k)$ for $k=0, 1, ..., 5$.
 
-Calculate the probability that the total sum error (sum of errors) will be less than 5 in absolute value.
+*Task Goal: Although $n$ is small, this task serves as a starting point for discussion: what would happen if we observed the system for 1000 days? (Then the distribution would tend towards normal – De Moivre-Laplace Theorem).*
 
-Hint: For a uniform distribution on $[a, b]$, the variance is $\frac{(b-a)^2}{12}$.
+## Task 8
+**Summation of independent variables**
 
-## Task 8. Sample Size Estimation
+We have two independent random variables with an exponential distribution (e.g., service times of two processes). Variable $X_1$ has parameter $\lambda$, variable $X_2$ also has parameter $\lambda$. Show (or calculate for specific data) that their sum has an Erlang distribution.
 
-We want to estimate the percentage of city residents supporting the construction of a new park.
+*Comment: This is an introduction to the theorem that the sum of many such variables would tend towards a normal distribution. Important for computer scientists in queue modeling.*
 
-How many people should be surveyed so that with a probability of at least 0.95 the estimation error (difference between the sample fraction and the true fraction $p$) does not exceed 3 percentage points ($0.03$)?
-Since we do not know $p$, assume the "worst-case" scenario $p=0.5$.
+## Task 9
+**Application of Normal Distribution in IT**
 
-## Task 9. Sum of Service Times
+The time (in minutes) between consecutive subscriber calls at a telephone exchange is a random variable. With a large number of subscribers, the total waiting time for $n$ calls can be approximated.
 
-There are 50 customers waiting in an office. The service time for a single customer is a random variable with an expected value of 8 minutes and a standard deviation of 4 minutes.
+Task (simplified): The time between calls has an exponential distribution ($\lambda=2$). Calculate the probability that a call occurs before 3 minutes elapse.
 
-What is the chance that serving all customers will take less than 6.5 hours (390 minutes)?
+*Goal: Understanding a process that in the limit (for many calls) is modeled by Poisson/exponential processes.*
 
-## Task 10. Comparison of Chebyshev and CLT
+## Task 10
+**Histogram Interpretation - visualization of convergence**
 
-A random variable $X$ has an expected value $\mu=50$ and a deviation $\sigma=10$. We take a sample $n=100$.
-We want to estimate the probability:
+For the data from the task about working time, prepare a probability histogram.
 
-$$
-P(|\bar{X} - 50| < 2)
-$$
-
-1.  Estimate this probability using Chebyshev's Inequality for the mean.
-2.  Calculate this probability by approximating the distribution of the mean with a normal distribution (CLT).
-
-Compare the results. Which estimate is more accurate assuming a large number of trials?
+*Goal: Graphical task. It allows seeing how the probability distribution "looks" and intuitively understanding that as the number of trials increases, this shape will resemble a bell (normal distribution).*

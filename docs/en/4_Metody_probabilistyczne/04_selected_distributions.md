@@ -1,103 +1,56 @@
-# Selected Distributions of Random Variables
+# TASK LIST NO. 4: Selected Random Variable Distributions
 
-In this section, we analyze specific probabilistic models that often appear in practical applications. The tasks involve recognizing the appropriate distribution, applying formulas for probability/density functions, and using normal distribution tables.
+## Task 1
+The probability of failure of experimental equipment in a single experiment is $p=0.02$. Experiments can be performed any number of times. Calculate the probability that the second failure:
 
-## Task 1. Binomial Distribution (Bernoulli)
+a) occurs at the tenth experiment,
+b) does not occur in the first ten experiments.
 
-The probability of a machine producing a defective element is $p = 0.05$. A sample of 10 elements was taken (we assume independence of events).
-Let $X$ denote the number of defective elements in this sample.
+## Task 2
+The probability that a product subjected to a test fails the test is $p=0.01$. Calculate the probability that among 200 such products (independently tested), at most 2 will fail the test.
 
-* Determine the parameters of the distribution of variable $X$.
-* Calculate the probability that there is not a single defective element in the sample.
-* Calculate the probability that exactly 2 elements are defective.
+*Hint: Since $n=200$ is large and $p=0.01$ is small, use the Poisson approximation with parameter $\lambda = np$.*
 
-$$
-P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}
-$$
+## Task 3
+The time (in minutes) between consecutive subscriber calls at a certain telephone exchange is a random variable with an exponential distribution with parameter $\lambda=2$. Calculate the average time between consecutive calls and the probability that a call occurs before 3 minutes elapse.
 
-## Task 2. Poisson Distribution
+## Task 4
+The failure-free operation time $X$ of a certain device has an exponential distribution with parameter $\lambda=5$. Calculate:
 
-Requests arrive at a server at an average rate of $\lambda = 3$ requests per minute. The number of requests follows a Poisson distribution.
+a) the average failure-free operation time of the device,
+b) the median,
+c) the probability that the failure-free operation time of the device is at least 5 hours.
 
-Calculate the probability that within a selected minute:
+## Task 5
+The interval between consecutive graduations of a stopwatch scale is $0.1$ s. Time on this stopwatch is read with an accuracy of a whole graduation. Assuming a uniform distribution of the time reading error, calculate the probability that the time was measured with an error exceeding $0.02$ s.
 
-* No request arrives.
-* Exactly 3 requests arrive.
-* At least one request arrives.
+*Hint: The density of the uniform distribution is constant in the interval $(-0.05; 0.05)$.*
 
-$$
-P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}
-$$
+## Task 6
+An automated machine produces 10-gram weights. The mass measurement errors of these weights have a normal distribution with an expected value $\mu=0$ g and a standard deviation $\sigma=0.01$ g. Find the probability that the mass measurement will be performed with an error not exceeding $0.02$ g.
 
-## Task 3. Poisson Approximation
+## Task 7
+Let the random variable $X$ have a distribution $N(\mu, \sigma)$. Calculate the probability $P(|X-\mu| < k\sigma)$ for:
 
-The defect rate of production of certain integrated circuits is $p = 0.002$. A batch of goods numbers $n = 1000$ pieces.
+a) $k=1.96$ (confidence level 0.95),
+b) $k=2.58$ (confidence level 0.99).
 
-Using the Poisson approximation (for rare events), calculate the probability that exactly 3 defective circuits will be found in the batch.
+## Task 8
+A certain measuring instrument makes a systematic error of $1$ m in the direction of overestimating the measurement and a random error with a distribution $N(0; 0.5)$.
 
-Hint: Assume $\lambda = n \cdot p$.
+a) Calculate the average value of the measurement error.
+b) Determine the probability that the error with which the examined objects are measured does not exceed $2$ m.
 
-## Task 4. Geometric Distribution
+## Task 9
+The strength of steel ropes from mass production is a random variable with a distribution $N(1000 \text{ kg/cm}^2, 50 \text{ kg/cm}^2)$. Calculate what percentage of ropes has a strength less than $900 \text{ kg/cm}^2$.
 
-A shooter hits the target with a probability of $p = 0.8$. They shoot until the first hit. Let $X$ denote the number of shots fired.
-
-* Calculate the probability that they hit on the third time ($X=3$).
-* What is the expected number of shots needed to achieve a hit?
-
-$$
-P(X=k) = (1-p)^{k-1} \cdot p
-$$
-
-## Task 5. Uniform Distribution
-
-Bus line A arrives at the stop randomly every 15 minutes (uniform distribution on the interval $[0, 15]$). A passenger arrives at the stop at a random moment. Let $X$ denote the waiting time for the bus.
-
-* Provide the density function $f(x)$ of this distribution.
-* Calculate the probability that the passenger will wait less than 5 minutes.
-* Calculate the average waiting time.
-
-## Task 6. Exponential Distribution
-
-The failure-free operation time of a device (in thousands of hours) is a random variable $T$ with an exponential distribution with parameter $\lambda = 0.5$.
-
-* Write down the density function and the cumulative distribution function of this distribution.
-* Calculate the probability that the device will work without failure for at least 4 thousand hours ($P(T > 4)$).
-* Calculate the probability that the device breaks down within the first thousand hours.
+## Task 10
+Determine and sketch the cumulative distribution function of the Rayleigh distribution, whose density is given by the formula:
 
 $$
-F(x) = 1 - e^{-\lambda x} \quad \text{for } x > 0
+f(x) = \begin{cases} \frac{2}{\lambda} x \exp(-\frac{x^2}{\lambda}) & \text{for } x > 0 \\ 0 & \text{for } x \leqslant 0 \end{cases}
 $$
 
-## Task 7. Memorylessness Property (Exponential Distribution)
+Then calculate the median of this distribution.
 
-Using the data from Task 6, prove (or calculate) that the probability of failure within the next hour is the same, regardless of how long the device has already been working.
-Calculate $P(T > 5 | T > 3)$ and compare with $P(T > 2)$.
-
-## Task 8. Normal Distribution (Gaussian) - standardization
-
-The random variable $X$ has a normal distribution $N(\mu=170, \sigma=10)$. (This can be, for example, height in a population expressed in cm).
-
-Calculate the probability that a randomly selected person has a height in the range from 160 to 180 cm.
-
-Hint: Standardize the variable to the $N(0, 1)$ distribution using the formula:
-
-$$
-Z = \frac{X - \mu}{\sigma}
-$$
-
-And then use the properties of the standard CDF $\Phi(z)$ (3-sigma rule or tables).
-
-## Task 9. Normal Distribution - application
-
-A machine fills bags with sugar. The weight of a bag has a normal distribution with a mean $\mu = 1000$ g and a standard deviation $\sigma = 20$ g.
-
-Calculate the fraction of bags whose weight is less than 990 g or greater than 1010 g. Write the result using the standardized CDF $\Phi$.
-
-## Task 10. Comparison of distributions
-
-Match the appropriate distribution model (Binomial, Poisson, Exponential, Normal) to the described situations:
-
-1.  Number of heads in 10 coin tosses.
-2.  Number of traffic accidents in a city within a year (rare event, large population).
-3.  Time waiting for a light bulb to burn out.
-4.  Measurement errors of an instrument that tends to err symmetrically around the true value.
+*Hint: This distribution is often used in telecommunications to model signal fading.*

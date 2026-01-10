@@ -1,128 +1,67 @@
-# Wstęp do teorii decyzji statystycznych
+# LISTA ZADAŃ NR 11: Wstęp do teorii decyzji statystycznych
 
-Ten dział wprowadza sformalizowane metody podejmowania optymalnych decyzji w sytuacjach, gdy wynik zależy nie tylko od nas, ale także od czynników losowych ("stanów natury") lub działań przeciwnika.
+## Zadanie 1
+Rozważamy partię towaru (np. procesorów), w której badamy wadliwość. Testujemy hipotezę $H_0: p = p_0$ (partia dobra) przeciwko $H_1: p = p_1$ (partia wadliwa). Zbudowano test, który odrzuca partię, jeśli w wylosowanej próbce liczba wadliwych sztuk przekroczy pewne $k$.
 
-## Zadanie 1. Macierz wypłat i stany natury
+Obliczyć:
 
-Firma musi zdecydować o wielkości produkcji nowego produktu. Ma do wyboru trzy strategie (decyzje):
-$D_1$: Produkcja mała.
-$D_2$: Produkcja średnia.
-$D_3$: Produkcja duża.
+a) Prawdopodobieństwo błędu I rodzaju $\alpha$ (odrzucenie dobrej partii – ryzyko producenta).
+b) Prawdopodobieństwo błędu II rodzaju $\beta$ (przyjęcie złej partii – ryzyko konsumenta).
 
-Wynik finansowy zależy od popytu na rynku (stany natury), który może być:
-$S_1$: Niski.
-$S_2$: Średni.
-$S_3$: Wysoki.
+## Zadanie 2
+Dla testu z Zadania 1 wyznaczyć moc testu ($1-\beta$) dla kilku alternatywnych wartości parametru $p$. Sporządzić wykres krzywej mocy testu (funkcji mocy). Co ten wykres mówi nam o „czułości” algorytmu decyzyjnego na odchylenia od normy?
 
-Macierz wypłat (zysków w tys. zł) wygląda następująco:
+## Zadanie 3
+Dla testu średniej $H_0: \mu = 100$ przy znanym $\sigma=5$ i $n=25$:
 
-| Decyzja \ Stan | $S_1$ (Niski) | $S_2$ (Średni) | $S_3$ (Wysoki) |
-| :--- | :---: | :---: | :---: |
-| **$D_1$ (Mała)** | 20 | 20 | 20 |
-| **$D_2$ (Średnia)** | 10 | 40 | 40 |
-| **$D_3$ (Duża)** | -10 | 30 | 80 |
+a) Wyznaczyć wzór na funkcję operacyjno-charakterystyczną (OC): $L(\mu) = P(\text{akceptacja } H_0 | \mu)$.
+b) Jak zmiana liczebności próby na $n=100$ wpłynie na stromość tej krzywej (zdolność rozróżniania)?
 
-Zinterpretuj ryzyko związane z decyzją $D_3$. W jakiej sytuacji ta strategia przynosi straty?
+## Zadanie 4
+Chcemy skonstruować test dla średniej, który spełnia surowe wymogi bezpieczeństwa:
 
-## Zadanie 2. Podejmowanie decyzji w warunkach niepewności (Kryterium Walda)
+* Ryzyko odrzucenia normy, gdy jest ona spełniona ($\alpha$), ma wynosić 0,01.
+* Ryzyko przyjęcia normy, gdy przesunięcie średniej wynosi 2 jednostki ($\beta$), ma nie przekraczać 0,05.
 
-Nie znamy prawdopodobieństw wystąpienia poszczególnych stanów popytu ($S_1, S_2, S_3$).
-Zastosuj **kryterium Walda (maksyminowe)** do macierzy z Zadania 1.
+Ile minimalnie pomiarów należy wykonać?
 
-* Dla każdej decyzji wyznacz najgorszy możliwy wynik (bezpieczeństwo).
-* Wybierz decyzję, która maksymalizuje ten najgorszy wynik (najlepsza z najgorszych).
-* Jakie podejście reprezentuje to kryterium: optymistyczne czy ostrożne (pesymistyczne)?
+## Zadanie 5
+Wadliwość produkcji pewnych wyrobów wynosiła do tej pory 10% ($p_0=0,1$). Nowa technologia ma obniżyć wadliwość do 5% ($p_1=0,05$). Zamiast pobierać stałą próbkę, pobieramy elementy po jednym.
 
-## Zadanie 3. Kryterium Hurwicza
+Skonstruować test sekwencyjny ilorazu wiarogodności (test Walda), ustalając ryzyka $\alpha=0,05$ i $\beta=0,10$.
 
-Kryterium Hurwicza pozwala uwzględnić nastawienie decydenta za pomocą współczynnika optymizmu $\alpha \in [0, 1]$.
-Wzór na wskaźnik dla decyzji $D_i$:
+a) Wyznaczyć proste decyzyjne (obszar akceptacji, odrzucenia i obszar kontynuacji badania).
+b) Przedstawić procedurę w formie algorytmu (pseudokodu).
 
-$$
-H(D_i) = \alpha \cdot \max_{j} \{w_{ij}\} + (1 - \alpha) \cdot \min_{j} \{w_{ij}\}
-$$
+## Zadanie 6
+Dla testu z Zadania 5, przypuśćmy, że wylosowano kolejno:
+Dobry, Dobry, Zły, Dobry, Dobry, Dobry, Dobry...
 
-Dla danych z Zadania 1:
+Zaznaczyć te punkty na wykresie testu sekwencyjnego. W którym kroku (jeśli w ogóle) algorytm podejmie decyzję „Nowa technologia jest lepsza”?
 
-* Wyznacz najlepszą decyzję dla optymisty ($\alpha = 1$, kryterium Maximax).
-* Wyznacz najlepszą decyzję dla decydenta umiarkowanego ($\alpha = 0.5$).
-
-## Zadanie 4. Kryterium Savage'a (Minimalizacja żalu)
-
-Decydent chce uniknąć sytuacji, w której będzie żałował, że nie podjął innej decyzji, znając już stan natury.
-Dla danych z Zadania 1:
-
-* Skonstruuj **macierz żalu (strat relatywnych)**. Żal to różnica między najlepszym wynikiem możliwym do osiągnięcia w danym stanie natury a wynikiem faktycznie osiągniętym.
-* Zastosuj kryterium minimax (minimalizacji maksymalnego żalu).
-
-## Zadanie 5. Kryterium Laplace'a
-
-W sytuacji całkowitej niewiedzy o prawdopodobieństwach stanów natury, kryterium Laplace'a zakłada, że każdy stan jest jednakowo prawdopodobny (zasada racji niedostatecznej).
-
-* Przyjmij, że $P(S_1) = P(S_2) = P(S_3) = \frac{1}{3}$.
-* Oblicz oczekiwaną wypłatę dla każdej decyzji $D_1, D_2, D_3$.
-* Którą decyzję należy wybrać?
-
-## Zadanie 6. Podejmowanie decyzji w warunkach ryzyka (EMV)
-
-Załóżmy teraz, że na podstawie badań rynku oszacowano prawdopodobieństwa stanów natury:
-$P(S_1) = 0.3$ (Niski popyt)
-$P(S_2) = 0.5$ (Średni popyt)
-$P(S_3) = 0.2$ (Wysoki popyt)
-
-Oblicz **Oczekiwaną Wartość Monetarną (EMV - Expected Monetary Value)** dla każdej decyzji $D_1, D_2, D_3$.
-Która decyzja maksymalizuje oczekiwany zysk?
+## Zadanie 7
+Jedną z zalet metod sekwencyjnych jest to, że średnio wymagają mniej danych niż testy klasyczne. Dla testu z Zadania 5 obliczyć oczekiwaną liczbę kroków (próbek) potrzebną do podjęcia decyzji (ASN), zakładając, że prawdziwa jest hipoteza $H_0$.
 
 $$
-EMV(D_i) = \sum_{j} w_{ij} \cdot P(S_j)
+E(n) \approx \frac{(1-\alpha)\ln A + \alpha \ln B}{E(z)}
 $$
 
-## Zadanie 7. Wartość idealnej informacji (EVPI)
+gdzie $A, B$ to progi decyzyjne.
 
-Firma konsultingowa oferuje badanie, które ze 100% pewnością określi, jaki będzie stan popytu, zanim podejmiemy decyzję.
+## Zadanie 8
+Automat produkuje detale o średnicy nominalnej $\mu_0$. Podejrzewamy, że maszyna się rozkalibrowała i średnia wzrosła do $\mu_1$. Odchylenie $\sigma$ jest znane.
 
-* Oblicz Oczekiwaną Wartość z Idealną Informacją (EVwPI). (To średnia z najlepszych wyników w każdym stanie).
-* Oblicz **Wartość Idealnej Informacji (EVPI)** jako różnicę: $EVPI = EVwPI - \max(EMV)$.
-* Ile maksymalnie firma powinna zapłacić za takie badanie?
+Skonstruować test sekwencyjny weryfikujący $H_0: \mu = \mu_0$ przeciwko $H_1: \mu = \mu_1$. Napisać warunek „stop” dla tego algorytmu.
 
-## Zadanie 8. Drzewa decyzyjne
+## Zadanie 9
+Mamy dwie możliwe decyzje $d_1$ (wdrożenie systemu) i $d_2$ (brak wdrożenia) oraz dwa stany natury $\theta_1$ (system działa poprawnie) i $\theta_2$ (system ma błędy). Macierz strat (kosztów) wygląda następująco:
 
-Inwestor ma do wyboru dwie opcje:
-A. Włożyć pieniądze na lokatę (zysk pewny 5 tys. zł).
-B. Zainwestować w akcje.
-   * Z prawdopodobieństwem 0.6 rynek wzrośnie (zysk 20 tys. zł).
-   * Z prawdopodobieństwem 0.4 rynek spadnie (strata 10 tys. zł).
+* Jeśli $d_1$ i $\theta_1$: Koszt = 0
+* Jeśli $d_1$ i $\theta_2$: Koszt = 1000 (awaria u klienta)
+* Jeśli $d_2$ i $\theta_1$: Koszt = 100 (utracony zysk)
+* Jeśli $d_2$ i $\theta_2$: Koszt = 0
 
-Narysuj (szkicowo) drzewo decyzyjne dla tego problemu. Oblicz wartość oczekiwaną w węzłach losowych i wskaż decyzję optymalną.
+Jaką decyzję należy podjąć, stosując kryterium **Minimax** (minimalizacja maksymalnej straty)?
 
-## Zadanie 9. Teoria gier - Gra o sumie zerowej
-
-Dwaj konkurenci (Gracz A i Gracz B) wybierają strategie cenowe. Zysk Gracza A jest jednocześnie stratą Gracza B (gra o sumie zerowej).
-Macierz wypłat dla Gracza A:
-
-| A \ B | $B_1$ | $B_2$ |
-| :--- | :---: | :---: |
-| **$A_1$** | 4 | 1 |
-| **$A_2$** | 2 | 3 |
-
-* Wyznacz strategię maximinową dla Gracza A (zabezpieczenie swojego zysku).
-* Wyznacz strategię minimaxową dla Gracza B (minimalizacja straty).
-* Sprawdź, czy gra posiada **punkt siodłowy** (czy maximin A równa się minimax B). Jeśli tak, jaka jest wartość gry?
-
-## Zadanie 10. Strategie mieszane
-
-Rozważmy grę (rzut monetą):
-* Gracz A wybiera Orła lub Reszkę.
-* Gracz B wybiera Orła lub Reszkę.
-* Jeśli wybiorą to samo, A płaci B 1 zł (-1, 1).
-* Jeśli wybiorą co innego, B płaci A 1 zł (1, -1).
-
-Macierz dla Gracza A:
-
-| A \ B | O | R |
-| :--- | :---: | :---: |
-| **O** | -1 | 1 |
-| **R** | 1 | -1 |
-
-Czy w tej grze istnieje punkt siodłowy w strategiach czystych?
-Jaka powinna być optymalna strategia mieszana (z jakimi częstościami wybierać Orła i Reszkę), aby nie dać się "ograć" przeciwnikowi?
+## Zadanie 10
+Dla sytuacji z Zadania 9, załóżmy, że z wcześniejszych testów wiemy, iż prawdopodobieństwo wystąpienia błędów wynosi $P(\theta_2) = 0,05$. Obliczyć oczekiwaną stratę (ryzyko Bayesa) dla obu decyzji. Która decyzja jest optymalna w sensie bayesowskim?

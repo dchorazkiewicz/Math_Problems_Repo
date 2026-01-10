@@ -1,90 +1,62 @@
-# Zaawansowane metody statystyczne
+# LISTA ZADAŃ NR 10: Zaawansowane metody statystyczne
 
-W tym dziale rozszerzamy warsztat analityczny o metody pozwalające badać wpływ wielu czynników jednocześnie (Regresja Wieloraka) oraz porównywać wiele grup naraz (ANOVA). Wprowadzamy również testy nieparametryczne, stosowane gdy dane nie spełniają założeń o normalności rozkładu.
+## Zadanie 1
+Zmierzono czasy wykonania pewnego zadania. Uporządkowano wyniki w kolejności ich otrzymywania (w czasie). Następnie dla każdego wyniku określono, czy jest on powyżej ($a$) czy poniżej ($b$) mediany.
 
-## Zadanie 1. Regresja wieloraka - model
+Otrzymano ciąg symboli:
+$a, a, b, b, a, a, a, b, b, b, b, a, a, b, ...$
 
-Badamy zależność ceny mieszkania ($Y$) od jego powierzchni ($X_1$) oraz odległości od centrum ($X_2$). Otrzymano model regresji:
+Zweryfikować hipotezę, że próba jest losowa (tzn. wyniki nie zależą od czasu/kolejności), stosując **test serii**.
 
-$$
-\hat{y} = 200 + 8 \cdot x_1 - 5 \cdot x_2
-$$
+## Zadanie 2
+Mamy dwa algorytmy sortowania (A i B). Wykonano po 5 niezależnych pomiarów czasu dla każdego z nich. Wyniki nie mają rozkładu normalnego (występują elementy odstające).
 
-Zinterpretuj parametry tego modelu:
+* Algorytm A: $12, 18, 14, 15, 13$
+* Algorytm B: $19, 21, 23, 20, 22$
 
-* Co oznacza liczba 8 przy zmiennej $x_1$? (Pamiętaj o klauzuli *ceteris paribus* - przy ustalonych pozostałych zmiennych).
-* Co oznacza liczba -5 przy zmiennej $x_2$?
+Zweryfikować hipotezę, że algorytm A jest szybszy od B, stosując test sumy rang (Manna-Whitneya-Wilcoxona).
 
-## Zadanie 2. Skorygowany współczynnik $R^2$
+## Zadanie 3
+W tabeli (tablicy kontyngencji) zebrano dane o awariach w zależności od producenta sprzętu:
 
-W regresji wielorakiej dodawanie kolejnych zmiennych do modelu zawsze zwiększa (lub nie zmienia) zwykły współczynnik $R^2$, nawet jeśli nowe zmienne są bezwartościowe merytorycznie.
+| Producent \ Typ awarii | Przegrzanie | Błąd dysku | Błąd pamięci |
+| :--- | :---: | :---: | :---: |
+| **Producent X** | 20 | 10 | 15 |
+| **Producent Y** | 30 | 50 | 25 |
 
-* Wyjaśnij, dlaczego stosujemy **skorygowany $R^2$** ($R^2_{adj}$) zamiast zwykłego $R^2$ przy porównywaniu modeli o różnej liczbie zmiennych.
-* Jak interpretować sytuację, w której $R^2$ jest wysokie, a $R^2_{adj}$ znacznie niższe?
+Sprawdzić na poziomie istotności $\alpha=0.05$, czy rodzaj awarii zależy od producenta.
 
-## Zadanie 3. Współliniowość zmiennych
+## Zadanie 4
+Testujemy wydajność 3 różnych frameworków (X, Y, Z). Ponieważ dane są mocno asymetryczne, zamiast klasycznej analizy wariancji (ANOVA), stosujemy test nieparametryczny Kruskala-Wallisa.
 
-W analizie regresji wielorakiej groźnym zjawiskiem jest współliniowość zmiennych objaśniających (np. gdy $X_1$ jest silnie skorelowane z $X_2$).
+Dla danych rankingowych z tabeli zweryfikować hipotezę, że wszystkie frameworki mają taką samą medianę wydajności.
 
-* Dlaczego współliniowość jest problemem przy szacowaniu parametrów modelu?
-* Co to jest wskaźnik VIF (Variance Inflation Factor)?
+## Zadanie 5
+Mamy dwa zbiory danych o ruchu sieciowym (przed i po wdrożeniu firewalla). Chcemy sprawdzić, czy **cały rozkład** (nie tylko średnia) uległ zmianie.
 
-## Zadanie 4. Idea Analizy Wariancji (ANOVA)
+Na podstawie dystrybuant empirycznych obu prób obliczyć statystykę $D_{n,m}$ i zweryfikować hipotezę o identyczności rozkładów (test Kołmogorowa-Smirnowa).
 
-Chcemy porównać średnie wyniki egzaminu w trzech różnych grupach studenckich (A, B, C).
+## Zadanie 6
+Badamy czas kompilacji kodu ($Y$) w zależności od liczby plików ($X_1$) i liczby linii kodu w pliku ($X_2$).
 
-Dlaczego nie powinniśmy wykonywać trzech oddzielnych testów t-Studenta (A vs B, B vs C, A vs C)?
-Wyjaśnij pojęcie "akumulacji błędu I rodzaju" i rolę testu F w jednoczynnikowej analizie wariancji.
-
-## Zadanie 5. Dekompozycja zmienności w ANOVA
-
-W jednoczynnikowej analizie wariancji całkowitą sumę kwadratów odchyleń (SST - Total Sum of Squares) dzielimy na dwa składniki:
-
-$$
-SST = SSB + SSW
-$$
-
-Wyjaśnij znaczenie tych składników:
-
-* **SSB** (Sum of Squares Between) - zmienność międzygrupowa.
-* **SSW** (Sum of Squares Within) - zmienność wewnątrzgrupowa (błąd).
-
-Która z tych zmienności musi być dominująca, abyśmy odrzucili hipotezę o równości średnich?
-
-## Zadanie 6. Tablica ANOVA i statystyka F
-
-Uzupełnij (koncepcyjnie) tabelę ANOVA. Jak obliczamy Średnie Kwadraty (MSB, MSW)?
-
-Statystyka testowa F to iloraz:
+Dla podanych danych wyznaczyć równanie płaszczyzny regresji:
 
 $$
-F = \frac{MSB}{MSW}
+y = a x_1 + b x_2 + c
 $$
 
-Jeśli statystyka F przyjmuje dużą wartość (wpadnie w obszar krytyczny), to jaką decyzję podejmujemy odnośnie hipotezy zerowej $H_0: \mu_1 = \mu_2 = \dots = \mu_k$?
+## Zadanie 7
+Liczba tranzystorów w procesorach rośnie wykładniczo: $y = a \cdot e^{bx}$. Mając dane historyczne, sprowadzić to zagadnienie do regresji liniowej poprzez logarytmowanie ($\ln y = \ln a + bx$) i wyznaczyć parametry wzrostu.
 
-## Zadanie 7. Testy Post-hoc
+## Zadanie 8
+Produkcja procesorów generuje pewien procent braków. Zamiast pobierać stałą próbkę 100 sztuk, pobieramy sztuki jedna po drugiej. Po każdym pobraniu decydujemy: „partia dobra”, „partia zła” lub „pobieramy dalej”.
 
-Wykonaliśmy test ANOVA i odrzuciliśmy hipotezę zerową (czyli średnie nie są równe). Test F mówi nam, że różnica istnieje, ale nie mówi, **między którymi grupami**.
+Skonstruować test sekwencyjny (test Walda) dla weryfikacji hipotezy $p=0.01$ przeciw $p=0.10$.
 
-Do czego służą testy post-hoc (porównań wielokrotnych), takie jak test Tukeya (HSD) lub test Bonferroniego?
+## Zadanie 9
+Dla próby prostej $x_1, ..., x_n$ z rozkładu wykładniczego (czas bezawaryjnej pracy) o gęstości $f(x) = \lambda e^{-\lambda x}$, wyznaczyć estymator parametru $\lambda$ metodą największej wiarygodności (MNW).
 
-## Zadanie 8. Test U Manna-Whitneya
+## Zadanie 10
+Mamy 3 serwery. Chcemy sprawdzić, czy działają tak samo stabilnie (czy mają taką samą wariancję czasów odpowiedzi), zanim porównamy ich średnie czasy. Wariancje z prób wynoszą: $s_1^2=1.4$, $s_2^2=1.4$, $s_3^2=1.4$.
 
-Mamy dwie małe, niezależne próby. Dane nie mają rozkładu normalnego (widoczna silna asymetria, elementy odstające), więc nie możemy użyć testu t-Studenta.
-
-Opisz zasadę działania testu U Manna-Whitneya.
-Na czym polega rangowanie danych w tym teście? Co testujemy (średnie czy rozkłady/mediany)?
-
-## Zadanie 9. Test Wilcoxona dla par wiązanych
-
-Badamy wpływ szkolenia na pracowników. Mamy wyniki "przed" i "po" dla tej samej grupy osób (próby zależne). Rozkład różnic nie jest normalny.
-
-Jaki test nieparametryczny należy zastosować?
-Opisz krótko, jak w tym teście wykorzystuje się rangi różnic (dodatnich i ujemnych).
-
-## Zadanie 10. Test Kruskala-Wallisa
-
-Jeśli chcemy porównać 3 grupy (lub więcej) i nie są spełnione założenia analizy wariancji (brak normalności), stosujemy test Kruskala-Wallisa.
-
-Jest to nieparametryczny odpowiednik którego testu parametrycznego?
+Zweryfikować hipotezę $H_0: \sigma_1^2 = \sigma_2^2 = \sigma_3^2$ (np. testem Bartletta).

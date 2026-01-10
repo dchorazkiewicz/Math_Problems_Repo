@@ -1,90 +1,62 @@
-# Advanced Statistical Methods
+# TASK LIST NO. 10: Advanced Statistical Methods
 
-In this section, we extend the analytical toolkit with methods allowing for the investigation of the influence of many factors simultaneously (Multiple Regression) and comparing many groups at once (ANOVA). We also introduce non-parametric tests, used when data do not meet the assumptions of normal distribution.
+## Task 1
+The execution times of a certain task were measured. The results were ordered in the sequence they were received (in time). Then, for each result, it was determined whether it is above ($a$) or below ($b$) the median.
 
-## Task 1. Multiple regression - model
+A sequence of symbols was obtained:
+$a, a, b, b, a, a, a, b, b, b, b, a, a, b, ...$
 
-We examine the dependence of apartment price ($Y$) on its area ($X_1$) and distance from the center ($X_2$). A regression model was obtained:
+Verify the hypothesis that the sample is random (i.e., the results do not depend on time/order), using the **runs test**.
 
-$$
-\hat{y} = 200 + 8 \cdot x_1 - 5 \cdot x_2
-$$
+## Task 2
+We have two sorting algorithms (A and B). 5 independent time measurements were performed for each of them. The results do not follow a normal distribution (outliers are present).
 
-Interpret the parameters of this model:
+* Algorithm A: $12, 18, 14, 15, 13$
+* Algorithm B: $19, 21, 23, 20, 22$
 
-* What does the number 8 next to variable $x_1$ mean? (Remember the *ceteris paribus* clause - with other variables held constant).
-* What does the number -5 next to variable $x_2$ mean?
+Verify the hypothesis that algorithm A is faster than B using the rank-sum test (Mann-Whitney-Wilcoxon).
 
-## Task 2. Adjusted $R^2$ coefficient
+## Task 3
+Data on failures depending on the hardware manufacturer were collected in a table (contingency table):
 
-In multiple regression, adding successive variables to the model always increases (or does not change) the ordinary $R^2$ coefficient, even if the new variables are substantively worthless.
+| Manufacturer \ Failure Type | Overheating | Disk Error | Memory Error |
+| :--- | :---: | :---: | :---: |
+| **Manufacturer X** | 20 | 10 | 15 |
+| **Manufacturer Y** | 30 | 50 | 25 |
 
-* Explain why we use **adjusted $R^2$** ($R^2_{adj}$) instead of ordinary $R^2$ when comparing models with a different number of variables.
-* How to interpret a situation where $R^2$ is high, but $R^2_{adj}$ is significantly lower?
+Check at the significance level $\alpha=0.05$ whether the type of failure depends on the manufacturer.
 
-## Task 3. Multicollinearity of variables
+## Task 4
+We are testing the performance of 3 different frameworks (X, Y, Z). Since the data are strongly asymmetric, instead of classical analysis of variance (ANOVA), we use the non-parametric Kruskal-Wallis test.
 
-In multiple regression analysis, a dangerous phenomenon is the multicollinearity of explanatory variables (e.g., when $X_1$ is strongly correlated with $X_2$).
+For the ranking data from the table, verify the hypothesis that all frameworks have the same median performance.
 
-* Why is multicollinearity a problem when estimating model parameters?
-* What is the VIF (Variance Inflation Factor) index?
+## Task 5
+We have two datasets on network traffic (before and after firewall implementation). We want to check if the **entire distribution** (not just the mean) has changed.
 
-## Task 4. Idea of Analysis of Variance (ANOVA)
+Based on the empirical distribution functions of both samples, calculate the $D_{n,m}$ statistic and verify the hypothesis of identical distributions (Kolmogorov-Smirnov test).
 
-We want to compare the average exam results in three different student groups (A, B, C).
+## Task 6
+We investigate code compilation time ($Y$) depending on the number of files ($X_1$) and the number of lines of code in a file ($X_2$).
 
-Why shouldn't we perform three separate Student's t-tests (A vs B, B vs C, A vs C)?
-Explain the concept of "Type I error accumulation" and the role of the F-test in one-way analysis of variance.
-
-## Task 5. Decomposition of variability in ANOVA
-
-In one-way analysis of variance, we divide the total sum of squares of deviations (SST - Total Sum of Squares) into two components:
-
-$$
-SST = SSB + SSW
-$$
-
-Explain the meaning of these components:
-
-* **SSB** (Sum of Squares Between) - between-group variability.
-* **SSW** (Sum of Squares Within) - within-group variability (error).
-
-Which of these variabilities must be dominant for us to reject the hypothesis of equality of means?
-
-## Task 6. ANOVA table and F-statistic
-
-Complete (conceptually) the ANOVA table. How do we calculate Mean Squares (MSB, MSW)?
-
-The F test statistic is the quotient:
+For the given data, determine the equation of the regression plane:
 
 $$
-F = \frac{MSB}{MSW}
+y = a x_1 + b x_2 + c
 $$
 
-If the F statistic takes a large value (falls into the critical region), what decision do we make regarding the null hypothesis $H_0: \mu_1 = \mu_2 = \dots = \mu_k$?
+## Task 7
+The number of transistors in processors grows exponentially: $y = a \cdot e^{bx}$. Having historical data, reduce this problem to linear regression by taking logarithms ($\ln y = \ln a + bx$) and determine the growth parameters.
 
-## Task 7. Post-hoc tests
+## Task 8
+Processor production generates a certain percentage of defects. Instead of taking a fixed sample of 100 units, we take units one by one. After each extraction, we decide: "good batch", "bad batch", or "continue sampling".
 
-We performed an ANOVA test and rejected the null hypothesis (meaning the means are not equal). The F-test tells us that a difference exists, but it doesn't say **between which groups**.
+Construct a sequential test (Wald test) to verify the hypothesis $p=0.01$ against $p=0.10$.
 
-What are post-hoc tests (multiple comparison tests), such as Tukey's test (HSD) or Bonferroni test, used for?
+## Task 9
+For a simple sample $x_1, ..., x_n$ from an exponential distribution (failure-free operation time) with density $f(x) = \lambda e^{-\lambda x}$, determine the estimator of the parameter $\lambda$ using the maximum likelihood method (MLE).
 
-## Task 8. Mann-Whitney U Test
+## Task 10
+We have 3 servers. We want to check if they operate equally stably (if they have the same variance of response times) before comparing their average times. The sample variances are: $s_1^2=1.4$, $s_2^2=1.4$, $s_3^2=1.4$.
 
-We have two small, independent samples. The data do not have a normal distribution (visible strong asymmetry, outliers), so we cannot use the Student's t-test.
-
-Describe the working principle of the Mann-Whitney U test.
-What does ranking data involve in this test? What do we test (means or distributions/medians)?
-
-## Task 9. Wilcoxon Signed-Rank Test
-
-We examine the impact of training on employees. We have "before" and "after" results for the same group of people (dependent samples). The distribution of differences is not normal.
-
-Which non-parametric test should be applied?
-Briefly describe how the ranks of differences (positive and negative) are used in this test.
-
-## Task 10. Kruskal-Wallis Test
-
-If we want to compare 3 groups (or more) and the assumptions of analysis of variance (lack of normality) are not met, we use the Kruskal-Wallis test.
-
-It is the non-parametric equivalent of which parametric test?
+Verify the hypothesis $H_0: \sigma_1^2 = \sigma_2^2 = \sigma_3^2$ (e.g., using Bartlett's test).

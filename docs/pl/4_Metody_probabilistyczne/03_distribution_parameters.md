@@ -1,111 +1,94 @@
-# Parametry rozkładu zmiennych losowych
+# LISTA ZADAŃ NR 3: Parametry rozkładu zmiennych losowych
+(Wartość oczekiwana, wariancja, momenty, korelacja)
 
-W tym dziale zajmujemy się wyznaczaniem podstawowych charakterystyk liczbowych zmiennych losowych, takich jak wartość oczekiwana (średnia), wariancja, odchylenie standardowe oraz parametry dla zmiennych dwuwymiarowych (kowariancja, korelacja).
+## Zadanie 1
+Dla zmiennej losowej $X$ o funkcji prawdopodobieństwa danej tabelką:
 
-## Zadanie 1. Wartość oczekiwana i wariancja (rozkład skokowy)
+| $x_i$ | -2 | 2 | 4 |
+| :--- | :--- | :--- | :--- |
+| $p_i$ | 0,5 | 0,3 | 0,2 |
 
-Dana jest zmienna losowa $X$ o rozkładzie dyskretnym:
+Wyznaczyć:
 
-| $x_i$ | -2 | 0 | 2 | 4 |
-| :--- | :---: | :---: | :---: | :---: |
-| $p_i$ | 0.1 | 0.4 | 0.3 | 0.2 |
+a) Wartość oczekiwaną $E(X)$ (średnią).
+b) Wariancję $D^2(X)$ (korzystając ze wzoru $D^2(X) = E(X^2) - (EX)^2$).
+c) Odchylenie standardowe $\sigma$.
+d) Medianę $x_{0,5}$ (wartość środkową).
 
-Oblicz:
-
-* Wartość oczekiwaną $E(X)$.
-* Drugi moment zwykły $E(X^2)$.
-* Wariancję $D^2(X)$ (korzystając ze wzoru $D^2(X) = E(X^2) - (E(X))^2$).
-* Odchylenie standardowe $\sigma(X)$.
-
-## Zadanie 2. Własności wartości oczekiwanej i wariancji
-
-Zmienna losowa $X$ ma parametry: $E(X) = 5$ oraz $D^2(X) = 4$.
-Zdefiniujmy nową zmienną losową $Y = 3X - 2$.
-
-Korzystając z własności liniowości wartości oczekiwanej i kwadratowej skalowalności wariancji, oblicz:
-
-* $E(Y)$
-* $D^2(Y)$
-* $\sigma(Y)$
-
-Przypomnienie: $D^2(aX + b) = a^2 D^2(X)$.
-
-## Zadanie 3. Gra losowa (interpretacja wartości oczekiwanej)
-
-Gra polega na rzucie sześcienną kostką.
-
-* Jeśli wypadnie 6 oczek, wygrywasz 10 zł.
-* Jeśli wypadnie 4 lub 5 oczek, wygrywasz 2 zł.
-* W pozostałych przypadkach przegrywasz stawkę wejściową (nic nie wygrywasz).
-
-Opłata za udział w grze wynosi 2 zł.
-Czy gra jest sprawiedliwa? Oblicz wartość oczekiwaną zysku netto gracza.
-
-## Zadanie 4. Wartość oczekiwana zmiennej ciągłej
-
-Zmienna losowa $X$ ma funkcję gęstości:
+## Zadanie 2
+Miesięczny koszt $U$ prowadzenia pewnego systemu zależy od liczby $X$ aktywnych użytkowników (pracowników) według wzoru:
 
 $$
-f(x) = \begin{cases} 
-0.5 x & \text{dla } x \in [0, 2] \\
-0 & \text{dla } x \notin [0, 2]
-\end{cases}
+U = 15000X + 10000\sqrt{X}
 $$
 
-Oblicz wartość oczekiwaną $E(X)$.
+Liczba pracowników $X$ jest zmienną losową o rozkładzie:
 
-Wzór: $E(X) = \int_{-\infty}^{\infty} x f(x) dx$.
+| $x_i$ | 2 | 3 | 4 | 5 |
+| :--- | :--- | :--- | :--- | :--- |
+| $p_i$ | 0,10 | 0,25 | 0,40 | 0,25 |
 
-## Zadanie 5. Wariancja zmiennej ciągłej
+Obliczyć przewidywany średni miesięczny koszt, czyli wartość oczekiwaną zmiennej $U$.
 
-Dla zmiennej losowej z Zadania 4 oblicz wariancję $D^2(X)$.
+*Wskazówka: Oblicz $u_i$ dla każdego $x_i$, a następnie zastosuj wzór na wartość oczekiwaną.*
 
-Wskazówka: Najpierw oblicz $E(X^2) = \int_{-\infty}^{\infty} x^2 f(x) dx$.
+## Zadanie 3
+Zmienna losowa $X$ (np. błąd pomiarowy) ma rozkład o gęstości:
 
-## Zadanie 6. Mediana i dominanta (moda)
+$$
+f(x) = \begin{cases}6x(1-x) & \text{dla } 0 < x < 1 \\0 & \text{dla pozostałych } x\end{cases}
+$$
 
-Dla funkcji gęstości z Zadania 4 ($f(x) = 0.5x$ na przedziale $[0, 2]$):
+Obliczyć wartość przeciętną (oczekiwaną) oraz wariancję tej zmiennej. Następnie obliczyć wariancję zmiennej liniowo zależnej $Y = 2X - 1$ (skorzystać z własności wariancji: $D^2(aX+b) = a^2 D^2(X)$).
 
-* Wyznacz **medianę** ($Me$), czyli taką wartość $x$, która dzieli pole pod wykresem gęstości na dwie równe części ($\int_{-\infty}^{Me} f(x) dx = 0.5$).
-* Wyznacz **dominantę** ($Mo$), czyli wartość $x$, dla której funkcja gęstości osiąga maksimum lokalne.
+## Zadanie 4
+Zmienna losowa $X$ ma rozkład o gęstości:
 
-## Zadanie 7. Kowariancja zmiennych losowych
+$$
+f(x) = \begin{cases}\frac{1}{2}x & \text{dla } 0 \leqslant x \leqslant 2 \\0 & \text{poza tym}\end{cases}
+$$
 
-Dany jest rozkład łączny zmiennych $(X, Y)$:
+Wyznaczyć modę (wartość, dla której gęstość jest największa) oraz medianę (wartość, która dzieli pole pod wykresem gęstości na dwie równe połowy).
 
-| X \ Y | 2 | 5 |
-| :--- | :---: | :---: |
-| **1** | 0.2 | 0.3 |
-| **3** | 0.4 | 0.1 |
+## Zadanie 5
+Wzrost ludzi w pewnej grupie jest zmienną losową $X$ o średniej $EX = 170$ cm i odchyleniu $\sigma_X = 5$ cm. Masa tych ludzi to zmienna $Y$ o średniej $EY = 65$ kg i odchyleniu $\sigma_Y = 5$ kg.
 
-Wykonaj polecenia:
+Która cecha (wzrost czy waga) jest bardziej "stabilna" (ma mniejszy rozrzut względny)?
 
-* Oblicz wartości oczekiwane brzegowe: $E(X)$ oraz $E(Y)$.
-* Oblicz wartość oczekiwaną iloczynu: $E(XY) = \sum \sum x_i y_j p_{ij}$.
-* Oblicz kowariancję $Cov(X, Y) = E(XY) - E(X)E(Y)$.
+*Wskazówka: Oblicz współczynnik zmienności $v = \frac{\sigma}{EX}$ dla obu zmiennych.*
 
-## Zadanie 8. Współczynnik korelacji liniowej
+## Zadanie 6
+Prawdopodobieństwo nieprzekroczenia w ciągu doby limitu zużycia energii elektrycznej przez pewien zakład wynosi $p=0,8$. Obserwujemy ten zakład przez $n=5$ dni. Niech $X$ oznacza liczbę dni, w których nie przekroczono limitu.
 
-Na podstawie wyników z Zadania 7:
+a) Jaki to typ rozkładu? Podać wzór na prawdopodobieństwo $P(X=k)$.
+b) Obliczyć wartość oczekiwaną i wariancję zmiennej $X$, korzystając z gotowych wzorów dla tego rozkładu ($EX=np$, $D^2X=npq$).
 
-* Oblicz wariancje brzegowe $D^2(X)$ i $D^2(Y)$.
-* Oblicz odchylenia standardowe $\sigma_X$ i $\sigma_Y$.
-* Oblicz współczynnik korelacji Pearsona $\rho(X, Y) = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}$.
-* Zinterpretuj wynik (czy korelacja jest silna/słaba, dodatnia/ujemna).
+## Zadanie 7
+Czas (w minutach) między kolejnymi zgłoszeniami abonentów w centrali telefonicznej jest zmienną losową o rozkładzie wykładniczym z parametrem $\lambda = 2$.
 
-## Zadanie 9. Wariancja sumy i różnicy
+a) Obliczyć średni czas oczekiwania na zgłoszenie ($EX$).
+b) Obliczyć prawdopodobieństwo, że czas między zgłoszeniami będzie krótszy niż 3 minuty ($P(X<3)$).
 
-Wiadomo, że $D^2(X) = 9$, $D^2(Y) = 16$, a kowariancja $Cov(X, Y) = 2$.
+## Zadanie 8
+Automat produkuje odważniki. Błędy pomiarów masy mają rozkład normalny o wartości oczekiwanej $\mu=0$ g i odchyleniu standardowym $\sigma=0,01$ g. Obliczyć prawdopodobieństwo, że błąd pomiaru (co do modułu) nie przekroczy $0,02$ g.
 
-Oblicz wariancję sumy i różnicy tych zmiennych:
+*Wskazówka: Skorzystać z dystrybuanty standaryzowanego rozkładu normalnego $\Phi(u)$. Zauważ, że $P(|X|<a) = P(-a < X < a)$.*
 
-* $D^2(X + Y)$
-* $D^2(X - Y)$
+## Zadanie 9
+Dana jest dwuwymiarowa zmienna losowa $(X, Y)$ o rozkładzie podanym w tabeli (reprezentująca np. wyniki testów w dwóch różnych momentach czasu):
 
-Wzór: $D^2(X \pm Y) = D^2(X) + D^2(Y) \pm 2Cov(X, Y)$.
+| $y_k \backslash x_i$ | 8 | 9 | 10 | 11 |
+| :--- | :--- | :--- | :--- | :--- |
+| **1,2** | 0,10 | 0,04 | 0 | 0 |
+| **1,3** | 0,05 | 0,11 | 0,20 | 0 |
+| **1,4** | 0 | 0,10 | 0,15 | 0,10 |
+| **1,5** | 0 | 0 | 0,05 | 0,10 |
 
-## Zadanie 10. Moment centralny vs zwykły
+Obliczyć współczynnik korelacji liniowej $\rho$ między zmiennymi $X$ i $Y$.
 
-Wyjaśnij różnicę między momentem zwykłym rzędu $k$ ($m_k = E(X^k)$) a momentem centralnym rzędu $k$ ($\mu_k = E[(X - E(X))^k]$).
+*Wskazówka: Należy obliczyć kolejno: średnie $EX, EY$, wariancje $D^2X, D^2Y$ oraz moment mieszany $E(XY) = \sum x_i y_k p_{ik}$. Kowariancja to $cov(X,Y) = E(XY) - EX \cdot EY$.*
 
-Oblicz trzeci moment centralny $\mu_3$ (skośność nieunormowaną) dla zmiennej losowej o rozkładzie: $P(X=-1)=0.5, P(X=1)=0.5$.
+## Zadanie 10
+Niech $X$ i $Y$ będą niezależnymi zmiennymi losowymi o zerowych wartościach przeciętnych ($EX=0, EY=0$). Wykazać, że dla dowolnego $n \in N$ zmienne $X$ i $X^n$ oraz $Y$ i $E(X^3)EY$ spełniają równość: $E(X^3 Y) = E(X^3)E(Y)$.
+
+Czy zmienna $Z = X^3 Y$ ma wartość oczekiwaną równą 0? Co to oznacza w kontekście sygnałów losowych (szum)?

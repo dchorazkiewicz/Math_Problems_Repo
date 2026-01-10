@@ -1,128 +1,67 @@
-# Introduction to Statistical Decision Theory
+# TASK LIST NO. 11: Introduction to Statistical Decision Theory
 
-This section introduces formalized methods of making optimal decisions in situations where the result depends not only on us, but also on random factors ("states of nature") or the actions of an opponent.
+## Task 1
+We consider a batch of goods (e.g., processors) in which we examine defectiveness. We test the hypothesis $H_0: p = p_0$ (good batch) against $H_1: p = p_1$ (defective batch). A test was constructed that rejects the batch if the number of defective items in a randomly drawn sample exceeds a certain $k$.
 
-## Task 1. Payoff Matrix and States of Nature
+Calculate:
 
-A company must decide on the production volume of a new product. It has three strategies (decisions) to choose from:
-$D_1$: Small production.
-$D_2$: Medium production.
-$D_3$: Large production.
+a) The probability of a Type I error $\alpha$ (rejecting a good batch – producer's risk).
+b) The probability of a Type II error $\beta$ (accepting a bad batch – consumer's risk).
 
-The financial result depends on market demand (states of nature), which can be:
-$S_1$: Low.
-$S_2$: Medium.
-$S_3$: High.
+## Task 2
+For the test from Task 1, determine the power of the test ($1-\beta$) for several alternative values of parameter $p$. Prepare a graph of the test power curve (power function). What does this graph tell us about the "sensitivity" of the decision algorithm to deviations from the norm?
 
-The payoff matrix (profits in thousands of PLN) looks as follows:
+## Task 3
+For a mean test $H_0: \mu = 100$ with known $\sigma=5$ and $n=25$:
 
-| Decision \ State | $S_1$ (Low) | $S_2$ (Medium) | $S_3$ (High) |
-| :--- | :---: | :---: | :---: |
-| **$D_1$ (Small)** | 20 | 20 | 20 |
-| **$D_2$ (Medium)** | 10 | 40 | 40 |
-| **$D_3$ (Large)** | -10 | 30 | 80 |
+a) Determine the formula for the operating characteristic (OC) function: $L(\mu) = P(\text{acceptance of } H_0 | \mu)$.
+b) How will changing the sample size to $n=100$ affect the steepness of this curve (discriminatory ability)?
 
-Interpret the risk associated with decision $D_3$. In what situation does this strategy bring losses?
+## Task 4
+We want to construct a test for the mean that meets strict safety requirements:
 
-## Task 2. Decision Making Under Uncertainty (Wald's Criterion)
+* The risk of rejecting the norm when it is met ($\alpha$) is to be 0.01.
+* The risk of accepting the norm when the mean shift is 2 units ($\beta$) is not to exceed 0.05.
 
-We do not know the probabilities of occurrence of individual demand states ($S_1, S_2, S_3$).
-Apply **Wald's criterion (maximin)** to the matrix from Task 1.
+What is the minimum number of measurements that must be performed?
 
-* For each decision, determine the worst possible result (security).
-* Choose the decision that maximizes this worst result (the best of the worst).
-* What approach does this criterion represent: optimistic or cautious (pessimistic)?
+## Task 5
+The defectiveness of the production of certain products has been 10% ($p_0=0.1$) so far. A new technology is expected to reduce defectiveness to 5% ($p_1=0.05$). Instead of taking a fixed sample, we take items one by one.
 
-## Task 3. Hurwicz Criterion
+Construct a sequential probability ratio test (Wald test), setting risks $\alpha=0.05$ and $\beta=0.10$.
 
-The Hurwicz criterion allows taking into account the decision maker's attitude using the coefficient of optimism $\alpha \in [0, 1]$.
-The formula for the index for decision $D_i$:
+a) Determine the decision lines (acceptance region, rejection region, and continuation region).
+b) Present the procedure in the form of an algorithm (pseudocode).
 
-$$
-H(D_i) = \alpha \cdot \max_{j} \{w_{ij}\} + (1 - \alpha) \cdot \min_{j} \{w_{ij}\}
-$$
+## Task 6
+For the test from Task 5, suppose the following were drawn sequentially:
+Good, Good, Bad, Good, Good, Good, Good...
 
-For the data from Task 1:
+Mark these points on the sequential test chart. In which step (if any) will the algorithm make the decision "The new technology is better"?
 
-* Determine the best decision for an optimist ($\alpha = 1$, Maximax criterion).
-* Determine the best decision for a moderate decision maker ($\alpha = 0.5$).
-
-## Task 4. Savage Criterion (Regret Minimization)
-
-The decision maker wants to avoid a situation where they will regret not having made a different decision, having already known the state of nature.
-For the data from Task 1:
-
-* Construct the **regret matrix (relative loss)**. Regret is the difference between the best result possible to achieve in a given state of nature and the result actually achieved.
-* Apply the minimax criterion (minimizing maximum regret).
-
-## Task 5. Laplace Criterion
-
-In a situation of total ignorance about the probabilities of states of nature, the Laplace criterion assumes that each state is equally probable (principle of insufficient reason).
-
-* Assume that $P(S_1) = P(S_2) = P(S_3) = \frac{1}{3}$.
-* Calculate the expected payoff for each decision $D_1, D_2, D_3$.
-* Which decision should be chosen?
-
-## Task 6. Decision Making Under Risk (EMV)
-
-Let us assume now that based on market research, the probabilities of states of nature have been estimated:
-$P(S_1) = 0.3$ (Low demand)
-$P(S_2) = 0.5$ (Medium demand)
-$P(S_3) = 0.2$ (High demand)
-
-Calculate the **Expected Monetary Value (EMV)** for each decision $D_1, D_2, D_3$.
-Which decision maximizes the expected profit?
+## Task 7
+One of the advantages of sequential methods is that they require less data on average than classical tests. For the test from Task 5, calculate the expected number of steps (samples) needed to make a decision (ASN), assuming that hypothesis $H_0$ is true.
 
 $$
-EMV(D_i) = \sum_{j} w_{ij} \cdot P(S_j)
+E(n) \approx \frac{(1-\alpha)\ln A + \alpha \ln B}{E(z)}
 $$
 
-## Task 7. Value of Perfect Information (EVPI)
+where $A, B$ are decision thresholds.
 
-A consulting company offers a study that will determine with 100% certainty what the state of demand will be before we make a decision.
+## Task 8
+An automated machine produces parts with a nominal diameter $\mu_0$. We suspect that the machine has become decalibrated and the mean has increased to $\mu_1$. The deviation $\sigma$ is known.
 
-* Calculate the Expected Value with Perfect Information (EVwPI). (This is the average of the best results in each state).
-* Calculate the **Value of Perfect Information (EVPI)** as the difference: $EVPI = EVwPI - \max(EMV)$.
-* How much maximum should the company pay for such a study?
+Construct a sequential test verifying $H_0: \mu = \mu_0$ against $H_1: \mu = \mu_1$. Write the "stop" condition for this algorithm.
 
-## Task 8. Decision Trees
+## Task 9
+We have two possible decisions $d_1$ (system deployment) and $d_2$ (no deployment) and two states of nature $\theta_1$ (system works correctly) and $\theta_2$ (system has errors). The loss (cost) matrix is as follows:
 
-An investor has two options to choose from:
-A. Put money in a deposit (certain profit 5 thousand PLN).
-B. Invest in stocks.
-   * With a probability of 0.6 the market will rise (profit 20 thousand PLN).
-   * With a probability of 0.4 the market will fall (loss 10 thousand PLN).
+* If $d_1$ and $\theta_1$: Cost = 0
+* If $d_1$ and $\theta_2$: Cost = 1000 (failure at client's site)
+* If $d_2$ and $\theta_1$: Cost = 100 (lost profit)
+* If $d_2$ and $\theta_2$: Cost = 0
 
-Draw (sketch) a decision tree for this problem. Calculate the expected value at random nodes and indicate the optimal decision.
+What decision should be made using the **Minimax** criterion (minimizing the maximum loss)?
 
-## Task 9. Game Theory - Zero-Sum Game
-
-Two competitors (Player A and Player B) choose pricing strategies. Player A's profit is simultaneously Player B's loss (zero-sum game).
-Payoff matrix for Player A:
-
-| A \ B | $B_1$ | $B_2$ |
-| :--- | :---: | :---: |
-| **$A_1$** | 4 | 1 |
-| **$A_2$** | 2 | 3 |
-
-* Determine the maximin strategy for Player A (securing their profit).
-* Determine the minimax strategy for Player B (minimizing loss).
-* Check if the game has a **saddle point** (does maximin A equal minimax B). If so, what is the value of the game?
-
-## Task 10. Mixed Strategies
-
-Consider a game (coin toss):
-* Player A chooses Heads or Tails.
-* Player B chooses Heads or Tails.
-* If they choose the same, A pays B 1 PLN (-1, 1).
-* If they choose differently, B pays A 1 PLN (1, -1).
-
-Matrix for Player A:
-
-| A \ B | H | T |
-| :--- | :---: | :---: |
-| **H** | -1 | 1 |
-| **T** | 1 | -1 |
-
-Does a saddle point exist in pure strategies in this game?
-What should be the optimal mixed strategy (with what frequencies to choose Heads and Tails) so as not to get "outplayed" by the opponent?
+## Task 10
+For the situation from Task 9, assume that we know from previous tests that the probability of errors occurring is $P(\theta_2) = 0.05$. Calculate the expected loss (Bayes risk) for both decisions. Which decision is optimal in the Bayesian sense?

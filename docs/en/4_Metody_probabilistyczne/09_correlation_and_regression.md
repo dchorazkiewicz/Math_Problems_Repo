@@ -1,114 +1,88 @@
-# Correlation and Regression Analysis
+# TASK LIST NO. 9: Correlation and Regression Analysis
 
-In this section, we examine the interdependence between two features. Tasks include calculating correlation coefficients, determining the regression line equation using the least squares method, and assessing the model fit.
+## Task 1
+The dependence between two features $X$ and $Y$ was investigated based on a 10-element sample (e.g., $X$ – file size in MB, $Y$ – transmission time in sec). Measurement results:
 
-## Task 1. Scatter plot
+* $x_i$: $3.5, 3.4, 2.1, 5.4, 1.1, 5.1, 6.9, 4.0, 4.5, 2.5$
+* $y_i$: $1.6, 2.9, 1.5, 3.5, 0.6, 2.5, 7.1, 3.5, 2.1, 2.6$
 
-The following table presents data on advertising expenditure ($X$) and sales revenue ($Y$) in 5 branches of a company (in thousands of PLN):
+Calculate the Pearson linear correlation coefficient $r$. Is the dependence strong?
 
-| X | 2 | 4 | 5 | 8 | 10 |
-|---|---|---|---|---|----|
-| Y | 20| 35| 45| 70| 85 |
+*Hint: Create a helper table with columns $x_i^2, y_i^2, x_i y_i$ and calculate the sums.*
 
-* Draw (sketch) a scatter plot of this data.
-* Based on the chart, assess preliminarily: is the relationship linear? Is it positive or negative? Is it strong?
-
-## Task 2. Pearson correlation coefficient
-
-For the data from Task 1, calculate the Pearson linear correlation coefficient $r$.
-
-Steps:
-1. Calculate the means $\bar{x}$ and $\bar{y}$.
-2. Calculate the covariance $Cov(X, Y)$ (or the numerator of the formula for $r$).
-3. Calculate the standard deviations $S_x$ and $S_y$ (or the denominator of the formula).
-4. Apply the formula:
+## Task 2
+In a certain network experiment, data regarding the number of errors ($X$) and system response time ($Y$) were collected. Since there was a lot of data, ready-made sums were calculated for $n=25$ measurements:
 
 $$
-r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}
-$$
-
-## Task 3. Interpretation of the correlation coefficient
-
-We calculated correlation coefficients for different pairs of variables. Interpret the strength and direction of the relationship for the results:
-
-* $r = 0.95$
-* $r = -0.8$
-* $r = 0.1$
-* $r = 0$
-
-What does spurious correlation mean? Give an example where high correlation does not imply a cause-and-effect relationship.
-
-## Task 4. Least Squares Method (LSM)
-
-We want to fit a regression line $y = ax + b$ to the data from Task 1.
-The Least Squares Method minimizes the sum of squared errors (vertical distances of points from the line).
-
-Determine parameters $a$ and $b$ using the formulas:
-
-$$
-a = \frac{Cov(X, Y)}{S_x^2} = r \cdot \frac{S_y}{S_x}
+\sum x_i = 375, \quad \sum y_i = 175
 $$
 
 $$
-b = \bar{y} - a\bar{x}
+\sum x_i^2 = 6125, \quad \sum y_i^2 = 1245, \quad \sum x_i y_i = 2615
 $$
 
-## Task 5. Regression equation
+Calculate the correlation coefficient $r$ and the means $\bar{x}$ and $\bar{y}$.
 
-Write the regression line equation determined in Task 4.
+## Task 3
+For a population in which the investigated features $(X, Y)$ have a two-dimensional normal distribution (e.g., processor temperature vs. its clock speed), a sample was taken:
+$(3, 3), (5, 3), (6, 4), (5, 8), (7, 5), (8, 6), (8, 9), (5, 4), (6, 5)...$ (full data in the set).
 
-* By how much (on average) will revenue ($Y$) increase if advertising expenditure ($X$) increases by 1 thousand PLN? Interpret the slope coefficient $a$ in this context.
-* What would be the predicted revenue if advertising expenditure were 0? (Interpretation of the intercept $b$).
+Determine the equation of the linear regression line $y = ax + b$ of the second kind (i.e., regression of $Y$ with respect to $X$).
 
-## Task 6. Forecasting and forecast error
+*Hint: Use the least squares method.*
 
-Using the determined regression model:
+## Task 4
+Using the regression line equation determined in Task 3, estimate the predicted value of feature $Y$ (e.g., clock speed) if feature $X$ (temperature) takes the value $x=10$.
 
-* Forecast revenue for a branch that spends 6 thousand PLN on advertising.
-* Forecast revenue for a branch that spends 50 thousand PLN on advertising. Is this forecast reliable? (Extrapolation problem).
+What risk does forecasting for $x$ outside the data range of the sample (extrapolation) carry?
 
-## Task 7. Coefficient of determination $R^2$
+## Task 5
+For the data from Task 2, where the correlation coefficient was $r \approx -0.1$ (to be verified in calculations), verify at the significance level $\alpha=0.05$ the hypothesis $H_0: \rho = 0$ (no correlation in the population) against the hypothesis $H_1: \rho \neq 0$.
 
-Calculate the coefficient of determination $R^2$ for the model from Task 4.
-In the case of linear regression of one variable $R^2 = r^2$.
-
-Interpret this result. What part of the variability of variable $Y$ is explained by the variability of variable $X$ in this model?
-
-## Task 8. Spearman's rank correlation
-
-In a certain competition, two judges evaluated 5 competitors, assigning them places (ranks) from 1 to 5:
-
-| Competitor | A | B | C | D | E |
-|---|---|---|---|---|---|
-| Judge 1 | 1 | 2 | 3 | 4 | 5 |
-| Judge 2 | 2 | 1 | 4 | 5 | 3 |
-
-Calculate the Spearman rank correlation coefficient. Are the judges' assessments consistent?
-
-Formula (when there are no tied ranks):
+*Hint: Use the $t$-Student statistic:*
 
 $$
-r_s = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)}
+t = \frac{r}{\sqrt{1-r^2}}\sqrt{n-2}
 $$
 
-where $d_i$ is the difference in ranks for the $i$-th object.
+## Task 6
+For the regression line determined in Task 3, calculate the residual variance $s_r^2$ (or the standard deviation of residuals $s_r$).
+Interpretation: How much are the actual measurement points "scattered" around the determined regression line?
 
-## Task 9. Significance of the correlation coefficient
+*Formula: $s_r^2 = s_y^2 (1 - r^2)$.*
 
-We have a sample of $n=30$ pairs of observations. The calculated correlation coefficient was $r = 0.4$.
-We want to check if there is actually a correlation in the population ($\rho \neq 0$).
+## Task 7
+Two experts evaluated the quality of the interface of 10 applications, ranking them from 1 to 10.
 
-Verify the hypothesis $H_0: \rho = 0$ at a significance level of $\alpha = 0.05$.
+* Expert A: $1, 2, 3, 4, 5, 6, 7, 8, 9, 10$
+* Expert B: $2, 1, 4, 3, 6, 5, 8, 7, 10, 9$
 
-Test statistic (Student's t-distribution):
+Calculate Spearman's rank correlation coefficient. Do the experts agree in their evaluations?
+
+*Hint: Use the rank correlation formula based on the differences $d_i$ between ranks.*
+
+## Task 8
+Two regression lines were determined: $y$ with respect to $x$ and $x$ with respect to $y$.
 
 $$
-t = \frac{r}{\sqrt{1-r^2}} \sqrt{n-2}
+y = -0.6x + 2
 $$
 
-## Task 10. Non-linear regression (Linearization)
+$$
+x = -1.2y + 1
+$$
 
-Suppose the data on the chart follows an exponential pattern ($y = b \cdot e^{ax}$) rather than a linear one.
-How can we reduce this problem to linear regression?
+Calculate the correlation coefficient $r$ based on the slope coefficients of these lines.
 
-Hint: Apply the natural logarithm to both sides of the equation. What will be the new variables $Y'$ and $X'$?
+*Hint: The relationship $r^2 = a_{yx} \cdot a_{xy}$ holds. Remember the sign of the correlation coefficient!*
+
+## Task 9
+Suppose the dependence between algorithm execution time ($Y$) and data size ($X$) is exponential: $y = a \cdot e^{bx}$. How can these data be transformed so that known formulas for linear regression can be applied and parameters $a$ and $b$ determined?
+
+*Hint: Take the logarithm of both sides of the equation ($\ln y = \ln a + bx$). Then the new dependent variable is $Z = \ln Y$.*
+
+## Task 10
+Three parameters are monitored in a system: $X_1$ (CPU), $X_2$ (RAM), $X_3$ (Disk IO). Pairwise correlations were calculated:
+$r_{12} = 0.8$, $r_{13} = 0.1$, $r_{23} = 0.2$.
+
+Which variables are strongly correlated with each other, and which are almost independent? What does this mean for the system administrator (e.g., will upgrading RAM affect CPU usage)?

@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="pl" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -9,28 +9,32 @@
       
       
       
+        <link rel="prev" href="../09_correlation_and_regression/">
+      
+      
+        <link rel="next" href="../11_decision_theory/">
       
       
         
-          <link rel="alternate" href="/4_Metody_probabilistyczne/11_decision_theory/" hreflang="pl">
+          <link rel="alternate" href="./" hreflang="pl">
         
-          <link rel="alternate" href="/en/4_Metody_probabilistyczne/11_decision_theory/" hreflang="en">
+          <link rel="alternate" href="../../en/4_Metody_probabilistyczne/10_advanced_methods/" hreflang="en">
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Math Problems</title>
+        <title>10. Zaawansowane metody - Math Problems</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#zaawansowane-metody-statystyczne" class="md-skip">
+          Przejdź do treści
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -84,8 +93,8 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/en/" title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -105,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              10. Zaawansowane metody
             
           </span>
         </div>
@@ -145,20 +154,20 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Select language">
+    <button class="md-header__button md-icon" aria-label="Wybierz język">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/4_Metody_probabilistyczne/11_decision_theory/" hreflang="pl" class="md-select__link">
+            <a href="./" hreflang="pl" class="md-select__link">
               Polski
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/en/4_Metody_probabilistyczne/11_decision_theory/" hreflang="en" class="md-select__link">
+            <a href="../../en/4_Metody_probabilistyczne/10_advanced_methods/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -179,16 +188,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Szukaj">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -199,7 +208,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Inicjowanie wyszukiwania
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -233,9 +242,9 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Nawigacja" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/en/" title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
+    <a href="../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -253,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/" class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -327,14 +336,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/1_Algebra/01_matrices_and_operations/" class="md-nav__link">
+      <a href="../../1_Algebra/01_matrices_and_operations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. Matrices & Operations
+    1. Macierze i operacje
   
 
     
@@ -355,14 +364,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/1_Algebra/02_determinants/" class="md-nav__link">
+      <a href="../../1_Algebra/02_determinants/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Determinants
+    2. Wyznaczniki
   
 
     
@@ -383,14 +392,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/1_Algebra/03_matrix_inversion/" class="md-nav__link">
+      <a href="../../1_Algebra/03_matrix_inversion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Matrix Inversion
+    3. Odwracanie macierzy
   
 
     
@@ -411,14 +420,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/1_Algebra/04_systems_of_equations/" class="md-nav__link">
+      <a href="../../1_Algebra/04_systems_of_equations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Systems of Equations
+    4. Układy równań
   
 
     
@@ -464,7 +473,7 @@
   <span class="md-ellipsis">
     
   
-    Geometry
+    Geometria
   
 
     
@@ -480,7 +489,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Geometry
+    Geometria
   
 
           </label>
@@ -493,14 +502,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/2_Geometria/01_vectors/" class="md-nav__link">
+      <a href="../../2_Geometria/01_vectors/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. Vectors
+    1. Wektory
   
 
     
@@ -521,14 +530,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/2_Geometria/02_lines/" class="md-nav__link">
+      <a href="../../2_Geometria/02_lines/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Lines
+    2. Proste
   
 
     
@@ -549,14 +558,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/2_Geometria/03_planes/" class="md-nav__link">
+      <a href="../../2_Geometria/03_planes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Planes
+    3. Płaszczyzny
   
 
     
@@ -577,14 +586,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/2_Geometria/04_line_and_plane/" class="md-nav__link">
+      <a href="../../2_Geometria/04_line_and_plane/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Line and Plane
+    4. Prosta i płaszczyzna
   
 
     
@@ -630,7 +639,7 @@
   <span class="md-ellipsis">
     
   
-    Analysis
+    Analiza
   
 
     
@@ -646,7 +655,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Analysis
+    Analiza
   
 
           </label>
@@ -659,14 +668,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/3_Analiza/01_sequence_limits/" class="md-nav__link">
+      <a href="../../3_Analiza/01_sequence_limits/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. Sequence Limits
+    1. Granice ciągów
   
 
     
@@ -687,14 +696,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/3_Analiza/02_function_limits/" class="md-nav__link">
+      <a href="../../3_Analiza/02_function_limits/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Function Limits
+    2. Granice funkcji
   
 
     
@@ -715,14 +724,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/3_Analiza/03_derivatives/" class="md-nav__link">
+      <a href="../../3_Analiza/03_derivatives/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Derivatives
+    3. Pochodne funkcji
   
 
     
@@ -743,14 +752,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/3_Analiza/04_function_analysis/" class="md-nav__link">
+      <a href="../../3_Analiza/04_function_analysis/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Function Analysis
+    4. Badanie funkcji
   
 
     
@@ -771,14 +780,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/3_Analiza/05_integrals/" class="md-nav__link">
+      <a href="../../3_Analiza/05_integrals/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Integrals
+    5. Całki
   
 
     
@@ -803,18 +812,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -824,7 +835,7 @@
   <span class="md-ellipsis">
     
   
-    Probabilistic Methods
+    Metody probabilistyczne
   
 
     
@@ -835,12 +846,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Probabilistic Methods
+    Metody probabilistyczne
   
 
           </label>
@@ -853,14 +864,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/01_events_and_probability/" class="md-nav__link">
+      <a href="../01_events_and_probability/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. Events & Probability
+    1. Zdarzenia i prawdopodobieństwo
   
 
     
@@ -881,14 +892,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/02_random_variables/" class="md-nav__link">
+      <a href="../02_random_variables/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Random Variables
+    2. Zmienne losowe
   
 
     
@@ -909,14 +920,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/03_distribution_parameters/" class="md-nav__link">
+      <a href="../03_distribution_parameters/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Distribution Parameters
+    3. Parametry rozkładu
   
 
     
@@ -937,14 +948,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/04_selected_distributions/" class="md-nav__link">
+      <a href="../04_selected_distributions/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Selected Distributions
+    4. Wybrane rozkłady
   
 
     
@@ -965,14 +976,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/05_limit_theorems/" class="md-nav__link">
+      <a href="../05_limit_theorems/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Limit Theorems
+    5. Twierdzenia graniczne
   
 
     
@@ -993,14 +1004,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/06_basic_statistics/" class="md-nav__link">
+      <a href="../06_basic_statistics/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Basic Statistics
+    6. Podstawowe statystyki
   
 
     
@@ -1021,14 +1032,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/07_estimation/" class="md-nav__link">
+      <a href="../07_estimation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. Estimation
+    7. Estymacja
   
 
     
@@ -1049,14 +1060,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/08_hypothesis_testing/" class="md-nav__link">
+      <a href="../08_hypothesis_testing/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    8. Hypothesis Testing
+    8. Weryfikacja hipotez
   
 
     
@@ -1077,14 +1088,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/09_correlation_and_regression/" class="md-nav__link">
+      <a href="../09_correlation_and_regression/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. Correlation & Regression
+    9. Korelacja i regresja
   
 
     
@@ -1102,17 +1113,44 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/10_advanced_methods/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Zaawansowane metody
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Advanced Methods
+    10. Zaawansowane metody
   
 
     
@@ -1121,6 +1159,136 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-1-regresja-wieloraka-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1. Regresja wieloraka - model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-2-skorygowany-wspoczynnik-r2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2. Skorygowany współczynnik \(R^2\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-3-wspoliniowosc-zmiennych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 3. Współliniowość zmiennych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-4-idea-analizy-wariancji-anova" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 4. Idea Analizy Wariancji (ANOVA)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-5-dekompozycja-zmiennosci-w-anova" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 5. Dekompozycja zmienności w ANOVA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-6-tablica-anova-i-statystyka-f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6. Tablica ANOVA i statystyka F
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-7-testy-post-hoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 7. Testy Post-hoc
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-8-test-u-manna-whitneya" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 8. Test U Manna-Whitneya
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-9-test-wilcoxona-dla-par-wiazanych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 9. Test Wilcoxona dla par wiązanych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-10-test-kruskala-wallisa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 10. Test Kruskala-Wallisa
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1133,14 +1301,14 @@
   
   
     <li class="md-nav__item">
-      <a href="/en/4_Metody_probabilistyczne/11_decision_theory/" class="md-nav__link">
+      <a href="../11_decision_theory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    11. Decision Theory
+    11. Teoria decyzji
   
 
     
@@ -1174,10 +1342,130 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-1-regresja-wieloraka-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1. Regresja wieloraka - model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-2-skorygowany-wspoczynnik-r2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2. Skorygowany współczynnik \(R^2\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-3-wspoliniowosc-zmiennych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 3. Współliniowość zmiennych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-4-idea-analizy-wariancji-anova" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 4. Idea Analizy Wariancji (ANOVA)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-5-dekompozycja-zmiennosci-w-anova" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 5. Dekompozycja zmienności w ANOVA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-6-tablica-anova-i-statystyka-f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6. Tablica ANOVA i statystyka F
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-7-testy-post-hoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 7. Testy Post-hoc
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-8-test-u-manna-whitneya" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 8. Test U Manna-Whitneya
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-9-test-wilcoxona-dla-par-wiazanych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 9. Test Wilcoxona dla par wiązanych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-10-test-kruskala-wallisa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 10. Test Kruskala-Wallisa
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1190,8 +1478,83 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="zaawansowane-metody-statystyczne">Zaawansowane metody statystyczne</h1>
+<p>W tym dziale rozszerzamy warsztat analityczny o metody pozwalające badać wpływ wielu czynników jednocześnie (Regresja Wieloraka) oraz porównywać wiele grup naraz (ANOVA). Wprowadzamy również testy nieparametryczne, stosowane gdy dane nie spełniają założeń o normalności rozkładu.</p>
+<h2 id="zadanie-1-regresja-wieloraka-model">Zadanie 1. Regresja wieloraka - model</h2>
+<p>Badamy zależność ceny mieszkania (<span class="arithmatex">\(Y\)</span>) od jego powierzchni (<span class="arithmatex">\(X_1\)</span>) oraz odległości od centrum (<span class="arithmatex">\(X_2\)</span>). Otrzymano model regresji:</p>
+<div class="arithmatex">\[
+\hat{y} = 200 + 8 \cdot x_1 - 5 \cdot x_2
+\]</div>
+<p>Zinterpretuj parametry tego modelu:</p>
+<ul>
+<li>Co oznacza liczba 8 przy zmiennej <span class="arithmatex">\(x_1\)</span>? (Pamiętaj o klauzuli <em>ceteris paribus</em> - przy ustalonych pozostałych zmiennych).</li>
+<li>Co oznacza liczba -5 przy zmiennej <span class="arithmatex">\(x_2\)</span>?</li>
+</ul>
+<h2 id="zadanie-2-skorygowany-wspoczynnik-r2">Zadanie 2. Skorygowany współczynnik <span class="arithmatex">\(R^2\)</span></h2>
+<p>W regresji wielorakiej dodawanie kolejnych zmiennych do modelu zawsze zwiększa (lub nie zmienia) zwykły współczynnik <span class="arithmatex">\(R^2\)</span>, nawet jeśli nowe zmienne są bezwartościowe merytorycznie.</p>
+<ul>
+<li>Wyjaśnij, dlaczego stosujemy <strong>skorygowany <span class="arithmatex">\(R^2\)</span></strong> (<span class="arithmatex">\(R^2_{adj}\)</span>) zamiast zwykłego <span class="arithmatex">\(R^2\)</span> przy porównywaniu modeli o różnej liczbie zmiennych.</li>
+<li>Jak interpretować sytuację, w której <span class="arithmatex">\(R^2\)</span> jest wysokie, a <span class="arithmatex">\(R^2_{adj}\)</span> znacznie niższe?</li>
+</ul>
+<h2 id="zadanie-3-wspoliniowosc-zmiennych">Zadanie 3. Współliniowość zmiennych</h2>
+<p>W analizie regresji wielorakiej groźnym zjawiskiem jest współliniowość zmiennych objaśniających (np. gdy <span class="arithmatex">\(X_1\)</span> jest silnie skorelowane z <span class="arithmatex">\(X_2\)</span>).</p>
+<ul>
+<li>Dlaczego współliniowość jest problemem przy szacowaniu parametrów modelu?</li>
+<li>Co to jest wskaźnik VIF (Variance Inflation Factor)?</li>
+</ul>
+<h2 id="zadanie-4-idea-analizy-wariancji-anova">Zadanie 4. Idea Analizy Wariancji (ANOVA)</h2>
+<p>Chcemy porównać średnie wyniki egzaminu w trzech różnych grupach studenckich (A, B, C).</p>
+<p>Dlaczego nie powinniśmy wykonywać trzech oddzielnych testów t-Studenta (A vs B, B vs C, A vs C)?
+Wyjaśnij pojęcie "akumulacji błędu I rodzaju" i rolę testu F w jednoczynnikowej analizie wariancji.</p>
+<h2 id="zadanie-5-dekompozycja-zmiennosci-w-anova">Zadanie 5. Dekompozycja zmienności w ANOVA</h2>
+<p>W jednoczynnikowej analizie wariancji całkowitą sumę kwadratów odchyleń (SST - Total Sum of Squares) dzielimy na dwa składniki:</p>
+<div class="arithmatex">\[
+SST = SSB + SSW
+\]</div>
+<p>Wyjaśnij znaczenie tych składników:</p>
+<ul>
+<li><strong>SSB</strong> (Sum of Squares Between) - zmienność międzygrupowa.</li>
+<li><strong>SSW</strong> (Sum of Squares Within) - zmienność wewnątrzgrupowa (błąd).</li>
+</ul>
+<p>Która z tych zmienności musi być dominująca, abyśmy odrzucili hipotezę o równości średnich?</p>
+<h2 id="zadanie-6-tablica-anova-i-statystyka-f">Zadanie 6. Tablica ANOVA i statystyka F</h2>
+<p>Uzupełnij (koncepcyjnie) tabelę ANOVA. Jak obliczamy Średnie Kwadraty (MSB, MSW)?</p>
+<p>Statystyka testowa F to iloraz:</p>
+<div class="arithmatex">\[
+F = \frac{MSB}{MSW}
+\]</div>
+<p>Jeśli statystyka F przyjmuje dużą wartość (wpadnie w obszar krytyczny), to jaką decyzję podejmujemy odnośnie hipotezy zerowej <span class="arithmatex">\(H_0: \mu_1 = \mu_2 = \dots = \mu_k\)</span>?</p>
+<h2 id="zadanie-7-testy-post-hoc">Zadanie 7. Testy Post-hoc</h2>
+<p>Wykonaliśmy test ANOVA i odrzuciliśmy hipotezę zerową (czyli średnie nie są równe). Test F mówi nam, że różnica istnieje, ale nie mówi, <strong>między którymi grupami</strong>.</p>
+<p>Do czego służą testy post-hoc (porównań wielokrotnych), takie jak test Tukeya (HSD) lub test Bonferroniego?</p>
+<h2 id="zadanie-8-test-u-manna-whitneya">Zadanie 8. Test U Manna-Whitneya</h2>
+<p>Mamy dwie małe, niezależne próby. Dane nie mają rozkładu normalnego (widoczna silna asymetria, elementy odstające), więc nie możemy użyć testu t-Studenta.</p>
+<p>Opisz zasadę działania testu U Manna-Whitneya.
+Na czym polega rangowanie danych w tym teście? Co testujemy (średnie czy rozkłady/mediany)?</p>
+<h2 id="zadanie-9-test-wilcoxona-dla-par-wiazanych">Zadanie 9. Test Wilcoxona dla par wiązanych</h2>
+<p>Badamy wpływ szkolenia na pracowników. Mamy wyniki "przed" i "po" dla tej samej grupy osób (próby zależne). Rozkład różnic nie jest normalny.</p>
+<p>Jaki test nieparametryczny należy zastosować?
+Opisz krótko, jak w tym teście wykorzystuje się rangi różnic (dodatnich i ujemnych).</p>
+<h2 id="zadanie-10-test-kruskala-wallisa">Zadanie 10. Test Kruskala-Wallisa</h2>
+<p>Jeśli chcemy porównać 3 grupy (lub więcej) i nie są spełnione założenia analizy wariancji (brak normalności), stosujemy test Kruskala-Wallisa.</p>
+<p>Jest to nieparametryczny odpowiednik którego testu parametrycznego?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1228,12 +1591,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": [], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="/javascripts/config.js"></script>
+        <script src="../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

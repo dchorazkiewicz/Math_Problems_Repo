@@ -9,30 +9,32 @@
       
       
       
+        <link rel="prev" href="../06_basic_statistics/">
       
-        <link rel="next" href="1_Algebra/01_matrices_and_operations/">
+      
+        <link rel="next" href="../08_hypothesis_testing/">
       
       
         
-          <link rel="alternate" href="/" hreflang="pl">
+          <link rel="alternate" href="./" hreflang="pl">
         
-          <link rel="alternate" href="/en/" hreflang="en">
+          <link rel="alternate" href="../../en/4_Metody_probabilistyczne/07_estimation/" hreflang="en">
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Math Problems</title>
+        <title>7. Estymacja - Math Problems</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interaktywny-zeszyt-cwiczen" class="md-skip">
+        <a href="#estymacja-punktowa-i-przedziaowa" class="md-skip">
           Przejdź do treści
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Nagłówek">
-    <a href="." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
+    <a href="../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              7. Estymacja
             
           </span>
         </div>
@@ -159,13 +161,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/" hreflang="pl" class="md-select__link">
+            <a href="./" hreflang="pl" class="md-select__link">
               Polski
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/en/" hreflang="en" class="md-select__link">
+            <a href="../../en/4_Metody_probabilistyczne/07_estimation/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -242,7 +244,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Nawigacja" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
+    <a href="../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -257,37 +259,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -303,98 +278,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Spis treści
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#metodyka-pracy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metodyka pracy
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rola-notatek-w-przygotowaniu-do-egzaminu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Rola notatek w przygotowaniu do egzaminu
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wykorzystanie-ai-do-personalizacji-nauki" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Wykorzystanie AI do personalizacji nauki
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#oczekiwania-wobec-zajec-i-odpowiedzialnosc-studenta" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Oczekiwania wobec zajęć i odpowiedzialność studenta
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Oczekiwania wobec zajęć i odpowiedzialność studenta">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dla-pasjonatow-technologii-publikacja-www-opcjonalne" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dla pasjonatów technologii: Publikacja WWW (Opcjonalne)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dostepne-dziay" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dostępne Działy
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -453,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1_Algebra/01_matrices_and_operations/" class="md-nav__link">
+      <a href="../../1_Algebra/01_matrices_and_operations/" class="md-nav__link">
         
   
   
@@ -481,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1_Algebra/02_determinants/" class="md-nav__link">
+      <a href="../../1_Algebra/02_determinants/" class="md-nav__link">
         
   
   
@@ -509,7 +392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1_Algebra/03_matrix_inversion/" class="md-nav__link">
+      <a href="../../1_Algebra/03_matrix_inversion/" class="md-nav__link">
         
   
   
@@ -537,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1_Algebra/04_systems_of_equations/" class="md-nav__link">
+      <a href="../../1_Algebra/04_systems_of_equations/" class="md-nav__link">
         
   
   
@@ -619,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Geometria/01_vectors/" class="md-nav__link">
+      <a href="../../2_Geometria/01_vectors/" class="md-nav__link">
         
   
   
@@ -647,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Geometria/02_lines/" class="md-nav__link">
+      <a href="../../2_Geometria/02_lines/" class="md-nav__link">
         
   
   
@@ -675,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Geometria/03_planes/" class="md-nav__link">
+      <a href="../../2_Geometria/03_planes/" class="md-nav__link">
         
   
   
@@ -703,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Geometria/04_line_and_plane/" class="md-nav__link">
+      <a href="../../2_Geometria/04_line_and_plane/" class="md-nav__link">
         
   
   
@@ -785,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/01_sequence_limits/" class="md-nav__link">
+      <a href="../../3_Analiza/01_sequence_limits/" class="md-nav__link">
         
   
   
@@ -813,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/02_function_limits/" class="md-nav__link">
+      <a href="../../3_Analiza/02_function_limits/" class="md-nav__link">
         
   
   
@@ -841,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/03_derivatives/" class="md-nav__link">
+      <a href="../../3_Analiza/03_derivatives/" class="md-nav__link">
         
   
   
@@ -869,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/04_function_analysis/" class="md-nav__link">
+      <a href="../../3_Analiza/04_function_analysis/" class="md-nav__link">
         
   
   
@@ -897,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/05_integrals/" class="md-nav__link">
+      <a href="../../3_Analiza/05_integrals/" class="md-nav__link">
         
   
   
@@ -929,18 +812,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -961,7 +846,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -979,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/01_events_and_probability/" class="md-nav__link">
+      <a href="../01_events_and_probability/" class="md-nav__link">
         
   
   
@@ -1007,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/02_random_variables/" class="md-nav__link">
+      <a href="../02_random_variables/" class="md-nav__link">
         
   
   
@@ -1035,7 +920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/03_distribution_parameters/" class="md-nav__link">
+      <a href="../03_distribution_parameters/" class="md-nav__link">
         
   
   
@@ -1063,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/04_selected_distributions/" class="md-nav__link">
+      <a href="../04_selected_distributions/" class="md-nav__link">
         
   
   
@@ -1091,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/05_limit_theorems/" class="md-nav__link">
+      <a href="../05_limit_theorems/" class="md-nav__link">
         
   
   
@@ -1119,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/06_basic_statistics/" class="md-nav__link">
+      <a href="../06_basic_statistics/" class="md-nav__link">
         
   
   
@@ -1144,10 +1029,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/07_estimation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Estymacja
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1163,6 +1075,136 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-1-estymator-nieobciazony" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1. Estymator nieobciążony
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-2-metoda-momentow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2. Metoda Momentów
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-3-metoda-najwiekszej-wiarogodnosci-mnw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 3. Metoda Największej Wiarogodności (MNW)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-4-przedzia-ufnosci-dla-sredniej-znane-odchylenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 4. Przedział ufności dla średniej (znane odchylenie)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-5-przedzia-ufnosci-dla-sredniej-nieznane-odchylenie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 5. Przedział ufności dla średniej (nieznane odchylenie)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-6-przedzia-ufnosci-dla-wskaznika-struktury-proporcji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6. Przedział ufności dla wskaźnika struktury (proporcji)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-7-minimalna-liczebnosc-proby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 7. Minimalna liczebność próby
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-8-przedzia-ufnosci-dla-wariancji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 8. Przedział ufności dla wariancji
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-9-interpretacja-przedziau-ufnosci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 9. Interpretacja przedziału ufności
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-10-dokadnosc-a-poziom-ufnosci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 10. Dokładność a poziom ufności
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1175,7 +1217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/08_hypothesis_testing/" class="md-nav__link">
+      <a href="../08_hypothesis_testing/" class="md-nav__link">
         
   
   
@@ -1203,7 +1245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/09_correlation_and_regression/" class="md-nav__link">
+      <a href="../09_correlation_and_regression/" class="md-nav__link">
         
   
   
@@ -1231,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/10_advanced_methods/" class="md-nav__link">
+      <a href="../10_advanced_methods/" class="md-nav__link">
         
   
   
@@ -1259,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/11_decision_theory/" class="md-nav__link">
+      <a href="../11_decision_theory/" class="md-nav__link">
         
   
   
@@ -1314,10 +1356,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metodyka-pracy" class="md-nav__link">
+  <a href="#zadanie-1-estymator-nieobciazony" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Metodyka pracy
+        Zadanie 1. Estymator nieobciążony
       
     </span>
   </a>
@@ -1325,10 +1367,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rola-notatek-w-przygotowaniu-do-egzaminu" class="md-nav__link">
+  <a href="#zadanie-2-metoda-momentow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Rola notatek w przygotowaniu do egzaminu
+        Zadanie 2. Metoda Momentów
       
     </span>
   </a>
@@ -1336,10 +1378,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wykorzystanie-ai-do-personalizacji-nauki" class="md-nav__link">
+  <a href="#zadanie-3-metoda-najwiekszej-wiarogodnosci-mnw" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Wykorzystanie AI do personalizacji nauki
+        Zadanie 3. Metoda Największej Wiarogodności (MNW)
       
     </span>
   </a>
@@ -1347,41 +1389,79 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#oczekiwania-wobec-zajec-i-odpowiedzialnosc-studenta" class="md-nav__link">
+  <a href="#zadanie-4-przedzia-ufnosci-dla-sredniej-znane-odchylenie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Oczekiwania wobec zajęć i odpowiedzialność studenta
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Oczekiwania wobec zajęć i odpowiedzialność studenta">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dla-pasjonatow-technologii-publikacja-www-opcjonalne" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dla pasjonatów technologii: Publikacja WWW (Opcjonalne)
+        Zadanie 4. Przedział ufności dla średniej (znane odchylenie)
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#dostepne-dziay" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-5-przedzia-ufnosci-dla-sredniej-nieznane-odchylenie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dostępne Działy
+        Zadanie 5. Przedział ufności dla średniej (nieznane odchylenie)
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-6-przedzia-ufnosci-dla-wskaznika-struktury-proporcji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6. Przedział ufności dla wskaźnika struktury (proporcji)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-7-minimalna-liczebnosc-proby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 7. Minimalna liczebność próby
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-8-przedzia-ufnosci-dla-wariancji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 8. Przedział ufności dla wariancji
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-9-interpretacja-przedziau-ufnosci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 9. Interpretacja przedziału ufności
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-10-dokadnosc-a-poziom-ufnosci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 10. Dokładność a poziom ufności
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1402,62 +1482,74 @@
 
 
 
-<h1 id="interaktywny-zeszyt-cwiczen">Interaktywny Zeszyt Ćwiczeń</h1>
-<p>Witaj w repozytorium <strong>Math Problems</strong>. Projekt ten służy jako szablon cyfrowego zeszytu, który ma stanowić Twoje główne narzędzie pracy przez cały okres trwania kursu.</p>
-<p>Repozytorium jest dwujęzyczne i zaprojektowane w sposób umożliwiający budowę własnej bazy wiedzy w oparciu o system kontroli wersji.</p>
-<h2 id="metodyka-pracy">Metodyka pracy</h2>
-<p>Aby poprawnie korzystać z udostępnionych materiałów, należy postępować zgodnie z poniższą procedurą:</p>
+<h1 id="estymacja-punktowa-i-przedziaowa">Estymacja punktowa i przedziałowa</h1>
+<p>W tym dziale zajmujemy się wnioskowaniem o parametrach populacji na podstawie próby. Zadania podzielone są na estymację punktową (szukanie jednej liczby) oraz przedziałową (szukanie przedziału, który z zadanym prawdopodobieństwem pokrywa nieznany parametr).</p>
+<h2 id="zadanie-1-estymator-nieobciazony">Zadanie 1. Estymator nieobciążony</h2>
+<p>Mamy próbę losową <span class="arithmatex">\(X_1, X_2, \dots, X_n\)</span> z populacji o wartości oczekiwanej <span class="arithmatex">\(\mu\)</span> i wariancji <span class="arithmatex">\(\sigma^2\)</span>.
+Rozważamy dwa estymatory średniej:</p>
 <ol>
-<li><strong>Forkowanie Repozytorium</strong>:<ul>
-<li>Przejdź do repozytorium źródłowego: <strong><a href="https://github.com/dchorazkiewicz/Math_Problems_Repo">https://github.com/dchorazkiewicz/Math_Problems_Repo</a></strong></li>
-<li>Utwórz własną kopię materiałów, używając przycisku <code>Fork</code> w serwisie GitHub.</li>
-</ul>
-</li>
-<li><strong>Klonowanie</strong>: Pobierz repozytorium na swój komputer lokalny.</li>
-<li><strong>Tworzenie Dokumentacji</strong>:<ul>
-<li>Listy zadań znajdują się w odpowiednich działach w menu.</li>
-<li>Do każdego pliku z zadaniami (np. <code>01_macierze.md</code>) przypisany jest dedykowany katalog na rozwiązania (np. <code>solution_01_macierze/</code>).</li>
-<li>Katalogi te są Twoją <strong>przestrzenią roboczą</strong>. Należy w nich tworzyć pliki Markdown zawierające rozwiązania, dowody oraz notatki teoretyczne.</li>
-</ul>
-</li>
-<li><strong>Utrwalanie zmian</strong>: Regularnie przesyłaj swoje rozwiązania na serwer (Commit &amp; Push).</li>
+<li><span class="arithmatex">\(\hat{\mu}_1 = \frac{1}{n} \sum_{i=1}^n X_i\)</span> (średnia arytmetyczna)</li>
+<li><span class="arithmatex">\(\hat{\mu}_2 = \frac{X_1 + X_n}{2}\)</span> (średnia z pierwszego i ostatniego elementu)</li>
 </ol>
-<h2 id="rola-notatek-w-przygotowaniu-do-egzaminu">Rola notatek w przygotowaniu do egzaminu</h2>
-<p>Kluczowe jest zrozumienie różnicy między środowiskiem pracy podczas semestru a weryfikacją wiedzy:</p>
+<p>Sprawdź, czy oba estymatory są nieobciążone (tzn. czy <span class="arithmatex">\(E(\hat{\Theta}) = \Theta\)</span>).
+Który z nich jest lepszy (bardziej efektywny)? Porównaj ich wariancje.</p>
+<h2 id="zadanie-2-metoda-momentow">Zadanie 2. Metoda Momentów</h2>
+<p>Zmienna losowa <span class="arithmatex">\(X\)</span> ma rozkład jednostajny na przedziale <span class="arithmatex">\([0, a]\)</span>, gdzie <span class="arithmatex">\(a &gt; 0\)</span> jest nieznanym parametrem. Gęstość wyraża się wzorem <span class="arithmatex">\(f(x) = \frac{1}{a}\)</span> dla <span class="arithmatex">\(x \in [0, a]\)</span>.</p>
+<p>Wyznacz estymator parametru <span class="arithmatex">\(a\)</span> metodą momentów.</p>
+<p>Wskazówka: Porównaj moment teoretyczny <span class="arithmatex">\(E(X) = \frac{a}{2}\)</span> z momentem empirycznym (średnią z próby <span class="arithmatex">\(\bar{X}\)</span>).</p>
+<h2 id="zadanie-3-metoda-najwiekszej-wiarogodnosci-mnw">Zadanie 3. Metoda Największej Wiarogodności (MNW)</h2>
+<p>Zmienna losowa <span class="arithmatex">\(X\)</span> ma rozkład Poissona z nieznanym parametrem <span class="arithmatex">\(\lambda\)</span>:</p>
+<div class="arithmatex">\[
+P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}
+\]</div>
+<p>Na podstawie próby <span class="arithmatex">\(x_1, x_2, \dots, x_n\)</span> wyznacz estymator parametru <span class="arithmatex">\(\lambda\)</span> metodą największej wiarogodności.</p>
+<p>Kroki:
+1. Zapisz funkcję wiarogodności <span class="arithmatex">\(L(\lambda)\)</span>.
+2. Zapisz logarytm funkcji wiarogodności <span class="arithmatex">\(\ln L(\lambda)\)</span>.
+3. Oblicz pochodną po <span class="arithmatex">\(\lambda\)</span> i przyrównaj do zera.</p>
+<h2 id="zadanie-4-przedzia-ufnosci-dla-sredniej-znane-odchylenie">Zadanie 4. Przedział ufności dla średniej (znane odchylenie)</h2>
+<p>Zmierzono czas reakcji 50 kierowców. Średnia z próby wyniosła <span class="arithmatex">\(\bar{x} = 0.8\)</span> s. Z wcześniejszych badań wiadomo, że odchylenie standardowe czasu reakcji w populacji wynosi <span class="arithmatex">\(\sigma = 0.15\)</span> s.</p>
+<p>Skonstruuj 95% przedział ufności dla średniego czasu reakcji wszystkich kierowców.</p>
+<p>Model:</p>
+<div class="arithmatex">\[
+\mu \in \left( \bar{X} - u_{1-\alpha/2} \frac{\sigma}{\sqrt{n}}; \ \bar{X} + u_{1-\alpha/2} \frac{\sigma}{\sqrt{n}} \right)
+\]</div>
+<h2 id="zadanie-5-przedzia-ufnosci-dla-sredniej-nieznane-odchylenie">Zadanie 5. Przedział ufności dla średniej (nieznane odchylenie)</h2>
+<p>Wylosowano małą próbę 10 batoników i zważono je. Otrzymano wyniki:
+Średnia waga <span class="arithmatex">\(\bar{x} = 52\)</span> g, odchylenie standardowe z próby <span class="arithmatex">\(s = 3\)</span> g.
+Zakładamy, że waga batoników ma rozkład normalny.</p>
+<p>Wyznacz 98% przedział ufności dla przeciętnej wagi batonika.
+Skorzystaj z rozkładu t-Studenta.</p>
+<h2 id="zadanie-6-przedzia-ufnosci-dla-wskaznika-struktury-proporcji">Zadanie 6. Przedział ufności dla wskaźnika struktury (proporcji)</h2>
+<p>W badaniu opinii publicznej zapytano 1000 losowych osób, czy popierają budowę nowej drogi. 600 osób odpowiedziało "TAK".</p>
+<p>Wyznacz 90% przedział ufności dla frakcji osób popierających budowę w całej populacji.</p>
+<p>Model:</p>
+<div class="arithmatex">\[
+p \in \left( \frac{m}{n} - u_{1-\alpha/2} \sqrt{\frac{\frac{m}{n}(1-\frac{m}{n})}{n}}; \ \dots \right)
+\]</div>
+<h2 id="zadanie-7-minimalna-liczebnosc-proby">Zadanie 7. Minimalna liczebność próby</h2>
+<p>Planujemy oszacować średni wzrost studentów. Chcemy, aby błąd oszacowania (połowa długości przedziału ufności) nie przekraczał <span class="arithmatex">\(d = 1\)</span> cm, przy poziomie ufności <span class="arithmatex">\(0.95\)</span>. Wstępne badania sugerują, że odchylenie standardowe wynosi <span class="arithmatex">\(\sigma = 10\)</span> cm.</p>
+<p>Jak dużą próbę należy pobrać?</p>
+<div class="arithmatex">\[
+n \ge \left( \frac{u_{1-\alpha/2} \cdot \sigma}{d} \right)^2
+\]</div>
+<h2 id="zadanie-8-przedzia-ufnosci-dla-wariancji">Zadanie 8. Przedział ufności dla wariancji</h2>
+<p>Zbadano dokładność maszyny dozującej lek. Pobrano próbę 20 ampułek. Wariancja z próby wyniosła <span class="arithmatex">\(s^2 = 0.04 \text{ ml}^2\)</span>. Zakładamy normalność rozkładu.</p>
+<p>Skonstruuj 95% przedział ufności dla wariancji <span class="arithmatex">\(\sigma^2\)</span> błędu dozowania maszyny.</p>
+<p>Skorzystaj z rozkładu <span class="arithmatex">\(\chi^2\)</span> (chi-kwadrat).</p>
+<h2 id="zadanie-9-interpretacja-przedziau-ufnosci">Zadanie 9. Interpretacja przedziału ufności</h2>
+<p>Obliczyliśmy 95% przedział ufności dla średniej pensji: <span class="arithmatex">\([4500, 5500]\)</span>.
+Które stwierdzenie jest poprawne?</p>
+<p>A. "Istnieje 95% szansy, że średnia pensja wpadnie w ten konkretny przedział".
+B. "Ten przedział jest jednym z wielu możliwych przedziałów; w 95% przypadków tak konstruowane przedziały pokrywają prawdziwą, nieznaną stałą wartość parametru <span class="arithmatex">\(\mu\)</span>".</p>
+<p>Uzasadnij odpowiedź.</p>
+<h2 id="zadanie-10-dokadnosc-a-poziom-ufnosci">Zadanie 10. Dokładność a poziom ufności</h2>
+<p>Co stanie się z szerokością przedziału ufności (precyzją oszacowania), jeśli:</p>
 <ul>
-<li><strong>Egzamin końcowy</strong>: Ma formę <strong>pisemną, stacjonarną i odbywa się bez dostępu do technologii</strong>. Podczas egzaminu nie będziesz mieć dostępu do komputera, telefonu ani systemów AI.</li>
-<li><strong>Cel notatek</strong>: Twoje repozytorium służy do nauki. Musisz przygotować, przeczytać i zrozumieć zawarte w nim rozwiązania teraz, aby być w stanie samodzielnie odtworzyć tok rozumowania na sali egzaminacyjnej.</li>
+<li>Zwiększymy liczebność próby <span class="arithmatex">\(n\)</span> (przy niezmienionym poziomie ufności)?</li>
+<li>Zwiększymy poziom ufności <span class="arithmatex">\(1-\alpha\)</span> (np. z 0.95 na 0.99) przy niezmienionym <span class="arithmatex">\(n\)</span>?</li>
 </ul>
-<h2 id="wykorzystanie-ai-do-personalizacji-nauki">Wykorzystanie AI do personalizacji nauki</h2>
-<p>Zdecydowanie zaleca się wykorzystanie narzędzi Generative AI (ChatGPT, Claude, Gemini) na etapie przygotowywania materiałów. Technologia ta pozwala na stworzenie <strong>spersonalizowanych notatek</strong>:</p>
-<ul>
-<li><strong>Dostosowanie</strong>: Nie ma jednej notatki idealnej dla wszystkich. Jeśli definicja jest niezrozumiała, poproś AI o dodatkowe wyjaśnienie, rozpisanie kroków czy intuicję geometryczną. Stwórz materiał, z którego Tobie uczy się najlepiej.</li>
-<li><strong>Efektywność</strong>: Nie kopiuj treści ze strony HTML. Kopiuj surowy kod Markdown z plików źródłowych do promptu AI, aby zachować poprawne formatowanie matematyczne.</li>
-<li><strong>Profesjonalizm</strong>: Celem jest wygenerowanie kompletnej, czytelnej i merytorycznej notatki, która posłuży jako Twój osobisty podręcznik.</li>
-</ul>
-<h2 id="oczekiwania-wobec-zajec-i-odpowiedzialnosc-studenta">Oczekiwania wobec zajęć i odpowiedzialność studenta</h2>
-<p><strong>Wszystkie listy zadań są dostępne od pierwszego dnia semestru.</strong> Umożliwia to wcześniejsze zaplanowanie pracy.</p>
-<ul>
-<li><strong>Brak wymówek</strong>: W dobie powszechnego dostępu do AI, argumenty typu "nie wiedziałem jak zacząć" lub "nie umiałem rozwiązać" są nieakceptowalne. Wygenerowanie bazowego rozwiązania zajmuje sekundy i można to zrobić w dowolnym miejscu (nawet na telefonie).</li>
-<li><strong>Charakter zajęć</strong>: Czas na zajęciach przeznaczony jest na dyskusję nad rozwiązaniami, analizę problemów i wyjaśnianie wątpliwości, a nie na rozwiązywanie zadań od zera. Oczekuje się przyjścia na zajęcia z gotowymi materiałami.</li>
-<li><strong>Zaradność</strong>: Budowa i utrzymanie tego repozytorium jest lekcją sumienności oraz organizacji własnego warsztatu pracy.</li>
-</ul>
-<hr />
-<h3 id="dla-pasjonatow-technologii-publikacja-www-opcjonalne">Dla pasjonatów technologii: Publikacja WWW (Opcjonalne)</h3>
-<p>Studenci zainteresowani technologią mogą opublikować swoje notatki w formie strony internetowej przy użyciu GitHub Pages.</p>
-<ul>
-<li>Służy do tego polecenie <code>mkdocs gh-deploy</code>.</li>
-<li><strong>Zastrzeżenie</strong>: Jest to element całkowicie dobrowolny, nie wpływa na ocenę końcową i służy wyłącznie samorozwojowi.</li>
-</ul>
-<hr />
-<h3 id="dostepne-dziay">Dostępne Działy</h3>
-<ul>
-<li><strong>Algebra</strong>: Macierze, wyznaczniki, układy równań.</li>
-<li><strong>Geometria</strong>: Wektory, proste i płaszczyzny.</li>
-<li><strong>Analiza</strong>: Granice, pochodne, badanie funkcji, całki.</li>
-<li><strong>Metody Probabilistyczne</strong>: Rachunek prawdopodobieństwa, statystyka, estymacja.</li>
-</ul>
-<p><em>Wybierz dział z menu po lewej stronie, aby rozpocząć.</em></p>
+<p>Wyjaśnij mechanizm działania.</p>
 
 
 
@@ -1507,12 +1599,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="javascripts/config.js"></script>
+        <script src="../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

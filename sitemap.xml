@@ -1,3 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+    </url>
+    <url>
+        <loc>None1_Algebra/01_matrices_and_operations/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None1_Algebra/01_matrices_and_operations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/1_Algebra/01_matrices_and_operations/"/>
+    </url>
+    <url>
+        <loc>None1_Algebra/02_determinants/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None1_Algebra/02_determinants/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/1_Algebra/02_determinants/"/>
+    </url>
+    <url>
+        <loc>None1_Algebra/03_matrix_inversion/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None1_Algebra/03_matrix_inversion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/1_Algebra/03_matrix_inversion/"/>
+    </url>
+    <url>
+        <loc>None1_Algebra/04_systems_of_equations/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None1_Algebra/04_systems_of_equations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/1_Algebra/04_systems_of_equations/"/>
+    </url>
+    <url>
+        <loc>None2_Geometria/01_vectors/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None2_Geometria/01_vectors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/2_Geometria/01_vectors/"/>
+    </url>
+    <url>
+        <loc>None2_Geometria/02_lines/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None2_Geometria/02_lines/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/2_Geometria/02_lines/"/>
+    </url>
+    <url>
+        <loc>None2_Geometria/03_planes/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None2_Geometria/03_planes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/2_Geometria/03_planes/"/>
+    </url>
+    <url>
+        <loc>None2_Geometria/04_line_and_plane/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None2_Geometria/04_line_and_plane/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/2_Geometria/04_line_and_plane/"/>
+    </url>
+    <url>
+        <loc>None3_Analiza/01_sequence_limits/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/01_sequence_limits/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/01_sequence_limits/"/>
+    </url>
+    <url>
+        <loc>None3_Analiza/02_function_limits/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/02_function_limits/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/02_function_limits/"/>
+    </url>
+    <url>
+        <loc>None3_Analiza/03_derivatives/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/03_derivatives/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/03_derivatives/"/>
+    </url>
+    <url>
+        <loc>None3_Analiza/04_function_analysis/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/04_function_analysis/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/04_function_analysis/"/>
+    </url>
+    <url>
+        <loc>None3_Analiza/05_integrals/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/05_integrals/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/05_integrals/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/01_events_and_probability/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/01_events_and_probability/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/01_events_and_probability/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/02_random_variables/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/02_random_variables/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/02_random_variables/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/03_distribution_parameters/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/03_distribution_parameters/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/03_distribution_parameters/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/04_selected_distributions/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/04_selected_distributions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/04_selected_distributions/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/05_limit_theorems/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/05_limit_theorems/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/05_limit_theorems/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/06_basic_statistics/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/06_basic_statistics/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/06_basic_statistics/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/07_estimation/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/07_estimation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/07_estimation/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/08_hypothesis_testing/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/08_hypothesis_testing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/08_hypothesis_testing/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/09_correlation_and_regression/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/09_correlation_and_regression/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/09_correlation_and_regression/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/10_advanced_methods/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/10_advanced_methods/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/10_advanced_methods/"/>
+    </url>
+    <url>
+        <loc>None4_Metody_probabilistyczne/11_decision_theory/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/11_decision_theory/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/11_decision_theory/"/>
+    </url>
+    <url>
+        <loc>Noneen/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None"/>
+    </url>
+    <url>
+        <loc>Noneen/1_Algebra/01_matrices_and_operations/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/1_Algebra/01_matrices_and_operations/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None1_Algebra/01_matrices_and_operations/"/>
+    </url>
+    <url>
+        <loc>Noneen/1_Algebra/02_determinants/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/1_Algebra/02_determinants/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None1_Algebra/02_determinants/"/>
+    </url>
+    <url>
+        <loc>Noneen/1_Algebra/03_matrix_inversion/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/1_Algebra/03_matrix_inversion/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None1_Algebra/03_matrix_inversion/"/>
+    </url>
+    <url>
+        <loc>Noneen/1_Algebra/04_systems_of_equations/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/1_Algebra/04_systems_of_equations/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None1_Algebra/04_systems_of_equations/"/>
+    </url>
+    <url>
+        <loc>Noneen/2_Geometria/01_vectors/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/2_Geometria/01_vectors/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None2_Geometria/01_vectors/"/>
+    </url>
+    <url>
+        <loc>Noneen/2_Geometria/02_lines/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/2_Geometria/02_lines/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None2_Geometria/02_lines/"/>
+    </url>
+    <url>
+        <loc>Noneen/2_Geometria/03_planes/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/2_Geometria/03_planes/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None2_Geometria/03_planes/"/>
+    </url>
+    <url>
+        <loc>Noneen/2_Geometria/04_line_and_plane/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/2_Geometria/04_line_and_plane/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None2_Geometria/04_line_and_plane/"/>
+    </url>
+    <url>
+        <loc>Noneen/3_Analiza/01_sequence_limits/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/01_sequence_limits/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/01_sequence_limits/"/>
+    </url>
+    <url>
+        <loc>Noneen/3_Analiza/02_function_limits/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/02_function_limits/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/02_function_limits/"/>
+    </url>
+    <url>
+        <loc>Noneen/3_Analiza/03_derivatives/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/03_derivatives/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/03_derivatives/"/>
+    </url>
+    <url>
+        <loc>Noneen/3_Analiza/04_function_analysis/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/04_function_analysis/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/04_function_analysis/"/>
+    </url>
+    <url>
+        <loc>Noneen/3_Analiza/05_integrals/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/3_Analiza/05_integrals/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None3_Analiza/05_integrals/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/01_events_and_probability/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/01_events_and_probability/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/01_events_and_probability/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/02_random_variables/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/02_random_variables/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/02_random_variables/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/03_distribution_parameters/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/03_distribution_parameters/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/03_distribution_parameters/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/04_selected_distributions/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/04_selected_distributions/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/04_selected_distributions/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/05_limit_theorems/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/05_limit_theorems/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/05_limit_theorems/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/06_basic_statistics/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/06_basic_statistics/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/06_basic_statistics/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/07_estimation/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/07_estimation/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/07_estimation/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/08_hypothesis_testing/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/08_hypothesis_testing/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/08_hypothesis_testing/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/09_correlation_and_regression/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/09_correlation_and_regression/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/09_correlation_and_regression/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/10_advanced_methods/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/10_advanced_methods/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/10_advanced_methods/"/>
+    </url>
+    <url>
+        <loc>Noneen/4_Metody_probabilistyczne/11_decision_theory/</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneen/4_Metody_probabilistyczne/11_decision_theory/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="None4_Metody_probabilistyczne/11_decision_theory/"/>
+    </url>
 </urlset>

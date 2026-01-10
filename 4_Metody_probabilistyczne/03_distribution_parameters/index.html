@@ -9,30 +9,32 @@
       
       
       
+        <link rel="prev" href="../02_random_variables/">
       
-        <link rel="next" href="1_Algebra/01_matrices_and_operations/">
+      
+        <link rel="next" href="../04_selected_distributions/">
       
       
         
-          <link rel="alternate" href="/" hreflang="pl">
+          <link rel="alternate" href="./" hreflang="pl">
         
-          <link rel="alternate" href="/en/" hreflang="en">
+          <link rel="alternate" href="../../en/4_Metody_probabilistyczne/03_distribution_parameters/" hreflang="en">
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Math Problems</title>
+        <title>3. Parametry rozkładu - Math Problems</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interaktywny-zeszyt-cwiczen" class="md-skip">
+        <a href="#parametry-rozkadu-zmiennych-losowych" class="md-skip">
           Przejdź do treści
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Nagłówek">
-    <a href="." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
+    <a href="../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              3. Parametry rozkładu
             
           </span>
         </div>
@@ -159,13 +161,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/" hreflang="pl" class="md-select__link">
+            <a href="./" hreflang="pl" class="md-select__link">
               Polski
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/en/" hreflang="en" class="md-select__link">
+            <a href="../../en/4_Metody_probabilistyczne/03_distribution_parameters/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -242,7 +244,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Nawigacja" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
+    <a href="../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -257,37 +259,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -303,98 +278,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Spis treści
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#metodyka-pracy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metodyka pracy
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rola-notatek-w-przygotowaniu-do-egzaminu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Rola notatek w przygotowaniu do egzaminu
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wykorzystanie-ai-do-personalizacji-nauki" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Wykorzystanie AI do personalizacji nauki
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#oczekiwania-wobec-zajec-i-odpowiedzialnosc-studenta" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Oczekiwania wobec zajęć i odpowiedzialność studenta
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Oczekiwania wobec zajęć i odpowiedzialność studenta">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dla-pasjonatow-technologii-publikacja-www-opcjonalne" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dla pasjonatów technologii: Publikacja WWW (Opcjonalne)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dostepne-dziay" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dostępne Działy
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -453,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1_Algebra/01_matrices_and_operations/" class="md-nav__link">
+      <a href="../../1_Algebra/01_matrices_and_operations/" class="md-nav__link">
         
   
   
@@ -481,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1_Algebra/02_determinants/" class="md-nav__link">
+      <a href="../../1_Algebra/02_determinants/" class="md-nav__link">
         
   
   
@@ -509,7 +392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1_Algebra/03_matrix_inversion/" class="md-nav__link">
+      <a href="../../1_Algebra/03_matrix_inversion/" class="md-nav__link">
         
   
   
@@ -537,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1_Algebra/04_systems_of_equations/" class="md-nav__link">
+      <a href="../../1_Algebra/04_systems_of_equations/" class="md-nav__link">
         
   
   
@@ -619,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Geometria/01_vectors/" class="md-nav__link">
+      <a href="../../2_Geometria/01_vectors/" class="md-nav__link">
         
   
   
@@ -647,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Geometria/02_lines/" class="md-nav__link">
+      <a href="../../2_Geometria/02_lines/" class="md-nav__link">
         
   
   
@@ -675,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Geometria/03_planes/" class="md-nav__link">
+      <a href="../../2_Geometria/03_planes/" class="md-nav__link">
         
   
   
@@ -703,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Geometria/04_line_and_plane/" class="md-nav__link">
+      <a href="../../2_Geometria/04_line_and_plane/" class="md-nav__link">
         
   
   
@@ -785,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/01_sequence_limits/" class="md-nav__link">
+      <a href="../../3_Analiza/01_sequence_limits/" class="md-nav__link">
         
   
   
@@ -813,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/02_function_limits/" class="md-nav__link">
+      <a href="../../3_Analiza/02_function_limits/" class="md-nav__link">
         
   
   
@@ -841,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/03_derivatives/" class="md-nav__link">
+      <a href="../../3_Analiza/03_derivatives/" class="md-nav__link">
         
   
   
@@ -869,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/04_function_analysis/" class="md-nav__link">
+      <a href="../../3_Analiza/04_function_analysis/" class="md-nav__link">
         
   
   
@@ -897,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Analiza/05_integrals/" class="md-nav__link">
+      <a href="../../3_Analiza/05_integrals/" class="md-nav__link">
         
   
   
@@ -929,18 +812,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -961,7 +846,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -979,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/01_events_and_probability/" class="md-nav__link">
+      <a href="../01_events_and_probability/" class="md-nav__link">
         
   
   
@@ -1007,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/02_random_variables/" class="md-nav__link">
+      <a href="../02_random_variables/" class="md-nav__link">
         
   
   
@@ -1032,10 +917,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/03_distribution_parameters/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Parametry rozkładu
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1051,6 +963,136 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-1-wartosc-oczekiwana-i-wariancja-rozkad-skokowy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 1. Wartość oczekiwana i wariancja (rozkład skokowy)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-2-wasnosci-wartosci-oczekiwanej-i-wariancji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 2. Własności wartości oczekiwanej i wariancji
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-3-gra-losowa-interpretacja-wartosci-oczekiwanej" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 3. Gra losowa (interpretacja wartości oczekiwanej)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-4-wartosc-oczekiwana-zmiennej-ciagej" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 4. Wartość oczekiwana zmiennej ciągłej
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-5-wariancja-zmiennej-ciagej" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 5. Wariancja zmiennej ciągłej
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-6-mediana-i-dominanta-moda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6. Mediana i dominanta (moda)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-7-kowariancja-zmiennych-losowych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 7. Kowariancja zmiennych losowych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-8-wspoczynnik-korelacji-liniowej" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 8. Współczynnik korelacji liniowej
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-9-wariancja-sumy-i-roznicy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 9. Wariancja sumy i różnicy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-10-moment-centralny-vs-zwyky" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 10. Moment centralny vs zwykły
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1063,7 +1105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/04_selected_distributions/" class="md-nav__link">
+      <a href="../04_selected_distributions/" class="md-nav__link">
         
   
   
@@ -1091,7 +1133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/05_limit_theorems/" class="md-nav__link">
+      <a href="../05_limit_theorems/" class="md-nav__link">
         
   
   
@@ -1119,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/06_basic_statistics/" class="md-nav__link">
+      <a href="../06_basic_statistics/" class="md-nav__link">
         
   
   
@@ -1147,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/07_estimation/" class="md-nav__link">
+      <a href="../07_estimation/" class="md-nav__link">
         
   
   
@@ -1175,7 +1217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/08_hypothesis_testing/" class="md-nav__link">
+      <a href="../08_hypothesis_testing/" class="md-nav__link">
         
   
   
@@ -1203,7 +1245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/09_correlation_and_regression/" class="md-nav__link">
+      <a href="../09_correlation_and_regression/" class="md-nav__link">
         
   
   
@@ -1231,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/10_advanced_methods/" class="md-nav__link">
+      <a href="../10_advanced_methods/" class="md-nav__link">
         
   
   
@@ -1259,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Metody_probabilistyczne/11_decision_theory/" class="md-nav__link">
+      <a href="../11_decision_theory/" class="md-nav__link">
         
   
   
@@ -1314,10 +1356,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metodyka-pracy" class="md-nav__link">
+  <a href="#zadanie-1-wartosc-oczekiwana-i-wariancja-rozkad-skokowy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Metodyka pracy
+        Zadanie 1. Wartość oczekiwana i wariancja (rozkład skokowy)
       
     </span>
   </a>
@@ -1325,10 +1367,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rola-notatek-w-przygotowaniu-do-egzaminu" class="md-nav__link">
+  <a href="#zadanie-2-wasnosci-wartosci-oczekiwanej-i-wariancji" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Rola notatek w przygotowaniu do egzaminu
+        Zadanie 2. Własności wartości oczekiwanej i wariancji
       
     </span>
   </a>
@@ -1336,10 +1378,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wykorzystanie-ai-do-personalizacji-nauki" class="md-nav__link">
+  <a href="#zadanie-3-gra-losowa-interpretacja-wartosci-oczekiwanej" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Wykorzystanie AI do personalizacji nauki
+        Zadanie 3. Gra losowa (interpretacja wartości oczekiwanej)
       
     </span>
   </a>
@@ -1347,41 +1389,79 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#oczekiwania-wobec-zajec-i-odpowiedzialnosc-studenta" class="md-nav__link">
+  <a href="#zadanie-4-wartosc-oczekiwana-zmiennej-ciagej" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Oczekiwania wobec zajęć i odpowiedzialność studenta
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Oczekiwania wobec zajęć i odpowiedzialność studenta">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#dla-pasjonatow-technologii-publikacja-www-opcjonalne" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dla pasjonatów technologii: Publikacja WWW (Opcjonalne)
+        Zadanie 4. Wartość oczekiwana zmiennej ciągłej
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#dostepne-dziay" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-5-wariancja-zmiennej-ciagej" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dostępne Działy
+        Zadanie 5. Wariancja zmiennej ciągłej
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-6-mediana-i-dominanta-moda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 6. Mediana i dominanta (moda)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-7-kowariancja-zmiennych-losowych" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 7. Kowariancja zmiennych losowych
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-8-wspoczynnik-korelacji-liniowej" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 8. Współczynnik korelacji liniowej
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-9-wariancja-sumy-i-roznicy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 9. Wariancja sumy i różnicy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zadanie-10-moment-centralny-vs-zwyky" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zadanie 10. Moment centralny vs zwykły
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1402,62 +1482,121 @@
 
 
 
-<h1 id="interaktywny-zeszyt-cwiczen">Interaktywny Zeszyt Ćwiczeń</h1>
-<p>Witaj w repozytorium <strong>Math Problems</strong>. Projekt ten służy jako szablon cyfrowego zeszytu, który ma stanowić Twoje główne narzędzie pracy przez cały okres trwania kursu.</p>
-<p>Repozytorium jest dwujęzyczne i zaprojektowane w sposób umożliwiający budowę własnej bazy wiedzy w oparciu o system kontroli wersji.</p>
-<h2 id="metodyka-pracy">Metodyka pracy</h2>
-<p>Aby poprawnie korzystać z udostępnionych materiałów, należy postępować zgodnie z poniższą procedurą:</p>
-<ol>
-<li><strong>Forkowanie Repozytorium</strong>:<ul>
-<li>Przejdź do repozytorium źródłowego: <strong><a href="https://github.com/dchorazkiewicz/Math_Problems_Repo">https://github.com/dchorazkiewicz/Math_Problems_Repo</a></strong></li>
-<li>Utwórz własną kopię materiałów, używając przycisku <code>Fork</code> w serwisie GitHub.</li>
-</ul>
-</li>
-<li><strong>Klonowanie</strong>: Pobierz repozytorium na swój komputer lokalny.</li>
-<li><strong>Tworzenie Dokumentacji</strong>:<ul>
-<li>Listy zadań znajdują się w odpowiednich działach w menu.</li>
-<li>Do każdego pliku z zadaniami (np. <code>01_macierze.md</code>) przypisany jest dedykowany katalog na rozwiązania (np. <code>solution_01_macierze/</code>).</li>
-<li>Katalogi te są Twoją <strong>przestrzenią roboczą</strong>. Należy w nich tworzyć pliki Markdown zawierające rozwiązania, dowody oraz notatki teoretyczne.</li>
-</ul>
-</li>
-<li><strong>Utrwalanie zmian</strong>: Regularnie przesyłaj swoje rozwiązania na serwer (Commit &amp; Push).</li>
-</ol>
-<h2 id="rola-notatek-w-przygotowaniu-do-egzaminu">Rola notatek w przygotowaniu do egzaminu</h2>
-<p>Kluczowe jest zrozumienie różnicy między środowiskiem pracy podczas semestru a weryfikacją wiedzy:</p>
+<h1 id="parametry-rozkadu-zmiennych-losowych">Parametry rozkładu zmiennych losowych</h1>
+<p>W tym dziale zajmujemy się wyznaczaniem podstawowych charakterystyk liczbowych zmiennych losowych, takich jak wartość oczekiwana (średnia), wariancja, odchylenie standardowe oraz parametry dla zmiennych dwuwymiarowych (kowariancja, korelacja).</p>
+<h2 id="zadanie-1-wartosc-oczekiwana-i-wariancja-rozkad-skokowy">Zadanie 1. Wartość oczekiwana i wariancja (rozkład skokowy)</h2>
+<p>Dana jest zmienna losowa <span class="arithmatex">\(X\)</span> o rozkładzie dyskretnym:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><span class="arithmatex">\(x_i\)</span></th>
+<th style="text-align: center;">-2</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(p_i\)</span></td>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.2</td>
+</tr>
+</tbody>
+</table>
+<p>Oblicz:</p>
 <ul>
-<li><strong>Egzamin końcowy</strong>: Ma formę <strong>pisemną, stacjonarną i odbywa się bez dostępu do technologii</strong>. Podczas egzaminu nie będziesz mieć dostępu do komputera, telefonu ani systemów AI.</li>
-<li><strong>Cel notatek</strong>: Twoje repozytorium służy do nauki. Musisz przygotować, przeczytać i zrozumieć zawarte w nim rozwiązania teraz, aby być w stanie samodzielnie odtworzyć tok rozumowania na sali egzaminacyjnej.</li>
+<li>Wartość oczekiwaną <span class="arithmatex">\(E(X)\)</span>.</li>
+<li>Drugi moment zwykły <span class="arithmatex">\(E(X^2)\)</span>.</li>
+<li>Wariancję <span class="arithmatex">\(D^2(X)\)</span> (korzystając ze wzoru <span class="arithmatex">\(D^2(X) = E(X^2) - (E(X))^2\)</span>).</li>
+<li>Odchylenie standardowe <span class="arithmatex">\(\sigma(X)\)</span>.</li>
 </ul>
-<h2 id="wykorzystanie-ai-do-personalizacji-nauki">Wykorzystanie AI do personalizacji nauki</h2>
-<p>Zdecydowanie zaleca się wykorzystanie narzędzi Generative AI (ChatGPT, Claude, Gemini) na etapie przygotowywania materiałów. Technologia ta pozwala na stworzenie <strong>spersonalizowanych notatek</strong>:</p>
+<h2 id="zadanie-2-wasnosci-wartosci-oczekiwanej-i-wariancji">Zadanie 2. Własności wartości oczekiwanej i wariancji</h2>
+<p>Zmienna losowa <span class="arithmatex">\(X\)</span> ma parametry: <span class="arithmatex">\(E(X) = 5\)</span> oraz <span class="arithmatex">\(D^2(X) = 4\)</span>.
+Zdefiniujmy nową zmienną losową <span class="arithmatex">\(Y = 3X - 2\)</span>.</p>
+<p>Korzystając z własności liniowości wartości oczekiwanej i kwadratowej skalowalności wariancji, oblicz:</p>
 <ul>
-<li><strong>Dostosowanie</strong>: Nie ma jednej notatki idealnej dla wszystkich. Jeśli definicja jest niezrozumiała, poproś AI o dodatkowe wyjaśnienie, rozpisanie kroków czy intuicję geometryczną. Stwórz materiał, z którego Tobie uczy się najlepiej.</li>
-<li><strong>Efektywność</strong>: Nie kopiuj treści ze strony HTML. Kopiuj surowy kod Markdown z plików źródłowych do promptu AI, aby zachować poprawne formatowanie matematyczne.</li>
-<li><strong>Profesjonalizm</strong>: Celem jest wygenerowanie kompletnej, czytelnej i merytorycznej notatki, która posłuży jako Twój osobisty podręcznik.</li>
+<li><span class="arithmatex">\(E(Y)\)</span></li>
+<li><span class="arithmatex">\(D^2(Y)\)</span></li>
+<li><span class="arithmatex">\(\sigma(Y)\)</span></li>
 </ul>
-<h2 id="oczekiwania-wobec-zajec-i-odpowiedzialnosc-studenta">Oczekiwania wobec zajęć i odpowiedzialność studenta</h2>
-<p><strong>Wszystkie listy zadań są dostępne od pierwszego dnia semestru.</strong> Umożliwia to wcześniejsze zaplanowanie pracy.</p>
+<p>Przypomnienie: <span class="arithmatex">\(D^2(aX + b) = a^2 D^2(X)\)</span>.</p>
+<h2 id="zadanie-3-gra-losowa-interpretacja-wartosci-oczekiwanej">Zadanie 3. Gra losowa (interpretacja wartości oczekiwanej)</h2>
+<p>Gra polega na rzucie sześcienną kostką.
+* Jeśli wypadnie 6 oczek, wygrywasz 10 zł.
+* Jeśli wypadnie 4 lub 5 oczek, wygrywasz 2 zł.
+* W pozostałych przypadkach przegrywasz stawkę wejściową (nic nie wygrywasz).</p>
+<p>Opłata za udział w grze wynosi 2 zł.
+Czy gra jest sprawiedliwa? Oblicz wartość oczekiwaną zysku netto gracza.</p>
+<h2 id="zadanie-4-wartosc-oczekiwana-zmiennej-ciagej">Zadanie 4. Wartość oczekiwana zmiennej ciągłej</h2>
+<p>Zmienna losowa <span class="arithmatex">\(X\)</span> ma funkcję gęstości:</p>
+<div class="arithmatex">\[
+f(x) = \begin{cases} 
+0.5 x &amp; \text{dla } x \in [0, 2] \\
+0 &amp; \text{dla } x \notin [0, 2]
+\end{cases}
+\]</div>
+<p>Oblicz wartość oczekiwaną <span class="arithmatex">\(E(X)\)</span>.</p>
+<p>Wzór: <span class="arithmatex">\(E(X) = \int_{-\infty}^{\infty} x f(x) dx\)</span>.</p>
+<h2 id="zadanie-5-wariancja-zmiennej-ciagej">Zadanie 5. Wariancja zmiennej ciągłej</h2>
+<p>Dla zmiennej losowej z Zadania 4 oblicz wariancję <span class="arithmatex">\(D^2(X)\)</span>.</p>
+<p>Wskazówka: Najpierw oblicz <span class="arithmatex">\(E(X^2) = \int_{-\infty}^{\infty} x^2 f(x) dx\)</span>.</p>
+<h2 id="zadanie-6-mediana-i-dominanta-moda">Zadanie 6. Mediana i dominanta (moda)</h2>
+<p>Dla funkcji gęstości z Zadania 4 (<span class="arithmatex">\(f(x) = 0.5x\)</span> na przedziale <span class="arithmatex">\([0, 2]\)</span>):</p>
 <ul>
-<li><strong>Brak wymówek</strong>: W dobie powszechnego dostępu do AI, argumenty typu "nie wiedziałem jak zacząć" lub "nie umiałem rozwiązać" są nieakceptowalne. Wygenerowanie bazowego rozwiązania zajmuje sekundy i można to zrobić w dowolnym miejscu (nawet na telefonie).</li>
-<li><strong>Charakter zajęć</strong>: Czas na zajęciach przeznaczony jest na dyskusję nad rozwiązaniami, analizę problemów i wyjaśnianie wątpliwości, a nie na rozwiązywanie zadań od zera. Oczekuje się przyjścia na zajęcia z gotowymi materiałami.</li>
-<li><strong>Zaradność</strong>: Budowa i utrzymanie tego repozytorium jest lekcją sumienności oraz organizacji własnego warsztatu pracy.</li>
+<li>Wyznacz <strong>medianę</strong> (<span class="arithmatex">\(Me\)</span>), czyli taką wartość <span class="arithmatex">\(x\)</span>, która dzieli pole pod wykresem gęstości na dwie równe części (<span class="arithmatex">\(\int_{-\infty}^{Me} f(x) dx = 0.5\)</span>).</li>
+<li>Wyznacz <strong>dominantę</strong> (<span class="arithmatex">\(Mo\)</span>), czyli wartość <span class="arithmatex">\(x\)</span>, dla której funkcja gęstości osiąga maksimum lokalne.</li>
 </ul>
-<hr />
-<h3 id="dla-pasjonatow-technologii-publikacja-www-opcjonalne">Dla pasjonatów technologii: Publikacja WWW (Opcjonalne)</h3>
-<p>Studenci zainteresowani technologią mogą opublikować swoje notatki w formie strony internetowej przy użyciu GitHub Pages.</p>
+<h2 id="zadanie-7-kowariancja-zmiennych-losowych">Zadanie 7. Kowariancja zmiennych losowych</h2>
+<p>Dany jest rozkład łączny zmiennych <span class="arithmatex">\((X, Y)\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">X \ Y</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3</strong></td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">0.1</td>
+</tr>
+</tbody>
+</table>
+<p>Wykonaj polecenia:</p>
 <ul>
-<li>Służy do tego polecenie <code>mkdocs gh-deploy</code>.</li>
-<li><strong>Zastrzeżenie</strong>: Jest to element całkowicie dobrowolny, nie wpływa na ocenę końcową i służy wyłącznie samorozwojowi.</li>
+<li>Oblicz wartości oczekiwane brzegowe: <span class="arithmatex">\(E(X)\)</span> oraz <span class="arithmatex">\(E(Y)\)</span>.</li>
+<li>Oblicz wartość oczekiwaną iloczynu: <span class="arithmatex">\(E(XY) = \sum \sum x_i y_j p_{ij}\)</span>.</li>
+<li>Oblicz kowariancję <span class="arithmatex">\(Cov(X, Y) = E(XY) - E(X)E(Y)\)</span>.</li>
 </ul>
-<hr />
-<h3 id="dostepne-dziay">Dostępne Działy</h3>
+<h2 id="zadanie-8-wspoczynnik-korelacji-liniowej">Zadanie 8. Współczynnik korelacji liniowej</h2>
+<p>Na podstawie wyników z Zadania 7:</p>
 <ul>
-<li><strong>Algebra</strong>: Macierze, wyznaczniki, układy równań.</li>
-<li><strong>Geometria</strong>: Wektory, proste i płaszczyzny.</li>
-<li><strong>Analiza</strong>: Granice, pochodne, badanie funkcji, całki.</li>
-<li><strong>Metody Probabilistyczne</strong>: Rachunek prawdopodobieństwa, statystyka, estymacja.</li>
+<li>Oblicz wariancje brzegowe <span class="arithmatex">\(D^2(X)\)</span> i <span class="arithmatex">\(D^2(Y)\)</span>.</li>
+<li>Oblicz odchylenia standardowe <span class="arithmatex">\(\sigma_X\)</span> i <span class="arithmatex">\(\sigma_Y\)</span>.</li>
+<li>Oblicz współczynnik korelacji Pearsona <span class="arithmatex">\(\rho(X, Y) = \frac{Cov(X, Y)}{\sigma_X \sigma_Y}\)</span>.</li>
+<li>Zinterpretuj wynik (czy korelacja jest silna/słaba, dodatnia/ujemna).</li>
 </ul>
-<p><em>Wybierz dział z menu po lewej stronie, aby rozpocząć.</em></p>
+<h2 id="zadanie-9-wariancja-sumy-i-roznicy">Zadanie 9. Wariancja sumy i różnicy</h2>
+<p>Wiadomo, że <span class="arithmatex">\(D^2(X) = 9\)</span>, <span class="arithmatex">\(D^2(Y) = 16\)</span>, a kowariancja <span class="arithmatex">\(Cov(X, Y) = 2\)</span>.</p>
+<p>Oblicz wariancję sumy i różnicy tych zmiennych:</p>
+<ul>
+<li><span class="arithmatex">\(D^2(X + Y)\)</span></li>
+<li><span class="arithmatex">\(D^2(X - Y)\)</span></li>
+</ul>
+<p>Wzór: <span class="arithmatex">\(D^2(X \pm Y) = D^2(X) + D^2(Y) \pm 2Cov(X, Y)\)</span>.</p>
+<h2 id="zadanie-10-moment-centralny-vs-zwyky">Zadanie 10. Moment centralny vs zwykły</h2>
+<p>Wyjaśnij różnicę między momentem zwykłym rzędu <span class="arithmatex">\(k\)</span> (<span class="arithmatex">\(m_k = E(X^k)\)</span>) a momentem centralnym rzędu <span class="arithmatex">\(k\)</span> (<span class="arithmatex">\(\mu_k = E[(X - E(X))^k]\)</span>).</p>
+<p>Oblicz trzeci moment centralny <span class="arithmatex">\(\mu_3\)</span> (skośność nieunormowaną) dla zmiennej losowej o rozkładzie: <span class="arithmatex">\(P(X=-1)=0.5, P(X=1)=0.5\)</span>.</p>
 
 
 
@@ -1507,12 +1646,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="javascripts/config.js"></script>
+        <script src="../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

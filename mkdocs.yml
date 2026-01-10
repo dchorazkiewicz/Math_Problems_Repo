@@ -35,7 +35,6 @@ plugins:
       languages:
         - locale: pl
           name: Polski
-          default: true
           build: true
           nav:
             - Home: 'index.md'
@@ -69,6 +68,7 @@ plugins:
               - '11. Teoria decyzji': '4_Metody_probabilistyczne/11_decision_theory.md'
         - locale: en
           name: English
+          default: true
           build: true
           nav:
             - Home: 'index.md'

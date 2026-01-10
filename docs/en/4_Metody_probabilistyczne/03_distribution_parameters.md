@@ -33,6 +33,7 @@ Reminder: $D^2(aX + b) = a^2 D^2(X)$.
 ## Task 3. Gambling game (interpretation of expected value)
 
 The game consists of rolling a six-sided die.
+
 * If you roll a 6, you win 10 PLN.
 * If you roll a 4 or 5, you win 2 PLN.
 * In other cases, you lose the entry stake (you win nothing).

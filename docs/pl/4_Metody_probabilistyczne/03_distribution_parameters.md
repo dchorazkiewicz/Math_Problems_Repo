@@ -33,6 +33,7 @@ Przypomnienie: $D^2(aX + b) = a^2 D^2(X)$.
 ## Zadanie 3. Gra losowa (interpretacja wartości oczekiwanej)
 
 Gra polega na rzucie sześcienną kostką.
+
 * Jeśli wypadnie 6 oczek, wygrywasz 10 zł.
 * Jeśli wypadnie 4 lub 5 oczek, wygrywasz 2 zł.
 * W pozostałych przypadkach przegrywasz stawkę wejściową (nic nie wygrywasz).

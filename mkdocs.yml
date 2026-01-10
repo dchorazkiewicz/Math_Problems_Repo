@@ -1,4 +1,5 @@
 site_name: Math Problems
+
 theme:
   name: material
   palette:
@@ -13,40 +14,57 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+
 extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-nav:
-  - Home: 'index.md'
-  - Algebra:
-    - '1. Macierze i operacje': '1_Algebra/01_macierze_i_operacje.md'
-    - '2. Wyznaczniki': '1_Algebra/02_wyznaczniki.md'
-    - '3. Odwracanie macierzy': '1_Algebra/03_odwracanie_macierzy.md'
-    - '4. Układy równań': '1_Algebra/04_uklady_rownan.md'
-  - Geometria:
-    - '1. Wektory': '2_Geometria/01_wektory.md'
-    - '2. Proste': '2_Geometria/02_proste.md'
-    - '3. Płaszczyzny': '2_Geometria/03_plaszczyzny.md'
-    - '4. Prosta i płaszczyzna': '2_Geometria/04_prosta_i_plaszczyzna.md'
-  - Analiza:
-    - '1. Granice ciągów': '3_Analiza/01_granice_ciągów.md'
-    - '2. Granice funkcji': '3_Analiza/02_granice_funkcji.md'
-    - '3. Pochodne funkcji': '3_Analiza/03_pochodne_funkcji.md'
-    - '4. Badanie funkcji': '3_Analiza/04_badanie_funkcji.md'
-    - '5. Całki': '3_Analiza/05_całki.md'
-  - Metody probabilistyczne:
-    - '1. Zdarzenia i prawdopodobieństwo': '4_Metody_probabilistyczne/01_zdarzenia_i_prawdopodobienstwo.md'
-    - '2. Zmienne losowe': '4_Metody_probabilistyczne/02_zmienne_losowe.md'
-    - '3. Parametry rozkładu': '4_Metody_probabilistyczne/03_parametry_rozkladu.md'
-    - '4. Wybrane rozkłady': '4_Metody_probabilistyczne/04_wybrane_rozklady.md'
-    - '5. Twierdzenia graniczne': '4_Metody_probabilistyczne/05_twierdzenia_graniczne.md'
-    - '6. Podstawowe statystyki': '4_Metody_probabilistyczne/06_podstawowe_statystyki.md'
-    - '7. Estymacja': '4_Metody_probabilistyczne/07_estymacja.md'
-    - '8. Weryfikacja hipotez': '4_Metody_probabilistyczne/08_weryfikacja_hipotez.md'
-    - '9. Korelacja i regresja': '4_Metody_probabilistyczne/09_korelacja_i_regresja.md'
-    - '10. Zaawansowane metody': '4_Metody_probabilistyczne/10_zaawansowane_metody.md'
-    - '11. Teoria decyzji': '4_Metody_probabilistyczne/11_teoria_decyzji.md'
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: pl
+          name: Polski
+          default: true
+          build: true
+          nav:
+            - Home: 'index.md'
+            - Algebra:
+              - '1. Macierze i operacje': '1_Algebra/01_macierze_i_operacje.md'
+              - '2. Wyznaczniki': '1_Algebra/02_wyznaczniki.md'
+              - '3. Odwracanie macierzy': '1_Algebra/03_odwracanie_macierzy.md'
+              - '4. Układy równań': '1_Algebra/04_uklady_rownan.md'
+            - Geometria:
+              - '1. Wektory': '2_Geometria/01_wektory.md'
+              - '2. Proste': '2_Geometria/02_proste.md'
+              - '3. Płaszczyzny': '2_Geometria/03_plaszczyzny.md'
+              - '4. Prosta i płaszczyzna': '2_Geometria/04_prosta_i_plaszczyzna.md'
+            - Analiza:
+              - '1. Granice ciągów': '3_Analiza/01_granice_ciagow.md'
+              - '2. Granice funkcji': '3_Analiza/02_granice_funkcji.md'
+              - '3. Pochodne funkcji': '3_Analiza/03_pochodne_funkcji.md'
+              - '4. Badanie funkcji': '3_Analiza/04_badanie_funkcji.md'
+              - '5. Całki': '3_Analiza/05_calki.md'
+            - Metody probabilistyczne:
+              - '1. Zdarzenia i prawdopodobieństwo': '4_Metody_probabilistyczne/01_zdarzenia_i_prawdopodobienstwo.md'
+              - '2. Zmienne losowe': '4_Metody_probabilistyczne/02_zmienne_losowe.md'
+              - '3. Parametry rozkładu': '4_Metody_probabilistyczne/03_parametry_rozkladu.md'
+              - '4. Wybrane rozkłady': '4_Metody_probabilistyczne/04_wybrane_rozklady.md'
+              - '5. Twierdzenia graniczne': '4_Metody_probabilistyczne/05_twierdzenia_graniczne.md'
+              - '6. Podstawowe statystyki': '4_Metody_probabilistyczne/06_podstawowe_statystyki.md'
+              - '7. Estymacja': '4_Metody_probabilistyczne/07_estymacja.md'
+              - '8. Weryfikacja hipotez': '4_Metody_probabilistyczne/08_weryfikacja_hipotez.md'
+              - '9. Korelacja i regresja': '4_Metody_probabilistyczne/09_korelacja_i_regresja.md'
+              - '10. Zaawansowane metody': '4_Metody_probabilistyczne/10_zaawansowane_metody.md'
+              - '11. Teoria decyzji': '4_Metody_probabilistyczne/11_teoria_decyzji.md'
+        - locale: en
+          name: English
+          build: true
+          nav:
+            - Home: 'index.md'

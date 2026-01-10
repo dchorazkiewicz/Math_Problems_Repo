@@ -989,6 +989,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Limit Theorems
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1005,6 +1023,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-markovs-inequality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1. Markov's Inequality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-chebyshevs-inequality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2. Chebyshev's Inequality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-law-of-large-numbers-bernoulli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3. Law of Large Numbers (Bernoulli)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-4-moivre-laplace-theorem-coin-tosses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 4. Moivre-Laplace Theorem (Coin tosses)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-5-central-limit-theorem-lindeberg-levy-elevator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 5. Central Limit Theorem - Lindeberg-Lévy (Elevator)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1206,6 +1298,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-markovs-inequality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 1. Markov's Inequality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-chebyshevs-inequality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 2. Chebyshev's Inequality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-law-of-large-numbers-bernoulli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 3. Law of Large Numbers (Bernoulli)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-4-moivre-laplace-theorem-coin-tosses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 4. Moivre-Laplace Theorem (Coin tosses)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-5-central-limit-theorem-lindeberg-levy-elevator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 5. Central Limit Theorem - Lindeberg-Lévy (Elevator)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1221,8 +1376,29 @@
 
 
 
-<h1 id="limit-theorems">Limit theorems</h1>
-<p><em>To be translated...</em></p>
+<h1 id="limit-theorems">Limit Theorems</h1>
+<p>This section concerns the behavior of sequences of random variables with a large number of trials. Here you will find tasks involving estimating probability using inequalities and approximating distributions of sums of random variables with a normal distribution.</p>
+<h2 id="task-1-markovs-inequality">Task 1. Markov's Inequality</h2>
+<p>The daily water consumption in a certain plant is a non-negative random variable <span class="arithmatex">\(X\)</span> with an expected value <span class="arithmatex">\(E(X) = 1000\)</span> liters.</p>
+<p>Using Markov's inequality, estimate the probability that on a randomly selected day water consumption will exceed 5000 liters.</p>
+<div class="arithmatex">\[
+P(X \ge a) \le \frac{E(X)}{a}
+\]</div>
+<h2 id="task-2-chebyshevs-inequality">Task 2. Chebyshev's Inequality</h2>
+<p>The random variable <span class="arithmatex">\(X\)</span> has an expected value <span class="arithmatex">\(E(X) = 20\)</span> and a variance <span class="arithmatex">\(D^2(X) = 4\)</span>. The distribution of the variable is unknown.</p>
+<p>Using Chebyshev's inequality, estimate the probability that the variable <span class="arithmatex">\(X\)</span> will take a value differing from the mean by more than 6 (in absolute value).</p>
+<div class="arithmatex">\[
+P(|X - E(X)| \ge \varepsilon) \le \frac{D^2(X)}{\varepsilon^2}
+\]</div>
+<h2 id="task-3-law-of-large-numbers-bernoulli">Task 3. Law of Large Numbers (Bernoulli)</h2>
+<p>Explain the intuitive meaning of the Law of Large Numbers using the example of a coin toss.
+What happens to the frequency of heads appearing (<span class="arithmatex">\(\frac{k}{n}\)</span>) when the number of tosses <span class="arithmatex">\(n\)</span> tends to infinity, assuming the coin is symmetrical (<span class="arithmatex">\(p=0.5\)</span>)?</p>
+<h2 id="task-4-moivre-laplace-theorem-coin-tosses">Task 4. Moivre-Laplace Theorem (Coin tosses)</h2>
+<p>We toss a symmetrical coin 100 times. Estimate the probability that the number of heads will fall in the range <span class="arithmatex">\([45, 55]\)</span>.</p>
+<p>Apply the Integral Moivre-Laplace Theorem, approximating the binomial distribution with a normal distribution. Remember the parameters: <span class="arithmatex">\(\mu = np\)</span>, <span class="arithmatex">\(\sigma = \sqrt{npq}\)</span>.</p>
+<h2 id="task-5-central-limit-theorem-lindeberg-levy-elevator">Task 5. Central Limit Theorem - Lindeberg-Lévy (Elevator)</h2>
+<p>A freight elevator has a load capacity of 600 kg. We load 80 packages into the elevator. The weight of a single package is a random variable with an expected value <span class="arithmatex">\(m = 7\)</span> kg and a standard deviation <span class="arithmatex">\(\sigma = 2\)</span> kg. The weights of the packages are independent.</p>
+<p>Calculate the probability that</p>
 
 
 

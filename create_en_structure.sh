@@ -1,34 +1,38 @@
 #!/bin/bash
 
-SOURCE_DIR="docs/pl"
-TARGET_DIR="docs/en"
+# Katalog główny do przeszukania
+BASE_DIR="docs"
 
-# Tworzymy główny katalog en, jeśli nie istnieje
-mkdir -p "$TARGET_DIR"
+echo "Rozpoczynam generowanie katalogów na rozwiązania..."
 
-# Znajdujemy wszystkie pliki .md w katalogu polskim
-find "$SOURCE_DIR" -name "*.md" | while read source_file; do
-    # 1. Ustalanie ścieżki docelowej
-    # Zamieniamy 'docs/pl' na 'docs/en' w ścieżce
-    target_file="${source_file/$SOURCE_DIR/$TARGET_DIR}"
+# Znajdź wszystkie pliki .md w folderze docs
+find "$BASE_DIR" -type f -name "*.md" | while read -r file; do
     
-    # 2. Tworzenie katalogu docelowego, jeśli nie istnieje
-    target_dir=$(dirname "$target_file")
-    mkdir -p "$target_dir"
+    # Pobierz nazwę pliku bez rozszerzenia (np. '01_matrices_and_operations')
+    filename=$(basename "$file" .md)
     
-    # 3. Wyciąganie nazwy do nagłówka (dla estetyki)
-    filename=$(basename "$target_file" .md)
-    # Usuwamy cyfry i podkreślenia z nazwy, żeby zrobić ładny tytuł H1
-    clean_title=$(echo "$filename" | sed -E 's/^[0-9]+_//' | sed 's/_/ /g')
-    # Zamieniamy pierwszą literę na wielką
-    clean_title="$(tr '[:lower:]' '[:upper:]' <<< ${clean_title:0:1})${clean_title:1}"
+    # Pobierz ścieżkę do katalogu, w którym plik się znajduje
+    dir_path=$(dirname "$file")
+    
+    # Pomiń pliki index.md (zazwyczaj nie zawierają list zadań)
+    if [ "$filename" == "index" ]; then
+        continue
+    fi
 
-    # 4. Tworzenie pliku z treścią "To be translated"
-    echo "# $clean_title" > "$target_file"
-    echo "" >> "$target_file"
-    echo "_To be translated..._" >> "$target_file"
+    # Zdefiniuj nazwę nowego katalogu (np. solution_01_matrices_and_operations)
+    solution_dir="$dir_path/solution_$filename"
+
+    # Tworzenie katalogu, jeśli jeszcze nie istnieje
+    if [ ! -d "$solution_dir" ]; then
+        mkdir -p "$solution_dir"
+        echo "Utworzono: $solution_dir"
+    fi
+
+    # Tworzenie pliku .gitkeep w środku, aby Git widział pusty katalog
+    if [ ! -f "$solution_dir/.gitkeep" ]; then
+        touch "$solution_dir/.gitkeep"
+    fi
     
-    echo "Utworzono: $target_file"
 done
 
-echo "Zakończono tworzenie struktury angielskiej."
+echo "Operacja zakończona. Utworzono katalogi 'solution_*' z plikami .gitkeep."

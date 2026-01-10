@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Lab: List 1</title>
+    <style>
+        :root {
+            /* Dark Theme Palette */
+            --primary: #3b82f6; /* Lighter blue for dark mode */
+            --primary-hover: #2563eb;
+            --bg: #111827; /* Very dark gray/black */
+            --card-bg: #1f2937; /* Dark gray panel */
+            --text: #f3f4f6; /* Almost white */
+            --text-muted: #9ca3af;
+            --border: #374151;
+            --canvas-bg: #111827; /* Dark canvas */
+            --success: #10b981;
+            --danger: #ef4444;
+            --accent: #8b5cf6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        header {
+            background: #111827;
+            border-bottom: 1px solid var(--border);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        h1 { margin: 0; font-size: 1.5rem; color: var(--text); }
+        p.subtitle { margin: 5px 0 0; color: var(--text-muted); font-size: 0.9rem; }
+
+        /* Language Switcher */
+        .lang-switch {
+            display: flex;
+            gap: 5px;
+            background: var(--border);
+            padding: 4px;
+            border-radius: 6px;
+        }
+        
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            padding: 4px 8px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            background: #111827; /* Darker than card */
+            border-bottom: 1px solid var(--border);
+            overflow-x: auto;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: all 0.2s;
+            border: none;
+            background: none;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab:hover { color: var(--text); background-color: rgba(255,255,255,0.05); }
+        .tab.active {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            background-color: var(--card-bg);
+        }
+
+        /* Sections */
+        .section {
+            display: none;
+            padding: 20px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .section.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Controls */
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button.action-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        button.action-btn:hover { background-color: var(--primary-hover); }
+        button.secondary { background-color: var(--border); color: var(--text); }
+        button.secondary:hover { background-color: #4b5563; }
+        
+        /* Canvas */
+        .canvas-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        canvas {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--canvas-bg);
+            max-width: 100%;
+        }
+
+        /* Stats Panel */
+        .stats-panel {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value { font-size: 1.25rem; font-weight: bold; color: var(--primary); font-family: monospace; }
+        .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+
+        .description {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: var(--text);
+            background: rgba(59, 130, 246, 0.1);
+            padding: 15px;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+        }
+        
+        /* Dice specific */
+        .dice-display {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        .die {
+            width: 60px;
+            height: 60px;
+            background: #111827;
+            color: var(--text);
+            border: 2px solid var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+        }
+
+        .legend {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-content">
+            <h1 data-key="title">Probability Lab</h1>
+            <p class="subtitle" data-key="subtitle">List 1: Events, Classical Probability, Geometry, and Bayes</p>
+        </div>
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="setLanguage('pl')">PL</button>
+        </div>
+    </header>
+
+    <div class="tabs">
+        <button class="tab active" onclick="switchTab('dice')" data-key="tabDice">1. Dice Rolling</button>
+        <button class="tab" onclick="switchTab('urn')" data-key="tabUrn">2. Urn Model</button>
+        <button class="tab" onclick="switchTab('geo')" data-key="tabGeo">3. Geometric Prob.</button>
+        <button class="tab" onclick="switchTab('bayes')" data-key="tabBayes">4. Bayes' Theorem</button>
+    </div>
+
+    <!-- SEKCJA 1: KOSTKI -->
+    <div id="dice" class="section active">
+        <div class="description" data-key="descDice">
+            <strong>Problem:</strong> Roll two symmetrical dice. Analyze the sum of dots (Task 2). Theoretically, sum 7 is most frequent, while 2 and 12 are rare. Observe how single rolls (chaos) turn into a predictable distribution (order) with many trials.
+        </div>
+
+        <div class="dice-display">
+            <div id="die1" class="die">?</div>
+            <div id="die2" class="die">?</div>
+        </div>
+
+        <div class="controls">
+            <button class="action-btn" onclick="rollDice(1)" data-key="btnRoll1">Roll 1x</button>
+            <button class="action-btn" onclick="rollDice(100)" data-key="btnRoll100">Roll 100x</button>
+            <button class="action-btn" onclick="rollDice(1000)" data-key="btnRoll1000">Roll 1000x</button>
+            <button class="action-btn secondary" onclick="resetDice()" data-key="btnReset">Reset</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="diceCanvas" width="600" height="300"></canvas>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-item">
+                <div id="diceCount" class="stat-value">0</div>
+                <div class="stat-label" data-key="statCount">Total Rolls</div>
+            </div>
+            <div class="stat-item">
+                <div id="diceSum8" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statSum8">Sum = 8 (Theory: ~13.9%)</div>
+            </div>
+            <div class="stat-item">
+                <div id="diceProdOdd" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statProdOdd">Prod. Odd (Theory: 25%)</div>
+            </div>
+            <div class="stat-item">
+                <div id="diceDouble" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statDouble">Doubles (Theory: ~16.7%)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEKCJA 2: URNA -->
+    <div id="urn" class="section">
+        <div class="description" data-key="descUrn">
+            <strong>Problem:</strong> An urn contains 10 balls: 6 white and 4 black (Task 3). We draw two balls <strong>without replacement</strong>. The second draw depends on the first. The simulation checks the frequency of drawing two white balls or at least one black ball.
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="urnCanvas" width="500" height="250"></canvas>
+        </div>
+        <div class="legend" data-key="legendUrn">Visualization of the last draw</div>
+
+        <div class="controls">
+            <button class="action-btn" onclick="drawUrn(1)" data-key="btnDraw1">Draw Pair (Anim)</button>
+            <button class="action-btn" onclick="drawUrn(1000)" data-key="btnDraw1000">Simulate 1000x</button>
+            <button class="action-btn secondary" onclick="resetUrn()" data-key="btnResetStats">Reset Stats</button>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-item">
+                <div id="urnCount" class="stat-value">0</div>
+                <div class="stat-label" data-key="statCount">Total Trials</div>
+            </div>
+            <div class="stat-item">
+                <div id="urnWW" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statWW">Two White (Theory: 33.3%)</div>
+            </div>
+            <div class="stat-item">
+                <div id="urnAnyB" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statAnyB">Min. 1 Black (Theory: 66.7%)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEKCJA 3: GEOMETRIA -->
+    <div id="geo" class="section">
+        <div class="description" data-key="descGeo">
+            <strong>Problem:</strong> Two people arrive between 12:00 (0 min) and 13:00 (60 min). They wait 15 mins for each other. To meet, arrival difference $|x - y|$ must be $\le 15$. Visualized as points on a 60x60 square. Green band is the meeting zone.
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="geoCanvas" width="400" height="400"></canvas>
+        </div>
+        
+        <div class="controls">
+            <button class="action-btn" onclick="simGeo(1)" data-key="btnAdd1">Add 1 Point</button>
+            <button class="action-btn" onclick="simGeo(100)" data-key="btnAdd100">Add 100 Points</button>
+            <button class="action-btn" onclick="simGeo(5000)" data-key="btnAdd5000">Add 5000 Points</button>
+            <button class="action-btn secondary" onclick="resetGeo()" data-key="btnReset">Reset</button>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-item">
+                <div id="geoCount" class="stat-value">0</div>
+                <div class="stat-label" data-key="statCount">Total Trials</div>
+            </div>
+            <div class="stat-item">
+                <div id="geoSuccess" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statMeeting">Meetings (Theory: ~43.75%)</div>
+            </div>
+            <div class="stat-item">
+                <div id="geoFail" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statNoMeeting">No Meeting</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEKCJA 4: BAYES -->
+    <div id="bayes" class="section">
+        <div class="description" data-key="descBayes">
+            <strong>Problem:</strong> 3 Factories (F1: 50%, F2: 30%, F3: 20%). Defect rates: 1%, 2%, 5%. We simulate production. Dots are products, <span style="color:#ef4444">Red</span> are defects. Intuition check: If you pick a defective item, what is the chance it came from F3? (Tasks 7 & 8).
+        </div>
+
+        <div class="controls">
+            <button class="action-btn" onclick="simBayes(100)" data-key="btnProd100">Produce 100</button>
+            <button class="action-btn" onclick="simBayes(1000)" data-key="btnProd1000">Produce 1000</button>
+            <button class="action-btn secondary" onclick="resetBayes()" data-key="btnClear">Clear Warehouse</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="bayesCanvas" width="600" height="300"></canvas>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-item">
+                <div id="bayesTotal" class="stat-value">0</div>
+                <div class="stat-label" data-key="statTotalProd">Total Products</div>
+            </div>
+            <div class="stat-item">
+                <div id="bayesDefectRate" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statDefRate">Total Defect % (Theory: 2.1%)</div>
+            </div>
+            <div class="stat-item">
+                <div id="bayesCondF3" class="stat-value">0%</div>
+                <div class="stat-label" data-key="statCondF3">P(F3 | Defect) (Theory: ~47.6%)</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // --- TRANSLATION SYSTEM ---
+    const translations = {
+        en: {
+            title: "Probability Lab",
+            subtitle: "List 1: Events, Classical Probability, Geometry, and Bayes",
+            tabDice: "1. Dice Rolling",
+            tabUrn: "2. Urn Model",
+            tabGeo: "3. Geometric Prob.",
+            tabBayes: "4. Bayes' Theorem",
+            descDice: "<strong>Problem:</strong> Roll two symmetrical dice. Analyze the sum of dots (Task 2). Theoretically, sum 7 is most frequent, while 2 and 12 are rare. Observe how single rolls (chaos) turn into a predictable distribution (order) with many trials.",
+            btnRoll1: "Roll 1x",
+            btnRoll100: "Roll 100x",
+            btnRoll1000: "Roll 1000x",
+            btnReset: "Reset",
+            statCount: "Total Trials",
+            statSum8: "Sum = 8 (Theory: ~13.9%)",
+            statProdOdd: "Prod. Odd (Theory: 25%)",
+            statDouble: "Doubles (Theory: ~16.7%)",
+            descUrn: "<strong>Problem:</strong> An urn contains 10 balls: 6 white and 4 black (Task 3). We draw two balls <strong>without replacement</strong>. The second draw depends on the first. The simulation checks the frequency of drawing two white balls or at least one black ball.",
+            legendUrn: "Visualization of the last draw",
+            btnDraw1: "Draw Pair (Anim)",
+            btnDraw1000: "Simulate 1000x",
+            btnResetStats: "Reset Stats",
+            statWW: "Two White (Theory: 33.3%)",
+            statAnyB: "Min. 1 Black (Theory: 66.7%)",
+            descGeo: "<strong>Problem:</strong> Two people arrive between 12:00 (0 min) and 13:00 (60 min). They wait 15 mins for each other. To meet, arrival difference $|x - y|$ must be $\\le 15$. Visualized as points on a 60x60 square. Green band is the meeting zone.",
+            btnAdd1: "Add 1 Point",
+            btnAdd100: "Add 100 Points",
+            btnAdd5000: "Add 5000 Points",
+            statMeeting: "Meetings (Theory: ~43.75%)",
+            statNoMeeting: "No Meeting",
+            descBayes: "<strong>Problem:</strong> 3 Factories (F1: 50%, F2: 30%, F3: 20%). Defect rates: 1%, 2%, 5%. We simulate production. Dots are products, <span style='color:#ef4444'>Red</span> are defects. Intuition check: If you pick a defective item, what is the chance it came from F3? (Tasks 7 & 8).",
+            btnProd100: "Produce 100",
+            btnProd1000: "Produce 1000",
+            btnClear: "Clear Warehouse",
+            statTotalProd: "Total Products",
+            statDefRate: "Total Defect % (Theory: 2.1%)",
+            statCondF3: "P(F3 | Defect) (Theory: ~47.6%)",
+            // Canvas specific labels
+            clickToRoll: "Click a button to roll dice",
+            personA: "Person A (min)",
+            personB: "Person B (min)",
+            factory1: "Factory 1 (50%)",
+            factory2: "Factory 2 (30%)",
+            factory3: "Factory 3 (20%)",
+            defectLabel: "Defective",
+            drawLabel: "Draw"
+        },
+        pl: {
+            title: "Laboratorium Prawdopodobieństwa",
+            subtitle: "Lista 1: Przestrzeń zdarzeń, Prawdopodobieństwo klasyczne, geometryczne i Bayes",
+            tabDice: "1. Rzuty Kostkami",
+            tabUrn: "2. Urna z Kulami",
+            tabGeo: "3. P-stwo Geometryczne",
+            tabBayes: "4. Twierdzenie Bayesa",
+            descDice: "<strong>Zagadnienie:</strong> Rzucamy dwiema symetrycznymi kostkami. Badamy sumę oczek (Zadanie 2). Teoretycznie najczęściej powinna padać suma 7, a najrzadziej 2 i 12. Sprawdź, jak pojedyncze losowania (chaos) zamieniają się w przewidywalny rozkład (porządek) przy dużej liczbie prób.",
+            btnRoll1: "Rzuć 1x",
+            btnRoll100: "Rzuć 100x",
+            btnRoll1000: "Rzuć 1000x",
+            btnReset: "Resetuj",
+            statCount: "Liczba prób",
+            statSum8: "Suma = 8 (Teoria: ~13.9%)",
+            statProdOdd: "Iloczyn Nieparz. (Teoria: 25%)",
+            statDouble: "Dublety (Teoria: ~16.7%)",
+            descUrn: "<strong>Zagadnienie:</strong> W urnie jest 10 kul: 6 białych i 4 czarne (Zadanie 3). Losujemy dwie kule <strong>bez zwracania</strong>. Wynik drugiego losowania zależy od pierwszego. Symulacja sprawdza częstość wylosowania dwóch kul białych lub co najmniej jednej czarnej.",
+            legendUrn: "Wizualizacja ostatniego losowania",
+            btnDraw1: "Wylosuj Parę (Anim)",
+            btnDraw1000: "Symuluj 1000x",
+            btnResetStats: "Reset Statystyk",
+            statWW: "Dwie Białe (Teoria: 33.3%)",
+            statAnyB: "Min. 1 Czarna (Teoria: 66.7%)",
+            descGeo: "<strong>Zagadnienie:</strong> Dwie osoby przychodzą między 12:00 (0 min) a 13:00 (60 min). Czekają na siebie 15 minut. Aby się spotkać, różnica czasów $|x - y|$ musi być $\\le 15$. Wizualizacja na kwadracie 60x60. Zielony pas to strefa spotkania.",
+            btnAdd1: "Dodaj 1 punkt",
+            btnAdd100: "Dodaj 100 punktów",
+            btnAdd5000: "Dodaj 5000 punktów",
+            statMeeting: "Spotkania (Teoria: ~43.75%)",
+            statNoMeeting: "Brak spotkania",
+            descBayes: "<strong>Zagadnienie:</strong> 3 Fabryki (F1: 50%, F2: 30%, F3: 20%). Wadliwość: 1%, 2%, 5%. Symulujemy produkcję. Kropki to produkty, <span style='color:#ef4444'>Czerwone</span> to braki. Intuicja: Jeśli wylosujesz brak, jaka jest szansa, że pochodzi z F3? (Zadania 7 i 8).",
+            btnProd100: "Wyprodukuj 100",
+            btnProd1000: "Wyprodukuj 1000",
+            btnClear: "Wyczyść Magazyn",
+            statTotalProd: "Wszystkie produkty",
+            statDefRate: "% Braków (Teoria: 2.1%)",
+            statCondF3: "P(F3 | Brak) (Teoria: ~47.6%)",
+            clickToRoll: "Kliknij przycisk, aby rzucić",
+            personA: "Osoba A (min)",
+            personB: "Osoba B (min)",
+            factory1: "Fabryka 1 (50%)",
+            factory2: "Fabryka 2 (30%)",
+            factory3: "Fabryka 3 (20%)",
+            defectLabel: "Wadliwy",
+            drawLabel: "Los"
+        }
+    };
+
+    let currentLang = 'en';
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        const t = translations[lang];
+
+        // Update DOM elements with data-key
+        document.querySelectorAll('[data-key]').forEach(el => {
+            const key = el.getAttribute('data-key');
+            if(t[key]) el.innerHTML = t[key];
+        });
+
+        // Update Buttons active state
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        const activeBtnIndex = lang === 'en' ? 0 : 1;
+        document.querySelectorAll('.lang-btn')[activeBtnIndex].classList.add('active');
+
+        // Redraw Canvases to update internal text
+        drawDiceHistogram();
+        drawUrnVisual();
+        drawGeoGraph();
+        drawBayesVisual();
+    }
+
+    // --- ZARZĄDZANIE ZAKŁADKAMI ---
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        
+        // Find correct button
+        const buttons = document.querySelectorAll('.tab');
+        if(tabId === 'dice') buttons[0].classList.add('active');
+        if(tabId === 'urn') buttons[1].classList.add('active');
+        if(tabId === 'geo') buttons[2].classList.add('active');
+        if(tabId === 'bayes') buttons[3].classList.add('active');
+
+        document.getElementById(tabId).classList.add('active');
+        
+        // Refresh canvas
+        if(tabId === 'dice') drawDiceHistogram();
+        if(tabId === 'urn') drawUrnVisual();
+        if(tabId === 'geo') drawGeoGraph();
+        if(tabId === 'bayes') drawBayesVisual();
+    }
+
+    // --- SEKCJA 1: KOSTKI ---
+    let diceStats = { total: 0, sums: new Array(13).fill(0), sum8: 0, prodOdd: 0, doubles: 0 };
+
+    function rollDice(n) {
+        let lastD1, lastD2;
+        for(let i=0; i<n; i++) {
+            let d1 = Math.floor(Math.random() * 6) + 1;
+            let d2 = Math.floor(Math.random() * 6) + 1;
+            
+            diceStats.total++;
+            let s = d1 + d2;
+            diceStats.sums[s]++;
+            
+            if (s === 8) diceStats.sum8++;
+            if ((d1 * d2) % 2 !== 0) diceStats.prodOdd++;
+            if (d1 === d2) diceStats.doubles++;
+
+            lastD1 = d1; lastD2 = d2;
+        }
+
+        document.getElementById('die1').textContent = lastD1;
+        document.getElementById('die2').textContent = lastD2;
+        updateDiceStats();
+        drawDiceHistogram();
+    }
+
+    function updateDiceStats() {
+        if (diceStats.total === 0) return;
+        document.getElementById('diceCount').textContent = diceStats.total;
+        document.getElementById('diceSum8').textContent = (diceStats.sum8 / diceStats.total * 100).toFixed(1) + "%";
+        document.getElementById('diceProdOdd').textContent = (diceStats.prodOdd / diceStats.total * 100).toFixed(1) + "%";
+        document.getElementById('diceDouble').textContent = (diceStats.doubles / diceStats.total * 100).toFixed(1) + "%";
+    }
+
+    function drawDiceHistogram() {
+        const ctx = document.getElementById('diceCanvas').getContext('2d');
+        const w = ctx.canvas.width;
+        const h = ctx.canvas.height;
+        ctx.clearRect(0, 0, w, h);
+        const t = translations[currentLang];
+
+        if (diceStats.total === 0) {
+            ctx.fillStyle = "#6b7280";
+            ctx.font = "20px Segoe UI, sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText(t.clickToRoll, w/2, h/2);
+            return;
+        }
+
+        const maxVal = Math.max(...diceStats.sums);
+        const barW = (w - 40) / 11;
+        
+        for(let i=2; i<=12; i++) {
+            const count = diceStats.sums[i];
+            const barH = maxVal > 0 ? (count / maxVal) * (h - 60) : 0;
+            const x = 20 + (i-2) * barW;
+            const y = h - 30 - barH;
+            
+            // Bar color
+            if (i === 8) ctx.fillStyle = "#ef4444"; // Highlight 8
+            else ctx.fillStyle = "#3b82f6";
+
+            ctx.fillRect(x + 5, y, barW - 10, barH);
+            
+            // Text color (light for dark mode)
+            ctx.fillStyle = "#e5e7eb";
+            ctx.font = "14px Segoe UI, sans-serif";
+            ctx.textAlign = "center";
+            ctx.fillText(i, x + barW/2, h - 10); // X Axis labels
+            
+            ctx.font = "11px Segoe UI, sans-serif";
+            if(count > 0) ctx.fillText(count, x + barW/2, y - 5);
+        }
+    }
+
+    function resetDice() {
+        diceStats = { total: 0, sums: new Array(13).fill(0), sum8: 0, prodOdd: 0, doubles: 0 };
+        document.getElementById('die1').textContent = "?";
+        document.getElementById('die2').textContent = "?";
+        document.getElementById('diceCount').textContent = "0";
+        document.getElementById('diceSum8').textContent = "0%";
+        document.getElementById('diceProdOdd').textContent = "0%";
+        document.getElementById('diceDouble').textContent = "0%";
+        drawDiceHistogram();
+    }
+
+    // --- SEKCJA 2: URNA ---
+    let urnStats = { total: 0, ww: 0, anyBlack: 0 };
+    let lastDraw = null;
+
+    function drawUrn(n) {
+        for(let i=0; i<n; i++) {
+            let balls = Array(10).fill(0).map((_, idx) => idx < 6 ? 'W' : 'B');
+            let idx1 = Math.floor(Math.random() * balls.length);
+            let b1 = balls[idx1];
+            balls.splice(idx1, 1);
+            let idx2 = Math.floor(Math.random() * balls.length);
+            let b2 = balls[idx2];
+            
+            urnStats.total++;
+            if (b1 === 'W' && b2 === 'W') urnStats.ww++;
+            if (b1 === 'B' || b2 === 'B') urnStats.anyBlack++;
+            
+            lastDraw = { b1, b2 };
+        }
+        updateUrnStats();
+        drawUrnVisual();
+    }
+
+    function updateUrnStats() {
+        if (urnStats.total === 0) return;
+        document.getElementById('urnCount').textContent = urnStats.total;
+        document.getElementById('urnWW').textContent = (urnStats.ww / urnStats.total * 100).toFixed(1) + "%";
+        document.getElementById('urnAnyB').textContent = (urnStats.anyBlack / urnStats.total * 100).toFixed(1) + "%";
+    }
+
+    function drawUrnVisual() {
+        const ctx = document.getElementById('urnCanvas').getContext('2d');
+        const w = 500;
+        const h = 250;
+        ctx.clearRect(0, 0, w, h);
+        const t = translations[currentLang];
+
+        // Draw Urn outline
+        ctx.beginPath();
+        ctx.moveTo(150, 50);
+        ctx.lineTo(150, 200);
+        ctx.lineTo(350, 200);
+        ctx.lineTo(350, 50);
+        ctx.strokeStyle = "#4b5563"; // gray-600
+        ctx.lineWidth = 4;
+        ctx.stroke();
+
+        // Draw extracted balls
+        if (lastDraw) {
+            drawBall(ctx, 400, 100, lastDraw.b1, "1", t);
+            drawBall(ctx, 400, 160, lastDraw.b2, "2", t);
+        }
+
+        // Draw balls inside
+        let ballsInsideW = 6;
+        let ballsInsideB = 4;
+        
+        if (lastDraw) {
+            if (lastDraw.b1 === 'W') ballsInsideW--; else ballsInsideB--;
+            if (lastDraw.b2 === 'W') ballsInsideW--; else ballsInsideB--;
+        }
+
+        let x = 170, y = 180;
+        for(let i=0; i<ballsInsideB; i++) {
+            drawBall(ctx, x, y, 'B');
+            x += 35; if(x > 330) { x = 170; y -= 35; }
+        }
+        for(let i=0; i<ballsInsideW; i++) {
+            drawBall(ctx, x, y, 'W');
+            x += 35; if(x > 330) { x = 170; y -= 35; }
+        }
+    }
+
+    function drawBall(ctx, x, y, type, label, t) {
+        ctx.beginPath();
+        ctx.arc(x, y, 15, 0, Math.PI*2);
+        // Balls colors
+        ctx.fillStyle = type === 'W' ? '#e5e7eb' : '#1f2937'; 
+        ctx.fill();
+        ctx.strokeStyle = type === 'W' ? '#1f2937' : '#4b5563';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        
+        if (label && t) {
+            ctx.fillStyle = "#9ca3af";
+            ctx.font = "12px Segoe UI";
+            ctx.fillText(t.drawLabel + " " + label, x + 25, y+5);
+        }
+    }
+
+    function resetUrn() {
+        urnStats = { total: 0, ww: 0, anyBlack: 0 };
+        lastDraw = null;
+        updateUrnStats();
+        drawUrnVisual();
+        document.getElementById('urnCount').textContent = "0";
+        document.getElementById('urnWW').textContent = "0%";
+        document.getElementById('urnAnyB').textContent = "0%";
+    }
+
+    // --- SEKCJA 3: GEOMETRIA ---
+    let geoStats = { total: 0, success: 0 };
+    let geoPoints = [];
+
+    function simGeo(n) {
+        for(let i=0; i<n; i++) {
+            let x = Math.random() * 60;
+            let y = Math.random() * 60;
+            let success = Math.abs(x - y) <= 15;
+            
+            geoStats.total++;
+            if (success) geoStats.success++;
+            if (geoPoints.length > 2000) geoPoints.shift();
+            geoPoints.push({x, y, success});
+        }
+        updateGeoStats();
+        drawGeoGraph();
+    }
+
+    function updateGeoStats() {
+        if (geoStats.total === 0) return;
+        document.getElementById('geoCount').textContent = geoStats.total;
+        document.getElementById('geoSuccess').textContent = (geoStats.success / geoStats.total * 100).toFixed(2) + "%";
+        document.getElementById('geoFail').textContent = ((geoStats.total - geoStats.success) / geoStats.total * 100).toFixed(2) + "%";
+    }
+
+    function drawGeoGraph() {
+        const ctx = document.getElementById('geoCanvas').getContext('2d');
+        const w = ctx.canvas.width;
+        const h = ctx.canvas.height;
+        ctx.clearRect(0, 0, w, h);
+        const t = translations[currentLang];
+        const scale = w / 60;
+
+        // Success Area
+        ctx.fillStyle = "rgba(16, 185, 129, 0.15)"; // Success green low opacity
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(15 * scale, 0); 
+        ctx.lineTo(60 * scale, 45 * scale); 
+        ctx.lineTo(60 * scale, 60 * scale);
+        ctx.lineTo(45 * scale, 60 * scale); 
+        ctx.lineTo(0, 15 * scale);
+        ctx.closePath();
+        ctx.fill();
+
+        // Border
+        ctx.strokeStyle = "#4b5563";
+        ctx.lineWidth = 1;
+        ctx.strokeRect(0, 0, w, h);
+        
+        // Labels
+        ctx.fillStyle = "#e5e7eb";
+        ctx.font = "12px Segoe UI";
+        ctx.textAlign = "center";
+        ctx.fillText(t.personA, w/2, h - 5);
+        ctx.save();
+        ctx.translate(15, h/2);
+        ctx.rotate(-Math.PI/2);
+        ctx.fillText(t.personB, 0, 0);
+        ctx.restore();
+
+        // Points
+        geoPoints.forEach(p => {
+            // Bright green or Bright Red
+            ctx.fillStyle = p.success ? "#34d399" : "#f87171"; 
+            ctx.beginPath();
+            ctx.arc(p.x * scale, h - p.y * scale, 2, 0, Math.PI*2);
+            ctx.fill();
+        });
+    }
+
+    function resetGeo() {
+        geoStats = { total: 0, success: 0 };
+        geoPoints = [];
+        updateGeoStats();
+        drawGeoGraph();
+        document.getElementById('geoCount').textContent = "0";
+        document.getElementById('geoSuccess').textContent = "0%";
+        document.getElementById('geoFail').textContent = "0%";
+    }
+
+    // --- SEKCJA 4: BAYES ---
+    let bayesStats = { total: 0, defectTotal: 0, defectFromF3: 0, products: [] };
+    
+    function simBayes(n) {
+        for(let i=0; i<n; i++) {
+            let r = Math.random();
+            let factory, isDefect;
+            if (r < 0.5) { factory = 1; isDefect = Math.random() < 0.01; } 
+            else if (r < 0.8) { factory = 2; isDefect = Math.random() < 0.02; } 
+            else { factory = 3; isDefect = Math.random() < 0.05; }
+
+            bayesStats.total++;
+            if (isDefect) {
+                bayesStats.defectTotal++;
+                if (factory === 3) bayesStats.defectFromF3++;
+            }
+            if (bayesStats.products.length > 250) bayesStats.products.shift();
+            bayesStats.products.push({factory, isDefect});
+        }
+        updateBayesStats();
+        drawBayesVisual();
+    }
+
+    function updateBayesStats() {
+        if (bayesStats.total === 0) return;
+        document.getElementById('bayesTotal').textContent = bayesStats.total;
+        let defRate = (bayesStats.defectTotal / bayesStats.total * 100).toFixed(2);
+        document.getElementById('bayesDefectRate').textContent = defRate + "%";
+        let cond = bayesStats.defectTotal > 0 ? (bayesStats.defectFromF3 / bayesStats.defectTotal * 100).toFixed(1) : 0;
+        document.getElementById('bayesCondF3').textContent = cond + "%";
+    }
+
+    function drawBayesVisual() {
+        const ctx = document.getElementById('bayesCanvas').getContext('2d');
+        const w = ctx.canvas.width;
+        const h = ctx.canvas.height;
+        ctx.clearRect(0, 0, w, h);
+        const t = translations[currentLang];
+
+        // Zones
+        ctx.globalAlpha = 0.1;
+        ctx.fillStyle = "#3b82f6"; ctx.fillRect(0, 0, w*0.5, h); // F1 Blue
+        ctx.fillStyle = "#10b981"; ctx.fillRect(w*0.5, 0, w*0.3, h); // F2 Green
+        ctx.fillStyle = "#f59e0b"; ctx.fillRect(w*0.8, 0, w*0.2, h); // F3 Orange
+        ctx.globalAlpha = 1.0;
+        
+        // Text labels
+        ctx.fillStyle = "#e5e7eb";
+        ctx.font = "14px Segoe UI";
+        ctx.textAlign = "left";
+        ctx.fillText(t.factory1, 10, 20);
+        ctx.fillText(t.factory2, w*0.5 + 10, 20);
+        ctx.fillText(t.factory3, w*0.8 + 10, 20);
+
+        // Products
+        bayesStats.products.forEach(p => {
+            let xMin, xMax;
+            if (p.factory === 1) { xMin = 0; xMax = w*0.5; }
+            else if (p.factory === 2) { xMin = w*0.5; xMax = w*0.8; }
+            else { xMin = w*0.8; xMax = w; }
+            
+            let x = xMin + Math.random() * (xMax - xMin - 10) + 5;
+            let y = 30 + Math.random() * (h - 40);
+            
+            ctx.beginPath();
+            ctx.arc(x, y, p.isDefect ? 5 : 2, 0, Math.PI*2);
+            // Defect red, Normal blue-ish
+            ctx.fillStyle = p.isDefect ? "#ef4444" : "#60a5fa"; 
+            ctx.fill();
+        });
+        
+        // Legend
+        ctx.fillStyle = "#ef4444"; ctx.beginPath(); ctx.arc(w - 100, h - 10, 5, 0, Math.PI*2); ctx.fill();
+        ctx.fillStyle = "#e5e7eb"; ctx.fillText(t.defectLabel, w - 90, h - 5);
+    }
+
+    function resetBayes() {
+        bayesStats = { total: 0, defectTotal: 0, defectFromF3: 0, products: [] };
+        updateBayesStats();
+        drawBayesVisual();
+        document.getElementById('bayesTotal').textContent = "0";
+        document.getElementById('bayesDefectRate').textContent = "0%";
+        document.getElementById('bayesCondF3').textContent = "0%";
+    }
+
+    // Init
+    setLanguage('en');
+</script>
+
+</body>
+</html>

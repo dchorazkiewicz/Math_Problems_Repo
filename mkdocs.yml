@@ -69,10 +69,6 @@ plugins:
             - Animacje:
               - Metody probabilistyczne:
                 - 'Lista 1': 'anim/4_Metody_probalistyczne/prob_list_1.html'
-                - 'Lista 2': 'anim/4_Metody_probalistyczne/prob_list_2.html'
-                - 'Lista 3': 'anim/4_Metody_probalistyczne/prob_list_3.html'
-                - 'Lista 4': 'anim/4_Metody_probalistyczne/prob_list_4.html'
-                - 'Lista 5': 'anim/4_Metody_probalistyczne/prob_list_5.html'
         - locale: en
           name: English
           default: true

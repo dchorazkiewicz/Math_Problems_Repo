@@ -54,7 +54,7 @@ plugins:
               - '3. Pochodne funkcji': '3_Analiza/03_derivatives.md'
               - '4. Badanie funkcji': '3_Analiza/04_function_analysis.md'
               - '5. Całki': '3_Analiza/05_integrals.md'
-              - '6. Zastosowania rachunku': '3_Analiza/06_calculus_applications.md'
+              - '6. Zastosowania rachunku': '3_Analiza/06_applications.md'
             - Metody probabilistyczne:
               - '1. Zdarzenia i prawdopodobieństwo': '4_Metody_probabilistyczne/01_events_and_probability.md'
               - '2. Zmienne losowe': '4_Metody_probabilistyczne/02_random_variables.md'
@@ -92,7 +92,7 @@ plugins:
               - '3. Derivatives': '3_Analiza/03_derivatives.md'
               - '4. Function Analysis': '3_Analiza/04_function_analysis.md'
               - '5. Integrals': '3_Analiza/05_integrals.md'
-              - '6. Calculus Applications': '3_Analiza/06_calculus_applications.md'
+              - '6. Calculus Applications': '3_Analiza/06_applications.md'
             - Probabilistic Methods:
               - '1. Events & Probability': '4_Metody_probabilistyczne/01_events_and_probability.md'
               - '2. Random Variables': '4_Metody_probabilistyczne/02_random_variables.md'

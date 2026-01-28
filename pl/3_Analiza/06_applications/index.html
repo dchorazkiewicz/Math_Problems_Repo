@@ -1486,62 +1486,43 @@
 <h2 id="zastosowania-rachunku-rozniczkowego-i-cakowego">Zastosowania rachunku różniczkowego i całkowego</h2>
 <h3 id="zad-1">Zad 1.</h3>
 <p>Rozwiąż poniższe problemy z zastosowaniem metod analizy matematycznej</p>
-<p>1)  <strong>Pole koła.</strong> Korzystając z całki oznaczonej, wyprowadź wzór na pole koła o promieniu <span class="arithmatex">\(R\)</span>. Wskazówka: Oblicz pole obszaru ograniczonego wykresem funkcji:</p>
-<pre><code>$$y = \sqrt{R^2 - x^2}$$
-
-oraz osią $Ox$ w przedziale $[-R, R]$, a wynik pomnóż przez 2.
-</code></pre>
-<p>2)  <strong>Optymalizacja ogrodzenia.</strong> Rolnik chce ogrodzić prostokątne pastwisko przylegające jednym bokiem do rzeki (nie trzeba grodzić brzegu). Dysponuje siatką o długości <span class="arithmatex">\(L\)</span> metrów. Jakie wymiary powinno mieć pastwisko, aby jego powierzchnia była największa?</p>
-<p>3)  <strong>Kinematyka punktu.</strong> Położenie punktu materialnego poruszającego się wzdłuż osi <span class="arithmatex">\(Ox\)</span> opisane jest równaniem:</p>
-<pre><code>$$x(t) = t^3 - 6t^2 + 9t + 2$$
-
-gdzie $t \ge 0$. Wyznacz prędkość $v(t)$ oraz przyspieszenie $a(t)$ tego punktu. W jakich chwilach czasu punkt się zatrzymuje? Kiedy przyspiesza, a kiedy zwalnia?
-</code></pre>
-<p>4)  <strong>Pudełko z kartonu.</strong> Z prostokątnego arkusza tektury o wymiarach <span class="arithmatex">\(30 \text{ cm} \times 48 \text{ cm}\)</span> należy wyciąć w narożnikach jednakowe kwadraty, a następnie zagiąć brzegi, aby otrzymać otwarte pudełko. Jaki bok powinien mieć wycinany kwadrat, aby objętość pudełka była maksymalna?</p>
-<p>5)  <strong>Ruch harmoniczny.</strong> Ciało o masie <span class="arithmatex">\(m\)</span> zawieszone na sprężynie wykonuje drgania opisane równaniem wychylenia:</p>
-<pre><code>$$x(t) = A \cos(\omega t + \phi)$$
-
-Oblicz prędkość i przyspieszenie tego ciała. Wykaż, że siła działająca na ciało ($F = ma$) jest proporcjonalna do wychylenia i skierowana przeciwnie do niego.
-</code></pre>
-<p>6)  <strong>Wytrzymałość belki.</strong> Wytrzymałość prostopadłościennej belki drewnianej jest wprost proporcjonalna do szerokości jej przekroju i kwadratu jego wysokości:</p>
-<pre><code>$$S = k \cdot w \cdot h^2$$
-
-Jakie wymiary należy nadać belce wyciętej z cylindrycznego pnia o średnicy $d$, aby jej wytrzymałość była największa?
-</code></pre>
-<p>7)  <strong>Stężenie leku.</strong> Stężenie leku we krwi pacjenta po czasie <span class="arithmatex">\(t\)</span> (w godzinach) od podania opisuje funkcja:</p>
-<pre><code>$$C(t) = \frac{4t}{t^2 + 4}$$
-
-Po jakim czasie stężenie leku jest maksymalne i ile wynosi? Kiedy stężenie zaczyna spadać najszybciej (punkt przegięcia)?
-</code></pre>
-<p>8)  <strong>Koszt instalacji kabla.</strong> Należy połączyć kablem stację energetyczną <span class="arithmatex">\(A\)</span> znajdującą się na brzegu prostoliniowej rzeki o szerokości <span class="arithmatex">\(100 \text{ m}\)</span> z fabryką <span class="arithmatex">\(B\)</span> położoną po drugiej stronie rzeki, <span class="arithmatex">\(500 \text{ m}\)</span> w dół nurtu od punktu naprzeciwko stacji. Koszt ułożenia kabla pod wodą jest dwukrotnie wyższy niż na lądzie. W którym punkcie na przeciwległym brzegu kabel powinien wyjść z wody, aby zminimalizować koszt inwestycji?</p>
-<ol>
-<li><strong>Rzut pionowy.</strong> Ciało wyrzucono pionowo w górę z prędkością początkową <span class="arithmatex">\(v_0\)</span> z wysokości <span class="arithmatex">\(h_0\)</span>. Wiedząc, że przyspieszenie grawitacyjne wynosi <span class="arithmatex">\(g\)</span> (czyli <span class="arithmatex">\(a(t) = -g\)</span>), wyznacz wzory na prędkość <span class="arithmatex">\(v(t)\)</span> i położenie <span class="arithmatex">\(h(t)\)</span> poprzez całkowanie. Oblicz maksymalną wysokość, jaką osiągnie ciało.</li>
-</ol>
+<p>1) <strong>Pole koła.</strong> Korzystając z całki oznaczonej, wyprowadź wzór na pole koła o promieniu <span class="arithmatex">\(R\)</span>. Wskazówka: Oblicz pole obszaru ograniczonego wykresem funkcji:</p>
+<div class="arithmatex">\[y = \sqrt{R^2 - x^2}\]</div>
+<p>oraz osią <span class="arithmatex">\(Ox\)</span> w przedziale <span class="arithmatex">\([-R, R]\)</span>, a wynik pomnóż przez 2.</p>
+<p>2) <strong>Optymalizacja ogrodzenia.</strong> Rolnik chce ogrodzić prostokątne pastwisko przylegające jednym bokiem do rzeki (nie trzeba grodzić brzegu). Dysponuje siatką o długości <span class="arithmatex">\(L\)</span> metrów. Jakie wymiary powinno mieć pastwisko, aby jego powierzchnia była największa?</p>
+<p>3) <strong>Kinematyka punktu.</strong> Położenie punktu materialnego poruszającego się wzdłuż osi <span class="arithmatex">\(Ox\)</span> opisane jest równaniem:</p>
+<div class="arithmatex">\[x(t) = t^3 - 6t^2 + 9t + 2\]</div>
+<p>gdzie <span class="arithmatex">\(t \ge 0\)</span>. Wyznacz prędkość <span class="arithmatex">\(v(t)\)</span> oraz przyspieszenie <span class="arithmatex">\(a(t)\)</span> tego punktu. W jakich chwilach czasu punkt się zatrzymuje? Kiedy przyspiesza, a kiedy zwalnia?</p>
+<p>4) <strong>Pudełko z kartonu.</strong> Z prostokątnego arkusza tektury o wymiarach <span class="arithmatex">\(30 \text{ cm} \times 48 \text{ cm}\)</span> należy wyciąć w narożnikach jednakowe kwadraty, a następnie zagiąć brzegi, aby otrzymać otwarte pudełko. Jaki bok powinien mieć wycinany kwadrat, aby objętość pudełka była maksymalna?</p>
+<p>5) <strong>Ruch harmoniczny.</strong> Ciało o masie <span class="arithmatex">\(m\)</span> zawieszone na sprężynie wykonuje drgania opisane równaniem wychylenia:</p>
+<div class="arithmatex">\[x(t) = A \cos(\omega t + \phi)\]</div>
+<p>Oblicz prędkość i przyspieszenie tego ciała. Wykaż, że siła działająca na ciało (<span class="arithmatex">\(F = ma\)</span>) jest proporcjonalna do wychylenia i skierowana przeciwnie do niego.</p>
+<p>6) <strong>Wytrzymałość belki.</strong> Wytrzymałość prostopadłościennej belki drewnianej jest wprost proporcjonalna do szerokości jej przekroju i kwadratu jego wysokości:</p>
+<div class="arithmatex">\[S = k \cdot w \cdot h^2\]</div>
+<p>Jakie wymiary należy nadać belce wyciętej z cylindrycznego pnia o średnicy <span class="arithmatex">\(d\)</span>, aby jej wytrzymałość była największa?</p>
+<p>7) <strong>Stężenie leku.</strong> Stężenie leku we krwi pacjenta po czasie <span class="arithmatex">\(t\)</span> (w godzinach) od podania opisuje funkcja:</p>
+<div class="arithmatex">\[C(t) = \frac{4t}{t^2 + 4}\]</div>
+<p>Po jakim czasie stężenie leku jest maksymalne i ile wynosi? Kiedy stężenie zaczyna spadać najszybciej (punkt przegięcia)?</p>
+<p>8) <strong>Koszt instalacji kabla.</strong> Należy połączyć kablem stację energetyczną <span class="arithmatex">\(A\)</span> znajdującą się na brzegu prostoliniowej rzeki o szerokości <span class="arithmatex">\(100 \text{ m}\)</span> z fabryką <span class="arithmatex">\(B\)</span> położoną po drugiej stronie rzeki, <span class="arithmatex">\(500 \text{ m}\)</span> w dół nurtu od punktu naprzeciwko stacji. Koszt ułożenia kabla pod wodą jest dwukrotnie wyższy niż na lądzie. W którym punkcie na przeciwległym brzegu kabel powinien wyjść z wody, aby zminimalizować koszt inwestycji?</p>
+<p>9) <strong>Rzut pionowy.</strong> Ciało wyrzucono pionowo w górę z prędkością początkową <span class="arithmatex">\(v_0\)</span> z wysokości <span class="arithmatex">\(h_0\)</span>. Wiedząc, że przyspieszenie grawitacyjne wynosi <span class="arithmatex">\(g\)</span> (czyli <span class="arithmatex">\(a(t) = -g\)</span>), wyznacz wzory na prędkość <span class="arithmatex">\(v(t)\)</span> i położenie <span class="arithmatex">\(h(t)\)</span> poprzez całkowanie. Oblicz maksymalną wysokość, jaką osiągnie ciało.</p>
 <p>10) <strong>Pole pod parabolą (Architektura).</strong> Zaprojektowano wejście do tunelu w kształcie paraboli o równaniu:</p>
-<pre><code>$$y = 4 - x^2$$
-
-Oblicz pole powierzchni przekroju tego wejścia (obszar nad osią $Ox$).
-</code></pre>
+<div class="arithmatex">\[y = 4 - x^2\]</div>
+<p>Oblicz pole powierzchni przekroju tego wejścia (obszar nad osią <span class="arithmatex">\(Ox\)</span>).</p>
 <p>11) <strong>Praca siły zmiennej.</strong> Siła potrzebna do rozciągnięcia sprężyny jest proporcjonalna do jej wydłużenia (<span class="arithmatex">\(F(x) = kx\)</span>, prawo Hooke'a). Oblicz pracę, jaką trzeba wykonać, aby rozciągnąć sprężynę od stanu swobodnego (<span class="arithmatex">\(x=0\)</span>) do wydłużenia <span class="arithmatex">\(x=L\)</span>, całkując siłę po przesunięciu.</p>
 <p>12) <strong>Wartość średnia napięcia.</strong> Napięcie prądu zmiennego w gniazdku opisuje funkcja <span class="arithmatex">\(U(t) = U_0 \sin(\omega t)\)</span>. Oblicz wartość średnią kwadratową napięcia (tzw. napięcie skuteczne <span class="arithmatex">\(U_{RMS}\)</span>) w jednym okresie <span class="arithmatex">\(T = \frac{2\pi}{\omega}\)</span>, korzystając ze wzoru:</p>
-<pre><code>$$U_{RMS} = \sqrt{\frac{1}{T} \int_0^T [U(t)]^2 dt}$$
-</code></pre>
+<div class="arithmatex">\[U_{RMS} = \sqrt{\frac{1}{T} \int_0^T [U(t)]^2 dt}\]</div>
 <p>13) <strong>Okno normandzkie.</strong> Okno ma kształt prostokąta zwieńczonego półkolem. Obwód całego okna jest ustalony i wynosi <span class="arithmatex">\(P\)</span>. Jakie powinny być wymiary części prostokątnej, aby przez okno wpadało jak najwięcej światła (maksymalizacja pola powierzchni)?</p>
 <p>14) <strong>Droga hamowania.</strong> Samochód jadący z prędkością <span class="arithmatex">\(v_0 = 30 \text{ m/s}\)</span> zaczyna hamować. Opóźnienie jest stałe i wynosi <span class="arithmatex">\(a = -5 \text{ m/s}^2\)</span>. Oblicz, jaką drogę przebędzie samochód do momentu całkowitego zatrzymania. Użyj całek, wychodząc od <span class="arithmatex">\(a(t)\)</span>.</p>
 <p>15) <strong>Wzrost kolonii bakterii.</strong> Liczebność kolonii bakterii <span class="arithmatex">\(N(t)\)</span> rośnie w tempie proporcjonalnym do aktualnej liczebności (prawo Malthusa), czyli:</p>
-<pre><code>$$N'(t) = k \cdot N(t)$$
-
-Rozwiąż to równanie różniczkowe, wiedząc, że na początku było $N_0$ bakterii. Po jakim czasie populacja się podwoi?
-</code></pre>
+<div class="arithmatex">\[N'(t) = k \cdot N(t)\]</div>
+<p>Rozwiąż to równanie różniczkowe, wiedząc, że na początku było <span class="arithmatex">\(N_0\)</span> bakterii. Po jakim czasie populacja się podwoi?</p>
 <p>16) <strong>Puszka napoju.</strong> Producent napojów chce zaprojektować puszkę w kształcie walca o ustalonej objętości <span class="arithmatex">\(V = 330 \text{ ml}\)</span>. Jakie powinny być promień podstawy i wysokość puszki, aby zużyć jak najmniej materiału (zminimalizować pole powierzchni całkowitej)?</p>
 <p>17) <strong>Opróżnianie zbiornika.</strong> Woda wypływa ze zbiornika z prędkością chwilową <span class="arithmatex">\(v(t) = 2t - 10\)</span> litrów na minutę (dla <span class="arithmatex">\(t \in [0, 5]\)</span>). Ile wody wypłynęło ze zbiornika w ciągu pierwszych 3 minut? Zinterpretuj to jako pole pod wykresem funkcji prędkości wypływu.</p>
 <p>18) <strong>Długość liny.</strong> Lina wisząca swobodnie między dwoma słupami przyjmuje kształt krzywej zwanej łańcuchową, którą w przybliżeniu można opisać parabolą <span class="arithmatex">\(y = \frac{1}{10}x^2\)</span> dla <span class="arithmatex">\(x \in [-10, 10]\)</span>. Oblicz długość tej liny, korzystając ze wzoru na długość łuku krzywej:</p>
-<pre><code>$$L = \int_a^b \sqrt{1 + [f'(x)]^2} dx$$
-</code></pre>
+<div class="arithmatex">\[L = \int_a^b \sqrt{1 + [f'(x)]^2} dx\]</div>
 <p>19) <strong>Optymalny kąt widzenia.</strong> Obraz o wysokości <span class="arithmatex">\(h\)</span> wisi na ścianie tak, że jego dolna krawędź znajduje się na wysokości <span class="arithmatex">\(d\)</span> powyżej poziomu oczu obserwatora. W jakiej odległości od ściany powinien stanąć obserwator, aby kąt widzenia obrazu (kąt pionowy) był największy?</p>
 <p>20) <strong>Objętość bryły obrotowej.</strong> Naczynie ma kształt powstały przez obrót krzywej <span class="arithmatex">\(y = \sqrt{x}\)</span> wokół osi <span class="arithmatex">\(Ox\)</span> dla <span class="arithmatex">\(x \in [0, 4]\)</span>. Oblicz objętość tego naczynia, korzystając z całki:</p>
-<pre><code>$$V = \int_a^b \pi [f(x)]^2 dx$$
-</code></pre>
+<div class="arithmatex">\[V = \int_a^b \pi [f(x)]^2 dx\]</div>
 
 
 

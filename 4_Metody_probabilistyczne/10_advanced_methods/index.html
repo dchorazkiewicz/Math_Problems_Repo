@@ -1821,9 +1821,9 @@ y = a x_1 + b x_2 + c
 <p>Processor production generates a certain percentage of defects. Instead of taking a fixed sample of 100 units, we take units one by one. After each extraction, we decide: "good batch", "bad batch", or "continue sampling".</p>
 <p>Construct a sequential test (Wald test) to verify the hypothesis <span class="arithmatex">\(p=0.01\)</span> against <span class="arithmatex">\(p=0.10\)</span>.</p>
 <h2 id="task-9">Task 9</h2>
-<p>For a simple sample <span class="arithmatex">\(x_1, ..., x_n\)</span> from an exponential distribution (failure-free operation time) with density <span class="arithmatex">\(f(x) = \lambda e^{-\lambda x}\)</span>, determine the estimator of the parameter <span class="arithmatex">\(\lambda\)</span> using the maximum likelihood method (MLE).</p>
+<p>For a simple sample <span class="arithmatex">\(x_1, ..., x_n\)</span> from an exponential distribution (failure-free operation time) with density <span class="arithmatex">\(f(x) = \frac{1}{\lambda} \exp\left(-\frac{x}{\lambda}\right)\)</span>, where <span class="arithmatex">\(\lambda\)</span> is the expected value, determine the estimator of the parameter <span class="arithmatex">\(\lambda\)</span> using the maximum likelihood method (MLE).</p>
 <h2 id="task-10">Task 10</h2>
-<p>We have 3 servers. We want to check if they operate equally stably (if they have the same variance of response times) before comparing their average times. The sample variances are: <span class="arithmatex">\(s_1^2=1.4\)</span>, <span class="arithmatex">\(s_2^2=1.4\)</span>, <span class="arithmatex">\(s_3^2=1.4\)</span>.</p>
+<p>We have 3 servers. We want to check if they operate equally stably (if they have the same variance of response times) before comparing their average times. The sample variances are: <span class="arithmatex">\(s_1^2=1.4, \ s_2^2=1.8, \ s_3^2=1.2\)</span>.</p>
 <p>Verify the hypothesis <span class="arithmatex">\(H_0: \sigma_1^2 = \sigma_2^2 = \sigma_3^2\)</span> (e.g., using Bartlett's test).</p>
 
 

@@ -3,18 +3,18 @@
 ## Task 1
 The dependence between two features $X$ and $Y$ was investigated based on a 10-element sample (e.g., $X$ – file size in MB, $Y$ – transmission time in sec). Measurement results:
 
-| $x_i$ | $y_i$ |
-| :---: | :---: |
-| 3.5 | 1.6 |
-| 3.4 | 2.9 |
-| 2.1 | 1.5 |
-| 5.4 | 3.5 |
-| 1.1 | 0.6 |
-| 5.1 | 2.5 |
-| 6.9 | 7.1 |
-| 4.0 | 3.5 |
-| 4.5 | 2.1 |
-| 2.5 | 2.6 |
+| $i$ | $x_i$ | $y_i$ |
+| :---: | :---: | :---: |
+| 1 | 3.5 | 1.6 |
+| 2 | 3.4 | 2.9 |
+| 3 | 2.1 | 1.5 |
+| 4 | 5.4 | 3.5 |
+| 5 | 1.1 | 0.6 |
+| 6 | 5.1 | 2.5 |
+| 7 | 6.9 | 7.1 |
+| 8 | 4.0 | 3.5 |
+| 9 | 4.5 | 2.1 |
+| 10 | 2.5 | 2.6 |
 
 Calculate the Pearson linear correlation coefficient $r$. Is the dependence strong?
 

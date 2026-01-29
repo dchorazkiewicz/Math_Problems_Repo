@@ -43,7 +43,7 @@ Mark these points on the sequential test chart. In which step (if any) will the 
 One of the advantages of sequential methods is that they require less data on average than classical tests. For the test from Task 5, calculate the expected number of steps (samples) needed to make a decision (ASN), assuming that hypothesis $H_0$ is true.
 
 $$
-E(n) \approx \frac{(1-\alpha)\ln A + \alpha \ln B}{E(z)}
+E(n) \approx \frac{\alpha\ln A + (1-\alpha) \ln B}{E(z)}
 $$
 
 where $A, B$ are decision thresholds.

@@ -54,9 +54,9 @@ Produkcja procesorów generuje pewien procent braków. Zamiast pobierać stałą
 Skonstruować test sekwencyjny (test Walda) dla weryfikacji hipotezy $p=0.01$ przeciw $p=0.10$.
 
 ## Zadanie 9
-Dla próby prostej $x_1, ..., x_n$ z rozkładu wykładniczego (czas bezawaryjnej pracy) o gęstości $f(x) = \lambda e^{-\lambda x}$, wyznaczyć estymator parametru $\lambda$ metodą największej wiarygodności (MNW).
+Dla próby prostej $x_1, ..., x_n$ z rozkładu wykładniczego (czas bezawaryjnej pracy) o gęstości $f(x) = \frac{1}{\lambda} \exp\left(-\frac{x}{\lambda}\right)$, gdzie $\lambda$ jest wartością oczekiwaną, wyznaczyć estymator parametru $\lambda$ metodą największej wiarygodności (MNW).
 
 ## Zadanie 10
-Mamy 3 serwery. Chcemy sprawdzić, czy działają tak samo stabilnie (czy mają taką samą wariancję czasów odpowiedzi), zanim porównamy ich średnie czasy. Wariancje z prób wynoszą: $s_1^2=1.4$, $s_2^2=1.4$, $s_3^2=1.4$.
+Mamy 3 serwery. Chcemy sprawdzić, czy działają tak samo stabilnie (czy mają taką samą wariancję czasów odpowiedzi), zanim porównamy ich średnie czasy. Wariancje z prób wynoszą: $s_1^2=1.4, \ s_2^2=1.8, \ s_3^2=1.2$.
 
 Zweryfikować hipotezę $H_0: \sigma_1^2 = \sigma_2^2 = \sigma_3^2$ (np. testem Bartletta).

@@ -64,7 +64,7 @@ a) Jaki to typ rozkładu? Podać wzór na prawdopodobieństwo $P(X=k)$.
 b) Obliczyć wartość oczekiwaną i wariancję zmiennej $X$, korzystając z gotowych wzorów dla tego rozkładu ($EX=np$, $D^2X=npq$).
 
 ## Zadanie 7
-Czas (w minutach) między kolejnymi zgłoszeniami abonentów w centrali telefonicznej jest zmienną losową o rozkładzie wykładniczym z parametrem $\lambda = 2$.
+Czas (w minutach) między kolejnymi zgłoszeniami abonentów w centrali telefonicznej jest zmienną losową o rozkładzie wykładniczym z parametrem (wartością oczekiwaną) $\lambda = 2$.
 
 a) Obliczyć średni czas oczekiwania na zgłoszenie ($EX$).
 b) Obliczyć prawdopodobieństwo, że czas między zgłoszeniami będzie krótszy niż 3 minuty ($P(X<3)$).

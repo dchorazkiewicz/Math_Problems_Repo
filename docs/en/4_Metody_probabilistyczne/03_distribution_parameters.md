@@ -64,7 +64,7 @@ a) What type of distribution is this? Provide the formula for the probability $P
 b) Calculate the expected value and variance of the variable $X$, using the ready-made formulas for this distribution ($EX=np$, $D^2X=npq$).
 
 ## Task 7
-The time (in minutes) between consecutive subscriber calls at a telephone exchange is a random variable with an exponential distribution with the parameter $\lambda = 2$.
+The time (in minutes) between consecutive subscriber calls at a telephone exchange is a random variable with an exponential distribution with the parameter (expected value) $\lambda = 2$.
 
 a) Calculate the average waiting time for a call ($EX$).
 b) Calculate the probability that the time between calls will be shorter than 3 minutes ($P(X<3)$).

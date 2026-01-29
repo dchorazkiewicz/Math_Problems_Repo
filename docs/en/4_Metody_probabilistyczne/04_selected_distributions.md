@@ -12,10 +12,10 @@ The probability that a product subjected to a test fails the test is $p=0.01$. C
 *Hint: Since $n=200$ is large and $p=0.01$ is small, use the Poisson approximation with parameter $\lambda = np$.*
 
 ## Task 3
-The time (in minutes) between consecutive subscriber calls at a certain telephone exchange is a random variable with an exponential distribution with parameter $\lambda=2$. Calculate the average time between consecutive calls and the probability that a call occurs before 3 minutes elapse.
+The time (in minutes) between consecutive subscriber calls at a certain telephone exchange is a random variable with an exponential distribution with parameter (expected value) $\lambda=2$. Calculate the average time between consecutive calls and the probability that a call occurs before 3 minutes elapse.
 
 ## Task 4
-The failure-free operation time $X$ of a certain device has an exponential distribution with parameter $\lambda=5$. Calculate:
+The failure-free operation time $X$ of a certain device has an exponential distribution with parameter (expected value) $\lambda=5$. Calculate:
 
 a) the average failure-free operation time of the device,
 b) the median,

@@ -12,10 +12,10 @@ Prawdopodobieństwo, że produkt poddawany próbie nie wytrzyma tej próby wynos
 *Wskazówka: Ponieważ $n=200$ jest duże, a $p=0,01$ małe, należy zastosować przybliżenie rozkładem Poissona z parametrem $\lambda = np$.*
 
 ## Zadanie 3
-Czas (w minutach) między kolejnymi zgłoszeniami abonentów w pewnej centrali telefonicznej jest zmienną losową o rozkładzie wykładniczym z parametrem $\lambda=2$. Obliczyć średni czas między kolejnymi zgłoszeniami oraz prawdopodobieństwo, że przed upływem 3 minut nastąpi zgłoszenie.
+Czas (w minutach) między kolejnymi zgłoszeniami abonentów w pewnej centrali telefonicznej jest zmienną losową o rozkładzie wykładniczym z parametrem (wartością oczekiwaną) $\lambda=2$. Obliczyć średni czas między kolejnymi zgłoszeniami oraz prawdopodobieństwo, że przed upływem 3 minut nastąpi zgłoszenie.
 
 ## Zadanie 4
-Czas bezawaryjnej pracy $X$ pewnego urządzenia ma rozkład wykładniczy z parametrem $\lambda=5$. Obliczyć:
+Czas bezawaryjnej pracy $X$ pewnego urządzenia ma rozkład wykładniczy z parametrem (wartością oczekiwaną) $\lambda=5$. Obliczyć:
 
 a) wartość przeciętną bezawaryjnego czasu pracy urządzenia,
 b) medianę,

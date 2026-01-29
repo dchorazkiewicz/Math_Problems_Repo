@@ -61,6 +61,8 @@ $$
 \chi^2 = \frac{nS^2}{\sigma^2}
 $$
 
+> *Note: The symbol $S^2$ denotes the sample variance calculated with the formula dividing by $n$ (according to the definition in Krysicki's textbook).*
+
 which has a chi-square distribution. 15 measurements were taken ($n=15$). Read from the tables the values between which this statistic will fall with a probability of $0.90$.
 
 ## Task 9

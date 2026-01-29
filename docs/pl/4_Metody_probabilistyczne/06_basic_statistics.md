@@ -61,6 +61,8 @@ $$
 \chi^2 = \frac{nS^2}{\sigma^2}
 $$
 
+> *Uwaga: Symbol $S^2$ oznacza wariancję z próby liczoną ze wzoru z dzieleniem przez $n$ (zgodnie z definicją w podręczniku Krysickiego).*
+
 która ma rozkład chi-kwadrat. Wykonano 15 pomiarów ($n=15$). Odczytać z tablic wartości, między którymi z prawdopodobieństwem $0.90$ znajdzie się ta statystyka.
 
 ## Zadanie 9

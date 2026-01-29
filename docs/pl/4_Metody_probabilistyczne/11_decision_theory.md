@@ -43,7 +43,7 @@ Zaznaczyć te punkty na wykresie testu sekwencyjnego. W którym kroku (jeśli w 
 Jedną z zalet metod sekwencyjnych jest to, że średnio wymagają mniej danych niż testy klasyczne. Dla testu z Zadania 5 obliczyć oczekiwaną liczbę kroków (próbek) potrzebną do podjęcia decyzji (ASN), zakładając, że prawdziwa jest hipoteza $H_0$.
 
 $$
-E(n) \approx \frac{(1-\alpha)\ln A + \alpha \ln B}{E(z)}
+E(n) \approx \frac{\alpha\ln A + (1-\alpha) \ln B}{E(z)}
 $$
 
 gdzie $A, B$ to progi decyzyjne.

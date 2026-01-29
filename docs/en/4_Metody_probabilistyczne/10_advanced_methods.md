@@ -54,9 +54,9 @@ Processor production generates a certain percentage of defects. Instead of takin
 Construct a sequential test (Wald test) to verify the hypothesis $p=0.01$ against $p=0.10$.
 
 ## Task 9
-For a simple sample $x_1, ..., x_n$ from an exponential distribution (failure-free operation time) with density $f(x) = \lambda e^{-\lambda x}$, determine the estimator of the parameter $\lambda$ using the maximum likelihood method (MLE).
+For a simple sample $x_1, ..., x_n$ from an exponential distribution (failure-free operation time) with density $f(x) = \frac{1}{\lambda} \exp\left(-\frac{x}{\lambda}\right)$, where $\lambda$ is the expected value, determine the estimator of the parameter $\lambda$ using the maximum likelihood method (MLE).
 
 ## Task 10
-We have 3 servers. We want to check if they operate equally stably (if they have the same variance of response times) before comparing their average times. The sample variances are: $s_1^2=1.4$, $s_2^2=1.4$, $s_3^2=1.4$.
+We have 3 servers. We want to check if they operate equally stably (if they have the same variance of response times) before comparing their average times. The sample variances are: $s_1^2=1.4, \ s_2^2=1.8, \ s_3^2=1.2$.
 
 Verify the hypothesis $H_0: \sigma_1^2 = \sigma_2^2 = \sigma_3^2$ (e.g., using Bartlett's test).

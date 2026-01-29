@@ -1765,10 +1765,10 @@
 
 <h1 id="task-list-no-10-advanced-statistical-methods">TASK LIST NO. 10: Advanced Statistical Methods</h1>
 <h2 id="task-1-runs-test-randomness-of-a-sample">Task 1 (Runs Test - Randomness of a Sample)</h2>
-<p>A sample of size <span class="arithmatex">\(n=20\)</span> of a certain feature <span class="arithmatex">\(X\)</span> was taken. The values, ordered according to the sequence of observation (in time), are as follows:
-$<span class="arithmatex">\(15.79, 15.84, 16.28, 16.33, 16.38, 16.41, 16.75,\)</span>$
-$<span class="arithmatex">\(16.87, 16.98, 17.00, 17.00, 17.35, 17.48, 17.56,\)</span>$
-$<span class="arithmatex">\(17.98, 18.12, 18.28, 18.28, 18.32, 18.53.\)</span>$</p>
+<p>A sample of size <span class="arithmatex">\(n=20\)</span> of a certain feature <span class="arithmatex">\(X\)</span> was taken. The values, ordered according to the sequence of observation (in time), are as follows:</p>
+<div class="arithmatex">\[15.79, 15.84, 16.28, 16.33, 16.38, 16.41, 16.75,\]</div>
+<div class="arithmatex">\[16.87, 16.98, 17.00, 17.00, 17.35, 17.48, 17.56,\]</div>
+<div class="arithmatex">\[17.98, 18.12, 18.28, 18.28, 18.32, 18.53.\]</div>
 <p>a) Determine the median <span class="arithmatex">\(m_e\)</span> of this sample.
 b) Create a sequence of symbols, writing <span class="arithmatex">\(a\)</span> if <span class="arithmatex">\(x_i &lt; m_e\)</span> and <span class="arithmatex">\(b\)</span> if <span class="arithmatex">\(x_i &gt; m_e\)</span> (elements equal to the median are omitted).
 c) Verify the hypothesis of the randomness of the sample (lack of trend/cyclicity) using the <strong>runs test</strong> at a significance level of <span class="arithmatex">\(\alpha=0.05\)</span>.
@@ -1855,12 +1855,12 @@ c) Verify the hypothesis of the randomness of the sample (lack of trend/cyclicit
 <h2 id="task-5">Task 5</h2>
 <p>We have two datasets on network traffic (before and after firewall implementation). We want to check if the <strong>entire distribution</strong> (not just the mean) has changed.</p>
 <p><strong>Packet delay measurements (in ms):</strong></p>
-<p><strong>Before implementation (<span class="arithmatex">\(n=10\)</span>):</strong>
-$<span class="arithmatex">\(12, 15, 18, 14, 13, 16, 12, 19, 15, 17\)</span>$
-<em>(Ordered data: 12, 12, 13, 14, 15, 15, 16, 17, 18, 19)</em></p>
-<p><strong>After implementation (<span class="arithmatex">\(m=10\)</span>):</strong>
-$<span class="arithmatex">\(18, 22, 20, 19, 21, 25, 23, 20, 24, 28\)</span>$
-<em>(Ordered data: 18, 19, 20, 20, 21, 22, 23, 24, 25, 28)</em></p>
+<p><strong>Before implementation (<span class="arithmatex">\(n=10\)</span>):</strong></p>
+<div class="arithmatex">\[12, 15, 18, 14, 13, 16, 12, 19, 15, 17\]</div>
+<p><em>(Ordered data: 12, 12, 13, 14, 15, 15, 16, 17, 18, 19)</em></p>
+<p><strong>After implementation (<span class="arithmatex">\(m=10\)</span>):</strong></p>
+<div class="arithmatex">\[18, 22, 20, 19, 21, 25, 23, 20, 24, 28\]</div>
+<p><em>(Ordered data: 18, 19, 20, 20, 21, 22, 23, 24, 25, 28)</em></p>
 <p>Based on the empirical distribution functions of both samples, calculate the <span class="arithmatex">\(D_{n,m}\)</span> statistic and verify the hypothesis of identical distributions (Kolmogorov-Smirnov test).</p>
 <h2 id="task-6">Task 6</h2>
 <p>We investigate code compilation time (<span class="arithmatex">\(Y\)</span>) depending on the number of files (<span class="arithmatex">\(X_1\)</span>) and the number of lines of code in a file (<span class="arithmatex">\(X_2\)</span>).</p>

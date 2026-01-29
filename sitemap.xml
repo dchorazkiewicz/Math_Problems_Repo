@@ -183,6 +183,13 @@
         <xhtml:link rel="alternate" hreflang="pl" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/11_decision_theory/"/>
     </url>
     <url>
+        <loc>https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/poprawki/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/poprawki/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/poprawki/"/>
+    </url>
+    <url>
         <loc>https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/</loc>
         <lastmod>2026-01-29</lastmod>
         <changefreq>daily</changefreq>
@@ -363,5 +370,12 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pl" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/11_decision_theory/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/11_decision_theory/"/>
+    </url>
+    <url>
+        <loc>https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/poprawki/</loc>
+        <lastmod>2026-01-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/poprawki/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/poprawki/"/>
     </url>
 </urlset>

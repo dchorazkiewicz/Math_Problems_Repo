@@ -1208,10 +1208,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zadanie-1" class="md-nav__link">
+  <a href="#zadanie-1-test-serii-losowosc-proby" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 1
+        Zadanie 1 (Test serii - losowość próby)
       
     </span>
   </a>
@@ -1525,10 +1525,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zadanie-1" class="md-nav__link">
+  <a href="#zadanie-1-test-serii-losowosc-proby" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Zadanie 1
+        Zadanie 1 (Test serii - losowość próby)
       
     </span>
   </a>
@@ -1652,11 +1652,15 @@
 
 
 <h1 id="lista-zadan-nr-10-zaawansowane-metody-statystyczne">LISTA ZADAŃ NR 10: Zaawansowane metody statystyczne</h1>
-<h2 id="zadanie-1">Zadanie 1</h2>
-<p>Zmierzono czasy wykonania pewnego zadania. Uporządkowano wyniki w kolejności ich otrzymywania (w czasie). Następnie dla każdego wyniku określono, czy jest on powyżej (<span class="arithmatex">\(a\)</span>) czy poniżej (<span class="arithmatex">\(b\)</span>) mediany.</p>
-<p>Otrzymano ciąg symboli:
-<span class="arithmatex">\(a, a, b, b, a, a, a, b, b, b, b, a, a, b, ...\)</span></p>
-<p>Zweryfikować hipotezę, że próba jest losowa (tzn. wyniki nie zależą od czasu/kolejności), stosując <strong>test serii</strong>.</p>
+<h2 id="zadanie-1-test-serii-losowosc-proby">Zadanie 1 (Test serii - losowość próby)</h2>
+<p>Pobrano próbkę o liczności <span class="arithmatex">\(n=20\)</span> pewnej cechy <span class="arithmatex">\(X\)</span>. Wartości uporządkowane według kolejności pobierania (w czasie) są następujące:
+$<span class="arithmatex">\(15.79, 15.84, 16.28, 16.33, 16.38, 16.41, 16.75,\)</span>$
+$<span class="arithmatex">\(16.87, 16.98, 17.00, 17.00, 17.35, 17.48, 17.56,\)</span>$
+$<span class="arithmatex">\(17.98, 18.12, 18.28, 18.28, 18.32, 18.53.\)</span>$</p>
+<p>a) Wyznaczyć medianę <span class="arithmatex">\(m_e\)</span> tej próby.
+b) Utworzyć ciąg symboli, wpisując <span class="arithmatex">\(a\)</span>, gdy <span class="arithmatex">\(x_i &lt; m_e\)</span> oraz <span class="arithmatex">\(b\)</span>, gdy <span class="arithmatex">\(x_i &gt; m_e\)</span> (elementy równe medianie pomijamy).
+c) Zweryfikować hipotezę o losowości pobrania tej próby (brak trendu/cykliczności), stosując <strong>test serii</strong> na poziomie istotności <span class="arithmatex">\(\alpha=0.05\)</span>.
+<em>(Dane pochodzą z Zadania 3.87, Krysicki Cz. II, str. 143)</em>.</p>
 <h2 id="zadanie-2">Zadanie 2</h2>
 <p>Mamy dwa algorytmy sortowania (A i B). Wykonano po 5 niezależnych pomiarów czasu dla każdego z nich. Wyniki nie mają rozkładu normalnego (występują elementy odstające).</p>
 <ul>
@@ -1693,18 +1697,165 @@
 <p>Sprawdzić na poziomie istotności <span class="arithmatex">\(\alpha=0.05\)</span>, czy rodzaj awarii zależy od producenta.</p>
 <h2 id="zadanie-4">Zadanie 4</h2>
 <p>Testujemy wydajność 3 różnych frameworków (X, Y, Z). Ponieważ dane są mocno asymetryczne, zamiast klasycznej analizy wariancji (ANOVA), stosujemy test nieparametryczny Kruskala-Wallisa.</p>
+<p><strong>Tabela wyników wydajności (punkty w benchmarku):</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Framework X</th>
+<th style="text-align: center;">Framework Y</th>
+<th style="text-align: center;">Framework Z</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">45</td>
+<td style="text-align: center;">52</td>
+<td style="text-align: center;">68</td>
+</tr>
+<tr>
+<td style="text-align: center;">48</td>
+<td style="text-align: center;">55</td>
+<td style="text-align: center;">70</td>
+</tr>
+<tr>
+<td style="text-align: center;">42</td>
+<td style="text-align: center;">58</td>
+<td style="text-align: center;">75</td>
+</tr>
+<tr>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">72</td>
+</tr>
+<tr>
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">78</td>
+</tr>
+<tr>
+<td style="text-align: center;"><em>(Liczebności prób: <span class="arithmatex">\(n_x=5, n_y=5, n_z=5\)</span>.)</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
 <p>Dla danych rankingowych z tabeli zweryfikować hipotezę, że wszystkie frameworki mają taką samą medianę wydajności.</p>
 <h2 id="zadanie-5">Zadanie 5</h2>
 <p>Mamy dwa zbiory danych o ruchu sieciowym (przed i po wdrożeniu firewalla). Chcemy sprawdzić, czy <strong>cały rozkład</strong> (nie tylko średnia) uległ zmianie.</p>
+<p><strong>Wyniki pomiarów opóźnienia pakietów (w ms):</strong></p>
+<p><strong>Przed wdrożeniem (<span class="arithmatex">\(n=10\)</span>):</strong>
+$<span class="arithmatex">\(12, 15, 18, 14, 13, 16, 12, 19, 15, 17\)</span>$
+<em>(Dane uporządkowane: 12, 12, 13, 14, 15, 15, 16, 17, 18, 19)</em></p>
+<p><strong>Po wdrożeniu (<span class="arithmatex">\(m=10\)</span>):</strong>
+$<span class="arithmatex">\(18, 22, 20, 19, 21, 25, 23, 20, 24, 28\)</span>$
+<em>(Dane uporządkowane: 18, 19, 20, 20, 21, 22, 23, 24, 25, 28)</em></p>
 <p>Na podstawie dystrybuant empirycznych obu prób obliczyć statystykę <span class="arithmatex">\(D_{n,m}\)</span> i zweryfikować hipotezę o identyczności rozkładów (test Kołmogorowa-Smirnowa).</p>
 <h2 id="zadanie-6">Zadanie 6</h2>
 <p>Badamy czas kompilacji kodu (<span class="arithmatex">\(Y\)</span>) w zależności od liczby plików (<span class="arithmatex">\(X_1\)</span>) i liczby linii kodu w pliku (<span class="arithmatex">\(X_2\)</span>).</p>
+<p><strong>Dane z 8 projektów programistycznych:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Projekt</th>
+<th style="text-align: center;">Liczba plików (<span class="arithmatex">\(x_1\)</span>)</th>
+<th style="text-align: center;">Tysiące linii kodu (<span class="arithmatex">\(x_2\)</span>)</th>
+<th style="text-align: center;">Czas kompilacji w sek. (<span class="arithmatex">\(y\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">19</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">40</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">55</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">32</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">48</td>
+</tr>
+</tbody>
+</table>
 <p>Dla podanych danych wyznaczyć równanie płaszczyzny regresji:</p>
 <div class="arithmatex">\[
 y = a x_1 + b x_2 + c
 \]</div>
 <h2 id="zadanie-7">Zadanie 7</h2>
 <p>Liczba tranzystorów w procesorach rośnie wykładniczo: <span class="arithmatex">\(y = a \cdot e^{bx}\)</span>. Mając dane historyczne, sprowadzić to zagadnienie do regresji liniowej poprzez logarytmowanie (<span class="arithmatex">\(\ln y = \ln a + bx\)</span>) i wyznaczyć parametry wzrostu.</p>
+<p><strong>Dane historyczne rozwoju procesorów (uproszczone):</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Rok (<span class="arithmatex">\(t\)</span>)</th>
+<th style="text-align: center;">Zmienna czasowa <span class="arithmatex">\(x = t - 1970\)</span></th>
+<th style="text-align: center;">Liczba tranzystorów (<span class="arithmatex">\(y\)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1970</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2 000</td>
+</tr>
+<tr>
+<td style="text-align: center;">1975</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8 000</td>
+</tr>
+<tr>
+<td style="text-align: center;">1980</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">30 000</td>
+</tr>
+<tr>
+<td style="text-align: center;">1985</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">120 000</td>
+</tr>
+<tr>
+<td style="text-align: center;">1990</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">500 000</td>
+</tr>
+</tbody>
+</table>
 <h2 id="zadanie-8">Zadanie 8</h2>
 <p>Produkcja procesorów generuje pewien procent braków. Zamiast pobierać stałą próbkę 100 sztuk, pobieramy sztuki jedna po drugiej. Po każdym pobraniu decydujemy: „partia dobra”, „partia zła” lub „pobieramy dalej”.</p>
 <p>Skonstruować test sekwencyjny (test Walda) dla weryfikacji hipotezy <span class="arithmatex">\(p=0.01\)</span> przeciw <span class="arithmatex">\(p=0.10\)</span>.</p>

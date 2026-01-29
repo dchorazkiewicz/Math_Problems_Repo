@@ -45,10 +45,17 @@ Pobrano próbkę $n=20$ pewnej cechy (np. czas reakcji aplikacji). Wartości upo
 Zweryfikować hipotezę o normalności rozkładu na poziomie $\alpha=0,10$, stosując test Shapiro-Wilka.
 
 ## Zadanie 9
-Zmierzono czasy wykonania pewnego zadania. Uporządkowano wyniki w kolejności otrzymywania (w czasie). Otrzymano ciąg reszt (odchyleń od średniej):
-$+, +, -, -, +, +, +, -, -, -, -, +, +, -, ...$
+Zmierzono czasy wykonania pewnego zadania. Uporządkowano wyniki w kolejności otrzymywania (w czasie).
 
-Liczba serii (zmian znaku) w tym ciągu wynosi $k=9$. Łączna liczba "plusów" $n_1$ i "minusów" $n_2$ jest znana. Zweryfikować hipotezę, że dobór próby był losowy (tzn. nie występował trend czasowy ani cykliczność).
+Pełny ciąg reszt dla $n=20$ pomiarów wygląda następująco:
+$$+, +, -, -, +, +, +, -, -, -, -, +, +, -, -, +, +, -, +, -$$
+
+**Parametry do weryfikacji:**
+* Liczba plusów ($n_1$): 10
+* Liczba minusów ($n_2$): 10
+* Liczba serii ($k$): 9
+
+Zweryfikować hipotezę o losowości na poziomie $\alpha=0.05$.
 
 ## Zadanie 10
 Dla 7 par pomiarów (np. wydajność przed i po aktualizacji sterownika) odnotowano, czy wynik się poprawił (+), czy pogorszył (-). Otrzymano sekwencję:

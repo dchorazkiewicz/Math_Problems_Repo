@@ -32,15 +32,49 @@ Sprawdzić na poziomie istotności $\alpha=0.05$, czy rodzaj awarii zależy od p
 ## Zadanie 4
 Testujemy wydajność 3 różnych frameworków (X, Y, Z). Ponieważ dane są mocno asymetryczne, zamiast klasycznej analizy wariancji (ANOVA), stosujemy test nieparametryczny Kruskala-Wallisa.
 
+**Tabela wyników wydajności (punkty w benchmarku):**
+
+| Framework X | Framework Y | Framework Z |
+| :---: | :---: | :---: |
+| 45 | 52 | 68 |
+| 48 | 55 | 70 |
+| 42 | 58 | 75 |
+| 50 | 60 | 72 |
+| 46 | 54 | 78 |
+*(Liczebności prób: $n_x=5, n_y=5, n_z=5$.)*
+
 Dla danych rankingowych z tabeli zweryfikować hipotezę, że wszystkie frameworki mają taką samą medianę wydajności.
 
 ## Zadanie 5
 Mamy dwa zbiory danych o ruchu sieciowym (przed i po wdrożeniu firewalla). Chcemy sprawdzić, czy **cały rozkład** (nie tylko średnia) uległ zmianie.
 
+**Wyniki pomiarów opóźnienia pakietów (w ms):**
+
+**Przed wdrożeniem ($n=10$):**
+$$12, 15, 18, 14, 13, 16, 12, 19, 15, 17$$
+*(Dane uporządkowane: 12, 12, 13, 14, 15, 15, 16, 17, 18, 19)*
+
+**Po wdrożeniu ($m=10$):**
+$$18, 22, 20, 19, 21, 25, 23, 20, 24, 28$$
+*(Dane uporządkowane: 18, 19, 20, 20, 21, 22, 23, 24, 25, 28)*
+
 Na podstawie dystrybuant empirycznych obu prób obliczyć statystykę $D_{n,m}$ i zweryfikować hipotezę o identyczności rozkładów (test Kołmogorowa-Smirnowa).
 
 ## Zadanie 6
 Badamy czas kompilacji kodu ($Y$) w zależności od liczby plików ($X_1$) i liczby linii kodu w pliku ($X_2$).
+
+**Dane z 8 projektów programistycznych:**
+
+| Projekt | Liczba plików ($x_1$) | Tysiące linii kodu ($x_2$) | Czas kompilacji w sek. ($y$) |
+| :---: | :---: | :---: | :---: |
+| 1 | 2 | 5 | 12 |
+| 2 | 4 | 10 | 25 |
+| 3 | 3 | 8 | 19 |
+| 4 | 6 | 15 | 40 |
+| 5 | 8 | 20 | 55 |
+| 6 | 2 | 4 | 10 |
+| 7 | 5 | 12 | 32 |
+| 8 | 7 | 18 | 48 |
 
 Dla podanych danych wyznaczyć równanie płaszczyzny regresji:
 
@@ -50,6 +84,16 @@ $$
 
 ## Zadanie 7
 Liczba tranzystorów w procesorach rośnie wykładniczo: $y = a \cdot e^{bx}$. Mając dane historyczne, sprowadzić to zagadnienie do regresji liniowej poprzez logarytmowanie ($\ln y = \ln a + bx$) i wyznaczyć parametry wzrostu.
+
+**Dane historyczne rozwoju procesorów (uproszczone):**
+
+| Rok ($t$) | Zmienna czasowa $x = t - 1970$ | Liczba tranzystorów ($y$) |
+| :---: | :---: | :---: |
+| 1970 | 0 | 2 000 |
+| 1975 | 5 | 8 000 |
+| 1980 | 10 | 30 000 |
+| 1985 | 15 | 120 000 |
+| 1990 | 20 | 500 000 |
 
 ## Zadanie 8
 Produkcja procesorów generuje pewien procent braków. Zamiast pobierać stałą próbkę 100 sztuk, pobieramy sztuki jedna po drugiej. Po każdym pobraniu decydujemy: „partia dobra”, „partia zła” lub „pobieramy dalej”.

@@ -45,10 +45,15 @@ A sample of $n=20$ of a certain feature (e.g., application response time) was ta
 Verify the hypothesis of normality of the distribution at the level $\alpha=0.10$, using the Shapiro-Wilk test.
 
 ## Task 9
-The execution times of a certain task were measured. The results were ordered in the sequence they were received (in time). A sequence of residuals (deviations from the mean) was obtained:
-$+, +, -, -, +, +, +, -, -, -, -, +, +, -, ...$
+The full sequence of residuals for $n=20$ measurements is as follows:
+$$+, +, -, -, +, +, +, -, -, -, -, +, +, -, -, +, +, -, +, -$$
 
-The number of runs (sign changes) in this sequence is $k=9$. The total number of "pluses" $n_1$ and "minuses" $n_2$ is known. Verify the hypothesis that the sample selection was random (i.e., there was no time trend or cyclicality).
+**Parameters for verification:**
+* Number of positives ($n_1$): 10
+* Number of negatives ($n_2$): 10
+* Number of runs ($k$): 9
+
+Verify the hypothesis of randomness at level $\alpha=0.05$.
 
 ## Task 10
 For 7 pairs of measurements (e.g., performance before and after a driver update), it was noted whether the result improved (+) or worsened (-). The sequence obtained was:

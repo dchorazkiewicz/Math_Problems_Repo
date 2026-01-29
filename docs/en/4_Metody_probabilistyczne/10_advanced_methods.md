@@ -32,15 +32,49 @@ Check at the significance level $\alpha=0.05$ whether the type of failure depend
 ## Task 4
 We are testing the performance of 3 different frameworks (X, Y, Z). Since the data are strongly asymmetric, instead of classical analysis of variance (ANOVA), we use the non-parametric Kruskal-Wallis test.
 
+**Performance benchmark results (points):**
+
+| Framework X | Framework Y | Framework Z |
+| :---: | :---: | :---: |
+| 45 | 52 | 68 |
+| 48 | 55 | 70 |
+| 42 | 58 | 75 |
+| 50 | 60 | 72 |
+| 46 | 54 | 78 |
+*(Sample sizes: $n_x=5, n_y=5, n_z=5$.)*
+
 For the ranking data from the table, verify the hypothesis that all frameworks have the same median performance.
 
 ## Task 5
 We have two datasets on network traffic (before and after firewall implementation). We want to check if the **entire distribution** (not just the mean) has changed.
 
+**Packet delay measurements (in ms):**
+
+**Before implementation ($n=10$):**
+$$12, 15, 18, 14, 13, 16, 12, 19, 15, 17$$
+*(Ordered data: 12, 12, 13, 14, 15, 15, 16, 17, 18, 19)*
+
+**After implementation ($m=10$):**
+$$18, 22, 20, 19, 21, 25, 23, 20, 24, 28$$
+*(Ordered data: 18, 19, 20, 20, 21, 22, 23, 24, 25, 28)*
+
 Based on the empirical distribution functions of both samples, calculate the $D_{n,m}$ statistic and verify the hypothesis of identical distributions (Kolmogorov-Smirnov test).
 
 ## Task 6
 We investigate code compilation time ($Y$) depending on the number of files ($X_1$) and the number of lines of code in a file ($X_2$).
+
+**Data from 8 software projects:**
+
+| Project | Number of files ($x_1$) | Thousands of LOC ($x_2$) | Compilation time in sec. ($y$) |
+| :---: | :---: | :---: | :---: |
+| 1 | 2 | 5 | 12 |
+| 2 | 4 | 10 | 25 |
+| 3 | 3 | 8 | 19 |
+| 4 | 6 | 15 | 40 |
+| 5 | 8 | 20 | 55 |
+| 6 | 2 | 4 | 10 |
+| 7 | 5 | 12 | 32 |
+| 8 | 7 | 18 | 48 |
 
 For the given data, determine the equation of the regression plane:
 
@@ -50,6 +84,16 @@ $$
 
 ## Task 7
 The number of transistors in processors grows exponentially: $y = a \cdot e^{bx}$. Having historical data, reduce this problem to linear regression by taking logarithms ($\ln y = \ln a + bx$) and determine the growth parameters.
+
+**Historical data of processor development (simplified):**
+
+| Year ($t$) | Time variable $x = t - 1970$ | Transistor count ($y$) |
+| :---: | :---: | :---: |
+| 1970 | 0 | 2 000 |
+| 1975 | 5 | 8 000 |
+| 1980 | 10 | 30 000 |
+| 1985 | 15 | 120 000 |
+| 1990 | 20 | 500 000 |
 
 ## Task 8
 Processor production generates a certain percentage of defects. Instead of taking a fixed sample of 100 units, we take units one by one. After each extraction, we decide: "good batch", "bad batch", or "continue sampling".

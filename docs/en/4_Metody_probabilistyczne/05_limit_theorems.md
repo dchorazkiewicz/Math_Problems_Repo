@@ -83,6 +83,6 @@ Task (simplified): The time between calls has an exponential distribution ($\lam
 ## Task 10
 **Histogram Interpretation - visualization of convergence**
 
-For the data from the task about working time, prepare a probability histogram.
+For the probability distribution of the random variable $K$ calculated in Task 7 (number of failure-free days), prepare a probability histogram.
 
 *Goal: Graphical task. It allows seeing how the probability distribution "looks" and intuitively understanding that as the number of trials increases, this shape will resemble a bell (normal distribution).*

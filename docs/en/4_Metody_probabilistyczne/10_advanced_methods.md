@@ -98,7 +98,7 @@ The number of transistors in processors grows exponentially: $y = a \cdot e^{bx}
 ## Task 8
 Processor production generates a certain percentage of defects. Instead of taking a fixed sample of 100 units, we take units one by one. After each extraction, we decide: "good batch", "bad batch", or "continue sampling".
 
-Construct a sequential test (Wald test) to verify the hypothesis $p=0.01$ against $p=0.10$.
+Construct a sequential test (Wald test) to verify the hypothesis $p=0.01$ against $p=0.10$. Assume Type I error risk $\alpha = 0.05$ and Type II error risk $\beta = 0.10$.
 
 ## Task 9
 For a simple sample $x_1, ..., x_n$ from an exponential distribution (failure-free operation time) with density $f(x) = \frac{1}{\lambda} \exp\left(-\frac{x}{\lambda}\right)$, where $\lambda$ is the expected value, determine the estimator of the parameter $\lambda$ using the maximum likelihood method (MLE).

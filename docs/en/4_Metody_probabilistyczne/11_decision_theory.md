@@ -1,7 +1,7 @@
 # TASK LIST NO. 11: Introduction to Statistical Decision Theory
 
 ## Task 1
-We consider a batch of goods (e.g., processors) in which we examine defectiveness. We test the hypothesis $H_0: p = p_0$ (good batch) against $H_1: p = p_1$ (defective batch). A test was constructed that rejects the batch if the number of defective items in a randomly drawn sample exceeds a certain $k$.
+We consider a batch of goods (e.g., processors) in which we examine defectiveness. We test the hypothesis $H_0: p = 0.02$ (good batch) against $H_1: p = 0.10$ (defective batch). A test was constructed that rejects the batch if the number of defective items in a sample of size $n=50$ exceeds $k=3$.
 
 Calculate:
 

@@ -1,7 +1,7 @@
 # LISTA ZADAŃ NR 11: Wstęp do teorii decyzji statystycznych
 
 ## Zadanie 1
-Rozważamy partię towaru (np. procesorów), w której badamy wadliwość. Testujemy hipotezę $H_0: p = p_0$ (partia dobra) przeciwko $H_1: p = p_1$ (partia wadliwa). Zbudowano test, który odrzuca partię, jeśli w wylosowanej próbce liczba wadliwych sztuk przekroczy pewne $k$.
+Rozważamy partię towaru (np. procesorów), w której badamy wadliwość. Testujemy hipotezę $H_0: p = 0,02$ (partia dobra) przeciwko $H_1: p = 0,10$ (partia wadliwa). Zbudowano test, który odrzuca partię, jeśli liczba wadliwych sztuk w próbce o liczebności $n=50$ przekroczy $k=3$.
 
 Obliczyć:
 

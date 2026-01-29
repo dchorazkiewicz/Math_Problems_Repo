@@ -98,7 +98,7 @@ Liczba tranzystorów w procesorach rośnie wykładniczo: $y = a \cdot e^{bx}$. M
 ## Zadanie 8
 Produkcja procesorów generuje pewien procent braków. Zamiast pobierać stałą próbkę 100 sztuk, pobieramy sztuki jedna po drugiej. Po każdym pobraniu decydujemy: „partia dobra”, „partia zła” lub „pobieramy dalej”.
 
-Skonstruować test sekwencyjny (test Walda) dla weryfikacji hipotezy $p=0.01$ przeciw $p=0.10$.
+Skonstruować test sekwencyjny (test Walda) dla weryfikacji hipotezy $p=0.01$ przeciw $p=0.10$. Przyjąć ryzyko błędu I rodzaju $\alpha = 0,05$ oraz ryzyko błędu II rodzaju $\beta = 0,10$.
 
 ## Zadanie 9
 Dla próby prostej $x_1, ..., x_n$ z rozkładu wykładniczego (czas bezawaryjnej pracy) o gęstości $f(x) = \frac{1}{\lambda} \exp\left(-\frac{x}{\lambda}\right)$, gdzie $\lambda$ jest wartością oczekiwaną, wyznaczyć estymator parametru $\lambda$ metodą największej wiarygodności (MNW).

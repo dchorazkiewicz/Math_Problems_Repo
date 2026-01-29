@@ -79,8 +79,4 @@ Zadanie (uproszczone): Czas między zgłoszeniami ma rozkład wykładniczy ($\la
 *Cel: Zrozumienie procesu, który w granicy (dla wielu zgłoszeń) jest modelowany procesami Poissona/wykładniczymi.
 
 ## Zadanie 10
-**Interpretacja histogramu - wizualizacja zbieżności**
-
-Dla danych z zadania o czasie pracy sporządzić histogram prawdopodobieństwa.
-
-*Cel: Zadanie graficzne. Pozwala zobaczyć, jak rozkład prawdopodobieństwa "wygląda" i intuicyjnie zrozumieć, że przy zwiększaniu liczby prób kształt ten będzie przypominał dzwon (rozkład normalny)*.
+Dla rozkładu prawdopodobieństwa zmiennej losowej $K$ wyznaczonego w Zadaniu 7 (liczba dni bez awarii), sporządzić histogram prawdopodobieństwa.

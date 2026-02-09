@@ -1,82 +1,57 @@
 # LISTA ZADAŃ NR 5: Twierdzenia graniczne i aproksymacje
 
 ## Zadanie 1
-**Twierdzenie Poissona – rzadkie błędy**
+**Twierdzenie Poissona – rzadkie zdarzenia**
+Wadliwość produkcji pewnego elementu elektronicznego wynosi $p=0,002$. W partii towaru znajduje się $n=1000$ sztuk tych elementów. Obliczyć prawdopodobieństwo, że w tej partii:
+a) nie będzie ani jednej sztuki wadliwej,
+b) będą co najwyżej 3 sztuki wadliwe.
 
-Prawdopodobieństwo, że produkt poddawany próbie nie wytrzyma tej próby wynosi $p=0,01$. Obliczyć prawdopodobieństwo, że wśród 200 takich produktów (niezależnie poddanych próbie) co najwyżej 2 nie wytrzymają próby
-
-*Cel zadania: Pokazanie, jak rozkład dwumianowy (dla dużego $n$ i małego $p$) zbiega do rozkładu Poissona. Jest to klasyczne zastosowanie twierdzenia granicznego dla rzadkich zdarzeń (np. błędy w kodzie, awarie serwerów)*.
+*Wskazówka: Ponieważ $n$ jest duże ($n \ge 100$), a $p$ małe ($p \le 0,1$) i $np \le 10$, należy zastosować przybliżenie rozkładem Poissona z parametrem $\lambda = np$.*
 
 ## Zadanie 2
-**Aproksymacja Poissona – kontrola jakości**
+**Twierdzenie Moivre’a-Laplace’a (całkowe) – rzut monetą**
+Rzucamy symetryczną monetą $n=100$ razy. Obliczyć prawdopodobieństwo, że liczba uzyskanych orłów będzie się mieścić w przedziale $\langle 45, 55 \rangle$.
 
-Prawdopodobieństwo wyprodukowania sztuki wadliwej wynosi $p=0,02$. Obliczyć prawdopodobieństwo, że w partii towaru liczącej 300 sztuk znajdzie się:
-
-a) zero sztuk wadliwych,
-b) jedna sztuka wadliwa,
-c) dwie sztuki wadliwe,
-d) co najmniej trzy sztuki wadliwe.
-
-*Wskazówka: Zastosować przybliżenie rozkładem Poissona z parametrem $\lambda = np$*.
+*Cel: Zastosowanie aproksymacji rozkładu dwumianowego rozkładem normalnym dla dużej liczby prób.*
 
 ## Zadanie 3
-**Aproksymacja Poissona – niezawodność systemów**
+**Dobór liczebności próby (odwrócone CTG)**
+Prawdopodobieństwo urodzenia chłopca wynosi $p=0,515$. Ile razy należy powtórzyć doświadczenie (urodzenia), aby z prawdopodobieństwem co najmniej $0,95$ można było twierdzić, że częstość występowania chłopców w próbie będzie się różnić od prawdopodobieństwa $p$ o mniej niż $0,01$?
 
-Urządzenie składa się między innymi z 750 lamp. Prawdopodobieństwo awarii każdej lampy w ciągu jednej doby pracy urządzenia jest jednakowe i wynosi $p=0,004$. Obliczyć prawdopodobieństwo, że w ciągu jednej doby pracy urządzenia ulegnie awarii:
-
-a) 0 lamp,
-b) 1 lampa,
-c) 2 lampy,
-d) co najmniej 3 lampy.
-
-*Komentarz: Zadanie to obrazuje stabilność dużych systemów składających się z wielu zawodnych elementów*.
+*Wskazówka: Należy skorzystać z nierówności $P(|\frac{k}{n} - p| < \varepsilon) \ge 1 - \alpha$ przy użyciu dystrybuanty normalnej.*
 
 ## Zadanie 4
-**Centralne Twierdzenie Graniczne – sumowanie błędów**
+**Centralne Twierdzenie Graniczne – suma błędów zaokrągleń**
+Dodajemy do siebie $n=100$ liczb, z których każda została zaokrąglona do najbliższej liczby całkowitej. Błędy zaokrągleń są niezależnymi zmiennymi losowymi o rozkładzie jednostajnym na przedziale $(-0,5; 0,5)$. Obliczyć prawdopodobieństwo, że błąd sumy tych liczb (co do modułu) nie przekroczy $3$.
 
-Pewien przyrząd pomiarowy robi błąd systematyczny $1$ m w stronę zawyżenia pomiaru i błąd losowy o rozkładzie $N(0; 0,5)$.
-
-a) Obliczyć wartość przeciętną błędu pomiaru.
-b) Wyznaczyć prawdopodobieństwo tego, że błąd, z jakim mierzone są badane przedmioty, nie przekracza $2$ m.
-
-*Cel zadania: Ilustracja, jak błędy (zmienne losowe) sumują się, dając wynikowy rozkład normalny, co jest fundamentem CTG*.
+*Komentarz: Jest to klasyczny przykład sumowania zmiennych o rozkładzie innym niż normalny (tu: jednostajny), które w sumie dają rozkład normalny.*
 
 ## Zadanie 5
-**Rozkład Normalny jako granica – produkcja masowa**
-
-Wytrzymałość stalowych lin pochodzących z produkcji masowej jest zmienną losową o rozkładzie $N(1000 \text{ kg/cm}^2, 50 \text{ kg/cm}^2)$. Obliczyć jaki procent lin ma wytrzymałość mniejszą od $900 \text{ kg/cm}^2$.
-
-*Komentarz: W produkcji masowej (duże $n$) cechy fizyczne produktów naturalnie układają się w rozkład normalny (krzywą Gaussa) dzięki działaniu Centralnego Twierdzenia Granicznego*.
+**Centralne Twierdzenie Graniczne – obciążenie windy**
+Winda towarowa może unieść ciężar do $2000$ kg. Do windy wchodzi $25$ osób. Waga losowego pasażera jest zmienną losową o wartości oczekiwanej $75$ kg i odchyleniu standardowym $10$ kg. Obliczyć prawdopodobieństwo, że waga pasażerów nie przekroczy dopuszczalnego obciążenia windy.
 
 ## Zadanie 6
-**Zasada $3\sigma$ – odchylenia graniczne**
-
-Automat produkuje nity. Średnice główek nitów są wartościami zmiennej losowej o rozkładzie $N(2; 0,1)$ (w mm). Jakie rozmiary średnicy z przedziału $(2-\epsilon, 2+\epsilon)$ można gwarantować z prawdopodobieństwem $0,95$? 
-
-*Cel zadania: Zrozumienie przedziałów ufności, które wynikają bezpośrednio z własności granicznych rozkładu normalnego*.
+**Aproksymacja czasu pracy – rozkład wykładniczy**
+Bateria w laptopie ma czas pracy będący zmienną losową o rozkładzie wykładniczym ze średnią $4$ godziny. Użytkownik planuje dłuższą pracę w terenie i zabiera ze sobą $36$ naładowanych baterii (wymienia je natychmiast po wyczerpaniu). Jakie jest prawdopodobieństwo, że łączny czas pracy na tym zestawie baterii przekroczy $150$ godzin?
 
 ## Zadanie 7
-**Stabilność częstości – Prawo Wielkich Liczb**
+**Lokalne Twierdzenie Moivre’a-Laplace’a**
+Zdarzenie $A$ występuje w pojedynczym doświadczeniu z prawdopodobieństwem $p=0,6$. Doświadczenie powtarzamy $n=600$ razy. Obliczyć prawdopodobieństwo, że zdarzenie $A$ zajdzie dokładnie $370$ razy.
 
-Zmienna losowa $K$ ma rozkład dwumianowy z parametrami $n=5$ i $p=0,8$ (interpretacja: 5 dni pracy, szansa na brak awarii 0,8). Obliczyć prawdopodobieństwo $P(K=k)$ dla $k=0, 1, ..., 5$.
-
-*Cel zadania: Choć $n$ jest małe, zadanie to służy jako punkt wyjścia do dyskusji: co by się stało, gdybyśmy obserwowali system przez 1000 dni? (Wtedy rozkład dążyłby do normalnego – Twierdzenie Moivre’a-Laplace’a)*.
+*Wskazówka: Dla dużych $n$ prawdopodobieństwo punktowe $P(X=k)$ przybliżamy wartością gęstości rozkładu normalnego.*
 
 ## Zadanie 8
-**Sumowanie zmiennych niezależnych**
-
-Mamy dwie niezależne zmienne losowe o rozkładzie wykładniczym (np. czasy obsługi dwóch procesów). Zmienna $X_1$ ma parametr $\lambda$, zmienna $X_2$ też ma parametr $\lambda$. Pokazać (lub obliczyć dla konkretnych danych), że ich suma ma rozkład Erlanga.
-
-*Komentarz: Jest to wstęp do twierdzenia, że suma wielu takich zmiennych dążyłaby do rozkładu normalnego. Dla informatyków ważne w modelowaniu kolejek*.
+**Porównanie aproksymacji**
+Prawdopodobieństwo sukcesu w pojedynczej próbie wynosi $p=0,1$. Wykonujemy $n=30$ prób. Obliczyć prawdopodobieństwo uzyskania dokładnie 2 sukcesów, stosując:
+a) dokładny wzór Bernoulliego,
+b) przybliżenie Poissona,
+c) lokalne twierdzenie Moivre’a-Laplace’a.
+Porównać wyniki.
 
 ## Zadanie 9
-**Zastosowanie rozkładu normalnego w IT**
-
-Czas (w minutach) między kolejnymi zgłoszeniami abonentów w centrali telefonicznej jest zmienną losową. Przy dużej liczbie abonentów, łączny czas oczekiwania na $n$ zgłoszeń można aproksymować.
-
-Zadanie (uproszczone): Czas między zgłoszeniami ma rozkład wykładniczy ($\lambda=2$). Obliczyć prawdopodobieństwo, że przed upływem 3 minut nastąpi zgłoszenie.
-
-*Cel: Zrozumienie procesu, który w granicy (dla wielu zgłoszeń) jest modelowany procesami Poissona/wykładniczymi.
+**Nierówność Czebyszewa**
+Zmienna losowa $X$ ma wartość oczekiwaną $E(X)=10$ i wariancję $D^2(X)=4$. Nie znając dokładnego rozkładu tej zmiennej, oszacować (podać ograniczenie dolne) prawdopodobieństwo, że zmienna $X$ przyjmie wartość z przedziału $(4, 16)$.
 
 ## Zadanie 10
-Dla rozkładu prawdopodobieństwa zmiennej losowej $K$ wyznaczonego w Zadaniu 7 (liczba dni bez awarii), sporządzić histogram prawdopodobieństwa.
+**Zastosowanie statystyczne – średnia z próby**
+Z populacji, w której cecha $X$ ma rozkład (niekoniecznie normalny) o średniej $\mu=100$ i wariancji $\sigma^2=25$, pobrano losową próbę o liczebności $n=100$. Obliczyć prawdopodobieństwo, że średnia arytmetyczna z tej próby $\bar{X}$ będzie mniejsza niż $99$.

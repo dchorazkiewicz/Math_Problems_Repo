@@ -1,88 +1,57 @@
 # TASK LIST NO. 5: Limit Theorems and Approximations
 
 ## Task 1
-**Poisson Theorem – rare errors**
+**Poisson Theorem – rare events**
+The defect rate of a certain electronic component is $p=0.002$. A batch of goods contains $n=1000$ such components. Calculate the probability that in this batch:
+a) there will not be a single defective item,
+b) there will be at most 3 defective items.
 
-The probability that a product subjected to a test fails the test is $p=0.01$. Calculate the probability that among 200 such products (independently tested), at most 2 will fail the test.
-
-*Task Goal: To show how the binomial distribution (for large $n$ and small $p$) converges to the Poisson distribution. This is a classic application of the limit theorem for rare events (e.g., code errors, server failures).*
+*Hint: Since $n$ is large ($n \ge 100$), $p$ is small ($p \le 0.1$), and $np \le 10$, the Poisson approximation with parameter $\lambda = np$ should be used.*
 
 ## Task 2
-**Poisson Approximation – quality control**
+**De Moivre-Laplace Theorem (Integral) – coin tossing**
+We toss a symmetric (fair) coin $n=100$ times. Calculate the probability that the number of obtained heads will fall within the interval $\langle 45, 55 \rangle$.
 
-The probability of producing a defective item is $p=0.02$. Calculate the probability that in a batch of goods consisting of 300 items there will be:
-
-a) zero defective items,
-b) one defective item,
-c) two defective items,
-d) at least three defective items.
-
-*Hint: Use the Poisson approximation with parameter $\lambda = np$.*
+*Goal: Application of the normal approximation to the binomial distribution for a large number of trials.*
 
 ## Task 3
-**Poisson Approximation – system reliability**
+**Sample size selection (Inverse CLT)**
+The probability of a boy being born is $p=0.515$. How many times must the experiment (birth) be repeated to assert with a probability of at least $0.95$ that the frequency of boys in the sample differs from the probability $p$ by less than $0.01$?
 
-A device consists of, among other things, 750 lamps. The probability of failure of each lamp during one day of device operation is identical and equals $p=0.004$. Calculate the probability that during one day of device operation:
-
-a) 0 lamps,
-b) 1 lamp,
-c) 2 lamps,
-d) at least 3 lamps
-
-will fail.
-
-*Comment: This task illustrates the stability of large systems consisting of many unreliable elements.*
+*Hint: Use the inequality $P(|\frac{k}{n} - p| < \varepsilon) \ge 1 - \alpha$ using the normal cumulative distribution function.*
 
 ## Task 4
-**Central Limit Theorem – error summation**
+**Central Limit Theorem – sum of rounding errors**
+We add together $n=100$ numbers, each of which has been rounded to the nearest integer. The rounding errors are independent random variables uniformly distributed on the interval $(-0.5; 0.5)$. Calculate the probability that the error of the sum of these numbers (in absolute value) does not exceed $3$.
 
-A certain measuring instrument makes a systematic error of $1$ m in the direction of overestimating the measurement and a random error with a distribution $N(0; 0.5)$.
-
-a) Calculate the average value of the measurement error.
-b) Determine the probability that the error with which the examined objects are measured does not exceed $2$ m.
-
-*Task Goal: Illustration of how errors (random variables) sum up, resulting in a normal distribution, which is the foundation of the CLT.*
+*Comment: This is a classic example of summing variables with a non-normal distribution (here: uniform), which result in a normal distribution.*
 
 ## Task 5
-**Normal Distribution as a limit – mass production**
-
-The strength of steel ropes from mass production is a random variable with a distribution $N(1000 \text{ kg/cm}^2, 50 \text{ kg/cm}^2)$. Calculate what percentage of ropes has a strength less than $900 \text{ kg/cm}^2$.
-
-*Comment: In mass production (large $n$), physical characteristics of products naturally arrange themselves into a normal distribution (Gaussian curve) thanks to the Central Limit Theorem.*
+**Central Limit Theorem – elevator load**
+A freight elevator can carry a load of up to $2000$ kg. $25$ people enter the elevator. The weight of a random passenger is a random variable with an expected value of $75$ kg and a standard deviation of $10$ kg. Calculate the probability that the total weight of the passengers does not exceed the elevator's permissible load.
 
 ## Task 6
-**$3\sigma$ Principle – limit deviations**
-
-An automated machine produces rivets. The diameters of the rivet heads are values of a random variable with a distribution $N(2; 0.1)$ (in mm). What diameter sizes from the interval $(2-\epsilon, 2+\epsilon)$ can be guaranteed with a probability of $0.95$?
-
-*Task Goal: Understanding confidence intervals, which result directly from the limiting properties of the normal distribution.*
+**Operating time approximation – exponential distribution**
+A laptop battery has an operating time that is a random variable with an exponential distribution with a mean of $4$ hours. A user plans a long fieldwork session and takes $36$ charged batteries with them (replacing them immediately after depletion). What is the probability that the total operating time on this set of batteries will exceed $150$ hours?
 
 ## Task 7
-**Stability of frequency – Law of Large Numbers**
+**Local De Moivre-Laplace Theorem**
+Event $A$ occurs in a single experiment with a probability $p=0.6$. We repeat the experiment $n=600$ times. Calculate the probability that event $A$ occurs exactly $370$ times.
 
-A random variable $K$ has a binomial distribution with parameters $n=5$ and $p=0.8$ (interpretation: 5 days of work, chance of no failure 0.8). Calculate the probability $P(K=k)$ for $k=0, 1, ..., 5$.
-
-*Task Goal: Although $n$ is small, this task serves as a starting point for discussion: what would happen if we observed the system for 1000 days? (Then the distribution would tend towards normal – De Moivre-Laplace Theorem).*
+*Hint: For large $n$, the point probability $P(X=k)$ is approximated by the value of the normal distribution density function.*
 
 ## Task 8
-**Summation of independent variables**
-
-We have two independent random variables with an exponential distribution (e.g., service times of two processes). Variable $X_1$ has parameter $\lambda$, variable $X_2$ also has parameter $\lambda$. Show (or calculate for specific data) that their sum has an Erlang distribution.
-
-*Comment: This is an introduction to the theorem that the sum of many such variables would tend towards a normal distribution. Important for computer scientists in queue modeling.*
+**Comparison of approximations**
+The probability of success in a single trial is $p=0.1$. We perform $n=30$ trials. Calculate the probability of obtaining exactly 2 successes using:
+a) the exact Bernoulli formula,
+b) the Poisson approximation,
+c) the local De Moivre-Laplace theorem.
+Compare the results.
 
 ## Task 9
-**Application of Normal Distribution in IT**
-
-The time (in minutes) between consecutive subscriber calls at a telephone exchange is a random variable. With a large number of subscribers, the total waiting time for $n$ calls can be approximated.
-
-Task (simplified): The time between calls has an exponential distribution ($\lambda=2$). Calculate the probability that a call occurs before 3 minutes elapse.
-
-*Goal: Understanding a process that in the limit (for many calls) is modeled by Poisson/exponential processes.*
+**Chebyshev's Inequality**
+A random variable $X$ has an expected value $E(X)=10$ and a variance $D^2(X)=4$. Without knowing the exact distribution of this variable, estimate (provide a lower bound for) the probability that the variable $X$ takes a value from the interval $(4, 16)$.
 
 ## Task 10
-**Histogram Interpretation - visualization of convergence**
-
-For the probability distribution of the random variable $K$ calculated in Task 7 (number of failure-free days), prepare a probability histogram.
-
-*Goal: Graphical task. It allows seeing how the probability distribution "looks" and intuitively understanding that as the number of trials increases, this shape will resemble a bell (normal distribution).*
+**Statistical application – sample mean**
+A random sample of size $n=100$ was taken from a population in which feature $X$ has a distribution (not necessarily normal) with a mean $\mu=100$ and a variance $\sigma^2=25$. Calculate the probability that the arithmetic mean of this sample $\bar{X}$ will be less than $99$.

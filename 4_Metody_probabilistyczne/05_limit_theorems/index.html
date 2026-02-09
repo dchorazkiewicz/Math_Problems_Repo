@@ -1765,57 +1765,46 @@
 
 <h1 id="task-list-no-5-limit-theorems-and-approximations">TASK LIST NO. 5: Limit Theorems and Approximations</h1>
 <h2 id="task-1">Task 1</h2>
-<p><strong>Poisson Theorem – rare errors</strong></p>
-<p>The probability that a product subjected to a test fails the test is <span class="arithmatex">\(p=0.01\)</span>. Calculate the probability that among 200 such products (independently tested), at most 2 will fail the test.</p>
-<p><em>Task Goal: To show how the binomial distribution (for large <span class="arithmatex">\(n\)</span> and small <span class="arithmatex">\(p\)</span>) converges to the Poisson distribution. This is a classic application of the limit theorem for rare events (e.g., code errors, server failures).</em></p>
+<p><strong>Poisson Theorem – rare events</strong>
+The defect rate of a certain electronic component is <span class="arithmatex">\(p=0.002\)</span>. A batch of goods contains <span class="arithmatex">\(n=1000\)</span> such components. Calculate the probability that in this batch:
+a) there will not be a single defective item,
+b) there will be at most 3 defective items.</p>
+<p><em>Hint: Since <span class="arithmatex">\(n\)</span> is large (<span class="arithmatex">\(n \ge 100\)</span>), <span class="arithmatex">\(p\)</span> is small (<span class="arithmatex">\(p \le 0.1\)</span>), and <span class="arithmatex">\(np \le 10\)</span>, the Poisson approximation with parameter <span class="arithmatex">\(\lambda = np\)</span> should be used.</em></p>
 <h2 id="task-2">Task 2</h2>
-<p><strong>Poisson Approximation – quality control</strong></p>
-<p>The probability of producing a defective item is <span class="arithmatex">\(p=0.02\)</span>. Calculate the probability that in a batch of goods consisting of 300 items there will be:</p>
-<p>a) zero defective items,
-b) one defective item,
-c) two defective items,
-d) at least three defective items.</p>
-<p><em>Hint: Use the Poisson approximation with parameter <span class="arithmatex">\(\lambda = np\)</span>.</em></p>
+<p><strong>De Moivre-Laplace Theorem (Integral) – coin tossing</strong>
+We toss a symmetric (fair) coin <span class="arithmatex">\(n=100\)</span> times. Calculate the probability that the number of obtained heads will fall within the interval <span class="arithmatex">\(\langle 45, 55 \rangle\)</span>.</p>
+<p><em>Goal: Application of the normal approximation to the binomial distribution for a large number of trials.</em></p>
 <h2 id="task-3">Task 3</h2>
-<p><strong>Poisson Approximation – system reliability</strong></p>
-<p>A device consists of, among other things, 750 lamps. The probability of failure of each lamp during one day of device operation is identical and equals <span class="arithmatex">\(p=0.004\)</span>. Calculate the probability that during one day of device operation:</p>
-<p>a) 0 lamps,
-b) 1 lamp,
-c) 2 lamps,
-d) at least 3 lamps</p>
-<p>will fail.</p>
-<p><em>Comment: This task illustrates the stability of large systems consisting of many unreliable elements.</em></p>
+<p><strong>Sample size selection (Inverse CLT)</strong>
+The probability of a boy being born is <span class="arithmatex">\(p=0.515\)</span>. How many times must the experiment (birth) be repeated to assert with a probability of at least <span class="arithmatex">\(0.95\)</span> that the frequency of boys in the sample differs from the probability <span class="arithmatex">\(p\)</span> by less than <span class="arithmatex">\(0.01\)</span>?</p>
+<p><em>Hint: Use the inequality <span class="arithmatex">\(P(|\frac{k}{n} - p| &lt; \varepsilon) \ge 1 - \alpha\)</span> using the normal cumulative distribution function.</em></p>
 <h2 id="task-4">Task 4</h2>
-<p><strong>Central Limit Theorem – error summation</strong></p>
-<p>A certain measuring instrument makes a systematic error of <span class="arithmatex">\(1\)</span> m in the direction of overestimating the measurement and a random error with a distribution <span class="arithmatex">\(N(0; 0.5)\)</span>.</p>
-<p>a) Calculate the average value of the measurement error.
-b) Determine the probability that the error with which the examined objects are measured does not exceed <span class="arithmatex">\(2\)</span> m.</p>
-<p><em>Task Goal: Illustration of how errors (random variables) sum up, resulting in a normal distribution, which is the foundation of the CLT.</em></p>
+<p><strong>Central Limit Theorem – sum of rounding errors</strong>
+We add together <span class="arithmatex">\(n=100\)</span> numbers, each of which has been rounded to the nearest integer. The rounding errors are independent random variables uniformly distributed on the interval <span class="arithmatex">\((-0.5; 0.5)\)</span>. Calculate the probability that the error of the sum of these numbers (in absolute value) does not exceed <span class="arithmatex">\(3\)</span>.</p>
+<p><em>Comment: This is a classic example of summing variables with a non-normal distribution (here: uniform), which result in a normal distribution.</em></p>
 <h2 id="task-5">Task 5</h2>
-<p><strong>Normal Distribution as a limit – mass production</strong></p>
-<p>The strength of steel ropes from mass production is a random variable with a distribution <span class="arithmatex">\(N(1000 \text{ kg/cm}^2, 50 \text{ kg/cm}^2)\)</span>. Calculate what percentage of ropes has a strength less than <span class="arithmatex">\(900 \text{ kg/cm}^2\)</span>.</p>
-<p><em>Comment: In mass production (large <span class="arithmatex">\(n\)</span>), physical characteristics of products naturally arrange themselves into a normal distribution (Gaussian curve) thanks to the Central Limit Theorem.</em></p>
+<p><strong>Central Limit Theorem – elevator load</strong>
+A freight elevator can carry a load of up to <span class="arithmatex">\(2000\)</span> kg. <span class="arithmatex">\(25\)</span> people enter the elevator. The weight of a random passenger is a random variable with an expected value of <span class="arithmatex">\(75\)</span> kg and a standard deviation of <span class="arithmatex">\(10\)</span> kg. Calculate the probability that the total weight of the passengers does not exceed the elevator's permissible load.</p>
 <h2 id="task-6">Task 6</h2>
-<p><strong><span class="arithmatex">\(3\sigma\)</span> Principle – limit deviations</strong></p>
-<p>An automated machine produces rivets. The diameters of the rivet heads are values of a random variable with a distribution <span class="arithmatex">\(N(2; 0.1)\)</span> (in mm). What diameter sizes from the interval <span class="arithmatex">\((2-\epsilon, 2+\epsilon)\)</span> can be guaranteed with a probability of <span class="arithmatex">\(0.95\)</span>?</p>
-<p><em>Task Goal: Understanding confidence intervals, which result directly from the limiting properties of the normal distribution.</em></p>
+<p><strong>Operating time approximation – exponential distribution</strong>
+A laptop battery has an operating time that is a random variable with an exponential distribution with a mean of <span class="arithmatex">\(4\)</span> hours. A user plans a long fieldwork session and takes <span class="arithmatex">\(36\)</span> charged batteries with them (replacing them immediately after depletion). What is the probability that the total operating time on this set of batteries will exceed <span class="arithmatex">\(150\)</span> hours?</p>
 <h2 id="task-7">Task 7</h2>
-<p><strong>Stability of frequency – Law of Large Numbers</strong></p>
-<p>A random variable <span class="arithmatex">\(K\)</span> has a binomial distribution with parameters <span class="arithmatex">\(n=5\)</span> and <span class="arithmatex">\(p=0.8\)</span> (interpretation: 5 days of work, chance of no failure 0.8). Calculate the probability <span class="arithmatex">\(P(K=k)\)</span> for <span class="arithmatex">\(k=0, 1, ..., 5\)</span>.</p>
-<p><em>Task Goal: Although <span class="arithmatex">\(n\)</span> is small, this task serves as a starting point for discussion: what would happen if we observed the system for 1000 days? (Then the distribution would tend towards normal – De Moivre-Laplace Theorem).</em></p>
+<p><strong>Local De Moivre-Laplace Theorem</strong>
+Event <span class="arithmatex">\(A\)</span> occurs in a single experiment with a probability <span class="arithmatex">\(p=0.6\)</span>. We repeat the experiment <span class="arithmatex">\(n=600\)</span> times. Calculate the probability that event <span class="arithmatex">\(A\)</span> occurs exactly <span class="arithmatex">\(370\)</span> times.</p>
+<p><em>Hint: For large <span class="arithmatex">\(n\)</span>, the point probability <span class="arithmatex">\(P(X=k)\)</span> is approximated by the value of the normal distribution density function.</em></p>
 <h2 id="task-8">Task 8</h2>
-<p><strong>Summation of independent variables</strong></p>
-<p>We have two independent random variables with an exponential distribution (e.g., service times of two processes). Variable <span class="arithmatex">\(X_1\)</span> has parameter <span class="arithmatex">\(\lambda\)</span>, variable <span class="arithmatex">\(X_2\)</span> also has parameter <span class="arithmatex">\(\lambda\)</span>. Show (or calculate for specific data) that their sum has an Erlang distribution.</p>
-<p><em>Comment: This is an introduction to the theorem that the sum of many such variables would tend towards a normal distribution. Important for computer scientists in queue modeling.</em></p>
+<p><strong>Comparison of approximations</strong>
+The probability of success in a single trial is <span class="arithmatex">\(p=0.1\)</span>. We perform <span class="arithmatex">\(n=30\)</span> trials. Calculate the probability of obtaining exactly 2 successes using:
+a) the exact Bernoulli formula,
+b) the Poisson approximation,
+c) the local De Moivre-Laplace theorem.
+Compare the results.</p>
 <h2 id="task-9">Task 9</h2>
-<p><strong>Application of Normal Distribution in IT</strong></p>
-<p>The time (in minutes) between consecutive subscriber calls at a telephone exchange is a random variable. With a large number of subscribers, the total waiting time for <span class="arithmatex">\(n\)</span> calls can be approximated.</p>
-<p>Task (simplified): The time between calls has an exponential distribution (<span class="arithmatex">\(\lambda=2\)</span>). Calculate the probability that a call occurs before 3 minutes elapse.</p>
-<p><em>Goal: Understanding a process that in the limit (for many calls) is modeled by Poisson/exponential processes.</em></p>
+<p><strong>Chebyshev's Inequality</strong>
+A random variable <span class="arithmatex">\(X\)</span> has an expected value <span class="arithmatex">\(E(X)=10\)</span> and a variance <span class="arithmatex">\(D^2(X)=4\)</span>. Without knowing the exact distribution of this variable, estimate (provide a lower bound for) the probability that the variable <span class="arithmatex">\(X\)</span> takes a value from the interval <span class="arithmatex">\((4, 16)\)</span>.</p>
 <h2 id="task-10">Task 10</h2>
-<p><strong>Histogram Interpretation - visualization of convergence</strong></p>
-<p>For the probability distribution of the random variable <span class="arithmatex">\(K\)</span> calculated in Task 7 (number of failure-free days), prepare a probability histogram.</p>
-<p><em>Goal: Graphical task. It allows seeing how the probability distribution "looks" and intuitively understanding that as the number of trials increases, this shape will resemble a bell (normal distribution).</em></p>
+<p><strong>Statistical application – sample mean</strong>
+A random sample of size <span class="arithmatex">\(n=100\)</span> was taken from a population in which feature <span class="arithmatex">\(X\)</span> has a distribution (not necessarily normal) with a mean <span class="arithmatex">\(\mu=100\)</span> and a variance <span class="arithmatex">\(\sigma^2=25\)</span>. Calculate the probability that the arithmetic mean of this sample <span class="arithmatex">\(\bar{X}\)</span> will be less than <span class="arithmatex">\(99\)</span>.</p>
 
 
 

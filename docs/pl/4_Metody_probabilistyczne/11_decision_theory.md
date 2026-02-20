@@ -18,12 +18,33 @@ a) Wyznaczyć wzór na funkcję operacyjno-charakterystyczną (OC): $L(\mu) = P(
 b) Jak zmiana liczebności próby na $n=100$ wpłynie na stromość tej krzywej (zdolność rozróżniania)?
 
 ## Zadanie 4
-Chcemy skonstruować test dla średniej, który spełnia surowe wymogi bezpieczeństwa:
 
-* Ryzyko odrzucenia normy, gdy jest ona spełniona ($\alpha$), ma wynosić 0,01.
-* Ryzyko przyjęcia normy, gdy przesunięcie średniej wynosi 2 jednostki ($\beta$), ma nie przekraczać 0,05.
+Chcemy skonstruować **jednostronny test średniej** dla populacji o rozkładzie normalnym 
+z **znanym odchyleniem standardowym** $\sigma = 5$.
 
-Ile minimalnie pomiarów należy wykonać?
+Testujemy hipotezy:
+
+$$
+H_0: \mu = \mu_0 
+\quad \text{przeciwko} \quad
+H_1: \mu = \mu_0 + 2.
+$$
+
+Wymagania bezpieczeństwa są następujące:
+
+- Ryzyko błędu I rodzaju (odrzucenie normy, gdy jest spełniona) ma wynosić  
+  $$\alpha = 0{,}01.$$
+- Ryzyko błędu II rodzaju (przyjęcie normy, gdy rzeczywiste przesunięcie średniej wynosi 2 jednostki) ma nie przekraczać  
+  $$\beta = 0{,}05.$$
+
+Zakładając, że test oparty jest na statystyce
+
+$$
+Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}},
+$$
+
+wyznaczyć **minimalną liczebność próby $n$**, która spełnia powyższe warunki.
+
 
 ## Zadanie 5
 Wadliwość produkcji pewnych wyrobów wynosiła do tej pory 10% ($p_0=0,1$). Nowa technologia ma obniżyć wadliwość do 5% ($p_1=0,05$). Zamiast pobierać stałą próbkę, pobieramy elementy po jednym.

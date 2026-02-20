@@ -18,12 +18,32 @@ a) Determine the formula for the operating characteristic (OC) function: $L(\mu)
 b) How will changing the sample size to $n=100$ affect the steepness of this curve (discriminatory ability)?
 
 ## Task 4
-We want to construct a test for the mean that meets strict safety requirements:
 
-* The risk of rejecting the norm when it is met ($\alpha$) is to be 0.01.
-* The risk of accepting the norm when the mean shift is 2 units ($\beta$) is not to exceed 0.05.
+We want to construct a **one-sided test for the population mean** assuming a normal distribution with **known standard deviation** $\sigma = 5$.
 
-What is the minimum number of measurements that must be performed?
+We test the hypotheses:
+
+$$
+H_0: \mu = \mu_0
+\quad \text{against} \quad
+H_1: \mu = \mu_0 + 2.
+$$
+
+The safety requirements are:
+
+- The probability of a Type I error (rejecting the norm when it is true) must be  
+  $$\alpha = 0.01.$$
+- The probability of a Type II error (accepting the norm when the true mean is shifted by 2 units) must not exceed  
+  $$\beta = 0.05.$$
+
+Assuming the test is based on the statistic
+
+$$
+Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}},
+$$
+
+determine the **minimum sample size $n$** that satisfies the above conditions.
+
 
 ## Task 5
 The defectiveness of the production of certain products has been 10% ($p_0=0.1$) so far. A new technology is expected to reduce defectiveness to 5% ($p_1=0.05$). Instead of taking a fixed sample, we take items one by one.

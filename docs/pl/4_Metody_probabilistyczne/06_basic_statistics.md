@@ -48,7 +48,7 @@ Dane są dwie sześcioelementowe próbki (np. czasy dostępu do dwóch różnych
 Obliczyć współczynniki zmienności $v = \frac{s}{\bar{x}}$ dla obu próbek. Który dysk działa bardziej stabilnie (ma mniejszy rozrzut względny)?
 
 ## Zadanie 6
-Znaleźć przedział ufności (lub prawdopodobieństwo), wiedząc, że badana cecha $X$ populacji ma rozkład normalny $N(\mu, \sigma)$. Statystyka $U$:
+Z populacji o rozkładzie normalnym $N(\mu, \sigma)$ pobrano próbę o liczebności 36. Średnia z próby wyniosła $\bar{x} = 150$, a odchylenie standardowe populacji jest znane i wynosi $\sigma = 12$. Wyznaczyć dwustronny przedział ufności dla średniej w populacji $\mu$ na poziomie ufności 0.95. W tym celu należy wykorzystać fakt, że statystyka:
 
 $$
 U = \frac{\bar{X} - \mu}{\sigma} \sqrt{n}
@@ -57,13 +57,13 @@ $$
 ma rozkład $N(0,1)$.
 
 ## Zadanie 7
-Wylosowano małą próbkę ($n=10$) z populacji o rozkładzie normalnym. Ponieważ nie znamy odchylenia standardowego populacji $\sigma$, musimy użyć odchylenia z próby $s$. Statystyka:
+Wylosowano małą próbkę (10 elementów) z populacji o rozkładzie normalnym. Ponieważ nie znamy odchylenia standardowego populacji $\sigma$, musimy użyć odchylenia z próby $S$ (liczonego ze wzoru z dzieleniem przez $n$). Statystyka:
 
 $$
-t = \frac{\bar{X} - \mu}{s} \sqrt{n-1}
+t = \frac{\bar{X} - \mu}{S} \sqrt{n-1}
 $$
 
-podlega rozkładowi **t-Studenta**. Odczytać z tablic wartość krytyczną dla $n-1$ stopni swobody i poziomu ufności $0.95$.
+podlega rozkładowi t-Studenta. Odczytać z tablic wartości krytyczne do zbudowania dwustronnego przedziału ufności na poziomie ufności 0.95.
 
 ## Zadanie 8
 Dla badania wariancji (rozrzutu) próby stosuje się statystykę:
@@ -74,10 +74,10 @@ $$
 
 > *Uwaga: Symbol $S^2$ oznacza wariancję z próby liczoną ze wzoru z dzieleniem przez $n$ (zgodnie z definicją w podręczniku Krysickiego).*
 
-która ma rozkład chi-kwadrat. Wykonano 15 pomiarów ($n=15$). Odczytać z tablic wartości, między którymi z prawdopodobieństwem $0.90$ znajdzie się ta statystyka.
+Wykonano 15 pomiarów. Odczytać z tablic rozkładu chi-kwadrat wartości krytyczne odcinające symetryczne obszary w ogonach rozkładu (po 5% prawdopodobieństwa na każdy ogon), między którymi z prawdopodobieństwem 0.90 znajdzie się ta statystyka.
 
 ## Zadanie 9
-Wykazać na prostym przykładzie liczbowym, że średnia z próby $\bar{X}$ jest **estymatorem nieobciążonym** średniej w populacji (czyli $E(\bar{X}) = \mu$), natomiast wariancja z próby (dzielona przez $n$) jest obciążona (dlatego dzielimy przez $n-1$).
+Dana jest 3-elementowa populacja o wartościach {2, 4, 6}. Wypisać wszystkie możliwe 2-elementowe próby (przy losowaniu ze zwracaniem), obliczyć średnią dla każdej z nich, a następnie pokazać, że wartość oczekiwana tych średnich z prób jest równa średniej całej populacji. W ten sposób wykażesz liczbowo, że średnia z próby jest estymatorem nieobciążonym.
 
 ## Zadanie 10
 Dla małej próbki: $0.18, 0.56, 0.87, 1.37, 2.46$ wyznaczyć wartości dystrybuanty empirycznej $S_n(x)$.

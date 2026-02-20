@@ -48,22 +48,22 @@ Two six-element samples are given (e.g., access times to two different disks):
 Calculate the coefficients of variation $v = \frac{s}{\bar{x}}$ for both samples. Which disk operates more stably (has a smaller relative dispersion)?
 
 ## Task 6
-Find the confidence interval (or probability), knowing that the investigated feature $X$ of the population has a normal distribution $N(\mu, \sigma)$. The statistic $U$:
+A sample of size 36 was drawn from a population with a normal distribution $N(\mu, \sigma)$. The sample mean was $\bar{x} = 150$, and the population standard deviation is known to be $\sigma = 12$. Construct a two-sided confidence interval for the population mean $\mu$ at a confidence level of 0.95. For this purpose, use the fact that the statistic:
 
 $$
 U = \frac{\bar{X} - \mu}{\sigma} \sqrt{n}
 $$
 
-has a distribution $N(0,1)$.
+follows a standard normal distribution $N(0,1)$.
 
 ## Task 7
-A small sample ($n=10$) was drawn from a population with a normal distribution. Since we do not know the population standard deviation $\sigma$, we must use the sample deviation $s$. The statistic:
+A small sample (10 elements) was drawn from a population with a normal distribution. Since we do not know the population standard deviation $\sigma$, we must use the sample standard deviation $S$ (calculated using the formula divided by $n$). The statistic:
 
 $$
-t = \frac{\bar{X} - \mu}{s} \sqrt{n-1}
+t = \frac{\bar{X} - \mu}{S} \sqrt{n-1}
 $$
 
-follows the **Student's t-distribution**. Read from the tables the critical value for $n-1$ degrees of freedom and a confidence level of $0.95$.
+follows the Student's t-distribution. Read from the tables the critical values needed to construct a two-sided confidence interval at a confidence level of 0.95.
 
 ## Task 8
 To investigate the sample variance (dispersion), the following statistic is used:
@@ -74,10 +74,10 @@ $$
 
 > *Note: The symbol $S^2$ denotes the sample variance calculated with the formula dividing by $n$ (according to the definition in Krysicki's textbook).*
 
-which has a chi-square distribution. 15 measurements were taken ($n=15$). Read from the tables the values between which this statistic will fall with a probability of $0.90$.
+15 measurements were taken. Read from the chi-square distribution tables the critical values that cut off symmetrical areas in the tails (5% probability for each tail), between which this statistic will fall with a probability of 0.90.
 
 ## Task 9
-Show on a simple numerical example that the sample mean $\bar{X}$ is an **unbiased estimator** of the population mean (i.e., $E(\bar{X}) = \mu$), whereas the sample variance (divided by $n$) is biased (which is why we divide by $n-1$).
+Given a 3-element population with values {2, 4, 6}. List all possible 2-element samples (sampling with replacement), calculate the mean for each, and then show that the expected value of these sample means equals the mean of the entire population. In this way, you will demonstrate numerically that the sample mean is an unbiased estimator.
 
 ## Task 10
 For a small sample: $0.18, 0.56, 0.87, 1.37, 2.46$, determine the values of the empirical distribution function $S_n(x)$.

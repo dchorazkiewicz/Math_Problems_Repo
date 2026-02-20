@@ -1672,8 +1672,41 @@
 <p>Wadliwość produkcji pewnych wyrobów (np. błędnych pakietów danych) wynosiła 10%. Wprowadzono nową technologię. Wylosowano próbkę <span class="arithmatex">\(n=900\)</span> sztuk i znaleziono w niej 50 sztuk wadliwych.</p>
 <p>Czy na poziomie istotności <span class="arithmatex">\(\alpha=0,05\)</span> można twierdzić, że nowa technologia zmniejszyła wadliwość?</p>
 <h2 id="zadanie-6">Zadanie 6</h2>
-<p>Obserwowano pod mikroskopem liczbę komórek drożdży w 400 kwadratach (w informatyce: liczba zapytań do serwera w jednostce czasu). Wyniki pogrupowano:
-0 komórek: 20 razy, 1 komórka: 43 razy, 2 komórki: 53 razy, itd.</p>
+<p>Obserwowano pod mikroskopem liczbę komórek drożdży w 400 kwadratach (w informatyce: liczba zapytań do serwera w jednostce czasu). Wyniki pogrupowano w poniższej tabeli:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Liczba komórek (<span class="arithmatex">\(x_i\)</span>)</th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">1</th>
+<th style="text-align: left;">2</th>
+<th style="text-align: left;">3</th>
+<th style="text-align: left;">4</th>
+<th style="text-align: left;">5</th>
+<th style="text-align: left;">6</th>
+<th style="text-align: left;">7</th>
+<th style="text-align: left;">8</th>
+<th style="text-align: left;">9</th>
+<th style="text-align: left;">10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Liczba kwadratów (<span class="arithmatex">\(n_i\)</span>)</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">43</td>
+<td style="text-align: left;">53</td>
+<td style="text-align: left;">86</td>
+<td style="text-align: left;">70</td>
+<td style="text-align: left;">54</td>
+<td style="text-align: left;">37</td>
+<td style="text-align: left;">21</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
 <p>Na poziomie <span class="arithmatex">\(\alpha=0,05\)</span> zweryfikować hipotezę, że rozkład liczby komórek jest rozkładem Poissona.</p>
 <h2 id="zadanie-7">Zadanie 7</h2>
 <p>Wynikami 5-elementowej próby są: <span class="arithmatex">\(0,18; 0,56; 0,87; 1,37; 2,46\)</span>.</p>
@@ -1684,16 +1717,17 @@
 <div class="arithmatex">\[146.5, 147.9, 153.6, 154.7, 157.5, 158.1, 159.7, 161.5, 172.8, 173.7\]</div>
 <p>Zweryfikować hipotezę o normalności rozkładu na poziomie <span class="arithmatex">\(\alpha=0,10\)</span>, stosując test Shapiro-Wilka.</p>
 <h2 id="zadanie-9">Zadanie 9</h2>
-<p>Zmierzono czasy wykonania pewnego zadania. Uporządkowano wyniki w kolejności otrzymywania (w czasie).</p>
-<p>Pełny ciąg reszt dla <span class="arithmatex">\(n=20\)</span> pomiarów wygląda następująco:</p>
-<div class="arithmatex">\[+, +, -, -, +, +, +, -, -, -, -, +, +, -, -, +, +, -, +, -\]</div>
-<p><strong>Parametry do weryfikacji:</strong></p>
+<p>Zmierzono czasy wykonania pewnego zadania. Uporządkowano wyniki w kolejności otrzymywania (w czasie). Pełny ciąg reszt dla <span class="arithmatex">\(n=20\)</span> pomiarów wygląda następująco:</p>
+<div class="arithmatex">\[
++, +, -, -, +, +, +, -, -, -, -, +, +, -, -, +, +, -, +, -
+\]</div>
+<p>Parametry do weryfikacji:</p>
 <ul>
 <li>Liczba plusów (<span class="arithmatex">\(n_1\)</span>): 10</li>
 <li>Liczba minusów (<span class="arithmatex">\(n_2\)</span>): 10</li>
-<li>Liczba serii (<span class="arithmatex">\(k\)</span>): 9</li>
+<li>Liczba serii (<span class="arithmatex">\(k\)</span>): 10</li>
 </ul>
-<p>Zweryfikować hipotezę o losowości na poziomie <span class="arithmatex">\(\alpha=0.05\)</span>.</p>
+<p>Zweryfikować hipotezę o losowości na poziomie <span class="arithmatex">\(\alpha=0,05\)</span>.</p>
 <h2 id="zadanie-10">Zadanie 10</h2>
 <p>Dla 7 par pomiarów (np. wydajność przed i po aktualizacji sterownika) odnotowano, czy wynik się poprawił (+), czy pogorszył (-). Otrzymano sekwencję:
 <span class="arithmatex">\(+, -, +, +, +, +, -\)</span>.</p>

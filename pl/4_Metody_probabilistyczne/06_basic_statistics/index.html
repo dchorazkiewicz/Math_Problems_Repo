@@ -1690,17 +1690,17 @@ c) Odchylenie standardowe <span class="arithmatex">\(s\)</span>.</p>
 </ul>
 <p>Obliczyć współczynniki zmienności <span class="arithmatex">\(v = \frac{s}{\bar{x}}\)</span> dla obu próbek. Który dysk działa bardziej stabilnie (ma mniejszy rozrzut względny)?</p>
 <h2 id="zadanie-6">Zadanie 6</h2>
-<p>Znaleźć przedział ufności (lub prawdopodobieństwo), wiedząc, że badana cecha <span class="arithmatex">\(X\)</span> populacji ma rozkład normalny <span class="arithmatex">\(N(\mu, \sigma)\)</span>. Statystyka <span class="arithmatex">\(U\)</span>:</p>
+<p>Z populacji o rozkładzie normalnym <span class="arithmatex">\(N(\mu, \sigma)\)</span> pobrano próbę o liczebności 36. Średnia z próby wyniosła <span class="arithmatex">\(\bar{x} = 150\)</span>, a odchylenie standardowe populacji jest znane i wynosi <span class="arithmatex">\(\sigma = 12\)</span>. Wyznaczyć dwustronny przedział ufności dla średniej w populacji <span class="arithmatex">\(\mu\)</span> na poziomie ufności 0.95. W tym celu należy wykorzystać fakt, że statystyka:</p>
 <div class="arithmatex">\[
 U = \frac{\bar{X} - \mu}{\sigma} \sqrt{n}
 \]</div>
 <p>ma rozkład <span class="arithmatex">\(N(0,1)\)</span>.</p>
 <h2 id="zadanie-7">Zadanie 7</h2>
-<p>Wylosowano małą próbkę (<span class="arithmatex">\(n=10\)</span>) z populacji o rozkładzie normalnym. Ponieważ nie znamy odchylenia standardowego populacji <span class="arithmatex">\(\sigma\)</span>, musimy użyć odchylenia z próby <span class="arithmatex">\(s\)</span>. Statystyka:</p>
+<p>Wylosowano małą próbkę (10 elementów) z populacji o rozkładzie normalnym. Ponieważ nie znamy odchylenia standardowego populacji <span class="arithmatex">\(\sigma\)</span>, musimy użyć odchylenia z próby <span class="arithmatex">\(S\)</span> (liczonego ze wzoru z dzieleniem przez <span class="arithmatex">\(n\)</span>). Statystyka:</p>
 <div class="arithmatex">\[
-t = \frac{\bar{X} - \mu}{s} \sqrt{n-1}
+t = \frac{\bar{X} - \mu}{S} \sqrt{n-1}
 \]</div>
-<p>podlega rozkładowi <strong>t-Studenta</strong>. Odczytać z tablic wartość krytyczną dla <span class="arithmatex">\(n-1\)</span> stopni swobody i poziomu ufności <span class="arithmatex">\(0.95\)</span>.</p>
+<p>podlega rozkładowi t-Studenta. Odczytać z tablic wartości krytyczne do zbudowania dwustronnego przedziału ufności na poziomie ufności 0.95.</p>
 <h2 id="zadanie-8">Zadanie 8</h2>
 <p>Dla badania wariancji (rozrzutu) próby stosuje się statystykę:</p>
 <div class="arithmatex">\[
@@ -1709,9 +1709,9 @@ t = \frac{\bar{X} - \mu}{s} \sqrt{n-1}
 <blockquote>
 <p><em>Uwaga: Symbol <span class="arithmatex">\(S^2\)</span> oznacza wariancję z próby liczoną ze wzoru z dzieleniem przez <span class="arithmatex">\(n\)</span> (zgodnie z definicją w podręczniku Krysickiego).</em></p>
 </blockquote>
-<p>która ma rozkład chi-kwadrat. Wykonano 15 pomiarów (<span class="arithmatex">\(n=15\)</span>). Odczytać z tablic wartości, między którymi z prawdopodobieństwem <span class="arithmatex">\(0.90\)</span> znajdzie się ta statystyka.</p>
+<p>Wykonano 15 pomiarów. Odczytać z tablic rozkładu chi-kwadrat wartości krytyczne odcinające symetryczne obszary w ogonach rozkładu (po 5% prawdopodobieństwa na każdy ogon), między którymi z prawdopodobieństwem 0.90 znajdzie się ta statystyka.</p>
 <h2 id="zadanie-9">Zadanie 9</h2>
-<p>Wykazać na prostym przykładzie liczbowym, że średnia z próby <span class="arithmatex">\(\bar{X}\)</span> jest <strong>estymatorem nieobciążonym</strong> średniej w populacji (czyli <span class="arithmatex">\(E(\bar{X}) = \mu\)</span>), natomiast wariancja z próby (dzielona przez <span class="arithmatex">\(n\)</span>) jest obciążona (dlatego dzielimy przez <span class="arithmatex">\(n-1\)</span>).</p>
+<p>Dana jest 3-elementowa populacja o wartościach {2, 4, 6}. Wypisać wszystkie możliwe 2-elementowe próby (przy losowaniu ze zwracaniem), obliczyć średnią dla każdej z nich, a następnie pokazać, że wartość oczekiwana tych średnich z prób jest równa średniej całej populacji. W ten sposób wykażesz liczbowo, że średnia z próby jest estymatorem nieobciążonym.</p>
 <h2 id="zadanie-10">Zadanie 10</h2>
 <p>Dla małej próbki: <span class="arithmatex">\(0.18, 0.56, 0.87, 1.37, 2.46\)</span> wyznaczyć wartości dystrybuanty empirycznej <span class="arithmatex">\(S_n(x)\)</span>.</p>
 

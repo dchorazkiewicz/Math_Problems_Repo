@@ -1802,17 +1802,17 @@ c) The standard deviation <span class="arithmatex">\(s\)</span>.</p>
 </ul>
 <p>Calculate the coefficients of variation <span class="arithmatex">\(v = \frac{s}{\bar{x}}\)</span> for both samples. Which disk operates more stably (has a smaller relative dispersion)?</p>
 <h2 id="task-6">Task 6</h2>
-<p>Find the confidence interval (or probability), knowing that the investigated feature <span class="arithmatex">\(X\)</span> of the population has a normal distribution <span class="arithmatex">\(N(\mu, \sigma)\)</span>. The statistic <span class="arithmatex">\(U\)</span>:</p>
+<p>A sample of size 36 was drawn from a population with a normal distribution <span class="arithmatex">\(N(\mu, \sigma)\)</span>. The sample mean was <span class="arithmatex">\(\bar{x} = 150\)</span>, and the population standard deviation is known to be <span class="arithmatex">\(\sigma = 12\)</span>. Construct a two-sided confidence interval for the population mean <span class="arithmatex">\(\mu\)</span> at a confidence level of 0.95. For this purpose, use the fact that the statistic:</p>
 <div class="arithmatex">\[
 U = \frac{\bar{X} - \mu}{\sigma} \sqrt{n}
 \]</div>
-<p>has a distribution <span class="arithmatex">\(N(0,1)\)</span>.</p>
+<p>follows a standard normal distribution <span class="arithmatex">\(N(0,1)\)</span>.</p>
 <h2 id="task-7">Task 7</h2>
-<p>A small sample (<span class="arithmatex">\(n=10\)</span>) was drawn from a population with a normal distribution. Since we do not know the population standard deviation <span class="arithmatex">\(\sigma\)</span>, we must use the sample deviation <span class="arithmatex">\(s\)</span>. The statistic:</p>
+<p>A small sample (10 elements) was drawn from a population with a normal distribution. Since we do not know the population standard deviation <span class="arithmatex">\(\sigma\)</span>, we must use the sample standard deviation <span class="arithmatex">\(S\)</span> (calculated using the formula divided by <span class="arithmatex">\(n\)</span>). The statistic:</p>
 <div class="arithmatex">\[
-t = \frac{\bar{X} - \mu}{s} \sqrt{n-1}
+t = \frac{\bar{X} - \mu}{S} \sqrt{n-1}
 \]</div>
-<p>follows the <strong>Student's t-distribution</strong>. Read from the tables the critical value for <span class="arithmatex">\(n-1\)</span> degrees of freedom and a confidence level of <span class="arithmatex">\(0.95\)</span>.</p>
+<p>follows the Student's t-distribution. Read from the tables the critical values needed to construct a two-sided confidence interval at a confidence level of 0.95.</p>
 <h2 id="task-8">Task 8</h2>
 <p>To investigate the sample variance (dispersion), the following statistic is used:</p>
 <div class="arithmatex">\[
@@ -1821,9 +1821,9 @@ t = \frac{\bar{X} - \mu}{s} \sqrt{n-1}
 <blockquote>
 <p><em>Note: The symbol <span class="arithmatex">\(S^2\)</span> denotes the sample variance calculated with the formula dividing by <span class="arithmatex">\(n\)</span> (according to the definition in Krysicki's textbook).</em></p>
 </blockquote>
-<p>which has a chi-square distribution. 15 measurements were taken (<span class="arithmatex">\(n=15\)</span>). Read from the tables the values between which this statistic will fall with a probability of <span class="arithmatex">\(0.90\)</span>.</p>
+<p>15 measurements were taken. Read from the chi-square distribution tables the critical values that cut off symmetrical areas in the tails (5% probability for each tail), between which this statistic will fall with a probability of 0.90.</p>
 <h2 id="task-9">Task 9</h2>
-<p>Show on a simple numerical example that the sample mean <span class="arithmatex">\(\bar{X}\)</span> is an <strong>unbiased estimator</strong> of the population mean (i.e., <span class="arithmatex">\(E(\bar{X}) = \mu\)</span>), whereas the sample variance (divided by <span class="arithmatex">\(n\)</span>) is biased (which is why we divide by <span class="arithmatex">\(n-1\)</span>).</p>
+<p>Given a 3-element population with values {2, 4, 6}. List all possible 2-element samples (sampling with replacement), calculate the mean for each, and then show that the expected value of these sample means equals the mean of the entire population. In this way, you will demonstrate numerically that the sample mean is an unbiased estimator.</p>
 <h2 id="task-10">Task 10</h2>
 <p>For a small sample: <span class="arithmatex">\(0.18, 0.56, 0.87, 1.37, 2.46\)</span>, determine the values of the empirical distribution function <span class="arithmatex">\(S_n(x)\)</span>.</p>
 

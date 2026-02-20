@@ -1664,12 +1664,26 @@ b) Prawdopodobieństwo błędu II rodzaju <span class="arithmatex">\(\beta\)</sp
 <p>a) Wyznaczyć wzór na funkcję operacyjno-charakterystyczną (OC): <span class="arithmatex">\(L(\mu) = P(\text{akceptacja } H_0 | \mu)\)</span>.
 b) Jak zmiana liczebności próby na <span class="arithmatex">\(n=100\)</span> wpłynie na stromość tej krzywej (zdolność rozróżniania)?</p>
 <h2 id="zadanie-4">Zadanie 4</h2>
-<p>Chcemy skonstruować test dla średniej, który spełnia surowe wymogi bezpieczeństwa:</p>
+<p>Chcemy skonstruować <strong>jednostronny test średniej</strong> dla populacji o rozkładzie normalnym 
+z <strong>znanym odchyleniem standardowym</strong> <span class="arithmatex">\(\sigma = 5\)</span>.</p>
+<p>Testujemy hipotezy:</p>
+<div class="arithmatex">\[
+H_0: \mu = \mu_0 
+\quad \text{przeciwko} \quad
+H_1: \mu = \mu_0 + 2.
+\]</div>
+<p>Wymagania bezpieczeństwa są następujące:</p>
 <ul>
-<li>Ryzyko odrzucenia normy, gdy jest ona spełniona (<span class="arithmatex">\(\alpha\)</span>), ma wynosić 0,01.</li>
-<li>Ryzyko przyjęcia normy, gdy przesunięcie średniej wynosi 2 jednostki (<span class="arithmatex">\(\beta\)</span>), ma nie przekraczać 0,05.</li>
+<li>Ryzyko błędu I rodzaju (odrzucenie normy, gdy jest spełniona) ma wynosić<br />
+  $<span class="arithmatex">\(\alpha = 0{,}01.\)</span>$</li>
+<li>Ryzyko błędu II rodzaju (przyjęcie normy, gdy rzeczywiste przesunięcie średniej wynosi 2 jednostki) ma nie przekraczać<br />
+  $<span class="arithmatex">\(\beta = 0{,}05.\)</span>$</li>
 </ul>
-<p>Ile minimalnie pomiarów należy wykonać?</p>
+<p>Zakładając, że test oparty jest na statystyce</p>
+<div class="arithmatex">\[
+Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}},
+\]</div>
+<p>wyznaczyć <strong>minimalną liczebność próby <span class="arithmatex">\(n\)</span></strong>, która spełnia powyższe warunki.</p>
 <h2 id="zadanie-5">Zadanie 5</h2>
 <p>Wadliwość produkcji pewnych wyrobów wynosiła do tej pory 10% (<span class="arithmatex">\(p_0=0,1\)</span>). Nowa technologia ma obniżyć wadliwość do 5% (<span class="arithmatex">\(p_1=0,05\)</span>). Zamiast pobierać stałą próbkę, pobieramy elementy po jednym.</p>
 <p>Skonstruować test sekwencyjny ilorazu wiarogodności (test Walda), ustalając ryzyka <span class="arithmatex">\(\alpha=0,05\)</span> i <span class="arithmatex">\(\beta=0,10\)</span>.</p>

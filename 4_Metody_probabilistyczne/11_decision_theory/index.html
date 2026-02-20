@@ -1776,12 +1776,25 @@ b) The probability of a Type II error <span class="arithmatex">\(\beta\)</span> 
 <p>a) Determine the formula for the operating characteristic (OC) function: <span class="arithmatex">\(L(\mu) = P(\text{acceptance of } H_0 | \mu)\)</span>.
 b) How will changing the sample size to <span class="arithmatex">\(n=100\)</span> affect the steepness of this curve (discriminatory ability)?</p>
 <h2 id="task-4">Task 4</h2>
-<p>We want to construct a test for the mean that meets strict safety requirements:</p>
+<p>We want to construct a <strong>one-sided test for the population mean</strong> assuming a normal distribution with <strong>known standard deviation</strong> <span class="arithmatex">\(\sigma = 5\)</span>.</p>
+<p>We test the hypotheses:</p>
+<div class="arithmatex">\[
+H_0: \mu = \mu_0
+\quad \text{against} \quad
+H_1: \mu = \mu_0 + 2.
+\]</div>
+<p>The safety requirements are:</p>
 <ul>
-<li>The risk of rejecting the norm when it is met (<span class="arithmatex">\(\alpha\)</span>) is to be 0.01.</li>
-<li>The risk of accepting the norm when the mean shift is 2 units (<span class="arithmatex">\(\beta\)</span>) is not to exceed 0.05.</li>
+<li>The probability of a Type I error (rejecting the norm when it is true) must be<br />
+  $<span class="arithmatex">\(\alpha = 0.01.\)</span>$</li>
+<li>The probability of a Type II error (accepting the norm when the true mean is shifted by 2 units) must not exceed<br />
+  $<span class="arithmatex">\(\beta = 0.05.\)</span>$</li>
 </ul>
-<p>What is the minimum number of measurements that must be performed?</p>
+<p>Assuming the test is based on the statistic</p>
+<div class="arithmatex">\[
+Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}},
+\]</div>
+<p>determine the <strong>minimum sample size <span class="arithmatex">\(n\)</span></strong> that satisfies the above conditions.</p>
 <h2 id="task-5">Task 5</h2>
 <p>The defectiveness of the production of certain products has been 10% (<span class="arithmatex">\(p_0=0.1\)</span>) so far. A new technology is expected to reduce defectiveness to 5% (<span class="arithmatex">\(p_1=0.05\)</span>). Instead of taking a fixed sample, we take items one by one.</p>
 <p>Construct a sequential probability ratio test (Wald test), setting risks <span class="arithmatex">\(\alpha=0.05\)</span> and <span class="arithmatex">\(\beta=0.10\)</span>.</p>

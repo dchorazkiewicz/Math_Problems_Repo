@@ -1781,7 +1781,8 @@
 <p>Dla testu średniej <span class="arithmatex">\(H_0: \mu = 100\)</span> przy znanym <span class="arithmatex">\(\sigma=5\)</span> i <span class="arithmatex">\(n=25\)</span>:</p>
 <ol>
 <li>Wyznaczyć wzór na funkcję operacyjno-charakterystyczną (OC): <span class="arithmatex">\(L(\mu) = P(\text{akceptacja } H_0 | \mu)\)</span>.</li>
-<li>Jak zmiana liczebności próby na <span class="arithmatex">\(n=100\)</span> wpłynie na stromość tej krzywej (zdolność rozróżniania)?</li>
+<li>Jak zmiana liczebności próby na <span class="arithmatex">\(n=100\)</span> wpłynie na stromość tej krzywej (zdolność rozróżniania)?
+Rozważamy test jednostronny przy poziomie istotności ( \alpha = 0.05 ).</li>
 </ol>
 <h2 id="zadanie-4">Zadanie 4</h2>
 <p>Chcemy skonstruować <strong>jednostronny test średniej</strong> dla populacji o rozkładzie normalnym 
@@ -1819,10 +1820,12 @@ Dobry, Dobry, Zły, Dobry, Dobry, Dobry, Dobry...</p>
 <div class="arithmatex">\[
 E(n) \approx \frac{\alpha\ln A + (1-\alpha) \ln B}{E(z)}
 \]</div>
-<p>gdzie <span class="arithmatex">\(A, B\)</span> to progi decyzyjne.</p>
+<p>gdzie <span class="arithmatex">\(A, B\)</span> to progi decyzyjne.
+Zmienne ( z ) oznacza logarytm ilorazu wiarygodności dla pojedynczej obserwacji.</p>
 <h2 id="zadanie-8">Zadanie 8</h2>
 <p>Automat produkuje detale o średnicy nominalnej <span class="arithmatex">\(\mu_0\)</span>. Podejrzewamy, że maszyna się rozkalibrowała i średnia wzrosła do <span class="arithmatex">\(\mu_1\)</span>. Odchylenie <span class="arithmatex">\(\sigma\)</span> jest znane.</p>
-<p>Skonstruować test sekwencyjny weryfikujący <span class="arithmatex">\(H_0: \mu = \mu_0\)</span> przeciwko <span class="arithmatex">\(H_1: \mu = \mu_1\)</span>. Napisać warunek „stop” dla tego algorytmu.</p>
+<p>Skonstruować test sekwencyjny weryfikujący <span class="arithmatex">\(H_0: \mu = \mu_0\)</span> przeciwko <span class="arithmatex">\(H_1: \mu = \mu_1\)</span>. Napisać warunek „stop” dla tego algorytmu.
+Przyjmujemy poziomy błędów ( \alpha = 0.05 ) oraz ( \beta = 0.10 ).</p>
 <h2 id="zadanie-9">Zadanie 9</h2>
 <p>Mamy dwie możliwe decyzje <span class="arithmatex">\(d_1\)</span> (wdrożenie systemu) i <span class="arithmatex">\(d_2\)</span> (brak wdrożenia) oraz dwa stany natury <span class="arithmatex">\(\theta_1\)</span> (system działa poprawnie) i <span class="arithmatex">\(\theta_2\)</span> (system ma błędy). Macierz strat (kosztów) wygląda następująco:</p>
 <ul>

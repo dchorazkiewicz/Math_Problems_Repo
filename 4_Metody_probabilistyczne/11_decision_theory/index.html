@@ -1781,7 +1781,8 @@
 <p>For a mean test <span class="arithmatex">\(H_0: \mu = 100\)</span> with known <span class="arithmatex">\(\sigma=5\)</span> and <span class="arithmatex">\(n=25\)</span>:</p>
 <ol>
 <li>Determine the formula for the operating characteristic (OC) function: <span class="arithmatex">\(L(\mu) = P(\text{acceptance of } H_0 | \mu)\)</span>.</li>
-<li>How will changing the sample size to <span class="arithmatex">\(n=100\)</span> affect the steepness of this curve (discriminatory ability)?</li>
+<li>How will changing the sample size to <span class="arithmatex">\(n=100\)</span> affect the steepness of this curve (discriminatory ability)?
+Consider a one-sided test at significance level ( \alpha = 0.05 ).</li>
 </ol>
 <h2 id="task-4">Task 4</h2>
 <p>We want to construct a <strong>one-sided test for the population mean</strong> assuming a normal distribution with <strong>known standard deviation</strong> <span class="arithmatex">\(\sigma = 5\)</span>.</p>
@@ -1817,10 +1818,12 @@ Good, Good, Bad, Good, Good, Good, Good...</p>
 <div class="arithmatex">\[
 E(n) \approx \frac{\alpha\ln A + (1-\alpha) \ln B}{E(z)}
 \]</div>
-<p>where <span class="arithmatex">\(A, B\)</span> are decision thresholds.</p>
+<p>where <span class="arithmatex">\(A, B\)</span> are decision thresholds.
+Here ( z ) denotes the log-likelihood ratio for a single observation.</p>
 <h2 id="task-8">Task 8</h2>
 <p>An automated machine produces parts with a nominal diameter <span class="arithmatex">\(\mu_0\)</span>. We suspect that the machine has become decalibrated and the mean has increased to <span class="arithmatex">\(\mu_1\)</span>. The deviation <span class="arithmatex">\(\sigma\)</span> is known.</p>
-<p>Construct a sequential test verifying <span class="arithmatex">\(H_0: \mu = \mu_0\)</span> against <span class="arithmatex">\(H_1: \mu = \mu_1\)</span>. Write the "stop" condition for this algorithm.</p>
+<p>Construct a sequential test verifying <span class="arithmatex">\(H_0: \mu = \mu_0\)</span> against <span class="arithmatex">\(H_1: \mu = \mu_1\)</span>. Write the "stop" condition for this algorithm.
+Assume error probabilities ( \alpha = 0.05 ) and ( \beta = 0.10 ).</p>
 <h2 id="task-9">Task 9</h2>
 <p>We have two possible decisions <span class="arithmatex">\(d_1\)</span> (system deployment) and <span class="arithmatex">\(d_2\)</span> (no deployment) and two states of nature <span class="arithmatex">\(\theta_1\)</span> (system works correctly) and <span class="arithmatex">\(\theta_2\)</span> (system has errors). The loss (cost) matrix is as follows:</p>
 <ul>

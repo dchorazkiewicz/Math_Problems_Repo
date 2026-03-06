@@ -1144,6 +1144,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#optional-exploration-with-simulations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional exploration with simulations
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2032,6 +2043,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#optional-exploration-with-simulations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional exploration with simulations
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2384,6 +2406,39 @@
 <li>understand what an <strong>elementary outcome</strong> represents.</li>
 </ul>
 <p>You are encouraged to <strong>draw tree diagrams for the experiments in the following tasks whenever possible</strong>.</p>
+<hr />
+<h3 id="optional-exploration-with-simulations">Optional exploration with simulations</h3>
+<p>Another useful way to understand random experiments is to <strong>simulate them on a computer</strong>.</p>
+<p>You are encouraged to experiment with simple simulations, for example by asking an AI assistant or a chat tool to help you create a small <strong>HTML/JavaScript program</strong> that performs repeated random trials.</p>
+<p>For instance, you could simulate:</p>
+<ul>
+<li>repeated <strong>coin tosses</strong>,</li>
+<li>repeated <strong>die rolls</strong>,</li>
+<li>repeated <strong>card draws</strong>.</li>
+</ul>
+<p>Such programs can generate many outcomes and display the results of the experiment.</p>
+<p>This type of computational experiment is commonly known as a <strong>Monte Carlo simulation</strong>.</p>
+<p>In a Monte Carlo simulation, the computer performs the same random experiment <strong>many thousands or even millions of times</strong>.<br />
+The results can then be used to estimate probabilities by observing the <strong>relative frequencies of events</strong>.</p>
+<p>When running such simulations, you may notice that:</p>
+<ul>
+<li>every run of the program produces a <strong>different sequence of outcomes</strong>,  </li>
+<li>the <strong>observed frequencies fluctuate</strong> when the number of trials is small,  </li>
+<li>but as the number of trials increases, the frequencies tend to <strong>approach the theoretical probabilities</strong> that you compute analytically.</li>
+</ul>
+<p>For example, when tossing a fair coin the theoretical probability of heads is</p>
+<div class="arithmatex">\[
+P(H) = \frac{1}{2}
+\]</div>
+<p>In a simulation of only a few tosses you might observe:</p>
+<ul>
+<li>7 heads out of 10 tosses,</li>
+<li>or 3 heads out of 10 tosses.</li>
+</ul>
+<p>However, if the simulation performs thousands or millions of tosses, the <strong>relative frequency of heads</strong> will typically become closer and closer to <span class="arithmatex">\(0.5\)</span>.</p>
+<p>It will <strong>never match the theoretical value perfectly</strong>, but it will usually <strong>approach it more closely as the number of trials increases</strong>.</p>
+<p>When creating your simulations, you may therefore consider adding a feature that allows the program to run <strong>very long Monte Carlo experiments</strong>, so that you can observe how the empirical frequencies gradually approach the theoretical probabilities calculated in the exercises below.</p>
+<hr />
 <h2 id="task-1-coin-tossing">Task 1 — Coin Tossing</h2>
 <p>Consider an experiment consisting of tossing a <strong>fair coin</strong>.</p>
 <p>The order of outcomes matters.</p>

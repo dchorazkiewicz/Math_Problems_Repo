@@ -967,6 +967,13 @@
         <xhtml:link rel="alternate" hreflang="pl" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/basic/01_events_and_probability/"/>
     </url>
     <url>
+        <loc>https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/basic/02_probability_distributions/</loc>
+        <lastmod>2026-03-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/basic/02_probability_distributions/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/basic/02_probability_distributions/"/>
+    </url>
+    <url>
         <loc>https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/basic/solution_01_events_and_probability/sol_prob_01/</loc>
         <lastmod>2026-03-06</lastmod>
         <changefreq>daily</changefreq>
@@ -2001,6 +2008,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="pl" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/basic/01_events_and_probability/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/basic/01_events_and_probability/"/>
+    </url>
+    <url>
+        <loc>https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/basic/02_probability_distributions/</loc>
+        <lastmod>2026-03-06</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/basic/02_probability_distributions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/basic/02_probability_distributions/"/>
     </url>
     <url>
         <loc>https://dchorazkiewicz.github.io/Math_Problems_Repo/pl/4_Metody_probabilistyczne/basic/solution_01_events_and_probability/sol_prob_01/</loc>

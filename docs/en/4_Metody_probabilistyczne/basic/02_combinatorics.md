@@ -338,17 +338,17 @@ For each situation determine which combinatorial model is most appropriate:
 
 ## Task 3 — Permutations with Repeated Elements
 
-1. How many distinct arrangements of the word  
+1. How many distinct arrangements of the word
    $$
    MISSISSIPPI
    $$
    are possible?
-2. How many distinct arrangements of  
+3. How many distinct arrangements of  
    $$
    STATISTICS
    $$
    are possible?
-3. How many of the arrangements of **STATISTICS** start with the letter **S**?
+4. How many of the arrangements of **STATISTICS** start with the letter **S**?
 
 ---
 

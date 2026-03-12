@@ -33,7 +33,7 @@ Expressing this mathematically, the sample space is the set of all possible comb
 
 **Sample Space:** 
 
-$$\Omega = \left\{ (x, \theta) \mid 0 \le x \le \frac{d}{2} \text{ and } 0 \le \theta \le \frac{\pi}{2} \right\}$$
+$$\Omega = \left\lbrace (x, \theta) \mid 0 \le x \le \frac{d}{2} \text{ and } 0 \le \theta \le \frac{\pi}{2} \right\rbrace$$
 
 ---
 

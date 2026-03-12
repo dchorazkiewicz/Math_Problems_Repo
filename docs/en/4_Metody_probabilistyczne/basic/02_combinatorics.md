@@ -1,7 +1,5 @@
 # Task List 02 — Combinatorics for Probability
 
-> **Note:** This task list is still being developed. For now, please don’t work on it yet. :)
-
 ## Introduction
 
 Many probability problems start by counting outcomes: the size of a sample space, the number of favorable outcomes, or the number of possible codes or arrangements. The main difficulty is usually not the formula, but recognizing which counting model applies.

@@ -1,84 +1,155 @@
-# Task 2 — Rolling a Die
+# Task 7 — Events and Probabilities in Die Rolling
 
-Consider an experiment consisting of rolling a fair six-sided die.  
-We treat the **order of outcomes as important**.
-
----
-
-## 1. Sample space for one roll — $\Omega_1$
-
-**Definition:**  
-The sample space lists all possible outcomes of **one die roll**.
-
-$$
-\Omega_1 = \{1, 2, 3, 4, 5, 6\}
-$$
-
-**Number of elementary outcomes:**
-$$
-|\Omega_1| = 6
-$$
-
-**Explanation:**  
-Each outcome represents the number shown on the die after a single roll.
+Consider rolling a fair six-sided die. All outcomes are equally likely.  
+We examine **one, two, and three consecutive rolls**.
 
 ---
 
-## 2. Sample space for two consecutive rolls — $\Omega_2$
+## 1. Sample spaces
 
-**Definition:**  
-Each outcome is an **ordered pair** showing results of the first and second roll.
-
+### One roll — $\Omega_1$
 $$
-\Omega_2 = \{(i,j) \mid i,j = 1,2,3,4,5,6\}
+\Omega_1 = \{1, 2, 3, 4, 5, 6\}, \quad |\Omega_1| = 6
+$$  
+**Probability of each outcome:**  
 $$
-
-**Number of outcomes:**
-$$
-|\Omega_2| = 6 \cdot 6 = 36
+P(\{i\}) = \frac{1}{6}, \quad i=1,\dots,6
 $$
 
-**Explanation:**  
-- The first number = result of the first roll  
-- The second number = result of the second roll  
-- Example outcomes: (1,1), (1,2), ..., (6,6)
+### Two rolls — $\Omega_2$
+$$
+\Omega_2 = \{(i,j) \mid i,j = 1,\dots,6\}, \quad |\Omega_2| = 36
+$$  
+**Probability of each outcome:**  
+$$
+P(\{(i,j)\}) = \frac{1}{36}
+$$
+
+### Three rolls — $\Omega_3$
+$$
+\Omega_3 = \{(i,j,k) \mid i,j,k = 1,\dots,6\}, \quad |\Omega_3| = 216
+$$  
+**Probability of each outcome:**  
+$$
+P(\{(i,j,k)\}) = \frac{1}{216}
+$$
 
 ---
 
-## 3. Sample space for three consecutive rolls — $\Omega_3$
+## 2. One Die Roll
 
-**Definition:**  
-Each outcome is an **ordered triple** showing results of three rolls.
-
+### Event $A_1$ — Result is even
+**Subset:**
 $$
-\Omega_3 = \{(i,j,k) \mid i,j,k = 1,2,3,4,5,6\}
+A_1 = \{2, 4, 6\}, \quad |A_1| = 3
+$$  
+**Probability:**
 $$
-
-**Number of outcomes:**
-$$
-|\Omega_3| = 6 \cdot 6 \cdot 6 = 216
+P(A_1) = \frac{3}{6} = \frac{1}{2}
 $$
 
-**Explanation:**  
-- Each outcome shows the results of the first, second, and third rolls  
-- Example: (1,3,5), (6,6,6), etc.
+### Event $B_1$ — Result greater than 4
+**Subset:**
+$$
+B_1 = \{5, 6\}, \quad |B_1| = 2
+$$  
+**Probability:**
+$$
+P(B_1) = \frac{2}{6} = \frac{1}{3}
+$$
+
+### Event $C_1$ — Result at most 3
+**Subset:**
+$$
+C_1 = \{1, 2, 3\}, \quad |C_1| = 3
+$$  
+**Probability:**
+$$
+P(C_1) = \frac{3}{6} = \frac{1}{2}
+$$
 
 ---
 
-## 4. Number of elementary outcomes summary
+## 3. Two Die Rolls
 
-| Sample Space | Number of Outcomes |
-|--------------|------------------|
-| $\Omega_1$  | 6                |
-| $\Omega_2$  | 36               |
-| $\Omega_3$  | 216              |
+### Event $A_2$ — Sum equals 7
+**Subset:**
+$$
+A_2 = \{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}, \quad |A_2| = 6
+$$  
+**Probability:**
+$$
+P(A_2) = \frac{6}{36} = \frac{1}{6}
+$$
+
+### Event $B_2$ — Both rolls are the same
+**Subset:**
+$$
+B_2 = \{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}, \quad |B_2| = 6
+$$  
+**Probability:**
+$$
+P(B_2) = \frac{6}{36} = \frac{1}{6}
+$$
+
+### Event $C_2$ — Sum at least 10
+**Subset:** 
+$$
+C_2 = \{(4,6),(5,5),(5,6),(6,4),(6,5),(6,6)\}, \quad |C_2| = 6
+$$  
+**Probability:**
+$$
+P(C_2) = \frac{6}{36} = \frac{1}{6}
+$$
 
 ---
 
-## 5. What an elementary outcome represents
+## 4. Three Die Rolls
 
-- **One roll ($\Omega_1$):** The number showing on a single die.  
-- **Two rolls ($\Omega_2$):** A specific ordered pair of numbers from two rolls.  
-- **Three rolls ($\Omega_3$):** A specific ordered triple of numbers from three rolls.  
+### Event $A_3$ — Sum equals 10
+**Explanation:** List all triples $(i,j,k)$ such that $i+j+k=10$. There are **27 outcomes**.  
 
-Each elementary outcome is **equally likely** since the die is fair.
+**Probability:**
+$$
+P(A_3) = \frac{27}{216} = \frac{1}{8}
+$$
+
+### Event $B_3$ — Exactly two rolls give the same number
+**Step-by-step counting:**  
+1. Choose the number that appears twice: 6 choices  
+2. Choose which two positions have this number: C(3,2) = 3  
+3. Choose remaining number different from repeated one: 5 choices  
+**Total outcomes:** 6 × 3 × 5 = 90  
+
+**Probability:**
+$$
+P(B_3) = \frac{90}{216} = \frac{5}{12}
+$$
+
+### Event $C_3$ — Two twos and one three (any order)
+**Step-by-step:**  
+1. Choose positions for the twos: C(3,2) = 3  
+2. Remaining position is 3  
+**Total outcomes:** 3  
+
+**Probability:**
+$$
+P(C_3) = \frac{3}{216} = \frac{1}{72}
+$$
+
+---
+
+## 5. Additional Event on $\Omega_3$
+
+### Event $D_3$ — All rolls are even
+**Step-by-step:**  
+- Even numbers: 2, 4, 6  
+- Each roll independent → 3 choices per roll  
+- Total outcomes: 3³ = 27  
+
+**Probability:**
+$$
+P(D_3) = \frac{27}{216} = \frac{1}{8}
+$$
+
+---

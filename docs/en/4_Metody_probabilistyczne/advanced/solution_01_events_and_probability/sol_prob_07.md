@@ -1,165 +1,159 @@
-# Task 7 
+# Task 7 — Events and Probabilities in Die Rolling
 
-## Short Theory
-
-This is a **classical problem of communication with independent errors**.
-
-1. **Independent events**:
-   If events are independent, the probability of all happening is the **product of individual probabilities**:
-
-```text
-P(A ∩ B ∩ C) = P(A) * P(B) * P(C)
-```
-
-2. **Conditional probability with errors**:
-   If a symbol is transmitted with probability `p` of being correctly received and `q = 1 - p` of being flipped:
-
-* `P(received symbol | transmitted symbol)`:
-
-```text
-P(1 received | 1 sent) = 1 - ε
-P(0 received | 1 sent) = ε
-P(0 received | 0 sent) = 1 - ε
-P(1 received | 0 sent) = ε
-```
-
-Where ε is the **error probability**.
-
-3. **Total probability for code sequences**:
-   For a sequence of length 3:
-
-```text
-P(received code | transmitted code) = Π P(received bit_i | transmitted bit_i)
-```
-
-4. **Overall probability** of receiving a code:
-
-```text
-P(received code) = Σ P(transmitted code_i) * P(received code | transmitted code_i)
-```
+We consider rolling a fair six-sided die. All outcomes are equally likely.
 
 ---
 
-## Step 0: Given Data
+## Step 1: Define Sample Spaces
 
-* Transmitted codes and a priori probabilities:
+### One roll: $\Omega_1$
+$$
+\Omega_1 = \{1, 2, 3, 4, 5, 6\}, \quad |\Omega_1| = 6
+$$
+**Probability of each elementary outcome:**
+$$
+P(\{i\}) = \frac{1}{6}, \quad i=1,\dots,6
+$$
 
-```text
-111: P(T=111) = 0.65
-000: P(T=000) = 0.35
-```
+### Two rolls: $\Omega_2$
+$$
+\Omega_2 = \{(i,j) \mid i,j = 1,\dots,6\}, \quad |\Omega_2| = 6^2 = 36
+$$
+**Probability of each outcome:**
+$$
+P(\{(i,j)\}) = \frac{1}{36}
+$$
 
-* Error probability for each symbol:
-
-```text
-ε = 0.2
-```
-
-* Transmission rules:
-
-```text
-P(1 received | 1 sent) = 0.8
-P(0 received | 1 sent) = 0.2
-P(0 received | 0 sent) = 0.8
-P(1 received | 0 sent) = 0.2
-```
-
----
-
-## Step 1: Probability of receiving 111
-
-We consider **both possible transmitted codes**:
-
-### Case 1: 111 was transmitted
-
-```text
-P(received 111 | transmitted 111) = 0.8 * 0.8 * 0.8 = 0.512
-```
-
-### Case 2: 000 was transmitted
-
-```text
-P(received 111 | transmitted 000) = 0.2 * 0.2 * 0.2 = 0.008
-```
-
-### Total probability (law of total probability):
-
-```text
-P(111 received) = 0.65 * 0.512 + 0.35 * 0.008
-                = 0.3328 + 0.0028
-                = 0.3356
-```
-
-✅ **Answer**: `P(111 received) ≈ 0.336`
+### Three rolls: $\Omega_3$
+$$
+\Omega_3 = \{(i,j,k) \mid i,j,k = 1,\dots,6\}, \quad |\Omega_3| = 6^3 = 216
+$$
+**Probability of each outcome:**
+$$
+P(\{(i,j,k)\}) = \frac{1}{216}
+$$
 
 ---
 
-## Step 2: Probability of receiving 000
+## Part A — One Die Roll
 
-### Case 1: 111 transmitted
+### 1. Event $A_1$ — Result is even
+**Subset:**
+$$
+A_1 = \{2, 4, 6\}, \quad |A_1| = 3
+$$
+**Probability:**
+$$
+P(A_1) = \frac{|A_1|}{|\Omega_1|} = \frac{3}{6} = \frac{1}{2}
+$$
 
-```text
-P(received 000 | transmitted 111) = 0.2 * 0.2 * 0.2 = 0.008
-```
+### 2. Event $B_1$ — Result greater than 4
+**Subset:**
+$$
+B_1 = \{5, 6\}, \quad |B_1| = 2
+$$
+**Probability:**
+$$
+P(B_1) = \frac{2}{6} = \frac{1}{3}
+$$
 
-### Case 2: 000 transmitted
-
-```text
-P(received 000 | transmitted 000) = 0.8 * 0.8 * 0.8 = 0.512
-```
-
-### Total probability:
-
-```text
-P(000 received) = 0.65 * 0.008 + 0.35 * 0.512
-                = 0.0052 + 0.1792
-                = 0.1844
-```
-
-✅ **Answer**: `P(000 received) ≈ 0.184`
-
----
-
-## Step 3: Probability of receiving 010
-
-### Case 1: 111 transmitted
-
-* Sequence 010 received when 111 transmitted:
-
-```text
-P(received 010 | transmitted 111) = P(0|1) * P(1|1) * P(0|1)
-                                   = 0.2 * 0.8 * 0.2
-                                   = 0.032
-```
-
-### Case 2: 000 transmitted
-
-* Sequence 010 received when 000 transmitted:
-
-```text
-P(received 010 | transmitted 000) = P(0|0) * P(1|0) * P(0|0)
-                                   = 0.8 * 0.2 * 0.8
-                                   = 0.128
-```
-
-### Total probability:
-
-```text
-P(010 received) = 0.65 * 0.032 + 0.35 * 0.128
-                = 0.0208 + 0.0448
-                = 0.0656
-```
-
-✅ **Answer**: `P(010 received) ≈ 0.066`
+### 3. Event $C_1$ — Result at most 3
+**Subset:**
+$$
+C_1 = \{1, 2, 3\}, \quad |C_1| = 3
+$$
+**Probability:**
+$$
+P(C_1) = \frac{3}{6} = \frac{1}{2}
+$$
 
 ---
 
-## ✅ Final Answers
+## Part B — Two Die Rolls
 
-```text
-1. P(received 111) ≈ 0.336
-2. P(received 000) ≈ 0.184
-3. P(received 010) ≈ 0.066
-```
+### 1. Event $A_2$ — Sum equals 7
+**Subset:**
+$$
+A_2 = \{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}, \quad |A_2| = 6
+$$
+**Probability:**
+$$
+P(A_2) = \frac{6}{36} = \frac{1}{6}
+$$
+
+### 2. Event $B_2$ — Both rolls are the same
+**Subset:**
+$$
+B_2 = \{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}, \quad |B_2| = 6
+$$
+**Probability:**
+$$
+P(B_2) = \frac{6}{36} = \frac{1}{6}
+$$
+
+### 3. Event $C_2$ — Sum at least 10
+**Subset:**
+$$
+C_2 = \{(4,6),(5,5),(5,6),(6,4),(6,5),(6,6)\}, \quad |C_2| = 6
+$$
+**Probability:**
+$$
+P(C_2) = \frac{6}{36} = \frac{1}{6}
+$$
+
+---
+
+## Part C — Three Die Rolls
+
+### 1. Event $A_3$ — Sum equals 10
+**Subset:** Count outcomes systematically:
+
+- Examples: (1,3,6), (1,4,5), (2,2,6), (2,3,5), (2,4,4), (3,3,4), …  
+
+After counting carefully, **27 outcomes** satisfy sum = 10.
+
+**Probability:**
+$$
+P(A_3) = \frac{27}{216} = \frac{1}{8}
+$$
+
+### 2. Event $B_3$ — Exactly two rolls give the same number
+**Explanation:**  
+
+- Choose number that appears twice: 6 options  
+- Choose which two positions: C(3,2) = 3  
+- Choose remaining number different from repeated one: 5 options  
+- Multiply: 6 × 3 × 5 = 90 outcomes  
+
+**Probability:**
+$$
+P(B_3) = \frac{90}{216} = \frac{5}{12}
+$$
+
+### 3. Event $C_3$ — Outcomes contain two twos and one three (any order)
+**Step-by-step:**  
+
+- Positions for two twos: C(3,2) = 3  
+- The remaining position = 3  
+- Total outcomes = 3  
+
+**Probability:**
+$$
+P(C_3) = \frac{3}{216} = \frac{1}{72}
+$$
+
+---
+
+## Part D — Additional Event on $\Omega_3$
+
+**Event $D_3$ — All rolls are even**  
+
+- Even numbers: 2, 4, 6  
+- Each of 3 positions can independently be even → 3³ = 27 outcomes  
+
+**Probability:**
+$$
+P(D_3) = \frac{27}{216} = \frac{1}{8}
+$$
 
 ---

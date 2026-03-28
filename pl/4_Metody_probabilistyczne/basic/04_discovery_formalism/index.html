@@ -2153,10 +2153,10 @@ R     .   .   .   .   .   .   .
 5     . . . . . .
 6     . . . . . .
 </code></pre>
-<p>Each cell corresponds to one outcome ((i,j)), where:</p>
+<p>Each cell corresponds to one outcome <span class="arithmatex">\((i,j)\)</span>, where:</p>
 <ul>
-<li>(i) is the result of the first die,</li>
-<li>(j) is the result of the second die.</li>
+<li><span class="arithmatex">\(i\)</span> is the result of the first die,</li>
+<li><span class="arithmatex">\(j\)</span> is the result of the second die.</li>
 </ul>
 <p>Use the notation:</p>
 <ul>
@@ -2170,12 +2170,12 @@ If someone wants, they may also prepare an <strong>HTML visualization</strong>, 
 <h2 id="part-a-basic-statements">Part A — basic statements</h2>
 <p>Mark the events corresponding to the following statements:</p>
 <ul>
-<li>(A): the sum of the two results is equal to 7</li>
-<li>(B): the first die shows a greater number than the second</li>
-<li>(C): at least one die shows 6</li>
+<li><span class="arithmatex">\(A\)</span>: the sum of the two results is equal to 7</li>
+<li><span class="arithmatex">\(B\)</span>: the first die shows a greater number than the second</li>
+<li><span class="arithmatex">\(C\)</span>: at least one die shows 6</li>
 </ul>
 <h2 id="part-b-compound-statements">Part B — compound statements</h2>
-<p>Using the events (A), (B), and (C), mark the events corresponding to the following statements:</p>
+<p>Using the events <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span>, and <span class="arithmatex">\(C\)</span>, mark the events corresponding to the following statements:</p>
 <ol>
 <li>the sum is 7 <strong>or</strong> at least one die shows 6</li>
 <li>the sum is 7 <strong>and</strong> at least one die shows 6</li>
@@ -2192,42 +2192,42 @@ If someone wants, they may also prepare an <strong>HTML visualization</strong>, 
 <p>A student rolled a six-sided die <strong>1000 times</strong> and recorded the results.</p>
 <p>The numbers of occurrences of the elementary outcomes were:</p>
 <div class="arithmatex">\[
-n({1})=168,\qquad
-n({2})=154,\qquad
-n({3})=181,
+n(\{1\})=168,\qquad
+n(\{2\})=154,\qquad
+n(\{3\})=181,
 \]</div>
 <div class="arithmatex">\[
-n({4})=167,\qquad
-n({5})=160,\qquad
-n({6})=170.
+n(\{4\})=167,\qquad
+n(\{5\})=160,\qquad
+n(\{6\})=170.
 \]</div>
 <p>Thus the sample space of a single experiment is</p>
 <div class="arithmatex">\[
-\Omega={1,2,3,4,5,6}.
+\Omega=\{1,2,3,4,5,6\}.
 \]</div>
-<p>Every event is a subset of (\Omega).</p>
-<p>For any event (A\subseteq\Omega), define its <strong>observed frequency</strong> by</p>
+<p>Every event is a subset of <span class="arithmatex">\(\Omega\)</span>.</p>
+<p>For any event <span class="arithmatex">\(A \subseteq \Omega\)</span>, define its <strong>observed frequency</strong> by</p>
 <div class="arithmatex">\[
 f(A)=\frac{n(A)}{1000},
 \]</div>
-<p>where (n(A)) is the number of throws in which the event (A) occurred.</p>
+<p>where <span class="arithmatex">\(n(A)\)</span> is the number of throws in which the event <span class="arithmatex">\(A\)</span> occurred.</p>
 <h3 id="part-a-from-elementary-outcomes-to-events">Part A — From elementary outcomes to events</h3>
 <p>Using the recorded data, compute the observed frequencies of the following events:</p>
 <ol>
-<li>(A={2,4,6})</li>
-<li>(B={1,2,3})</li>
-<li>(C={5,6})</li>
-<li>(D={1,3,5})</li>
-<li>(E={1,2,3,4})</li>
+<li><span class="arithmatex">\(A=\{2,4,6\}\)</span></li>
+<li><span class="arithmatex">\(B=\{1,2,3\}\)</span></li>
+<li><span class="arithmatex">\(C=\{5,6\}\)</span></li>
+<li><span class="arithmatex">\(D=\{1,3,5\}\)</span></li>
+<li><span class="arithmatex">\(E=\{1,2,3,4\}\)</span></li>
 </ol>
-<p>In each case, first compute (n(A)), (n(B)), etc., and then compute (f(A)), (f(B)), etc.</p>
+<p>In each case, first compute <span class="arithmatex">\(n(A)\)</span>, <span class="arithmatex">\(n(B)\)</span>, etc., and then compute <span class="arithmatex">\(f(A)\)</span>, <span class="arithmatex">\(f(B)\)</span>, etc.</p>
 <h3 id="part-b-how-frequencies-combine">Part B — How frequencies combine</h3>
 <p>Using the same data, verify the following relationships:</p>
 <ol>
-<li>(f({2,4,6})=f({2})+f({4})+f({6}))</li>
-<li>(f({1,2,3,4})=f({1,2})+f({3,4}))</li>
-<li>(f({1,3,5})+f({2,4,6})=1)</li>
-<li>(f({5,6})=1-f({1,2,3,4}))</li>
+<li><span class="arithmatex">\(f(\{2,4,6\}) = f(\{2\}) + f(\{4\}) + f(\{6\})\)</span></li>
+<li><span class="arithmatex">\(f(\{1,2,3,4\}) = f(\{1,2\}) + f(\{3,4\})\)</span></li>
+<li><span class="arithmatex">\(f(\{1,3,5\}) + f(\{2,4,6\}) = 1\)</span></li>
+<li><span class="arithmatex">\(f(\{5,6\}) = 1 - f(\{1,2,3,4\})\)</span></li>
 </ol>
 <p>Explain in each case why the equality holds.</p>
 <h3 id="part-c-when-simple-addition-works-and-when-it-fails">Part C — When simple addition works and when it fails</h3>
@@ -2235,13 +2235,13 @@ f(A)=\frac{n(A)}{1000},
 <li>Check that</li>
 </ol>
 <div class="arithmatex">\[
-f({1,2}\cup{5,6})=f({1,2})+f({5,6}).
+f(\{1,2\}\cup\{5,6\}) = f(\{1,2\}) + f(\{5,6\}).
 \]</div>
 <ol>
 <li>Now consider the events</li>
 </ol>
 <div class="arithmatex">\[
-M={1,2,3},\qquad N={3,4,5}.
+M=\{1,2,3\},\qquad N=\{3,4,5\}.
 \]</div>
 <p>Compute</p>
 <div class="arithmatex">\[
@@ -2254,27 +2254,27 @@ f(M),\qquad f(N),\qquad f(M\cup N),\qquad f(M)+f(N).
 f(M\cup N)\neq f(M)+f(N).
 \]</div>
 <ol>
-<li>Identify which elementary outcomes are counted twice in the sum (f(M)+f(N)).</li>
+<li>Identify which elementary outcomes are counted twice in the sum <span class="arithmatex">\(f(M)+f(N)\)</span>.</li>
 </ol>
 <h3 id="part-d-covering-the-whole-sample-space">Part D — Covering the whole sample space</h3>
 <p>Consider the six one-element events</p>
 <div class="arithmatex">\[
-{1},{2},{3},{4},{5},{6}.
+\{1\},\{2\},\{3\},\{4\},\{5\},\{6\}.
 \]</div>
 <ol>
 <li>Add their observed frequencies.</li>
 <li>Explain why the result must be equal to 1.</li>
-<li>Split (\Omega) into the three disjoint events</li>
+<li>Split <span class="arithmatex">\(\Omega\)</span> into the three disjoint events</li>
 </ol>
 <div class="arithmatex">\[
-{1,2},\qquad {3,4},\qquad {5,6}
+\{1,2\},\qquad \{3,4\},\qquad \{5,6\}
 \]</div>
 <p>and compute the sum of their observed frequencies.
 4. Explain why this sum is also equal to 1.
-5. Formulate a general statement about any decomposition of (\Omega) into disjoint events.</p>
+5. Formulate a general statement about any decomposition of <span class="arithmatex">\(\Omega\)</span> into disjoint events.</p>
 <h3 id="part-e-from-observed-frequency-to-probability">Part E — From observed frequency to probability</h3>
 <p>In the previous parts, you worked with observed frequencies obtained from <strong>1000 real throws</strong>.</p>
-<p>Now suppose that instead of working only with this one recorded experiment, we want to introduce a mathematical object that assigns a number to every event (A\subseteq\Omega), describing how often we expect this event to occur in repeated trials.</p>
+<p>Now suppose that instead of working only with this one recorded experiment, we want to introduce a mathematical object that assigns a number to every event <span class="arithmatex">\(A \subseteq \Omega\)</span>, describing how often we expect this event to occur in repeated trials.</p>
 <p>Based on the previous parts, write down what properties such an assignment should have.</p>
 <p>In particular, explain why it should satisfy:</p>
 <ol>

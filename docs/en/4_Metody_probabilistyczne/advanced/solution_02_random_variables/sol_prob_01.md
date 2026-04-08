@@ -1,47 +1,83 @@
-# Task 1 — Recognizing Counting Models
+# 🎯 Task 1 — Binomial Model (Quality Control)
 
-## 1. Arranging 7 students in a line
-- **All objects used?** → Yes  
-- **Order matters?** → Yes  
-- **Repetition allowed?** → No  
+## 1. Sample Space
 
-✅ **Model:** Permutation  
+### One inspection — Ω
 
----
+We inspect 3 screws. Each screw can be good (G) or defective (D).
 
-## 2. Choosing 4 members from 12
-- **All objects?** → No  
-- **Order matters?** → No  
+$$
+\Omega = \{GGG, GGD, GDG, DGG, GDD, DGD, DDG, DDD\}
+$$
 
-✅ **Model:** Combination  
-
----
-
-## 3. Assigning gold, silver, bronze
-- **All objects?** → No  
-- **Order matters?** → Yes  
-
-✅ **Model:** k-permutation  
+$$
+|\Omega| = 2^3 = 8
+$$
 
 ---
 
-## 4. Forming a 6-digit PIN
-- **Order matters?** → Yes  
-- **Repetition allowed?** → Yes  
+## 2. Probability of Elementary Outcomes
 
-✅ **Model:** Sequence with repetition  
+Let:
+- p = probability of a defective screw
+- (1 − p) = probability of a good screw
+
+Each outcome has probability depending on the number of defective screws.
+
+Examples:
+
+$$
+P(GGG) = (1 - p)^3
+$$
+
+$$
+P(GGD) = (1 - p)^2 \cdot p
+$$
+
+$$
+P(DDD) = p^3
+$$
 
 ---
 
-## 5. Arranging “BANANA”
-- **All objects?** → Yes  
-- **Identical elements?** → Yes  
+## 3. Random Variable
 
-✅ **Model:** Permutation with repeated elements  
+Let X be the number of defective screws.
+
+$$
+X \in \{0,1,2,3\}
+$$
 
 ---
 
-## 6. Seating around a round table
-- **Circular arrangement?** → Yes  
+## 4. Binomial Distribution
 
-✅ **Model:** Circular permutation  
+$$
+X \sim \text{Bin}(n = 3, p)
+$$
+
+$$
+P(X = k) = \binom{3}{k} p^k (1 - p)^{3 - k}
+$$
+
+---
+
+## 5. Success Definition
+
+A success is defined as:
+- selecting a defective screw
+
+Each trial:
+- success → defective (D)
+- failure → good (G)
+
+---
+
+## 6. Summary
+
+- Number of trials: 3  
+- Two possible outcomes per trial  
+- Independent trials  
+- Constant probability p  
+
+This experiment follows a binomial distribution.

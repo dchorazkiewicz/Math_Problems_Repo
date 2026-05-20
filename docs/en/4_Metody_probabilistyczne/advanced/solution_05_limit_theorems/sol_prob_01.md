@@ -1,179 +1,182 @@
 # Task 1 — Discrete Distribution Given by a PMF Table
 
-## Import Libraries
+## Overview
 
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-```
+In this task we study a discrete random variable whose probability law is given directly by a Probability Mass Function (PMF) table.
 
----
+The purpose of this task is to:
 
-## Define Probability Space Ω and Random Variable X
-
-```python
-omega = ["w1", "w2", "w3", "w4", "w5"]
-
-X = {
-    "w1": -2,
-    "w2": 0,
-    "w3": 1,
-    "w4": 3,
-    "w5": 5
-}
-```
+- understand the relationship between a PMF and a CDF,
+- construct a probability space,
+- compute probabilities,
+- visualize distributions graphically,
+- and interpret the meaning of cumulative probabilities.
 
 ---
 
-## Define PMF
+# Given Distribution
 
-```python
-pmf = {
-    -2: 0.10,
-    0: 0.25,
-    1: 0.30,
-    3: 0.20,
-    5: 0.15
-}
-```
+The random variable $begin:math:text$X$end:math:text$ has the following PMF:
+
+| x | -2 | 0 | 1 | 3 | 5 |
+|---|---:|---:|---:|---:|---:|
+| $begin:math:text$P\(X\=x\)$end:math:text$ | 0.10 | 0.25 | 0.30 | 0.20 | 0.15 |
 
 ---
 
-## Verify Probability Distribution
+# 1. Random Experiment
 
-```python
-total_probability = sum(pmf.values())
+We consider a finite random experiment with five elementary outcomes.
 
-print("Total probability =", total_probability)
+## Sample Space
 
-if abs(total_probability - 1.0) < 1e-9:
-    print("Valid probability distribution")
-else:
-    print("Invalid probability distribution")
-```
+$begin:math:display$
+\\Omega \= \\\{w\_1\,w\_2\,w\_3\,w\_4\,w\_5\\\}
+$end:math:display$
 
----
-
-## Plot PMF
-
-```python
-x_values = np.array(list(pmf.keys()))
-p_values = np.array(list(pmf.values()))
-
-plt.figure(figsize=(8,5))
-
-plt.stem(x_values, p_values)
-
-plt.title("Probability Mass Function (PMF)")
-plt.xlabel("x")
-plt.ylabel("P(X=x)")
-plt.grid(True)
-
-plt.show()
-```
+Each outcome corresponds to one value of the random variable.
 
 ---
 
-## Construct CDF
+# 2. Random Variable
 
-```python
-sorted_x = sorted(pmf.keys())
+Define the random variable $begin:math:text$X\:\\Omega \\to \\mathbb\{R\}$end:math:text$ by:
 
-cdf = {}
-cumulative = 0
-
-for x in sorted_x:
-    cumulative += pmf[x]
-    cdf[x] = cumulative
-
-print(cdf)
-```
+| Outcome | Value |
+|---|---|
+| $begin:math:text$w\_1$end:math:text$ | -2 |
+| $begin:math:text$w\_2$end:math:text$ | 0 |
+| $begin:math:text$w\_3$end:math:text$ | 1 |
+| $begin:math:text$w\_4$end:math:text$ | 3 |
+| $begin:math:text$w\_5$end:math:text$ | 5 |
 
 ---
 
-## Plot CDF
+# 3. Support of the Random Variable
 
-```python
-cdf_values = [cdf[x] for x in sorted_x]
+The support of $begin:math:text$X$end:math:text$ is the set of values with nonzero probability:
 
-plt.figure(figsize=(8,5))
-
-plt.step(
-    sorted_x,
-    cdf_values,
-    where='post'
-)
-
-plt.title("Cumulative Distribution Function (CDF)")
-plt.xlabel("x")
-plt.ylabel("F(x)")
-plt.ylim(0,1.05)
-plt.grid(True)
-
-plt.show()
-```
+$begin:math:display$
+\\\{\-2\,0\,1\,3\,5\\\}
+$end:math:display$
 
 ---
 
-## Probability Calculations
+# 4. Verification of the PMF
 
-### Example 1 — $begin:math:text$ P\(X \= a\) $end:math:text$
+A valid probability distribution must satisfy:
 
-```python
-a = 1
+## Condition 1
 
-print(
-    "P(X=1)=",
-    pmf.get(a,0)
-)
-```
+All probabilities must be nonnegative:
 
-### Example 2 — $begin:math:text$ P\(X \\le a\) $end:math:text$
+$begin:math:display$
+P\(X\=x\)\\ge0
+$end:math:display$
 
-```python
-a = 1
-
-prob = sum(
-    p for x,p in pmf.items()
-    if x <= a
-)
-
-print(prob)
-```
-
-### Example 3 — $begin:math:text$ P\(a \< X \\le b\) $end:math:text$
-
-```python
-a = 0
-b = 3
-
-prob = sum(
-    p for x,p in pmf.items()
-    if a < x <= b
-)
-
-print(prob)
-```
+This condition is satisfied.
 
 ---
 
-## PMF vs CDF
+## Condition 2
 
-**PMF gives**
+The total probability must equal 1:
 
-- exact point probabilities
-- $begin:math:text$P\(X\=x\)$end:math:text$
+$begin:math:display$
+0\.10\+0\.25\+0\.30\+0\.20\+0\.15
+$end:math:display$
 
-**CDF gives**
+$begin:math:display$
+\=1\.00
+$end:math:display$
 
-- cumulative probabilities
-- $begin:math:text$P\(X \\le x\)$end:math:text$
+Therefore the PMF is valid.
+
+---
+
+# 5. Probability Mass Function (PMF)
+
+The PMF describes probabilities assigned to individual values.
+
+$begin:math:display$
+p\_X\(x\)\=P\(X\=x\)
+$end:math:display$
+
+---
+
+# 6. PMF Graph
+
+The PMF graph is discrete because the random variable is discrete.
+
+Each vertical bar represents the probability of one exact value.
 
 Example:
 
 $begin:math:display$
-P\(X \\le 1\)\=0\.65
+P\(X\=1\)\=0\.30
 $end:math:display$
+
+This means that the value $begin:math:text$1$end:math:text$ occurs with probability $begin:math:text$0\.30$end:math:text$.
+
+---
+
+# 7. Constructing the CDF
+
+The cumulative distribution function is defined by:
+
+$begin:math:display$
+F\(x\)\=P\(X\\le x\)
+$end:math:display$
+
+We compute cumulative probabilities step by step.
+
+---
+
+## CDF Table
+
+| x | F(x) |
+|---|---|
+| -2 | 0.10 |
+| 0 | 0.35 |
+| 1 | 0.65 |
+| 3 | 0.85 |
+| 5 | 1.00 |
+
+---
+
+# 8. Interpretation of the CDF
+
+The CDF gives cumulative probability up to a point.
+
+Example:
+
+$begin:math:display$
+F\(1\)\=P\(X\\le1\)\=0\.65
+$end:math:display$
+
+This means that the probability that $begin:math:text$X$end:math:text$ is less than or equal to $begin:math:text$1$end:math:text$ equals $begin:math:text$0\.65$end:math:text$.
+
+---
+
+# 9. Relationship Between PMF and CDF
+
+The CDF jumps exactly at the support values of the random variable.
+
+The jump size equals:
+
+$begin:math:display$
+P\(X\=x\)
+$end:math:display$
+
+Example:
+
+At $begin:math:text$x\=1$end:math:text$,
+
+$begin:math:display$
+F\(1\)\-F\(1\^\-\)\=0\.30
+$end:math:display$
+
+which equals:
 
 $begin:math:display$
 P\(X\=1\)\=0\.30
@@ -181,18 +184,96 @@ $end:math:display$
 
 ---
 
-## CDF Jumps
+# 10. Probability Calculations
 
-For a discrete distribution:
-
-$begin:math:display$
-\\text\{Jump size at \}x \= P\(X\=x\)
-$end:math:display$
-
-Example:
-
-Jump at $begin:math:text$x\=1$end:math:text$
+## Exact Probability
 
 $begin:math:display$
 P\(X\=1\)\=0\.30
 $end:math:display$
+
+---
+
+## Cumulative Probability
+
+$begin:math:display$
+P\(X\\le1\)\=0\.10\+0\.25\+0\.30\=0\.65
+$end:math:display$
+
+---
+
+## Strict Inequality
+
+$begin:math:display$
+P\(X\<3\)\=0\.10\+0\.25\+0\.30\=0\.65
+$end:math:display$
+
+---
+
+## Interval Probability
+
+$begin:math:display$
+P\(0\<X\\le3\)\=0\.30\+0\.20\=0\.50
+$end:math:display$
+
+---
+
+## Upper Tail Probability
+
+$begin:math:display$
+P\(X\\ge1\)\=0\.30\+0\.20\+0\.15\=0\.65
+$end:math:display$
+
+---
+
+# 11. PMF vs CDF
+
+| PMF | CDF |
+|---|---|
+| Gives exact probabilities | Gives cumulative probabilities |
+| Discrete bars | Step function |
+| Useful for $begin:math:text$P\(X\=x\)$end:math:text$ | Useful for $begin:math:text$P\(X\\le x\)$end:math:text$ |
+
+---
+
+# 12. Applications
+
+Discrete distributions appear in many applications:
+
+- survey responses,
+- dice games,
+- risk analysis,
+- reliability testing,
+- quality control,
+- inventory systems.
+
+---
+
+# 13. Running the Code
+
+Install required packages:
+
+```bash
+pip install numpy matplotlib
+```
+
+Run:
+
+```bash
+python main.py
+```
+
+---
+
+# 14. Output
+
+The program:
+
+- verifies the PMF,
+- plots the PMF,
+- constructs the CDF,
+- plots the CDF,
+- computes probabilities,
+- explains PMF/CDF relationships.
+
+---

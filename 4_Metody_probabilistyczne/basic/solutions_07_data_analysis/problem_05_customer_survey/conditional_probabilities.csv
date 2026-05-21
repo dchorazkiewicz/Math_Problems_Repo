@@ -1,0 +1,4 @@
+quantity,value
+P(renewed | satisfaction=5),0.9545
+P(satisfaction=5 | renewed),0.2313
+overall renewal rate,0.7567

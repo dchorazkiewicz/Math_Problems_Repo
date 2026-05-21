@@ -1793,10 +1793,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#description-of-the-data" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Description of the data
+        Description
       
     </span>
   </a>
@@ -1859,92 +1859,97 @@
 <li>Dataset: <a href="../problem_01_die_rolls.csv"><code>problem_01_die_rolls.csv</code></a></li>
 <li>Frequency table: <a href="../frequency_table.csv"><code>frequency_table.csv</code></a></li>
 <li>Event probabilities: <a href="../event_probabilities.csv"><code>event_probabilities.csv</code></a></li>
-<li>Plot: <a href="../empirical_distribution.png"><code>empirical_distribution.png</code></a></li>
+<li>Distribution plot: <a href="../empirical_distribution.png"><code>empirical_distribution.png</code></a></li>
+<li>Seed/sample-size comparison: <a href="../seed_sample_size_comparison.csv"><code>seed_sample_size_comparison.csv</code></a></li>
+<li>Seed/sample-size plot: <a href="../seed_sample_size_comparison.png"><code>seed_sample_size_comparison.png</code></a></li>
 </ul>
-<h2 id="description-of-the-data">Description of the data</h2>
-<p>One row of the dataset represents one die roll. The column <code>trial</code> gives the number of the trial, <code>roll</code> gives the observed result, <code>is_even</code> tells whether the result is even, and <code>is_at_least_5</code> tells whether the result is at least 5.</p>
-<p>The dataset contains 1000 die rolls generated with a fixed random seed.</p>
+<h2 id="description">Description</h2>
+<p>One row represents one die roll. The columns record the trial number, the observed face, and indicators for two events: even result and result at least 5.</p>
 <h2 id="frequency-table">Frequency table</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: right;">Roll</th>
-<th style="text-align: right;">Absolute frequency</th>
-<th style="text-align: right;">Relative frequency</th>
-<th style="text-align: right;">Fair die probability</th>
+<th>roll</th>
+<th>frequency</th>
+<th>relative_frequency</th>
+<th>fair_die_probability</th>
+<th>generating_probability</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">157</td>
-<td style="text-align: right;">0.157</td>
-<td style="text-align: right;">0.167</td>
+<td>1.0000</td>
+<td>157.0000</td>
+<td>0.1570</td>
+<td>0.1667</td>
+<td>0.1400</td>
 </tr>
 <tr>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">174</td>
-<td style="text-align: right;">0.174</td>
-<td style="text-align: right;">0.167</td>
+<td>2.0000</td>
+<td>174.0000</td>
+<td>0.1740</td>
+<td>0.1667</td>
+<td>0.1600</td>
 </tr>
 <tr>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">151</td>
-<td style="text-align: right;">0.151</td>
-<td style="text-align: right;">0.167</td>
+<td>3.0000</td>
+<td>151.0000</td>
+<td>0.1510</td>
+<td>0.1667</td>
+<td>0.1700</td>
 </tr>
 <tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">184</td>
-<td style="text-align: right;">0.184</td>
-<td style="text-align: right;">0.167</td>
+<td>4.0000</td>
+<td>184.0000</td>
+<td>0.1840</td>
+<td>0.1667</td>
+<td>0.1800</td>
 </tr>
 <tr>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">158</td>
-<td style="text-align: right;">0.158</td>
-<td style="text-align: right;">0.167</td>
+<td>5.0000</td>
+<td>158.0000</td>
+<td>0.1580</td>
+<td>0.1667</td>
+<td>0.1600</td>
 </tr>
 <tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">176</td>
-<td style="text-align: right;">0.176</td>
-<td style="text-align: right;">0.167</td>
+<td>6.0000</td>
+<td>176.0000</td>
+<td>0.1760</td>
+<td>0.1667</td>
+<td>0.1900</td>
 </tr>
 </tbody>
 </table>
-<p><img alt="Empirical distribution of die rolls" src="../empirical_distribution.png" /></p>
 <h2 id="empirical-probabilities">Empirical probabilities</h2>
 <table>
 <thead>
 <tr>
-<th>Event</th>
-<th style="text-align: right;">Empirical probability</th>
-<th style="text-align: right;">Fair die probability</th>
+<th>event</th>
+<th>empirical_probability</th>
+<th>fair_die_probability</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>The result is even</td>
-<td style="text-align: right;">0.534</td>
-<td style="text-align: right;">0.500</td>
+<td>result is even</td>
+<td>0.5340</td>
+<td>0.5000</td>
 </tr>
 <tr>
-<td>The result is at least 5</td>
-<td style="text-align: right;">0.334</td>
-<td style="text-align: right;">0.333</td>
+<td>result is at least 5</td>
+<td>0.3340</td>
+<td>0.3333</td>
 </tr>
 <tr>
-<td>The result is equal to 6</td>
-<td style="text-align: right;">0.176</td>
-<td style="text-align: right;">0.167</td>
+<td>result is equal to 6</td>
+<td>0.1760</td>
+<td>0.1667</td>
 </tr>
 </tbody>
 </table>
 <h2 id="interpretation">Interpretation</h2>
-<p>The empirical distribution is not exactly uniform. The most frequent result is 4, with relative frequency 0.184, and the least frequent result is 3, with relative frequency 0.151. For a fair die, each result would have probability approximately 0.167.</p>
-<p>These differences are expected in random data. Even if a die is fair, empirical frequencies from a finite sample do not have to be exactly equal to theoretical probabilities.</p>
-<p>Based only on this generated dataset, the die does not look perfectly fair, but the deviations from the fair-die probabilities are moderate. The result 4 and the event "even" appear slightly more often than under a fair die, while result 3 appears less often. This suggests a possible imbalance, but this descriptive analysis alone is not a formal statistical test.</p>
+<p>The empirical distribution is close to, but not identical with, either the fair-die reference or the generating probabilities. The seed/sample-size plot shows the central lesson: changing the seed changes the empirical sample, while larger samples usually fluctuate less around the generating distribution.</p>
 
 
 

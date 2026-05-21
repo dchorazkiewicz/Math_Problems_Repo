@@ -1793,10 +1793,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#description-of-the-data" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Description of the data
+        Description
       
     </span>
   </a>
@@ -1815,32 +1815,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#demand-by-warehouse" class="md-nav__link">
+  <a href="#product-group-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Demand by warehouse
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#demand-and-returns-by-product-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Demand and returns by product group
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plots" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plots
+        Product-group summary
       
     </span>
   </a>
@@ -1882,157 +1860,94 @@
 <li>Overall summary: <a href="../warehouse_orders_overall_summary.csv"><code>warehouse_orders_overall_summary.csv</code></a></li>
 <li>Warehouse summary: <a href="../summary_by_warehouse.csv"><code>summary_by_warehouse.csv</code></a></li>
 <li>Product-group summary: <a href="../summary_by_product_group.csv"><code>summary_by_product_group.csv</code></a></li>
-<li>Return rate by product group: <a href="../return_rate_by_product_group.csv"><code>return_rate_by_product_group.csv</code></a></li>
-<li>Return rate by warehouse: <a href="../return_rate_by_warehouse.csv"><code>return_rate_by_warehouse.csv</code></a></li>
-<li>Daily total quantity: <a href="../daily_total_quantity.csv"><code>daily_total_quantity.csv</code></a></li>
-<li>Plots:</li>
-<li><a href="../total_quantity_by_product_group.png"><code>total_quantity_by_product_group.png</code></a></li>
-<li><a href="../return_rate_by_product_group.png"><code>return_rate_by_product_group.png</code></a></li>
+<li>Product return rates: <a href="../return_rate_by_product_group.csv"><code>return_rate_by_product_group.csv</code></a></li>
+<li>Warehouse return rates: <a href="../return_rate_by_warehouse.csv"><code>return_rate_by_warehouse.csv</code></a></li>
+<li>Daily totals: <a href="../daily_total_quantity.csv"><code>daily_total_quantity.csv</code></a></li>
+<li>Demand by product plot: <a href="../total_quantity_by_product_group.png"><code>total_quantity_by_product_group.png</code></a></li>
+<li>Demand by warehouse plot: <a href="../total_quantity_by_warehouse.png"><code>total_quantity_by_warehouse.png</code></a></li>
+<li>Returns by product plot: <a href="../return_rate_by_product_group.png"><code>return_rate_by_product_group.png</code></a></li>
+<li>Returns by warehouse plot: <a href="../return_rate_by_warehouse.png"><code>return_rate_by_warehouse.png</code></a></li>
 </ul>
-<h2 id="description-of-the-data">Description of the data</h2>
-<p>One row represents one warehouse order line. The dataset records the order identifier, date, warehouse, product group, ordered quantity, and whether the order line was returned.</p>
-<p>The dataset contains 1200 order lines.</p>
+<h2 id="description">Description</h2>
+<p>One row represents one warehouse order line with date, warehouse, product group, quantity, and return status.</p>
 <h2 id="overall-summary">Overall summary</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: right;">Order lines</th>
-<th style="text-align: right;">Total quantity</th>
-<th style="text-align: right;">Mean quantity per order line</th>
-<th style="text-align: right;">Returned lines</th>
-<th style="text-align: right;">Return rate</th>
+<th>order_lines</th>
+<th>total_quantity</th>
+<th>mean_quantity_per_order_line</th>
+<th>returned_lines</th>
+<th>return_rate</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: right;">1200</td>
-<td style="text-align: right;">3646</td>
-<td style="text-align: right;">3.0383</td>
-<td style="text-align: right;">74</td>
-<td style="text-align: right;">0.0617</td>
+<td>1200.0000</td>
+<td>3646.0000</td>
+<td>3.0383</td>
+<td>74.0000</td>
+<td>0.0617</td>
 </tr>
 </tbody>
 </table>
-<p>The overall return rate is 0.0617, so about 6.17% of order lines were returned.</p>
-<h2 id="demand-by-warehouse">Demand by warehouse</h2>
+<h2 id="product-group-summary">Product-group summary</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Warehouse</th>
-<th style="text-align: right;">Order lines</th>
-<th style="text-align: right;">Total quantity</th>
-<th style="text-align: right;">Average quantity</th>
-<th style="text-align: right;">Returned lines</th>
-<th style="text-align: right;">Return rate</th>
+<th>product_group</th>
+<th>order_lines</th>
+<th>total_quantity</th>
+<th>average_quantity</th>
+<th>returned_lines</th>
+<th>return_rate</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">central</td>
-<td style="text-align: right;">336</td>
-<td style="text-align: right;">1029</td>
-<td style="text-align: right;">3.0625</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">0.0506</td>
+<td>filters</td>
+<td>353</td>
+<td>1405</td>
+<td>3.9802</td>
+<td>19</td>
+<td>0.0538</td>
 </tr>
 <tr>
-<td style="text-align: left;">south</td>
-<td style="text-align: right;">240</td>
-<td style="text-align: right;">739</td>
-<td style="text-align: right;">3.0792</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">0.0542</td>
+<td>brakes</td>
+<td>263</td>
+<td>825</td>
+<td>3.1369</td>
+<td>12</td>
+<td>0.0456</td>
 </tr>
 <tr>
-<td style="text-align: left;">west</td>
-<td style="text-align: right;">233</td>
-<td style="text-align: right;">737</td>
-<td style="text-align: right;">3.1631</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">0.0730</td>
+<td>suspension</td>
+<td>191</td>
+<td>501</td>
+<td>2.6230</td>
+<td>19</td>
+<td>0.0995</td>
 </tr>
 <tr>
-<td style="text-align: left;">north</td>
-<td style="text-align: right;">197</td>
-<td style="text-align: right;">574</td>
-<td style="text-align: right;">2.9137</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">0.0660</td>
+<td>electrical</td>
+<td>205</td>
+<td>488</td>
+<td>2.3805</td>
+<td>15</td>
+<td>0.0732</td>
 </tr>
 <tr>
-<td style="text-align: left;">east</td>
-<td style="text-align: right;">194</td>
-<td style="text-align: right;">567</td>
-<td style="text-align: right;">2.9227</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">0.0722</td>
+<td>engine</td>
+<td>188</td>
+<td>427</td>
+<td>2.2713</td>
+<td>9</td>
+<td>0.0479</td>
 </tr>
 </tbody>
 </table>
-<p>The central warehouse has the highest total ordered quantity, 1029 units. This is partly because it also has the largest number of order lines.</p>
-<h2 id="demand-and-returns-by-product-group">Demand and returns by product group</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Product group</th>
-<th style="text-align: right;">Order lines</th>
-<th style="text-align: right;">Total quantity</th>
-<th style="text-align: right;">Average quantity</th>
-<th style="text-align: right;">Returned lines</th>
-<th style="text-align: right;">Return rate</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">filters</td>
-<td style="text-align: right;">353</td>
-<td style="text-align: right;">1405</td>
-<td style="text-align: right;">3.9802</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">0.0538</td>
-</tr>
-<tr>
-<td style="text-align: left;">brakes</td>
-<td style="text-align: right;">263</td>
-<td style="text-align: right;">825</td>
-<td style="text-align: right;">3.1369</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">0.0456</td>
-</tr>
-<tr>
-<td style="text-align: left;">suspension</td>
-<td style="text-align: right;">191</td>
-<td style="text-align: right;">501</td>
-<td style="text-align: right;">2.6230</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">0.0995</td>
-</tr>
-<tr>
-<td style="text-align: left;">electrical</td>
-<td style="text-align: right;">205</td>
-<td style="text-align: right;">488</td>
-<td style="text-align: right;">2.3805</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">0.0732</td>
-</tr>
-<tr>
-<td style="text-align: left;">engine</td>
-<td style="text-align: right;">188</td>
-<td style="text-align: right;">427</td>
-<td style="text-align: right;">2.2713</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">0.0479</td>
-</tr>
-</tbody>
-</table>
-<h2 id="plots">Plots</h2>
-<p><img alt="Total quantity by product group" src="../total_quantity_by_product_group.png" /></p>
-<p><img alt="Return rate by product group" src="../return_rate_by_product_group.png" /></p>
 <h2 id="interpretation">Interpretation</h2>
-<p>The product groups generating the highest demand are filters and brakes. Filters have the largest total quantity, 1405 units, and the highest average quantity per order line, 3.9802.</p>
-<p>The highest return rate is for suspension, 0.0995. This means that about 9.95% of suspension order lines were returned in this generated dataset. Electrical also has a relatively high return rate, 0.0732.</p>
-<p>The central warehouse has the highest total quantity, but it does not have the highest return rate. The highest warehouse return rates are for west, 0.0730, and east, 0.0722.</p>
-<p>These summaries are empirical: they describe the observed generated data. They do not give a complete theoretical probability model. A theoretical model would specify probability distributions or assumptions before observing the data. Here, we summarize what happened in this particular sample.</p>
+<p>Filters and brakes generate the most demand, while return rates highlight a different operational question. These empirical summaries describe this generated sample rather than a complete theoretical probability model.</p>
 
 
 

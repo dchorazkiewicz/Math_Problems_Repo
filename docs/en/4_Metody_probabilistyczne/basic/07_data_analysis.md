@@ -154,9 +154,9 @@ df.head()
 3. Construct a relative frequency table for the variable `roll`.
 4. Draw a bar chart of the empirical distribution. Include the fair-die probabilities as a visual reference if possible.
 5. Compute the empirical probability of the following events:
-   - the result is even,
-   - the result is at least 5,
-   - the result is equal to 6.
+    - the result is even,
+    - the result is at least 5,
+    - the result is equal to 6.
 6. Compare the empirical distribution with the theoretical distribution of a fair die.
 7. Explain why empirical frequencies do not have to be exactly equal to theoretical probabilities.
 8. Decide whether the die appears to be fair based only on the generated data. Justify your answer.
@@ -326,10 +326,10 @@ df.head()
 2. Compute the mean and median delivery time.
 3. Explain why the mean and median are different.
 4. Compute:
-   - \(Q_1\),
-   - \(Q_2\),
-   - \(Q_3\),
-   - the interquartile range.
+    - \(Q_1\),
+    - \(Q_2\),
+    - \(Q_3\),
+    - the interquartile range.
 5. Use the 1.5 IQR rule to identify possible outliers.
 6. Compute the proportion of delayed deliveries.
 7. Compare delivery times between zones.
@@ -422,27 +422,16 @@ df.head()
 ## Tasks
 
 1. Describe what one row of the dataset represents.
-2. Construct frequency tables for:
-   - `age_group`,
-   - `channel`,
-   - `satisfaction`,
-   - `renewed`.
-   Draw bar charts for the categorical variables where the visualization helps compare frequencies.
+2. Construct frequency tables and draw bar charts for:
+    - `age_group`,
+    - `channel`,
+    - `satisfaction`,
+    - `renewed`.
 3. Compute the overall renewal rate.
 4. Compute the renewal rate by `channel` and visualize the result with a bar chart.
 5. Compute the renewal rate by `satisfaction` and visualize the result with a bar chart.
-6. Compute:
-
-   \[
-   P(\text{renewed} \mid \text{satisfaction}=5)
-   \]
-
-7. Compute:
-
-   \[
-   P(\text{satisfaction}=5 \mid \text{renewed})
-   \]
-
+6. Compute the empirical conditional probability: probability of renewal among customers with satisfaction equal to 5.
+7. Compute the empirical conditional probability: probability of satisfaction equal to 5 among customers who renewed.
 8. Explain why the two conditional probabilities above answer different questions.
 9. Decide whether the data suggest a relationship between satisfaction and renewal.
 10. Explain why this problem is related to conditional probability.
@@ -519,9 +508,9 @@ df.head()
 4. Compute the proportion of parts within specification.
 5. Compute the proportion of parts within specification for each machine and visualize these proportions.
 6. Compare machines using:
-   - mean length,
-   - standard deviation,
-   - proportion within specification.
+    - mean length,
+    - standard deviation,
+    - proportion within specification.
 7. Draw boxplots of `length_mm` by machine. Add reference lines for the target value and specification limits if your plotting tool allows it.
 8. Which machine seems most centered around the target value?
 9. Which machine seems most variable?
@@ -643,9 +632,9 @@ df.head()
 4. Draw histograms for standard and priority service, using comparable axes or bins.
 5. Construct and draw an empirical cumulative distribution function for `waiting_time_min`.
 6. Use the empirical CDF to estimate:
-   - \(P(\text{waiting time} \le 5)\),
-   - \(P(\text{waiting time} \le 10)\),
-   - \(P(\text{waiting time} > 20)\).
+    - \(P(\text{waiting time} \le 5)\),
+    - \(P(\text{waiting time} \le 10)\),
+    - \(P(\text{waiting time} > 20)\).
 7. Compare standard and priority service using quantiles.
 8. Explain why waiting-time data are often right-skewed.
 9. Explain the difference between a histogram and an empirical CDF.

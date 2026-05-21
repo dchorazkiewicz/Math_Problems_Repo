@@ -1,0 +1,2712 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/basic/07_data_analysis/">
+      
+      
+        <link rel="prev" href="../06_conditional_probability/">
+      
+      
+        <link rel="next" href="../../advanced/01_events_and_probability/">
+      
+      
+        
+          <link rel="alternate" href="../../../pl/4_Metody_probabilistyczne/basic/07_data_analysis/" hreflang="pl">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>7. Data Analysis - Math Problems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#task-list-07-descriptive-statistics-from-generated-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Math Problems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7. Data Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../pl/4_Metody_probabilistyczne/basic/07_data_analysis/" hreflang="pl" class="md-select__link">
+              Polski
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Math Problems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lecture: Mathematics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lecture: Mathematics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1_Algebra/01_matrices_and_operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Matrices & Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1_Algebra/02_determinants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Determinants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1_Algebra/03_matrix_inversion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Matrix Inversion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1_Algebra/04_systems_of_equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Systems of Equations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometry
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_Geometria/01_vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Vectors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_Geometria/02_lines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Lines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_Geometria/03_planes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Planes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_Geometria/04_line_and_plane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Line and Plane
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Analysis
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/01_sequence_limits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Sequence Limits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/02_function_limits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Function Limits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/03_derivatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Derivatives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/04_function_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Function Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/05_integrals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Integrals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/06_applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Calculus Applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lecture: Probabilistic Methods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lecture: Probabilistic Methods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probabilistic Methods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Probabilistic Methods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basic
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_events_and_probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Events & Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_combinatorics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Combinatorics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_probability_distributions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Probability Distributions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_discovery_formalism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Discovering Formalism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_pmf_pdf_cdf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. PMF, PDF, and CDF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_conditional_probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Conditional Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intended-work-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intended Work Style
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Instructions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/01_events_and_probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Events & Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/02_random_variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Random Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/03_distribution_parameters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Distribution Parameters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/04_selected_distributions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Selected Distributions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/05_limit_theorems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Limit Theorems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/06_basic_statistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Basic Statistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/07_estimation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Estimation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/08_hypothesis_testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Hypothesis Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/09_correlation_and_regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Correlation & Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/10_advanced_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Advanced Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/11_decision_theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Decision Theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Animations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Animations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../anim/4_Metody_probalistyczne/laboratory_1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../anim/4_Metody_probalistyczne/laboratory_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../anim/4_Metody_probalistyczne/laboratory_3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intended-work-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intended Work Style
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Instructions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="task-list-07-descriptive-statistics-from-generated-data">Task List 07 — Descriptive Statistics from Generated Data</h1>
+<h2 id="introduction">Introduction</h2>
+<p>In the previous task lists, probability was studied mainly through theoretical models: sample spaces, events, probability distributions, probability mass functions, density functions, cumulative distribution functions, conditional probability, independence, and Bayes’ formula.</p>
+<p>In this task list we change the perspective.</p>
+<p>Instead of starting from a fully specified probability model, we start from <strong>data</strong>.<br />
+The data are not given directly. In each problem, students first generate a reproducible dataset using the provided Python script or another suitable technology.</p>
+<p>The generated data should then be treated as observed data.</p>
+<p>The main question is no longer only:</p>
+<blockquote>
+<p>What is the probability according to a given mathematical model?</p>
+</blockquote>
+<p>but also:</p>
+<blockquote>
+<p>What can we learn from data by summarizing, visualizing, and comparing observations?</p>
+</blockquote>
+<p>This is the role of <strong>descriptive statistics</strong>.</p>
+<p>In this list, students will practice:</p>
+<ul>
+<li>generating reproducible datasets,</li>
+<li>generating and comparing different random samples,</li>
+<li>saving generated data to CSV files,</li>
+<li>constructing frequency tables,</li>
+<li>computing relative frequencies,</li>
+<li>interpreting empirical distributions,</li>
+<li>computing mean, median, variance, standard deviation, quartiles, and interquartile range,</li>
+<li>identifying outliers,</li>
+<li>drawing histograms, bar charts, boxplots, empirical cumulative distribution functions, and scatter plots,</li>
+<li>comparing groups,</li>
+<li>interpreting relationships between two variables,</li>
+<li>computing covariance and correlation,</li>
+<li>recognizing when a numerical summary may be misleading.</li>
+</ul>
+<p>The purpose of this list is not only to compute statistics mechanically.<br />
+Students should also interpret what the computed quantities mean in the context of the data.</p>
+<p>Averages, standard deviations, correlations, and plots should always be connected with the real situation represented by the dataset.</p>
+<h2 id="intended-work-style">Intended Work Style</h2>
+<p>These tasks are about <strong>investigating descriptive statistics from data</strong>.</p>
+<p>For each dataset, the expected work is not just to produce final numerical answers.<br />
+The expected work is to explore the data, compute descriptive summaries, visualize empirical distributions, compare groups, and explain what the summaries and visualizations show.</p>
+<p>If you use AI tools, make the intention clear:</p>
+<ul>
+<li>ask AI to help analyze and explain the dataset, not only to compute isolated numbers,</li>
+<li>ask AI to produce clear visual representations of the data whenever they help understanding,</li>
+<li>use tables and plots together,</li>
+<li>compare empirical distributions across groups, samples, or seeds when this is meaningful,</li>
+<li>use different sample sizes or random seeds to show how random samples fluctuate,</li>
+<li>when a theoretical distribution is available, compare the empirical behavior with the theoretical expectation,</li>
+<li>explain how larger samples usually make empirical patterns more stable,</li>
+<li>describe what can be seen in plots that is not obvious from a single statistic.</li>
+</ul>
+<p>Advanced visualizations are welcome.<br />
+Students may use notebooks, dashboards, HTML pages, animations, interactive charts, or any other suitable technology. The key requirement is that the visualization should help understand, present, and explain the data.</p>
+<hr />
+<h2 id="general-instructions">General Instructions</h2>
+<p>In each problem:</p>
+<ol>
+<li>Generate the dataset using the given Python code or another suitable implementation.</li>
+<li>Treat the random seed as a tool for reproducibility within the chosen technology. Different technologies may use random seeds differently, so exact values do not have to match across implementations.</li>
+<li>Save the generated dataset as a CSV file.</li>
+<li>Use the generated dataset to solve the tasks.</li>
+<li>Prepare appropriate plots or visual summaries of the data.</li>
+<li>Treat visualizations as critical tools for understanding, presenting, and explaining data.</li>
+<li>When variables are grouped or compared, visualize the comparison whenever possible.</li>
+<li>Use plots to support numerical answers, not to replace them.</li>
+<li>When possible, generate additional samples with different random seeds and compare their empirical distributions.</li>
+<li>Use these comparisons to see that random samples vary from seed to seed, even when they come from the same data-generating process.</li>
+<li>When a theoretical distribution is known, compare empirical distributions with it. Larger samples should usually fluctuate less and stay closer to the theoretical distribution.</li>
+<li>Explain the meaning of your results in words.</li>
+</ol>
+<p>The Python code is provided as a reproducible way to generate the datasets.<br />
+You may use another technology for the analysis and visualization. The important point is to preserve the intended structure of the dataset and to make your procedure reproducible.</p>
+<p>If you use Python, the following libraries may be useful:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+</code></pre>
+<p>You may also use:</p>
+<pre><code class="language-python">df.head()
+df.info()
+df.describe()
+df.value_counts()
+df.groupby(...)
+</code></pre>
+<p>The random seed is fixed in every problem to make one generated sample reproducible. This does not mean that randomness disappears: changing the seed usually produces a different sample. If another technology is used, document how the data were generated and how reproducibility was handled.</p>
+<hr />
+<h1 id="problem-1-die-rolls-and-empirical-distribution">Problem 1 — Die Rolls and Empirical Distribution</h1>
+<p>In this problem, we observe many results of rolling a die.</p>
+<p>The die is not assumed to be perfectly fair.<br />
+The goal is to compare the observed empirical distribution with the theoretical distribution of a fair die.</p>
+<h2 id="generate-the-data">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(701)
+
+n = 1000
+
+probabilities = [0.14, 0.16, 0.17, 0.18, 0.16, 0.19]
+
+rolls = rng.choice(
+    [1, 2, 3, 4, 5, 6],
+    size=n,
+    p=probabilities
+)
+
+df = pd.DataFrame({
+    &quot;trial&quot;: np.arange(1, n + 1),
+    &quot;roll&quot;: rolls
+})
+
+df[&quot;is_even&quot;] = df[&quot;roll&quot;] % 2 == 0
+df[&quot;is_at_least_5&quot;] = df[&quot;roll&quot;] &gt;= 5
+
+df.to_csv(&quot;problem_01_die_rolls.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Construct an absolute frequency table for the variable <code>roll</code>.</li>
+<li>Construct a relative frequency table for the variable <code>roll</code>.</li>
+<li>Draw a bar chart of the empirical distribution. Include the fair-die probabilities as a visual reference if possible.</li>
+<li>Compute the empirical probability of the following events:</li>
+<li>the result is even,</li>
+<li>the result is at least 5,</li>
+<li>the result is equal to 6.</li>
+<li>Compare the empirical distribution with the theoretical distribution of a fair die.</li>
+<li>Explain why empirical frequencies do not have to be exactly equal to theoretical probabilities.</li>
+<li>Decide whether the die appears to be fair based only on the generated data. Justify your answer.</li>
+</ol>
+<hr />
+<h1 id="problem-2-coin-tosses-and-relative-frequencies">Problem 2 — Coin Tosses and Relative Frequencies</h1>
+<p>In this problem, we simulate repeated coin tosses.</p>
+<p>The aim is to observe how empirical frequencies behave when the number of trials increases.</p>
+<h2 id="generate-the-data_1">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(702)
+
+n = 2000
+
+tosses = rng.choice(
+    [&quot;H&quot;, &quot;T&quot;],
+    size=n,
+    p=[0.52, 0.48]
+)
+
+df = pd.DataFrame({
+    &quot;trial&quot;: np.arange(1, n + 1),
+    &quot;result&quot;: tosses
+})
+
+df[&quot;is_head&quot;] = df[&quot;result&quot;] == &quot;H&quot;
+
+df[&quot;cumulative_heads&quot;] = df[&quot;is_head&quot;].cumsum()
+df[&quot;relative_frequency_heads&quot;] = df[&quot;cumulative_heads&quot;] / df[&quot;trial&quot;]
+
+df.to_csv(&quot;problem_02_coin_tosses.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_1">Tasks</h2>
+<ol>
+<li>Describe the random experiment represented by the dataset.</li>
+<li>Construct a frequency table for <code>result</code>.</li>
+<li>Compute the relative frequency of heads and tails.</li>
+<li>Draw a line plot of <code>relative_frequency_heads</code> against <code>trial</code>. Add a horizontal reference line at <span class="arithmatex">\(0.5\)</span> if possible.</li>
+<li>Explain what happens to the relative frequency of heads as the number of trials increases.</li>
+<li>Compare the final relative frequency of heads with <span class="arithmatex">\(0.5\)</span>.</li>
+<li>Does the generated coin appear to be fair? Explain carefully.</li>
+<li>Explain the difference between theoretical probability and empirical relative frequency.</li>
+</ol>
+<hr />
+<h1 id="problem-3-exam-scores-in-two-groups">Problem 3 — Exam Scores in Two Groups</h1>
+<p>Two groups of students wrote the same exam.</p>
+<p>The goal is to compare the two groups using descriptive statistics and plots.</p>
+<h2 id="generate-the-data_2">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(703)
+
+n_a = 120
+n_b = 120
+
+scores_a = rng.normal(loc=68, scale=12, size=n_a)
+scores_b = rng.normal(loc=74, scale=18, size=n_b)
+
+scores_a = np.clip(scores_a, 0, 100)
+scores_b = np.clip(scores_b, 0, 100)
+
+df = pd.DataFrame({
+    &quot;student_id&quot;: [f&quot;A{i:03d}&quot; for i in range(1, n_a + 1)]
+                + [f&quot;B{i:03d}&quot; for i in range(1, n_b + 1)],
+    &quot;group&quot;: [&quot;A&quot;] * n_a + [&quot;B&quot;] * n_b,
+    &quot;score&quot;: np.concatenate([scores_a, scores_b]).round(1)
+})
+
+df[&quot;passed&quot;] = df[&quot;score&quot;] &gt;= 50
+
+df.to_csv(&quot;problem_03_exam_scores.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_2">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Compute the mean, median, minimum, maximum, variance, and standard deviation of <code>score</code>.</li>
+<li>Compute the same quantities separately for group A and group B.</li>
+<li>Compute the pass rate in each group.</li>
+<li>Draw histograms of exam scores for both groups, using comparable axes or bins.</li>
+<li>Draw boxplots comparing the two groups.</li>
+<li>Which group has the higher mean score?</li>
+<li>Which group has the larger standard deviation?</li>
+<li>Explain why comparing only the means may be misleading.</li>
+<li>Decide which group performed better overall. Justify your answer using more than one statistic.</li>
+</ol>
+<hr />
+<h1 id="problem-4-delivery-times-skewness-and-outliers">Problem 4 — Delivery Times, Skewness, and Outliers</h1>
+<p>A delivery company records delivery times in minutes.</p>
+<p>The goal is to analyze a distribution that is not symmetric and contains unusually large observations.</p>
+<h2 id="generate-the-data_3">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(704)
+
+n = 350
+
+delivery_times = rng.lognormal(
+    mean=np.log(32),
+    sigma=0.42,
+    size=n
+)
+
+outlier_indices = rng.choice(n, size=8, replace=False)
+
+delivery_times[outlier_indices] *= rng.uniform(
+    2.8,
+    4.5,
+    size=8
+)
+
+zones = rng.choice(
+    [&quot;central&quot;, &quot;suburban&quot;, &quot;remote&quot;],
+    size=n,
+    p=[0.45, 0.40, 0.15]
+)
+
+df = pd.DataFrame({
+    &quot;delivery_id&quot;: [f&quot;D{i:04d}&quot; for i in range(1, n + 1)],
+    &quot;zone&quot;: zones,
+    &quot;delivery_time_min&quot;: delivery_times.round(1)
+})
+
+df[&quot;delayed&quot;] = df[&quot;delivery_time_min&quot;] &gt; 60
+
+df.to_csv(&quot;problem_04_delivery_times.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_3">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Compute the mean and median delivery time.</li>
+<li>Explain why the mean and median are different.</li>
+<li>Compute:</li>
+<li><span class="arithmatex">\(Q_1\)</span>,</li>
+<li><span class="arithmatex">\(Q_2\)</span>,</li>
+<li><span class="arithmatex">\(Q_3\)</span>,</li>
+<li>the interquartile range.</li>
+<li>Use the 1.5 IQR rule to identify possible outliers.</li>
+<li>Compute the proportion of delayed deliveries.</li>
+<li>Compare delivery times between zones.</li>
+<li>Draw a histogram of <code>delivery_time_min</code>. Mark the mean and median if possible.</li>
+<li>Draw a boxplot of delivery times by zone.</li>
+<li>Explain why the median may be more informative than the mean in this dataset.</li>
+</ol>
+<hr />
+<h1 id="problem-5-customer-survey-and-conditional-frequencies">Problem 5 — Customer Survey and Conditional Frequencies</h1>
+<p>A company surveys customers about their age group, channel, satisfaction, and subscription renewal.</p>
+<p>The goal is to connect descriptive statistics with conditional probabilities.</p>
+<h2 id="generate-the-data_4">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(705)
+
+n = 600
+
+age_group = rng.choice(
+    [&quot;18-25&quot;, &quot;26-40&quot;, &quot;41-60&quot;, &quot;60+&quot;],
+    size=n,
+    p=[0.20, 0.38, 0.30, 0.12]
+)
+
+channel = rng.choice(
+    [&quot;website&quot;, &quot;mobile_app&quot;, &quot;phone&quot;],
+    size=n,
+    p=[0.48, 0.37, 0.15]
+)
+
+base_satisfaction = np.select(
+    [
+        channel == &quot;website&quot;,
+        channel == &quot;mobile_app&quot;,
+        channel == &quot;phone&quot;
+    ],
+    [3.6, 3.9, 3.2]
+)
+
+age_effect = np.select(
+    [
+        age_group == &quot;18-25&quot;,
+        age_group == &quot;26-40&quot;,
+        age_group == &quot;41-60&quot;,
+        age_group == &quot;60+&quot;
+    ],
+    [0.0, 0.1, -0.1, -0.2]
+)
+
+satisfaction = rng.normal(
+    loc=base_satisfaction + age_effect,
+    scale=0.9,
+    size=n
+)
+
+satisfaction = np.clip(
+    np.rint(satisfaction),
+    1,
+    5
+).astype(int)
+
+renewal_probability = 0.15 + 0.16 * satisfaction
+renewal_probability += np.where(channel == &quot;mobile_app&quot;, 0.06, 0)
+renewal_probability = np.clip(renewal_probability, 0.05, 0.95)
+
+renewed = rng.random(n) &lt; renewal_probability
+
+df = pd.DataFrame({
+    &quot;customer_id&quot;: [f&quot;C{i:04d}&quot; for i in range(1, n + 1)],
+    &quot;age_group&quot;: age_group,
+    &quot;channel&quot;: channel,
+    &quot;satisfaction&quot;: satisfaction,
+    &quot;renewed&quot;: renewed
+})
+
+df.to_csv(&quot;problem_05_customer_survey.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_4">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Construct frequency tables for:</li>
+<li><code>age_group</code>,</li>
+<li><code>channel</code>,</li>
+<li><code>satisfaction</code>,</li>
+<li><code>renewed</code>.
+   Draw bar charts for the categorical variables where the visualization helps compare frequencies.</li>
+<li>Compute the overall renewal rate.</li>
+<li>Compute the renewal rate by <code>channel</code> and visualize the result with a bar chart.</li>
+<li>Compute the renewal rate by <code>satisfaction</code> and visualize the result with a bar chart.</li>
+<li>Compute:</li>
+</ol>
+<p>[
+   P(\text{renewed} \mid \text{satisfaction}=5)
+   ]</p>
+<ol>
+<li>Compute:</li>
+</ol>
+<p>[
+   P(\text{satisfaction}=5 \mid \text{renewed})
+   ]</p>
+<ol>
+<li>Explain why the two conditional probabilities above answer different questions.</li>
+<li>Decide whether the data suggest a relationship between satisfaction and renewal.</li>
+<li>Explain why this problem is related to conditional probability.</li>
+</ol>
+<hr />
+<h1 id="problem-6-factory-measurements-and-specification-limits">Problem 6 — Factory Measurements and Specification Limits</h1>
+<p>Three machines produce parts whose target length is 50 mm.</p>
+<p>The goal is to compare the machines using measures of location and variability.</p>
+<h2 id="generate-the-data_5">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(706)
+
+n_each = 180
+
+machines = np.repeat([&quot;M1&quot;, &quot;M2&quot;, &quot;M3&quot;], n_each)
+
+machine_mean = {
+    &quot;M1&quot;: 50.00,
+    &quot;M2&quot;: 50.35,
+    &quot;M3&quot;: 49.75
+}
+
+machine_sd = {
+    &quot;M1&quot;: 0.55,
+    &quot;M2&quot;: 0.75,
+    &quot;M3&quot;: 0.65
+}
+
+lengths = np.array([
+    rng.normal(
+        loc=machine_mean[m],
+        scale=machine_sd[m]
+    )
+    for m in machines
+])
+
+df = pd.DataFrame({
+    &quot;part_id&quot;: [f&quot;P{i:04d}&quot; for i in range(1, len(machines) + 1)],
+    &quot;machine&quot;: machines,
+    &quot;length_mm&quot;: lengths.round(3)
+})
+
+target = 50.0
+lower_spec = 48.5
+upper_spec = 51.5
+
+df[&quot;deviation_from_target&quot;] = (df[&quot;length_mm&quot;] - target).round(3)
+
+df[&quot;within_spec&quot;] = df[&quot;length_mm&quot;].between(
+    lower_spec,
+    upper_spec
+)
+
+df.to_csv(&quot;problem_06_factory_measurements.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_5">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Compute descriptive statistics for <code>length_mm</code>.</li>
+<li>Compute descriptive statistics separately for each machine.</li>
+<li>Compute the proportion of parts within specification.</li>
+<li>Compute the proportion of parts within specification for each machine and visualize these proportions.</li>
+<li>Compare machines using:</li>
+<li>mean length,</li>
+<li>standard deviation,</li>
+<li>proportion within specification.</li>
+<li>Draw boxplots of <code>length_mm</code> by machine. Add reference lines for the target value and specification limits if your plotting tool allows it.</li>
+<li>Which machine seems most centered around the target value?</li>
+<li>Which machine seems most variable?</li>
+<li>Explain why a machine can have a good mean but still produce many problematic parts.</li>
+</ol>
+<hr />
+<h1 id="problem-7-call-center-requests-over-time">Problem 7 — Call Center Requests Over Time</h1>
+<p>A call center records the number of customer requests in each hour over 30 days.</p>
+<p>The goal is to analyze count data and compare it with the intuition behind the Poisson distribution.</p>
+<h2 id="generate-the-data_6">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(707)
+
+dates = pd.date_range(&quot;2026-03-01&quot;, periods=30, freq=&quot;D&quot;)
+
+rows = []
+
+for date in dates:
+    day_type = &quot;weekend&quot; if date.dayofweek &gt;= 5 else &quot;weekday&quot;
+
+    for hour in range(24):
+
+        if 8 &lt;= hour &lt;= 17:
+            lam = 7.5 if day_type == &quot;weekday&quot; else 4.0
+        elif 18 &lt;= hour &lt;= 21:
+            lam = 4.5 if day_type == &quot;weekday&quot; else 3.5
+        else:
+            lam = 1.2 if day_type == &quot;weekday&quot; else 0.9
+
+        requests = rng.poisson(lam)
+
+        rows.append({
+            &quot;date&quot;: date.date().isoformat(),
+            &quot;day_type&quot;: day_type,
+            &quot;hour&quot;: hour,
+            &quot;requests&quot;: requests
+        })
+
+df = pd.DataFrame(rows)
+
+df.to_csv(&quot;problem_07_call_center_requests.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_6">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Compute the mean and variance of hourly request counts.</li>
+<li>Compare request counts for weekdays and weekends and visualize this comparison.</li>
+<li>Compute the average number of requests by hour of day.</li>
+<li>Draw a line plot showing average requests by hour. If possible, show weekdays and weekends separately.</li>
+<li>Compute daily totals.</li>
+<li>Draw a histogram of hourly request counts.</li>
+<li>Compare the empirical mean and empirical variance of hourly counts.</li>
+<li>Explain why this dataset is related to the Poisson distribution.</li>
+<li>Explain why the whole dataset should not be treated as one identical Poisson distribution.</li>
+</ol>
+<hr />
+<h1 id="problem-8-waiting-times-and-empirical-cdf">Problem 8 — Waiting Times and Empirical CDF</h1>
+<p>A service system records waiting times for standard and priority tickets.</p>
+<p>The goal is to analyze continuous positive data and construct an empirical cumulative distribution function.</p>
+<h2 id="generate-the-data_7">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(708)
+
+n = 500
+
+service_type = rng.choice(
+    [&quot;standard&quot;, &quot;priority&quot;],
+    size=n,
+    p=[0.70, 0.30]
+)
+
+waiting_time_min = np.where(
+    service_type == &quot;priority&quot;,
+    rng.gamma(shape=2.0, scale=3.0, size=n),
+    rng.gamma(shape=2.2, scale=6.5, size=n)
+)
+
+df = pd.DataFrame({
+    &quot;ticket_id&quot;: [f&quot;T{i:04d}&quot; for i in range(1, n + 1)],
+    &quot;service_type&quot;: service_type,
+    &quot;waiting_time_min&quot;: waiting_time_min.round(2)
+})
+
+df[&quot;resolved_under_10_min&quot;] = df[&quot;waiting_time_min&quot;] &lt;= 10
+
+df.to_csv(&quot;problem_08_waiting_times.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_7">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Compute the mean, median, quartiles, and standard deviation of <code>waiting_time_min</code>.</li>
+<li>Compute the same summaries separately for each <code>service_type</code>.</li>
+<li>Draw histograms for standard and priority service, using comparable axes or bins.</li>
+<li>Construct and draw an empirical cumulative distribution function for <code>waiting_time_min</code>.</li>
+<li>Use the empirical CDF to estimate:</li>
+<li><span class="arithmatex">\(P(\text{waiting time} \le 5)\)</span>,</li>
+<li><span class="arithmatex">\(P(\text{waiting time} \le 10)\)</span>,</li>
+<li><span class="arithmatex">\(P(\text{waiting time} &gt; 20)\)</span>.</li>
+<li>Compare standard and priority service using quantiles.</li>
+<li>Explain why waiting-time data are often right-skewed.</li>
+<li>Explain the difference between a histogram and an empirical CDF.</li>
+<li>Explain how this task connects to the concept of a theoretical CDF.</li>
+</ol>
+<hr />
+<h1 id="problem-9-warehouse-orders-demand-and-returns">Problem 9 — Warehouse Orders, Demand, and Returns</h1>
+<p>A company records warehouse order lines.</p>
+<p>The goal is to summarize demand and returns across warehouses and product groups.</p>
+<h2 id="generate-the-data_8">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(709)
+
+n = 1200
+
+warehouses = rng.choice(
+    [&quot;north&quot;, &quot;south&quot;, &quot;east&quot;, &quot;west&quot;, &quot;central&quot;],
+    size=n,
+    p=[0.18, 0.20, 0.17, 0.19, 0.26]
+)
+
+product_group = rng.choice(
+    [&quot;brakes&quot;, &quot;filters&quot;, &quot;suspension&quot;, &quot;electrical&quot;, &quot;engine&quot;],
+    size=n,
+    p=[0.23, 0.27, 0.18, 0.17, 0.15]
+)
+
+expected_quantity = np.select(
+    [
+        product_group == &quot;filters&quot;,
+        product_group == &quot;brakes&quot;,
+        product_group == &quot;suspension&quot;,
+        product_group == &quot;electrical&quot;,
+        product_group == &quot;engine&quot;
+    ],
+    [3.0, 2.2, 1.7, 1.5, 1.2]
+)
+
+quantity = rng.poisson(expected_quantity) + 1
+
+return_probability = np.select(
+    [
+        product_group == &quot;filters&quot;,
+        product_group == &quot;brakes&quot;,
+        product_group == &quot;suspension&quot;,
+        product_group == &quot;electrical&quot;,
+        product_group == &quot;engine&quot;
+    ],
+    [0.04, 0.06, 0.08, 0.10, 0.07]
+)
+
+returned = rng.random(n) &lt; return_probability
+
+dates = rng.choice(
+    pd.date_range(&quot;2026-04-01&quot;, periods=30, freq=&quot;D&quot;),
+    size=n
+)
+
+df = pd.DataFrame({
+    &quot;order_id&quot;: [f&quot;O{i:05d}&quot; for i in range(1, n + 1)],
+    &quot;date&quot;: pd.to_datetime(dates).strftime(&quot;%Y-%m-%d&quot;),
+    &quot;warehouse&quot;: warehouses,
+    &quot;product_group&quot;: product_group,
+    &quot;quantity&quot;: quantity,
+    &quot;returned&quot;: returned
+})
+
+df.to_csv(&quot;problem_09_warehouse_orders.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_8">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Compute total quantity ordered by warehouse and visualize the warehouse totals.</li>
+<li>Compute total quantity ordered by product group and visualize the product-group totals.</li>
+<li>Compute average order quantity by product group and compare the averages visually.</li>
+<li>Compute the return rate overall.</li>
+<li>Compute the return rate by product group and visualize the return rates.</li>
+<li>Compute the return rate by warehouse and visualize the return rates.</li>
+<li>Draw at least two bar charts: one for demand and one for returns.</li>
+<li>Identify which product groups generate the highest demand.</li>
+<li>Explain how these empirical summaries differ from a theoretical probability model.</li>
+</ol>
+<hr />
+<h1 id="problem-10-correlation-traps">Problem 10 — Correlation Traps</h1>
+<p>A dataset contains two numerical variables.</p>
+<p>There is a clear relationship between them, but the relationship is not simply linear.<br />
+There are also a few unusual observations.</p>
+<p>The goal is to understand why correlation must be interpreted carefully.</p>
+<h2 id="generate-the-data_9">Generate the data</h2>
+<p>Run the following code:</p>
+<pre><code class="language-python">import numpy as np
+import pandas as pd
+
+rng = np.random.default_rng(710)
+
+n = 260
+
+x = rng.uniform(-4, 4, size=n)
+
+y = x**2 + rng.normal(
+    loc=0,
+    scale=1.2,
+    size=n
+)
+
+group = np.where(
+    x &lt; 0,
+    &quot;left_branch&quot;,
+    &quot;right_branch&quot;
+)
+
+x_outliers = np.array([7.5, 8.0, 8.5, 9.0])
+y_outliers = np.array([2.0, 1.0, 3.0, 2.5])
+
+df = pd.DataFrame({
+    &quot;observation_id&quot;: [f&quot;N{i:04d}&quot; for i in range(1, n + len(x_outliers) + 1)],
+    &quot;x&quot;: np.concatenate([x, x_outliers]).round(3),
+    &quot;y&quot;: np.concatenate([y, y_outliers]).round(3),
+    &quot;group&quot;: np.concatenate([
+        group,
+        np.repeat(&quot;outlier_group&quot;, len(x_outliers))
+    ])
+})
+
+df.to_csv(&quot;problem_10_correlation_traps.csv&quot;, index=False)
+
+df.head()
+</code></pre>
+<h2 id="tasks_9">Tasks</h2>
+<ol>
+<li>Describe what one row of the dataset represents.</li>
+<li>Draw a scatter plot of <code>x</code> and <code>y</code>, using color or symbols to distinguish the groups.</li>
+<li>Compute the correlation coefficient between <code>x</code> and <code>y</code>.</li>
+<li>Remove the observations from <code>outlier_group</code> and draw the scatter plot again.</li>
+<li>Compute the correlation coefficient again.</li>
+<li>Compare the two correlation values numerically and visually.</li>
+<li>Explain why correlation may fail to describe a nonlinear relationship.</li>
+<li>Explain why a low correlation does not necessarily mean that there is no relationship.</li>
+<li>Explain how outliers can distort correlation.</li>
+<li>Describe what can be seen in the scatter plot that is not visible from the correlation coefficient alone.</li>
+</ol>
+<hr />
+<h1 id="final-problem-short-statistical-report">Final Problem — Short Statistical Report</h1>
+<p>Choose any three datasets generated in this task list.</p>
+<p>For each chosen dataset, prepare a short statistical report.</p>
+<p>The report should contain:</p>
+<ol>
+<li>a short description of the data,</li>
+<li>information about the number of observations and variables,</li>
+<li>at least one frequency table,</li>
+<li>at least one numerical summary,</li>
+<li>at least one histogram or bar chart,</li>
+<li>at least one boxplot, empirical CDF, or scatter plot,</li>
+<li>one comparison between groups, if the dataset contains groups,</li>
+<li>one interpretation involving empirical probability, conditional frequency, or correlation,</li>
+<li>one warning about a possible misuse of a numerical summary,</li>
+<li>a short conclusion written in words.</li>
+</ol>
+<p>The report should not consist only of code and numerical output.<br />
+Every computed statistic should be interpreted in the context of the data.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

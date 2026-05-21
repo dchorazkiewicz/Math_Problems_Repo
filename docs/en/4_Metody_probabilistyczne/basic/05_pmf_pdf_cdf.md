@@ -1,3 +1,5 @@
+# Task List 05 — PMF, PDF, and CDF
+
 Task 1 — Discrete Distribution Given by a PMF Table
 
 Given

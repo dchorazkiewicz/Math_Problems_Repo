@@ -1,390 +1,486 @@
 # Task List 05 — PMF, PDF, and CDF
 
-Task 1 — Discrete Distribution Given by a PMF Table
+## Task 1 — Discrete Distribution Given by a PMF Table
 
-Given
+### Given
 
-x   -2   0   1   3   5
-P(X = x)   0.10   0.25   0.30   0.20   0.15
+| x | -2 | 0 | 1 | 3 | 5 |
+|---|---|---|---|---|---|
+| P(X=x) | 0.10 | 0.25 | 0.30 | 0.20 | 0.15 |
 
-Solution
+### Solution
 
-The distribution is valid since probabilities sum to 1.
+The distribution is valid because:
 
-Example model:
+$$
+0.10 + 0.25 + 0.30 + 0.20 + 0.15 = 1
+$$
 
-Ω = {ω1, ω2, ω3, ω4, ω5}
+Example probability space:
 
-X(ω1) = -2
-X(ω2) = 0
-X(ω3) = 1
-X(ω4) = 3
-X(ω5) = 5
+$$
+\Omega = \{\omega_1,\omega_2,\omega_3,\omega_4,\omega_5\}
+$$
+
+$$
+X(\omega_1)=-2,\quad X(\omega_2)=0,\quad X(\omega_3)=1,\quad X(\omega_4)=3,\quad X(\omega_5)=5
+$$
 
 CDF:
 
-F(x) =
-
-0                    for x < -2
-0.10                 for -2 ≤ x < 0
-0.35                 for 0 ≤ x < 1
-0.65                 for 1 ≤ x < 3
-0.85                 for 3 ≤ x < 5
-1                    for x ≥ 5
+$$
+F(x)=
+\begin{cases}
+0, & x<-2 \\
+0.10, & -2\le x<0 \\
+0.35, & 0\le x<1 \\
+0.65, & 1\le x<3 \\
+0.85, & 3\le x<5 \\
+1, & x\ge5
+\end{cases}
+$$
 
 Example probabilities:
 
-P(X ≤ 1) = 0.65
-P(X > 0) = 0.65
-P(0 < X ≤ 3) = 0.50
+$$
+P(X\le1)=0.65
+$$
+
+$$
+P(X>0)=0.65
+$$
+
+$$
+P(0<X\le3)=0.50
+$$
 
 The jumps of the CDF correspond to PMF values.
 
+---
 
-Task 2 — Discrete Distribution Given by a CDF Table
+## Task 2 — Discrete Distribution Given by a CDF Table
 
-Given
+### Given
 
-x   -1   0   2   4   6
-F(x)   0.15   0.35   0.60   0.85   1.00
+| x | -1 | 0 | 2 | 4 | 6 |
+|---|---|---|---|---|---|
+| F(x) | 0.15 | 0.35 | 0.60 | 0.85 | 1.00 |
 
-Solution
+### Solution
 
 PMF from jumps:
 
-P(X = -1) = 0.15
-P(X = 0) = 0.20
-P(X = 2) = 0.25
-P(X = 4) = 0.25
-P(X = 6) = 0.15
+$$
+P(X=-1)=0.15
+$$
+
+$$
+P(X=0)=0.20
+$$
+
+$$
+P(X=2)=0.25
+$$
+
+$$
+P(X=4)=0.25
+$$
+
+$$
+P(X=6)=0.15
+$$
 
 CDF:
 
-0                    for x < -1
-0.15                 for -1 ≤ x < 0
-0.35                 for 0 ≤ x < 2
-0.60                 for 2 ≤ x < 4
-0.85                 for 4 ≤ x < 6
-1                    for x ≥ 6
+$$
+F(x)=
+\begin{cases}
+0, & x<-1 \\
+0.15, & -1\le x<0 \\
+0.35, & 0\le x<2 \\
+0.60, & 2\le x<4 \\
+0.85, & 4\le x<6 \\
+1, & x\ge6
+\end{cases}
+$$
 
 Example probabilities:
 
-P(X ≤ 2) = 0.60
-P(X > 2) = 0.40
-P(0 < X ≤ 4) = 0.50
+$$
+P(X\le2)=0.60
+$$
 
-The jump size equals the probability at that point.
+$$
+P(X>2)=0.40
+$$
 
+$$
+P(0<X\le4)=0.50
+$$
 
-Task 3 — Binomial Distribution
+---
 
-Solution
+## Task 3 — Binomial Distribution
 
-A binomial experiment consists of n independent Bernoulli trials.
+### Solution
+
+A binomial experiment consists of independent Bernoulli trials.
 
 PMF:
 
-P(X = k) = C(n,k)p^k(1-p)^(n-k)
+$$
+P(X=k)=\binom{n}{k}p^k(1-p)^{n-k}
+$$
 
 Support:
 
-{0,1,2,...,n}
+$$
+\{0,1,2,\dots,n\}
+$$
 
 Example:
 
-X ~ Bin(5,0.4)
+$$
+X\sim Bin(5,0.4)
+$$
 
-P(X = 2)
+$$
+P(X=2)=\binom{5}{2}(0.4)^2(0.6)^3
+$$
 
-= C(5,2)(0.4)^2(0.6)^3
+$$
+=0.3456
+$$
 
-= 0.3456
+$$
+P(X\le2)=0.6826
+$$
 
-P(X ≤ 2) = 0.6826
-
-P(X ≥ 3)
-
-= 1 - 0.6826
-
-= 0.3174
+$$
+P(X\ge3)=0.3174
+$$
 
 Applications:
-coin tossing,
-quality control,
-exam statistics.
+- coin tossing
+- quality control
+- exam statistics
 
+---
 
-Task 4 — Geometric Distribution
+## Task 4 — Geometric Distribution
 
-Solution
+### Solution
 
 The experiment continues until the first success occurs.
 
 PMF:
 
-P(X = k) = (1-p)^(k-1)p
+$$
+P(X=k)=(1-p)^{k-1}p
+$$
 
 CDF:
 
-F(k) = 1-(1-p)^k
+$$
+F(k)=1-(1-p)^k
+$$
 
 Support:
 
-{1,2,3,...}
+$$
+\{1,2,3,\dots\}
+$$
 
 Example:
 
-X ~ Geo(0.3)
+$$
+X\sim Geo(0.3)
+$$
 
-P(X = 3)
+$$
+P(X=3)=(0.7)^2(0.3)
+$$
 
-= (0.7)^2(0.3)
+$$
+=0.147
+$$
 
-= 0.147
+$$
+P(X\le3)=0.657
+$$
 
-P(X ≤ 3)
-
-= 1-(0.7)^3
-
-= 0.657
-
-P(X > 3)
-
-= 0.343
+$$
+P(X>3)=0.343
+$$
 
 Applications:
-waiting time,
-customer arrivals,
-machine failures.
+- waiting time
+- customer arrivals
+- machine failures
 
+---
 
-Task 5 — Poisson Distribution
+## Task 5 — Poisson Distribution
 
-Solution
+### Solution
 
 The experiment measures the number of events in a fixed interval.
 
 PMF:
 
-P(X = k)
-
-= (e^-λ λ^k)/k!
+$$
+P(X=k)=\frac{e^{-\lambda}\lambda^k}{k!}
+$$
 
 Support:
 
-{0,1,2,...}
+$$
+\{0,1,2,\dots\}
+$$
 
 Example:
 
-X ~ Pois(3)
+$$
+X\sim Pois(3)
+$$
 
-P(X = 2)
+$$
+P(X=2)\approx0.2240
+$$
 
-≈ 0.2240
+$$
+P(X\le2)\approx0.4232
+$$
 
-P(X ≤ 2)
-
-≈ 0.4232
-
-P(X ≥ 3)
-
-≈ 0.5768
+$$
+P(X\ge3)\approx0.5768
+$$
 
 Applications:
-phone calls,
-website traffic,
-accidents.
+- phone calls
+- website traffic
+- accidents
 
+---
 
-Task 6 — Hypergeometric Distribution
+## Task 6 — Hypergeometric Distribution
 
-Solution
+### Solution
 
 Sampling is done without replacement.
 
 PMF:
 
-P(X = k)
-
-= [C(K,k)C(N-K,n-k)] / C(N,n)
+$$
+P(X=k)=\frac{\binom{K}{k}\binom{N-K}{n-k}}{\binom{N}{n}}
+$$
 
 Example:
 
-N = 10
-K = 4
-n = 3
+$$
+N=10,\quad K=4,\quad n=3
+$$
 
-P(X = 2)
+$$
+P(X=2)=\frac{\binom{4}{2}\binom{6}{1}}{\binom{10}{3}}
+$$
 
-= [C(4,2)C(6,1)] / C(10,3)
+$$
+=0.30
+$$
 
-= 0.30
+$$
+P(X\le1)=0.70
+$$
 
-P(X ≤ 1) = 0.70
-
-P(X ≥ 2) = 0.30
+$$
+P(X\ge2)=0.30
+$$
 
 Applications:
-card games,
-quality control,
-lottery sampling.
+- card games
+- quality control
+- lottery sampling
 
+---
 
-Task 7 — Negative Binomial Distribution
+## Task 7 — Negative Binomial Distribution
 
-Solution
+### Solution
 
 The experiment continues until the r-th success occurs.
 
 PMF:
 
-P(X = k)
-
-= C(k-1,r-1)p^r(1-p)^(k-r)
+$$
+P(X=k)=\binom{k-1}{r-1}p^r(1-p)^{k-r}
+$$
 
 Support:
 
-{r,r+1,r+2,...}
+$$
+\{r,r+1,r+2,\dots\}
+$$
 
 Example:
 
-r = 2
-p = 0.4
+$$
+r=2,\quad p=0.4
+$$
 
-P(X = 5)
+$$
+P(X=5)=\binom{4}{1}(0.4)^2(0.6)^3
+$$
 
-= C(4,1)(0.4)^2(0.6)^3
+$$
+=0.13824
+$$
 
-= 0.13824
+$$
+P(X\le5)\approx0.6630
+$$
 
-P(X ≤ 5)
-
-≈ 0.6630
-
-P(X > 5)
-
-≈ 0.3370
+$$
+P(X>5)\approx0.3370
+$$
 
 Applications:
-sales attempts,
-sports statistics,
-biological experiments.
+- sales attempts
+- sports statistics
+- biological experiments
 
+---
 
-Task 8 — Beta Distribution
+## Task 8 — Beta Distribution
 
-Solution
+### Solution
 
 Support:
 
+$$
 [0,1]
+$$
 
 PDF:
 
-f(x)
-
-= [1/B(α,β)]x^(α-1)(1-x)^(β-1)
+$$
+f(x)=\frac{1}{B(\alpha,\beta)}x^{\alpha-1}(1-x)^{\beta-1}
+$$
 
 Example:
 
-X ~ Beta(2,3)
+$$
+X\sim Beta(2,3)
+$$
 
-P(X ≤ 0.5)
+$$
+P(X\le0.5)\approx0.6875
+$$
 
-≈ 0.6875
+$$
+P(X\ge0.5)\approx0.3125
+$$
 
-P(X ≥ 0.5)
-
-≈ 0.3125
-
-P(0.2 ≤ X ≤ 0.7)
-
-≈ 0.704
+$$
+P(0.2\le X\le0.7)\approx0.704
+$$
 
 Applications:
-Bayesian statistics,
-machine learning,
-probability modeling.
+- Bayesian statistics
+- machine learning
+- probability modeling
 
+---
 
-Task 9 — Gamma Distribution
+## Task 9 — Gamma Distribution
 
-Solution
+### Solution
 
 The experiment measures waiting time.
 
 Support:
 
-[0,∞)
+$$
+[0,\infty)
+$$
 
 PDF:
 
-f(x)
-
-= [λ^α x^(α-1)e^(-λx)] / Γ(α)
+$$
+f(x)=\frac{\lambda^\alpha x^{\alpha-1}e^{-\lambda x}}{\Gamma(\alpha)}
+$$
 
 Example:
 
-X ~ Gamma(2,1)
+$$
+X\sim Gamma(2,1)
+$$
 
-P(X ≤ 2)
+$$
+P(X\le2)\approx0.594
+$$
 
-≈ 0.594
+$$
+P(X\ge2)\approx0.406
+$$
 
-P(X ≥ 2)
+$$
+P(1\le X\le3)\approx0.537
+$$
 
-≈ 0.406
-
-P(1 ≤ X ≤ 3)
-
-≈ 0.537
-
-Chi-square distribution is a special case of gamma distribution.
+The chi-square distribution is a special case of the gamma distribution.
 
 Applications:
-queue systems,
-reliability analysis,
-hypothesis testing.
+- queue systems
+- reliability analysis
+- hypothesis testing
 
+---
 
-Task 10 — Normal Distribution
+## Task 10 — Normal Distribution
 
-Solution
+### Solution
 
 The experiment measures continuous values.
 
 PDF:
 
-f(x)
-
-= [1/(σ√2π)]e^(-(x-μ)^2 / 2σ^2)
+$$
+f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
 
 Support:
 
-(-∞,∞)
+$$
+(-\infty,\infty)
+$$
 
 Example:
 
-X ~ N(0,1)
+$$
+X\sim N(0,1)
+$$
 
-P(X ≤ 1)
+$$
+P(X\le1)\approx0.8413
+$$
 
-≈ 0.8413
+$$
+P(X\ge1)\approx0.1587
+$$
 
-P(X ≥ 1)
-
-≈ 0.1587
-
-P(-1 ≤ X ≤ 1)
-
-≈ 0.6826
+$$
+P(-1\le X\le1)\approx0.6826
+$$
 
 For continuous distributions:
 
-P(X = a) = 0
+$$
+P(X=a)=0
+$$
 
 Applications:
-heights,
-exam scores,
-measurement errors,
-finance.
+- heights
+- exam scores
+- measurement errors
+- finance

@@ -1681,6 +1681,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1774,6 +1785,19 @@
 <li>Summary by sample: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_09_warehouse_orders/warehouse_orders_summary_by_sample.csv"><code>warehouse_orders_summary_by_sample.csv</code></a></li>
 <li>Demand and return plots: PNG files in this folder.</li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Total quantity by warehouse for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_09_warehouse_orders/total_quantity_by_warehouse_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot identifies which warehouses contribute most to total demand. It is useful for operational interpretation because totals matter more than line counts alone.</p>
+<p><img alt="Total quantity by product group for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_09_warehouse_orders/total_quantity_by_product_group_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot shows demand by product group. It supports the conclusion about which groups generate the highest demand.</p>
+<p><img alt="Average quantity by product group for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_09_warehouse_orders/average_quantity_by_product_group_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot separates order size from total demand. A product group can have high total demand because of many orders, large order sizes, or both.</p>
+<p><img alt="Return rate by product group for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_09_warehouse_orders/return_rate_by_product_group_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot focuses on return risk by product group. It should be interpreted separately from demand, because high demand and high return rate are different business questions.</p>
+<p><img alt="Return rate by warehouse for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_09_warehouse_orders/return_rate_by_warehouse_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot checks whether return rates differ by warehouse. It helps identify whether returns are associated with location, not only product group.</p>
+<p><img alt="Total quantity by sample" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_09_warehouse_orders/total_quantity_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot shows sample-to-sample variation in total demand. It warns against treating one generated total as a fixed, exact value.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one warehouse order line in one generated sample. It records the warehouse, product group, ordered quantity, return indicator, and order date.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples show how demand totals and return rates fluctuate.</p>

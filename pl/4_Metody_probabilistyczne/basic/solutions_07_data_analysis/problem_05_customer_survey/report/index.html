@@ -1681,6 +1681,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1838,6 +1849,21 @@
 <li>Renewal summary by sample: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_05_customer_survey/renewal_summary_by_sample.csv"><code>renewal_summary_by_sample.csv</code></a></li>
 <li>Frequency and renewal plots: PNG files in this folder.</li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Age-group frequency for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_05_customer_survey/age_group_frequency_bar_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This bar chart shows the composition of the sample by age group. It helps interpret later conditional frequencies because subgroup sizes are not equal.</p>
+<p><img alt="Channel frequency for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_05_customer_survey/channel_frequency_bar_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot shows how customers are distributed across channels. It gives context for comparing renewal rates by channel.</p>
+<p><img alt="Satisfaction frequency for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_05_customer_survey/satisfaction_frequency_bar_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot shows the empirical distribution of satisfaction scores. It helps explain how many observations support each satisfaction-level renewal rate.</p>
+<p><img alt="Renewed frequency for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_05_customer_survey/renewed_frequency_bar_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot summarizes the overall renewal outcome. It gives a visual baseline before conditioning on channel or satisfaction.</p>
+<p><img alt="Renewal rate by channel for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_05_customer_survey/renewal_rate_by_channel_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot compares conditional renewal rates by channel. It shows whether renewal behavior differs across customer-contact channels.</p>
+<p><img alt="Renewal rate by satisfaction for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_05_customer_survey/renewal_rate_by_satisfaction_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This is the main explanatory plot for the problem. Renewal rate is highest at satisfaction 5 and generally rises for higher satisfaction levels; the very small satisfaction-1 group should not be overinterpreted.</p>
+<p><img alt="Renewal summary by sample" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_05_customer_survey/renewal_summary_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot checks sampling variation. The overall renewal rate and share of satisfaction 5 customers change across samples, so exact conditional frequencies should be treated as empirical estimates.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one surveyed customer in one generated sample. It records age group, contact channel, satisfaction score, and whether the customer renewed.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples show how conditional frequencies and renewal rates fluctuate from seed to seed.</p>
@@ -2058,7 +2084,7 @@
 </tbody>
 </table>
 <h2 id="answers-and-interpretation">Answers and Interpretation</h2>
-<p>The overall renewal rate in <code>sample_1</code> is 0.7567. Renewal rates differ by channel, and they increase clearly with satisfaction. This suggests a relationship between satisfaction and renewal.</p>
+<p>The overall renewal rate in <code>sample_1</code> is 0.7567. Renewal rates differ by channel, and they are much higher for satisfaction levels 4 and 5 than for levels 2 and 3. The satisfaction-1 group contains only 5 customers, so its rate is unstable and should not be used to claim a perfectly monotone pattern. Overall, the data suggest a relationship between satisfaction and renewal.</p>
 <p>The two conditional probabilities answer different questions. <code>P(renewed | satisfaction = 5)</code> asks: among customers with satisfaction equal to 5, what proportion renewed? <code>P(satisfaction = 5 | renewed)</code> asks: among customers who renewed, what proportion had satisfaction equal to 5? These are not the same conditioning group, so the values are different.</p>
 <p>This problem is related to conditional probability because many summaries are computed inside a subgroup, such as customers with a given satisfaction level or a given channel.</p>
 <h2 id="variation-across-samples">Variation Across Samples</h2>

@@ -1681,6 +1681,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1776,6 +1787,15 @@
 <li>Pass-rate plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_03_exam_scores/pass_rate_by_group_sample_1.png"><code>pass_rate_by_group_sample_1.png</code></a></li>
 <li>Mean-by-sample plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_03_exam_scores/mean_score_by_group_across_samples.png"><code>mean_score_by_group_across_samples.png</code></a></li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Score histograms by group for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_03_exam_scores/score_histograms_by_group_sample_1.png" /></p>
+<p><strong>What this shows:</strong> The histograms show the full distribution of scores in both groups. They make clear that group B has a higher center but also a wider spread, so the comparison cannot be reduced to the mean alone.</p>
+<p><img alt="Score boxplots by group for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_03_exam_scores/score_boxplots_by_group_sample_1.png" /></p>
+<p><strong>What this shows:</strong> The boxplots summarize median, spread, and extreme values. They support the interpretation that group B performs better on average but is more variable.</p>
+<p><img alt="Pass rate by group for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_03_exam_scores/pass_rate_by_group_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot translates scores into the practical outcome of passing. It is useful because two groups with similar averages could still have different pass rates.</p>
+<p><img alt="Mean score by group across samples" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_03_exam_scores/mean_score_by_group_across_samples.png" /></p>
+<p><strong>What this shows:</strong> This plot checks whether the group comparison is stable across repeated samples. The exact mean scores change, but the main pattern can still be compared across seeds.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one student in one generated exam sample. The row records the student group, exam score, and whether the student passed.</p>
 <p>The main reproducible analysis uses <code>sample_1</code>. The other samples show whether the comparison between groups is stable when the random sample changes.</p>
@@ -1869,7 +1889,7 @@
 <h2 id="answers-and-interpretation">Answers and Interpretation</h2>
 <p>In <code>sample_1</code>, group B has the higher mean score. Group B has the larger standard deviation.</p>
 <p>Comparing only the means may be misleading because the groups differ not only in center but also in spread. A group with a higher mean can also have more variable results, more low scores, or more extreme high scores. The histograms and boxplots show distribution shape, spread, and possible asymmetry more clearly than a single average.</p>
-<p>Overall, group B performs better by mean score, but the conclusion should mention its larger variability. A model answer should therefore use more than one statistic: mean, median, standard deviation, pass rate, and the plots.</p>
+<p>Overall, the conclusion is mixed. Group B has the higher mean and median, but group A has the higher pass rate in <code>sample_1</code>. A model answer should therefore not declare one group simply “better” without explaining the criterion. The answer should use more than one statistic: mean, median, standard deviation, pass rate, and the plots.</p>
 <h2 id="variation-across-samples">Variation Across Samples</h2>
 <p>The direction of the comparison is mostly stable: group B usually has the higher mean. The exact numerical gap and pass rates change from sample to sample.</p>
 <table>

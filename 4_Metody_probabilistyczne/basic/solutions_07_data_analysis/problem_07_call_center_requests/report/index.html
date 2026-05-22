@@ -1793,6 +1793,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1887,6 +1898,17 @@
 <li>Mean and variance by sample: <a href="../mean_variance_by_sample.csv"><code>mean_variance_by_sample.csv</code></a></li>
 <li>Plots: PNG files in this folder.</li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Mean hourly requests by day type for sample_1" src="../mean_hourly_requests_by_day_type_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot shows that weekday and weekend request volumes differ. It is evidence that the data should not be treated as one homogeneous count distribution.</p>
+<p><img alt="Average requests by hour for sample_1" src="../average_requests_by_hour_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This line plot shows the daily traffic pattern. Request intensity changes strongly by hour, especially between night hours and business hours.</p>
+<p><img alt="Average requests by hour and day type for sample_1" src="../average_requests_by_hour_and_day_type_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot separates weekday and weekend patterns. It explains why one identical Poisson model for the whole dataset would be inappropriate.</p>
+<p><img alt="Hourly request-count histogram for sample_1" src="../hourly_requests_histogram_sample_1.png" /></p>
+<p><strong>What this shows:</strong> The histogram summarizes the distribution of hourly counts. Its shape is a mixture of low-rate and high-rate hours, not the shape of one constant-rate process.</p>
+<p><img alt="Mean and variance by sample" src="../mean_variance_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot compares the empirical mean and variance across samples. The difference between them supports the explanation that the data combine several traffic regimes.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one hour in one generated 30-day call-center sample. It records the date, day type, hour, and number of requests in that hour.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples show how count summaries fluctuate when the same time-dependent mechanism is sampled again.</p>

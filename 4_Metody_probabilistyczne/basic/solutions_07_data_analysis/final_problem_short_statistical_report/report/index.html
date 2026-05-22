@@ -1793,10 +1793,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dataset-1-die-rolls" class="md-nav__link">
+  <a href="#visualizations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dataset 1: Die Rolls
+        Visualizations
       
     </span>
   </a>
@@ -1804,10 +1804,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dataset-2-customer-survey" class="md-nav__link">
+  <a href="#dataset-1-exam-scores" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Dataset 2: Customer Survey
+        Dataset 1: Exam Scores
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-2-waiting-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dataset 2: Waiting Times
       
     </span>
   </a>
@@ -1856,174 +1867,287 @@
 <h1 id="final-problem-short-statistical-report">Final Problem — Short Statistical Report</h1>
 <h2 id="generated-files">Generated files</h2>
 <ul>
-<li>Die-roll frequency table: <a href="../final_p1_frequency_table.csv"><code>final_p1_frequency_table.csv</code></a></li>
-<li>Customer satisfaction frequency table: <a href="../final_p5_satisfaction_frequency.csv"><code>final_p5_satisfaction_frequency.csv</code></a></li>
-<li>Correlation-traps group summary: <a href="../final_p10_group_summary.csv"><code>final_p10_group_summary.csv</code></a></li>
-<li>Die-roll sample variation: <a href="../final_p1_sample_variation.csv"><code>final_p1_sample_variation.csv</code></a></li>
-<li>Customer-survey sample variation: <a href="../final_p5_sample_variation.csv"><code>final_p5_sample_variation.csv</code></a></li>
+<li>Exam group frequency: <a href="../final_p3_group_frequency.csv"><code>final_p3_group_frequency.csv</code></a></li>
+<li>Exam group summary: <a href="../final_p3_group_summary.csv"><code>final_p3_group_summary.csv</code></a></li>
+<li>Exam sample variation: <a href="../final_p3_sample_variation.csv"><code>final_p3_sample_variation.csv</code></a></li>
+<li>Waiting-time service frequency: <a href="../final_p8_service_frequency.csv"><code>final_p8_service_frequency.csv</code></a></li>
+<li>Waiting-time service summary: <a href="../final_p8_service_summary.csv"><code>final_p8_service_summary.csv</code></a></li>
+<li>Waiting-time sample variation: <a href="../final_p8_sample_variation.csv"><code>final_p8_sample_variation.csv</code></a></li>
+<li>Correlation group frequency: <a href="../final_p10_group_frequency.csv"><code>final_p10_group_frequency.csv</code></a></li>
+<li>Correlation group summary: <a href="../final_p10_group_summary.csv"><code>final_p10_group_summary.csv</code></a></li>
 <li>Correlation sample variation: <a href="../final_p10_sample_variation.csv"><code>final_p10_sample_variation.csv</code></a></li>
-<li>Plots: <a href="../final_p1_die_distribution.png"><code>final_p1_die_distribution.png</code></a>, <a href="../final_p5_satisfaction_distribution.png"><code>final_p5_satisfaction_distribution.png</code></a>, <a href="../final_p10_scatter.png"><code>final_p10_scatter.png</code></a></li>
+<li>Plots: PNG files in this folder.</li>
 </ul>
-<p>This model report uses three datasets: die rolls, customer survey, and correlation traps. In each case, <code>sample_1</code> is the main reproducible sample. The other samples are used to check which conclusions are stable and which numerical values fluctuate.</p>
-<h2 id="dataset-1-die-rolls">Dataset 1: Die Rolls</h2>
-<p>The die-roll dataset has 1000 observations and 6 variables in <code>sample_1</code>. One row is one die roll. A basic frequency table is:</p>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Exam score histograms" src="../final_p3_score_histograms.png" /></p>
+<p><strong>What this shows:</strong> The histograms compare the full score distributions in groups A and B. They show that group B has a higher center but also more spread.</p>
+<p><img alt="Exam score boxplots" src="../final_p3_score_boxplots.png" /></p>
+<p><strong>What this shows:</strong> The boxplots support the warning that the mean is not enough: group B has higher typical scores, but also more variability and lower scores.</p>
+<p><img alt="Waiting-time ECDF" src="../final_p8_waiting_time_ecdf.png" /></p>
+<p><strong>What this shows:</strong> The ECDF compares waiting-time distributions by service type. The priority curve rises faster, so priority tickets are more likely to be resolved below the same time threshold.</p>
+<p><img alt="Under-10-minute rate" src="../final_p8_under_10_rate.png" /></p>
+<p><strong>What this shows:</strong> This bar chart turns waiting times into an empirical probability: the proportion of tickets resolved within 10 minutes for each service type.</p>
+<p><img alt="Nonlinear relationship scatter plot" src="../final_p10_scatter.png" /></p>
+<p><strong>What this shows:</strong> The scatter plot shows a strong nonlinear U-shaped relationship that a single correlation coefficient does not describe well.</p>
+<p><img alt="Observation count by group" src="../final_p10_group_bar.png" /></p>
+<p><strong>What this shows:</strong> This bar chart gives the group frequencies before interpreting group-level summaries and correlations.</p>
+<p>This model report uses three datasets: exam scores, waiting times, and correlation traps. In each case, <code>sample_1</code> is the main reproducible sample. The other samples are used to check which conclusions are stable and which numerical values fluctuate.</p>
+<h2 id="dataset-1-exam-scores">Dataset 1: Exam Scores</h2>
+<p>The exam-score dataset has 240 observations and 6 variables in <code>sample_1</code>. One row is one student. A frequency table for the group variable is:</p>
 <table>
 <thead>
 <tr>
-<th>roll</th>
+<th>group</th>
 <th>frequency</th>
 <th>relative_frequency</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1.0000</td>
-<td>157.0000</td>
-<td>0.1570</td>
+<td>A</td>
+<td>120</td>
+<td>0.5000</td>
 </tr>
 <tr>
-<td>2.0000</td>
-<td>174.0000</td>
-<td>0.1740</td>
-</tr>
-<tr>
-<td>3.0000</td>
-<td>151.0000</td>
-<td>0.1510</td>
-</tr>
-<tr>
-<td>4.0000</td>
-<td>184.0000</td>
-<td>0.1840</td>
-</tr>
-<tr>
-<td>5.0000</td>
-<td>158.0000</td>
-<td>0.1580</td>
-</tr>
-<tr>
-<td>6.0000</td>
-<td>176.0000</td>
-<td>0.1760</td>
+<td>B</td>
+<td>120</td>
+<td>0.5000</td>
 </tr>
 </tbody>
 </table>
-<p>The empirical probability of an even result in <code>sample_1</code> is 0.5340. The empirical probability of rolling a 6 is 0.1760. The bar chart <code>final_p1_die_distribution.png</code> shows that the empirical distribution is close to the generating mechanism but not identical to any theoretical reference in a finite sample.</p>
-<p>A possible misuse would be to claim that the exact relative frequency in <code>sample_1</code> is the true probability. The sample comparison table shows that empirical rates change across samples:</p>
+<p>A numerical summary by group is:</p>
+<table>
+<thead>
+<tr>
+<th>group</th>
+<th>count</th>
+<th>mean_score</th>
+<th>median_score</th>
+<th>standard_deviation</th>
+<th>pass_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>120</td>
+<td>69.8492</td>
+<td>68.9000</td>
+<td>11.4975</td>
+<td>0.9750</td>
+</tr>
+<tr>
+<td>B</td>
+<td>120</td>
+<td>72.4058</td>
+<td>72.4500</td>
+<td>18.1090</td>
+<td>0.8750</td>
+</tr>
+</tbody>
+</table>
+<p>Group B has the higher mean and median score, but group A has the higher pass rate. This is a useful warning about misuse of numerical summaries: if “better” means higher average score, B looks better; if it means a higher proportion passing, A looks better in <code>sample_1</code>. The histogram and boxplot explain the difference because group B is more variable.</p>
+<p>Across samples, the exact means and pass rates fluctuate:</p>
 <table>
 <thead>
 <tr>
 <th>sample_id</th>
-<th>even_rate</th>
-<th>six_rate</th>
+<th>group</th>
+<th>mean_score</th>
+<th>pass_rate</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>sample_1</td>
+<td>A</td>
+<td>69.8492</td>
+<td>0.9750</td>
+</tr>
+<tr>
+<td>sample_1</td>
+<td>B</td>
+<td>72.4058</td>
+<td>0.8750</td>
+</tr>
+<tr>
+<td>sample_2</td>
+<td>A</td>
+<td>68.7075</td>
+<td>0.9500</td>
+</tr>
+<tr>
+<td>sample_2</td>
+<td>B</td>
+<td>72.8358</td>
+<td>0.9167</td>
+</tr>
+<tr>
+<td>sample_3</td>
+<td>A</td>
+<td>68.5125</td>
+<td>0.9750</td>
+</tr>
+<tr>
+<td>sample_3</td>
+<td>B</td>
+<td>73.9425</td>
+<td>0.9083</td>
+</tr>
+<tr>
+<td>sample_4</td>
+<td>A</td>
+<td>67.1425</td>
+<td>0.9333</td>
+</tr>
+<tr>
+<td>sample_4</td>
+<td>B</td>
+<td>72.6083</td>
+<td>0.9083</td>
+</tr>
+<tr>
+<td>sample_5</td>
+<td>A</td>
+<td>70.1367</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>sample_5</td>
+<td>B</td>
+<td>72.8892</td>
+<td>0.9333</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dataset-2-waiting-times">Dataset 2: Waiting Times</h2>
+<p>The waiting-time dataset has 500 observations and 6 variables in <code>sample_1</code>. One row is one service ticket. A frequency table for service type is:</p>
+<table>
+<thead>
+<tr>
+<th>service_type</th>
+<th>frequency</th>
+<th>relative_frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>standard</td>
+<td>340</td>
+<td>0.6800</td>
+</tr>
+<tr>
+<td>priority</td>
+<td>160</td>
+<td>0.3200</td>
+</tr>
+</tbody>
+</table>
+<p>A numerical summary by service type is:</p>
+<table>
+<thead>
+<tr>
+<th>service_type</th>
+<th>count</th>
+<th>mean_wait</th>
+<th>median_wait</th>
+<th>q75</th>
+<th>under_10_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>priority</td>
+<td>160</td>
+<td>5.8513</td>
+<td>5.1250</td>
+<td>7.9425</td>
+<td>0.8562</td>
+</tr>
+<tr>
+<td>standard</td>
+<td>340</td>
+<td>14.2555</td>
+<td>12.2400</td>
+<td>19.9025</td>
+<td>0.3882</td>
+</tr>
+</tbody>
+</table>
+<p>The empirical probability of resolution within 10 minutes is 0.5380 overall. By service type, priority tickets are much more likely to be resolved under 10 minutes than standard tickets. The ECDF is important because it shows the whole distribution, not only one threshold.</p>
+<p>A possible misuse would be to compare only mean waiting time and ignore skewness. Waiting times have long right tails, so medians, quantiles, ECDFs, and boxplots are more informative than the mean alone.</p>
+<p>Across samples, the waiting-time summaries fluctuate but remain broadly similar:</p>
+<table>
+<thead>
+<tr>
+<th>sample_id</th>
+<th>mean_wait</th>
+<th>median_wait</th>
+<th>under_10_rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sample_1</td>
+<td>11.5661</td>
+<td>9.2000</td>
+<td>0.5380</td>
+</tr>
+<tr>
+<td>sample_2</td>
+<td>11.5464</td>
+<td>8.9300</td>
+<td>0.5420</td>
+</tr>
+<tr>
+<td>sample_3</td>
+<td>11.9291</td>
+<td>9.2000</td>
 <td>0.5340</td>
-<td>0.1760</td>
-</tr>
-<tr>
-<td>sample_2</td>
-<td>0.5440</td>
-<td>0.1950</td>
-</tr>
-<tr>
-<td>sample_3</td>
-<td>0.5260</td>
-<td>0.1940</td>
 </tr>
 <tr>
 <td>sample_4</td>
-<td>0.5430</td>
-<td>0.1940</td>
+<td>12.7659</td>
+<td>10.1550</td>
+<td>0.4940</td>
 </tr>
 <tr>
 <td>sample_5</td>
-<td>0.5170</td>
-<td>0.1740</td>
-</tr>
-</tbody>
-</table>
-<h2 id="dataset-2-customer-survey">Dataset 2: Customer Survey</h2>
-<p>The customer-survey dataset has 600 observations and 7 variables in <code>sample_1</code>. One row is one customer. The satisfaction frequency table is:</p>
-<table>
-<thead>
-<tr>
-<th>satisfaction</th>
-<th>frequency</th>
-<th>relative_frequency</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.0000</td>
-<td>5.0000</td>
-<td>0.0083</td>
-</tr>
-<tr>
-<td>2.0000</td>
-<td>51.0000</td>
-<td>0.0850</td>
-</tr>
-<tr>
-<td>3.0000</td>
-<td>217.0000</td>
-<td>0.3617</td>
-</tr>
-<tr>
-<td>4.0000</td>
-<td>217.0000</td>
-<td>0.3617</td>
-</tr>
-<tr>
-<td>5.0000</td>
-<td>110.0000</td>
-<td>0.1833</td>
-</tr>
-</tbody>
-</table>
-<p>The overall renewal rate is 0.7567. The empirical conditional probability <code>P(renewed | satisfaction = 5)</code> is 0.9545. This is a conditional frequency estimated from the generated data.</p>
-<p>A useful warning is that renewal is not explained by satisfaction alone: channel and random variation also matter. The rate changes across samples:</p>
-<table>
-<thead>
-<tr>
-<th>sample_id</th>
-<th>renewal_rate</th>
-<th>mean_satisfaction</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>sample_1</td>
-<td>0.7567</td>
-<td>3.6267</td>
-</tr>
-<tr>
-<td>sample_2</td>
-<td>0.7350</td>
-<td>3.5717</td>
-</tr>
-<tr>
-<td>sample_3</td>
-<td>0.7683</td>
-<td>3.6967</td>
-</tr>
-<tr>
-<td>sample_4</td>
-<td>0.7317</td>
-<td>3.6083</td>
-</tr>
-<tr>
-<td>sample_5</td>
-<td>0.7267</td>
-<td>3.6317</td>
+<td>11.7214</td>
+<td>9.0750</td>
+<td>0.5380</td>
 </tr>
 </tbody>
 </table>
 <h2 id="dataset-3-correlation-traps">Dataset 3: Correlation Traps</h2>
-<p>The correlation-traps dataset has 264 observations and 6 variables in <code>sample_1</code>. One row is one observation with <code>x</code>, <code>y</code>, and a group label. A group summary is:</p>
+<p>The correlation-traps dataset has 264 observations and 6 variables in <code>sample_1</code>. One row is one observation with <code>x</code>, <code>y</code>, and a group label. A frequency table for the group variable is:</p>
+<table>
+<thead>
+<tr>
+<th>group</th>
+<th>frequency</th>
+<th>relative_frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left_branch</td>
+<td>125</td>
+<td>0.4735</td>
+</tr>
+<tr>
+<td>right_branch</td>
+<td>135</td>
+<td>0.5114</td>
+</tr>
+<tr>
+<td>outlier_group</td>
+<td>4</td>
+<td>0.0152</td>
+</tr>
+</tbody>
+</table>
+<p>A numerical summary by group is:</p>
 <table>
 <thead>
 <tr>
@@ -2031,6 +2155,8 @@
 <th>count</th>
 <th>mean_x</th>
 <th>mean_y</th>
+<th>min_y</th>
+<th>max_y</th>
 </tr>
 </thead>
 <tbody>
@@ -2039,23 +2165,29 @@
 <td>125</td>
 <td>-2.1482</td>
 <td>5.9510</td>
+<td>-2.1630</td>
+<td>16.8040</td>
 </tr>
 <tr>
 <td>outlier_group</td>
 <td>4</td>
 <td>8.2500</td>
 <td>2.1250</td>
+<td>1.0000</td>
+<td>3.0000</td>
 </tr>
 <tr>
 <td>right_branch</td>
 <td>135</td>
 <td>2.1446</td>
 <td>6.0978</td>
+<td>-2.5950</td>
+<td>17.5570</td>
 </tr>
 </tbody>
 </table>
-<p>The overall correlation in <code>sample_1</code> is 0.0179. This number is misleading if interpreted alone, because the scatter plot <code>final_p10_scatter.png</code> shows a strong nonlinear U-shaped relationship. A low correlation does not mean no relationship; it means weak linear association.</p>
-<p>Across samples, the correlation changes but the nonlinear visual pattern remains stable:</p>
+<p>The overall correlation in <code>sample_1</code> is 0.0179. This number is misleading if interpreted alone, because the scatter plot shows a strong nonlinear U-shaped relationship. A low correlation does not mean no relationship; it means weak linear association.</p>
+<p>Across samples, the exact correlation changes but the nonlinear visual pattern remains stable:</p>
 <table>
 <thead>
 <tr>
@@ -2087,7 +2219,7 @@
 </tbody>
 </table>
 <h2 id="conclusion">Conclusion</h2>
-<p>These three examples show why descriptive statistics should combine tables, numerical summaries, plots, and written interpretation. Single statistics can be useful, but they can also hide shape, subgroup structure, outliers, and sample-to-sample variation. The repeated samples make the key point visible: empirical descriptions are based on data, and data generated from the same process are similar but not identical.</p>
+<p>These three examples show why descriptive statistics should combine tables, numerical summaries, plots, and written interpretation. Single statistics can be useful, but they can also hide spread, skewness, subgroup structure, outliers, nonlinear relationships, and sample-to-sample variation. The repeated samples make the key point visible: empirical descriptions are based on data, and data generated from the same process are similar but not identical.</p>
 
 
 

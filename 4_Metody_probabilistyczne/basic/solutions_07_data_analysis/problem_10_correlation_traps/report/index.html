@@ -1793,6 +1793,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1878,6 +1889,15 @@
 <li>Correlation by scope plot: <a href="../correlation_by_scope_sample_1.png"><code>correlation_by_scope_sample_1.png</code></a></li>
 <li>Correlation by sample plot: <a href="../correlation_by_sample.png"><code>correlation_by_sample.png</code></a></li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Scatter plot with outliers for sample_1" src="../scatter_with_outliers_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This scatter plot is the main evidence. It shows a strong U-shaped relationship even though the overall linear correlation is close to zero.</p>
+<p><img alt="Scatter plot without outliers for sample_1" src="../scatter_without_outliers_sample_1.png" /></p>
+<p><strong>What this shows:</strong> After removing the outlier group, the nonlinear U-shape remains. This shows that the low overall correlation is not simply caused by the outliers.</p>
+<p><img alt="Correlation by scope for sample_1" src="../correlation_by_scope_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot shows that correlation depends heavily on which observations are included. The branches have strong correlations in opposite directions, while the combined data have weak correlation.</p>
+<p><img alt="Correlation by sample" src="../correlation_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot shows that exact correlation values change across samples. The visual nonlinear structure is more stable than the single numerical correlation.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one observation in one generated sample. It records two numerical variables, <code>x</code> and <code>y</code>, and a group label identifying the left branch, right branch, or outlier group.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples show how numerical correlation changes even when the nonlinear visual pattern stays the same.</p>

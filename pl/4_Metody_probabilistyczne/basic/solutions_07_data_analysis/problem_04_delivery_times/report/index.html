@@ -1681,6 +1681,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1787,6 +1798,13 @@
 <li>Boxplot by zone: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_04_delivery_times/delivery_time_boxplot_by_zone_sample_1.png"><code>delivery_time_boxplot_by_zone_sample_1.png</code></a></li>
 <li>Mean/median sample plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_04_delivery_times/mean_median_by_sample.png"><code>mean_median_by_sample.png</code></a></li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Delivery-time histogram for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_04_delivery_times/delivery_time_histogram_sample_1.png" /></p>
+<p><strong>What this shows:</strong> The histogram shows the right-skewed shape of delivery times. Most deliveries are moderate, while a smaller number of long deliveries stretch the right tail and pull the mean above the median.</p>
+<p><img alt="Delivery-time boxplot by zone for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_04_delivery_times/delivery_time_boxplot_by_zone_sample_1.png" /></p>
+<p><strong>What this shows:</strong> The boxplot compares delivery-time distributions between zones. It shows differences in center, spread, and possible outliers more clearly than a table of means alone.</p>
+<p><img alt="Mean and median by sample" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_04_delivery_times/mean_median_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot shows that the mean and median fluctuate from sample to sample. The mean is consistently above the median, which confirms that skewness is a stable feature, not an accident of one sample.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one delivery in one generated sample. It records the delivery zone, the delivery time in minutes, and whether the delivery was delayed.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples help check whether skewness, outliers, and delay rates are stable features of the data-generating process.</p>

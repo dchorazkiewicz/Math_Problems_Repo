@@ -1681,6 +1681,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1762,6 +1773,11 @@
 <li>Relative-frequency plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_02_coin_tosses/relative_frequency_heads_by_sample.png"><code>relative_frequency_heads_by_sample.png</code></a></li>
 <li>Final-frequency plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_02_coin_tosses/final_head_frequency_by_sample.png"><code>final_head_frequency_by_sample.png</code></a></li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Relative frequency of heads by sample" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_02_coin_tosses/relative_frequency_heads_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot shows how the running relative frequency of heads stabilizes as the number of tosses grows. Early values fluctuate strongly; later values move more slowly and tend to stay near the generating probability 0.52.</p>
+<p><img alt="Final head frequency by sample" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_02_coin_tosses/final_head_frequency_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot compares the final empirical frequency of heads across samples. The bars are close, but not equal, which illustrates the difference between theoretical probability and empirical relative frequency.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one toss in one simulated sequence of coin tosses. The column <code>trial</code> gives the running order inside a sample, and <code>relative_frequency_heads</code> records the cumulative empirical proportion of heads up to that trial.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples show how the empirical path changes when the random seed changes.</p>

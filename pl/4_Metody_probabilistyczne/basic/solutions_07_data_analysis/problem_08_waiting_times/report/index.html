@@ -1681,6 +1681,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1788,6 +1799,15 @@
 <li>Boxplot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_08_waiting_times/waiting_time_boxplot_by_service_type_sample_1.png"><code>waiting_time_boxplot_by_service_type_sample_1.png</code></a></li>
 <li>Sample summary plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_08_waiting_times/waiting_time_summary_by_sample.png"><code>waiting_time_summary_by_sample.png</code></a></li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Waiting-time histograms by service type for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_08_waiting_times/waiting_time_histograms_by_service_type_sample_1.png" /></p>
+<p><strong>What this shows:</strong> The histograms show right-skewed waiting-time distributions. Priority tickets are concentrated at shorter waiting times, while standard tickets have a longer right tail.</p>
+<p><img alt="Waiting-time empirical CDF by service type for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_08_waiting_times/waiting_time_ecdf_by_service_type_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This is the main CDF plot. The priority curve rises faster, meaning a larger proportion of priority tickets are resolved below the same time threshold.</p>
+<p><img alt="Waiting-time boxplot by service type for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_08_waiting_times/waiting_time_boxplot_by_service_type_sample_1.png" /></p>
+<p><strong>What this shows:</strong> The boxplot compares medians, interquartile ranges, and long waits. It supports the conclusion that priority service is faster not only on average but also across quantiles.</p>
+<p><img alt="Waiting-time center by sample" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_08_waiting_times/waiting_time_summary_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot shows how mean and median waiting times change across samples. The exact values fluctuate, but the right-skew pattern remains visible because the mean tends to exceed the median.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one service ticket in one generated sample. It records whether the ticket was standard or priority, the waiting time, and whether it was resolved within 10 minutes.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples show how empirical CDF estimates and waiting-time summaries fluctuate.</p>

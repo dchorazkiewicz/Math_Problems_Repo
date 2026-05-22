@@ -1681,6 +1681,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1763,6 +1774,11 @@
 <li>Distribution plot for <code>sample_1</code>: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_01_die_rolls/empirical_distribution_sample_1.png"><code>empirical_distribution_sample_1.png</code></a></li>
 <li>Sample comparison plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_01_die_rolls/relative_frequency_by_sample.png"><code>relative_frequency_by_sample.png</code></a></li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Empirical distribution for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_01_die_rolls/empirical_distribution_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot compares the observed relative frequencies in <code>sample_1</code> with two references: a fair die and the probabilities used to generate the data. It shows why the die should not be judged only by one theoretical line: the sample is close to the generating probabilities, but still fluctuates.</p>
+<p><img alt="Relative frequency by sample" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_01_die_rolls/relative_frequency_by_sample.png" /></p>
+<p><strong>What this shows:</strong> This plot is the key sampling-variation check. The five lines come from the same generating process, but they are not identical. The differences between lines show that empirical frequencies change when the seed changes.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one die roll inside one generated sample. The columns <code>sample_id</code> and <code>seed</code> identify which random sample produced the row. The variable <code>roll</code> is the observed die face. The variables <code>is_even</code> and <code>is_at_least_5</code> mark two events whose empirical probabilities can be estimated from the data.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples are used to check how much the empirical description changes when the seed changes.</p>

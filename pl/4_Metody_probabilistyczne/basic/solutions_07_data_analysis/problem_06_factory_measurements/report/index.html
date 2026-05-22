@@ -1681,6 +1681,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#visualizations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualizations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1775,6 +1786,13 @@
 <li>Within-spec plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/within_spec_proportion_by_machine_sample_1.png"><code>within_spec_proportion_by_machine_sample_1.png</code></a></li>
 <li>Mean-by-sample plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/mean_length_by_machine_across_samples.png"><code>mean_length_by_machine_across_samples.png</code></a></li>
 </ul>
+<h2 id="visualizations">Visualizations</h2>
+<p><img alt="Length boxplots by machine for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/length_boxplots_by_machine_sample_1.png" /></p>
+<p><strong>What this shows:</strong> The boxplots compare machine centers and variability against the target and specification limits. This is the main visual evidence for judging centering and production risk.</p>
+<p><img alt="Within-spec proportion by machine for sample_1" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/within_spec_proportion_by_machine_sample_1.png" /></p>
+<p><strong>What this shows:</strong> This plot turns measurements into the practical quality outcome: the proportion of parts within specification. It shows why a mean close to target is not enough.</p>
+<p><img alt="Mean length by machine across samples" src="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/mean_length_by_machine_across_samples.png" /></p>
+<p><strong>What this shows:</strong> This plot checks whether machine centering conclusions persist across repeated samples. The exact means fluctuate, but machine-level tendencies can still be compared.</p>
 <h2 id="description">Description</h2>
 <p>One row represents one manufactured part in one generated sample. It records the machine, measured length, deviation from the 50 mm target, and whether the part is within specification.</p>
 <p>The main reproducible solution uses <code>sample_1</code>. The other samples show how machine comparisons change under repeated random production samples.</p>

@@ -1692,10 +1692,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#machine-summary" class="md-nav__link">
+  <a href="#overall-summary-for-sample_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Machine summary
+        Overall Summary for sample_1
       
     </span>
   </a>
@@ -1703,10 +1703,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#interpretation" class="md-nav__link">
+  <a href="#machine-summary-for-sample_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Interpretation
+        Machine Summary for sample_1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification-results-for-sample_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specification Results for sample_1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers-and-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Answers and Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variation-across-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variation Across Samples
       
     </span>
   </a>
@@ -1734,16 +1767,43 @@
 <h2 id="generated-files">Generated files</h2>
 <ul>
 <li>Dataset: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/problem_06_factory_measurements.csv"><code>problem_06_factory_measurements.csv</code></a></li>
-<li>Overall summary: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/length_summary_overall.csv"><code>length_summary_overall.csv</code></a></li>
-<li>Machine summary: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/length_summary_by_machine.csv"><code>length_summary_by_machine.csv</code></a></li>
-<li>Within-spec counts: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/within_spec_counts_by_machine.csv"><code>within_spec_counts_by_machine.csv</code></a></li>
-<li>Boxplot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/length_boxplots_by_machine.png"><code>length_boxplots_by_machine.png</code></a></li>
-<li>Within-spec plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/within_spec_proportion_by_machine.png"><code>within_spec_proportion_by_machine.png</code></a></li>
-<li>Mean-deviation plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/mean_deviation_by_machine.png"><code>mean_deviation_by_machine.png</code></a></li>
+<li>Overall summary for <code>sample_1</code>: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/length_summary_overall_sample_1.csv"><code>length_summary_overall_sample_1.csv</code></a></li>
+<li>Machine summary for <code>sample_1</code>: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/length_summary_by_machine_sample_1.csv"><code>length_summary_by_machine_sample_1.csv</code></a></li>
+<li>Within-spec table for <code>sample_1</code>: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/within_spec_by_machine_sample_1.csv"><code>within_spec_by_machine_sample_1.csv</code></a></li>
+<li>Machine summary by sample: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/machine_summary_by_sample.csv"><code>machine_summary_by_sample.csv</code></a></li>
+<li>Boxplots: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/length_boxplots_by_machine_sample_1.png"><code>length_boxplots_by_machine_sample_1.png</code></a></li>
+<li>Within-spec plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/within_spec_proportion_by_machine_sample_1.png"><code>within_spec_proportion_by_machine_sample_1.png</code></a></li>
+<li>Mean-by-sample plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_06_factory_measurements/mean_length_by_machine_across_samples.png"><code>mean_length_by_machine_across_samples.png</code></a></li>
 </ul>
 <h2 id="description">Description</h2>
-<p>One row represents one manufactured part, the machine that produced it, its measured length, and whether it is within specification.</p>
-<h2 id="machine-summary">Machine summary</h2>
+<p>One row represents one manufactured part in one generated sample. It records the machine, measured length, deviation from the 50 mm target, and whether the part is within specification.</p>
+<p>The main reproducible solution uses <code>sample_1</code>. The other samples show how machine comparisons change under repeated random production samples.</p>
+<h2 id="overall-summary-for-sample_1">Overall Summary for <code>sample_1</code></h2>
+<table>
+<thead>
+<tr>
+<th>count</th>
+<th>mean</th>
+<th>median</th>
+<th>minimum</th>
+<th>maximum</th>
+<th>variance</th>
+<th>standard_deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>540.0000</td>
+<td>49.9998</td>
+<td>49.9625</td>
+<td>47.8730</td>
+<td>53.0100</td>
+<td>0.4872</td>
+<td>0.6980</td>
+</tr>
+</tbody>
+</table>
+<h2 id="machine-summary-for-sample_1">Machine Summary for <code>sample_1</code></h2>
 <table>
 <thead>
 <tr>
@@ -1751,10 +1811,10 @@
 <th>count</th>
 <th>mean</th>
 <th>median</th>
-<th>std</th>
-<th>mean_deviation</th>
-<th>mean_abs_deviation</th>
-<th>within_spec_proportion</th>
+<th>minimum</th>
+<th>maximum</th>
+<th>variance</th>
+<th>standard_deviation</th>
 </tr>
 </thead>
 <tbody>
@@ -1763,35 +1823,212 @@
 <td>180</td>
 <td>49.9813</td>
 <td>49.9720</td>
+<td>48.6250</td>
+<td>51.1360</td>
+<td>0.2854</td>
 <td>0.5343</td>
-<td>-0.0187</td>
-<td>0.4399</td>
-<td>1.0000</td>
 </tr>
 <tr>
 <td>M2</td>
 <td>180</td>
 <td>50.3074</td>
 <td>50.2755</td>
+<td>47.8730</td>
+<td>53.0100</td>
+<td>0.6256</td>
 <td>0.7910</td>
-<td>0.3074</td>
-<td>0.6513</td>
-<td>0.9222</td>
 </tr>
 <tr>
 <td>M3</td>
 <td>180</td>
 <td>49.7106</td>
 <td>49.7310</td>
+<td>48.2880</td>
+<td>51.4980</td>
+<td>0.3764</td>
 <td>0.6135</td>
-<td>-0.2894</td>
-<td>0.5426</td>
-<td>0.9778</td>
 </tr>
 </tbody>
 </table>
-<h2 id="interpretation">Interpretation</h2>
-<p>M1 is closest to the target and least variable. M2 has the largest mean length and largest variability, which explains its lower within-spec proportion; this shows why mean and spread must be interpreted together.</p>
+<h2 id="specification-results-for-sample_1">Specification Results for <code>sample_1</code></h2>
+<table>
+<thead>
+<tr>
+<th>machine</th>
+<th>parts</th>
+<th>within_spec</th>
+<th>within_spec_proportion</th>
+<th>mean_deviation</th>
+<th>mean_abs_deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1</td>
+<td>180</td>
+<td>180</td>
+<td>1.0000</td>
+<td>-0.0187</td>
+<td>0.4399</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>180</td>
+<td>166</td>
+<td>0.9222</td>
+<td>0.3074</td>
+<td>0.6513</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>180</td>
+<td>176</td>
+<td>0.9778</td>
+<td>-0.2894</td>
+<td>0.5426</td>
+</tr>
+</tbody>
+</table>
+<h2 id="answers-and-interpretation">Answers and Interpretation</h2>
+<p>Machine M1 is most centered around the target in <code>sample_1</code> by mean absolute deviation from 50 mm. Machine M2 is most variable by standard deviation.</p>
+<p>A machine can have a good mean and still produce many problematic parts if the variation is large. The mean describes the center, but specification failures are caused by individual parts falling outside the allowed interval from 48.5 mm to 51.5 mm.</p>
+<p>The boxplots make this clearer than the means alone: they show spread, center, and whether the distribution crosses specification limits.</p>
+<h2 id="variation-across-samples">Variation Across Samples</h2>
+<p>The broad machine differences are visible across samples, but exact means, standard deviations, and within-spec proportions fluctuate. A machine comparison is more convincing when the same pattern repeats across samples.</p>
+<table>
+<thead>
+<tr>
+<th>sample_id</th>
+<th>machine</th>
+<th>mean_length</th>
+<th>standard_deviation</th>
+<th>within_spec_proportion</th>
+<th>mean_abs_deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sample_1</td>
+<td>M1</td>
+<td>49.9813</td>
+<td>0.5343</td>
+<td>1.0000</td>
+<td>0.4399</td>
+</tr>
+<tr>
+<td>sample_1</td>
+<td>M2</td>
+<td>50.3074</td>
+<td>0.7910</td>
+<td>0.9222</td>
+<td>0.6513</td>
+</tr>
+<tr>
+<td>sample_1</td>
+<td>M3</td>
+<td>49.7106</td>
+<td>0.6135</td>
+<td>0.9778</td>
+<td>0.5426</td>
+</tr>
+<tr>
+<td>sample_2</td>
+<td>M1</td>
+<td>49.9467</td>
+<td>0.5429</td>
+<td>1.0000</td>
+<td>0.4443</td>
+</tr>
+<tr>
+<td>sample_2</td>
+<td>M2</td>
+<td>50.3192</td>
+<td>0.7754</td>
+<td>0.9056</td>
+<td>0.6691</td>
+</tr>
+<tr>
+<td>sample_2</td>
+<td>M3</td>
+<td>49.7004</td>
+<td>0.6723</td>
+<td>0.9722</td>
+<td>0.6072</td>
+</tr>
+<tr>
+<td>sample_3</td>
+<td>M1</td>
+<td>49.9033</td>
+<td>0.5229</td>
+<td>0.9889</td>
+<td>0.4285</td>
+</tr>
+<tr>
+<td>sample_3</td>
+<td>M2</td>
+<td>50.3416</td>
+<td>0.7655</td>
+<td>0.9167</td>
+<td>0.6782</td>
+</tr>
+<tr>
+<td>sample_3</td>
+<td>M3</td>
+<td>49.7020</td>
+<td>0.6734</td>
+<td>0.9500</td>
+<td>0.5638</td>
+</tr>
+<tr>
+<td>sample_4</td>
+<td>M1</td>
+<td>49.9736</td>
+<td>0.5746</td>
+<td>0.9833</td>
+<td>0.4516</td>
+</tr>
+<tr>
+<td>sample_4</td>
+<td>M2</td>
+<td>50.3049</td>
+<td>0.6733</td>
+<td>0.9611</td>
+<td>0.6057</td>
+</tr>
+<tr>
+<td>sample_4</td>
+<td>M3</td>
+<td>49.7581</td>
+<td>0.6350</td>
+<td>0.9722</td>
+<td>0.5231</td>
+</tr>
+<tr>
+<td>sample_5</td>
+<td>M1</td>
+<td>49.9566</td>
+<td>0.5429</td>
+<td>0.9889</td>
+<td>0.4300</td>
+</tr>
+<tr>
+<td>sample_5</td>
+<td>M2</td>
+<td>50.3297</td>
+<td>0.6898</td>
+<td>0.9333</td>
+<td>0.5992</td>
+</tr>
+<tr>
+<td>sample_5</td>
+<td>M3</td>
+<td>49.7340</td>
+<td>0.6672</td>
+<td>0.9611</td>
+<td>0.5762</td>
+</tr>
+</tbody>
+</table>
 
 
 

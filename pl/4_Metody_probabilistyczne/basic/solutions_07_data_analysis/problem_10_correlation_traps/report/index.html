@@ -1692,10 +1692,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#correlation-summary" class="md-nav__link">
+  <a href="#correlation-summary-for-sample_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Correlation summary
+        Correlation Summary for sample_1
       
     </span>
   </a>
@@ -1703,10 +1703,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#group-summary" class="md-nav__link">
+  <a href="#group-summary-for-sample_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Group summary
+        Group Summary for sample_1
       
     </span>
   </a>
@@ -1714,10 +1714,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#interpretation" class="md-nav__link">
+  <a href="#answers-and-interpretation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Interpretation
+        Answers and Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variation-across-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variation Across Samples
       
     </span>
   </a>
@@ -1745,17 +1756,20 @@
 <h2 id="generated-files">Generated files</h2>
 <ul>
 <li>Dataset: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/problem_10_correlation_traps.csv"><code>problem_10_correlation_traps.csv</code></a></li>
-<li>Dataset without outliers: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/problem_10_without_outlier_group.csv"><code>problem_10_without_outlier_group.csv</code></a></li>
-<li>Outlier observations: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/outlier_group_observations.csv"><code>outlier_group_observations.csv</code></a></li>
-<li>Correlation summary: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/correlation_summary.csv"><code>correlation_summary.csv</code></a></li>
-<li>Group summary: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/summary_by_group.csv"><code>summary_by_group.csv</code></a></li>
-<li>Scatter with outliers: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/scatter_with_outliers.png"><code>scatter_with_outliers.png</code></a></li>
-<li>Scatter without outliers: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/scatter_without_outliers.png"><code>scatter_without_outliers.png</code></a></li>
-<li>Correlation plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/correlation_by_scope.png"><code>correlation_by_scope.png</code></a></li>
+<li>Dataset without outlier group for <code>sample_1</code>: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/problem_10_without_outlier_group_sample_1.csv"><code>problem_10_without_outlier_group_sample_1.csv</code></a></li>
+<li>Outlier observations for <code>sample_1</code>: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/outlier_group_observations_sample_1.csv"><code>outlier_group_observations_sample_1.csv</code></a></li>
+<li>Correlation summary for <code>sample_1</code>: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/correlation_summary_sample_1.csv"><code>correlation_summary_sample_1.csv</code></a></li>
+<li>Group summary for <code>sample_1</code>: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/summary_by_group_sample_1.csv"><code>summary_by_group_sample_1.csv</code></a></li>
+<li>Correlation by sample: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/correlation_by_sample.csv"><code>correlation_by_sample.csv</code></a></li>
+<li>Scatter with outliers: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/scatter_with_outliers_sample_1.png"><code>scatter_with_outliers_sample_1.png</code></a></li>
+<li>Scatter without outliers: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/scatter_without_outliers_sample_1.png"><code>scatter_without_outliers_sample_1.png</code></a></li>
+<li>Correlation by scope plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/correlation_by_scope_sample_1.png"><code>correlation_by_scope_sample_1.png</code></a></li>
+<li>Correlation by sample plot: <a href="../../../../../../4_Metody_probabilistyczne/basic/solutions_07_data_analysis/problem_10_correlation_traps/correlation_by_sample.png"><code>correlation_by_sample.png</code></a></li>
 </ul>
 <h2 id="description">Description</h2>
-<p>One row represents one observation with two numerical variables and a group label.</p>
-<h2 id="correlation-summary">Correlation summary</h2>
+<p>One row represents one observation in one generated sample. It records two numerical variables, <code>x</code> and <code>y</code>, and a group label identifying the left branch, right branch, or outlier group.</p>
+<p>The main reproducible solution uses <code>sample_1</code>. The other samples show how numerical correlation changes even when the nonlinear visual pattern stays the same.</p>
+<h2 id="correlation-summary-for-sample_1">Correlation Summary for <code>sample_1</code></h2>
 <table>
 <thead>
 <tr>
@@ -1792,7 +1806,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="group-summary">Group summary</h2>
+<h2 id="group-summary-for-sample_1">Group Summary for <code>sample_1</code></h2>
 <table>
 <thead>
 <tr>
@@ -1839,8 +1853,48 @@
 </tr>
 </tbody>
 </table>
-<h2 id="interpretation">Interpretation</h2>
-<p>The overall correlation is close to zero, but the scatter plot shows a strong U-shaped relationship. Within each branch the relationship is almost linear, so this problem demonstrates why correlation must be interpreted together with visualizations and subgroup structure.</p>
+<h2 id="answers-and-interpretation">Answers and Interpretation</h2>
+<p>The overall correlation in <code>sample_1</code> is close to zero, but the scatter plot clearly shows a strong U-shaped relationship. This is the main trap: correlation measures linear association, so it can fail to describe a nonlinear relationship.</p>
+<p>Removing the outlier group changes the correlation, but it still does not make the U-shaped relationship well described by one linear coefficient. Within the left branch the relationship is strongly negative, and within the right branch it is strongly positive. The combined dataset hides both branch-level relationships.</p>
+<p>A low correlation therefore does not necessarily mean that there is no relationship. It may mean that the relationship is nonlinear, that subgroups behave differently, or that outliers distort the linear summary.</p>
+<h2 id="variation-across-samples">Variation Across Samples</h2>
+<p>The exact correlation changes from sample to sample. The visual U-shape remains stable, so the model solution should rely on the scatter plot together with the numerical correlation, not on the correlation coefficient alone.</p>
+<table>
+<thead>
+<tr>
+<th>sample_id</th>
+<th>correlation_all</th>
+<th>correlation_without_outliers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sample_1</td>
+<td>0.0179</td>
+<td>0.0572</td>
+</tr>
+<tr>
+<td>sample_2</td>
+<td>-0.1679</td>
+<td>-0.1537</td>
+</tr>
+<tr>
+<td>sample_3</td>
+<td>-0.0698</td>
+<td>-0.0386</td>
+</tr>
+<tr>
+<td>sample_4</td>
+<td>-0.1017</td>
+<td>-0.0784</td>
+</tr>
+<tr>
+<td>sample_5</td>
+<td>-0.0168</td>
+<td>0.0159</td>
+</tr>
+</tbody>
+</table>
 
 
 

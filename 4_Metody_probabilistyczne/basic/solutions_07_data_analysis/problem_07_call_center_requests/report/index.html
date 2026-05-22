@@ -1804,10 +1804,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hourly-summary" class="md-nav__link">
+  <a href="#hourly-count-summary-for-sample_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hourly summary
+        Hourly Count Summary for sample_1
       
     </span>
   </a>
@@ -1815,10 +1815,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#day-type-summary" class="md-nav__link">
+  <a href="#weekday-and-weekend-comparison-for-sample_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Day-type summary
+        Weekday and Weekend Comparison for sample_1
       
     </span>
   </a>
@@ -1826,10 +1826,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#interpretation" class="md-nav__link">
+  <a href="#first-daily-totals-for-sample_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Interpretation
+        First Daily Totals for sample_1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers-and-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Answers and Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mean-variance-and-sample-variation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mean, Variance, and Sample Variation
       
     </span>
   </a>
@@ -1857,49 +1879,43 @@
 <h2 id="generated-files">Generated files</h2>
 <ul>
 <li>Dataset: <a href="../problem_07_call_center_requests.csv"><code>problem_07_call_center_requests.csv</code></a></li>
-<li>Hourly summary: <a href="../hourly_requests_summary.csv"><code>hourly_requests_summary.csv</code></a></li>
-<li>Day-type summary: <a href="../requests_summary_by_day_type.csv"><code>requests_summary_by_day_type.csv</code></a></li>
-<li>Average by hour: <a href="../average_requests_by_hour.csv"><code>average_requests_by_hour.csv</code></a></li>
-<li>Average by hour/day type: <a href="../average_requests_by_hour_and_day_type.csv"><code>average_requests_by_hour_and_day_type.csv</code></a></li>
-<li>Daily totals: <a href="../daily_total_requests.csv"><code>daily_total_requests.csv</code></a></li>
-<li>Daily summary: <a href="../daily_total_summary_by_day_type.csv"><code>daily_total_summary_by_day_type.csv</code></a></li>
-<li>Average-hour plot: <a href="../average_requests_by_hour.png"><code>average_requests_by_hour.png</code></a></li>
-<li>Average-hour/day-type plot: <a href="../average_requests_by_hour_and_day_type.png"><code>average_requests_by_hour_and_day_type.png</code></a></li>
-<li>Histogram: <a href="../hourly_requests_histogram.png"><code>hourly_requests_histogram.png</code></a></li>
-<li>Day-type bar plot: <a href="../mean_hourly_requests_by_day_type.png"><code>mean_hourly_requests_by_day_type.png</code></a></li>
+<li>Hourly summary for <code>sample_1</code>: <a href="../hourly_requests_summary_sample_1.csv"><code>hourly_requests_summary_sample_1.csv</code></a></li>
+<li>Day-type summary for <code>sample_1</code>: <a href="../requests_summary_by_day_type_sample_1.csv"><code>requests_summary_by_day_type_sample_1.csv</code></a></li>
+<li>Average by hour for <code>sample_1</code>: <a href="../average_requests_by_hour_sample_1.csv"><code>average_requests_by_hour_sample_1.csv</code></a></li>
+<li>Average by hour and day type: <a href="../average_requests_by_hour_and_day_type_sample_1.csv"><code>average_requests_by_hour_and_day_type_sample_1.csv</code></a></li>
+<li>Daily totals: <a href="../daily_total_requests_sample_1.csv"><code>daily_total_requests_sample_1.csv</code></a></li>
+<li>Mean and variance by sample: <a href="../mean_variance_by_sample.csv"><code>mean_variance_by_sample.csv</code></a></li>
+<li>Plots: PNG files in this folder.</li>
 </ul>
 <h2 id="description">Description</h2>
-<p>One row represents one hour in the call center, including date, day type, hour, and request count.</p>
-<h2 id="hourly-summary">Hourly summary</h2>
+<p>One row represents one hour in one generated 30-day call-center sample. It records the date, day type, hour, and number of requests in that hour.</p>
+<p>The main reproducible solution uses <code>sample_1</code>. The other samples show how count summaries fluctuate when the same time-dependent mechanism is sampled again.</p>
+<h2 id="hourly-count-summary-for-sample_1">Hourly Count Summary for <code>sample_1</code></h2>
 <table>
 <thead>
 <tr>
 <th>count</th>
 <th>mean</th>
-<th>median</th>
 <th>variance</th>
-<th>std</th>
-<th>min</th>
-<th>q1</th>
-<th>q3</th>
-<th>max</th>
+<th>standard_deviation</th>
+<th>minimum</th>
+<th>median</th>
+<th>maximum</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>720.0000</td>
 <td>3.8542</td>
-<td>3.0000</td>
 <td>11.1484</td>
 <td>3.3389</td>
 <td>0.0000</td>
-<td>1.0000</td>
-<td>6.0000</td>
+<td>3.0000</td>
 <td>19.0000</td>
 </tr>
 </tbody>
 </table>
-<h2 id="day-type-summary">Day-type summary</h2>
+<h2 id="weekday-and-weekend-comparison-for-sample_1">Weekday and Weekend Comparison for <code>sample_1</code></h2>
 <table>
 <thead>
 <tr>
@@ -1907,9 +1923,7 @@
 <th>hours</th>
 <th>mean</th>
 <th>variance</th>
-<th>std</th>
-<th>min</th>
-<th>max</th>
+<th>standard_deviation</th>
 </tr>
 </thead>
 <tbody>
@@ -1919,8 +1933,6 @@
 <td>4.3452</td>
 <td>12.9700</td>
 <td>3.6014</td>
-<td>0</td>
-<td>19</td>
 </tr>
 <tr>
 <td>weekend</td>
@@ -1928,13 +1940,126 @@
 <td>2.7083</td>
 <td>5.0541</td>
 <td>2.2481</td>
-<td>0</td>
-<td>9</td>
 </tr>
 </tbody>
 </table>
-<h2 id="interpretation">Interpretation</h2>
-<p>The dataset is related to Poisson count models, but the whole table should not be treated as one fixed-rate Poisson sample. Hour and day type change the request rate, so the overall variance is inflated by mixing different conditions.</p>
+<h2 id="first-daily-totals-for-sample_1">First Daily Totals for <code>sample_1</code></h2>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>day_type</th>
+<th>daily_total_requests</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-03-01</td>
+<td>weekend</td>
+<td>57</td>
+</tr>
+<tr>
+<td>2026-03-02</td>
+<td>weekday</td>
+<td>109</td>
+</tr>
+<tr>
+<td>2026-03-03</td>
+<td>weekday</td>
+<td>90</td>
+</tr>
+<tr>
+<td>2026-03-04</td>
+<td>weekday</td>
+<td>102</td>
+</tr>
+<tr>
+<td>2026-03-05</td>
+<td>weekday</td>
+<td>124</td>
+</tr>
+<tr>
+<td>2026-03-06</td>
+<td>weekday</td>
+<td>109</td>
+</tr>
+<tr>
+<td>2026-03-07</td>
+<td>weekend</td>
+<td>61</td>
+</tr>
+<tr>
+<td>2026-03-08</td>
+<td>weekend</td>
+<td>57</td>
+</tr>
+<tr>
+<td>2026-03-09</td>
+<td>weekday</td>
+<td>106</td>
+</tr>
+<tr>
+<td>2026-03-10</td>
+<td>weekday</td>
+<td>109</td>
+</tr>
+</tbody>
+</table>
+<p>The full daily-total table is saved as CSV.</p>
+<h2 id="answers-and-interpretation">Answers and Interpretation</h2>
+<p>The dataset is related to the Poisson distribution because each row records a count of events in a fixed time interval, one hour. For a simple Poisson model with a constant rate, the mean and variance would be approximately equal.</p>
+<p>However, the whole dataset should not be treated as one identical Poisson distribution. The expected request rate changes by hour and by day type. Business hours have more requests than night hours, and weekdays differ from weekends. Mixing several different rates creates a heterogeneous count distribution.</p>
+<p>The line plots show the most important structure: request intensity is strongly time-dependent.</p>
+<h2 id="mean-variance-and-sample-variation">Mean, Variance, and Sample Variation</h2>
+<p>Across samples, the exact mean and variance change, but the main pattern remains stable. The variance is larger than the mean because the data combine different traffic regimes.</p>
+<table>
+<thead>
+<tr>
+<th>sample_id</th>
+<th>mean</th>
+<th>variance</th>
+<th>standard_deviation</th>
+<th>variance_minus_mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sample_1</td>
+<td>3.8542</td>
+<td>11.1484</td>
+<td>3.3389</td>
+<td>7.2942</td>
+</tr>
+<tr>
+<td>sample_2</td>
+<td>3.8431</td>
+<td>10.6276</td>
+<td>3.2600</td>
+<td>6.7846</td>
+</tr>
+<tr>
+<td>sample_3</td>
+<td>3.9444</td>
+<td>11.1541</td>
+<td>3.3398</td>
+<td>7.2096</td>
+</tr>
+<tr>
+<td>sample_4</td>
+<td>3.9153</td>
+<td>11.2849</td>
+<td>3.3593</td>
+<td>7.3696</td>
+</tr>
+<tr>
+<td>sample_5</td>
+<td>3.9167</td>
+<td>11.5146</td>
+<td>3.3933</td>
+<td>7.5979</td>
+</tr>
+</tbody>
+</table>
 
 
 

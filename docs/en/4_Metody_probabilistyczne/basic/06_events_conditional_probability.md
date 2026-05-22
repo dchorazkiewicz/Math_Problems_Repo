@@ -381,133 +381,472 @@ Use event notation for statements such as:
 
 # Task 02 – Algebra of Events in a Finite Sample Space
 
-Consider the experiment of rolling a fair die once.
+## Solution
 
-Let
-
-$$
-A = {2,4,6}
-$$
-
-be the event “the result is even”, and let
+The sample space for rolling a fair die once is:
 
 $$
-B = {2,3,5}
+\Omega = \{1,2,3,4,5,6\}
 $$
 
-be the event “the result is prime”.
+Given:
 
-1. Compute:
+$$
+A = \{2,4,6\}
+$$
 
-   * $A \cup B$
-   * $A \cap B$
-   * $A^c$
-   * $B^c$
-   * $A \setminus B$
-   * $B \setminus A$
+(event: “the result is even”)
 
-2. Decide whether $A$ and $B$ are mutually exclusive.
+and
 
-3. Decide whether one of the events is a subset of the other.
+$$
+B = \{2,3,5\}
+$$
 
-4. Interpret each of the above events verbally.
+(event: “the result is prime”)
+
+---
+
+## 1. Computations
+
+### Union
+
+$$
+A \cup B = \{2,3,4,5,6\}
+$$
+
+Interpretation:  
+The result is even or prime.
+
+---
+
+### Intersection
+
+$$
+A \cap B = \{2\}
+$$
+
+Interpretation:  
+The result is both even and prime.
+
+---
+
+### Complement of \(A\)
+
+$$
+A^c = \{1,3,5\}
+$$
+
+Interpretation:  
+The result is not even.
+
+---
+
+### Complement of \(B\)
+
+$$
+B^c = \{1,4,6\}
+$$
+
+Interpretation:  
+The result is not prime.
+
+---
+
+### Difference \(A \setminus B\)
+
+$$
+A \setminus B = \{4,6\}
+$$
+
+Interpretation:  
+The result is even but not prime.
+
+---
+
+### Difference \(B \setminus A\)
+
+$$
+B \setminus A = \{3,5\}
+$$
+
+Interpretation:  
+The result is prime but not even.
+
+---
+
+## 2. Mutually Exclusive
+
+Two events are mutually exclusive if:
+
+$$
+A \cap B = \emptyset
+$$
+
+But:
+
+$$
+A \cap B = \{2\}
+$$
+
+Therefore, \(A\) and \(B\) are not mutually exclusive.
+
+---
+
+## 3. Subset Relation
+
+Check whether one event is a subset of the other.
+
+$$
+A \nsubseteq B
+$$
+
+because 4 and 6 are not in \(B\).
+
+Also,
+
+$$
+B \nsubseteq A
+$$
+
+because 3 and 5 are not in \(A\).
+
+Therefore, neither event is a subset of the other.
+
+
 
 ---
 
 # Task 03 – Event Algebra for Two Coin Tosses
 
-Consider the experiment of tossing a fair coin twice.
+## Solution
 
-Let
+The experiment consists of tossing a fair coin twice.
+
+---
+
+## 1. Sample Space
+
+The sample space is:
 
 $$
-A = \text{“at least one head occurs”}
+\Omega = \{HH, HT, TH, TT\}
 $$
 
-and
+where:
+- H = Head
+- T = Tail
+
+---
+
+## 2. Events
+
+Event \(A\):
+
+“At least one head occurs”
 
 $$
-B = \text{“both tosses give the same result”}
+A = \{HH, HT, TH\}
 $$
 
-1. Write the sample space explicitly.
+Event \(B\):
 
-2. Describe the events $A$ and $B$ as subsets of the sample space.
+“Both tosses give the same result”
 
-3. Determine:
+$$
+B = \{HH, TT\}
+$$
 
-   * $A \cup B$
-   * $A \cap B$
-   * $A^c$
-   * $B^c$
-   * $A \setminus B$
-   * $B \setminus A$
+---
 
-4. Decide whether $A$ and $B$ are mutually exclusive.
+## 3. Computations
 
-5. Decide whether $A$ and $B$ are independent.
+### Union
+
+$$
+A \cup B = \{HH, HT, TH, TT\}
+$$
+
+Interpretation:  
+At least one head occurs or both tosses are the same.
+
+---
+
+### Intersection
+
+$$
+A \cap B = \{HH\}
+$$
+
+Interpretation:  
+At least one head occurs and both tosses are the same.
+
+---
+
+### Complement of \(A\)
+
+$$
+A^c = \{TT\}
+$$
+
+Interpretation:  
+No head occurs.
+
+---
+
+### Complement of \(B\)
+
+$$
+B^c = \{HT, TH\}
+$$
+
+Interpretation:  
+The tosses give different results.
+
+---
+
+### Difference \(A \setminus B\)
+
+$$
+A \setminus B = \{HT, TH\}
+$$
+
+Interpretation:  
+At least one head occurs but the tosses are different.
+
+---
+
+### Difference \(B \setminus A\)
+
+$$
+B \setminus A = \{TT\}
+$$
+
+Interpretation:  
+Both tosses are the same but no head occurs.
+
+---
+
+## 4. Mutually Exclusive
+
+Two events are mutually exclusive if:
+
+$$
+A \cap B = \emptyset
+$$
+
+But:
+
+$$
+A \cap B = \{HH\}
+$$
+
+Therefore, \(A\) and \(B\) are not mutually exclusive.
+
+---
+
+## 5. Independence
+
+Events \(A\) and \(B\) are independent if:
+
+$$
+P(A \cap B) = P(A)P(B)
+$$
+
+Now calculate:
+
+$$
+P(A)=\frac{3}{4}
+$$
+
+$$
+P(B)=\frac{2}{4}=\frac{1}{2}
+$$
+
+$$
+P(A \cap B)=\frac{1}{4}
+$$
+
+Check:
+
+$$
+P(A)P(B)=\frac{3}{4}\cdot\frac{1}{2}=\frac{3}{8}
+$$
+
+Since:
+
+$$
+\frac{1}{4} \ne \frac{3}{8}
+$$
+
+the events are not independent.
+
+
 
 ---
 
 # Task 04 – Basic Probability Properties
 
-Use only standard probability rules to solve the following.
+## Solution
 
-1. If
+---
+
+## 1.
+
+Given:
 
 $$
 P(A)=0.35
 $$
 
-find
+Using:
 
 $$
-P(A^c)
+P(A^c)=1-P(A)
 $$
 
-2. If
+we get:
 
 $$
-P(A)=0.4, \qquad P(B)=0.5, \qquad P(A \cap B)=0.2
+P(A^c)=1-0.35=0.65
 $$
 
-compute
+---
+
+## 2.
+
+Given:
 
 $$
-P(A \cup B)
+P(A)=0.4
 $$
 
-3. If $A$ and $B$ are mutually exclusive and
-
 $$
-P(A)=0.18, \qquad P(B)=0.27
+P(B)=0.5
 $$
 
-compute
-
 $$
-P(A \cup B)
+P(A \cap B)=0.2
 $$
 
-4. If
+Using:
 
 $$
-P(A \cup B)=0.9, \qquad P(A)=0.6, \qquad P(B)=0.5
+P(A \cup B)=P(A)+P(B)-P(A \cap B)
 $$
 
-compute
+we get:
 
 $$
-P(A \cap B)
+P(A \cup B)=0.4+0.5-0.2
 $$
 
-5. Can two events satisfy simultaneously:
+$$
+=0.7
+$$
 
-   * they are mutually exclusive,
-   * they are independent,
-   * both have positive probability?
+---
 
-Justify your answer.
+## 3.
+
+Since \(A\) and \(B\) are mutually exclusive:
+
+$$
+P(A \cap B)=0
+$$
+
+Given:
+
+$$
+P(A)=0.18
+$$
+
+$$
+P(B)=0.27
+$$
+
+Then:
+
+$$
+P(A \cup B)=P(A)+P(B)
+$$
+
+$$
+=0.18+0.27
+$$
+
+$$
+=0.45
+$$
+
+---
+
+## 4.
+
+Given:
+
+$$
+P(A \cup B)=0.9
+$$
+
+$$
+P(A)=0.6
+$$
+
+$$
+P(B)=0.5
+$$
+
+Using:
+
+$$
+P(A \cup B)=P(A)+P(B)-P(A \cap B)
+$$
+
+we get:
+
+$$
+0.9=0.6+0.5-P(A \cap B)
+$$
+
+$$
+0.9=1.1-P(A \cap B)
+$$
+
+$$
+P(A \cap B)=0.2
+$$
+
+---
+
+## 5.
+
+Two events cannot be:
+- mutually exclusive,
+- independent,
+- and both have positive probability.
+
+If events are mutually exclusive:
+
+$$
+P(A \cap B)=0
+$$
+
+If they are independent:
+
+$$
+P(A \cap B)=P(A)P(B)
+$$
+
+Therefore:
+
+$$
+P(A)P(B)=0
+$$
+
+This means at least one event must have probability 0.
+
+So, two events with positive probability cannot be both mutually exclusive and independent.
 
 ---
 

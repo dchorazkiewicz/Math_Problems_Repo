@@ -1,0 +1,2786 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dchorazkiewicz.github.io/Math_Problems_Repo/4_Metody_probabilistyczne/basic/08_statistical_inference/">
+      
+      
+        <link rel="prev" href="../07_data_analysis/">
+      
+      
+        <link rel="next" href="../../advanced/01_events_and_probability/">
+      
+      
+        
+          <link rel="alternate" href="../../../pl/4_Metody_probabilistyczne/basic/08_statistical_inference/" hreflang="pl">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>8. Statistical Inference - Math Problems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#task-list-08-statistical-inference-through-simulation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Math Problems" class="md-header__button md-logo" aria-label="Math Problems" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Math Problems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8. Statistical Inference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../pl/4_Metody_probabilistyczne/basic/08_statistical_inference/" hreflang="pl" class="md-select__link">
+              Polski
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Math Problems" class="md-nav__button md-logo" aria-label="Math Problems" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Math Problems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lecture: Mathematics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lecture: Mathematics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1_Algebra/01_matrices_and_operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Matrices & Operations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1_Algebra/02_determinants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Determinants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1_Algebra/03_matrix_inversion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Matrix Inversion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1_Algebra/04_systems_of_equations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Systems of Equations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometry
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Geometry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_Geometria/01_vectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Vectors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_Geometria/02_lines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Lines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_Geometria/03_planes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Planes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2_Geometria/04_line_and_plane/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Line and Plane
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Analysis
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/01_sequence_limits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Sequence Limits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/02_function_limits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Function Limits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/03_derivatives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Derivatives
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/04_function_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Function Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/05_integrals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Integrals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3_Analiza/06_applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Calculus Applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lecture: Probabilistic Methods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lecture: Probabilistic Methods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Probabilistic Methods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Probabilistic Methods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basic
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_events_and_probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Events & Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_combinatorics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Combinatorics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_probability_distributions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Probability Distributions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_discovery_formalism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Discovering Formalism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_pmf_pdf_cdf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. PMF, PDF, and CDF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_conditional_probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Conditional Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_data_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Statistical Inference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Statistical Inference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/01_events_and_probability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Events & Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/02_random_variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Random Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/03_distribution_parameters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Distribution Parameters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/04_selected_distributions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Selected Distributions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/05_limit_theorems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Limit Theorems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/06_basic_statistics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Basic Statistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/07_estimation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Estimation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/08_hypothesis_testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Hypothesis Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/09_correlation_and_regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Correlation & Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/10_advanced_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Advanced Methods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/11_decision_theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Decision Theory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_3" id="__nav_3_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PDF
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PDF
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdf_ln/task_list_01_events_probability_general_lecture_notes.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Events & Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdf_ln/task_list_02_combinatorics_general_lecture_notes.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Combinatorics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdf_ln/task_list_03_probability_distributions_general_lecture_notes.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Probability Distributions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdf_ln/task_list_04_discovering_formalism_general_lecture_notes.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Discovering Formalism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdf_ln/task_list_05_pmf_pdf_cdf_general_lecture_notes.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. PMF, PDF, and CDF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdf_ln/task_list_06_conditional_probability_general_lecture_notes.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Conditional Probability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdf_ln/task_list_07_descriptive_statistics_general_lecture_notes.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Descriptive Statistics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Animations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Animations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../anim/4_Metody_probalistyczne/laboratory_1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../anim/4_Metody_probalistyczne/laboratory_2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../anim/4_Metody_probalistyczne/laboratory_3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Philosophy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="task-list-08-statistical-inference-through-simulation">Task List 08 — Statistical Inference Through Simulation</h1>
+<h2 id="general-philosophy">General Philosophy</h2>
+<p>This task list closes the course by moving from probability and descriptive statistics to statistical inference.</p>
+<p>The purpose is not to apply formulas mechanically.</p>
+<p>The purpose is to investigate, simulate, visualize, compare, and explain how statistical inference works.</p>
+<p>In every problem, students should treat formulas as summaries of observed behavior, not as black-box rules. Whenever a theoretical formula is used, it should be supported by simulation and visual evidence.</p>
+<p>Students are encouraged to use Python, R, JavaScript, notebooks, dashboards, HTML applications, or any other suitable computational tool.</p>
+<p>Interactive applications are especially welcome. In many problems it is useful to include sliders or input fields for parameters such as:</p>
+<ul>
+<li>number of trials,</li>
+<li>sample size,</li>
+<li>number of repeated samples,</li>
+<li>probability of success,</li>
+<li>distribution parameters,</li>
+<li>random seed,</li>
+<li>number of Monte Carlo repetitions.</li>
+</ul>
+<p>The expected result is not only code and numerical output.
+Each solution should include interpretation, plots, observations, and conclusions written in words.</p>
+<p>Students may use AI tools to generate code, improve visualizations, or help design simulations. However, they must study, run, modify, and explain the results themselves.</p>
+<p>The central question of this list is:</p>
+<blockquote>
+<p>How can we move from random data to careful conclusions under uncertainty?</p>
+</blockquote>
+<hr />
+<h1 id="problem-1-frequency-stabilization-and-the-law-of-large-numbers">Problem 1 — Frequency Stabilization and the Law of Large Numbers</h1>
+<h2 id="aim">Aim</h2>
+<p>Investigate how empirical frequencies behave when the number of trials increases.</p>
+<p>This problem should make the Law of Large Numbers visible through simulation.</p>
+<h2 id="suggested-experiments">Suggested experiments</h2>
+<p>Simulate repeated trials for:</p>
+<ul>
+<li>a fair coin,</li>
+<li>a biased coin,</li>
+<li>a fair die,</li>
+<li>a biased die,</li>
+<li>any other simple discrete experiment chosen by the student.</li>
+</ul>
+<h2 id="parameters-to-control">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>the number of trials <span class="arithmatex">\(n\)</span>,</li>
+<li>the probability of success <span class="arithmatex">\(p\)</span>, for coin-like experiments,</li>
+<li>probabilities of outcomes, for die-like experiments,</li>
+<li>the random seed,</li>
+<li>the number of repeated simulation runs.</li>
+</ul>
+<h2 id="investigation">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Simulate one long sequence of trials.</li>
+<li>Plot the relative frequency of selected events as a function of the number of trials.</li>
+<li>Repeat the experiment many times with different seeds.</li>
+<li>Compare how different simulation paths fluctuate.</li>
+<li>Observe what happens when <span class="arithmatex">\(n\)</span> is small, medium, and very large.</li>
+<li>Compare empirical frequencies with theoretical probabilities.</li>
+<li>Explain why empirical frequency is not exactly equal to theoretical probability.</li>
+<li>Explain in their own words what stabilizes as <span class="arithmatex">\(n\)</span> increases.</li>
+</ol>
+<h2 id="required-visualizations">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>one line plot of relative frequency versus number of trials,</li>
+<li>one comparison of several simulation paths,</li>
+<li>one plot showing empirical probabilities against theoretical probabilities.</li>
+</ul>
+<h2 id="conceptual-conclusion">Conceptual conclusion</h2>
+<p>Students should explain the Law of Large Numbers as an observed phenomenon:</p>
+<blockquote>
+<p>With many independent repetitions, empirical frequencies tend to stabilize near the theoretical probabilities, although random fluctuations never disappear completely.</p>
+</blockquote>
+<hr />
+<h1 id="problem-2-sample-size-and-number-of-samples-are-different">Problem 2 — Sample Size and Number of Samples Are Different</h1>
+<h2 id="aim_1">Aim</h2>
+<p>Understand the difference between:</p>
+<ul>
+<li>increasing the size of one sample,</li>
+<li>increasing the number of repeated samples.</li>
+</ul>
+<p>This distinction is crucial for understanding statistical inference.</p>
+<h2 id="simulation">Simulation</h2>
+<p>Choose a simple random experiment, for example:</p>
+<div class="arithmatex">\[
+X \sim Bernoulli(p)
+\]</div>
+<p>or</p>
+<div class="arithmatex">\[
+X \sim N(\mu,\sigma^2).
+\]</div>
+<p>Generate many samples.</p>
+<h2 id="parameters-to-control_1">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>sample size <span class="arithmatex">\(n\)</span>,</li>
+<li>number of samples <span class="arithmatex">\(R\)</span>,</li>
+<li>parameter values such as <span class="arithmatex">\(p\)</span>, <span class="arithmatex">\(\mu\)</span>, or <span class="arithmatex">\(\sigma\)</span>,</li>
+<li>random seed.</li>
+</ul>
+<h2 id="investigation_1">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Generate one sample and compute a statistic, for example <span class="arithmatex">\(\hat p\)</span> or <span class="arithmatex">\(\bar x\)</span>.</li>
+<li>Generate many samples of the same size.</li>
+<li>Compute the same statistic for every sample.</li>
+<li>Draw the distribution of the statistic.</li>
+<li>Change <span class="arithmatex">\(n\)</span> while keeping <span class="arithmatex">\(R\)</span> fixed.</li>
+<li>Change <span class="arithmatex">\(R\)</span> while keeping <span class="arithmatex">\(n\)</span> fixed.</li>
+<li>Explain what changes when <span class="arithmatex">\(n\)</span> increases.</li>
+<li>Explain what changes when <span class="arithmatex">\(R\)</span> increases.</li>
+<li>Explain why a single sample gives only one possible value of a statistic.</li>
+<li>Explain why many repeated samples reveal the behavior of the estimator.</li>
+</ol>
+<h2 id="required-visualizations_1">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>histograms of the estimator for different sample sizes,</li>
+<li>comparison of results for different numbers of repeated samples,</li>
+<li>a plot showing how the spread of the estimator changes with <span class="arithmatex">\(n\)</span>.</li>
+</ul>
+<h2 id="conceptual-conclusion_1">Conceptual conclusion</h2>
+<p>Students should understand that:</p>
+<blockquote>
+<p>The sample size controls how much information is in one sample.
+The number of repeated samples controls how well we can observe the behavior of the estimator in a simulation.</p>
+</blockquote>
+<hr />
+<h1 id="problem-3-sampling-distribution-of-a-proportion">Problem 3 — Sampling Distribution of a Proportion</h1>
+<h2 id="aim_2">Aim</h2>
+<p>Investigate the behavior of the sample proportion:</p>
+<div class="arithmatex">\[
+\hat p = \frac{X}{n}.
+\]</div>
+<p>This problem prepares students for confidence intervals and hypothesis tests for proportions.</p>
+<h2 id="simulation_1">Simulation</h2>
+<p>Choose a Bernoulli model:</p>
+<div class="arithmatex">\[
+X_i \sim Bernoulli(p).
+\]</div>
+<p>Generate many samples and compute <span class="arithmatex">\(\hat p\)</span> for each sample.</p>
+<h2 id="parameters-to-control_2">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>true probability <span class="arithmatex">\(p\)</span>,</li>
+<li>sample size <span class="arithmatex">\(n\)</span>,</li>
+<li>number of repeated samples <span class="arithmatex">\(R\)</span>,</li>
+<li>random seed.</li>
+</ul>
+<h2 id="investigation_2">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Generate many samples for a fixed <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(n\)</span>.</li>
+<li>Compute <span class="arithmatex">\(\hat p\)</span> for each sample.</li>
+<li>Draw the histogram of simulated <span class="arithmatex">\(\hat p\)</span> values.</li>
+<li>Change <span class="arithmatex">\(n\)</span> and observe how the histogram changes.</li>
+<li>Change <span class="arithmatex">\(p\)</span> and observe how the center and spread change.</li>
+<li>Compute the empirical mean of the simulated <span class="arithmatex">\(\hat p\)</span> values.</li>
+<li>Compare it with the true value <span class="arithmatex">\(p\)</span>.</li>
+<li>Compute the empirical standard deviation of the simulated <span class="arithmatex">\(\hat p\)</span> values.</li>
+<li>Compare it with the theoretical standard error:</li>
+</ol>
+<div class="arithmatex">\[
+\sqrt{\frac{p(1-p)}{n}}.
+\]</div>
+<ol>
+<li>Explain why <span class="arithmatex">\(\hat p\)</span> is an estimator and also a random variable.</li>
+</ol>
+<h2 id="required-visualizations_2">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>histograms of <span class="arithmatex">\(\hat p\)</span> for several values of <span class="arithmatex">\(n\)</span>,</li>
+<li>a plot of empirical standard deviation versus theoretical standard error,</li>
+<li>a visualization showing the true value <span class="arithmatex">\(p\)</span> as a reference line.</li>
+</ul>
+<h2 id="conceptual-conclusion_2">Conceptual conclusion</h2>
+<p>Students should explain that:</p>
+<blockquote>
+<p>The sample proportion fluctuates from sample to sample, but for large samples it usually stays closer to the true probability.</p>
+</blockquote>
+<hr />
+<h1 id="problem-4-sampling-distribution-of-the-mean-and-the-central-limit-effect">Problem 4 — Sampling Distribution of the Mean and the Central Limit Effect</h1>
+<h2 id="aim_3">Aim</h2>
+<p>Investigate why averages are more stable than individual observations and why normal-shaped distributions appear in statistics.</p>
+<h2 id="simulation_2">Simulation</h2>
+<p>Use several different data-generating distributions, for example:</p>
+<ul>
+<li>uniform distribution,</li>
+<li>exponential distribution,</li>
+<li>lognormal distribution,</li>
+<li>die rolls,</li>
+<li>Bernoulli trials,</li>
+<li>normal distribution.</li>
+</ul>
+<p>For each distribution, generate many samples and compute their means.</p>
+<h2 id="parameters-to-control_3">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>distribution type,</li>
+<li>distribution parameters,</li>
+<li>sample size <span class="arithmatex">\(n\)</span>,</li>
+<li>number of repeated samples <span class="arithmatex">\(R\)</span>,</li>
+<li>random seed.</li>
+</ul>
+<h2 id="investigation_3">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Plot the original distribution of individual observations.</li>
+<li>Generate many samples of size <span class="arithmatex">\(n\)</span>.</li>
+<li>Compute the sample mean for each sample.</li>
+<li>Plot the histogram of sample means.</li>
+<li>Repeat for increasing values of <span class="arithmatex">\(n\)</span>.</li>
+<li>Observe how the distribution of sample means changes.</li>
+<li>Standardize the sample means:</li>
+</ol>
+<div class="arithmatex">\[
+Z=\frac{\bar X-\mu}{\sigma/\sqrt n}.
+\]</div>
+<ol>
+<li>Compare the standardized histogram with the standard normal distribution.</li>
+<li>Explain why the original distribution and the distribution of sample means are different.</li>
+<li>Explain the intuition behind the Central Limit Theorem.</li>
+</ol>
+<h2 id="required-visualizations_3">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>histogram of the original data-generating distribution,</li>
+<li>histograms of sample means for several <span class="arithmatex">\(n\)</span>,</li>
+<li>comparison with a normal curve,</li>
+<li>visualization of how the spread decreases as <span class="arithmatex">\(n\)</span> increases.</li>
+</ul>
+<h2 id="conceptual-conclusion_3">Conceptual conclusion</h2>
+<p>Students should understand that:</p>
+<blockquote>
+<p>The normal distribution appears because sums and averages of many independent random variables often have an approximately normal shape, even when the original observations are not normally distributed.</p>
+</blockquote>
+<hr />
+<h1 id="problem-5-confidence-intervals-for-a-proportion-by-simulation">Problem 5 — Confidence Intervals for a Proportion by Simulation</h1>
+<h2 id="aim_4">Aim</h2>
+<p>Understand confidence intervals through repeated sampling, not only through a formula.</p>
+<h2 id="simulation_3">Simulation</h2>
+<p>Choose a true probability <span class="arithmatex">\(p\)</span>.
+Generate many samples.
+For each sample compute <span class="arithmatex">\(\hat p\)</span> and construct a confidence interval.</p>
+<p>For example:</p>
+<div class="arithmatex">\[
+\hat p \pm 1.96\sqrt{\frac{\hat p(1-\hat p)}{n}}.
+\]</div>
+<h2 id="parameters-to-control_4">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>true probability <span class="arithmatex">\(p\)</span>,</li>
+<li>sample size <span class="arithmatex">\(n\)</span>,</li>
+<li>confidence level,</li>
+<li>number of repeated samples <span class="arithmatex">\(R\)</span>,</li>
+<li>random seed.</li>
+</ul>
+<h2 id="investigation_4">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Generate many samples from the same Bernoulli model.</li>
+<li>Construct a confidence interval for each sample.</li>
+<li>Check whether each interval contains the true value <span class="arithmatex">\(p\)</span>.</li>
+<li>Estimate the empirical coverage probability.</li>
+<li>Compare empirical coverage with the chosen confidence level.</li>
+<li>Visualize many intervals on one plot.</li>
+<li>Mark intervals that contain <span class="arithmatex">\(p\)</span> differently from intervals that miss <span class="arithmatex">\(p\)</span>.</li>
+<li>Change <span class="arithmatex">\(n\)</span> and observe how the interval width changes.</li>
+<li>Change the confidence level and observe how the interval width changes.</li>
+<li>Explain what a 95% confidence interval means and what it does not mean.</li>
+</ol>
+<h2 id="required-visualizations_4">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>plot of many confidence intervals,</li>
+<li>coverage rate as a function of sample size,</li>
+<li>interval width as a function of sample size,</li>
+<li>comparison of different confidence levels.</li>
+</ul>
+<h2 id="conceptual-conclusion_4">Conceptual conclusion</h2>
+<p>Students should explain that:</p>
+<blockquote>
+<p>The confidence level describes the long-run behavior of the interval-building procedure over many repeated samples.</p>
+</blockquote>
+<hr />
+<h1 id="problem-6-confidence-intervals-for-a-mean-by-simulation">Problem 6 — Confidence Intervals for a Mean by Simulation</h1>
+<h2 id="aim_5">Aim</h2>
+<p>Understand uncertainty in estimating a population mean.</p>
+<h2 id="simulation_4">Simulation</h2>
+<p>Generate data from a distribution with known mean.
+Use both symmetric and skewed distributions.</p>
+<p>Examples:</p>
+<div class="arithmatex">\[
+X \sim N(\mu,\sigma^2)
+\]</div>
+<p>and a lognormal distribution.</p>
+<h2 id="parameters-to-control_5">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>distribution type,</li>
+<li>distribution parameters,</li>
+<li>sample size <span class="arithmatex">\(n\)</span>,</li>
+<li>confidence level,</li>
+<li>number of repeated samples <span class="arithmatex">\(R\)</span>,</li>
+<li>random seed.</li>
+</ul>
+<h2 id="investigation_5">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Generate many samples from a known population.</li>
+<li>Compute <span class="arithmatex">\(\bar x\)</span> and <span class="arithmatex">\(s\)</span> for each sample.</li>
+<li>Construct confidence intervals for the population mean.</li>
+<li>Check how often the intervals contain the true mean.</li>
+<li>Compare performance for normal and skewed distributions.</li>
+<li>Compare small, medium, and large sample sizes.</li>
+<li>Investigate when the normal approximation works well.</li>
+<li>Investigate when the interval procedure becomes unreliable.</li>
+<li>Explain why the sample standard deviation <span class="arithmatex">\(s\)</span> replaces the unknown <span class="arithmatex">\(\sigma\)</span>.</li>
+<li>Interpret one interval in a real context.</li>
+</ol>
+<h2 id="required-visualizations_5">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>intervals plotted across repeated samples,</li>
+<li>histogram of sample means,</li>
+<li>comparison of interval width for different <span class="arithmatex">\(n\)</span>,</li>
+<li>coverage rate for different distributions and sample sizes.</li>
+</ul>
+<h2 id="conceptual-conclusion_5">Conceptual conclusion</h2>
+<p>Students should understand that:</p>
+<blockquote>
+<p>A sample mean is only one estimate of the population mean.
+A confidence interval describes the uncertainty of that estimate.</p>
+</blockquote>
+<hr />
+<h1 id="problem-7-hypothesis-testing-as-a-simulation-under-the-null-hypothesis">Problem 7 — Hypothesis Testing as a Simulation Under the Null Hypothesis</h1>
+<h2 id="aim_6">Aim</h2>
+<p>Understand a hypothesis test as a comparison between observed data and simulated data under a reference assumption.</p>
+<h2 id="situation">Situation</h2>
+<p>Use a coin experiment.</p>
+<p>Suppose we observe <span class="arithmatex">\(h\)</span> heads in <span class="arithmatex">\(n\)</span> tosses.</p>
+<p>We test:</p>
+<div class="arithmatex">\[
+H_0:p=0.5
+\]</div>
+<p>against an alternative such as:</p>
+<div class="arithmatex">\[
+H_1:p\neq 0.5.
+\]</div>
+<h2 id="parameters-to-control_6">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>observed number of heads <span class="arithmatex">\(h\)</span>,</li>
+<li>number of tosses <span class="arithmatex">\(n\)</span>,</li>
+<li>null hypothesis value <span class="arithmatex">\(p_0\)</span>,</li>
+<li>number of Monte Carlo repetitions <span class="arithmatex">\(R\)</span>,</li>
+<li>one-sided or two-sided alternative.</li>
+</ul>
+<h2 id="investigation_6">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Treat the observed result as fixed.</li>
+<li>Simulate many experiments assuming <span class="arithmatex">\(H_0\)</span> is true.</li>
+<li>Plot the distribution of the number of heads under <span class="arithmatex">\(H_0\)</span>.</li>
+<li>Mark the observed result on the plot.</li>
+<li>Decide whether the observed result looks typical or unusual.</li>
+<li>Estimate the p-value by simulation.</li>
+<li>Compare the simulated p-value with an exact binomial calculation if possible.</li>
+<li>Change <span class="arithmatex">\(n\)</span> and observe how the interpretation changes.</li>
+<li>Explain why a small deviation may matter for large <span class="arithmatex">\(n\)</span> but not for small <span class="arithmatex">\(n\)</span>.</li>
+<li>Write a careful statistical conclusion.</li>
+</ol>
+<h2 id="required-visualizations_6">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>histogram of simulated results under <span class="arithmatex">\(H_0\)</span>,</li>
+<li>observed result marked on the histogram,</li>
+<li>visualization of tail areas,</li>
+<li>p-value as a function of observed deviation or sample size.</li>
+</ul>
+<h2 id="conceptual-conclusion_6">Conceptual conclusion</h2>
+<p>Students should explain that:</p>
+<blockquote>
+<p>A p-value measures how unusual the observed data would be if the null hypothesis were true.
+It is not the probability that the null hypothesis is true.</p>
+</blockquote>
+<hr />
+<h1 id="problem-8-goodness-of-fit-is-this-die-fair">Problem 8 — Goodness of Fit: Is This Die Fair?</h1>
+<h2 id="aim_7">Aim</h2>
+<p>Understand the chi-square goodness-of-fit test through simulation.</p>
+<p>The formula should appear as a way to measure discrepancy between observed and expected counts.</p>
+<h2 id="situation_1">Situation</h2>
+<p>A die is rolled many times.
+The observed counts are:</p>
+<div class="arithmatex">\[
+O_1,\ldots,O_6.
+\]</div>
+<p>Under the fair-die hypothesis, the expected counts are:</p>
+<div class="arithmatex">\[
+E_i = \frac{n}{6}.
+\]</div>
+<p>Define the discrepancy statistic:</p>
+<div class="arithmatex">\[
+D=\sum_{i=1}^{6}\frac{(O_i-E_i)^2}{E_i}.
+\]</div>
+<h2 id="parameters-to-control_7">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>number of rolls <span class="arithmatex">\(n\)</span>,</li>
+<li>probabilities of die outcomes,</li>
+<li>number of Monte Carlo repetitions <span class="arithmatex">\(R\)</span>,</li>
+<li>random seed.</li>
+</ul>
+<h2 id="investigation_7">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Generate observed die-roll data.</li>
+<li>Compute observed frequencies.</li>
+<li>Compute expected frequencies under the fair-die model.</li>
+<li>Compute the discrepancy statistic <span class="arithmatex">\(D\)</span>.</li>
+<li>Simulate many fair-die experiments with the same <span class="arithmatex">\(n\)</span>.</li>
+<li>Compute <span class="arithmatex">\(D\)</span> for each simulated experiment.</li>
+<li>Plot the simulated distribution of <span class="arithmatex">\(D\)</span> under fairness.</li>
+<li>Mark the observed <span class="arithmatex">\(D\)</span> on the plot.</li>
+<li>Estimate the p-value by simulation.</li>
+<li>Compare the simulation result with the chi-square approximation.</li>
+</ol>
+<h2 id="required-visualizations_7">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>observed versus expected bar chart,</li>
+<li>histogram of simulated discrepancy statistics,</li>
+<li>observed discrepancy marked on the histogram,</li>
+<li>comparison of fair and biased dice.</li>
+</ul>
+<h2 id="conceptual-conclusion_7">Conceptual conclusion</h2>
+<p>Students should understand that:</p>
+<blockquote>
+<p>A goodness-of-fit test checks whether the observed frequency table is unusually far from what the model predicts.</p>
+</blockquote>
+<hr />
+<h1 id="problem-9-comparing-two-groups-by-randomization-and-simulation">Problem 9 — Comparing Two Groups by Randomization and Simulation</h1>
+<h2 id="aim_8">Aim</h2>
+<p>Move from descriptive comparison to inferential comparison.</p>
+<p>The main question is:</p>
+<blockquote>
+<p>Is the observed difference large compared with differences that could appear by random variation alone?</p>
+</blockquote>
+<h2 id="situations">Situations</h2>
+<p>Use at least two contexts:</p>
+<ul>
+<li>exam scores in two groups,</li>
+<li>pass rates in two groups,</li>
+<li>customer renewal rates by channel,</li>
+<li>machine measurements,</li>
+<li>delivery times by zone.</li>
+</ul>
+<h2 id="parameters-to-control_8">Parameters to control</h2>
+<p>The simulation should allow changing:</p>
+<ul>
+<li>group sizes,</li>
+<li>group means or proportions,</li>
+<li>standard deviations,</li>
+<li>number of randomization or Monte Carlo repetitions,</li>
+<li>random seed.</li>
+</ul>
+<h2 id="investigation_8">Investigation</h2>
+<p>Students should:</p>
+<ol>
+<li>Compute the observed difference between two groups.</li>
+<li>Use plots to describe both groups.</li>
+<li>Simulate data under a no-difference assumption.</li>
+<li>Generate the null distribution of differences.</li>
+<li>Mark the observed difference on the null distribution.</li>
+<li>Estimate a simulation-based p-value.</li>
+<li>Construct a confidence interval for the difference.</li>
+<li>Compare statistical significance with practical importance.</li>
+<li>Investigate the role of sample size.</li>
+<li>Explain why comparing only sample means or sample proportions may be misleading.</li>
+</ol>
+<h2 id="required-visualizations_8">Required visualizations</h2>
+<p>At least:</p>
+<ul>
+<li>side-by-side histograms or boxplots,</li>
+<li>distribution of simulated differences under the null hypothesis,</li>
+<li>observed difference marked on the plot,</li>
+<li>confidence interval for the difference.</li>
+</ul>
+<h2 id="conceptual-conclusion_8">Conceptual conclusion</h2>
+<p>Students should understand that:</p>
+<blockquote>
+<p>A difference observed in one dataset must be compared with the amount of random variation expected under repeated sampling.</p>
+</blockquote>
+<hr />
+<h1 id="problem-10-final-simulation-based-statistical-investigation">Problem 10 — Final Simulation-Based Statistical Investigation</h1>
+<h2 id="aim_9">Aim</h2>
+<p>Prepare a complete statistical investigation combining the whole course.</p>
+<p>This is an open final project.</p>
+<h2 id="task">Task</h2>
+<p>Choose or generate a dataset related to one of the following contexts:</p>
+<ul>
+<li>coin tosses,</li>
+<li>die rolls,</li>
+<li>defective products,</li>
+<li>exam scores,</li>
+<li>customer renewals,</li>
+<li>delivery times,</li>
+<li>machine measurements,</li>
+<li>call center requests,</li>
+<li>web service errors,</li>
+<li>another approved context.</li>
+</ul>
+<p>The investigation must contain both descriptive statistics and statistical inference.</p>
+<h2 id="required-components">Required components</h2>
+<p>The final report or application must include:</p>
+<ol>
+<li>description of the random experiment or data-generating mechanism,</li>
+<li>definition of variables and observed outcomes,</li>
+<li>exploratory visualizations,</li>
+<li>descriptive statistics,</li>
+<li>empirical probabilities or conditional frequencies,</li>
+<li>at least one estimator,</li>
+<li>visualization of sampling variability,</li>
+<li>at least one confidence interval,</li>
+<li>at least one hypothesis test,</li>
+<li>at least one Monte Carlo simulation supporting the inference.</li>
+</ol>
+<h2 id="interactive-or-computational-component">Interactive or computational component</h2>
+<p>Students should prepare one of the following:</p>
+<ul>
+<li>a notebook,</li>
+<li>a dashboard,</li>
+<li>a small HTML/JavaScript application,</li>
+<li>a Python application,</li>
+<li>another interactive computational tool.</li>
+</ul>
+<p>The tool should allow changing at least two important parameters, for example:</p>
+<ul>
+<li>sample size,</li>
+<li>number of repeated samples,</li>
+<li>true probability,</li>
+<li>mean,</li>
+<li>standard deviation,</li>
+<li>number of Monte Carlo repetitions,</li>
+<li>confidence level,</li>
+<li>significance level.</li>
+</ul>
+<h2 id="required-interpretation">Required interpretation</h2>
+<p>The final explanation should answer:</p>
+<ol>
+<li>What is random in this problem?</li>
+<li>What is fixed but unknown?</li>
+<li>What is observed in one sample?</li>
+<li>What changes across repeated samples?</li>
+<li>What does the simulation show?</li>
+<li>What does the formula summarize?</li>
+<li>What conclusion is justified?</li>
+<li>What conclusion would be too strong?</li>
+<li>What are the limitations of the analysis?</li>
+<li>How does this problem connect probability theory with statistical inference?</li>
+</ol>
+<h2 id="conceptual-conclusion_9">Conceptual conclusion</h2>
+<p>The final project should show that:</p>
+<blockquote>
+<p>Statistical inference is not the mechanical use of formulas.
+It is the process of using probability, simulation, and data to make careful conclusions under uncertainty.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

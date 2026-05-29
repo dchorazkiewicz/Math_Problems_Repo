@@ -1724,7 +1724,7 @@ Each solution should include interpretation, plots, observations, and conclusion
 <hr />
 <h1 id="problem-1-frequency-stabilization-and-the-law-of-large-numbers">Problem 1 — Frequency Stabilization and the Law of Large Numbers</h1>
 <h2 id="aim">Aim</h2>
-<p>Investigate how empirical frequencies behave when the number of trials increases.</p>
+<p>Investigate how empirical frequencies behave when the number of independent trials increases.</p>
 <p>This problem should make the Law of Large Numbers visible through simulation.</p>
 <h2 id="suggested-experiments">Suggested experiments</h2>
 <p>Simulate repeated trials for:</p>
@@ -1735,6 +1735,7 @@ Each solution should include interpretation, plots, observations, and conclusion
 <li>a biased die,</li>
 <li>any other simple discrete experiment chosen by the student.</li>
 </ul>
+<p>The trials should be independent and generated from the same probability model during one simulation run.</p>
 <h2 id="parameters-to-control">Parameters to control</h2>
 <p>The simulation should allow changing:</p>
 <ul>
@@ -1780,13 +1781,14 @@ Each solution should include interpretation, plots, observations, and conclusion
 <h2 id="simulation">Simulation</h2>
 <p>Choose a simple random experiment, for example:</p>
 <div class="arithmatex">\[
-X \sim Bernoulli(p)
+X \sim \operatorname{Bernoulli}(p)
 \]</div>
 <p>or</p>
 <div class="arithmatex">\[
-X \sim N(\mu,\sigma^2).
+X \sim \mathcal{N}(\mu,\sigma^2).
 \]</div>
 <p>Generate many samples.</p>
+<p>Here <span class="arithmatex">\(n\)</span> means the size of one sample, and <span class="arithmatex">\(R\)</span> means the number of repeated samples generated in the simulation.</p>
 <h2 id="parameters-to-control_1">Parameters to control</h2>
 <p>The simulation should allow changing:</p>
 <ul>
@@ -1827,13 +1829,20 @@ The number of repeated samples controls how well we can observe the behavior of 
 <h2 id="aim_2">Aim</h2>
 <p>Investigate the behavior of the sample proportion:</p>
 <div class="arithmatex">\[
-\hat p = \frac{X}{n}.
+\hat p = \frac{X}{n},
 \]</div>
+<p>where <span class="arithmatex">\(X\)</span> is the number of successes in a sample of size <span class="arithmatex">\(n\)</span>.</p>
 <p>This problem prepares students for confidence intervals and hypothesis tests for proportions.</p>
 <h2 id="simulation_1">Simulation</h2>
 <p>Choose a Bernoulli model:</p>
 <div class="arithmatex">\[
-X_i \sim Bernoulli(p).
+X_i \sim \operatorname{Bernoulli}(p), \quad i=1,\ldots,n.
+\]</div>
+<p>For each sample, define:</p>
+<div class="arithmatex">\[
+X=\sum_{i=1}^{n}X_i,
+\qquad
+\hat p=\frac{1}{n}\sum_{i=1}^{n}X_i.
 \]</div>
 <p>Generate many samples and compute <span class="arithmatex">\(\hat p\)</span> for each sample.</p>
 <h2 id="parameters-to-control_2">Parameters to control</h2>
@@ -1889,7 +1898,8 @@ X_i \sim Bernoulli(p).
 <li>Bernoulli trials,</li>
 <li>normal distribution.</li>
 </ul>
-<p>For each distribution, generate many samples and compute their means.</p>
+<p>For each distribution, generate many independent samples and compute their means.</p>
+<p>For the standardization step, use the true mean <span class="arithmatex">\(\mu\)</span> and true standard deviation <span class="arithmatex">\(\sigma\)</span> of the chosen data-generating distribution. Choose distributions with finite variance when comparing directly with the Central Limit Theorem.</p>
 <h2 id="parameters-to-control_3">Parameters to control</h2>
 <p>The simulation should allow changing:</p>
 <ul>
@@ -1939,10 +1949,12 @@ Z=\frac{\bar X-\mu}{\sigma/\sqrt n}.
 <p>Choose a true probability <span class="arithmatex">\(p\)</span>.
 Generate many samples.
 For each sample compute <span class="arithmatex">\(\hat p\)</span> and construct a confidence interval.</p>
-<p>For example:</p>
+<p>For example, for confidence level <span class="arithmatex">\(1-\alpha\)</span>:</p>
 <div class="arithmatex">\[
-\hat p \pm 1.96\sqrt{\frac{\hat p(1-\hat p)}{n}}.
+\hat p \pm z_{1-\alpha/2}\sqrt{\frac{\hat p(1-\hat p)}{n}}.
 \]</div>
+<p>For a 95% confidence level, <span class="arithmatex">\(\alpha=0.05\)</span> and <span class="arithmatex">\(z_{1-\alpha/2}\approx 1.96\)</span>.</p>
+<p>This is the Wald interval. Students should also investigate when this interval performs poorly, especially for small <span class="arithmatex">\(n\)</span> or when <span class="arithmatex">\(p\)</span> is close to 0 or 1.</p>
 <h2 id="parameters-to-control_4">Parameters to control</h2>
 <p>The simulation should allow changing:</p>
 <ul>
@@ -1964,6 +1976,7 @@ For each sample compute <span class="arithmatex">\(\hat p\)</span> and construct
 <li>Mark intervals that contain <span class="arithmatex">\(p\)</span> differently from intervals that miss <span class="arithmatex">\(p\)</span>.</li>
 <li>Change <span class="arithmatex">\(n\)</span> and observe how the interval width changes.</li>
 <li>Change the confidence level and observe how the interval width changes.</li>
+<li>Investigate when the interval has poor coverage.</li>
 <li>Explain what a 95% confidence interval means and what it does not mean.</li>
 </ol>
 <h2 id="required-visualizations_4">Required visualizations</h2>
@@ -1988,9 +2001,15 @@ For each sample compute <span class="arithmatex">\(\hat p\)</span> and construct
 Use both symmetric and skewed distributions.</p>
 <p>Examples:</p>
 <div class="arithmatex">\[
-X \sim N(\mu,\sigma^2)
+X \sim \mathcal{N}(\mu,\sigma^2)
 \]</div>
 <p>and a lognormal distribution.</p>
+<p>The true population mean should be known from the chosen distribution, so that coverage can be checked in the simulation.</p>
+<p>When <span class="arithmatex">\(\sigma\)</span> is unknown and is replaced by the sample standard deviation <span class="arithmatex">\(s\)</span>, use a t-based interval for confidence level <span class="arithmatex">\(1-\alpha\)</span>, such as:</p>
+<div class="arithmatex">\[
+\bar x \pm t_{n-1,1-\alpha/2}\frac{s}{\sqrt n}.
+\]</div>
+<p>Students may also compare this with a normal-approximation interval and explain when the two behave similarly.</p>
 <h2 id="parameters-to-control_5">Parameters to control</h2>
 <p>The simulation should allow changing:</p>
 <ul>
@@ -2010,7 +2029,8 @@ X \sim N(\mu,\sigma^2)
 <li>Check how often the intervals contain the true mean.</li>
 <li>Compare performance for normal and skewed distributions.</li>
 <li>Compare small, medium, and large sample sizes.</li>
-<li>Investigate when the normal approximation works well.</li>
+<li>Investigate when the t-based interval works well.</li>
+<li>Compare it with a normal-approximation interval if appropriate.</li>
 <li>Investigate when the interval procedure becomes unreliable.</li>
 <li>Explain why the sample standard deviation <span class="arithmatex">\(s\)</span> replaces the unknown <span class="arithmatex">\(\sigma\)</span>.</li>
 <li>Interpret one interval in a real context.</li>
@@ -2038,12 +2058,13 @@ A confidence interval describes the uncertainty of that estimate.</p>
 <p>Suppose we observe <span class="arithmatex">\(h\)</span> heads in <span class="arithmatex">\(n\)</span> tosses.</p>
 <p>We test:</p>
 <div class="arithmatex">\[
-H_0:p=0.5
+H_0:p=p_0
 \]</div>
 <p>against an alternative such as:</p>
 <div class="arithmatex">\[
-H_1:p\neq 0.5.
+H_1:p\neq p_0.
 \]</div>
+<p>For a fair-coin test, use <span class="arithmatex">\(p_0=0.5\)</span>.</p>
 <h2 id="parameters-to-control_6">Parameters to control</h2>
 <p>The simulation should allow changing:</p>
 <ul>
@@ -2057,16 +2078,21 @@ H_1:p\neq 0.5.
 <p>Students should:</p>
 <ol>
 <li>Treat the observed result as fixed.</li>
-<li>Simulate many experiments assuming <span class="arithmatex">\(H_0\)</span> is true.</li>
+<li>Simulate many experiments assuming <span class="arithmatex">\(H_0\)</span> is true, so that the simulated number of heads follows <span class="arithmatex">\(\operatorname{Binomial}(n,p_0)\)</span>.</li>
 <li>Plot the distribution of the number of heads under <span class="arithmatex">\(H_0\)</span>.</li>
 <li>Mark the observed result on the plot.</li>
 <li>Decide whether the observed result looks typical or unusual.</li>
-<li>Estimate the p-value by simulation.</li>
+<li>Estimate the p-value by simulation using a clearly stated rule.</li>
 <li>Compare the simulated p-value with an exact binomial calculation if possible.</li>
 <li>Change <span class="arithmatex">\(n\)</span> and observe how the interpretation changes.</li>
 <li>Explain why a small deviation may matter for large <span class="arithmatex">\(n\)</span> but not for small <span class="arithmatex">\(n\)</span>.</li>
 <li>Write a careful statistical conclusion.</li>
 </ol>
+<p>For example, for a two-sided simulation-based p-value, students may count simulated results <span class="arithmatex">\(H\)</span> satisfying:</p>
+<div class="arithmatex">\[
+|H-np_0|\ge |h-np_0|.
+\]</div>
+<p>For a one-sided test, they should use the corresponding upper or lower tail and state which tail is used.</p>
 <h2 id="required-visualizations_6">Required visualizations</h2>
 <p>At least:</p>
 <ul>
@@ -2092,6 +2118,7 @@ The observed counts are:</p>
 <div class="arithmatex">\[
 O_1,\ldots,O_6.
 \]</div>
+<p>The counts should satisfy <span class="arithmatex">\(O_1+\cdots+O_6=n\)</span>.</p>
 <p>Under the fair-die hypothesis, the expected counts are:</p>
 <div class="arithmatex">\[
 E_i = \frac{n}{6}.
@@ -2104,7 +2131,7 @@ D=\sum_{i=1}^{6}\frac{(O_i-E_i)^2}{E_i}.
 <p>The simulation should allow changing:</p>
 <ul>
 <li>number of rolls <span class="arithmatex">\(n\)</span>,</li>
-<li>probabilities of die outcomes,</li>
+<li>probabilities used to generate the observed die data,</li>
 <li>number of Monte Carlo repetitions <span class="arithmatex">\(R\)</span>,</li>
 <li>random seed.</li>
 </ul>
@@ -2120,7 +2147,8 @@ D=\sum_{i=1}^{6}\frac{(O_i-E_i)^2}{E_i}.
 <li>Plot the simulated distribution of <span class="arithmatex">\(D\)</span> under fairness.</li>
 <li>Mark the observed <span class="arithmatex">\(D\)</span> on the plot.</li>
 <li>Estimate the p-value by simulation.</li>
-<li>Compare the simulation result with the chi-square approximation.</li>
+<li>Compare the simulation result with the chi-square approximation with 5 degrees of freedom.</li>
+<li>Investigate what happens when <span class="arithmatex">\(n\)</span> is small and some expected counts are small.</li>
 </ol>
 <h2 id="required-visualizations_7">Required visualizations</h2>
 <p>At least:</p>
@@ -2161,6 +2189,12 @@ D=\sum_{i=1}^{6}\frac{(O_i-E_i)^2}{E_i}.
 <li>number of randomization or Monte Carlo repetitions,</li>
 <li>random seed.</li>
 </ul>
+<p>Students should choose one type of comparison and keep it consistent throughout the analysis:</p>
+<ul>
+<li>for numerical measurements, compare a difference in means or medians,</li>
+<li>for binary outcomes, compare a difference in proportions.</li>
+</ul>
+<p>They should clearly define the statistic used before simulating the null distribution.</p>
 <h2 id="investigation_8">Investigation</h2>
 <p>Students should:</p>
 <ol>
@@ -2175,6 +2209,8 @@ D=\sum_{i=1}^{6}\frac{(O_i-E_i)^2}{E_i}.
 <li>Investigate the role of sample size.</li>
 <li>Explain why comparing only sample means or sample proportions may be misleading.</li>
 </ol>
+<p>When the no-difference assumption makes the group labels exchangeable, a useful default approach is a permutation test: shuffle group labels while keeping the observed values fixed, recompute the chosen statistic, and compare the observed statistic with this null distribution.</p>
+<p>For the confidence interval, students should state the method used, such as bootstrap resampling, a two-sample t interval, or an interval for a difference in proportions.</p>
 <h2 id="required-visualizations_8">Required visualizations</h2>
 <p>At least:</p>
 <ul>
@@ -2217,9 +2253,10 @@ D=\sum_{i=1}^{6}\frac{(O_i-E_i)^2}{E_i}.
 <li>descriptive statistics,</li>
 <li>empirical probabilities or conditional frequencies,</li>
 <li>at least one estimator,</li>
+<li>a clearly stated parameter or quantity being estimated,</li>
 <li>visualization of sampling variability,</li>
 <li>at least one confidence interval,</li>
-<li>at least one hypothesis test,</li>
+<li>at least one hypothesis test with stated null and alternative hypotheses,</li>
 <li>at least one Monte Carlo simulation supporting the inference.</li>
 </ol>
 <h2 id="interactive-or-computational-component">Interactive or computational component</h2>

@@ -1,21 +1,11 @@
 # Week 7 — Planes: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Write the normal equation and general equation of the plane through
-
-$$
-P_0=(1,-2,3)
-$$
-
-with normal vector
-
-$$
-n=(2,1,-1).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

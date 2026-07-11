@@ -1,21 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 12
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 12.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find all values of $k$ for which
-
-$$
-\begin{cases}
-x+y+z=1,\\
-2x+2y+2z=2,\\
-x+y+kz=3
-\end{cases}
-$$
-
-is consistent. Describe the solution set in each consistent case.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 12. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

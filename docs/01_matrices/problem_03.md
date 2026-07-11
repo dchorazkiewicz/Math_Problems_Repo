@@ -1,19 +1,11 @@
 # Week 1 — Matrices: Problem 3
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 3.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let
-
-$$
-A=\begin{pmatrix}1&2\\-3&4\end{pmatrix},
-\qquad
-B=\begin{pmatrix}5&-1\\2&0\end{pmatrix}.
-$$
-
-Compute $A+B$, $A-B$, $3A$, and $2A-B$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 3. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

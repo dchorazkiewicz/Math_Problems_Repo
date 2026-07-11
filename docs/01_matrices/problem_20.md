@@ -1,21 +1,11 @@
 # Week 1 — Matrices: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For each expression below, decide whether it is defined. If it is defined, compute it; if it is not, explain the dimension mismatch:
-
-$$
-A=\begin{pmatrix}1&2&3\\0&1&-1\end{pmatrix},
-\quad
-B=\begin{pmatrix}2&0\\1&4\\-2&3\end{pmatrix},
-\quad
-u=\begin{pmatrix}1\\-1\\2\end{pmatrix}.
-$$
-
-Consider $AB$, $BA$, $Au$, $Bu$, and $u^{\mathsf T}B$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

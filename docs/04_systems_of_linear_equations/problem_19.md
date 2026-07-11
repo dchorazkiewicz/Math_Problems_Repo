@@ -1,16 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 19
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 19.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Construct a system of two linear equations in two variables that has:
-1. exactly one solution;
-1. no solution;
-1. infinitely many solutions.
-
-Explain how the coefficients produce each case.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 19. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

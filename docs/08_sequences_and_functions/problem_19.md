@@ -1,11 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 19
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 19.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A graph rises on $(-3,1)$, falls on $(1,4)$, crosses the $x$-axis at $-2$ and $3$, and has a local maximum at $(1,5)$. Translate this information into statements about the function.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 19. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

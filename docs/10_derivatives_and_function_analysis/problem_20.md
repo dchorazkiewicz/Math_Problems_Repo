@@ -1,17 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A quantity is modelled by
-
-$$
-Q(t)=t^3-6t^2+9t+4,\qquad t\ge0.
-$$
-
-Find $Q'(t)$, determine when the quantity is increasing or decreasing, identify local extrema, and explain what the sign of $Q'(t)$ means in a modelling context.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

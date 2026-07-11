@@ -1,17 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the intersection point of the lines
-
-$$
-2x-y-1=0,
-\qquad
-x+3y-9=0.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

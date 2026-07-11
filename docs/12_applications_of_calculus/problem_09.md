@@ -1,11 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 9
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 9.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For the particle in the previous problem, determine when it is at rest and on which intervals it is speeding up or slowing down.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 9. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

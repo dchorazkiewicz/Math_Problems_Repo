@@ -1,15 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-\lim_{x\to0}\frac{\sin 5x}{2x}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

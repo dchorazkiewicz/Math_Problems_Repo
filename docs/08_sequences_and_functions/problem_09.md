@@ -1,15 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 9
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 9.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Classify each function as constant, affine, quadratic, polynomial, rational, exponential, logarithmic, or trigonometric:
-
-$$
-3,\quad 2x-5,\quad x^2+1,\quad \frac{x+1}{x-2},\quad 4^x,\quad \ln x,\quad \sin x.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 9. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

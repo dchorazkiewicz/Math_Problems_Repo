@@ -1,23 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A proposed inverse of
-
-$$
-A=\begin{pmatrix}2&-1\\1&0\end{pmatrix}
-$$
-
-is
-
-$$
-C=\begin{pmatrix}0&1\\-1&2\end{pmatrix}.
-$$
-
-Check whether the proposal is correct.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

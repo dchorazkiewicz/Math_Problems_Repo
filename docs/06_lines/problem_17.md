@@ -1,17 +1,11 @@
 # Week 6 — Lines: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Write an appropriate symmetric description of
-
-$$
-(x,y,z)=(1,-2,3)+t(4,0,-1),
-$$
-
-taking proper account of the zero component.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

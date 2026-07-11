@@ -1,14 +1,11 @@
 # Week 2 — Determinants: Problem 14
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 14.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A $3\times3$ matrix has determinant $6$. What happens to its determinant if:
-1. the first and second rows are interchanged;
-1. the third row is multiplied by $-2$;
-1. twice the first row is added to the second row?
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 14. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

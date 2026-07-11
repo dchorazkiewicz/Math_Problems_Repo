@@ -1,15 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 12
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 12.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find all horizontal asymptotes of
-
-$$
-f(x)=\frac{3x-1}{x+4}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 12. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

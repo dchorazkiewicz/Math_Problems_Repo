@@ -1,17 +1,11 @@
 # Week 1 — Matrices: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let
-
-$$
-D=\operatorname{diag}(2,-1,3).
-$$
-
-Compute $D^2$ and $D^3$. Describe the pattern.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,20 +1,11 @@
 # Week 1 — Matrices: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute the transpose of
-
-$$
-C=\begin{pmatrix}
-1&0&-2\\
-4&3&5
-\end{pmatrix}.
-$$
-
-Then state the dimensions of $C^{\mathsf T}$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

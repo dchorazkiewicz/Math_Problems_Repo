@@ -1,20 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 14
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 14.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether the point $(2,-1)$ is the solution of
-
-$$
-\begin{cases}
-3x+y=5,\\
-x-2y=4.
-\end{cases}
-$$
-
-If it is not, find the correct solution.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 14. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

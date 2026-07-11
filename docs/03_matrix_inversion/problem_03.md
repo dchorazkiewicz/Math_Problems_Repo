@@ -1,11 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 3
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 3.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Verify your answer to the previous problem by computing both $AA^{-1}$ and $A^{-1}A$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 3. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

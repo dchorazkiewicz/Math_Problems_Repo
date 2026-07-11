@@ -1,11 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A taxi fare consists of a fixed fee of $6$ units and $2.5$ units for every kilometre travelled. Define a function $C(d)$, state a meaningful domain, compute $C(8)$, and explain whether the function is linear or affine.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

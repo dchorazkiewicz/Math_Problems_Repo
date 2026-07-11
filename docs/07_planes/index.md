@@ -6,7 +6,7 @@ This week corresponds to Chapter 7 and Problem Set 7 of the Basic Mathematics le
 
 1. Read the corresponding lecture chapter.
 2. Work on one problem at a time.
-3. Preserve each supplied problem statement.
+3. Copy the selected problem statement faithfully from the PDF when beginning that problem.
 4. Complete all required sections in every note.
 5. Prepare the complete set of twenty problems.
 6. Commit reviewed work regularly.

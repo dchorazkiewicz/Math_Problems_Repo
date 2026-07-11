@@ -1,23 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Solve
-
-$$
-2X-A=B
-$$
-
-for $X$, where
-
-$$
-A=\begin{pmatrix}1&0\\2&-1\end{pmatrix},
-\qquad
-B=\begin{pmatrix}3&4\\0&5\end{pmatrix}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

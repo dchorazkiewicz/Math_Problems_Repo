@@ -1,26 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-A=\begin{pmatrix}
-1&2\\
-3&4
-\end{pmatrix},
-$$
-
-find $A^{-1}$, solve $Ax=b$ for
-
-$$
-b=\begin{pmatrix}5\\11\end{pmatrix},
-$$
-
-and verify the solution in the original equation. Finally, explain what the inverse accomplishes conceptually.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

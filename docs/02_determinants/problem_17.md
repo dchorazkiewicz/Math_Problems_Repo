@@ -1,19 +1,11 @@
 # Week 2 — Determinants: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the area of the parallelogram spanned by
-
-$$
-u=(3,1),
-\qquad
-v=(-2,4)
-$$
-
-using a determinant.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

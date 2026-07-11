@@ -1,15 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 16
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 16.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Classify the discontinuity at the indicated point:
-1. $\dfrac{x^2-1}{x-1}$ at $x=1$;
-1. $\dfrac{1}{x+2}$ at $x=-2$;
-1. $\dfrac{|x|}{x}$ at $x=0$;
-1. $\sin(1/x)$ at $x=0$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 16. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

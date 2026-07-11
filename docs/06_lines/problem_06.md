@@ -1,17 +1,11 @@
 # Week 6 — Lines: Problem 6
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 6.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Convert
-
-$$
-y-4=-2(x+1)
-$$
-
-to slope-intercept form and general form.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 6. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

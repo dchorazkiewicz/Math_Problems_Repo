@@ -1,21 +1,11 @@
 # Week 2 — Determinants: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Expand
-
-$$
-\det\begin{pmatrix}
-1&0&2\\
-3&-1&4\\
-0&5&2
-\end{pmatrix}
-$$
-
-along the row or column that gives the shortest calculation.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

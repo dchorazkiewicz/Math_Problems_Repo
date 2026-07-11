@@ -1,16 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Decide which of the following assignments define functions:
-1. each real number $x$ is assigned $x^2$;
-1. each positive number $x$ is assigned both $\sqrt{x}$ and $-\sqrt{x}$;
-1. each student in a class is assigned the student's date of birth.
-
-Explain each decision.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,19 +1,11 @@
 # Week 5 — Vectors and Coordinates: Problem 2
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 5.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 5, Problem 2.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-A=(1,4,-2),
-\qquad
-B=(5,-1,3),
-$$
-
-find $\overrightarrow{AB}$ and $\overrightarrow{BA}$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 5, Problem 2. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

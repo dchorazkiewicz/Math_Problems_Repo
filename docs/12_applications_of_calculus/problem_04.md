@@ -1,11 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Squares of side $x$ are cut from the corners of a $20\text{ cm}\times30\text{ cm}$ sheet to form an open box. Build the volume function, determine the meaningful domain, and find the value of $x$ that maximises the volume.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

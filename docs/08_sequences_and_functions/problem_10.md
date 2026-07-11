@@ -1,17 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 10
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 10.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine which of the functions
-
-$$
-f(x)=3x,\qquad g(x)=3x+2,\qquad h(x)=-x
-$$
-
-are linear in the sense $f(x+y)=f(x)+f(y)$. Explain why an affine function need not be linear.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 10. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

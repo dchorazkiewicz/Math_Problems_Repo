@@ -1,17 +1,11 @@
 # Week 11 — Integrals: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let
-
-$$
-A(x)=\int_0^x (t^2+1)\,dt.
-$$
-
-Find $A'(x)$ and compute $A(2)$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

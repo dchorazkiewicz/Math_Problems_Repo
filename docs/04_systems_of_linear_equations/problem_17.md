@@ -1,11 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A cinema sells adult tickets for $12$ units and student tickets for $8$ units. In one evening it sells $180$ tickets for a total of $1840$ units. Form and solve a linear system to find the number of each type of ticket.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,21 +1,11 @@
 # Week 1 — Matrices: Problem 12
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 12.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Starting with
-
-$$
-A=\begin{pmatrix}
-1&2&-1\\
-3&0&4\\
--2&1&5
-\end{pmatrix},
-$$
-
-perform the row operation $R_2\leftarrow R_2-3R_1$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 12. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,13 +1,11 @@
 # Week 6 — Lines: Problem 7
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 7.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Write equations for:
-1. the vertical line through $(3,-1)$;
-1. the horizontal line through $(-2,5)$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 7. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

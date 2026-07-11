@@ -1,15 +1,11 @@
 # Week 2 — Determinants: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-\det\begin{pmatrix}4&-3\\2&5\end{pmatrix}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

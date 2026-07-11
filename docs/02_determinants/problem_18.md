@@ -1,21 +1,11 @@
 # Week 2 — Determinants: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute the Vandermonde determinant
-
-$$
-\det\begin{pmatrix}
-1&1&1\\
-x_1&x_2&x_3\\
-x_1^2&x_2^2&x_3^2
-\end{pmatrix}
-$$
-
-for $x_1=1$, $x_2=2$, and $x_3=4$, first directly and then using the product formula.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

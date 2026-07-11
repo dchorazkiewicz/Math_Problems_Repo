@@ -1,19 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-f(x)=2^x
-\quad\text{and}\quad
-g(x)=\log_2 x,
-$$
-
-compute $f(-2)$, $f(3)$, $g(1)$, $g(8)$, and explain the relationship between the two functions.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

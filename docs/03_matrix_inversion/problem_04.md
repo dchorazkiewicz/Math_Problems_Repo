@@ -1,15 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the inverse of
-
-$$
-D=\operatorname{diag}(2,-3,5).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

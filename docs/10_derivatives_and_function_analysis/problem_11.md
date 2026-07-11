@@ -1,17 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Study the monotonicity of
-
-$$
-f(x)=x^2-4x+1
-$$
-
-using a sign chart for $f'$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

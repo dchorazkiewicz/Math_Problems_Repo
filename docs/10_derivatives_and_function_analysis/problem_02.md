@@ -1,15 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 2
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 2.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Use the limit definition to find the derivative of
-
-$$
-f(x)=3x+2.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 2. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

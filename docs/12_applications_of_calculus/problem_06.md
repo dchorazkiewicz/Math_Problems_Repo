@@ -1,17 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 6
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 6.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-The curve
-
-$$
-y=\sqrt{x},\qquad 0\le x\le9,
-$$
-
-is rotated about the $x$-axis. Find the resulting volume.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 6. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

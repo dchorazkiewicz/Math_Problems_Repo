@@ -1,19 +1,11 @@
 # Week 11 — Integrals: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute and verify by differentiation:
-
-$$
-\int \left(
-\frac{2x}{1+x^2}
-+x e^{x^2}
-+\sin x\cos x
-\right)\,dx.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

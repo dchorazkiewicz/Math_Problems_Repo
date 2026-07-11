@@ -1,17 +1,11 @@
 # Week 6 — Lines: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-The line passes through $A=(-1,3)$ and $B=(5,-1)$. Find:
-1. a direction vector;
-1. a parametric equation;
-1. a normal vector;
-1. a general equation;
-1. its slope, if defined;
-1. the distance from the origin to the line.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

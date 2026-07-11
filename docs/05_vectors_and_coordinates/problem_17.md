@@ -1,17 +1,11 @@
 # Week 5 — Vectors and Coordinates: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 5.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 5, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether the points
-
-$$
-A=(1,2,3),\quad B=(3,6,5),\quad C=(5,10,7)
-$$
-
-are collinear.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 5, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

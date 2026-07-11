@@ -1,22 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 5
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 5.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Reduce the augmented matrix
-
-$$
-\left(
-\begin{array}{cc|c}
-1&2&3\\
-2&4&8
-\end{array}
-\right)
-$$
-
-to echelon form and classify the system.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 5. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

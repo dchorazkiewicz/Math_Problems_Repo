@@ -1,11 +1,11 @@
 # Week 5 — Vectors and Coordinates: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 5.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 5, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Explain the difference between the point $P=(3,-2)$ and the vector $v=(3,-2)$. What does each object describe?
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 5, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,15 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 14
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 14.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find an explicit formula for the arithmetic sequence
-
-$$
-5,\ 9,\ 13,\ 17,\ldots
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 14. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

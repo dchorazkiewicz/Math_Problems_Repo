@@ -1,17 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 16
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 16.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Use the second derivative test to classify the critical points of
-
-$$
-f(x)=x^4-4x^2.
-$$
-
-For any inconclusive point, use another method.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 16. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

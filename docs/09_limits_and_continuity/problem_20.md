@@ -1,21 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For each limit, identify the most appropriate first method and then compute:
-
-$$
-\lim_{x\to1}\frac{x^3-1}{x-1},
-\qquad
-\lim_{x\to\infty}\frac{2x+5}{x^2+1},
-\qquad
-\lim_{x\to0}\frac{\sin x}{x},
-\qquad
-\lim_{x\to4}\frac{x-4}{\sqrt{x}-2}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

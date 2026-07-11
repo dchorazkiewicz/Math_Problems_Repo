@@ -1,21 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 13
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 13.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Prove by direct multiplication that
-
-$$
-(A^{\mathsf T})^{-1}=(A^{-1})^{\mathsf T}
-$$
-
-for
-
-$$
-A=\begin{pmatrix}1&2\\3&5\end{pmatrix}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 13. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

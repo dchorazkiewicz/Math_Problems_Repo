@@ -1,19 +1,11 @@
 # Week 11 — Integrals: Problem 2
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 2.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute, on appropriate intervals,
-
-$$
-\int x^5\,dx,
-\qquad
-\int x^{-4}\,dx,
-\qquad
-\int \sqrt{x}\,dx.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 2. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

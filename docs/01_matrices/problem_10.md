@@ -1,21 +1,11 @@
 # Week 1 — Matrices: Problem 10
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 10.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Verify directly that
-
-$$
-AI_2=I_2A=A
-$$
-
-for
-
-$$
-A=\begin{pmatrix}3&-2\\1&5\end{pmatrix}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 10. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

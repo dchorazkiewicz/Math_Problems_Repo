@@ -1,19 +1,11 @@
 # Week 11 — Integrals: Problem 19
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 19.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Choose an appropriate integration method for each integral and justify the choice before computing:
-
-$$
-\int x\sin(x^2)\,dx,
-\qquad
-\int x\ln x\,dx,
-\qquad
-\int \frac{3x^2}{x^3+1}\,dx.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 19. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

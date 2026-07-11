@@ -1,17 +1,11 @@
 # Week 11 — Integrals: Problem 8
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 8.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-\int x^2\cos x\,dx
-$$
-
-using integration by parts more than once.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 8. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

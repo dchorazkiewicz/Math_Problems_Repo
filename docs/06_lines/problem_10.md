@@ -1,19 +1,11 @@
 # Week 6 — Lines: Problem 10
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 10.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether the lines
-
-$$
-\ell_1:(x,y)=(1,0)+t(2,3),
-\qquad
-\ell_2:(x,y)=(-1,4)+s(4,6)
-$$
-
-are distinct parallel lines or the same line.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 10. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

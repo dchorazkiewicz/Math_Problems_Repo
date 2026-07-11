@@ -1,21 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Choose the most efficient method for finding the inverse of each matrix and justify the choice:
-
-$$
-A=\begin{pmatrix}5&0\\0&-2\end{pmatrix},
-\quad
-B=\begin{pmatrix}1&2\\3&7\end{pmatrix},
-\quad
-C=\begin{pmatrix}1&1&0\\0&1&1\\0&0&2\end{pmatrix}.
-$$
-
-Then compute the inverses.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

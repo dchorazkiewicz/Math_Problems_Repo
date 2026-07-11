@@ -1,23 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compare the domains of
-
-$$
-a_n=n^2,\qquad n\in\mathbb{N},
-$$
-
-and
-
-$$
-f(x)=x^2,\qquad x\in\mathbb{R}.
-$$
-
-Which expressions $a_{3/2}$ and $f(3/2)$ are meaningful?
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

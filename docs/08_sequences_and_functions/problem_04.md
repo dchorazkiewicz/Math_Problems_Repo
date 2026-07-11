@@ -1,17 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-If
-
-$$
-g(x)=\frac{1}{x-3},
-$$
-
-determine the natural real domain of $g$ and compute $g(1)$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

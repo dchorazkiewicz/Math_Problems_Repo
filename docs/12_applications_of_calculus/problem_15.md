@@ -1,19 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A radioactive substance satisfies
-
-$$
-M'(t)=-0.08M(t),
-\qquad
-M(0)=120.
-$$
-
-Find $M(t)$ and its half-life.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

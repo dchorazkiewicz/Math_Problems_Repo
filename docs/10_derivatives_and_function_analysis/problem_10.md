@@ -1,15 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 10
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 10.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find all critical points of
-
-$$
-f(x)=x^3-6x^2+9x.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 10. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

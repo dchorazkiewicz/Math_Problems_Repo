@@ -1,19 +1,11 @@
 # Week 5 — Vectors and Coordinates: Problem 13
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 5.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 5, Problem 13.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-u\times v
-\quad\text{for}\quad
-u=(1,2,0),
-\qquad
-v=(3,-1,4).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 5, Problem 13. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

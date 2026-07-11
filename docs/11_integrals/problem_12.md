@@ -1,15 +1,11 @@
 # Week 11 — Integrals: Problem 12
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 12.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-\int \sin^4 x\cos x\,dx.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 12. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,17 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 16
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 16.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A quantity $Q(t)$ has rate of change
-
-$$
-Q'(t)=3t^2-4t+1
-$$
-
-and $Q(0)=7$. Find $Q(t)$ and explain the role of the initial condition.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 16. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

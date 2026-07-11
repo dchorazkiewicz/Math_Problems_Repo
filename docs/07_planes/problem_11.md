@@ -1,19 +1,11 @@
 # Week 7 — Planes: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether
-
-$$
-\pi_1:x+y-z=0,
-\qquad
-\pi_2:2x-y+z-3=0
-$$
-
-are perpendicular.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

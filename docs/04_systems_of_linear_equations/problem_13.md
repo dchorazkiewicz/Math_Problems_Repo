@@ -1,23 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 13
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 13.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-The row-reduced augmented matrix of a system is
-
-$$
-\left(
-\begin{array}{cccc|c}
-1&0&2&0&3\\
-0&1&-1&0&4\\
-0&0&0&1&2
-\end{array}
-\right).
-$$
-
-Identify the pivot and free variables and write the complete solution parametrically.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 13. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

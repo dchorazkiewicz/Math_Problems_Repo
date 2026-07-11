@@ -1,20 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 5
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 5.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find all values of $k$ for which
-
-$$
-A(k)=\begin{pmatrix}
-k&1\\
-2&k
-\end{pmatrix}
-$$
-
-has an inverse.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 5. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,17 +1,11 @@
 # Week 5 — Vectors and Coordinates: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 5.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 5, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For the points
-
-$$
-A=(1,0,2),\quad B=(4,2,1),\quad C=(2,5,3),
-$$
-
-find $\overrightarrow{AB}$ and $\overrightarrow{AC}$, compute their dot product and cross product, determine the angle at $A$, and find the area of triangle $ABC$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 5, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

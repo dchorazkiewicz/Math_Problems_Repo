@@ -1,11 +1,11 @@
 # Week 2 — Determinants: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-The columns of a $3\times3$ matrix satisfy $c_3=2c_1-c_2$. What is the determinant? Explain the structural reason.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

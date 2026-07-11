@@ -1,21 +1,11 @@
 # Week 7 — Planes: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether the line
-
-$$
-(x,y,z)=(1,2,0)+t(1,-1,2)
-$$
-
-lies in, is parallel to, or intersects the plane
-
-$$
-2x+2y-z-6=0.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

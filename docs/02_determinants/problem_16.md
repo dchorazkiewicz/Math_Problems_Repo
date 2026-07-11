@@ -1,21 +1,11 @@
 # Week 2 — Determinants: Problem 16
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 16.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-The linear transformation
-
-$$
-T(x)=
-\begin{pmatrix}
-2&1\\
-0&3
-\end{pmatrix}x
-$$
-
-acts on the plane. By what factor does $T$ scale areas? Does it preserve orientation?
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 16. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

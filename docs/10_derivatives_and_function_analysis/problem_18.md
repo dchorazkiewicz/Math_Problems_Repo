@@ -1,17 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Perform a complete analysis of
-
-$$
-f(x)=x^3-3x^2.
-$$
-
-Include domain, zeros, behavior at infinity, monotonicity, extrema, convexity, and inflection points.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,17 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 12
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 12.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Water flows into a tank at the non-negative rate
-
-$$
-r(t)=12-2t
-$$
-
-litres per minute for $0\le t\le6$. How much water enters during the first four minutes?
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 12. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

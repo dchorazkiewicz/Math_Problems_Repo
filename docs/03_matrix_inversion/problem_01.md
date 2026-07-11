@@ -1,17 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Decide whether each matrix is invertible:
-
-$$
-A=\begin{pmatrix}2&1\\3&4\end{pmatrix},
-\qquad
-B=\begin{pmatrix}1&2\\2&4\end{pmatrix}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

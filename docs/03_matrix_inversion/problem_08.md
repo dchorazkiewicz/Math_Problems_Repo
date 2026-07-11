@@ -1,20 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 8
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 8.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the adjugate of
-
-$$
-A=\begin{pmatrix}
-4&1\\
-2&3
-\end{pmatrix}
-$$
-
-and use it to compute $A^{-1}$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 8. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

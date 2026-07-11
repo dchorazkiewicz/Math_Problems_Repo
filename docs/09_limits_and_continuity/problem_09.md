@@ -1,21 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 9
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 9.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let
-
-$$
-f(x)=
-\begin{cases}
-2x+1,&x<2,\\
-x^2-1,&x\ge2.
-\end{cases}
-$$
-
-Find the left-hand limit, right-hand limit, two-sided limit, and value $f(2)$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 9. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

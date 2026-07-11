@@ -1,11 +1,11 @@
 # Week 2 — Determinants: Problem 7
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 7.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A matrix $D$ is obtained from $A$ by adding $4$ times the first row to the third row. If $\det A=-2$, determine $\det D$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 7. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

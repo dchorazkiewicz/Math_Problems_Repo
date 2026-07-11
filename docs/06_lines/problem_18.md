@@ -1,19 +1,11 @@
 # Week 6 — Lines: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Classify the following pair of lines in space as parallel, intersecting, or skew:
-
-$$
-\ell_1:(x,y,z)=(0,0,0)+t(1,1,0),
-$$
-
-$$
-\ell_2:(x,y,z)=(1,0,1)+s(0,1,1).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

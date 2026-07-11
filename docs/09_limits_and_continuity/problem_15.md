@@ -1,21 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find $k$ so that
-
-$$
-f(x)=
-\begin{cases}
-kx+1,&x<3,\\
-x^2-2,&x\ge3
-\end{cases}
-$$
-
-is continuous at $x=3$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

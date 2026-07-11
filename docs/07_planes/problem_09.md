@@ -1,17 +1,11 @@
 # Week 7 — Planes: Problem 9
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 9.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Convert
-
-$$
-2x-y+z-4=0
-$$
-
-to one possible parametric form.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 9. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

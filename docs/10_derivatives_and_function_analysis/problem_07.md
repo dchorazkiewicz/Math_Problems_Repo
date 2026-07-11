@@ -1,15 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 7
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 7.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Differentiate using the quotient rule:
-
-$$
-f(x)=\frac{x^2+1}{x+2}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 7. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,17 +1,11 @@
 # Week 6 — Lines: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Write the coordinate parametric equations of
-
-$$
-P=(2,3)+t(-1,4).
-$$
-
-Find the points corresponding to $t=-2$, $t=0$, and $t=3$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

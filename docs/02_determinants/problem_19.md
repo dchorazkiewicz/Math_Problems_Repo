@@ -1,21 +1,11 @@
 # Week 2 — Determinants: Problem 19
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 19.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Consider
-
-$$
-A(t)=\begin{pmatrix}
-1&t&0\\
-0&1&t\\
-t&0&1
-\end{pmatrix}.
-$$
-
-Compute $\det A(t)$ and determine all real values of $t$ for which the matrix is singular.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 19. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

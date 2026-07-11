@@ -1,17 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 8
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 8.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A particle has position
-
-$$
-s(t)=t^3-6t^2+9t,\qquad t\ge0.
-$$
-
-Find its velocity and acceleration.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 8. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

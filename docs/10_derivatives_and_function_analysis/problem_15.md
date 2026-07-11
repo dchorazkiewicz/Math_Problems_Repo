@@ -1,17 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find all inflection points of
-
-$$
-f(x)=x^4-4x^3.
-$$
-
-Remember that $f''(a)=0$ gives only a candidate.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,11 +1,11 @@
 # Week 2 — Determinants: Problem 6
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 6.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A matrix $C$ is obtained from a $4\times4$ matrix $A$ by multiplying one row by $5$. If $\det A=3$, find $\det C$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 6. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

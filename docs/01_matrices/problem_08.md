@@ -1,19 +1,11 @@
 # Week 1 — Matrices: Problem 8
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 8.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-A=\begin{pmatrix}1&2\\0&1\end{pmatrix},
-\qquad
-B=\begin{pmatrix}2&0\\1&3\end{pmatrix},
-$$
-
-compute both $AB$ and $BA$. Explain what the result shows about matrix multiplication.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 8. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

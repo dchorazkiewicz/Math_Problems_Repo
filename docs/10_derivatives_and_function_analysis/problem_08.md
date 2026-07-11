@@ -1,15 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 8
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 8.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Differentiate using the chain rule:
-
-$$
-f(x)=(2x-3)^6.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 8. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

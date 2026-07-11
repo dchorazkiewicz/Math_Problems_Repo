@@ -1,17 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-a_n=\frac{1}{n},
-$$
-
-list the first five graph points $(n,a_n)$. Explain why the graph should normally be drawn as separated points.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

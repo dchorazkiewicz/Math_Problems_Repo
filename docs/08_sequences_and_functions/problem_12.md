@@ -1,17 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 12
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 12.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let
-
-$$
-a_n=3n-1,\qquad n\ge1.
-$$
-
-Write the first five terms and compute $a_{20}$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 12. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

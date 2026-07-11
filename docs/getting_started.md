@@ -16,6 +16,8 @@ Before solving problems, read:
 - `AI_WORKFLOW.md`,
 - the selected `problem_XX.md` file.
 
+The authoritative problem statements are kept in the [Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf), not in the empty repository templates. Copy only the statement of the problem you are beginning into its matching file.
+
 ## 4. Work systematically
 
 Each week contains twenty problems. Work on one problem at a time, but complete the entire assigned set. Commit reviewed notes regularly rather than uploading everything shortly before class.

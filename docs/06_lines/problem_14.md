@@ -1,17 +1,11 @@
 # Week 6 — Lines: Problem 14
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 14.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For the oriented line
-
-$$
-x-2y+1=0,
-$$
-
-determine on which side of the line the points $P=(0,0)$ and $Q=(4,1)$ lie. Are they on the same side?
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 14. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,15 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For each question, state whether the main tool is a derivative, a definite integral, optimisation, or a differential model:
-1. find instantaneous velocity;
-1. find total water discharged from a known flow rate;
-1. choose dimensions giving the largest area;
-1. model a population whose growth rate is proportional to its size.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

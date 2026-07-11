@@ -1,17 +1,11 @@
 # Week 11 — Integrals: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-\int \frac{x^2+2}{x-1}\,dx
-$$
-
-by polynomial division.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,20 +1,11 @@
 # Week 1 — Matrices: Problem 13
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 13.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Starting with
-
-$$
-A=\begin{pmatrix}
-1&2\\
-3&4
-\end{pmatrix},
-$$
-
-first interchange $R_1$ and $R_2$, and then perform $R_2\leftarrow R_2-\frac13R_1$. Write the matrix after each step.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 13. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

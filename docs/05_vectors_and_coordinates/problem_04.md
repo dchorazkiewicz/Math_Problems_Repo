@@ -1,11 +1,11 @@
 # Week 5 — Vectors and Coordinates: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 5.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 5, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the position vector of the point $P=(-2,5,1)$. Then find the endpoint of this vector if it begins at $A=(3,-1,4)$ instead of the origin.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 5, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

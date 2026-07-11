@@ -1,17 +1,11 @@
 # Week 6 — Lines: Problem 2
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 2.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find a parametric equation of the line through
-
-$$
-A=(-1,2)
-\quad\text{and}\quad
-B=(5,-4).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 2. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

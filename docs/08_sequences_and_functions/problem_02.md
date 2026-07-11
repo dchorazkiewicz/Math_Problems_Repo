@@ -1,19 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 2
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 2.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-f:\mathbb{R}\to\mathbb{R},
-\qquad
-f(x)=x^2-4,
-$$
-
-state the domain and codomain, and determine the range.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 2. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,17 +1,11 @@
 # Week 7 — Planes: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find a plane through $P=(1,2,3)$ that is perpendicular to the plane
-
-$$
-x-y+z=0.
-$$
-
-Give one valid answer and explain why it works.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

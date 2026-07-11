@@ -1,21 +1,11 @@
 # Week 6 — Lines: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Write a parametric equation of the line in space through
-
-$$
-A=(1,-2,3)
-$$
-
-with direction vector
-
-$$
-v=(2,0,-1).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

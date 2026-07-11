@@ -2,7 +2,7 @@
 
 ## One problem, one complete note
 
-Prepare a separate, self-contained note for every assigned problem. The note must include the complete problem statement so that it remains understandable without searching through the original list or PDF.
+Prepare a separate, self-contained note for every assigned problem. The authoritative problem statement is found only in the lecture PDF. When beginning a note, copy the complete statement of that one problem into its `Problem statement` section so that the finished note remains understandable without reopening the PDF.
 
 Students are expected to prepare the **complete assigned problem set**. One polished solution does not replace the remaining problems, and many bare answers do not replace complete reasoning.
 
@@ -10,7 +10,7 @@ Students are expected to prepare the **complete assigned problem set**. One poli
 
 Every note must contain:
 
-1. **Problem statement** — preserved exactly as provided.
+1. **Problem statement** — copied faithfully from the source PDF when work on that problem begins.
 2. **Given information and goal** — what is known and what must be found, proved, or explained.
 3. **Method** — the definitions, theorems, or techniques selected and why they apply.
 4. **Solution and justification** — formulas connected by sentences explaining important transitions.
@@ -36,3 +36,13 @@ The following will be treated as incomplete and returned for revision:
 - an AI-generated note that the student cannot read, explain, or present.
 
 The student is responsible for every sentence and formula committed to the repository.
+
+## Display mathematics
+
+Write a display formula without spaces or blank lines after the opening delimiter or before the closing delimiter:
+
+```markdown
+$$formula$$
+```
+
+Do not use a spaced multiline form of the double-dollar delimiter.

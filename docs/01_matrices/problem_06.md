@@ -1,11 +1,11 @@
 # Week 1 — Matrices: Problem 6
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 6.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let $A$ be $2\times3$, $B$ be $3\times4$, and $C$ be $4\times2$. Determine which of the products $AB$, $BA$, $BC$, $CB$, $AC$, and $CA$ are defined. State the dimensions of every defined product.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 6. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

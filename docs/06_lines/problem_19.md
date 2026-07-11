@@ -1,11 +1,11 @@
 # Week 6 — Lines: Problem 19
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 19.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A line in the plane is given by a point $A=(2,1)$ and a normal vector $n=(3,-4)$. Write its normal equation, general equation, and one direction vector.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 19. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

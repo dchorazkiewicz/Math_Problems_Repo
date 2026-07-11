@@ -1,18 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Classify the system according to the value of $a$:
-
-$$
-\begin{cases}
-x+y=2,\\
-2x+2y=a.
-\end{cases}
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

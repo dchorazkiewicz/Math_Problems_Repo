@@ -1,21 +1,11 @@
 # Week 1 — Matrices: Problem 19
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 19.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A shop records sales of two products on three days in the matrix
-
-$$
-S=\begin{pmatrix}
-12&8\\
-15&11\\
-9&14
-\end{pmatrix}.
-$$
-
-Explain what the rows and columns could represent. Compute the total sales of each product using matrix or vector notation.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 19. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

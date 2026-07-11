@@ -1,19 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 7
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 7.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine the natural real domain of each function:
-
-$$
-f(x)=\sqrt{x+2},
-\qquad
-g(x)=\frac{x+1}{x^2-9},
-\qquad
-h(x)=\ln(4-x).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 7. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

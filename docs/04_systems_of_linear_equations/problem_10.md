@@ -1,20 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 10
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 10.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For which values of $k$ does
-
-$$
-\begin{cases}
-kx+y=2,\\
-2x+ky=3
-\end{cases}
-$$
-
-have a unique solution?
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 10. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

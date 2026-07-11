@@ -1,20 +1,11 @@
 # Week 1 — Matrices: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-A=\begin{pmatrix}
-2&-1&4\\
-0&3&5
-\end{pmatrix},
-$$
-
-state the dimensions of $A$ and identify $a_{12}$, $a_{21}$, and $a_{23}$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,17 +1,11 @@
 # Week 8 — Sequences and Functions: Problem 16
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 8.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 8, Problem 16.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Define recursively the sequence
-
-$$
-2,\ 6,\ 18,\ 54,\ldots
-$$
-
-and state the starting index.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 8, Problem 16. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

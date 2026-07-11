@@ -1,21 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-f(x)=x^2+1,
-$$
-
-form and simplify the difference quotient
-
-$$
-\frac{f(a+h)-f(a)}{h}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

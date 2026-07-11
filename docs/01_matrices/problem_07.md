@@ -1,19 +1,11 @@
 # Week 1 — Matrices: Problem 7
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 7.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-AB
-\quad\text{for}\quad
-A=\begin{pmatrix}1&2&-1\\0&3&4\end{pmatrix},
-\qquad
-B=\begin{pmatrix}2&1\\-1&0\\3&-2\end{pmatrix}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 7. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

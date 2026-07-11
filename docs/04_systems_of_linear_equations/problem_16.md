@@ -1,19 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 16
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 16.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the intersection of the three planes
-
-$$
-\begin{cases}
-x+y+z=3,\\
-x-y+z=1,\\
-2x+z=2.
-\end{cases}
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 16. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

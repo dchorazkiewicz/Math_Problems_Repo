@@ -1,17 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 13
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 13.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the absolute maximum and minimum of
-
-$$
-f(x)=x^2-2x
-$$
-
-on $[-1,3]$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 13. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,21 +1,11 @@
 # Week 6 — Lines: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Write a vector-parametric equation of the line through
-
-$$
-A=(2,-1)
-$$
-
-with direction vector
-
-$$
-v=(3,4).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

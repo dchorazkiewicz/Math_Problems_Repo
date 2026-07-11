@@ -1,20 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 19
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 19.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let
-
-$$
-A=\begin{pmatrix}
-1&a\\
-2&2a
-\end{pmatrix}.
-$$
-
-Explain, without attempting Gauss--Jordan elimination, why $A^{-1}$ does not exist for any real $a$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 19. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,15 +1,11 @@
 # Week 11 — Integrals: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Rewrite and integrate:
-
-$$
-\int \frac{\sqrt{x}}{x^3}\,dx.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,17 +1,11 @@
 # Week 7 — Planes: Problem 8
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 8.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Convert the parametric plane
-
-$$
-P=(1,2,0)+s(1,0,1)+t(0,2,-1)
-$$
-
-to general form.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 8. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

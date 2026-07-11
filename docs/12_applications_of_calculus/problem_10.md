@@ -1,17 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 10
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 10.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A particle has acceleration
-
-$$
-a(t)=6t-4,
-$$
-
-initial velocity $v(0)=3$, and initial position $s(0)=2$. Find $v(t)$ and $s(t)$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 10. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

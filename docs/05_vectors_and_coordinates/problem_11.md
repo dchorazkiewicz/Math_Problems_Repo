@@ -1,19 +1,11 @@
 # Week 5 — Vectors and Coordinates: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 5.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 5, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the value of $k$ for which
-
-$$
-u=(2,k,-1)
-\quad\text{and}\quad
-v=(1,3,5)
-$$
-
-are perpendicular.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 5, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

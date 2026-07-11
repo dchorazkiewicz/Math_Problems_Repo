@@ -1,17 +1,11 @@
 # Week 7 — Planes: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find a parametric equation of the line of intersection of
-
-$$
-x+y+z=3,
-\qquad
-x-y+z=1.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

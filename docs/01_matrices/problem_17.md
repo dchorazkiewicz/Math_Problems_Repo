@@ -1,27 +1,11 @@
 # Week 1 — Matrices: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-The columns of
-
-$$
-A=\begin{pmatrix}
-1&0\\
-2&1\\
--1&3
-\end{pmatrix}
-$$
-
-are vectors $u$ and $v$. Write $u$ and $v$, and express
-
-$$
-A\begin{pmatrix}2\\-1\end{pmatrix}
-$$
-
-as a linear combination of these columns.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

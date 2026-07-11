@@ -1,21 +1,11 @@
 # Week 2 — Determinants: Problem 12
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 12.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-\det\begin{pmatrix}
-1&2&3\\
-0&4&5\\
-0&0&6
-\end{pmatrix}
-$$
-
-and explain the general rule suggested by the result.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 12. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

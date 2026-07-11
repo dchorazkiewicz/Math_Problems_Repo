@@ -1,15 +1,11 @@
 # Week 7 — Planes: Problem 3
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 3.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether $P=(2,1,-1)$ lies on
-
-$$
-x+2y-z-5=0.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 3. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

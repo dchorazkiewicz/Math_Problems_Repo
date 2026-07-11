@@ -1,18 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 1
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 1.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Solve by substitution:
-
-$$
-\begin{cases}
-x+y=7,\\
-2x-y=2.
-\end{cases}
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 1. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

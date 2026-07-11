@@ -1,17 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 19
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 19.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A car's velocity is
-
-$$
-v(t)=t^2-6t+8,\qquad 0\le t\le6.
-$$
-
-Find the signed displacement and the total distance travelled on the interval.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 19. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

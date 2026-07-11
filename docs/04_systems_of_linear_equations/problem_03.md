@@ -1,18 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 3
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 3.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Solve by Gaussian elimination:
-
-$$
-\begin{cases}
-x+2y=5,\\
-3x-y=4.
-\end{cases}
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 3. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

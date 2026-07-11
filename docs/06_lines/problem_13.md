@@ -1,15 +1,11 @@
 # Week 6 — Lines: Problem 13
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 13.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the distance from $P=(4,-1)$ to the line
-
-$$
-2x+3y-6=0.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 13. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

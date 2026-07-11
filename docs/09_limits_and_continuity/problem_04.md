@@ -1,19 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 4
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 4.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether each sequence converges:
-
-$$
-a_n=(-1)^n,
-\qquad
-b_n=\frac{(-1)^n}{n},
-\qquad
-c_n=2+\frac{3}{n}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 4. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

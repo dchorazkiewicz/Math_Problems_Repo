@@ -1,20 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 7
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 7.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether
-
-$$
-\begin{cases}
-x-2y=1,\\
-2x-4y=5
-\end{cases}
-$$
-
-has no solution, one solution, or infinitely many solutions. Interpret the result geometrically.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 7. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

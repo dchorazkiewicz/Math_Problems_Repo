@@ -1,17 +1,11 @@
 # Week 11 — Integrals: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 11.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the signed area represented by
-
-$$
-\int_{-2}^{2}x\,dx
-$$
-
-and compare it with the ordinary geometric area between $y=x$ and the $x$-axis on $[-2,2]$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,23 +1,11 @@
 # Week 7 — Planes: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-For
-
-$$
-A=(1,0,0),\quad B=(0,1,0),\quad C=(0,0,1),
-$$
-
-find a parametric and a general equation of the plane through the points, verify that all three points satisfy the equation, find the distance from the origin to the plane, and determine where the line
-
-$$
-(x,y,z)=t(1,1,1)
-$$
-
-intersects it.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,17 +1,11 @@
 # Week 1 — Matrices: Problem 15
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 15.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the matrix $X$ satisfying
-
-$$
-2X+\begin{pmatrix}1&-1\\0&3\end{pmatrix}
-=
-\begin{pmatrix}5&3\\4&-1\end{pmatrix}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 15. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,20 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 20
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 20.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Consider
-
-$$
-\begin{cases}
-x+ay=1,\\
-ax+y=1.
-\end{cases}
-$$
-
-Classify the system for every real value of $a$. For each case, determine whether the solution is unique, nonexistent, or non-unique, and find the solution set where possible.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 20. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

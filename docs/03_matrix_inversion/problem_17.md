@@ -1,24 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-The transformation
-
-$$
-y=
-\begin{pmatrix}2&1\\1&1\end{pmatrix}x
-$$
-
-maps an unknown vector $x$ to
-
-$$
-y=\begin{pmatrix}8\\5\end{pmatrix}.
-$$
-
-Recover $x$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

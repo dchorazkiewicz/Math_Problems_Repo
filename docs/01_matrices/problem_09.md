@@ -1,19 +1,11 @@
 # Week 1 — Matrices: Problem 9
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 9.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let
-
-$$
-A=\begin{pmatrix}2&-1\\3&4\end{pmatrix},
-\qquad
-x=\begin{pmatrix}5\\-2\end{pmatrix}.
-$$
-
-Compute $Ax$ and interpret the result as a new column vector.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 9. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,15 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 11
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 11.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Compute
-
-$$
-\lim_{x\to\infty}\frac{4x^2-3x+1}{2x^2+5}.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 11. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

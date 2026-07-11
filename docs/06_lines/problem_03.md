@@ -1,15 +1,11 @@
 # Week 6 — Lines: Problem 3
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 6.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 6, Problem 3.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine whether the point $P=(7,3)$ lies on the line
-
-$$
-(x,y)=(1,-1)+t(2,1).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 6, Problem 3. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

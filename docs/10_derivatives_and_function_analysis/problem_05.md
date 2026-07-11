@@ -1,15 +1,11 @@
 # Week 10 — Derivatives and Function Analysis: Problem 5
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 10.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 10, Problem 5.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Differentiate:
-
-$$
-f(x)=4e^x-3\ln x+2\sin x-\cos x.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 10, Problem 5. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

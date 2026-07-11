@@ -9,7 +9,7 @@ The authoritative Basic Mathematics lecture PDF is available here:
 - [View the PDF on GitHub](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
 - [Download the PDF directly](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
 
-Before starting a weekly problem set, read the corresponding chapter. Use the PDF for definitions, notation, examples, and context; use the selected `problem_XX.md` file as the workspace for the solution.
+Before starting a weekly problem set, read the corresponding chapter. The problem statements remain in the PDF. Use the PDF for the selected statement, definitions, notation, examples, and context; use the matching `problem_XX.md` file as the workspace for the solution.
 
 ## Work on one problem at a time
 
@@ -21,7 +21,7 @@ Repeat this process for all twenty assigned problems.
 
 Begin with:
 
-> Read `NOTE_GUIDELINES.md`, `AI_WORKFLOW.md`, and the selected problem file. Help me understand the problem first. Do not edit the file until I confirm that I understand the method.
+> Read `NOTE_GUIDELINES.md`, `AI_WORKFLOW.md`, the corresponding chapter and the selected problem in the source PDF, and the matching problem file. Help me understand the problem first. Do not edit the file until I confirm that I understand the method.
 
 Ask questions such as:
 
@@ -35,7 +35,7 @@ Ask questions such as:
 
 After understanding the solution:
 
-> Update only the selected `problem_XX.md` file. Preserve the problem statement and complete every required section. Connect formulas with explanatory sentences. Do not edit other problems.
+> Update only the selected `problem_XX.md` file. Copy that problem's statement faithfully from the PDF, then complete every required section. Connect formulas with explanatory sentences. Write display formulas as `$$formula$$` without spaces or blank lines inside the delimiters. Do not edit other problems.
 
 Before committing:
 

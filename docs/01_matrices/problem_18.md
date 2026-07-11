@@ -1,23 +1,11 @@
 # Week 1 — Matrices: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 1.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 1, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-The matrix
-
-$$
-T=\begin{pmatrix}2&0\\0&-1\end{pmatrix}
-$$
-
-acts on points in the plane by matrix multiplication. Find the images of
-
-$$
-(1,2)^{\mathsf T},\quad (-3,1)^{\mathsf T},\quad (0,4)^{\mathsf T}.
-$$
-
-Describe what $T$ does geometrically.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 1, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

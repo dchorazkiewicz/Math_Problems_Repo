@@ -1,17 +1,11 @@
 # Week 5 — Vectors and Coordinates: Problem 16
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 5.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 5, Problem 16.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find a normal vector to the plane containing the direction vectors
-
-$$
-u=(1,2,-1),
-\qquad
-v=(2,0,3).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 5, Problem 16. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

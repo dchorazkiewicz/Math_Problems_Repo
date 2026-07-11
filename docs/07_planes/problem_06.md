@@ -1,15 +1,11 @@
 # Week 7 — Planes: Problem 6
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 6.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find a normal vector to the plane through
-
-$$
-A=(1,0,1),\quad B=(3,1,0),\quad C=(0,2,4).
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 6. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

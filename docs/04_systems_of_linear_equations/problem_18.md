@@ -1,17 +1,11 @@
 # Week 4 — Systems of Linear Equations: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 4.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 4, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A system reduces to a row
-
-$$
-\begin{pmatrix}0&0&0\mid 6\end{pmatrix}.
-$$
-
-What does this row mean, and what can be concluded about the original system?
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 4, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

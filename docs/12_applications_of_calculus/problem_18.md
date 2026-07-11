@@ -1,11 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 18
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 18.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A factory is $400$ m downstream on the opposite side of a river $80$ m wide. Underwater cable costs three times as much per metre as land cable. Let $x$ be the downstream distance from the point directly opposite the station to the landing point. Build the cost function and determine the optimal $x$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 18. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

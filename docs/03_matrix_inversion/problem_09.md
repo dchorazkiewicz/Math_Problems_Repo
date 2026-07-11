@@ -1,19 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 9
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 9.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Let
-
-$$
-A=\begin{pmatrix}2&1\\1&1\end{pmatrix},
-\qquad
-b=\begin{pmatrix}5\\3\end{pmatrix}.
-$$
-
-Solve $Ax=b$ using $A^{-1}$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 9. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,11 +1,11 @@
 # Week 12 — Applications of Calculus: Problem 17
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 12.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 12, Problem 17.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A closed cylindrical can must have fixed volume $V$. Derive the relation between radius and height that minimises its surface area.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 12, Problem 17. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

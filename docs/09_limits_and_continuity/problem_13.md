@@ -1,17 +1,11 @@
 # Week 9 — Limits and Continuity: Problem 13
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 9.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 9, Problem 13.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Determine the one-sided infinite limits of
-
-$$
-f(x)=\frac{1}{x-2}
-$$
-
-as $x\to2^-$ and $x\to2^+$. State the vertical asymptote.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 9, Problem 13. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,21 +1,11 @@
 # Week 7 — Planes: Problem 13
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 7.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 7, Problem 13.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Find the distance from
-
-$$
-P=(3,-1,2)
-$$
-
-to the plane
-
-$$
-2x-y+2z-7=0.
-$$
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 7, Problem 13. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

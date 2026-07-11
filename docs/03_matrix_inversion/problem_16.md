@@ -1,11 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 16
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 3.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 16.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-Explain why a matrix with two identical rows cannot have an inverse. Use both a determinant argument and an information-loss interpretation.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 16. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

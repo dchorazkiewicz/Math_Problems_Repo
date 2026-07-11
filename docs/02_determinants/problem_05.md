@@ -1,11 +1,11 @@
 # Week 2 — Determinants: Problem 5
 
-> **Source:** Basic Mathematics lecture notes, Weekly Problem Set 2.  
-> **Rule:** Preserve the problem statement. Complete every solution section below.
+> **Source:** Basic Mathematics PDF, Weekly Problem Set 2, Problem 5.  
+> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
 
 ## Problem statement
 
-A matrix $B$ is obtained from a $3\times3$ matrix $A$ by interchanging two rows. If $\det A=-7$, find $\det B$.
+<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 2, Problem 5. Copy it here faithfully when you begin work on this problem. -->
 
 ## Given information and goal
 

@@ -1,0 +1,305 @@
+site_name: Basic Mathematics — Student Problem Notebook
+site_description: A structured problem-solving notebook for the Basic Mathematics course.
+site_url: https://dchorazkiewicz.github.io/Math_Problems_Repo/
+repo_url: https://github.com/dchorazkiewicz/Math_Problems_Repo
+repo_name: dchorazkiewicz/Math_Problems_Repo
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started: getting_started.md
+  - Note Standard: note_standard.md
+  - AI Workflow: ai_workflow.md
+  - Weekly Problem Sets:
+      - '1. Matrices':
+          - Overview: 01_matrices/index.md
+          - Problem 1: 01_matrices/problem_01.md
+          - Problem 2: 01_matrices/problem_02.md
+          - Problem 3: 01_matrices/problem_03.md
+          - Problem 4: 01_matrices/problem_04.md
+          - Problem 5: 01_matrices/problem_05.md
+          - Problem 6: 01_matrices/problem_06.md
+          - Problem 7: 01_matrices/problem_07.md
+          - Problem 8: 01_matrices/problem_08.md
+          - Problem 9: 01_matrices/problem_09.md
+          - Problem 10: 01_matrices/problem_10.md
+          - Problem 11: 01_matrices/problem_11.md
+          - Problem 12: 01_matrices/problem_12.md
+          - Problem 13: 01_matrices/problem_13.md
+          - Problem 14: 01_matrices/problem_14.md
+          - Problem 15: 01_matrices/problem_15.md
+          - Problem 16: 01_matrices/problem_16.md
+          - Problem 17: 01_matrices/problem_17.md
+          - Problem 18: 01_matrices/problem_18.md
+          - Problem 19: 01_matrices/problem_19.md
+          - Problem 20: 01_matrices/problem_20.md
+      - '2. Determinants':
+          - Overview: 02_determinants/index.md
+          - Problem 1: 02_determinants/problem_01.md
+          - Problem 2: 02_determinants/problem_02.md
+          - Problem 3: 02_determinants/problem_03.md
+          - Problem 4: 02_determinants/problem_04.md
+          - Problem 5: 02_determinants/problem_05.md
+          - Problem 6: 02_determinants/problem_06.md
+          - Problem 7: 02_determinants/problem_07.md
+          - Problem 8: 02_determinants/problem_08.md
+          - Problem 9: 02_determinants/problem_09.md
+          - Problem 10: 02_determinants/problem_10.md
+          - Problem 11: 02_determinants/problem_11.md
+          - Problem 12: 02_determinants/problem_12.md
+          - Problem 13: 02_determinants/problem_13.md
+          - Problem 14: 02_determinants/problem_14.md
+          - Problem 15: 02_determinants/problem_15.md
+          - Problem 16: 02_determinants/problem_16.md
+          - Problem 17: 02_determinants/problem_17.md
+          - Problem 18: 02_determinants/problem_18.md
+          - Problem 19: 02_determinants/problem_19.md
+          - Problem 20: 02_determinants/problem_20.md
+      - '3. Matrix Inversion':
+          - Overview: 03_matrix_inversion/index.md
+          - Problem 1: 03_matrix_inversion/problem_01.md
+          - Problem 2: 03_matrix_inversion/problem_02.md
+          - Problem 3: 03_matrix_inversion/problem_03.md
+          - Problem 4: 03_matrix_inversion/problem_04.md
+          - Problem 5: 03_matrix_inversion/problem_05.md
+          - Problem 6: 03_matrix_inversion/problem_06.md
+          - Problem 7: 03_matrix_inversion/problem_07.md
+          - Problem 8: 03_matrix_inversion/problem_08.md
+          - Problem 9: 03_matrix_inversion/problem_09.md
+          - Problem 10: 03_matrix_inversion/problem_10.md
+          - Problem 11: 03_matrix_inversion/problem_11.md
+          - Problem 12: 03_matrix_inversion/problem_12.md
+          - Problem 13: 03_matrix_inversion/problem_13.md
+          - Problem 14: 03_matrix_inversion/problem_14.md
+          - Problem 15: 03_matrix_inversion/problem_15.md
+          - Problem 16: 03_matrix_inversion/problem_16.md
+          - Problem 17: 03_matrix_inversion/problem_17.md
+          - Problem 18: 03_matrix_inversion/problem_18.md
+          - Problem 19: 03_matrix_inversion/problem_19.md
+          - Problem 20: 03_matrix_inversion/problem_20.md
+      - '4. Systems of Linear Equations':
+          - Overview: 04_systems_of_linear_equations/index.md
+          - Problem 1: 04_systems_of_linear_equations/problem_01.md
+          - Problem 2: 04_systems_of_linear_equations/problem_02.md
+          - Problem 3: 04_systems_of_linear_equations/problem_03.md
+          - Problem 4: 04_systems_of_linear_equations/problem_04.md
+          - Problem 5: 04_systems_of_linear_equations/problem_05.md
+          - Problem 6: 04_systems_of_linear_equations/problem_06.md
+          - Problem 7: 04_systems_of_linear_equations/problem_07.md
+          - Problem 8: 04_systems_of_linear_equations/problem_08.md
+          - Problem 9: 04_systems_of_linear_equations/problem_09.md
+          - Problem 10: 04_systems_of_linear_equations/problem_10.md
+          - Problem 11: 04_systems_of_linear_equations/problem_11.md
+          - Problem 12: 04_systems_of_linear_equations/problem_12.md
+          - Problem 13: 04_systems_of_linear_equations/problem_13.md
+          - Problem 14: 04_systems_of_linear_equations/problem_14.md
+          - Problem 15: 04_systems_of_linear_equations/problem_15.md
+          - Problem 16: 04_systems_of_linear_equations/problem_16.md
+          - Problem 17: 04_systems_of_linear_equations/problem_17.md
+          - Problem 18: 04_systems_of_linear_equations/problem_18.md
+          - Problem 19: 04_systems_of_linear_equations/problem_19.md
+          - Problem 20: 04_systems_of_linear_equations/problem_20.md
+      - '5. Vectors and Coordinates':
+          - Overview: 05_vectors_and_coordinates/index.md
+          - Problem 1: 05_vectors_and_coordinates/problem_01.md
+          - Problem 2: 05_vectors_and_coordinates/problem_02.md
+          - Problem 3: 05_vectors_and_coordinates/problem_03.md
+          - Problem 4: 05_vectors_and_coordinates/problem_04.md
+          - Problem 5: 05_vectors_and_coordinates/problem_05.md
+          - Problem 6: 05_vectors_and_coordinates/problem_06.md
+          - Problem 7: 05_vectors_and_coordinates/problem_07.md
+          - Problem 8: 05_vectors_and_coordinates/problem_08.md
+          - Problem 9: 05_vectors_and_coordinates/problem_09.md
+          - Problem 10: 05_vectors_and_coordinates/problem_10.md
+          - Problem 11: 05_vectors_and_coordinates/problem_11.md
+          - Problem 12: 05_vectors_and_coordinates/problem_12.md
+          - Problem 13: 05_vectors_and_coordinates/problem_13.md
+          - Problem 14: 05_vectors_and_coordinates/problem_14.md
+          - Problem 15: 05_vectors_and_coordinates/problem_15.md
+          - Problem 16: 05_vectors_and_coordinates/problem_16.md
+          - Problem 17: 05_vectors_and_coordinates/problem_17.md
+          - Problem 18: 05_vectors_and_coordinates/problem_18.md
+          - Problem 19: 05_vectors_and_coordinates/problem_19.md
+          - Problem 20: 05_vectors_and_coordinates/problem_20.md
+      - '6. Lines':
+          - Overview: 06_lines/index.md
+          - Problem 1: 06_lines/problem_01.md
+          - Problem 2: 06_lines/problem_02.md
+          - Problem 3: 06_lines/problem_03.md
+          - Problem 4: 06_lines/problem_04.md
+          - Problem 5: 06_lines/problem_05.md
+          - Problem 6: 06_lines/problem_06.md
+          - Problem 7: 06_lines/problem_07.md
+          - Problem 8: 06_lines/problem_08.md
+          - Problem 9: 06_lines/problem_09.md
+          - Problem 10: 06_lines/problem_10.md
+          - Problem 11: 06_lines/problem_11.md
+          - Problem 12: 06_lines/problem_12.md
+          - Problem 13: 06_lines/problem_13.md
+          - Problem 14: 06_lines/problem_14.md
+          - Problem 15: 06_lines/problem_15.md
+          - Problem 16: 06_lines/problem_16.md
+          - Problem 17: 06_lines/problem_17.md
+          - Problem 18: 06_lines/problem_18.md
+          - Problem 19: 06_lines/problem_19.md
+          - Problem 20: 06_lines/problem_20.md
+      - '7. Planes':
+          - Overview: 07_planes/index.md
+          - Problem 1: 07_planes/problem_01.md
+          - Problem 2: 07_planes/problem_02.md
+          - Problem 3: 07_planes/problem_03.md
+          - Problem 4: 07_planes/problem_04.md
+          - Problem 5: 07_planes/problem_05.md
+          - Problem 6: 07_planes/problem_06.md
+          - Problem 7: 07_planes/problem_07.md
+          - Problem 8: 07_planes/problem_08.md
+          - Problem 9: 07_planes/problem_09.md
+          - Problem 10: 07_planes/problem_10.md
+          - Problem 11: 07_planes/problem_11.md
+          - Problem 12: 07_planes/problem_12.md
+          - Problem 13: 07_planes/problem_13.md
+          - Problem 14: 07_planes/problem_14.md
+          - Problem 15: 07_planes/problem_15.md
+          - Problem 16: 07_planes/problem_16.md
+          - Problem 17: 07_planes/problem_17.md
+          - Problem 18: 07_planes/problem_18.md
+          - Problem 19: 07_planes/problem_19.md
+          - Problem 20: 07_planes/problem_20.md
+      - '8. Sequences and Functions':
+          - Overview: 08_sequences_and_functions/index.md
+          - Problem 1: 08_sequences_and_functions/problem_01.md
+          - Problem 2: 08_sequences_and_functions/problem_02.md
+          - Problem 3: 08_sequences_and_functions/problem_03.md
+          - Problem 4: 08_sequences_and_functions/problem_04.md
+          - Problem 5: 08_sequences_and_functions/problem_05.md
+          - Problem 6: 08_sequences_and_functions/problem_06.md
+          - Problem 7: 08_sequences_and_functions/problem_07.md
+          - Problem 8: 08_sequences_and_functions/problem_08.md
+          - Problem 9: 08_sequences_and_functions/problem_09.md
+          - Problem 10: 08_sequences_and_functions/problem_10.md
+          - Problem 11: 08_sequences_and_functions/problem_11.md
+          - Problem 12: 08_sequences_and_functions/problem_12.md
+          - Problem 13: 08_sequences_and_functions/problem_13.md
+          - Problem 14: 08_sequences_and_functions/problem_14.md
+          - Problem 15: 08_sequences_and_functions/problem_15.md
+          - Problem 16: 08_sequences_and_functions/problem_16.md
+          - Problem 17: 08_sequences_and_functions/problem_17.md
+          - Problem 18: 08_sequences_and_functions/problem_18.md
+          - Problem 19: 08_sequences_and_functions/problem_19.md
+          - Problem 20: 08_sequences_and_functions/problem_20.md
+      - '9. Limits and Continuity':
+          - Overview: 09_limits_and_continuity/index.md
+          - Problem 1: 09_limits_and_continuity/problem_01.md
+          - Problem 2: 09_limits_and_continuity/problem_02.md
+          - Problem 3: 09_limits_and_continuity/problem_03.md
+          - Problem 4: 09_limits_and_continuity/problem_04.md
+          - Problem 5: 09_limits_and_continuity/problem_05.md
+          - Problem 6: 09_limits_and_continuity/problem_06.md
+          - Problem 7: 09_limits_and_continuity/problem_07.md
+          - Problem 8: 09_limits_and_continuity/problem_08.md
+          - Problem 9: 09_limits_and_continuity/problem_09.md
+          - Problem 10: 09_limits_and_continuity/problem_10.md
+          - Problem 11: 09_limits_and_continuity/problem_11.md
+          - Problem 12: 09_limits_and_continuity/problem_12.md
+          - Problem 13: 09_limits_and_continuity/problem_13.md
+          - Problem 14: 09_limits_and_continuity/problem_14.md
+          - Problem 15: 09_limits_and_continuity/problem_15.md
+          - Problem 16: 09_limits_and_continuity/problem_16.md
+          - Problem 17: 09_limits_and_continuity/problem_17.md
+          - Problem 18: 09_limits_and_continuity/problem_18.md
+          - Problem 19: 09_limits_and_continuity/problem_19.md
+          - Problem 20: 09_limits_and_continuity/problem_20.md
+      - '10. Derivatives and Function Analysis':
+          - Overview: 10_derivatives_and_function_analysis/index.md
+          - Problem 1: 10_derivatives_and_function_analysis/problem_01.md
+          - Problem 2: 10_derivatives_and_function_analysis/problem_02.md
+          - Problem 3: 10_derivatives_and_function_analysis/problem_03.md
+          - Problem 4: 10_derivatives_and_function_analysis/problem_04.md
+          - Problem 5: 10_derivatives_and_function_analysis/problem_05.md
+          - Problem 6: 10_derivatives_and_function_analysis/problem_06.md
+          - Problem 7: 10_derivatives_and_function_analysis/problem_07.md
+          - Problem 8: 10_derivatives_and_function_analysis/problem_08.md
+          - Problem 9: 10_derivatives_and_function_analysis/problem_09.md
+          - Problem 10: 10_derivatives_and_function_analysis/problem_10.md
+          - Problem 11: 10_derivatives_and_function_analysis/problem_11.md
+          - Problem 12: 10_derivatives_and_function_analysis/problem_12.md
+          - Problem 13: 10_derivatives_and_function_analysis/problem_13.md
+          - Problem 14: 10_derivatives_and_function_analysis/problem_14.md
+          - Problem 15: 10_derivatives_and_function_analysis/problem_15.md
+          - Problem 16: 10_derivatives_and_function_analysis/problem_16.md
+          - Problem 17: 10_derivatives_and_function_analysis/problem_17.md
+          - Problem 18: 10_derivatives_and_function_analysis/problem_18.md
+          - Problem 19: 10_derivatives_and_function_analysis/problem_19.md
+          - Problem 20: 10_derivatives_and_function_analysis/problem_20.md
+      - '11. Integrals':
+          - Overview: 11_integrals/index.md
+          - Problem 1: 11_integrals/problem_01.md
+          - Problem 2: 11_integrals/problem_02.md
+          - Problem 3: 11_integrals/problem_03.md
+          - Problem 4: 11_integrals/problem_04.md
+          - Problem 5: 11_integrals/problem_05.md
+          - Problem 6: 11_integrals/problem_06.md
+          - Problem 7: 11_integrals/problem_07.md
+          - Problem 8: 11_integrals/problem_08.md
+          - Problem 9: 11_integrals/problem_09.md
+          - Problem 10: 11_integrals/problem_10.md
+          - Problem 11: 11_integrals/problem_11.md
+          - Problem 12: 11_integrals/problem_12.md
+          - Problem 13: 11_integrals/problem_13.md
+          - Problem 14: 11_integrals/problem_14.md
+          - Problem 15: 11_integrals/problem_15.md
+          - Problem 16: 11_integrals/problem_16.md
+          - Problem 17: 11_integrals/problem_17.md
+          - Problem 18: 11_integrals/problem_18.md
+          - Problem 19: 11_integrals/problem_19.md
+          - Problem 20: 11_integrals/problem_20.md
+      - '12. Applications of Calculus':
+          - Overview: 12_applications_of_calculus/index.md
+          - Problem 1: 12_applications_of_calculus/problem_01.md
+          - Problem 2: 12_applications_of_calculus/problem_02.md
+          - Problem 3: 12_applications_of_calculus/problem_03.md
+          - Problem 4: 12_applications_of_calculus/problem_04.md
+          - Problem 5: 12_applications_of_calculus/problem_05.md
+          - Problem 6: 12_applications_of_calculus/problem_06.md
+          - Problem 7: 12_applications_of_calculus/problem_07.md
+          - Problem 8: 12_applications_of_calculus/problem_08.md
+          - Problem 9: 12_applications_of_calculus/problem_09.md
+          - Problem 10: 12_applications_of_calculus/problem_10.md
+          - Problem 11: 12_applications_of_calculus/problem_11.md
+          - Problem 12: 12_applications_of_calculus/problem_12.md
+          - Problem 13: 12_applications_of_calculus/problem_13.md
+          - Problem 14: 12_applications_of_calculus/problem_14.md
+          - Problem 15: 12_applications_of_calculus/problem_15.md
+          - Problem 16: 12_applications_of_calculus/problem_16.md
+          - Problem 17: 12_applications_of_calculus/problem_17.md
+          - Problem 18: 12_applications_of_calculus/problem_18.md
+          - Problem 19: 12_applications_of_calculus/problem_19.md
+          - Problem 20: 12_applications_of_calculus/problem_20.md

@@ -1,5 +1,7 @@
 # Basic Mathematics — Student Problem Notebook
 
+> **Do not know where to begin?** Open or upload [`START_HERE_WITH_AI.md`](START_HERE_WITH_AI.md). It gives a student and an AI assistant one complete entry point to the course workflow and all authoritative instructions.
+
 This public repository is a structured digital notebook for the **Basic Mathematics** course. It follows the twelve thematic chapters of the lecture notes and contains one prepared Markdown file for each assigned problem.
 
 ## What this repository is for
@@ -10,15 +12,16 @@ Each week contains twenty numbered templates. Students read the problem statemen
 
 ## Start here
 
-1. Fork this repository to your own public GitHub account.
-2. Connect your fork to the GitHub app in ChatGPT, if that capability is available to you.
-3. Read [SOURCE_MATERIAL.md](SOURCE_MATERIAL.md), [NOTE_GUIDELINES.md](NOTE_GUIDELINES.md), and [AI_WORKFLOW.md](AI_WORKFLOW.md).
-4. Work on one problem at a time.
-5. Ask questions until you understand the method.
-6. Update only the corresponding `problem_XX.md` file.
-7. Read and verify the note before committing it.
-8. Present your work during exercise classes.
-9. Use feedback to improve the note in a later commit.
+1. Read or upload [START_HERE_WITH_AI.md](START_HERE_WITH_AI.md).
+2. Fork this repository to your own public GitHub account.
+3. Connect your fork to the GitHub app in ChatGPT, if that capability is available to you.
+4. Read [SOURCE_MATERIAL.md](SOURCE_MATERIAL.md), [NOTE_GUIDELINES.md](NOTE_GUIDELINES.md), and [AI_WORKFLOW.md](AI_WORKFLOW.md).
+5. Work on one problem at a time.
+6. Ask questions until you understand the method.
+7. Update only the corresponding `problem_XX.md` file.
+8. Read and verify the note before committing it.
+9. Present your work during exercise classes.
+10. Use feedback to improve the note in a later commit.
 
 ## Course structure
 

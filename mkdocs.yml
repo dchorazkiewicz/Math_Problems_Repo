@@ -35,6 +35,7 @@ plugins:
 
 nav:
   - Home: index.md
+  - Start Here with AI: start_here_with_ai.md
   - Getting Started: getting_started.md
   - Source Material: source_material.md
   - Note Standard: note_standard.md

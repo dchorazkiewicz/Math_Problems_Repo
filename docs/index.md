@@ -1,5 +1,8 @@
 # Basic Mathematics — Student Problem Notebook
 
+!!! important "Start here"
+    If you do not know what to do, open or upload [`START_HERE_WITH_AI.md`](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/START_HERE_WITH_AI.md). It is the single entry point for both the student and an AI assistant.
+
 This site is a structured workspace for the twelve weekly problem sets accompanying the Basic Mathematics lecture notes.
 
 The objective is not to collect answers. The objective is to learn how to read mathematical notation, construct justified arguments, prepare professional notes, present solutions, receive feedback, and improve earlier work.
@@ -27,4 +30,4 @@ The objective is not to collect answers. The objective is to learn how to read m
 - [View the Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
 - [Download the Basic Mathematics PDF](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
 
-Start with [Getting Started](getting_started.md), then read [Source Material](source_material.md), the [Note Standard](note_standard.md), and [AI Workflow](ai_workflow.md).
+Start with [Start Here with AI](start_here_with_ai.md) and [Getting Started](getting_started.md), then read [Source Material](source_material.md), the [Note Standard](note_standard.md), and [AI Workflow](ai_workflow.md).

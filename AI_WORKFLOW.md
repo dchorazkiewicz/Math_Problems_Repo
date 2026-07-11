@@ -2,6 +2,15 @@
 
 AI is a learning assistant, not the author of work that the student does not understand. Free AI tools are sufficient for the support expected in this course: explaining notation, generating simpler examples, checking reasoning, identifying missing steps, and improving mathematical writing.
 
+## Source PDF
+
+The authoritative Basic Mathematics lecture PDF is available here:
+
+- [View the PDF on GitHub](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
+- [Download the PDF directly](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
+
+Before starting a weekly problem set, read the corresponding chapter. Use the PDF for definitions, notation, examples, and context; use the selected `problem_XX.md` file as the workspace for the solution.
+
 ## Work on one problem at a time
 
 Use one focused conversation for one problem. Do not paste the complete problem set into one conversation and request all answers at once. A focused context makes it easier to question every step and produce a substantive note.

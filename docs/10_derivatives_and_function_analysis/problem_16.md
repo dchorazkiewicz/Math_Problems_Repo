@@ -1,6 +1,6 @@
 # Week 10 — Derivatives and Function Analysis: Problem 16
 
-> **Problem source:** [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex), Problem Set 10, Problem 16.  
+> **Problem source:** [`problem_set_10_derivatives_and_function_analysis.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_10_derivatives_and_function_analysis.tex), Problem 16.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

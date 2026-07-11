@@ -43,4 +43,4 @@ This week corresponds to Chapter 12 and Problem Set 12 of the Basic Mathematics 
 
 ## Problem source for AI
 
-- [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex) — use Problem Set 12.
+- [`problem_set_12_applications_of_calculus.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_12_applications_of_calculus.tex) — the complete source for Week 12.

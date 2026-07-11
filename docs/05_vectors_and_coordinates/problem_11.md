@@ -1,6 +1,6 @@
 # Week 5 — Vectors and Coordinates: Problem 11
 
-> **Problem source:** [`geometry_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/geometry_problem_sets.tex), Problem Set 5, Problem 11.  
+> **Problem source:** [`problem_set_05_vectors_and_coordinates.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_05_vectors_and_coordinates.tex), Problem 11.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

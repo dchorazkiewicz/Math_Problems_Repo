@@ -43,4 +43,4 @@ This week corresponds to Chapter 5 and Problem Set 5 of the Basic Mathematics le
 
 ## Problem source for AI
 
-- [`geometry_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/geometry_problem_sets.tex) — use Problem Set 5.
+- [`problem_set_05_vectors_and_coordinates.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_05_vectors_and_coordinates.tex) — the complete source for Week 5.

@@ -43,4 +43,4 @@ This week corresponds to Chapter 2 and Problem Set 2 of the Basic Mathematics le
 
 ## Problem source for AI
 
-- [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex) — use Problem Set 2.
+- [`problem_set_02_determinants.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_02_determinants.tex) — the complete source for Week 2.

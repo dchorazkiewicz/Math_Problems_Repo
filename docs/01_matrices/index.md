@@ -43,4 +43,4 @@ This week corresponds to Chapter 1 and Problem Set 1 of the Basic Mathematics le
 
 ## Problem source for AI
 
-- [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex) — use Problem Set 1.
+- [`problem_set_01_matrices.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_01_matrices.tex) — the complete source for Week 1.

@@ -1,6 +1,6 @@
 # Week 6 — Lines: Problem 3
 
-> **Problem source:** [`geometry_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/geometry_problem_sets.tex), Problem Set 6, Problem 3.  
+> **Problem source:** [`problem_set_06_lines.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_06_lines.tex), Problem 3.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

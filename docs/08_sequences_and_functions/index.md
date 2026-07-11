@@ -43,4 +43,4 @@ This week corresponds to Chapter 8 and Problem Set 8 of the Basic Mathematics le
 
 ## Problem source for AI
 
-- [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex) — use Problem Set 8.
+- [`problem_set_08_sequences_and_functions.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_08_sequences_and_functions.tex) — the complete source for Week 8.

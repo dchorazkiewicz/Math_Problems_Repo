@@ -1,6 +1,6 @@
 # Week 12 — Applications of Calculus: Problem 9
 
-> **Problem source:** [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex), Problem Set 12, Problem 9.  
+> **Problem source:** [`problem_set_12_applications_of_calculus.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_12_applications_of_calculus.tex), Problem 9.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

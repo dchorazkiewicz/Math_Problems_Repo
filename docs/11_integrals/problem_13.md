@@ -1,6 +1,6 @@
 # Week 11 — Integrals: Problem 13
 
-> **Problem source:** [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex), Problem Set 11, Problem 13.  
+> **Problem source:** [`problem_set_11_integrals.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_11_integrals.tex), Problem 13.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

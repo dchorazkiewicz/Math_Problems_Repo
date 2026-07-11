@@ -43,4 +43,4 @@ This week corresponds to Chapter 10 and Problem Set 10 of the Basic Mathematics 
 
 ## Problem source for AI
 
-- [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex) — use Problem Set 10.
+- [`problem_set_10_derivatives_and_function_analysis.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_10_derivatives_and_function_analysis.tex) — the complete source for Week 10.

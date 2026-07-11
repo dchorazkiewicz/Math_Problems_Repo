@@ -1,6 +1,6 @@
 # Week 1 — Matrices: Problem 5
 
-> **Problem source:** [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex), Problem Set 1, Problem 5.  
+> **Problem source:** [`problem_set_01_matrices.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_01_matrices.tex), Problem 5.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

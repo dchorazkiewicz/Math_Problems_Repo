@@ -1,6 +1,6 @@
 # Week 2 — Determinants: Problem 13
 
-> **Problem source:** [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex), Problem Set 2, Problem 13.  
+> **Problem source:** [`problem_set_02_determinants.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_02_determinants.tex), Problem 13.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

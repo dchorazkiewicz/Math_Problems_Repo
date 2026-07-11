@@ -43,4 +43,4 @@ This week corresponds to Chapter 9 and Problem Set 9 of the Basic Mathematics le
 
 ## Problem source for AI
 
-- [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex) — use Problem Set 9.
+- [`problem_set_09_limits_and_continuity.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_09_limits_and_continuity.tex) — the complete source for Week 9.

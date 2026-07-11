@@ -43,4 +43,4 @@ This week corresponds to Chapter 3 and Problem Set 3 of the Basic Mathematics le
 
 ## Problem source for AI
 
-- [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex) — use Problem Set 3.
+- [`problem_set_03_matrix_inversion.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_03_matrix_inversion.tex) — the complete source for Week 3.

@@ -43,4 +43,4 @@ This week corresponds to Chapter 4 and Problem Set 4 of the Basic Mathematics le
 
 ## Problem source for AI
 
-- [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex) — use Problem Set 4.
+- [`problem_set_04_systems_of_linear_equations.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_04_systems_of_linear_equations.tex) — the complete source for Week 4.

@@ -1,6 +1,6 @@
 # Week 4 — Systems of Linear Equations: Problem 17
 
-> **Problem source:** [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex), Problem Set 4, Problem 17.  
+> **Problem source:** [`problem_set_04_systems_of_linear_equations.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_04_systems_of_linear_equations.tex), Problem 17.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

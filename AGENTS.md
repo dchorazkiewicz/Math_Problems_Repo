@@ -9,7 +9,7 @@ Read `SOURCE_MATERIAL.md` before locating a problem. The compiled course PDF is 
 - View on GitHub: https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf
 - Direct PDF download: https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf
 
-Use the PDF to read the corresponding chapter, definitions, examples, and course context. For the exact current problem statement, use the mapped LaTeX source file listed in `SOURCE_MATERIAL.md`: `algebra_problem_sets.tex` for Weeks 1–4, `geometry_problem_sets.tex` for Weeks 5–7, and `calculus_problem_sets.tex` for Weeks 8–12. Problem statements are not prefilled in the repository templates. When work begins on one selected problem, copy only that statement faithfully into its `Problem statement` section. Never populate several problem statements in advance.
+Use the PDF to read the corresponding chapter, definitions, examples, and course context. For the exact current problem statement, use the single week-specific LaTeX source file mapped in `SOURCE_MATERIAL.md`. Problem statements are not prefilled in the repository templates. When work begins on one selected problem, copy only that statement faithfully into its `Problem statement` section. Never populate several problem statements in advance.
 
 The instructor's `Math_Problems_Repo` is the public template. The student works and commits in the student's own public fork. Do not commit student solutions to the instructor's template or modify the source lecture repository.
 

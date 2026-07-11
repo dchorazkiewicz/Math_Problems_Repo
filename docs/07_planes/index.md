@@ -43,4 +43,4 @@ This week corresponds to Chapter 7 and Problem Set 7 of the Basic Mathematics le
 
 ## Problem source for AI
 
-- [`geometry_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/geometry_problem_sets.tex) — use Problem Set 7.
+- [`problem_set_07_planes.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_07_planes.tex) — the complete source for Week 7.

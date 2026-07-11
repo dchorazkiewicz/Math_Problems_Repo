@@ -1,6 +1,6 @@
 # Week 7 — Planes: Problem 2
 
-> **Problem source:** [`geometry_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/geometry_problem_sets.tex), Problem Set 7, Problem 2.  
+> **Problem source:** [`problem_set_07_planes.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/problem_set_07_planes.tex), Problem 2.  
 > **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement

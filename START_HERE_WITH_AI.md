@@ -34,6 +34,19 @@ The course contains twelve thematic units within a fifteen-week semester, but th
 
 The student creates a **public fork** of the student template and commits solutions only to that fork. The instructor's template and lecture repository must not contain individual student solutions.
 
+### Links after creating a fork
+
+Forking creates a separate repository owned by the student. The owner part of the GitHub address changes from the instructor's username to the student's username:
+
+- instructor's template: `https://github.com/dchorazkiewicz/Math_Problems_Repo`
+- student's fork: `https://github.com/<student-username>/Math_Problems_Repo`
+
+The placeholder `<student-username>` must be replaced by the actual GitHub username of the student. Files, commits, branches, and repository settings used for the student's work must refer to that fork. If GitHub Pages is enabled in the fork, its usual address is `https://<student-username>.github.io/Math_Problems_Repo/`.
+
+An AI assistant must not assume that links containing `dchorazkiewicz/Math_Problems_Repo` are the student's working repository. Those links identify the instructor's public template and canonical instructions. Before editing or committing, the AI must identify the student's actual fork and confirm that repository as the work target.
+
+Links to `dchorazkiewicz/Lectures_notes_old_school`, the lecture PDF, and the LaTeX problem sources intentionally remain unchanged after forking because they point to the instructor's authoritative course materials. Relative links between files inside the student repository automatically resolve within whichever fork is currently open.
+
 ## Where AI should look
 
 For questions about the course philosophy, lectures, exercise classes, feedback, assessment, notes, or AI use, consult the introduction to the lecture:

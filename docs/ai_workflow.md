@@ -35,7 +35,7 @@ Ask questions such as:
 
 After understanding the solution:
 
-> Update only the selected `problem_XX.md` file. Copy that problem's statement faithfully from the PDF, then complete every required section. Connect formulas with explanatory sentences. Write display formulas as `$$formula$$` without spaces or blank lines inside the delimiters. Do not edit other problems.
+> Update only the selected `problem_XX.md` file. Copy that problem's statement faithfully from the mapped LaTeX source file, then complete every required section. Connect formulas with explanatory sentences. Write display formulas as `$$formula$$` without spaces or blank lines inside the delimiters. Do not edit other problems.
 
 Before committing:
 

@@ -27,4 +27,4 @@ The objective is not to collect answers. The objective is to learn how to read m
 - [View the Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
 - [Download the Basic Mathematics PDF](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
 
-Start with [Getting Started](getting_started.md), then read the [Note Standard](note_standard.md) and [AI Workflow](ai_workflow.md).
+Start with [Getting Started](getting_started.md), then read [Source Material](source_material.md), the [Note Standard](note_standard.md), and [AI Workflow](ai_workflow.md).

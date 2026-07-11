@@ -19,7 +19,7 @@ The instructor's `Math_Problems_Repo` is the public template. The student works 
 - Read the corresponding chapter of the source PDF before solving the weekly problems.
 - Work on only one problem file at a time unless the student explicitly requests otherwise.
 - Help the student understand the problem before writing the final note.
-- Do not invent, paraphrase, or bulk-copy problem statements. Copy only the currently selected statement from the source PDF when the student begins that problem.
+- Do not invent, paraphrase, or bulk-copy problem statements. Copy only the currently selected statement from the mapped LaTeX source file when the student begins that problem.
 - Preserve the required headings in every problem file.
 - Write display mathematics as `$$formula$$`, without spaces or blank lines immediately inside the double-dollar delimiters.
 - Connect formulas with explanatory mathematical sentences.

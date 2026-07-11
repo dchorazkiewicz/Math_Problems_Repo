@@ -6,7 +6,7 @@ This public repository is a structured digital notebook for the **Basic Mathemat
 
 The repository is not a collection of final answers. It is a workspace for learning how to read mathematics, construct justified arguments, prepare professional notes, present solutions, receive feedback, and improve earlier work.
 
-Each week contains twenty numbered templates. The authoritative problem statements remain in the lecture PDF. When working on one problem, the student copies its statement into the corresponding Markdown template and completes the standard solution sections.
+Each week contains twenty numbered templates. Students read the problem statements in the lecture PDF, while AI assistants use the corresponding current LaTeX source files listed in `SOURCE_MATERIAL.md`. When working on one problem, the student copies its statement into the corresponding Markdown template and completes the standard solution sections.
 
 ## Start here
 

@@ -1,86 +1,117 @@
-# Start Here with AI
+# Basic Mathematics — Course Orientation for Students and AI
 
-This is the single onboarding document for the **Basic Mathematics** course. A student may upload this file to an AI chat or send the AI this link:
+This document explains what the **Basic Mathematics** course is, how lectures and exercise classes work, where the materials are, and what students are expected to do. A student may read it directly, upload it to an AI chat, or send the AI this link:
 
 <https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/START_HERE_WITH_AI.md>
 
-## Instruction to the AI assistant
+An AI assistant receiving this document should use the linked materials to answer general questions about the course and direct the student to the appropriate detailed instructions.
 
-Help the student identify the next concrete action. Do not solve an entire weekly set at once. Begin by asking:
+## Important limitation: this is not a live timetable
 
-1. Have you already forked the student template to your own public GitHub account?
-2. Which course week are you working on?
-3. Which problem number are you starting or revising?
-4. Do you want help understanding the problem, preparing the note, checking it, committing it, or responding to feedback?
+This document does not know the current teaching week, holidays, cancelled classes, revision weeks, deadlines, or changes announced during class. The course contains twelve thematic units within a fifteen-week semester, but the instructor determines the actual schedule.
 
-Use the linked course documents below as the authority. Explain the next step in plain language and direct the student to the exact file. Never claim that the student understands a solution; ask the student to explain important steps.
+The AI assistant must not guess what has already been covered or which problem set is currently assigned. For calendar questions, the student must use the current information provided by the instructor. Once the assigned topic is known, the materials below explain how to work with it.
 
-## Repositories and website
+## Purpose of the course
 
-- Student template repository: <https://github.com/dchorazkiewicz/Math_Problems_Repo>
-- Published student workspace: <https://dchorazkiewicz.github.io/Math_Problems_Repo/>
-- Lecture source repository: <https://github.com/dchorazkiewicz/Lectures_notes_old_school>
-- Current Basic Mathematics PDF: <https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf>
+The course is intended to teach students how to read basic mathematical notation, recognise mathematical objects, organise information, construct justified arguments, solve problems, and communicate mathematical work clearly.
 
-The instructor's student repository is a public template. The student must create a **public fork** and commit solutions only to the student's own fork. Do not put student solutions in the instructor's template or modify the lecture source repository.
+The objective is not to collect final answers or unexplained formulas. Students learn how to identify what is given, determine the goal, choose a method, justify important steps, verify results, and state conclusions that answer the original question.
 
-## Authoritative instructions
+## Lectures
 
-- [Getting Started](https://dchorazkiewicz.github.io/Math_Problems_Repo/getting_started/) — how to fork the repository and begin.
-- [Source Material](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/SOURCE_MATERIAL.md) — the current PDF and the exact week-to-LaTeX source mapping.
-- [Mathematical Note Guidelines](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/NOTE_GUIDELINES.md) — what a complete solution note must contain.
-- [AI and GitHub Workflow](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/AI_WORKFLOW.md) — how to use one focused AI conversation, review the result, and commit it.
-- [Agent Instructions](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/AGENTS.md) — operational rules a connected AI assistant must follow.
+The lecture introduces and organises the mathematical material. Students should attend the lecture because the lecturer explains the motivation, interpretation, relationships between ideas, and the way mathematical arguments are read and constructed. The PDF supports the lecture but does not replace participation in it.
 
-If two summaries appear to differ, follow `AGENTS.md` for repository operations, `NOTE_GUIDELINES.md` for the required note standard, and `SOURCE_MATERIAL.md` for the current problem source.
+The current lecture notes are available here:
 
-## What the student does each week
+- [View the Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
+- [Download the Basic Mathematics PDF](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
 
-Each of the twelve weeks contains twenty numbered problem templates. The student is expected to prepare the complete assigned set, but should work through it **one problem at a time**.
+After a lecture, the student should return to the corresponding PDF chapter, reread the definitions and examples, identify anything that remains unclear, and use the chapter while preparing the related problem set.
 
-For each problem:
+## Exercise classes
 
-1. Read the corresponding chapter in the PDF.
-2. Open the week-specific LaTeX file linked from the selected template.
-3. Locate the explicitly labelled `Problem N`.
-4. Copy only that problem statement into the matching `problem_NN.md` file in the student's fork.
-5. Identify the given information and the goal.
-6. Choose and justify the method.
-7. Write the solution using explanatory sentences between important formulas.
-8. Verify the result and state a clear conclusion.
-9. Read and understand the complete note before committing it.
-10. Commit the reviewed note, present it during class, and revise it after feedback when necessary.
+Exercise classes are based on systematic preparation, presentation, discussion, feedback, and revision. For the assigned topic, students prepare the complete problem set. They work on one problem at a time so that each note receives enough attention, but repeating that process for one selected problem does not replace completing the remaining assigned work.
 
-Display mathematics must be written as `$$formula$$`, without spaces or blank lines immediately inside the double-dollar delimiters.
+During class, students should be ready to display and explain their notes. They should also listen when other students present. Feedback given to one person helps the whole group understand what constitutes good work, what is incomplete, and how a mathematical explanation can be improved.
 
-## Required structure of one note
+Feedback concerns the work and its result, not the student's personal worth. Revising an earlier note after feedback is part of the course and models the professional process of presenting work, receiving criticism, and improving a solution.
 
-Every `problem_NN.md` file contains these sections:
+## What to do after the lecture
 
-1. `Problem statement`
-2. `Given information and goal`
-3. `Method`
-4. `Solution and justification`
-5. `Verification`
-6. `Conclusion`
+For the topic assigned by the instructor:
 
-A bare answer, an unexplained sequence of formulas, or a note the student cannot present is incomplete work.
+1. Read the corresponding PDF chapter again.
+2. Open the matching weekly folder in the student repository.
+3. Prepare every assigned problem using its separate Markdown template.
+4. Work in focused contexts: one problem and one note at a time.
+5. Make the mathematical reasoning visible, not only the result.
+6. Check and understand the note before committing it.
+7. Be ready to present the work during exercise classes.
+8. Listen to feedback given across the group.
+9. Improve incomplete notes in later commits.
 
-## Suggested first message to AI
+## Student repository
 
-> Read this onboarding document and follow all linked course instructions. I am working in my public fork. Ask me for the week and problem number, then help me understand one problem before editing anything. After I confirm that I understand the method, update only the matching problem file. Do not solve or populate other problems.
+The public course template is:
 
-## If the student does not know what to do
+<https://github.com/dchorazkiewicz/Math_Problems_Repo>
 
-The AI assistant should determine which of these states applies and give only the next useful steps:
+The published version is:
 
-- **No fork yet:** direct the student to fork the template repository publicly.
-- **Fork exists, no problem selected:** ask for the assigned week and select one problem number.
-- **Problem selected, statement missing:** open the linked week-specific LaTeX source and copy only `Problem N`.
-- **Statement present, no understanding:** explain notation, data, goal, and applicable definitions before editing.
-- **Understanding confirmed:** complete the six required note sections in the selected file.
-- **Note completed:** review reasoning, mathematical formatting, and verification.
-- **Review completed:** commit with a message naming the week and problem.
-- **Feedback received:** revise the same note and create a new commit showing the improvement.
+<https://dchorazkiewicz.github.io/Math_Problems_Repo/>
 
-The final examination is separate and checks independent mathematical knowledge. Systematic preparation, presentation, feedback, and improvement belong to the exercise component of the course.
+The student creates a **public fork** and works in that fork. Student solutions must not be committed to the instructor's template or to the lecture source repository.
+
+The repository contains twelve weekly folders and twenty problem templates in each folder. The templates do not contain copied problem statements. Each template links directly to the current week-specific LaTeX file containing the explicitly labelled problems.
+
+## How to prepare one mathematical note
+
+Every completed problem note should contain:
+
+1. the complete problem statement,
+2. the given information and the goal,
+3. the chosen method and why it applies,
+4. the solution with justified transitions,
+5. verification where appropriate,
+6. a clear conclusion.
+
+Formulas should be connected by explanatory sentences. A bare answer, an unexplained sequence of formulas, or AI-generated text that the student cannot explain is incomplete work.
+
+Detailed requirements: [Mathematical Note Guidelines](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/NOTE_GUIDELINES.md).
+
+## How AI should be used
+
+AI is a learning assistant. It may explain notation, clarify definitions, generate simpler examples, question a method, identify missing justifications, check calculations, and improve mathematical writing. Free AI tools are sufficient for this type of support.
+
+AI should help the student understand one selected problem before preparing the final note. It should not bulk-generate the entire problem set in one conversation. The student remains responsible for reading, checking, understanding, presenting, and revising everything committed to the repository.
+
+Detailed procedure: [AI and GitHub Workflow](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/AI_WORKFLOW.md).
+
+Operational rules for a connected assistant: [Agent Instructions](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/AGENTS.md).
+
+## Where the problem statements are
+
+Students read the problem sets in the PDF. An AI assistant should use the current week-specific LaTeX source because it is machine-readable and changes together with the material from which the PDF is compiled.
+
+The complete mapping of twelve topics to twelve source files is here:
+
+[Source Material](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/SOURCE_MATERIAL.md).
+
+The AI assistant must use the topic assigned by the instructor, open its mapped source file, locate the explicitly labelled `Problem N`, and copy only the selected statement into the matching template when work on that problem begins.
+
+## Assessment
+
+The exercise component primarily evaluates systematic preparation, engagement, completeness of the assigned work, mathematical explanation, presentation, response to feedback, and improvement during the semester. A student who begins with difficulties can still achieve a very good exercise grade by working conscientiously, improving substantially, and applying feedback.
+
+The final examination is separate. It checks the student's independent mathematical knowledge.
+
+## Detailed course documents
+
+- [Getting Started](https://dchorazkiewicz.github.io/Math_Problems_Repo/getting_started/) — creating a fork and beginning repository work.
+- [Source Material](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/SOURCE_MATERIAL.md) — the PDF and the twelve current LaTeX problem sources.
+- [Mathematical Note Guidelines](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/NOTE_GUIDELINES.md) — the required standard for one note.
+- [AI and GitHub Workflow](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/AI_WORKFLOW.md) — focused work, review, commits, presentation, feedback, and revision.
+- [Agent Instructions](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/AGENTS.md) — rules for an AI assistant connected to the student's fork.
+
+An AI assistant should consult these linked documents when the student asks for more detail. It must distinguish general course rules from the current schedule communicated by the instructor.

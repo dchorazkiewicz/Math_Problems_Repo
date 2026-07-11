@@ -1,5 +1,7 @@
 # Basic Mathematics — Student Problem Notebook
 
+> **Required reading:** This repository does not replace the lecture. Before beginning, read the complete introduction to the [Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf), then read the corresponding chapters throughout the course. The introduction explains why and how the course works. Using only the templates or AI without reading the lecture material defeats the purpose of the course.
+
 > **Do not know where to begin?** Open or upload [`START_HERE_WITH_AI.md`](START_HERE_WITH_AI.md). It gives a student and an AI assistant one complete entry point to the course workflow and all authoritative instructions.
 
 This public repository is a structured digital notebook for the **Basic Mathematics** course. It follows the twelve thematic chapters of the lecture notes and contains one prepared Markdown file for each assigned problem.

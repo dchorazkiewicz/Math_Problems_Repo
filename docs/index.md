@@ -1,5 +1,8 @@
 # Basic Mathematics — Student Problem Notebook
 
+!!! danger "The lecture PDF is required reading"
+    This repository and AI tools do **not** replace the lecture material. Before beginning repository work, read the complete introduction to the [Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf). It explains the purpose, philosophy, methodology, expectations, role of lectures and exercise classes, mathematical-note standard, feedback process, and appropriate use of AI. Continue reading the corresponding PDF chapters throughout the course. Using only the problem templates without reading the lecture notes defeats the purpose of the course.
+
 !!! important "Start here"
     If you do not know what to do, open or upload [`START_HERE_WITH_AI.md`](https://github.com/dchorazkiewicz/Math_Problems_Repo/blob/main/START_HERE_WITH_AI.md). It is the single entry point for both the student and an AI assistant.
 

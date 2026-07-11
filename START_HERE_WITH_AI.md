@@ -6,6 +6,16 @@ This is the single entry point to the **Basic Mathematics** course materials. A 
 
 The purpose of this document is to show where authoritative information is located. An AI assistant should follow the links below instead of guessing or relying only on this summary.
 
+## Required reading: the lecture PDF
+
+The PDF is the core course material, not an optional reference. This repository organises student work, and AI may support learning, but neither replaces reading the lecture notes.
+
+Before beginning the course workflow, the student must read the **complete introduction** to the [Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf). The introduction explains what the course is for, how lectures and exercise classes work, why mathematical reasoning must be written explicitly, how notes should be prepared, how feedback is used, what is assessed, and what role AI may play.
+
+Throughout the semester, the student must also read the corresponding substantive PDF chapters. Treating the repository as a list of isolated tasks, asking AI for answers, or preparing notes without reading the lecture material defeats the purpose of the course.
+
+An AI assistant should reinforce this requirement. When helping with course rules or a mathematical topic, it should consult the introduction and the relevant lecture chapter rather than relying only on problem templates.
+
 ## Course in brief
 
 The course teaches students to read mathematical notation, understand basic mathematical objects, construct justified solutions, present their work, receive feedback, and improve it.

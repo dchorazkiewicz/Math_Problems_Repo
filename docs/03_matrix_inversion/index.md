@@ -39,3 +39,8 @@ This week corresponds to Chapter 3 and Problem Set 3 of the Basic Mathematics le
 
 - [View PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
 - [Download PDF](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
+
+
+## Problem source for AI
+
+- [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex) — use Problem Set 3.

@@ -36,6 +36,7 @@ plugins:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
+  - Source Material: source_material.md
   - Note Standard: note_standard.md
   - AI Workflow: ai_workflow.md
   - Weekly Problem Sets:

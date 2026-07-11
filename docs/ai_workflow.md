@@ -9,7 +9,7 @@ The authoritative Basic Mathematics lecture PDF is available here:
 - [View the PDF on GitHub](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
 - [Download the PDF directly](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
 
-Before starting a weekly problem set, read the corresponding chapter. The problem statements remain in the PDF. Use the PDF for the selected statement, definitions, notation, examples, and context; use the matching `problem_XX.md` file as the workspace for the solution.
+Before starting a weekly problem set, read the corresponding PDF chapter. For the exact current problem statement, follow the week-to-LaTeX mapping in [Source Material](source_material.md). Use the matching `problem_XX.md` file as the workspace for the solution.
 
 ## Work on one problem at a time
 
@@ -21,7 +21,7 @@ Repeat this process for all twenty assigned problems.
 
 Begin with:
 
-> Read `NOTE_GUIDELINES.md`, `AI_WORKFLOW.md`, the corresponding chapter and the selected problem in the source PDF, and the matching problem file. Help me understand the problem first. Do not edit the file until I confirm that I understand the method.
+> Read `SOURCE_MATERIAL.md`, `NOTE_GUIDELINES.md`, `AI_WORKFLOW.md`, the corresponding PDF chapter, the selected problem in the mapped LaTeX source file, and the matching problem file. Help me understand the problem first. Do not edit the file until I confirm that I understand the method.
 
 Ask questions such as:
 

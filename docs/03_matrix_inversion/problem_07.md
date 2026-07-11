@@ -1,11 +1,11 @@
 # Week 3 — Matrix Inversion: Problem 7
 
-> **Source:** Basic Mathematics PDF, Weekly Problem Set 3, Problem 7.  
-> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
+> **Problem source:** [`algebra_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/algebra_problem_sets.tex), Problem Set 3, Problem 7.  
+> **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement
 
-<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 3, Problem 7. Copy it here faithfully when you begin work on this problem. -->
+<!-- Read Problem Set 3, Problem 7 in the linked LaTeX source file. Copy only that statement here faithfully when you begin work. -->
 
 ## Given information and goal
 

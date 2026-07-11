@@ -39,3 +39,8 @@ This week corresponds to Chapter 12 and Problem Set 12 of the Basic Mathematics 
 
 - [View PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
 - [Download PDF](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
+
+
+## Problem source for AI
+
+- [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex) — use Problem Set 12.

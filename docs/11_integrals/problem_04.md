@@ -1,11 +1,11 @@
 # Week 11 — Integrals: Problem 4
 
-> **Source:** Basic Mathematics PDF, Weekly Problem Set 11, Problem 4.  
-> **Rule:** The statement remains in the PDF. Fill this template only when you begin this problem.
+> **Problem source:** [`calculus_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/calculus_problem_sets.tex), Problem Set 11, Problem 4.  
+> **Rule:** The statement is not stored in this template. Fill it only when you begin this problem.
 
 ## Problem statement
 
-<!-- The authoritative statement is in the Basic Mathematics PDF, Weekly Problem Set 11, Problem 4. Copy it here faithfully when you begin work on this problem. -->
+<!-- Read Problem Set 11, Problem 4 in the linked LaTeX source file. Copy only that statement here faithfully when you begin work. -->
 
 ## Given information and goal
 

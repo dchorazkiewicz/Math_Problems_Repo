@@ -12,7 +12,7 @@ Each week contains twenty numbered templates. The authoritative problem statemen
 
 1. Fork this repository to your own public GitHub account.
 2. Connect your fork to the GitHub app in ChatGPT, if that capability is available to you.
-3. Read [NOTE_GUIDELINES.md](NOTE_GUIDELINES.md) and [AI_WORKFLOW.md](AI_WORKFLOW.md).
+3. Read [SOURCE_MATERIAL.md](SOURCE_MATERIAL.md), [NOTE_GUIDELINES.md](NOTE_GUIDELINES.md), and [AI_WORKFLOW.md](AI_WORKFLOW.md).
 4. Work on one problem at a time.
 5. Ask questions until you understand the method.
 6. Update only the corresponding `problem_XX.md` file.
@@ -44,6 +44,8 @@ The complete notebook contains **240 problems**.
 
 - [View the Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
 - [Download the Basic Mathematics PDF](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
+
+The exact LaTeX files containing the current problem statements are listed in [SOURCE_MATERIAL.md](SOURCE_MATERIAL.md). AI assistants should use those source files rather than extracting statements from the rendered PDF.
 
 ## Published notebook
 

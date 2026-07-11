@@ -2,7 +2,7 @@
 
 ## One problem, one complete note
 
-Prepare a separate, self-contained note for every assigned problem. The authoritative problem statement is found only in the lecture PDF. When beginning a note, copy the complete statement of that one problem into its `Problem statement` section so that the finished note remains understandable without reopening the PDF.
+Prepare a separate, self-contained note for every assigned problem. Students read the problem in the lecture PDF; AI assistants use the corresponding current LaTeX file mapped in `SOURCE_MATERIAL.md`. When beginning a note, copy the complete statement of that one problem into its `Problem statement` section so that the finished note remains understandable without reopening the source material.
 
 Students are expected to prepare the **complete assigned problem set**. One polished solution does not replace the remaining problems, and many bare answers do not replace complete reasoning.
 
@@ -10,7 +10,7 @@ Students are expected to prepare the **complete assigned problem set**. One poli
 
 Every note must contain:
 
-1. **Problem statement** — copied faithfully from the source PDF when work on that problem begins.
+1. **Problem statement** — copied faithfully from the current course source when work on that problem begins.
 2. **Given information and goal** — what is known and what must be found, proved, or explained.
 3. **Method** — the definitions, theorems, or techniques selected and why they apply.
 4. **Solution and justification** — formulas connected by sentences explaining important transitions.

@@ -4,18 +4,18 @@ This repository is a student learning notebook for the Basic Mathematics course.
 
 ## Source material and repository roles
 
-The authoritative course PDF is stored in the instructor's lecture repository:
+Read `SOURCE_MATERIAL.md` before locating a problem. The compiled course PDF is stored in the instructor's lecture repository:
 
 - View on GitHub: https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf
 - Direct PDF download: https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf
 
-Use the PDF to read the corresponding chapter, definitions, examples, problem statements, and course context. Problem statements intentionally remain in the PDF and are not prefilled in the repository templates. When work begins on one selected problem, copy its statement faithfully into that problem's `Problem statement` section. Never populate several problem statements in advance.
+Use the PDF to read the corresponding chapter, definitions, examples, and course context. For the exact current problem statement, use the mapped LaTeX source file listed in `SOURCE_MATERIAL.md`: `algebra_problem_sets.tex` for Weeks 1–4, `geometry_problem_sets.tex` for Weeks 5–7, and `calculus_problem_sets.tex` for Weeks 8–12. Problem statements are not prefilled in the repository templates. When work begins on one selected problem, copy only that statement faithfully into its `Problem statement` section. Never populate several problem statements in advance.
 
 The instructor's `Math_Problems_Repo` is the public template. The student works and commits in the student's own public fork. Do not commit student solutions to the instructor's template or modify the source lecture repository.
 
 ## Core rules
 
-- Read `NOTE_GUIDELINES.md` and `AI_WORKFLOW.md` before editing solutions.
+- Read `SOURCE_MATERIAL.md`, `NOTE_GUIDELINES.md`, and `AI_WORKFLOW.md` before editing solutions.
 - Read the corresponding chapter of the source PDF before solving the weekly problems.
 - Work on only one problem file at a time unless the student explicitly requests otherwise.
 - Help the student understand the problem before writing the final note.

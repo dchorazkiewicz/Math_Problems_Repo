@@ -39,3 +39,8 @@ This week corresponds to Chapter 7 and Problem Set 7 of the Basic Mathematics le
 
 - [View PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf)
 - [Download PDF](https://raw.githubusercontent.com/dchorazkiewicz/Lectures_notes_old_school/main/mathematical_lectures/basic_mathematics/main.pdf)
+
+
+## Problem source for AI
+
+- [`geometry_problem_sets.tex`](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/chapters/problem_sets/geometry_problem_sets.tex) — use Problem Set 7.

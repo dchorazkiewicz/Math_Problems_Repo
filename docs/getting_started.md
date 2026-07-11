@@ -14,9 +14,10 @@ Before solving problems, read:
 
 - `NOTE_GUIDELINES.md`,
 - `AI_WORKFLOW.md`,
+- `SOURCE_MATERIAL.md`,
 - the selected `problem_XX.md` file.
 
-The authoritative problem statements are kept in the [Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf), not in the empty repository templates. Copy only the statement of the problem you are beginning into its matching file.
+Students read the [Basic Mathematics PDF](https://github.com/dchorazkiewicz/Lectures_notes_old_school/blob/main/mathematical_lectures/basic_mathematics/main.pdf). AI assistants locate the exact current statements in the mapped LaTeX files listed under [Source Material](source_material.md), not in the empty repository templates. Copy only the statement of the problem you are beginning into its matching file.
 
 ## 4. Work systematically
 
